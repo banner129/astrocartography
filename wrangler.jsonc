@@ -1,0 +1,16 @@
+{
+  "name": "background-blur",
+  "compatibility_date": "2025-09-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": "pnpm run cf:build"
+  },
+  // 由 OpenNext Cloudflare 生成
+  "main": ".open-next/worker.js",
+  // 静态资源目录（OpenNext 输出）
+  "assets": {
+    "directory": ".open-next/assets"
+  }
+}
+
+
