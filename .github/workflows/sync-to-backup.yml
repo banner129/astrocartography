@@ -3,7 +3,7 @@ name: Sync to 129 Backup Repo
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   sync:
