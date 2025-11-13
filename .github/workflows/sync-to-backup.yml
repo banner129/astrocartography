@@ -17,5 +17,6 @@ jobs:
       
       - name: Push to backup repo
         run: |
+          git remote remove backup 2>/dev/null || true
           git remote add backup https://${{ secrets.TARGET_REPO_TOKEN }}@github.com/banner129/astrocartography.git
           git push backup main --force
