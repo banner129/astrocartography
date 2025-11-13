@@ -3,6 +3,15 @@ import { getTranslations } from "next-intl/server";
 import { getAboutPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";
 
+// 🔥 CPU 优化：About 页面 24 小时缓存
+export const revalidate = 86400;  // 24小时缓存
+export const dynamic = 'force-static';
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  return [{ locale: 'en' }];
+}
+
 export async function generateMetadata({
   params,
 }: {

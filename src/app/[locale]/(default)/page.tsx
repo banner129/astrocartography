@@ -1,3 +1,19 @@
+// 🔥 CPU 优化：将首页改为静态生成（ISR），24小时重新验证
+export const dynamic = 'force-static';
+export const revalidate = 86400;  // 24小时缓存（因为内容很少变化）
+export const dynamicParams = true;
+
+// 预生成英文版本（未来可添加其他语言）
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },  // 只生成英文版，节省 CPU
+    // 未来开放其他语言时取消注释：
+    // { locale: 'zh' },
+    // { locale: 'pt' },
+    // { locale: 'ms' },
+  ];
+}
+
 import Branding from "@/components/blocks/branding";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";

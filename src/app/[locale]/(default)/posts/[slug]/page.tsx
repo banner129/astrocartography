@@ -4,6 +4,16 @@ import BlogDetail from "@/components/blocks/blog-detail";
 import Empty from "@/components/blocks/empty";
 import { Post } from "@/types/post";
 
+// 🔥 CPU 优化：文章详情 7 天缓存（发布后很少修改）
+export const revalidate = 604800;  // 7天缓存
+export const dynamic = 'force-static';
+export const dynamicParams = true;
+
+// 按需生成（访问时才生成，减少构建时间）
+export async function generateStaticParams() {
+  return [];  // 空数组表示按需生成
+}
+
 export async function generateMetadata({
   params,
 }: {

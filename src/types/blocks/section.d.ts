@@ -10,6 +10,7 @@ export interface SectionItem {
   url?: string;
   target?: string;
   children?: SectionItem[];
+  list?: string[];  // 支持列表项（用于功能点列表）
 }
 
 export interface Section {

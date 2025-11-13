@@ -5,6 +5,10 @@ import { Metadata } from "next";
 import React from "react";
 import { getTranslations } from "next-intl/server";
 
+// 🔥 CPU 优化：法律页面 30 天缓存（几乎不变）
+export const revalidate = 2592000;  // 30天缓存
+export const dynamic = 'force-static';
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations();
 
