@@ -1,0 +1,23 @@
+name: Sync to 129 Repo
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror to 129 repo
+        run: |
+          git config --global user.name "your-177-username"
+          git config --global user.email "your-email@example.com"
+          git remote add mirror https://banner129:${{ secrets.REPO_SYNC_TOKEN }}@github.com/banner129/astrocartography.git
+          git push mirror main --force
