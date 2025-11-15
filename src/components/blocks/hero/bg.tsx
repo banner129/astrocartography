@@ -4,13 +4,13 @@
 export default function Bg() {
   return (
     <div className="pointer-events-none absolute inset-0 -z-50 overflow-hidden">
-      {/* 背景图片 */}
+      {/* 背景图片 - 延迟加载优化 CPU */}
       <img
         src="/imgs/features/hero-web.webp"
         alt="Astrocartography Calculator Background"
         className="absolute inset-0 h-full w-full object-cover"
-        loading="eager"
-        fetchPriority="high"
+        loading="lazy"
+        decoding="async"
       />
       
       {/* 遮罩层：降低背景透明度，提升文字可读性 */}

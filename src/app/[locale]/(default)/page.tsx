@@ -1,6 +1,6 @@
-// 🔥 CPU 优化：将首页改为静态生成（ISR），24小时重新验证
+// 🔥 CPU 优化：将首页改为静态生成（ISR），7天重新验证
 export const dynamic = 'force-static';
-export const revalidate = 86400;  // 24小时缓存（因为内容很少变化）
+export const revalidate = 604800;  // 7天缓存（内容很少变化，延长缓存降低 CPU）
 export const dynamicParams = true;
 
 // 预生成英文版本（未来可添加其他语言）

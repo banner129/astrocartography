@@ -4,8 +4,8 @@ import { Suspense } from 'react';
 import { getColorPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";
 
-// 🔥 CPU 优化：Color 页面 24 小时缓存
-export const revalidate = 86400;  // 24小时缓存
+// 🔥 CPU 优化：Color 页面 7 天缓存
+export const revalidate = 604800;  // 7天缓存（内容很少变化，延长缓存降低 CPU）
 export const dynamic = 'force-static';
 export const dynamicParams = true;
 

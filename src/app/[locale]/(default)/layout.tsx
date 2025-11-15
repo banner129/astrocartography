@@ -4,6 +4,10 @@ import { ReactNode } from "react";
 import { getLandingPage } from "@/services/page";
 import Feedback from "@/components/feedback";
 
+// 🔥 CPU 优化：Layout 也使用静态生成，7天缓存
+export const revalidate = 604800;  // 7天缓存
+export const dynamic = 'force-static';
+
 export default async function DefaultLayout({
   children,
   params,
