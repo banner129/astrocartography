@@ -8,7 +8,7 @@
   
   <!-- 英文首页 - 主关键词: astrocartography -->
   <url>
-    <loc>https://astrocartography.net/</loc>
+    <loc>https://astrocarto.org/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -16,14 +16,14 @@
   
   <!-- 法律页面（合规要求） -->
   <url>
-    <loc>https://astrocartography.net/privacy-policy</loc>
+    <loc>https://astrocarto.org/privacy-policy</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://astrocartography.net/terms-of-service</loc>
+    <loc>https://astrocarto.org/terms-of-service</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -37,21 +37,21 @@
   <!-- 多语言版本
   ────────────────────────────────────────────────────────── -->
   <!-- <url>
-    <loc>https://astrocartography.net/zh/</loc>
+    <loc>https://astrocarto.org/zh/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url> -->
   
   <!-- <url>
-    <loc>https://astrocartography.net/ms/</loc>
+    <loc>https://astrocarto.org/ms/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url> -->
   
   <!-- <url>
-    <loc>https://astrocartography.net/pt/</loc>
+    <loc>https://astrocarto.org/pt/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -61,28 +61,28 @@
   <!-- 功能页面
   ────────────────────────────────────────────────────────── -->
   <!-- <url>
-    <loc>https://astrocartography.net/posts/</loc>
+    <loc>https://astrocarto.org/posts/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url> -->
   
   <!-- <url>
-    <loc>https://astrocartography.net/about/</loc>
+    <loc>https://astrocarto.org/about/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url> -->
   
   <!-- <url>
-    <loc>https://astrocartography.net/pricing/</loc>
+    <loc>https://astrocarto.org/pricing/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url> -->
   
   <!-- <url>
-    <loc>https://astrocartography.net/showcase/</loc>
+    <loc>https://astrocarto.org/showcase/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

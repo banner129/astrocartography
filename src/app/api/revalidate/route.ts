@@ -14,7 +14,7 @@ import { NextRequest, NextResponse } from 'next/server';
  * 
  * 使用方法：
  * 浏览器访问或 curl 请求：
- * https://astrocartography.net/api/revalidate?secret=你的密钥&path=/页面路径
+ * https://astrocarto.org/api/revalidate?secret=你的密钥&path=/页面路径
  * 
  * 示例：
  * - 刷新首页: ?secret=xxx&path=/

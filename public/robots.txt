@@ -42,4 +42,4 @@ Disallow: /*?utm_campaign=
 Disallow: /*?gclid=
 Disallow: /*?fbclid=
 
-Sitemap: https://astrocartography.net/sitemap.xml
+Sitemap: https://astrocarto.org/sitemap.xml

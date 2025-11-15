@@ -2,7 +2,7 @@
 
 > 免费占星地图生成器 - NASA 级精度 + AI 智能解读
 
-🌐 **网站**: [astrocartography.net](https://astrocartography.net)
+🌐 **网站**: [astrocarto.org](https://astrocarto.org)
 
 ---
 
@@ -46,10 +46,10 @@ pnpm dev访问 `http://localhost:3000`
 修改内容后立即生效，无需等待 24 小时：
 
 # 刷新首页
-https://astrocartography.net/api/revalidate?secret=你的密钥&path=/
+https://astrocarto.org/api/revalidate?secret=你的密钥&path=/
 
 # 刷新任意页面
-https://astrocartography.net/api/revalidate?secret=密钥&path=/your-page
+https://astrocarto.org/api/revalidate?secret=密钥&path=/your-page
 
 
 **配置环境变量**：
