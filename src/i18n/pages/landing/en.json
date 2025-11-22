@@ -368,6 +368,11 @@
             {
               "title": "FAQ",
               "url": "/#faq"
+            },
+            {
+              "title": "AIStage",
+              "url": "https://aistage.net",
+              "target": "_blank"
             }
           ]
         },
@@ -405,7 +410,30 @@
         }
       ]
     },
-    "badges": [],
+    "badges": [
+      {
+        "title": "Featured on ShowMeBestAI",
+        "url": "https://www.showmebest.ai",
+        "target": "_blank",
+        "image": {
+          "src": "https://www.showmebest.ai/badge/feature-badge-white.webp",
+          "alt": "Featured on ShowMeBestAI",
+          "width": 220,
+          "height": 60
+        }
+      },
+      {
+        "title": "Featured on Aura++",
+        "url": "https://auraplusplus.com/projects/astrocarto",
+        "target": "_blank",
+        "image": {
+          "src": "https://auraplusplus.com/images/badges/featured-on-light.svg",
+          "alt": "Featured on Aura++",
+          "width": 220,
+          "height": 60
+        }
+      }
+    ],
     "agreement": {
       "items": [
         {
