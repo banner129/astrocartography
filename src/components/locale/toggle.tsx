@@ -23,31 +23,30 @@ export default function ({ isIcon = false }: { isIcon?: boolean }) {
   const handleSwitchLanguage = (value: string) => {
     if (value !== locale) {
       // 获取当前路径（usePathname 返回的路径不包含语言前缀）
-      const currentPath = pathname || '/';
+      let currentPath = pathname || '/';
       
-      // 获取当前浏览器中的实际路径（包含语言前缀）
-      const currentActualPath = typeof window !== 'undefined' ? window.location.pathname : '';
+      // 确保 pathname 中不包含语言前缀（防御性检查）
+      // 如果 pathname 意外包含了语言前缀，先移除它
+      const localePrefixes = locales.join('|');
+      const pathWithLocalePattern = new RegExp(`^/(${localePrefixes})(/.*)?$`);
+      if (pathWithLocalePattern.test(currentPath)) {
+        // 如果路径以语言前缀开头，移除语言前缀
+        currentPath = currentPath.replace(new RegExp(`^/(${localePrefixes})`), '') || '/';
+      }
       
       // 构建目标 URL
       // 如果目标语言是默认语言（en），且 localePrefix 是 "as-needed"，则不需要前缀
       let targetUrl = '';
       if (value === 'en') {
         // 默认语言：直接使用路径，不需要语言前缀
-        targetUrl = currentPath === '/' ? '/' : `${currentPath}`;
+        targetUrl = currentPath === '/' ? '/' : currentPath;
       } else {
         // 其他语言：添加语言前缀
-        targetUrl = `/${value}${currentPath === '/' ? '' : currentPath}`;
+        targetUrl = currentPath === '/' ? `/${value}/` : `/${value}${currentPath}`;
       }
       
-      // 如果切换到英文，且当前实际路径包含语言前缀，需要使用 window.location 强制刷新
-      // 因为 router.replace('/') 可能不会触发从 /zh/ 到 / 的导航
-      if (value === 'en' && currentActualPath && currentActualPath.startsWith(`/${locale}/`)) {
-        // 从带有语言前缀的路径切换到根路径，需要强制刷新
-        window.location.href = targetUrl;
-      } else {
-        // 使用 router.replace 来切换语言，避免在历史记录中留下多个条目
-        router.replace(targetUrl);
-      }
+      // 统一使用 window.location 进行导航，确保生产环境正常工作
+      window.location.href = targetUrl;
     }
   };
 
