@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Miniatur AI - 将照片转换为微缩杰作 | Miniatur AI",
-    "description": "Miniatur AI 使用先进的AI技术将普通照片转换为令人惊叹的微缩杰作。在几秒钟内创建专业的移轴效果和微缩场景。",
-    "keywords": "Miniatur AI, 微缩生成器, AI照片转换, 移轴效果, 微缩摄影, AI图像处理"
+    "title": "免费星盘地图计算器 — 精准出生地图与搬迁分析 | 星盘地图",
+    "description": "使用免费的星盘地图计算器，获取精准的行星线、搬迁分析和即时地图解读。无需注册，无广告：仅提供AI增强的精准星盘地图分析。",
+    "keywords": "免费星盘地图计算器, 星盘地图, 星盘地图在线, 出生地图位置, 行星线, 搬迁占星工具, 行星线计算器, AI星盘地图解读, 精准星盘地图, 最佳免费占星地图"
   },
   "user": {
     "sign_in": "登录",
@@ -253,6 +253,61 @@
       "insufficient_title": "积分不足",
       "insufficient_description": "您的积分不足，请升级套餐继续使用AI功能",
       "upgrade_success": "升级成功！功能已解锁"
+    }
+  },
+  "astrocartographyGenerator": {
+    "ui": {
+      "title": "生成你的星盘地图",
+      "subtitle": "输入你的出生信息以创建个性化的星盘地图"
+    },
+    "form": {
+      "birthDate": {
+        "label": "出生日期",
+        "placeholder": "年/月/日"
+      },
+      "birthTime": {
+        "label": "出生时间",
+        "placeholder": "--:--"
+      },
+      "birthLocation": {
+        "label": "出生地点",
+        "placeholder": "输入你的出生城市...",
+        "placeholderCoordinates": "输入坐标（例如：40.7128, -74.0060）",
+        "useCoordinates": "使用坐标",
+        "useCityName": "使用城市名称"
+      },
+      "timezone": {
+        "label": "时区"
+      },
+      "buttons": {
+        "generate": "✨ 生成你的地图 ✨",
+        "generating": "生成中...",
+        "download": "下载地图",
+        "generateNew": "生成新地图"
+      },
+      "privacy": "您的数据会被安全处理且永远不会永久存储。我们在解锁宇宙洞察的同时尊重您的隐私。"
+    },
+    "messages": {
+      "error": {
+        "birthDateRequired": "请输入出生日期",
+        "birthTimeRequired": "请输入出生时间",
+        "birthLocationRequired": "请输入出生地点"
+      },
+      "success": {
+        "chartDownloaded": "地图下载成功！",
+        "generating": "正在生成你的星盘地图...",
+        "almostDone": "请稍候，即将完成",
+        "processing": "正在处理你的星盘数据...",
+        "mayTakeMoment": "这可能需要几秒钟"
+      },
+      "errorGeneral": {
+        "downloadFailed": "下载失败，请稍后重试"
+      }
+    },
+    "result": {
+      "title": "查看我的星盘地图！",
+      "description": "我刚刚生成了我的个性化星盘地图！发现你在世界各地的宇宙连接。",
+      "hashtags": ["星盘地图", "占星地图", "占星学", "宇宙连接", "出生星盘"]
     }
   }
 }

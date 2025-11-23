@@ -2,60 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- ========================================== -->
-  <!-- 当前生效：只有英文首页和法律页面                -->
-  <!-- 更新日期: 2025-11-12                        -->
+  <!-- 当前生效：英文首页、多语言首页和法律页面      -->
+  <!-- 更新日期: 2025-01-13                        -->
   <!-- ========================================== -->
   
   <!-- 英文首页 - 主关键词: astrocartography -->
   <url>
     <loc>https://astrocarto.org/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <!-- 多语言版本首页 -->
+  <!-- 西班牙语 - 主关键词: astrocartografía -->
+  <url>
+    <loc>https://astrocarto.org/es/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 意大利语 - 主关键词: astrocartografia -->
+  <url>
+    <loc>https://astrocarto.org/it/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 葡萄牙语 - 主关键词: astrocartografia -->
+  <url>
+    <loc>https://astrocarto.org/pt/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 中文 - 主关键词: 星盘地图 -->
+  <url>
+    <loc>https://astrocarto.org/zh/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- 法律页面（合规要求） -->
   <url>
     <loc>https://astrocarto.org/privacy-policy</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/terms-of-service</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
- 
+
   <!-- ═══════════════════════════════════════════════════════════
   待开放页面 - 完成后删除注释标记即可开放 Google 收录
   ═══════════════════════════════════════════════════════════ -->
-  
-  <!-- 多语言版本
-  ────────────────────────────────────────────────────────── -->
-  <!-- <url>
-    <loc>https://astrocarto.org/zh/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url> -->
-  
-  <!-- <url>
-    <loc>https://astrocarto.org/ms/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url> -->
-  
-  <!-- <url>
-    <loc>https://astrocarto.org/pt/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url> -->
   
   
   <!-- 功能页面

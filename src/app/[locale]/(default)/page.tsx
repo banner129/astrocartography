@@ -3,14 +3,15 @@ export const dynamic = 'force-static';
 export const revalidate = 604800;  // 7天缓存（内容很少变化，延长缓存降低 CPU）
 export const dynamicParams = true;
 
-// 预生成英文版本（未来可添加其他语言）
+// 预生成多语言版本（ISR 优化，7天缓存）
 export async function generateStaticParams() {
   return [
-    { locale: 'en' },  // 只生成英文版，节省 CPU
-    // 未来开放其他语言时取消注释：
-    // { locale: 'zh' },
-    // { locale: 'pt' },
-    // { locale: 'ms' },
+    { locale: 'en' },  // 英文版
+    { locale: 'es' },  // 西班牙语
+    { locale: 'it' },  // 意大利语
+    { locale: 'pt' },  // 葡萄牙语
+    { locale: 'zh' },  // 中文
+    // { locale: 'ms' },  // 马来语（暂不开放）
   ];
 }
 

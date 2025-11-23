@@ -22,7 +22,7 @@
     "buttons": [],
     "show_sign": false,
     "show_theme": false,
-    "show_locale": false
+    "show_locale": true
   },
   "hero": {
     "title": "Astrocartography Calculator - Discover Your Ideal Location",

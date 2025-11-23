@@ -42,9 +42,18 @@ function ChartContent() {
     const birthTime = searchParams.get('birthTime');
     const birthLocation = searchParams.get('birthLocation');
     const timezone = searchParams.get('timezone');
+    const latitude = searchParams.get('latitude');
+    const longitude = searchParams.get('longitude');
 
     if (birthDate && birthTime && birthLocation && timezone) {
-      const data = { birthDate, birthTime, birthLocation, timezone };
+      const data: any = { birthDate, birthTime, birthLocation, timezone };
+      
+      // 如果有坐标参数，添加坐标信息
+      if (latitude && longitude) {
+        data.latitude = parseFloat(latitude);
+        data.longitude = parseFloat(longitude);
+      }
+      
       setChartData(data);
       calculateChart(data);
     } else {

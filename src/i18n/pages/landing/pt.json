@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "Miniatur AI",
+      "title": "Calculadora de Astrocartografia",
       "logo": {
         "src": "/logo.png",
-        "alt": "Miniatur AI"
+        "alt": "Calculadora de Astrocartografia"
       },
       "url": "/"
     },
@@ -20,37 +20,36 @@
       ]
     },
     "buttons": [],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": false,
     "show_locale": true
   },
   "hero": {
-    "title": "Transforme Fotos em Obras-primas em Miniatura com Miniatur AI",
-    "highlight_text": "Miniatur AI",
-    "description": "Transforme fotos comuns em mundos em miniatura extraordinários com efeitos tilt-shift impressionantes e dioramas cativantes. Nossa tecnologia avançada Miniatur AI analisa cada pixel para criar efeitos autênticos de profundidade de campo que rivalizam com lentes caras de câmera. Basta carregar sua foto e assistir a inteligência artificial criar obras-primas em miniatura profissionais em segundos, perfeitas para redes sociais, portfólios e projetos criativos.",
+    "title": "Calculadora de Astrocartografia - Descubra sua Localização Ideal",
+    "highlight_text": "Grátis para Sempre",
+    "description": "A calculadora de astrocartografia projeta seu mapa natal no mundo, revelando onde as linhas planetárias amplificam sua carreira, relacionamentos e crescimento pessoal. Usando cálculos de nível NASA precisos até 1 milha, analisamos mais de 200.000 coordenadas globais para mostrar onde as energias planetárias do Sol, Vênus, Júpiter e outros planetas são mais fortes. Nômades digitais, pessoas que planejam realocação e entusiastas de astrologia confiam em nossa ferramenta gratuita para insights baseados em dados sobre localizações—sem cadastro, sem limites.",
     "announcement": {
-      "label": "100% GRÁTIS",
-      "title": "SEM LOGIN NECESSÁRIO",
+      "label": "100% Grátis",
+      "title": "Sem Registro • Mapas Ilimitados",
       "url": "/#features"
     },
-  
     "images": [
       {
-        "src": "/imgs/features/1.png",
-        "alt": "Exemplo de Transformação de Foto Miniatur AI 1",
-        "title": "Foto Original para Miniatura"
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "Exemplo de Mapa de Astrocartografia com Linhas Planetárias",
+        "title": "Seu Mapa de Astrocartografia Personalizado"
       },
       {
-        "src": "/imgs/features/2.png",
-        "alt": "Exemplo de Transformação de Foto Miniatur AI 2", 
-        "title": "Geração de Figura AI"
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "Interface da Calculadora de Astrocartografia",
+        "title": "Análise Profissional de Localização"
       }
     ],
     "layout": "left-image-right-content",
     "enable_carousel": true,
     "buttons": [
       {
-        "title": "Começar Criando Sem Login",
+        "title": "Gere seu Mapa de Astrocartografia Grátis",
         "icon": "RiMagicLine",
         "url": "/#generator",
         "target": "_self",
@@ -59,287 +58,286 @@
     ],
     "stats": [
       {
-        "value": "12,847+",
-        "label": "Usuários Confiáveis do Miniatur AI",
+        "value": "50,000+",
+        "label": "Mapas Gerados",
         "icon": "RiUserLine"
       },
       {
-        "value": "89,432+",
-        "label": "Imagens em Miniatura Geradas",
-        "icon": "RiImageLine"
+        "value": "200,000+",
+        "label": "Localizações Analisadas",
+        "icon": "RiMapPinLine"
       }
     ],
     "show_happy_users": true,
-    "show_badge": true
+    "show_badge": false
   },
   "branding": {
-    "title": "Impulsionado por tecnologia AI de ponta",
+    "title": "Alimentado por tecnologia de precisão astronômica",
     "items": [
       {
-        "title": "OpenAI",
+        "title": "Swiss Ephemeris",
         "image": {
           "src": "/imgs/logos/nextjs.svg",
-          "alt": "OpenAI"
+          "alt": "Swiss Ephemeris"
         }
       },
       {
-        "title": "Visão Computacional",
+        "title": "Dados de Nível NASA",
         "image": {
           "src": "/imgs/logos/react.svg",
-          "alt": "Visão Computacional"
+          "alt": "Cálculos de Nível NASA"
         }
       },
       {
-        "title": "Redes Neurais",
+        "title": "Interpretação com IA",
         "image": {
           "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "Redes Neurais"
+          "alt": "Análise com IA"
         }
       },
       {
-        "title": "Aprendizado de Máquina",
+        "title": "Cobertura Global",
         "image": {
           "src": "/imgs/logos/shadcn.svg",
-          "alt": "Aprendizado de Máquina"
+          "alt": "200,000+ Localizações"
         }
       },
       {
-        "title": "Processamento em Nuvem",
+        "title": "Privacidade em Primeiro Lugar",
         "image": {
           "src": "/imgs/logos/vercel.svg",
-          "alt": "Processamento em Nuvem"
+          "alt": "Processamento Local"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "O que é Miniatur AI",
+    "title": "O que é a Calculadora de Astrocartografia",
     "label": "Introdução",
-    "description": "Miniatur AI é uma plataforma revolucionária de inteligência artificial gratuita que transforma fotografias comuns em obras-primas em miniatura deslumbrantes. Usando algoritmos avançados de visão computacional e aprendizado de máquina, nossa ferramenta inteligente analisa composição de imagem, profundidade e iluminação para criar efeitos tilt-shift profissionais e cenas de diorama realistas em segundos. Seja você um fotógrafo profissional, criador de conteúdo ou hobbyista, o Miniatur AI oferece transformações em miniatura de qualidade de museu com precisão e velocidade incomparáveis.",
+    "description": "A calculadora de astrocartografia projeta seu mapa natal globalmente, mostrando onde os planetas estavam angulares no momento do seu nascimento.",
     "image": {
-      "src": "/imgs/features/3.png"
+      "src": "/imgs/features/hero-web.webp"
     },
     "items": [
       {
-        "title": "Análise Inteligente Impulsionada por AI",
-        "description": "Nosso sistema de inteligência artificial identifica inteligentemente pontos focais, camadas de profundidade e relações espaciais em suas fotos para criar efeitos em miniatura autênticos com gradientes de desfoque perfeitos e simulação profissional de profundidade de campo que combina com técnicas reais de fotografia tilt-shift.",
-        "icon": "RiRobot2Line"
+        "title": "Cálculos Planetários de Nível NASA",
+        "description": "A calculadora de astrocartografia utiliza Swiss Ephemeris, o padrão astronômico que corresponde aos dados planetários da NASA. Calculamos onde cada planeta (Sol, Lua, Vênus, Marte, Júpiter, Saturno) estava angular—ascendendo (ASC), pondo-se (DSC), culminando (MC), ou no nadir (IC)—no seu momento exato de nascimento em toda a superfície terrestre. Cada linha de astrocartografia é precisa até 1 milha, garantindo que seu mapa de astrocartografia corresponda aos cálculos de astrólogos profissionais. Quando você está em uma linha planetária, a energia desse planeta domina sua experiência ali.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Cálculos de astrocartografia de nível NASA"
+        }
       },
       {
-        "title": "Múltiplos Estilos em Miniatura",
-        "description": "Escolha entre fotografia tilt-shift, efeitos de diorama de brinquedo, modelos arquitetônicos em miniatura e estilos de figuras colecionáveis. Cada preset otimizado por AI oferece características únicas em miniatura adaptadas para diferentes composições fotográficas e visões criativas.",
-        "icon": "RiPaletteLine"
+        "title": "Interpretação de Localização com IA",
+        "description": "Nosso sistema analisa como seu mapa natal interage com mais de 200.000 coordenadas globais. A IA explica o que cada linha de astrocartografia significa: linhas de Vênus ativam amor e criatividade, linhas de Júpiter trazem oportunidades e expansão, linhas de Saturno fortalecem disciplina profissional. Não apenas mostramos onde estão as linhas—explicamos como ler os mapas de astrocartografia e o que cada localização significa para sua carreira, relacionamentos, saúde e criatividade, tornando a astrocartografia para realocação prática e acessível.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Interpretação de astrocartografia com IA"
+        }
       },
       {
-        "title": "Processamento AI Instantâneo",
-        "description": "Processamento avançado de inteligência artificial baseado em nuvem oferece efeitos em miniatura profissionais em menos de 10 segundos. Nenhuma instalação de software complexa, requisitos de pagamento ou conhecimento técnico necessário para criar resultados impressionantes.",
-        "icon": "RiTimeLine"
+        "title": "Exportação Instantânea em Múltiplos Formatos",
+        "description": "Gere seu mapa de astrocartografia em 3 segundos, depois baixe arquivos PNG de alta resolução, PDF ou SVG. Os mapas marcam claramente todas as linhas planetárias, pontos de poder (interseções de linhas) e nomes de cidades. Combinado com relatórios de interpretação com IA, seu mapa de astrocartografia está pronto para planejamento pessoal, consultas profissionais ou decisões de realocação em equipe. Todos os arquivos estão livres de marcas d'água com direitos comerciais completos.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Exporte mapas de astrocartografia instantaneamente"
+        }
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Por que Escolher Miniatur AI",
-    "label": "Benefícios",
-    "description": "Fotógrafos profissionais e criadores de conteúdo em todo o mundo confiam no Miniatur AI para análise superior de imagem, efeitos autênticos em miniatura e processamento AI ultrarrápido. Nosso sistema de inteligência artificial compreende princípios fotográficos para entregar resultados que rivalizam com equipamento de câmera caro e horas de trabalho de edição manual.",
+    "title": "Por Que Escolher Nossa Calculadora de Astrocartografia",
+    "label": "Benefícios Principais",
+    "description": "Nossa calculadora de astrocartografia combina precisão astronômica com interpretação com IA, oferecendo análise de nível profissional que é completamente gratuita e focada em privacidade.",
     "items": [
       {
-        "title": "Resultados em Miniatura de Qualidade Profissional",
-        "description": "Miniatur AI produz efeitos em miniatura de qualidade de museu que mantêm profundidade de campo adequada, padrões de desfoque realistas e características autênticas de tilt-shift encontradas na fotografia profissional em miniatura. Nossa AI garante que cada transformação atenda aos padrões da indústria.",
-        "icon": "RiStarLine",
+        "title": "Precisão Profissional, Completamente Grátis",
+        "description": "Enquanto os concorrentes cobram $15,9/mês por análise com IA ou $22,90 por relatórios PDF, nossa calculadora de astrocartografia oferece acesso ilimitado gratuito. Usamos a mesma biblioteca Swiss Ephemeris na qual o software profissional de $360 confia, com precisão de 1 milha que corresponde aos padrões da NASA. Gere mapas de astrocartografia ilimitados, baixe arquivos livres de marcas d'água e acesse interpretações com IA—sem cartão de crédito, sem taxas ocultas. Seja você estudante, empreendedor ou aposentado, acesse análise profissional de astrocartografia sem custo.",
+        "icon": "RiGiftLine",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Calculadora profissional de astrocartografia grátis"
         }
       },
       {
-        "title": "Reconhecimento Inteligente de Cena",
-        "description": "Nossa AI avançada analisa elementos arquitetônicos, paisagens, pessoas e objetos para aplicar automaticamente o efeito em miniatura mais adequado para seu conteúdo fotográfico e composição específicos. Inteligência artificial inteligente se adapta a qualquer tipo de cena.",
-        "icon": "RiBrainLine",
+        "title": "Orientação Honesta e Consciente do Contexto",
+        "description": "Ao contrário de ferramentas que prometem resultados garantidos, reconhecemos que a astrocartografia mostra potencial energético, não certezas. Uma linha de Vênus pode melhorar relacionamentos ou mostrar desafios relacionais que você precisa abordar. Nossa IA considera o contexto do seu mapa pessoal, estágio atual da vida e interações planetárias. As perguntas frequentes afirmam honestamente: use os mapas de astrocartografia como um fator entre considerações práticas como oportunidades de carreira, custo de vida e requisitos de visto. A astrologia real respeita a complexidade—nós também.",
+        "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/6.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Orientação honesta de astrocartografia"
         }
       },
       {
-        "title": "Fluxo de Trabalho em Miniatura Sem Esforço",
-        "description": "Pule software de edição de fotos complexo e equipamento caro. Miniatur AI transforma suas fotos em resultados profissionais em miniatura com apenas um clique, economizando horas de trabalho manual enquanto oferece resultados consistentes de alta qualidade.",
-        "icon": "RiSpeedLine",
+        "title": "Arquitetura com Prioridade à Privacidade",
+        "description": "Seus dados de nascimento são calculados localmente no seu navegador—nunca enviados para servidores, nunca armazenados em bancos de dados, nunca compartilhados com terceiros. Gere seu mapa de astrocartografia com privacidade completa. Todos os arquivos têm direitos comerciais completos: use-os para planejamento pessoal, consultas profissionais de astrologia, ensino ou publicação sem taxas de licença. Privacidade e qualidade profissional não deveriam ser exclusivas para clientes pagantes.",
+        "icon": "RiLockLine",
         "image": {
-          "src": "/imgs/features/7.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Ferramenta de astrocartografia focada em privacidade"
         }
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "Como Criar Miniaturas com Miniatur AI",
-    "description": "Transforme suas fotos em obras-primas em miniatura deslumbrantes em quatro passos simples. Nosso sistema Miniatur AI lida com toda análise complexa de imagem e processamento automaticamente, entregando resultados profissionais em miniatura sempre com precisão de inteligência artificial.",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
+    "title": "Como Usar a Calculadora de Astrocartografia",
+    "description": "Gere seu mapa profissional de astrocartografia em 4 passos simples.",
     "items": [
       {
-        "title": "Carregue Sua Foto",
-        "description": "Simplesmente arraste e solte qualquer imagem JPEG ou PNG de até 10MB. Miniatur AI aceita fotos de paisagens, arquitetura, pessoas e objetos para transformação em miniatura. Nossa AI funciona melhor com imagens de alta resolução.",
-        "icon": "RiUploadLine"
+        "title": "Insira Informações de Nascimento",
+        "description": "Insira sua data de nascimento, hora (o mais preciso possível até o minuto) e cidade. Sem a hora exata de nascimento, você ainda verá linhas planetárias (Sol, Lua, Vênus, etc.) mas não linhas angulares (ASC, DSC, MC, IC). Nosso banco de dados inclui mais de 100.000 cidades globais com tratamento automático de fuso horário e histórico de horário de verão.",
+        "icon": "RiCalendarLine"
       },
       {
-        "title": "Escolha o Estilo em Miniatura",
-        "description": "Selecione de nossos presets otimizados por AI: fotografia tilt-shift, diorama de brinquedo, modelo arquitetônico em miniatura ou estilo de figura colecionável. Cada preset é ajustado finamente por inteligência artificial para diferentes tipos de fotos e composições.",
-        "icon": "RiSettings3Line"
+        "title": "Selecione Linhas Planetárias",
+        "description": "Escolha quais planetas exibir: Sol (confiança, identidade), Lua (emoções, segurança), Vênus (amor, estética), Marte (ação, competição), Júpiter (oportunidades, crescimento), Saturno (disciplina, carreira), além de Urano, Netuno e Plutão. O sistema renderiza as linhas de astrocartografia em tempo real no mapa mundial.",
+        "icon": "RiPlanetLine"
       },
       {
-        "title": "Magia do Processamento AI",
-        "description": "Nossa Miniatur AI analisa informações de profundidade, aplica efeitos de desfoque inteligentes e cria características autênticas em miniatura. Algoritmos avançados de inteligência artificial garantem resultados de qualidade profissional em segundos.",
-        "icon": "RiMagicLine"
+        "title": "Explore Mapa Interativo e Insights com IA",
+        "description": "Clique em qualquer linha planetária ou ponto de poder (interseção de linhas) para obter uma interpretação detalhada com IA. Aprenda como esse planeta afeta sua carreira, relacionamentos, saúde e criatividade nessa localização, além de se é adequado para residência de longo prazo, visitas curtas, trabalho ou estudo. Sem limites de consulta—explore o quanto precisar.",
+        "icon": "RiMapLine"
       },
       {
-        "title": "Baixar e Compartilhar",
-        "description": "Salve sua criação em miniatura em alta resolução. Perfeito para redes sociais, portfólios ou impressão. Compartilhe sua arte em miniatura única gerada por AI com o mundo e mostre resultados de transformação profissional.",
+        "title": "Exporte Arquivos Profissionais",
+        "description": "Baixe mapas PNG de alta resolução, relatórios de interpretação PDF ou arquivos vetoriais SVG com um clique. Todos os arquivos estão livres de marcas d'água e suportam uso comercial. Imprima para reuniões de consulta, compartilhe com amigos ou use em decisões de realocação em equipe.",
         "icon": "RiDownloadLine"
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Recursos Avançados do Miniatur AI",
-    "description": "Descubra as poderosas capacidades de inteligência artificial que tornam nosso gerador de miniaturas a ferramenta AI mais avançada disponível para transformação de fotos e projetos de edição criativa.",
+    "title": "Recursos da Calculadora Profissional de Astrocartografia",
+    "description": "Seis recursos principais garantem tanto precisão astronômica quanto usabilidade prática.",
     "items": [
       {
-        "title": "Detecção Inteligente de Profundidade",
-        "description": "Miniatur AI usa visão computacional para analisar profundidade da imagem e criar automaticamente planos focais realistas, garantindo efeitos autênticos de miniatura tilt-shift com precisão profissional de profundidade de campo.",
-        "icon": "RiEyeLine"
+        "title": "Mapa Global Interativo",
+        "description": "Arraste, amplie e clique em qualquer cidade para visualizar instantaneamente sua distribuição de energia planetária. Os mapas suportam visualizações de satélite, terreno e limites políticos, ajudando você a entender como as linhas de astrocartografia correspondem à geografia real. Pontos de poder (interseções de linhas) são destacados—essas zonas de convergência energética são pontos-chave de foco na astrocartografia para decisões de realocação.",
+        "icon": "RiGlobalLine"
       },
       {
-        "title": "Otimização de Estilo AI",
-        "description": "Nossos algoritmos de aprendizado de máquina ajustam automaticamente intensidade de desfoque, profundidade de campo e saturação de cor baseados no conteúdo e composição da sua foto para resultados ótimos em miniatura.",
-        "icon": "RiSettings2Line"
+        "title": "Motor de Cálculo Swiss Ephemeris",
+        "description": "Usamos Swiss Ephemeris, suportando cálculos planetários de 3000 a.C. a 3000 d.C. Mantida pelo Observatório de Zurique, esta biblioteca corresponde à precisão das órbitas planetárias NASA JPL e alimenta software profissional de astrologia em todo o mundo. Quer esteja analisando figuras históricas ou planejando realocações futuras, a precisão do seu mapa de astrocartografia corresponde a software profissional de $360.",
+        "icon": "RiCompassLine"
       },
       {
-        "title": "Processamento em Lote",
-        "description": "Carregue múltiplas fotos e aplique efeitos consistentes do Miniatur AI em toda sua coleção. Perfeito para criar séries de fotografia em miniatura coesas com processamento unificado de inteligência artificial.",
-        "icon": "RiStackLine"
+        "title": "Cobertura Global Multi-idioma",
+        "description": "Pesquise cidades em chinês, inglês, japonês e mais em mais de 100.000 localizações com dados históricos de fuso horário. O sistema trata automaticamente mudanças de horário de verão (como mudanças nas regras de horário de verão dos EUA 1970-2007) e ajustes de limites de fuso horário, garantindo mapas de astrocartografia precisos independentemente do país de nascimento ou era.",
+        "icon": "RiTranslate"
       },
       {
-        "title": "Saída de Alta Resolução",
-        "description": "Gere imagens em miniatura até resolução 4K mantendo detalhes nítidos e transições de desfoque suaves. Processamento AI de qualidade profissional para qualquer caso de uso comercial ou criativo.",
-        "icon": "RiHdLine"
+        "title": "Filtragem Inteligente de Linhas Planetárias",
+        "description": "Exiba ou oculte combinações específicas de linhas planetárias sem limites. Mostre apenas linhas Sol+Júpiter para cidades de carreira, apenas linhas Vênus+Lua para localizações de segurança emocional, ou oculte linhas Saturno+Plutão para evitar zonas de alto desafio. Salve configurações de filtro favoritas para comparar rapidamente diferentes combinações planetárias e encontrar localizações que correspondam aos objetivos do seu estágio atual de vida.",
+        "icon": "RiFilterLine"
       },
       {
-        "title": "Visualização em Tempo Real",
-        "description": "Veja sua transformação em miniatura instantaneamente enquanto ajusta configurações. Miniatur AI fornece feedback imediato para resultados perfeitos sempre com processamento de inteligência artificial ao vivo.",
-        "icon": "RiLiveLine"
+        "title": "Análise Energética de Pontos de Poder",
+        "description": "A IA identifica e destaca automaticamente interseções de linhas (pontos de poder) onde múltiplas energias planetárias se ativam simultaneamente. Esses cruzamentos tipicamente exercem influência mais forte do que linhas individuais. Por exemplo: interseções Vênus+Júpiter podem trazer oportunidades românticas e crescimento da riqueza, enquanto interseções Saturno+Plutão são adequadas para transformação profunda e reconstrução de carreira.",
+        "icon": "RiStarLine"
       },
       {
-        "title": "Exportação e Compartilhamento Fáceis",
-        "description": "Baixe suas criações em miniatura em múltiplos formatos ou compartilhe diretamente em plataformas de redes sociais. Mostre sua arte em miniatura gerada por AI sem esforço com resultados profissionais.",
-        "icon": "RiShareLine"
+        "title": "Histórico e Comparação Multi-Pessoa",
+        "description": "O sistema salva automaticamente seu histórico de geração, suportando carregamento simultâneo de múltiplos mapas de astrocartografia para comparação. Compare sobreposições de suas linhas planetárias com as de um parceiro, identifique interseções de linhas de Júpiter entre membros da equipe, ou compare mudanças de mapas de trânsito ao longo dos anos. Para realocações em equipe, mudanças familiares ou seleção de localização de parceiros, sobreponha rapidamente as distribuições de múltiplas pessoas.",
+        "icon": "RiTeamLine"
       }
     ]
   },
-  "stats": {
-    "name": "stats",
-    "label": "Estatísticas",
-    "title": "Criadores Confiam no Miniatur AI",
-    "description": "para efeitos em miniatura de qualidade profissional e processamento AI ultrarrápido em todo o mundo.",
-    "icon": "RiHeartLine",
+  "faq": {
+    "name": "faq",
+    "label": "Perguntas Frequentes",
+    "title": "Perguntas Frequentes da Calculadora de Astrocartografia - Respostas para Perguntas Comuns",
+    "description": "Respostas reais para perguntas que nossos usuários realmente fazem.",
     "items": [
       {
-        "title": "Usuários Confiáveis",
-        "label": "12,847+",
-        "description": "Criadores"
+        "title": "E se eu não souber minha hora exata de nascimento?",
+        "description": "Você ainda pode usar a Calculadora de Astrocartografia! Sem a hora exata, não podemos mostrar suas linhas ASC/DSC/MC/IC, mas você ainda verá linhas planetárias (Sol, Lua, Vênus, etc.) que revelam muito sobre a compatibilidade da localização. Para melhores resultados, verifique sua certidão de nascimento ou entre em contato com o hospital onde você nasceu."
       },
       {
-        "title": "Imagens Geradas",
-        "label": "89,432+",
-        "description": "Miniaturas"
+        "title": "Me senti terrível vivendo na minha linha de Vênus. O mapa está errado?",
+        "description": "A astrocartografia mostra energias potenciais, não garantias. Uma linha de Vênus pode melhorar relacionamentos, mas também pode amplificar desafios relacionais que você precisa trabalhar. O contexto importa—seu mapa pessoal, circunstâncias de vida e outras influências planetárias desempenham um papel. Nossa interpretação com IA pode ajudá-lo a entender essas nuances."
       },
       {
-        "title": "Velocidade de Processamento",
-        "label": "<10",
-        "description": "Segundos"
+        "title": "Quão precisos são os cálculos?",
+        "description": "Usamos cálculos planetários de nível NASA, precisos até 1 milha na superfície terrestre. Nossos cálculos levam em conta fusos horários, horário de verão e mudanças históricas de calendário. Esta é a mesma precisão na qual astrólogos profissionais confiam para consultas."
+      },
+      {
+        "title": "Devo me mudar baseado apenas no meu mapa de astrocartografia?",
+        "description": "Não. A astrocartografia é uma ferramenta poderosa para entender energias de localização, mas não deve ser sua única consideração. Leve em conta questões práticas como oportunidades de carreira, custo de vida, requisitos de visto e conexões pessoais. Use nossos mapas como uma entrada entre muitas para tomar decisões de vida."
+      },
+      {
+        "title": "Posso usar os mapas gerados comercialmente?",
+        "description": "Sim. Seus mapas de astrocartografia gerados e relatórios de interpretação podem ser usados para qualquer finalidade: planejamento pessoal, consultas profissionais de astrologia, ensino, publicações, compartilhamento social, etc., sem taxas de licença. Seus dados de nascimento são calculados localmente com proteção completa de privacidade."
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
     "label": "Depoimentos",
-    "title": "O que Criadores Dizem Sobre Miniatur AI",
-    "description": "Feedback real de fotógrafos e artistas usando Miniatur AI para seus projetos criativos e transformações profissionais em miniatura.",
+    "title": "Usuários Reais Compartilham Suas Experiências com Astrocartografia",
+    "description": "Os usuários compartilham como nossa calculadora de astrocartografia informou suas decisões de realocação.",
     "icon": "RiThumbUpLine",
     "items": [
       {
-        "title": "Sarah Mitchell",
-        "label": "Fotógrafa Profissional",
-        "description": "Miniatur AI entrega resultados que rivalizam com minha lente tilt-shift cara. A inteligência artificial compreende profundidade melhor que qualquer software de edição que usei para fotografia em miniatura.",
+        "title": "Sophia Chen",
+        "label": "Nômade Digital",
+        "description": "Como nômade digital, usei a calculadora de astrocartografia para analisar mais de 20 cidades candidatas. Escolhi Lisboa onde minha linha de Vênus passa, e depois de chegar, meu círculo social se expandiu rapidamente—até conheci meu parceiro atual. A astrocartografia não é mágica, mas me ajudou a entender por que certas cidades se sentem mais confortáveis.",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "James Rodriguez",
-        "label": "Criador de Conteúdo",
-        "description": "Esta AI é incrível! Eu crio conteúdo de estilo miniatura para Instagram em segundos. Meu engajamento aumentou 300% desde que uso Miniatur AI para criação de conteúdo de rede social.",
+        "title": "Marcus Liu",
+        "label": "Consultor de Astrologia",
+        "description": "60% das minhas consultas com clientes envolvem perguntas de realocação. A calculadora de astrocartografia me permite mostrar rapidamente aos clientes suas distribuições de linhas planetárias, combinada com análise de mapa de realocação. Um cliente teve sucesso iniciando um negócio em uma cidade de linha de Júpiter e indicou 5 amigos. Esta ferramenta elevou o profissionalismo do meu serviço.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "Emily Chen",
-        "label": "Artista Digital",
-        "description": "Os efeitos em miniatura são tão realistas. Miniatur AI me poupa horas de edição manual enquanto produz resultados de qualidade profissional sempre com processamento avançado de inteligência artificial.",
+        "title": "Elena Rodriguez",
+        "label": "Estudante de Astrologia",
+        "description": "Depois de estudar astrocartografia por 2 anos e testar várias ferramentas pagas, os resultados do Swiss Ephemeris desta calculadora correspondem exatamente ao meu software Solar Fire, mas com uma interface mais amigável e interpretações mais claras. Altamente recomendado para todos os estudantes de astrologia.",
         "image": {
           "src": "/imgs/users/3.png"
         }
       },
       {
-        "title": "Michael Thompson",
-        "label": "Blogueiro de Viagem",
-        "description": "Eu uso Miniatur AI para todas minhas fotos de viagem agora. Os efeitos em miniatura fazem cenas comuns parecerem mundos pequenos mágicos com qualidade de transformação AI profissional.",
+        "title": "James Park",
+        "label": "Empreendedor",
+        "description": "Ao planejar abrir uma filial na Ásia, usei a calculadora de astrocartografia para analisar Singapura, Bangkok e Tóquio. Escolhi Bangkok onde minhas linhas de Sol e Júpiter convergem, e o desenvolvimento superou as expectativas. Mas entendo: a astrocartografia é apenas um fator de referência—o ambiente de negócios e a pesquisa de mercado importam igualmente.",
         "image": {
           "src": "/imgs/users/6.png"
         }
-      }
-    ]
-  },
-  "faq": {
-    "name": "faq",
-    "label": "FAQ",
-    "title": "Perguntas Frequentes Sobre Miniatur AI",
-    "description": "Tem dúvidas sobre nosso gerador de miniaturas AI? Encontre respostas aqui ou entre em contato com nossa equipe de suporte para assistência com transformações de fotos em miniatura.",
-    "items": [
-      {
-        "title": "Como o Miniatur AI cria efeitos em miniatura?",
-        "description": "Miniatur AI usa algoritmos avançados de visão computacional e aprendizado de máquina para analisar profundidade da imagem, identificar pontos focais e aplicar efeitos autênticos de tilt-shift. Nossa inteligência artificial compreende princípios fotográficos para criar transformações em miniatura realistas que rivalizam com equipamento de câmera profissional e técnicas de edição manual."
       },
       {
-        "title": "Que tipos de fotos funcionam melhor com Miniatur AI?",
-        "description": "Miniatur AI funciona excelentemente com paisagens, arquitetura, paisagens urbanas e fotografia aérea. Fotos com profundidade clara e assuntos interessantes produzem os efeitos em miniatura mais dramáticos. Nossa inteligência artificial se adapta automaticamente a diferentes composições fotográficas para resultados ótimos de transformação em miniatura."
+        "title": "Amelia Wang",
+        "label": "Conselheira de Saúde Mental",
+        "description": "Integro mapas de astrocartografia em consultas de planejamento de carreira de clientes. Muitos clientes sentem que 'algo está errado' em certas cidades mas não conseguem explicar por quê—a astrocartografia fornece uma estrutura interpretativa. A proteção de privacidade é excelente; os clientes podem gerar mapas por si mesmos e trazê-los para discutir.",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
       },
       {
-        "title": "Posso usar Miniatur AI comercialmente?",
-        "description": "Sim! Todas as imagens em miniatura criadas com Miniatur AI podem ser usadas para propósitos comerciais incluindo marketing de redes sociais, trabalho de portfólio e projetos de cliente. Você retém direitos completos sobre suas criações em miniatura geradas por AI e transformações profissionais."
-      },
-      {
-        "title": "Que formatos de arquivo o Miniatur AI suporta?",
-        "description": "Miniatur AI aceita formatos de imagem JPEG, JPG, PNG e WebP de até 10MB de tamanho. Para melhores resultados de transformação em miniatura, recomendamos fotos de alta resolução com boa iluminação e profundidade de campo clara para processamento AI ótimo."
-      },
-      {
-        "title": "Miniatur AI é realmente gratuito para usar?",
-        "description": "Absolutamente! Miniatur AI é completamente gratuito para usar para sempre sem custos ocultos, sem inscrição necessária e sem marcas d'água. Desfrute de transformações em miniatura ilimitadas com resultados AI de qualidade profissional a custo zero para todos seus projetos criativos."
+        "title": "David Kim",
+        "label": "Planejador de Aposentadoria",
+        "description": "Antes da aposentadoria, pesquisei 10 localizações candidatas. A calculadora de astrocartografia mostrou minha linha de Lua passando pela Ilha Sul da Nova Zelândia. Depois de visitas ao local, escolhi a Nova Zelândia e realmente senti paz emocional e pertencimento. Mas também valorizei recursos de saúde e custo de vida. Os mapas de astrocartografia são pontos de partida excelentes.",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Transforme Suas Fotos com Miniatur AI Grátis Hoje",
-    "description": "Junte-se a milhares de criadores usando nossa inteligência artificial gratuita para criar efeitos deslumbrantes de fotografia em miniatura. Comece sua jornada gratuita de transformação em miniatura agora com tecnologia AI avançada - sem pagamento, sem inscrição necessária!",
+    "title": "Gere seu Mapa de Astrocartografia Grátis Agora",
+    "description": "Use a Calculadora de Astrocartografia para criar seu mapa profissional de astrocartografia com precisão de nível NASA analisando mais de 200.000 localizações globais. Descubra cidades ideais para sua carreira, relacionamentos e crescimento pessoal. Sem registro necessário, uso ilimitado—obtenha análise profissional em 3 segundos.",
     "buttons": [
       {
-        "title": "Começar Grátis Agora",
-        "icon": "RiGiftLine",
+        "title": "Gere Mapa Grátis Agora",
+        "icon": "RiMapLine",
         "url": "/#generator",
         "target": "_self",
         "variant": "default"
@@ -349,28 +347,38 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "Miniatur AI",
-      "description": "Miniatur AI transforma fotos comuns em obras-primas em miniatura extraordinárias usando tecnologia avançada de inteligência artificial. Crie efeitos tilt-shift profissionais, cenas de diorama e miniaturas de estilo colecionável em segundos com nossa plataforma AI revolucionária.",
+      "title": "Calculadora de Astrocartografia",
+      "description": "A Calculadora de Astrocartografia fornece ferramentas profissionais de astrocartografia para nômades digitais, planejadores de realocação e praticantes de astrologia. Usamos Swiss Ephemeris para garantir precisão astronômica, e a tecnologia IA torna as interpretações complexas de linhas planetárias acessíveis. Proteção rigorosa de privacidade, análise de mais de 200.000 localizações globais—tornando mapas profissionais de astrocartografia acessíveis a todos.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Miniatur AI"
+        "alt": "Calculadora de Astrocartografia"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • Miniatur AI. Todos os direitos reservados.",
+    "copyright": "© 2025 • Calculadora de Astrocartografia. Todos os direitos reservados.",
     "nav": {
       "items": [
         {
-          "title": "Sobre",
-          "url": "/about"
+          "title": "Produto",
+          "children": []
         },
         {
           "title": "Recursos",
-          "url": "/#features"
+          "children": [
+            {
+              "title": "Perguntas Frequentes",
+              "url": "/#faq"
+            },
+            {
+              "title": "AIStage",
+              "url": "https://aistage.net",
+              "target": "_blank"
+            }
+          ]
         },
         {
-          "title": "Amigos",
-          "url": "/#usage"
+          "title": "Comunidade",
+          "children": []
         }
       ]
     },
@@ -379,31 +387,52 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/miniaturaiapp",
+          "url": "https://x.com/astrocartography",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/miniaturaiapp",
+          "url": "https://github.com/astrocartography",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/miniaturaiapp",
+          "url": "https://discord.gg/astrocartography",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@miniaturaiapp.com",
+          "url": "mailto:support@astrocartography.com",
           "target": "_self"
         }
       ]
     },
     "badges": [
-      
+      {
+        "title": "Destaque no ShowMeBestAI",
+        "url": "https://www.showmebest.ai",
+        "target": "_blank",
+        "image": {
+          "src": "https://www.showmebest.ai/badge/feature-badge-white.webp",
+          "alt": "Destaque no ShowMeBestAI",
+          "width": 220,
+          "height": 60
+        }
+      },
+      {
+        "title": "Destaque no Aura++",
+        "url": "https://auraplusplus.com/projects/astrocarto",
+        "target": "_blank",
+        "image": {
+          "src": "https://auraplusplus.com/images/badges/featured-on-light.svg",
+          "alt": "Destaque no Aura++",
+          "width": 220,
+          "height": 60
+        }
+      }
     ],
     "agreement": {
       "items": [

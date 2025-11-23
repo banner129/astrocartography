@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "title": "Calcolatore Astrocartografia Gratis con IA — Mappa Natale Precisa e Analisi di Trasferimento",
+    "description": "Usa un calcolatore astrocartografia gratis con IA. Ottieni linee planetarie precise, analisi di trasferimento e interpretazioni istantanee della mappa. Nessuna registrazione, nessuna pubblicità: solo astrocartografia precisa migliorata con IA.",
+    "keywords": "calcolatore astrocartografia gratis, astrocartografia IA, mappa astrocartografia online gratis, mappa posizione tema natale, linee astrocartografia, strumento astrologia trasferimento, calcolatore linee planetarie, interpretazione IA astrocartografia, carta astrocartografia precisa, miglior mappa astrologia gratis"
+  },
+  "user": {
+    "sign_in": "Accedi",
+    "sign_out": "Esci",
+    "credits": "Crediti",
+    "api_keys": "Chiavi API",
+    "my_orders": "I Miei Ordini",
+    "user_center": "Centro Utente"
+  },
+  "sign_modal": {
+    "sign_in_title": "Accedi",
+    "sign_in_description": "Accedi al tuo account",
+    "sign_up_title": "Registrati",
+    "sign_up_description": "Crea un account",
+    "email_title": "Email",
+    "email_placeholder": "Inserisci la tua email qui",
+    "password_title": "Password",
+    "password_placeholder": "Inserisci la tua password qui",
+    "forgot_password": "Password dimenticata?",
+    "or": "O",
+    "continue": "Continua",
+    "no_account": "Non hai un account?",
+    "email_sign_in": "Accedi con Email",
+    "google_sign_in": "Accedi con Google",
+    "github_sign_in": "Accedi con GitHub",
+    "close_title": "Chiudi",
+    "cancel_title": "Annulla"
+  },
+  "my_orders": {
+    "title": "I Miei Ordini",
+    "description": "Ordini effettuati su Astrocartography Calculator.",
+    "no_orders": "Nessun ordine trovato",
+    "tip": "",
+    "activate_order": "Attiva Ordine",
+    "actived": "Attivato",
+    "join_discord": "Unisciti a Discord",
+    "read_docs": "Leggi Documentazione",
+    "table": {
+      "order_no": "Numero Ordine",
+      "email": "Email",
+      "product_name": "Nome Prodotto",
+      "amount": "Importo",
+      "paid_at": "Pagato il",
+      "github_username": "Username GitHub",
+      "status": "Stato"
+    }
+  },
+  "my_credits": {
+    "title": "I Miei Crediti",
+    "left_tip": "crediti rimanenti: {left_credits}",
+    "no_credits": "Nessun record di crediti",
+    "recharge": "Ricarica",
+    "table": {
+      "trans_no": "Numero Transazione",
+      "trans_type": "Tipo Transazione",
+      "credits": "Crediti",
+      "updated_at": "Aggiornato il",
+      "status": "Stato"
+    }
+  },
+  "api_keys": {
+    "title": "Chiavi API",
+    "tip": "Per favore, mantieni la tua chiave API al sicuro per evitare perdite",
+    "no_api_keys": "Nessuna Chiave API",
+    "create_api_key": "Crea Chiave API",
+    "table": {
+      "name": "Nome",
+      "key": "Chiave",
+      "created_at": "Creato il"
+    },
+    "form": {
+      "name": "Nome",
+      "name_placeholder": "Nome della Chiave API",
+      "submit": "Invia"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Notizie, risorse e aggiornamenti su Astrocartography Calculator",
+    "read_more_text": "Leggi di Più",
+    "tools_notice": {
+      "text": "Cerchi strumenti pratici? Oltre questi tutorial, esplora la nostra suite completa di strumenti di astrocartografia sulla nostra",
+      "link_text": "pagina principale di Astrocartography Calculator",
+      "suffix": "per la creazione immediata di mappe astrocartografiche e funzioni avanzate."
+    }
+  },
+  "my_invites": {
+    "title": "I Miei Inviti",
+    "description": "Visualizza i tuoi record di inviti",
+    "no_invites": "Nessun record di inviti trovato",
+    "my_invite_link": "Il Mio Link di Invito",
+    "edit_invite_link": "Modifica Link di Invito",
+    "copy_invite_link": "Copia Link di Invito",
+    "invite_code": "Codice di Invito",
+    "invite_tip": "Invita 1 amico a usare Astrocartography Calculator, ricompensa $50.",
+    "invite_balance": "Saldo Ricompense Invito",
+    "total_invite_count": "Totale Inviti",
+    "total_paid_count": "Totale Pagamenti",
+    "total_award_amount": "Importo Totale Premi",
+    "update_invite_code": "Imposta Codice di Invito",
+    "update_invite_code_tip": "Inserisci il tuo codice di invito personalizzato",
+    "update_invite_button": "Salva",
+    "no_orders": "Non puoi invitare altri prima di aver acquistato Astrocartography Calculator",
+    "no_affiliates": "Non hai il permesso di invitare altri, per favore contattaci per richiedere il permesso.",
+    "table": {
+      "invite_time": "Ora Invito",
+      "invite_user": "Utente Invitato",
+      "status": "Stato",
+      "reward_percent": "Percentuale Ricompensa",
+      "reward_amount": "Importo Ricompensa",
+      "pending": "In Attesa",
+      "completed": "Completato"
+    }
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "Ci piacerebbe sapere cosa è andato bene o come possiamo migliorare l'esperienza di Astrocartography Calculator.",
+    "submit": "Invia",
+    "loading": "Invio in corso...",
+    "contact_tip": "Altri modi per contattarci",
+    "rating_tip": "Come ti senti riguardo Astrocartography Calculator?",
+    "placeholder": "Lascia i tuoi commenti qui..."
+  },
+  "share": {
+    "title": "Condividi questa carta astrocartografica",
+    "text": "Ho appena creato questa carta astrocartografica GRATIS usando astrocarto.org! Provalo tu stesso:",
+    "preparing": "Preparazione per la condivisione...",
+    "success": "Link copiato negli appunti!",
+    "failed": "Errore nella copia del link",
+    "uploading": "Preparazione carta per la condivisione...",
+    "platforms": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "pinterest": "Pinterest",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "reddit": "Reddit",
+      "copy": "Copia"
+    }
+  },
+  "graffitiGenerator": {
+    "ui": {
+      "title": "Crea la Tua Arte Graffiti con Generatore Gratis",
+      "subtitle": "Trasforma il tuo testo in arte di strada sorprendente con IA"
+    },
+    "upload": {
+      "title": "Scegli Stile Graffiti",
+      "subtitle": "Seleziona tra più di 50 font graffiti professionali",
+      "dragDrop": "Esplora la nostra collezione diversificata di font graffiti",
+      "fileInfo": "Lettere Bolla • Wildstyle • Effetti 3D • Moderno e Altro"
+    },
+    "instructions": {
+      "title": "Inserisci il Tuo Testo",
+      "subtitle": "Digita il testo che vuoi trasformare in graffiti",
+      "translate": "Traduci",
+      "autoTranslateEnabled": "Traduzione automatica abilitata"
+    },
+    "usage": {
+      "remaining": "Generazioni graffiti gratuite rimanenti: {remaining}/3",
+      "signInTip": "Accedi per creazioni graffiti illimitate!",
+      "limitReached": "Limite giornaliero raggiunto (3/3 generazioni gratuite usate)",
+      "signInUnlimited": "Accedi per accesso illimitato o riprova domani!"
+    },
+    "buttons": {
+      "generate": "Genera Graffiti",
+      "generating": "Creazione del Tuo Graffiti...",
+      "limitReached": "Limite Giornaliero Raggiunto - Accedi",
+      "download": "Scarica Graffiti",
+      "regenerate": "Prova Un Altro Stile"
+    },
+    "result": {
+      "title": "Pronto per Creare",
+      "subtitle": "Inserisci il tuo testo per vedere la magia del graffiti",
+      "readyTitle": "Il Tuo Generatore Graffiti Gratis ti Aspetta",
+      "readySubtitle": "Digita il tuo testo e scegli tra più di 50 stili diversi di graffiti. Crea arte di strada professionale in secondi.",
+      "willAppear": "Il tuo graffiti personalizzato apparirà qui",
+      "creating": "Creazione del tuo arte graffiti...",
+      "almostDone": "Quasi fatto! Il tuo graffiti sta prendendo forma",
+      "takeFewMoments": "Questo potrebbe richiedere alcuni momenti"
+    },
+    "messages": {
+      "uploadValidImage": "Per favore seleziona uno stile graffiti valido",
+      "imageTooLarge": "Il testo è troppo lungo, per favore mantienilo sotto i 50 caratteri",
+      "uploadSuccess": "Stile graffiti selezionato con successo",
+      "pleaseUploadImage": "Per favore inserisci il tuo testo",
+      "pleaseProvideInstructions": "Per favore seleziona uno stile di font graffiti",
+      "dailyLimitExceeded": "Limite giornaliero superato! Per favore accedi per creazione graffiti illimitata o riprova domani.",
+      "graffitiGeneratedSuccess": "Graffiti creato con successo!",
+      "generationFailed": "Generazione fallita",
+      "generateGraffitiFailed": "Errore nella generazione del graffiti. Per favore riprova.",
+      "imageDownloaded": "Graffiti scaricato!",
+      "imageDownloadFailed": "Errore nello scaricamento del graffiti"
+    }
+  },
+  "payment": {
+    "modal": {
+      "title": "Scegli il Tuo Piano",
+      "description": "Aggiorna per sbloccare più stili graffiti e funzioni",
+      "most_popular": "Più Popolare",
+      "credits": "Crediti",
+      "month": "Mese",
+      "year": "Anno",
+      "processing": "Elaborazione...",
+      "select_plan": "Seleziona Questo Piano",
+      "international_payment": "Pagamento Internazionale",
+      "china_payment": "Alipay/WeChat Pay",
+      "stripe_payment": "Pagamento Stripe",
+      "creem_payment": "Pagamento Creem"
+    },
+    "test": {
+      "basic": {
+        "title": "Piano Base",
+        "description": "100 Crediti",
+        "feature1": "100 generazioni graffiti",
+        "feature2": "Velocità standard",
+        "feature3": "Supporto email"
+      },
+      "pro": {
+        "title": "Piano Professionale",
+        "description": "500 Crediti",
+        "feature1": "500 generazioni graffiti",
+        "feature2": "Velocità prioritaria",
+        "feature3": "Supporto tecnico 24/7",
+        "feature4": "Output HD"
+      },
+      "enterprise": {
+        "title": "Piano Enterprise",
+        "description": "2000 Crediti",
+        "feature1": "2000 generazioni graffiti",
+        "feature2": "Velocità più veloce",
+        "feature3": "Supporto dedicato",
+        "feature4": "Accesso API",
+        "feature5": "Elaborazione batch"
+      },
+      "test_title": "Test Modale Pagamento",
+      "open_default": "Apri Modale Pagamento (Configurazione Predefinita)",
+      "open_custom": "Apri Modale Pagamento (Configurazione Personalizzata)",
+      "default_description": "Usando titolo e descrizione tradotti",
+      "custom_description": "Simulando scenario crediti insufficienti",
+      "instructions_title": "Istruzioni Test",
+      "instruction1": "Il desktop si mostra come modale Dialog",
+      "instruction2": "Il mobile si mostra come Drawer",
+      "instruction3": "Supporta cambio di più lingue",
+      "instruction4": "Include opzioni di pagamento internazionali e Cina",
+      "instruction5": "È richiesto l'accesso per il pagamento",
+      "success_message": "Pagamento riuscito! Crediti aggiunti",
+      "insufficient_title": "Crediti Insufficienti",
+      "insufficient_description": "Non hai abbastanza crediti, per favore aggiorna per continuare a usare le funzioni graffiti",
+      "upgrade_success": "Aggiornamento riuscito! Funzioni sbloccate"
+    }
+  },
+  "miniatureGenerator": {
+    "ui": {
+      "title": "Trasforma le Tue Foto in Capolavori in Miniatura",
+      "subtitle": "Crea effetti tilt-shift professionali con IA"
+    },
+    "upload": {
+      "title": "Carica la Tua Foto",
+      "subtitle": "Seleziona un'immagine da trasformare in miniatura",
+      "dragDrop": "Trascina e rilascia la tua foto qui, o clicca per selezionare",
+      "fileInfo": "PNG, JPG, WEBP fino a 10MB"
+    },
+    "instructions": {
+      "title": "Descrivi la Tua Miniatura",
+      "subtitle": "Descrivi come vuoi che appaia la tua miniatura",
+      "translate": "Traduci",
+      "autoTranslateEnabled": "Traduzione automatica abilitata"
+    },
+    "usage": {
+      "remaining": "Generazioni miniature gratuite rimanenti: {remaining}/3",
+      "signInTip": "Accedi per creazioni miniature illimitate!",
+      "limitReached": "Limite giornaliero raggiunto (3/3 generazioni gratuite usate)",
+      "signInUnlimited": "Accedi per accesso illimitato o riprova domani!"
+    },
+    "buttons": {
+      "generate": "Genera Miniatura",
+      "generating": "Creazione della Tua Miniatura...",
+      "limitReached": "Limite Giornaliero Raggiunto - Accedi",
+      "download": "Scarica Miniatura",
+      "regenerate": "Prova Un Altro Stile"
+    },
+    "result": {
+      "title": "Pronto per Creare",
+      "subtitle": "Carica la tua foto per vedere la magia della miniatura",
+      "readyTitle": "Il Tuo Generatore Miniature Gratis ti Aspetta",
+      "readySubtitle": "Carica una foto e descrivi come vuoi che appaia. Crea miniature professionali in secondi.",
+      "willAppear": "La tua miniatura personalizzata apparirà qui",
+      "creating": "Creazione della tua miniatura...",
+      "almostDone": "Quasi fatto! La tua miniatura sta prendendo forma",
+      "takeFewMoments": "Questo potrebbe richiedere alcuni momenti"
+    },
+    "messages": {
+      "uploadValidImage": "Per favore seleziona un'immagine valida",
+      "imageTooLarge": "L'immagine è troppo grande, per favore mantienila sotto i 10MB",
+      "uploadSuccess": "Foto caricata con successo",
+      "pleaseUploadImage": "Per favore carica una foto",
+      "pleaseProvideInstructions": "Per favore descrivi la tua miniatura",
+      "dailyLimitExceeded": "Limite giornaliero superato! Per favore accedi per creazione miniature illimitate o riprova domani.",
+      "miniatureGeneratedSuccess": "Miniatura creata con successo!",
+      "generationFailed": "Generazione fallita",
+      "generateMiniatureFailed": "Errore nella generazione della miniatura. Per favore riprova.",
+      "imageDownloaded": "Miniatura scaricata!",
+      "imageDownloadFailed": "Errore nello scaricamento della miniatura"
+    }
+  },
+  "astrocartographyGenerator": {
+    "ui": {
+      "title": "Genera la Tua Carta Astrocartografia",
+      "subtitle": "Inserisci le tue informazioni di nascita per creare la tua mappa astrocartografia personalizzata"
+    },
+    "form": {
+      "birthDate": {
+        "label": "Data di Nascita",
+        "placeholder": "AAAA/MM/GG"
+      },
+      "birthTime": {
+        "label": "Ora di Nascita",
+        "placeholder": "--:--"
+      },
+      "birthLocation": {
+        "label": "Luogo di Nascita",
+        "placeholder": "Inserisci la tua città di nascita...",
+        "placeholderCoordinates": "Inserisci coordinate (es., 40.7128, -74.0060)",
+        "useCoordinates": "Usa coordinate",
+        "useCityName": "Usa nome città"
+      },
+      "timezone": {
+        "label": "Fuso Orario"
+      },
+      "buttons": {
+        "generate": "✨ Genera la Tua Carta ✨",
+        "generating": "Generazione...",
+        "download": "Scarica Carta",
+        "generateNew": "Genera Nuova Carta"
+      },
+      "privacy": "I tuoi dati vengono elaborati in modo sicuro e mai memorizzati permanentemente. Rispettiamo la tua privacy mentre sblocchiamo intuizioni cosmiche."
+    },
+    "messages": {
+      "error": {
+        "birthDateRequired": "Per favore inserisci la tua data di nascita",
+        "birthTimeRequired": "Per favore inserisci la tua ora di nascita",
+        "birthLocationRequired": "Per favore inserisci il tuo luogo di nascita"
+      },
+      "success": {
+        "chartDownloaded": "Carta scaricata con successo!",
+        "generating": "Generazione della tua carta astrocartografia...",
+        "almostDone": "Per favore attendi, quasi fatto",
+        "processing": "Elaborazione dei tuoi dati astrocartografia...",
+        "mayTakeMoment": "Questo potrebbe richiedere alcuni secondi"
+      },
+      "errorGeneral": {
+        "downloadFailed": "Download fallito, per favore riprova più tardi"
+      }
+    },
+    "result": {
+      "title": "Guarda la Mia Carta Astrocartografia!",
+      "description": "Ho appena generato la mia mappa astrocartografia personalizzata! Scopri le tue connessioni cosmiche in tutto il mondo.",
+      "hashtags": ["Astrocartografia", "MappaAstro", "Astrologia", "ConnessioniCosmiche", "TemaNatale"]
+    }
+  }
+}

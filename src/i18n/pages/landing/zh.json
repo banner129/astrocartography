@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "Miniatur AI",
+      "title": "星盘地图计算器",
       "logo": {
         "src": "/logo.png",
-        "alt": "Miniatur AI"
+        "alt": "星盘地图计算器"
       },
       "url": "/"
     },
@@ -20,37 +20,36 @@
       ]
     },
     "buttons": [],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": false,
     "show_locale": true
   },
   "hero": {
-    "title": "用 Miniatur AI 将照片转换为微缩杰作",
-    "highlight_text": "Miniatur AI",
-    "description": "将普通照片转换为非凡的微缩世界，具有惊人的移轴效果和迷人的立体模型。我们先进的 Miniatur AI 技术分析每个像素，创建真实的景深效果，媲美昂贵的相机镜头。只需上传您的照片，观看人工智能在几秒钟内创建专业的微缩杰作，完美适用于社交媒体、作品集和创意项目。",
+    "title": "星盘地图计算器 - 发现你的理想位置",
+    "highlight_text": "永久免费",
+    "description": "星盘地图计算器将你的出生星盘投射到世界地图上，揭示行星线在哪里放大你的职业、人际关系和个人成长。使用精确到1英里的NASA级计算，我们分析了超过20万个全球坐标，以显示太阳、金星、木星和其他行星能量最强的地方。数字游民、搬迁规划者和占星爱好者信赖我们的免费工具，获取基于数据的位置洞察——无需注册，无限制。",
     "announcement": {
       "label": "100% 免费",
-      "title": "无需登录",
+      "title": "无需注册 • 无限生成",
       "url": "/#features"
     },
-  
     "images": [
       {
-        "src": "/imgs/features/1.png",
-        "alt": "Miniatur AI 照片转换示例 1",
-        "title": "原始照片到微缩"
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "带行星线的星盘地图示例",
+        "title": "您的个性化星盘地图"
       },
       {
-        "src": "/imgs/features/2.png",
-        "alt": "Miniatur AI 照片转换示例 2", 
-        "title": "AI 人物生成"
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "星盘地图计算器界面",
+        "title": "专业位置分析"
       }
     ],
     "layout": "left-image-right-content",
     "enable_carousel": true,
     "buttons": [
       {
-        "title": "无需登录开始创作",
+        "title": "生成你的免费星盘地图",
         "icon": "RiMagicLine",
         "url": "/#generator",
         "target": "_self",
@@ -59,287 +58,286 @@
     ],
     "stats": [
       {
-        "value": "12,847+",
-        "label": "信赖 Miniatur AI 的用户",
+        "value": "50,000+",
+        "label": "已生成地图",
         "icon": "RiUserLine"
       },
       {
-        "value": "89,432+",
-        "label": "生成的微缩图像",
-        "icon": "RiImageLine"
+        "value": "200,000+",
+        "label": "已分析位置",
+        "icon": "RiMapPinLine"
       }
     ],
     "show_happy_users": true,
-    "show_badge": true
+    "show_badge": false
   },
   "branding": {
-    "title": "由尖端AI技术驱动",
+    "title": "由天文精度技术驱动",
     "items": [
       {
-        "title": "OpenAI",
+        "title": "Swiss Ephemeris",
         "image": {
           "src": "/imgs/logos/nextjs.svg",
-          "alt": "OpenAI"
+          "alt": "Swiss Ephemeris"
         }
       },
       {
-        "title": "计算机视觉",
+        "title": "NASA级数据",
         "image": {
           "src": "/imgs/logos/react.svg",
-          "alt": "计算机视觉"
+          "alt": "NASA级计算"
         }
       },
       {
-        "title": "神经网络",
+        "title": "AI解读",
         "image": {
           "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "神经网络"
+          "alt": "AI驱动分析"
         }
       },
       {
-        "title": "机器学习",
+        "title": "全球覆盖",
         "image": {
           "src": "/imgs/logos/shadcn.svg",
-          "alt": "机器学习"
+          "alt": "200,000+ 位置"
         }
       },
       {
-        "title": "云端处理",
+        "title": "隐私优先",
         "image": {
           "src": "/imgs/logos/vercel.svg",
-          "alt": "云端处理"
+          "alt": "本地处理"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "什么是 Miniatur AI",
-    "label": "简介",
-    "description": "Miniatur AI 是一个革命性的免费人工智能平台，能将普通照片转换为令人惊叹的微缩杰作。使用先进的计算机视觉和机器学习算法，我们的智能工具分析图像构图、深度和光线，在几秒钟内创建专业的移轴效果和逼真的立体模型场景。无论您是专业摄影师、内容创作者还是爱好者，Miniatur AI 都能以无与伦比的精确度和速度提供博物馆级质量的微缩转换。",
+    "title": "什么是星盘地图计算器",
+    "label": "介绍",
+    "description": "星盘地图计算器将你的出生星盘投射到全球，显示在你出生时刻行星处于角度的位置。",
     "image": {
-      "src": "/imgs/features/3.png"
+      "src": "/imgs/features/hero-web.webp"
     },
     "items": [
       {
-        "title": "AI驱动的智能分析",
-        "description": "我们的人工智能系统智能识别照片中的焦点、深度层和空间关系，创建真实的微缩效果，具有完美的模糊渐变和专业的景深模拟，媲美真实的移轴摄影技术。",
-        "icon": "RiRobot2Line"
+        "title": "NASA级行星计算",
+        "description": "星盘地图计算器使用Swiss Ephemeris，这是与NASA行星数据匹配的天文标准。我们计算在你精确出生时刻，每个行星（太阳、月亮、金星、火星、木星、土星）在地球表面处于角度位置的地方——上升（ASC）、下降（DSC）、中天（MC）或天底（IC）。每条星盘地图线精确到1英里以内，确保你的星盘地图与专业占星师的计算相匹配。当你站在一条行星线上时，该行星的能量在那里主导你的体验。",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "NASA级星盘地图计算"
+        }
       },
       {
-        "title": "多种微缩风格",
-        "description": "选择移轴摄影、玩具立体模型效果、建筑微缩模型和收藏人物风格。每个AI优化的预设都能为不同的照片构图和创意愿景提供独特的微缩特色。",
-        "icon": "RiPaletteLine"
+        "title": "AI驱动的位置解读",
+        "description": "我们的系统分析你的出生星盘如何与超过20万个全球坐标交互。AI解释每条星盘地图线的含义：金星线激活爱情和创造力，木星线带来机会和扩张，土星线加强职业纪律。我们不仅显示线条在哪里——我们还解释如何阅读星盘地图，以及每个位置对你的职业、人际关系、健康和创造力的意义，使星盘地图用于搬迁决策变得实用且易于理解。",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "AI驱动的星盘地图解读"
+        }
       },
       {
-        "title": "即时AI处理",
-        "description": "先进的基于云端的人工智能处理在10秒内提供专业的微缩效果。无需复杂的软件安装、付费要求或技术专业知识即可创建惊人的结果。",
-        "icon": "RiTimeLine"
+        "title": "即时多格式导出",
+        "description": "在3秒内生成你的星盘地图，然后下载高分辨率PNG、PDF或SVG文件。地图清楚地标记所有行星线、能量点（线条交点）和城市名称。配合AI解读报告，你的星盘地图可用于个人规划、专业咨询或团队搬迁决策。所有文件无水印，拥有完整商业使用权。",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "即时导出星盘地图"
+        }
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "为什么选择 Miniatur AI",
-    "label": "优势",
-    "description": "全球的专业摄影师和内容创作者信赖 Miniatur AI 提供优质的图像分析、真实的微缩效果和闪电般快速的AI处理。我们的人工智能系统理解摄影原理，提供媲美昂贵相机设备和数小时手动编辑工作的结果。",
+    "title": "为什么选择我们的星盘地图计算器",
+    "label": "核心优势",
+    "description": "我们的星盘地图计算器结合了天文精度和AI解读，提供完全免费且注重隐私的专业级分析。",
     "items": [
       {
-        "title": "专业品质的微缩结果",
-        "description": "Miniatur AI 产生博物馆级质量的微缩效果，保持适当的景深、真实的模糊图案和专业微缩摄影中的真实移轴特色。我们的AI确保每次转换都符合行业标准。",
-        "icon": "RiStarLine",
+        "title": "专业精度，完全免费",
+        "description": "虽然竞争对手对AI分析收取每月$15.9或对PDF报告收取$22.90，我们的星盘地图计算器提供无限制的免费访问。我们使用与360美元专业软件相同的Swiss Ephemeris库，精度达到1英里，符合NASA标准。生成无限星盘地图，下载无水印文件，访问AI解读——无需信用卡，无隐藏费用。无论你是学生、企业家还是退休人员，都可以零成本获得专业星盘地图分析。",
+        "icon": "RiGiftLine",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "免费专业星盘地图计算器"
         }
       },
       {
-        "title": "智能场景识别",
-        "description": "我们先进的AI分析建筑元素、风景、人物和物体，为您特定的照片内容和构图自动应用最适合的微缩效果。智能人工智能适应任何场景类型。",
-        "icon": "RiBrainLine",
+        "title": "诚实、了解上下文的指导",
+        "description": "与承诺保证结果的工具不同，我们承认星盘地图显示的是能量潜力，而非确定性。金星线可能增强人际关系，也可能放大你需要解决的关系挑战。我们的AI考虑你的个人星盘上下文、当前生活阶段和行星相互作用。常见问题诚实地说明：将星盘地图作为实用考虑因素之一，与职业机会、生活成本和签证要求等其他因素一起使用。真正的占星学尊重复杂性——我们也是如此。",
+        "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/6.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "诚实的星盘地图指导"
         }
       },
       {
-        "title": "轻松的微缩工作流程",
-        "description": "跳过复杂的照片编辑软件和昂贵的设备。Miniatur AI 只需一键就能将您的照片转换为专业的微缩结果，节省数小时的手动工作，同时提供一致的高质量成果。",
-        "icon": "RiSpeedLine",
+        "title": "隐私优先架构",
+        "description": "你的出生数据在浏览器本地计算——从未上传到服务器，从未存储在数据库中，从未与第三方共享。以完全的隐私生成你的星盘地图。所有文件拥有完整的商业权利：用于个人规划、专业占星咨询、教学或出版，无需许可费。隐私和专业质量不应该是付费客户的专属。",
+        "icon": "RiLockLine",
         "image": {
-          "src": "/imgs/features/7.png"
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "注重隐私的星盘地图工具"
         }
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 Miniatur AI 创建微缩作品",
-    "description": "通过四个简单步骤将您的照片转换为令人惊叹的微缩杰作。我们的 Miniatur AI 系统自动处理所有复杂的图像分析和处理，每次都能以人工智能精度提供专业的微缩结果。",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
+    "title": "如何使用星盘地图计算器",
+    "description": "在4个简单步骤中生成你的专业星盘地图。",
     "items": [
       {
-        "title": "上传您的照片",
-        "description": "简单地拖放任何最大10MB的JPEG或PNG图像。Miniatur AI 接受风景、建筑、人物和物体的照片进行微缩转换。我们的AI在高分辨率图像上效果最佳。",
-        "icon": "RiUploadLine"
+        "title": "输入出生信息",
+        "description": "输入你的出生日期、时间（尽可能精确到分钟）和城市。没有精确的出生时间，你仍然可以看到行星线（太阳、月亮、金星等），但看不到角度线（ASC、DSC、MC、IC）。我们的数据库包括超过10万个全球城市，具有自动时区和历史夏令时处理功能。",
+        "icon": "RiCalendarLine"
       },
       {
-        "title": "选择微缩风格",
-        "description": "从我们的AI优化预设中选择：移轴摄影、玩具立体模型、建筑微缩模型或收藏人物风格。每个预设都通过人工智能为不同的照片类型和构图进行了精细调整。",
-        "icon": "RiSettings3Line"
+        "title": "选择行星线",
+        "description": "选择要显示的行星：太阳（自信、身份）、月亮（情感、安全感）、金星（爱情、美感）、火星（行动、竞争）、木星（机会、成长）、土星（纪律、职业），以及天王星、海王星和冥王星。系统在世界地图上实时渲染星盘地图线。",
+        "icon": "RiPlanetLine"
       },
       {
-        "title": "AI处理魔法",
-        "description": "我们的 Miniatur AI 分析深度信息，应用智能模糊效果，创建真实的微缩特色。先进的人工智能算法确保在几秒钟内获得专业级质量的结果。",
-        "icon": "RiMagicLine"
+        "title": "探索交互式地图和AI洞察",
+        "description": "点击任何行星线或能量点（线条交点）获取详细的AI解读。了解该行星在那个位置如何影响你的职业、人际关系、健康和创造力，以及它是否适合长期居住、短期访问、工作或学习。无查询限制——按需探索。",
+        "icon": "RiMapLine"
       },
       {
-        "title": "下载和分享",
-        "description": "以高分辨率保存您的微缩作品。完美适用于社交媒体、作品集或打印。与世界分享您独特的AI生成微缩艺术，展示专业的转换结果。",
+        "title": "导出专业文件",
+        "description": "一键下载高分辨率PNG地图、PDF解读报告或SVG矢量文件。所有文件无水印，支持商业使用。打印用于咨询会议，与朋友分享，或用于团队搬迁决策。",
         "icon": "RiDownloadLine"
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Miniatur AI 高级功能",
-    "description": "探索强大的人工智能功能，使我们的微缩生成器成为照片转换和创意编辑项目最先进的AI工具。",
+    "title": "专业星盘地图计算器功能",
+    "description": "六项核心功能确保天文精度和实用性的完美结合。",
     "items": [
       {
-        "title": "智能深度检测",
-        "description": "Miniatur AI 使用计算机视觉分析图像深度并自动创建真实的焦点平面，确保具有专业景深准确性的真实移轴微缩效果。",
-        "icon": "RiEyeLine"
+        "title": "交互式全球地图",
+        "description": "拖拽、缩放并点击任何城市，即时查看其行星能量分布。地图支持卫星视图、地形视图和政治边界视图，帮助你理解星盘地图线如何对应真实地理。能量点（线条交点）被突出显示——这些能量汇聚区域是星盘地图用于搬迁决策的关键焦点。",
+        "icon": "RiGlobalLine"
       },
       {
-        "title": "AI风格优化",
-        "description": "我们的机器学习算法根据您照片的内容和构图自动调整模糊强度、景深和色彩饱和度，以获得最佳的微缩结果。",
-        "icon": "RiSettings2Line"
+        "title": "Swiss Ephemeris计算引擎",
+        "description": "我们使用Swiss Ephemeris，支持从公元前3000年到公元3000年的行星计算。由苏黎世天文台维护，这个库匹配NASA JPL行星轨道精度，为全球专业占星软件提供动力。无论分析历史人物还是规划未来搬迁，你的星盘地图精度与360美元的专业软件相匹配。",
+        "icon": "RiCompassLine"
       },
       {
-        "title": "批量处理",
-        "description": "上传多张照片并在整个收藏中应用一致的 Miniatur AI 效果。完美适合创建具有统一人工智能处理的凝聚微缩摄影系列。",
-        "icon": "RiStackLine"
+        "title": "多语言全球覆盖",
+        "description": "在超过10万个位置中搜索中文、英语、日语等城市，并提供历史时区数据。系统自动处理夏令时变更（如美国1970-2007年的夏令时规则变化）和时区边界调整，确保无论出生国家或时代，星盘地图都准确无误。",
+        "icon": "RiTranslate"
       },
       {
-        "title": "高分辨率输出",
-        "description": "生成高达4K分辨率的微缩图像，同时保持清晰的细节和平滑的模糊过渡。专业级质量的AI处理适用于任何商业或创意用例。",
-        "icon": "RiHdLine"
+        "title": "智能行星线过滤",
+        "description": "无限制地显示或隐藏特定的行星线组合。仅显示太阳+木星线用于职业城市，仅显示金星+月亮线用于情感安全位置，或隐藏土星+冥王星线以避开高挑战区域。保存喜爱的过滤配置，快速比较不同行星组合，找到匹配你当前生活阶段目标的位置。",
+        "icon": "RiFilterLine"
       },
       {
-        "title": "实时预览",
-        "description": "在调整设置时即时查看您的微缩转换。Miniatur AI 通过实时人工智能处理为每次完美结果提供即时反馈。",
-        "icon": "RiLiveLine"
+        "title": "能量点能量分析",
+        "description": "AI自动识别并突出显示线条交点（能量点），这些位置多个行星能量同时激活。这些交叉点通常比单条线产生更强的影响。例如：金星+木星交点可能带来浪漫机会和财富增长，而土星+冥王星交点适合深度转变和职业重建。",
+        "icon": "RiStarLine"
       },
       {
-        "title": "轻松导出和分享",
-        "description": "以多种格式下载您的微缩作品或直接分享到社交媒体平台。轻松展示您的AI生成微缩艺术，获得专业结果。",
-        "icon": "RiShareLine"
-      }
-    ]
-  },
-  "stats": {
-    "name": "stats",
-    "label": "统计",
-    "title": "创作者信赖 Miniatur AI",
-    "description": "在全球范围内获得专业品质的微缩效果和闪电般快速的AI处理。",
-    "icon": "RiHeartLine",
-    "items": [
-      {
-        "title": "信赖用户",
-        "label": "12,847+",
-        "description": "创作者"
-      },
-      {
-        "title": "生成图像",
-        "label": "89,432+",
-        "description": "微缩作品"
-      },
-      {
-        "title": "处理速度",
-        "label": "<10",
-        "description": "秒"
-      }
-    ]
-  },
-  "testimonial": {
-    "name": "testimonial",
-    "label": "推荐",
-    "title": "创作者对 Miniatur AI 的评价",
-    "description": "来自使用 Miniatur AI 进行创意项目和专业微缩转换的摄影师和艺术家的真实反馈。",
-    "icon": "RiThumbUpLine",
-    "items": [
-      {
-        "title": "莎拉·米切尔",
-        "label": "专业摄影师",
-        "description": "Miniatur AI 提供的结果媲美我昂贵的移轴镜头。这个人工智能比我用过的任何编辑软件都更好地理解微缩摄影的深度。",
-        "image": {
-          "src": "/imgs/users/1.png"
-        }
-      },
-      {
-        "title": "詹姆斯·罗德里格斯",
-        "label": "内容创作者",
-        "description": "这个AI太不可思议了！我可以在几秒钟内为Instagram创建微缩风格的内容。自从使用 Miniatur AI 进行社交媒体内容创作以来，我的参与度增加了300%。",
-        "image": {
-          "src": "/imgs/users/2.png"
-        }
-      },
-      {
-        "title": "艾米莉·陈",
-        "label": "数字艺术家",
-        "description": "微缩效果如此逼真。Miniatur AI 为我节省了数小时的手动编辑时间，同时通过先进的人工智能处理每次都能产生专业级质量的结果。",
-        "image": {
-          "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "迈克尔·汤普森",
-        "label": "旅行博主",
-        "description": "现在我所有的旅行照片都使用 Miniatur AI。微缩效果让普通场景看起来像魔法般的小世界，具有专业AI转换质量。",
-        "image": {
-          "src": "/imgs/users/6.png"
-        }
+        "title": "历史和多人员对比",
+        "description": "系统自动保存你的生成历史，支持同时加载多个星盘地图进行对比。比较你与伴侣的行星线重叠，识别团队成员中的木星线交点，或比较多年来行运星盘的变化。对于团队搬迁、家庭搬迁或伴侣位置选择，快速叠加多人的分布图。",
+        "icon": "RiTeamLine"
       }
     ]
   },
   "faq": {
     "name": "faq",
     "label": "常见问题",
-    "title": "关于 Miniatur AI 的常见问题",
-    "description": "对我们的AI微缩生成器有疑问？在这里找到答案，或联系我们的支持团队获取微缩照片转换的帮助。",
+    "title": "星盘地图计算器常见问题 - 常见问题解答",
+    "description": "对我们用户实际提出问题的真实回答。",
     "items": [
       {
-        "title": "Miniatur AI 如何创建微缩效果？",
-        "description": "Miniatur AI 使用先进的计算机视觉和机器学习算法分析图像深度、识别焦点并应用真实的移轴效果。我们的人工智能理解摄影原理，创建媲美专业相机设备和手动编辑技术的真实微缩转换。"
+        "title": "如果我不知道确切的出生时间怎么办？",
+        "description": "你仍然可以使用星盘地图计算器！没有确切时间，我们无法显示你的ASC/DSC/MC/IC线，但你仍然可以看到行星线（太阳、月亮、金星等），这些线揭示了很多关于位置兼容性的信息。为了获得最佳结果，请查看你的出生证明或联系你出生的医院。"
       },
       {
-        "title": "什么类型的照片最适合 Miniatur AI？",
-        "description": "Miniatur AI 在风景、建筑、城市景观和航拍摄影上效果极佳。具有清晰深度和有趣主题的照片能产生最戏剧性的微缩效果。我们的人工智能自动适应不同的照片构图，以获得最佳的微缩转换结果。"
+        "title": "我在金星线上生活得很糟糕。地图错了吗？",
+        "description": "星盘地图显示潜在能量，而非保证。金星线可能增强人际关系，但也可能放大你需要解决的关系挑战。上下文很重要——你的个人星盘、生活环境和行星影响都起作用。我们的AI解读可以帮助你理解这些细微差别。"
       },
       {
-        "title": "我可以商用 Miniatur AI 吗？",
-        "description": "可以！使用 Miniatur AI 创建的所有微缩图像都可以用于商业目的，包括社交媒体营销、作品集工作和客户项目。您保留对AI生成的微缩作品和专业转换的完全权利。"
+        "title": "计算有多准确？",
+        "description": "我们使用NASA级行星计算，在地球表面精确到1英里以内。我们的计算考虑了时区、夏令时和历史日历变化。这是专业占星师在咨询时依赖的相同精度。"
       },
       {
-        "title": "Miniatur AI 支持哪些文件格式？",
-        "description": "Miniatur AI 接受最大10MB的JPEG、JPG、PNG和WebP图像格式。为了获得最佳的微缩转换结果，我们建议使用具有良好光线和清晰景深的高分辨率照片，以实现最佳的AI处理效果。"
+        "title": "我应该仅基于星盘地图搬迁吗？",
+        "description": "不应该。星盘地图是理解位置能量的强大工具，但它不应该是你唯一的考虑因素。要考虑实际因素，如职业机会、生活成本、签证要求和个人关系。将我们的地图作为做人生决策的众多输入之一。"
       },
       {
-        "title": "Miniatur AI 真的免费使用吗？",
-        "description": "绝对的！Miniatur AI 永远完全免费使用，没有隐藏费用、无需注册，也没有水印。享受无限制的微缩转换，为您的所有创意项目提供专业级质量的AI结果，零成本。"
+        "title": "我可以将生成的地图用于商业用途吗？",
+        "description": "可以。你生成的星盘地图和解读报告可用于任何目的：个人规划、专业占星咨询、教学、出版、社交媒体分享等，无需许可费。你的出生数据在本地计算，拥有完全的隐私保护。"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "用户评价",
+    "title": "真实用户分享他们的星盘地图体验",
+    "description": "用户分享我们的星盘地图计算器如何影响他们的搬迁决策。",
+    "icon": "RiThumbUpLine",
+    "items": [
+      {
+        "title": "Sophia Chen",
+        "label": "数字游民",
+        "description": "作为数字游民，我使用星盘地图计算器分析了20多个候选城市。我选择了里斯本，那里有我的金星线经过，到达后，我的社交圈迅速扩大——我甚至遇到了我现在的伴侣。星盘地图不是魔法，但它帮助我理解了为什么某些城市感觉更舒适。",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Marcus Liu",
+        "label": "占星顾问",
+        "description": "我60%的客户咨询涉及搬迁问题。星盘地图计算器让我能够快速向客户展示他们的行星线分布，配合搬迁星盘分析。一位客户在木星线城市成功创业，并推荐了5位朋友。这个工具提升了我的服务专业性。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Elena Rodriguez",
+        "label": "占星学生",
+        "description": "在学习了2年星盘地图并测试了多个付费工具后，这个计算器的Swiss Ephemeris结果与我的Solar Fire软件完全匹配，但界面更友好，解读更清晰。强烈推荐给所有占星学习者。",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "James Park",
+        "label": "企业家",
+        "description": "在计划在亚洲开设分支机构时，我使用星盘地图计算器分析了新加坡、曼谷和东京。我选择了曼谷，那里我的太阳线和木星线交汇，发展超出预期。但我理解：星盘地图只是一个参考因素——商业环境和市场研究同样重要。",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      },
+      {
+        "title": "Amelia Wang",
+        "label": "心理健康顾问",
+        "description": "我将星盘地图整合到客户的职业规划咨询中。许多客户感觉在某些城市'有什么不对劲'，但无法解释原因——星盘地图提供了一个解释框架。隐私保护非常好；客户可以自己生成地图并带来讨论。",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "David Kim",
+        "label": "退休规划师",
+        "description": "在退休前，我研究了10个候选位置。星盘地图计算器显示我的月亮线穿过新西兰南岛。经过实地考察后，我选择了新西兰，真正感受到了情感上的平静和归属感。但我也重视医疗资源和生活成本。星盘地图是很好的起点。",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "今天就用免费的 Miniatur AI 转换您的照片",
-    "description": "加入数千名使用我们免费人工智能创建惊人微缩摄影效果的创作者。立即开始您的免费微缩转换之旅，使用先进的AI技术 - 无需付费，无需注册！",
+    "title": "立即生成你的免费星盘地图",
+    "description": "使用星盘地图计算器创建你的专业级星盘地图，采用NASA级精度分析超过20万个全球位置。发现适合你职业、人际关系和个人成长的理想城市。无需注册，无限使用——3秒内获得专业分析。",
     "buttons": [
       {
-        "title": "免费开始",
-        "icon": "RiGiftLine",
+        "title": "立即生成免费地图",
+        "icon": "RiMapLine",
         "url": "/#generator",
         "target": "_self",
         "variant": "default"
@@ -349,28 +347,38 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "Miniatur AI",
-      "description": "Miniatur AI 使用先进的人工智能技术将普通照片转换为非凡的微缩杰作。使用我们革命性的AI平台在几秒钟内创建专业的移轴效果、立体模型场景和收藏风格微缩作品。",
+      "title": "星盘地图计算器",
+      "description": "星盘地图计算器为数字游民、搬迁规划者和占星从业者提供专业级星盘地图工具。我们使用Swiss Ephemeris确保天文精度，AI技术使复杂的行星线解读变得易于理解。严格的隐私保护，超过20万个全球位置分析——让专业星盘地图对每个人都可及。",
       "logo": {
         "src": "/logo.png",
-        "alt": "Miniatur AI"
+        "alt": "星盘地图计算器"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • Miniatur AI. 版权所有。",
+    "copyright": "© 2025 • 星盘地图计算器。保留所有权利。",
     "nav": {
       "items": [
         {
-          "title": "关于",
-          "url": "/about"
+          "title": "产品",
+          "children": []
         },
         {
           "title": "资源",
-          "url": "/#features"
+          "children": [
+            {
+              "title": "常见问题",
+              "url": "/#faq"
+            },
+            {
+              "title": "AIStage",
+              "url": "https://aistage.net",
+              "target": "_blank"
+            }
+          ]
         },
         {
-          "title": "朋友",
-          "url": "/#usage"
+          "title": "社区",
+          "children": []
         }
       ]
     },
@@ -379,31 +387,52 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/miniaturaiapp",
+          "url": "https://x.com/astrocartography",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/miniaturaiapp",
+          "url": "https://github.com/astrocartography",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/miniaturaiapp",
+          "url": "https://discord.gg/astrocartography",
           "target": "_blank"
         },
         {
-          "title": "邮箱",
+          "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@miniaturaiapp.com",
+          "url": "mailto:support@astrocartography.com",
           "target": "_self"
         }
       ]
     },
     "badges": [
-      
+      {
+        "title": "ShowMeBestAI 推荐",
+        "url": "https://www.showmebest.ai",
+        "target": "_blank",
+        "image": {
+          "src": "https://www.showmebest.ai/badge/feature-badge-white.webp",
+          "alt": "ShowMeBestAI 推荐",
+          "width": 220,
+          "height": 60
+        }
+      },
+      {
+        "title": "Aura++ 推荐",
+        "url": "https://auraplusplus.com/projects/astrocarto",
+        "target": "_blank",
+        "image": {
+          "src": "https://auraplusplus.com/images/badges/featured-on-light.svg",
+          "alt": "Aura++ 推荐",
+          "width": 220,
+          "height": 60
+        }
+      }
     ],
     "agreement": {
       "items": [

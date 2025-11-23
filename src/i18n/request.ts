@@ -15,6 +15,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = "pt";
   }
 
+  if (["es-ES", "es-MX", "es-AR", "es-CO", "es-CL"].includes(locale)) {
+    locale = "es";
+  }
+
+  if (["it-IT", "it-CH"].includes(locale)) {
+    locale = "it";
+  }
+
   if (!routing.locales.includes(locale as any)) {
     locale = "en";
   }

@@ -1,7 +1,11 @@
 User-agent: *
 
-# 只允许英文首页（根路径）
+# 允许首页和多语言版本首页
 Allow: /$
+Allow: /es/
+Allow: /it/
+Allow: /pt/
+Allow: /zh/
 
 # 允许静态资源
 Allow: /favicon.ico
@@ -17,9 +21,7 @@ Allow: /sitemap.xml
 Allow: /privacy-policy
 Allow: /terms-of-service
 
-# 阻止所有其他页面和语言版本
-Disallow: /zh
-Disallow: /pt
+# 阻止所有其他页面
 Disallow: /ms
 Disallow: /en
 Disallow: /posts
@@ -36,7 +38,7 @@ Disallow: /i/
 Disallow: /share
 Disallow: /pay-success
 Disallow: /auth
-
+Disallow: /chart
 
 # 阻止跟踪参数 URL
 Disallow: /*?ref=

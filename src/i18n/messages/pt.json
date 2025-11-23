@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Miniatur AI - Transforme Fotos em Obras-primas em Miniatura | Miniatur AI",
-    "description": "Miniatur AI transforma fotos comuns em obras-primas em miniatura impressionantes usando tecnologia AI avançada. Crie efeitos tilt-shift profissionais e cenas em miniatura em segundos.",
-    "keywords": "Miniatur AI, gerador de miniaturas, transformação de fotos AI, efeito tilt-shift, fotografia em miniatura, processamento de imagem AI"
+    "title": "Calculadora de Astrocartografia Gratis com IA — Mapa Natal Preciso e Análise de Relocalização",
+    "description": "Use uma calculadora de astrocartografia gratis com IA. Obtenha linhas planetárias precisas, análise de relocalização e interpretações instantâneas do mapa. Sem registro, sem anúncios: apenas astrocartografia precisa melhorada com IA.",
+    "keywords": "calculadora astrocartografia gratis, astrocartografia IA, mapa astrocartografia online gratis, mapa localização mapa natal, linhas astrocartografia, ferramenta astrologia relocalização, calculadora linhas planetárias, interpretação IA astrocartografia, carta astrocartografia precisa, melhor mapa astrologia gratis"
   },
   "user": {
     "sign_in": "Entrar",
@@ -235,6 +235,61 @@
       "insufficient_title": "Créditos Insuficientes",
       "insufficient_description": "Você não tem créditos suficientes, atualize para continuar usando recursos de IA",
       "upgrade_success": "Atualização bem-sucedida! Recursos desbloqueados"
+    }
+  },
+  "astrocartographyGenerator": {
+    "ui": {
+      "title": "Gere seu Mapa de Astrocartografia",
+      "subtitle": "Insira suas informações de nascimento para criar seu mapa de astrocartografia personalizado"
+    },
+    "form": {
+      "birthDate": {
+        "label": "Data de Nascimento",
+        "placeholder": "AAAA/MM/DD"
+      },
+      "birthTime": {
+        "label": "Hora de Nascimento",
+        "placeholder": "--:--"
+      },
+      "birthLocation": {
+        "label": "Local de Nascimento",
+        "placeholder": "Insira sua cidade de nascimento...",
+        "placeholderCoordinates": "Insira coordenadas (ex., 40.7128, -74.0060)",
+        "useCoordinates": "Usar coordenadas",
+        "useCityName": "Usar nome da cidade"
+      },
+      "timezone": {
+        "label": "Fuso Horário"
+      },
+      "buttons": {
+        "generate": "✨ Gere seu Mapa ✨",
+        "generating": "Gerando...",
+        "download": "Baixar Mapa",
+        "generateNew": "Gerar Novo Mapa"
+      },
+      "privacy": "Seus dados são processados com segurança e nunca armazenados permanentemente. Respeitamos sua privacidade enquanto desbloqueamos insights cósmicos."
+    },
+    "messages": {
+      "error": {
+        "birthDateRequired": "Por favor insira sua data de nascimento",
+        "birthTimeRequired": "Por favor insira sua hora de nascimento",
+        "birthLocationRequired": "Por favor insira seu local de nascimento"
+      },
+      "success": {
+        "chartDownloaded": "Mapa baixado com sucesso!",
+        "generating": "Gerando seu mapa de astrocartografia...",
+        "almostDone": "Por favor aguarde, quase pronto",
+        "processing": "Processando seus dados de astrocartografia...",
+        "mayTakeMoment": "Isso pode levar alguns segundos"
+      },
+      "errorGeneral": {
+        "downloadFailed": "Falha no download, por favor tente novamente mais tarde"
+      }
+    },
+    "result": {
+      "title": "Confira meu Mapa de Astrocartografia!",
+      "description": "Acabei de gerar meu mapa de astrocartografia personalizado! Descubra suas conexões cósmicas ao redor do mundo.",
+      "hashtags": ["Astrocartografia", "MapaAstro", "Astrologia", "ConexõesCósmicas", "MapaNatal"]
     }
   }
 }

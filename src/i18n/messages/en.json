@@ -254,5 +254,60 @@
       "insufficient_description": "You don't have enough credits, please upgrade to continue using graffiti features",
       "upgrade_success": "Upgrade successful! Features unlocked"
     }
+  },
+  "astrocartographyGenerator": {
+    "ui": {
+      "title": "Generate Your Astrocartography Chart",
+      "subtitle": "Enter your birth information to create your personalized astrocartography map"
+    },
+    "form": {
+      "birthDate": {
+        "label": "Birth Date",
+        "placeholder": "YYYY/MM/DD"
+      },
+      "birthTime": {
+        "label": "Birth Time",
+        "placeholder": "--:--"
+      },
+      "birthLocation": {
+        "label": "Birth Location",
+        "placeholder": "Enter your birth city...",
+        "placeholderCoordinates": "Enter coordinates (e.g., 40.7128, -74.0060)",
+        "useCoordinates": "Use coordinates",
+        "useCityName": "Use city name"
+      },
+      "timezone": {
+        "label": "Timezone"
+      },
+      "buttons": {
+        "generate": "✨ Generate Your Chart ✨",
+        "generating": "Generating...",
+        "download": "Download Chart",
+        "generateNew": "Generate New Chart"
+      },
+      "privacy": "Your data is processed securely and never stored permanently. We respect your privacy while unlocking cosmic insights."
+    },
+    "messages": {
+      "error": {
+        "birthDateRequired": "Please enter your birth date",
+        "birthTimeRequired": "Please enter your birth time",
+        "birthLocationRequired": "Please enter your birth location"
+      },
+      "success": {
+        "chartDownloaded": "Chart downloaded successfully!",
+        "generating": "Generating your astrocartography chart...",
+        "almostDone": "Please wait, almost done",
+        "processing": "Processing your astrocartography data...",
+        "mayTakeMoment": "This may take a few seconds"
+      },
+      "errorGeneral": {
+        "downloadFailed": "Download failed, please try again later"
+      }
+    },
+    "result": {
+      "title": "Check out my Astrocartography Chart!",
+      "description": "I just generated my personalized astrocartography map! Discover your cosmic connections around the world.",
+      "hashtags": ["Astrocartography", "AstroMap", "Astrology", "CosmicConnections", "BirthChart"]
+    }
   }
 }

@@ -10,9 +10,10 @@ import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, MapPin, Globe, Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
 import CompactSocialShare from '@/components/blocks/social-share/compact';
+import { LocationAutocomplete } from '@/components/ui/location-autocomplete';
 
 export default function MiniaturaAIGenerator() {
-  const t = useTranslations('miniatureGenerator');
+  const t = useTranslations('astrocartographyGenerator');
   const router = useRouter();
   
   // 出生数据状态
@@ -21,6 +22,10 @@ export default function MiniaturaAIGenerator() {
   const [birthLocation, setBirthLocation] = useState('');
   const [timezone, setTimezone] = useState('UTC (London, Dublin)');
   const [useCoordinates, setUseCoordinates] = useState(false);
+  const [selectedLocationCoords, setSelectedLocationCoords] = useState<{
+    latitude: number;
+    longitude: number;
+  } | null>(null);
   
   // 生成状态
   const [isGenerating, setIsGenerating] = useState(false);
@@ -83,19 +88,19 @@ export default function MiniaturaAIGenerator() {
   // 验证出生数据
   const validateBirthData = useCallback(() => {
     if (!birthDate) {
-      toast.error('请输入出生日期');
+      toast.error(t('messages.error.birthDateRequired'));
       return false;
     }
     if (!birthTime) {
-      toast.error('请输入出生时间');
+      toast.error(t('messages.error.birthTimeRequired'));
       return false;
     }
     if (!birthLocation) {
-      toast.error('请输入出生地点');
+      toast.error(t('messages.error.birthLocationRequired'));
       return false;
     }
     return true;
-  }, [birthDate, birthTime, birthLocation]);
+  }, [birthDate, birthTime, birthLocation, t]);
 
   const handleGenerate = useCallback(async () => {
     // 验证出生数据
@@ -109,11 +114,16 @@ export default function MiniaturaAIGenerator() {
       birthTime,
       birthLocation,
       timezone,
-      useCoordinates: useCoordinates.toString()
+      useCoordinates: useCoordinates.toString(),
+      // 如果用户从自动完成列表选择了地点，使用保存的坐标
+      ...(selectedLocationCoords && !useCoordinates && {
+        latitude: selectedLocationCoords.latitude.toString(),
+        longitude: selectedLocationCoords.longitude.toString(),
+      })
     });
     
     router.push(`/chart?${params.toString()}`);
-  }, [birthDate, birthTime, birthLocation, timezone, useCoordinates, validateBirthData, router]);
+  }, [birthDate, birthTime, birthLocation, timezone, useCoordinates, selectedLocationCoords, validateBirthData, router]);
 
   // 下载星盘图功能
   const handleDownload = useCallback(() => {
@@ -126,11 +136,11 @@ export default function MiniaturaAIGenerator() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      toast.success('星盘图下载成功！');
+      toast.success(t('messages.success.chartDownloaded'));
     } catch (error) {
-      toast.error('下载失败，请稍后重试');
+      toast.error(t('messages.errorGeneral.downloadFailed'));
     }
-  }, [generatedChartData]);
+  }, [generatedChartData, t]);
 
   // 分享回调
   const handleShare = useCallback((platform: string) => {
@@ -168,22 +178,22 @@ export default function MiniaturaAIGenerator() {
           {/* 标题 */}
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-2 text-white">
-              Generate Your Astrocartography Chart
+              {t('ui.title')}
             </h2>
             <p className="text-base text-gray-300">
-              Enter your birth information to create your personalized astrocartography map
+              {t('ui.subtitle')}
             </p>
           </div>
 
           {/* 表单卡片 */}
-          <Card className="shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md">
-            <CardContent className="p-6 md:p-8">
+          <Card className="shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md relative overflow-visible">
+            <CardContent className="p-6 md:p-8 relative overflow-visible">
               <div className="space-y-4">
                 {/* 出生日期 */}
                 <div className="space-y-1.5">
                   <Label htmlFor="birthDate" className="flex items-center gap-2 text-sm font-semibold text-purple-300">
                     <Calendar className="size-4 text-purple-400" />
-                    Birth Date
+                    {t('form.birthDate.label')}
                   </Label>
                   <Input
                     id="birthDate"
@@ -192,7 +202,7 @@ export default function MiniaturaAIGenerator() {
                     value={birthDate}
                     onChange={(e) => setBirthDate(e.target.value)}
                     className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
-                    placeholder="YYYY/MM/DD"
+                    placeholder={t('form.birthDate.placeholder')}
                   />
                 </div>
 
@@ -200,7 +210,7 @@ export default function MiniaturaAIGenerator() {
                 <div className="space-y-1.5">
                   <Label htmlFor="birthTime" className="flex items-center gap-2 text-sm font-semibold text-purple-300">
                     <Clock className="size-4 text-purple-400" />
-                    Birth Time
+                    {t('form.birthTime.label')}
                   </Label>
                   <Input
                     id="birthTime"
@@ -209,40 +219,67 @@ export default function MiniaturaAIGenerator() {
                     value={birthTime}
                     onChange={(e) => setBirthTime(e.target.value)}
                     className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
-                    placeholder="--:--"
+                    placeholder={t('form.birthTime.placeholder')}
                   />
                 </div>
 
                 {/* 出生地点 */}
-                <div className="space-y-1.5">
+                <div className="space-y-1.5 relative z-10">
                   <div className="flex items-center justify-between">
                     <Label htmlFor="birthLocation" className="flex items-center gap-2 text-sm font-semibold text-purple-300">
                       <MapPin className="size-4 text-purple-400" />
-                      Birth Location
+                      {t('form.birthLocation.label')}
                     </Label>
                     <button
                       type="button"
-                      onClick={() => setUseCoordinates(!useCoordinates)}
+                      onClick={() => {
+                        setUseCoordinates(!useCoordinates);
+                        // 切换模式时清除保存的坐标
+                        setSelectedLocationCoords(null);
+                      }}
                       className="text-xs text-purple-400 hover:text-purple-300 underline"
                     >
-                      {useCoordinates ? 'Use city name' : 'Use coordinates'}
+                      {useCoordinates ? t('form.birthLocation.useCityName') : t('form.birthLocation.useCoordinates')}
                     </button>
                   </div>
-                  <Input
-                    id="birthLocation"
-                    type="text"
-                    value={birthLocation}
-                    onChange={(e) => setBirthLocation(e.target.value)}
-                    className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
-                    placeholder={useCoordinates ? 'Enter coordinates (e.g., 40.7128, -74.0060)' : 'Enter your birth city...'}
-                  />
+                  {useCoordinates ? (
+                    <Input
+                      id="birthLocation"
+                      type="text"
+                      value={birthLocation}
+                      onChange={(e) => {
+                        setBirthLocation(e.target.value);
+                        setSelectedLocationCoords(null); // 清除坐标，因为用户手动输入了坐标
+                      }}
+                      className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
+                      placeholder={t('form.birthLocation.placeholderCoordinates')}
+                    />
+                  ) : (
+                    <LocationAutocomplete
+                      id="birthLocation"
+                      value={birthLocation}
+                      onChange={(value) => {
+                        setBirthLocation(value);
+                        // 如果用户清空了输入，清除坐标
+                        if (!value) {
+                          setSelectedLocationCoords(null);
+                        }
+                      }}
+                      onSelect={(result) => {
+                        // 用户从列表选择了地点，保存坐标
+                        setSelectedLocationCoords(result.coordinates);
+                      }}
+                      placeholder={t('form.birthLocation.placeholder')}
+                      className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
+                    />
+                  )}
                 </div>
 
                 {/* 时区 */}
                 <div className="space-y-1.5">
                   <Label htmlFor="timezone" className="flex items-center gap-2 text-sm font-semibold text-purple-300">
                     <Globe className="size-4 text-purple-400" />
-                    Timezone
+                    {t('form.timezone.label')}
                   </Label>
                   <select
                     id="timezone"
@@ -272,12 +309,12 @@ export default function MiniaturaAIGenerator() {
                   {isGenerating ? (
                     <>
                       <div className="mr-2 size-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
-                      生成中...
+                      {t('form.buttons.generating')}
                     </>
                   ) : (
                     <>
                       <Sparkles className="mr-2 size-4" />
-                      ✨ Generate Your Chart ✨
+                      {t('form.buttons.generate')}
                     </>
                   )}
                 </Button>
@@ -285,7 +322,7 @@ export default function MiniaturaAIGenerator() {
                 {/* 隐私提示 */}
                 <div className="flex items-center justify-center gap-2 text-xs text-gray-400">
                   <span>🔒</span>
-                  <span>Your data is processed securely and never stored permanently. We respect your privacy while unlocking cosmic insights.</span>
+                  <span>{t('form.privacy')}</span>
                 </div>
               </div>
             </CardContent>
@@ -331,14 +368,14 @@ export default function MiniaturaAIGenerator() {
                             <span className="text-2xl font-bold text-purple-400">{progress}%</span>
                           </div>
                         </div>
-                        <p className="text-lg font-medium mb-2 text-white">生成你的星盘图中...</p>
-                        <p className="text-sm text-gray-400">请稍候，即将完成</p>
+                        <p className="text-lg font-medium mb-2 text-white">{t('messages.success.generating')}</p>
+                        <p className="text-sm text-gray-400">{t('messages.success.almostDone')}</p>
                       </>
                     ) : (
                       <>
                         <div className="size-16 animate-spin rounded-full border-4 border-purple-400 border-t-transparent mb-4" />
-                        <p className="text-lg font-medium mb-2 text-white">正在处理你的星盘数据...</p>
-                        <p className="text-sm text-gray-400">这可能需要几秒钟</p>
+                        <p className="text-lg font-medium mb-2 text-white">{t('messages.success.processing')}</p>
+                        <p className="text-sm text-gray-400">{t('messages.success.mayTakeMoment')}</p>
                       </>
                     )}
                   </div>
@@ -359,7 +396,7 @@ export default function MiniaturaAIGenerator() {
                         onClick={handleDownload}
                       >
                         <Calendar className="mr-2 size-4" />
-                        Download Chart
+                        {t('form.buttons.download')}
                       </Button>
                       <Button 
                         variant="outline" 
@@ -367,7 +404,7 @@ export default function MiniaturaAIGenerator() {
                         onClick={handleGenerate}
                       >
                         <Sparkles className="mr-2 size-4" />
-                        Generate New Chart
+                        {t('form.buttons.generateNew')}
                       </Button>
                     </div>
                     
@@ -377,9 +414,9 @@ export default function MiniaturaAIGenerator() {
                         imageUrl={generatedChart || ''}
                         imageData={generatedChartData}
                         mimeType="image/png"
-                        title="Check out my Astrocartography Chart!"
-                        description="I just generated my personalized astrocartography map! Discover your cosmic connections around the world."
-                        hashtags={["Astrocartography", "AstroMap", "Astrology", "CosmicConnections", "BirthChart"]}
+                        title={t('result.title')}
+                        description={t('result.description')}
+                        hashtags={t.raw('result.hashtags') as string[]}
                         onShare={handleShare}
                       />
                     )}

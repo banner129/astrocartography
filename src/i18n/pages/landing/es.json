@@ -1,0 +1,450 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Calculadora de Astrocartografía",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Calculadora de Astrocartografía"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Inicio",
+          "url": "/",
+          "icon": "RiHomeLine"
+        }
+      ]
+    },
+    "buttons": [],
+    "show_sign": false,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Calculadora de Astrocartografía - Descubre tu Ubicación Ideal",
+    "highlight_text": "Gratis para Siempre",
+    "description": "La calculadora de astrocartografía proyecta tu carta natal en el mundo, revelando dónde las líneas planetarias amplifican tu carrera, relaciones y crecimiento personal. Utilizando cálculos de nivel NASA precisos hasta 1 milla, analizamos más de 200,000 coordenadas globales para mostrar dónde las energías planetarias del Sol, Venus, Júpiter y otros planetas son más fuertes. Nómadas digitales, personas que planean relocalizarse y entusiastas de la astrología confían en nuestra herramienta gratuita para obtener información basada en datos sobre ubicaciones—sin registro, sin límites.",
+    "announcement": {
+      "label": "100% Gratis",
+      "title": "Sin Registro • Cartas Ilimitadas",
+      "url": "/#features"
+    },
+    "images": [
+      {
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "Ejemplo de Mapa de Astrocartografía con Líneas Planetarias",
+        "title": "Tu Carta de Astrocartografía Personalizada"
+      },
+      {
+        "src": "/imgs/features/hero-web.webp",
+        "alt": "Interfaz de Calculadora de Astrocartografía",
+        "title": "Análisis Profesional de Ubicación"
+      }
+    ],
+    "layout": "left-image-right-content",
+    "enable_carousel": true,
+    "buttons": [
+      {
+        "title": "Genera tu Carta de Astrocartografía Gratis",
+        "icon": "RiMagicLine",
+        "url": "/#generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "stats": [
+      {
+        "value": "50,000+",
+        "label": "Cartas Generadas",
+        "icon": "RiUserLine"
+      },
+      {
+        "value": "200,000+",
+        "label": "Ubicaciones Analizadas",
+        "icon": "RiMapPinLine"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "Impulsado por tecnología de precisión astronómica",
+    "items": [
+      {
+        "title": "Swiss Ephemeris",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Swiss Ephemeris"
+        }
+      },
+      {
+        "title": "Datos de Nivel NASA",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "Cálculos de Nivel NASA"
+        }
+      },
+      {
+        "title": "Interpretación con IA",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "Análisis con IA"
+        }
+      },
+      {
+        "title": "Cobertura Global",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "200,000+ Ubicaciones"
+        }
+      },
+      {
+        "title": "Privacidad Primero",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Procesamiento Local"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Qué es la Calculadora de Astrocartografía",
+    "label": "Introducción",
+    "description": "La calculadora de astrocartografía proyecta tu carta natal globalmente, mostrando dónde estaban los planetas angulares en el momento de tu nacimiento.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp"
+    },
+    "items": [
+      {
+        "title": "Cálculos Planetarios de Nivel NASA",
+        "description": "La calculadora de astrocartografía utiliza Swiss Ephemeris, el estándar astronómico que coincide con los datos planetarios de la NASA. Calculamos dónde estaba cada planeta (Sol, Luna, Venus, Marte, Júpiter, Saturno) en posición angular—ascendiendo (ASC), poniéndose (DSC), culminando (MC), o en el nadir (IC)—en tu momento exacto de nacimiento en toda la superficie terrestre. Cada línea de astrocartografía es precisa hasta 1 milla, asegurando que tu carta de astrocartografía coincida con los cálculos de astrólogos profesionales. Cuando te encuentras en una línea planetaria, la energía de ese planeta domina tu experiencia allí.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Cálculos de astrocartografía de nivel NASA"
+        }
+      },
+      {
+        "title": "Interpretación de Ubicación con IA",
+        "description": "Nuestro sistema analiza cómo tu carta natal interactúa con más de 200,000 coordenadas globales. La IA explica qué significa cada línea de astrocartografía: las líneas de Venus activan el amor y la creatividad, las líneas de Júpiter traen oportunidades y expansión, las líneas de Saturno fortalecen la disciplina profesional. No solo mostramos dónde están las líneas—explicamos cómo leer los mapas de astrocartografía y qué significa cada ubicación para tu carrera, relaciones, salud y creatividad, haciendo la astrocartografía para relocalización práctica y accesible.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Interpretación de astrocartografía con IA"
+        }
+      },
+      {
+        "title": "Exportación Instantánea en Múltiples Formatos",
+        "description": "Genera tu mapa de astrocartografía en 3 segundos, luego descarga archivos PNG de alta resolución, PDF o SVG. Los mapas marcan claramente todas las líneas planetarias, puntos de poder (intersecciones de líneas) y nombres de ciudades. Junto con informes de interpretación con IA, tu carta de astrocartografía está lista para planificación personal, consultas profesionales o decisiones de relocalización en equipo. Todos los archivos están libres de marcas de agua con derechos comerciales completos.",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Exporta cartas de astrocartografía al instante"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por Qué Elegir Nuestra Calculadora de Astrocartografía",
+    "label": "Beneficios Principales",
+    "description": "Nuestra calculadora de astrocartografía combina precisión astronómica con interpretación con IA, ofreciendo análisis de nivel profesional que es completamente gratuito y enfocado en la privacidad.",
+    "items": [
+      {
+        "title": "Precisión Profesional, Completamente Gratis",
+        "description": "Mientras que los competidores cobran $15.9/mes por análisis con IA o $22.90 por informes PDF, nuestra calculadora de astrocartografía ofrece acceso ilimitado gratuito. Usamos la misma biblioteca Swiss Ephemeris en la que confía el software profesional de $360, con precisión de 1 milla que coincide con los estándares de la NASA. Genera cartas de astrocartografía ilimitadas, descarga archivos libres de marcas de agua y accede a interpretaciones con IA—sin tarjeta de crédito, sin tarifas ocultas. Ya seas estudiante, emprendedor o jubilado, accede a análisis profesional de astrocartografía sin costo.",
+        "icon": "RiGiftLine",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Calculadora profesional de astrocartografía gratis"
+        }
+      },
+      {
+        "title": "Orientación Honesta y Consciente del Contexto",
+        "description": "A diferencia de herramientas que prometen resultados garantizados, reconocemos que la astrocartografía muestra potencial energético, no certezas. Una línea de Venus podría mejorar las relaciones o mostrar desafíos relacionales que necesitas abordar. Nuestra IA considera el contexto de tu carta personal, etapa actual de vida e interacciones planetarias. Las preguntas frecuentes afirman honestamente: usa los mapas de astrocartografía como un factor entre consideraciones prácticas como oportunidades profesionales, costo de vida y requisitos de visa. La astrología real respeta la complejidad—nosotros también.",
+        "icon": "RiShieldCheckLine",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Orientación honesta de astrocartografía"
+        }
+      },
+      {
+        "title": "Arquitectura con Prioridad en Privacidad",
+        "description": "Tus datos de nacimiento se calculan localmente en tu navegador—nunca se suben a servidores, nunca se almacenan en bases de datos, nunca se comparten con terceros. Genera tu carta de astrocartografía con privacidad completa. Todos los archivos tienen derechos comerciales completos: úsalos para planificación personal, consultas profesionales de astrología, enseñanza o publicación sin tarifas de licencia. La privacidad y la calidad profesional no deberían ser exclusivas de clientes que pagan.",
+        "icon": "RiLockLine",
+        "image": {
+          "src": "/imgs/features/hero-web.webp",
+          "alt": "Herramienta de astrocartografía enfocada en privacidad"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo Usar la Calculadora de Astrocartografía",
+    "description": "Genera tu carta profesional de astrocartografía en 4 pasos simples.",
+    "items": [
+      {
+        "title": "Ingresa Información de Nacimiento",
+        "description": "Ingresa tu fecha de nacimiento, hora (lo más precisa posible hasta el minuto) y ciudad. Sin la hora exacta de nacimiento, aún verás líneas planetarias (Sol, Luna, Venus, etc.) pero no líneas angulares (ASC, DSC, MC, IC). Nuestra base de datos incluye más de 100,000 ciudades globales con manejo automático de zona horaria e histórico de horario de verano.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Selecciona Líneas Planetarias",
+        "description": "Elige qué planetas mostrar: Sol (confianza, identidad), Luna (emociones, seguridad), Venus (amor, estética), Marte (acción, competencia), Júpiter (oportunidades, crecimiento), Saturno (disciplina, carrera), además de Urano, Neptuno y Plutón. El sistema renderiza las líneas de astrocartografía en tiempo real en el mapa mundial.",
+        "icon": "RiPlanetLine"
+      },
+      {
+        "title": "Explora Mapa Interactivo e Información con IA",
+        "description": "Haz clic en cualquier línea planetaria o punto de poder (intersección de líneas) para obtener una interpretación detallada con IA. Aprende cómo ese planeta afecta tu carrera, relaciones, salud y creatividad en esa ubicación, además de si es adecuado para residencia a largo plazo, visitas cortas, trabajo o estudio. Sin límites de consultas—explora todo lo que necesites.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Exporta Archivos Profesionales",
+        "description": "Descarga mapas PNG de alta resolución, informes de interpretación PDF o archivos vectoriales SVG con un clic. Todos los archivos están libres de marcas de agua y soportan uso comercial. Imprime para reuniones de consulta, comparte con amigos o usa en decisiones de relocalización en equipo.",
+        "icon": "RiDownloadLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Características de la Calculadora Profesional de Astrocartografía",
+    "description": "Seis características principales aseguran tanto precisión astronómica como usabilidad práctica.",
+    "items": [
+      {
+        "title": "Mapa Global Interactivo",
+        "description": "Arrastra, acerca y haz clic en cualquier ciudad para ver instantáneamente su distribución de energía planetaria. Los mapas soportan vistas satelitales, de terreno y límites políticos, ayudándote a entender cómo las líneas de astrocartografía corresponden a la geografía real. Los puntos de poder (intersecciones de líneas) están resaltados—estas zonas de convergencia energética son puntos clave de enfoque en astrocartografía para decisiones de relocalización.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Motor de Cálculo Swiss Ephemeris",
+        "description": "Utilizamos Swiss Ephemeris, soportando cálculos planetarios desde 3000 a.C. hasta 3000 d.C. Mantenida por el Observatorio de Zurich, esta biblioteca coincide con la precisión de órbitas planetarias NASA JPL y potencia software profesional de astrología en todo el mundo. Ya sea analizando figuras históricas o planificando relocalizaciones futuras, la precisión de tu mapa de astrocartografía coincide con software profesional de $360.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Cobertura Global Multiidioma",
+        "description": "Busca ciudades en chino, inglés, japonés y más en más de 100,000 ubicaciones con datos históricos de zona horaria. El sistema maneja automáticamente cambios de horario de verano (como cambios de reglas DST de EE.UU. 1970-2007) y ajustes de límites de zona horaria, asegurando cartas de astrocartografía precisas independientemente del país de nacimiento o era.",
+        "icon": "RiTranslate"
+      },
+      {
+        "title": "Filtrado Inteligente de Líneas Planetarias",
+        "description": "Muestra u oculta combinaciones específicas de líneas planetarias sin límites. Muestra solo líneas Sol+Júpiter para ciudades profesionales, solo líneas Venus+Luna para ubicaciones de seguridad emocional, u oculta líneas Saturno+Plutón para evitar zonas de alto desafío. Guarda configuraciones de filtros favoritas para comparar rápidamente diferentes combinaciones planetarias y encontrar ubicaciones que coincidan con los objetivos de tu etapa actual de vida.",
+        "icon": "RiFilterLine"
+      },
+      {
+        "title": "Análisis Energético de Puntos de Poder",
+        "description": "La IA identifica y resalta automáticamente las intersecciones de líneas (puntos de poder) donde múltiples energías planetarias se activan simultáneamente. Estos cruces típicamente ejercen una influencia más fuerte que las líneas individuales. Por ejemplo: las intersecciones Venus+Júpiter pueden traer oportunidades románticas y crecimiento de riqueza, mientras que las intersecciones Saturno+Plutón son adecuadas para transformación profunda y reconstrucción profesional.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Historial y Comparación Multi-Persona",
+        "description": "El sistema guarda automáticamente tu historial de generación, soportando carga simultánea de múltiples cartas de astrocartografía para comparación. Compara las superposiciones de tus líneas planetarias con las de una pareja, identifica intersecciones de líneas de Júpiter entre miembros del equipo, o compara cambios de cartas de tránsito a lo largo de años. Para relocalizaciones en equipo, mudanzas familiares o selección de ubicación en pareja, superpone rápidamente las distribuciones de múltiples personas.",
+        "icon": "RiTeamLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Preguntas Frecuentes",
+    "title": "Preguntas Frecuentes de la Calculadora de Astrocartografía - Respuestas a Preguntas Comunes",
+    "description": "Respuestas reales a preguntas que nuestros usuarios realmente hacen.",
+    "items": [
+      {
+        "title": "¿Qué pasa si no sé mi hora exacta de nacimiento?",
+        "description": "¡Aún puedes usar la Calculadora de Astrocartografía! Sin la hora exacta, no podemos mostrar tus líneas ASC/DSC/MC/IC, pero aún verás líneas planetarias (Sol, Luna, Venus, etc.) que revelan mucho sobre la compatibilidad de ubicación. Para mejores resultados, consulta tu acta de nacimiento o contacta el hospital donde naciste."
+      },
+      {
+        "title": "Me sentí terrible viviendo en mi línea de Venus. ¿Está mal el mapa?",
+        "description": "La astrocartografía muestra energías potenciales, no garantías. Una línea de Venus podría mejorar las relaciones pero también podría amplificar desafíos relacionales que necesitas trabajar. El contexto importa—tu carta personal, circunstancias de vida e influencias planetarias adicionales juegan un papel. Nuestra interpretación con IA puede ayudarte a entender estos matices."
+      },
+      {
+        "title": "¿Qué tan precisos son los cálculos?",
+        "description": "Utilizamos cálculos planetarios de nivel NASA, precisos hasta 1 milla en la superficie terrestre. Nuestros cálculos tienen en cuenta zonas horarias, horario de verano y cambios históricos de calendario. Esta es la misma precisión en la que confían los astrólogos profesionales para consultas."
+      },
+      {
+        "title": "¿Debería mudarme basándome únicamente en mi mapa de astrocartografía?",
+        "description": "No. La astrocartografía es una herramienta poderosa para entender energías de ubicación, pero no debería ser tu única consideración. Ten en cuenta asuntos prácticos como oportunidades profesionales, costo de vida, requisitos de visa y conexiones personales. Usa nuestros mapas como una entrada entre muchas para tomar decisiones de vida."
+      },
+      {
+        "title": "¿Puedo usar los mapas generados comercialmente?",
+        "description": "Sí. Tus cartas de astrocartografía generadas e informes de interpretación pueden usarse para cualquier propósito: planificación personal, consultas profesionales de astrología, enseñanza, publicaciones, compartir en redes sociales, etc., sin tarifas de licencia. Tus datos de nacimiento se calculan localmente con protección completa de privacidad."
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonios",
+    "title": "Usuarios Reales Comparten sus Experiencias de Astrocartografía",
+    "description": "Los usuarios comparten cómo nuestra calculadora de astrocartografía informó sus decisiones de relocalización.",
+    "icon": "RiThumbUpLine",
+    "items": [
+      {
+        "title": "Sophia Chen",
+        "label": "Nómada Digital",
+        "description": "Como nómada digital, usé la calculadora de astrocartografía para analizar más de 20 ciudades candidatas. Elegí Lisboa donde pasa mi línea de Venus, y después de llegar, mi círculo social se expandió rápidamente—incluso conocí a mi pareja actual. La astrocartografía no es magia, pero me ayudó a entender por qué ciertas ciudades se sienten más cómodas.",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Marcus Liu",
+        "label": "Consultor de Astrología",
+        "description": "El 60% de mis consultas con clientes involucran preguntas de relocalización. La calculadora de astrocartografía me permite mostrar rápidamente a los clientes sus distribuciones de líneas planetarias, junto con análisis de carta de relocalización. Un cliente tuvo éxito iniciando un negocio en una ciudad de línea de Júpiter y refirió a 5 amigos. Esta herramienta elevó el profesionalismo de mi servicio.",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Elena Rodriguez",
+        "label": "Estudiante de Astrología",
+        "description": "Después de estudiar astrocartografía por 2 años y probar múltiples herramientas de pago, los resultados de Swiss Ephemeris de esta calculadora coinciden exactamente con mi software Solar Fire, pero con una interfaz más amigable e interpretaciones más claras. Altamente recomendado para todos los estudiantes de astrología.",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "James Park",
+        "label": "Emprendedor",
+        "description": "Al planear abrir una sucursal en Asia, usé la calculadora de astrocartografía para analizar Singapur, Bangkok y Tokio. Elegí Bangkok donde convergen mis líneas de Sol y Júpiter, y el desarrollo superó las expectativas. Pero entiendo: la astrocartografía es solo un factor de referencia—el ambiente empresarial y la investigación de mercado importan igualmente.",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      },
+      {
+        "title": "Amelia Wang",
+        "label": "Consejera de Salud Mental",
+        "description": "Integro mapas de astrocartografía en consultas de planificación profesional de clientes. Muchos clientes sienten que 'algo está mal' en ciertas ciudades pero no pueden explicar por qué—la astrocartografía proporciona un marco interpretativo. La protección de privacidad es excelente; los clientes pueden generar mapas ellos mismos y traerlos para discutir.",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "David Kim",
+        "label": "Planificador de Jubilación",
+        "description": "Antes de jubilarme, investigué 10 ubicaciones candidatas. La calculadora de astrocartografía mostró mi línea de Luna pasando por la Isla Sur de Nueva Zelanda. Después de visitas al sitio, elegí Nueva Zelanda y realmente sentí paz emocional y pertenencia. Pero también valoré los recursos de atención médica y el costo de vida. Los mapas de astrocartografía son puntos de partida excelentes.",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Genera tu Mapa de Astrocartografía Gratis Ahora",
+    "description": "Usa la Calculadora de Astrocartografía para crear tu carta profesional de astrocartografía con precisión de nivel NASA analizando más de 200,000 ubicaciones globales. Descubre ciudades ideales para tu carrera, relaciones y crecimiento personal. No se requiere registro, uso ilimitado—obtén análisis profesional en 3 segundos.",
+    "buttons": [
+      {
+        "title": "Genera Mapa Gratis Ahora",
+        "icon": "RiMapLine",
+        "url": "/#generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Calculadora de Astrocartografía",
+      "description": "La Calculadora de Astrocartografía proporciona herramientas profesionales de astrocartografía para nómadas digitales, planificadores de relocalización y practicantes de astrología. Usamos Swiss Ephemeris para asegurar precisión astronómica, y la tecnología de IA hace accesibles las interpretaciones complejas de líneas planetarias. Protección estricta de privacidad, análisis de más de 200,000 ubicaciones globales—haciendo cartas profesionales de astrocartografía accesibles para todos.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Calculadora de Astrocartografía"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • Calculadora de Astrocartografía. Todos los derechos reservados.",
+    "nav": {
+      "items": [
+        {
+          "title": "Producto",
+          "children": []
+        },
+        {
+          "title": "Recursos",
+          "children": [
+            {
+              "title": "Preguntas Frecuentes",
+              "url": "/#faq"
+            },
+            {
+              "title": "AIStage",
+              "url": "https://aistage.net",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "Comunidad",
+          "children": []
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/astrocartography",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/astrocartography",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/astrocartography",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@astrocartography.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "Destacado en ShowMeBestAI",
+        "url": "https://www.showmebest.ai",
+        "target": "_blank",
+        "image": {
+          "src": "https://www.showmebest.ai/badge/feature-badge-white.webp",
+          "alt": "Destacado en ShowMeBestAI",
+          "width": 220,
+          "height": 60
+        }
+      },
+      {
+        "title": "Destacado en Aura++",
+        "url": "https://auraplusplus.com/projects/astrocarto",
+        "target": "_blank",
+        "image": {
+          "src": "https://auraplusplus.com/images/badges/featured-on-light.svg",
+          "alt": "Destacado en Aura++",
+          "width": 220,
+          "height": 60
+        }
+      }
+    ],
+    "agreement": {
+      "items": [
+        {
+          "title": "Política de Privacidad",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Términos de Servicio",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
