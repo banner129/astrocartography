@@ -20,6 +20,7 @@ Allow: /sitemap.xml
 # 允许法律页面（合规要求）
 Allow: /privacy-policy
 Allow: /terms-of-service
+Allow: /refund-policy
 
 # 阻止所有其他页面
 Disallow: /ms

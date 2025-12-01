@@ -120,11 +120,11 @@
   },
   "feedback": {
     "title": "Maklum Balas",
-    "description": "Kami ingin mendengar apa yang berjalan dengan baik atau bagaimana kami boleh meningkatkan pengalaman produk.",
+    "description": "Kami ingin mendengar apa yang berjalan dengan baik atau bagaimana kami boleh meningkatkan pengalaman produk kami.",
     "submit": "Hantar",
     "loading": "Menghantar...",
     "contact_tip": "Cara lain untuk menghubungi kami",
-    "rating_tip": "Bagaimana perasaan anda tentang Miniatur AI?",
+    "rating_tip": "Bagaimana perasaan anda tentang produk kami?",
     "placeholder": "Tinggalkan kata-kata anda di sini..."
   },
   "share": {

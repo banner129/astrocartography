@@ -27,7 +27,7 @@ export default async function DefaultLayout({
       {/* 底部导航栏*/}
       {page.footer && <Footer footer={page.footer} />}
       {/* 悬浮信息按钮*/}
-      {/* <Feedback socialLinks={page.footer?.social?.items} /> */}
+      <Feedback socialLinks={page.footer?.social?.items} />
     </>
   );
 }

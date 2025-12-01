@@ -109,7 +109,15 @@ export async function POST(req: Request) {
     let expired_at = "";
 
     const timePeriod = new Date(currentDate);
-    timePeriod.setMonth(currentDate.getMonth() + valid_months);
+    
+    // Special handling for 2-week pass (product_id: premium-2weeks)
+    if (product_id === "premium-2weeks" && valid_months === 0) {
+      // Set expiration to 14 days (2 weeks) from now
+      timePeriod.setDate(currentDate.getDate() + 14);
+    } else {
+      // Normal handling: add months
+      timePeriod.setMonth(currentDate.getMonth() + valid_months);
+    }
 
     const timePeriodMillis = timePeriod.getTime();
     let delayTimeMillis = 0;

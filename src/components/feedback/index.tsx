@@ -14,6 +14,8 @@ import { Github, Mail, MessageCircle, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/icon";
 import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { useAppContext } from "@/contexts/app";
 import { useState } from "react";
@@ -33,25 +35,46 @@ export default function Feedback({
   const [feedback, setFeedback] = useState("");
   const [rating, setRating] = useState<number | null>(10);
   const [loading, setLoading] = useState<boolean>(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = async () => {
-    if (!user) {
-      setShowSignModal(true);
-      return;
-    }
-
     if (!feedback.trim()) {
       toast.error("Please enter your feedback");
       return;
     }
 
+    // If user is not logged in, require name and email
+    if (!user) {
+      if (!name.trim()) {
+        toast.error("Please enter your name");
+        return;
+      }
+      if (!email.trim()) {
+        toast.error("Please enter your email");
+        return;
+      }
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        toast.error("Please enter a valid email address");
+        return;
+      }
+    }
+
     try {
       setLoading(true);
 
-      const req = {
+      const req: any = {
         content: feedback,
         rating: rating,
       };
+
+      // Add name and email if user is not logged in
+      if (!user) {
+        req.name = name.trim();
+        req.email = email.trim();
+      }
 
       const resp = await fetch("/api/add-feedback", {
         method: "POST",
@@ -72,6 +95,8 @@ export default function Feedback({
 
       setFeedback("");
       setRating(null);
+      setName("");
+      setEmail("");
       setShowFeedback(false);
     } catch (error) {
       toast.error("Failed to submit, please try again later");
@@ -108,12 +133,40 @@ export default function Feedback({
             </DialogDescription>
           </DialogHeader>
 
-          <div className="mt-2">
+          {/* Show name and email fields if user is not logged in */}
+          {!user && (
+            <div className="mt-4 space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="name">Name</Label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="your-email@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+            </div>
+          )}
+
+          <div className="mt-4">
+            <Label htmlFor="feedback">Feedback</Label>
             <Textarea
+              id="feedback"
               placeholder={t("feedback.placeholder")}
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
-              className="min-h-[150px] text-base resize-none"
+              className="min-h-[150px] text-base resize-none mt-2"
             />
           </div>
 

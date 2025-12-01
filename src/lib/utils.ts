@@ -39,7 +39,7 @@ export function getCanonicalUrl(locale: string, path: string = '/'): string {
  */
 export function getSocialMediaConfig() {
   return {
-    support_email: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@miniaturaiapp.com',
+    support_email: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@astrocarto.org',
     twitter_url: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://x.com/miniaturaiapp',
     github_url: process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/miniaturaiapp', 
     discord_url: process.env.NEXT_PUBLIC_DISCORD_URL || 'https://discord.gg/miniaturaiapp'

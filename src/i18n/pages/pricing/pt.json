@@ -2,40 +2,102 @@
   "pricing": {
     "name": "pricing",
     "label": "Preços",
-    "title": "Escolha Seu Plano",
-    "description": "Obtenha todos os recursos do Wplace Pixel. Crie pixel art profissional rapidamente.",
+    "title": "Escolha Seu Plano de Astrocartografia",
+    "description": "Mapas interativos gratuitos para sempre, ou desbloqueie recursos premium de IA com opções de preços flexíveis",
     "groups": [],
     "items": [
       {
-        "title": "Gratuito",
-        "description": "Perfeito para projetos pessoais",
+        "title": "Mapa Gratuito de Astrocartografia",
+        "description": "Experiência básica de astrocartografia",
         "features_title": "Inclui",
         "features": [
-          "Conversões ilimitadas de imagem",
-          "Suporte à paleta oficial",
-          "Visualização em tempo real",
-          "Estatísticas de grade",
-          "Download de pixel art",
-          "Suporte da comunidade"
+          "Mapa interativo de astrocartografia",
+          "Explicações básicas das linhas planetárias",
+          "Gerar mapas ilimitados",
+          "Acesso instantâneo",
+          "Sem necessidade de cartão de crédito"
         ],
-        "interval": "para sempre",
+        "interval": "one-time",
         "amount": 0,
         "cn_amount": 0,
         "currency": "USD",
-        "price": "$0",
+        "price": "Gratuito",
+        "original_price": "",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "100% gratuito para sempre",
+        "button": {
+          "title": "Gerar Mapa Gratuito",
+          "url": "/#generator",
+          "icon": "RiMapLine"
+        },
+        "product_id": "free",
+        "product_name": "Mapa Gratuito de Astrocartografia",
+        "credits": 0,
+        "valid_months": 0
+      },
+      {
+        "title": "Passe de Acesso de 2 Semanas",
+        "description": "Perfeito para experimentar recursos premium",
+        "label": "Popular",
+        "features_title": "Recursos Premium",
+        "features": [
+          "Acesso ilimitado ao chat de IA por 2 semanas",
+          "Análise de gráfico de relocação",
+          "Acesso ao explorador de países",
+          "Experiência sem anúncios",
+          "Pagamento único",
+          "Sem renovação automática"
+        ],
+        "interval": "one-time",
+        "amount": 990,
+        "cn_amount": 6990,
+        "currency": "USD",
+        "price": "$9.9",
         "original_price": "",
         "unit": "USD",
         "is_featured": true,
-        "tip": "Gratuito para sempre. Comece a criar agora!",
+        "tip": "Pagamento único, acesso por 14 dias",
         "button": {
-          "title": "Começar",
-          "url": "/converter",
+          "title": "Comprar Passe",
+          "url": "/#pricing",
+          "icon": "RiShoppingCartLine"
+        },
+        "product_id": "premium-2weeks",
+        "product_name": "Passe de Acesso Premium - 2 Semanas",
+        "credits": 0,
+        "valid_months": 0
+      },
+      {
+        "title": "Assinatura Mensal",
+        "description": "Melhor para usuários regulares",
+        "features_title": "Todos os Recursos Premium",
+        "features": [
+          "Acesso ilimitado ao chat de IA",
+          "Análise de gráfico de relocação",
+          "Acesso ao explorador de países",
+          "Experiência sem anúncios",
+          "Suporte prioritário",
+          "Cancele a qualquer momento"
+        ],
+        "interval": "month",
+        "amount": 1290,
+        "cn_amount": 8990,
+        "currency": "USD",
+        "price": "$12.9",
+        "original_price": "$15.9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Economize 19% em relação aos concorrentes, cancele a qualquer momento",
+        "button": {
+          "title": "Assinar Agora",
+          "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "free",
-        "product_name": "Wplace Pixel Gratuito",
-        "credits": -1,
-        "valid_months": -1
+        "product_id": "premium-monthly",
+        "product_name": "Assinatura Mensal Premium",
+        "credits": 0,
+        "valid_months": 1
       }
     ]
   }

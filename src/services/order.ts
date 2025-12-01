@@ -13,6 +13,7 @@ import { getIsoTimestr } from "@/lib/time";
 import Stripe from "stripe";
 import { updateAffiliateForOrder } from "./affiliate";
 import { Order } from "@/types/order";
+import { sendOrderConfirmationEmail } from "./email";
 
 export async function handleOrderSession(session: Stripe.Checkout.Session) {
   try {
@@ -52,6 +53,19 @@ export async function handleOrderSession(session: Stripe.Checkout.Session) {
 
       // update affiliate for paied order
       await updateAffiliateForOrder(order as unknown as Order);
+    }
+
+    // send order confirmation email
+    if (paid_email) {
+      try {
+        await sendOrderConfirmationEmail({
+          order: order as unknown as Order,
+          customerEmail: paid_email,
+        });
+      } catch (e) {
+        console.log("send order confirmation email failed: ", e);
+        // Don't throw error, just log it
+      }
     }
 
     console.log(

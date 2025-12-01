@@ -36,8 +36,11 @@ export async function getPage(
       locale = "zh";
     }
 
+    // Normalize locale to lowercase
+    const normalizedLocale = locale.toLowerCase();
+
     const result = await import(
-      `@/i18n/pages/${name}/${locale.toLowerCase()}.json`
+      `@/i18n/pages/${name}/${normalizedLocale}.json`
     ).then((module) => module.default);
     return result;
   } catch (error) {

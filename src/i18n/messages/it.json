@@ -119,11 +119,11 @@
   },
   "feedback": {
     "title": "Feedback",
-    "description": "Ci piacerebbe sapere cosa è andato bene o come possiamo migliorare l'esperienza di Astrocartography Calculator.",
+    "description": "Ci piacerebbe sapere cosa è andato bene o come possiamo migliorare l'esperienza del nostro prodotto.",
     "submit": "Invia",
     "loading": "Invio in corso...",
     "contact_tip": "Altri modi per contattarci",
-    "rating_tip": "Come ti senti riguardo Astrocartography Calculator?",
+    "rating_tip": "Come ti senti riguardo al nostro prodotto?",
     "placeholder": "Lascia i tuoi commenti qui..."
   },
   "share": {

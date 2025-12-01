@@ -45,3 +45,23 @@ Authorization: Bearer {{apiKey}}
   "provider": "openrouter",
   "model": "deepseek/deepseek-r1"
 }
+
+### test email
+POST {{baseUrl}}/api/test-email
+Content-Type: application/json
+
+{
+  "to": "your-email@example.com",
+  "type": "test"
+}
+
+### contact form
+POST {{baseUrl}}/api/contact
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "subject": "Test Contact Form",
+  "message": "This is a test message from the contact form."
+}

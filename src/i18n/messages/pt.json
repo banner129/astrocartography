@@ -120,11 +120,11 @@
   },
   "feedback": {
     "title": "Feedback",
-    "description": "Adoraríamos ouvir o que deu certo ou como podemos melhorar a experiência do produto.",
+    "description": "Adoraríamos ouvir o que deu certo ou como podemos melhorar a experiência do nosso produto.",
     "submit": "Enviar",
     "loading": "Enviando...",
     "contact_tip": "Outras formas de nos contatar",
-    "rating_tip": "Como você se sente sobre o Wplace Pixel?",
+    "rating_tip": "Como você se sente sobre o nosso produto?",
     "placeholder": "Deixe suas palavras aqui..."
   } ,
   "miniatureGenerator": {

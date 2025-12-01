@@ -270,6 +270,10 @@
       {
         "title": "Posso usar os mapas gerados comercialmente?",
         "description": "Sim. Seus mapas de astrocartografia gerados e relatórios de interpretação podem ser usados para qualquer finalidade: planejamento pessoal, consultas profissionais de astrologia, ensino, publicações, compartilhamento social, etc., sem taxas de licença. Seus dados de nascimento são calculados localmente com proteção completa de privacidade."
+      },
+      {
+        "title": "Qual é a sua política de reembolso?",
+        "description": "Oferecemos uma garantia de reembolso de 7 dias para o Passe de Acesso de 2 Semanas ($9.9) se você usou o serviço menos de 3 vezes. As assinaturas mensais podem ser canceladas a qualquer momento, com uma garantia de reembolso de 7 dias para assinantes pela primeira vez. Para termos de reembolso detalhados, elegibilidade e como solicitar um reembolso, visite nossa página de Política de Reembolso."
       }
     ]
   },
@@ -344,6 +348,108 @@
       }
     ]
   },
+  "pricing": {
+    "name": "pricing",
+    "label": "Preços",
+    "title": "Escolha Seu Plano de Astrocartografia",
+    "description": "Mapas interativos gratuitos para sempre, ou desbloqueie recursos premium de IA com opções de preços flexíveis",
+    "groups": [],
+    "items": [
+      {
+        "title": "Mapa Gratuito de Astrocartografia",
+        "description": "Experiência básica de astrocartografia",
+        "features_title": "Inclui",
+        "features": [
+          "Mapa interativo de astrocartografia",
+          "Explicações básicas das linhas planetárias",
+          "Gerar mapas ilimitados",
+          "Acesso instantâneo",
+          "Sem necessidade de cartão de crédito"
+        ],
+        "interval": "one-time",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "Gratuito",
+        "original_price": "",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "100% gratuito para sempre",
+        "button": {
+          "title": "Gerar Mapa Gratuito",
+          "url": "/#generator",
+          "icon": "RiMapLine"
+        },
+        "product_id": "free",
+        "product_name": "Mapa Gratuito de Astrocartografia",
+        "credits": 0,
+        "valid_months": 0
+      },
+      {
+        "title": "Passe de Acesso de 2 Semanas",
+        "description": "Perfeito para experimentar recursos premium",
+        "label": "Popular",
+        "features_title": "Recursos Premium",
+        "features": [
+          "Acesso ilimitado ao chat de IA por 2 semanas",
+          "Análise de gráfico de relocação",
+          "Acesso ao explorador de países",
+          "Experiência sem anúncios",
+          "Pagamento único",
+          "Sem renovação automática"
+        ],
+        "interval": "one-time",
+        "amount": 990,
+        "cn_amount": 6990,
+        "currency": "USD",
+        "price": "$9.9",
+        "original_price": "",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "Pagamento único, acesso por 14 dias",
+        "button": {
+          "title": "Comprar Passe",
+          "url": "/#pricing",
+          "icon": "RiShoppingCartLine"
+        },
+        "product_id": "premium-2weeks",
+        "product_name": "Passe de Acesso Premium - 2 Semanas",
+        "credits": 0,
+        "valid_months": 0
+      },
+      {
+        "title": "Assinatura Mensal",
+        "description": "Melhor para usuários regulares",
+        "features_title": "Todos os Recursos Premium",
+        "features": [
+          "Acesso ilimitado ao chat de IA",
+          "Análise de gráfico de relocação",
+          "Acesso ao explorador de países",
+          "Experiência sem anúncios",
+          "Suporte prioritário",
+          "Cancele a qualquer momento"
+        ],
+        "interval": "month",
+        "amount": 1290,
+        "cn_amount": 8990,
+        "currency": "USD",
+        "price": "$12.9",
+        "original_price": "$15.9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Economize 19% em relação aos concorrentes, cancele a qualquer momento",
+        "button": {
+          "title": "Assinar Agora",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "Assinatura Mensal Premium",
+        "credits": 0,
+        "valid_months": 1
+      }
+    ]
+  },
   "footer": {
     "name": "footer",
     "brand": {
@@ -405,7 +511,7 @@
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@astrocartography.com",
+          "url": "mailto:support@astrocarto.org",
           "target": "_self"
         }
       ]
@@ -443,6 +549,10 @@
         {
           "title": "Termos de Serviço",
           "url": "/terms-of-service"
+        },
+        {
+          "title": "Política de Reembolso",
+          "url": "/refund-policy"
         }
       ]
     }

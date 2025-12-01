@@ -107,6 +107,9 @@ export default async function LandingPage({
 
       {/* Testimonials / People Love：展示2~3条用户好评或社会信任信息 */}  
       {page.testimonial && <Testimonial section={page.testimonial} />}
+
+     {/* 价格信息*/}
+      {page.pricing && <Pricing pricing={page.pricing} />}
        
       {/* FAQ（Frequently Asked Questions）：3~5个问题+简短回答，每个回答≤80字- */}
       {page.faq && <FAQ section={page.faq} />}
@@ -116,7 +119,7 @@ export default async function LandingPage({
       
       {/* {page.showcase && <Showcase section={page.showcase} />} */}
       {/* {page.stats && <Stats section={page.stats} />} */}
-      {/* {page.pricing && <Pricing pricing={page.pricing} />} */}
+   
     
     
     

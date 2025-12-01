@@ -119,11 +119,11 @@
   },
   "feedback": {
     "title": "Feedback",
-    "description": "We'd love to hear what went well or how we can improve the graffiti generator experience.",
+    "description": "We'd love to hear what went well or how we can improve our product experience.",
     "submit": "Submit",
     "loading": "Submitting...",
     "contact_tip": "Other ways to contact us",
-    "rating_tip": "How do you feel about Graffiti Generator?",
+    "rating_tip": "How do you feel about our product?",
     "placeholder": "Leave your words here..."
   },
   "share": {
