@@ -2,7 +2,14 @@ import { Resend } from "resend";
 import { getSocialMediaConfig } from "@/lib/utils";
 import { Order } from "@/types/order";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization: only create Resend client when needed and API key is available
+function getResendClient(): Resend | null {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    return null;
+  }
+  return new Resend(apiKey);
+}
 
 export enum EmailType {
   OrderConfirmation = "order_confirmation",
@@ -24,7 +31,8 @@ export async function sendEmail({
   from,
 }: SendEmailParams) {
   try {
-    if (!process.env.RESEND_API_KEY) {
+    const resend = getResendClient();
+    if (!resend) {
       console.log("RESEND_API_KEY not configured, skip sending email");
       return;
     }
