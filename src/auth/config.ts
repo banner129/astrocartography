@@ -194,14 +194,15 @@ export const authOptions: NextAuthConfig = {
       });
 
       // 如果 token.user 存在，直接使用
-      if (token?.user && "uuid" in token.user && token.user.uuid) {
+      const tokenUser = token?.user;
+      if (tokenUser && typeof tokenUser === "object" && tokenUser !== null && "uuid" in tokenUser && tokenUser.uuid) {
         session.user = {
           ...session.user,
-          ...token.user,
+          ...tokenUser,
         };
         console.log("✅ [session callback] 使用 token.user", {
-          uuid: token.user.uuid,
-          email: token.user.email,
+          uuid: tokenUser.uuid,
+          email: tokenUser.email,
           fullUser: JSON.stringify(session.user, null, 2),
         });
         return session;
