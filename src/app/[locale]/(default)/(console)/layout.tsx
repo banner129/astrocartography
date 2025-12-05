@@ -2,12 +2,17 @@ import ConsoleLayout from "@/components/console/layout";
 import { ReactNode } from "react";
 import { Sidebar } from "@/types/blocks/sidebar";
 import { getTranslations } from "next-intl/server";
-import { getUserInfo } from "@/services/user";
+import { getUserInfo, getUserUuid } from "@/services/user";
 import { redirect } from "next/navigation";
 
 export default async function ({ children }: { children: ReactNode }) {
+  const user_uuid = await getUserUuid();
+  if (!user_uuid) {
+    redirect("/auth/signin");
+  }
+
   const userInfo = await getUserInfo();
-  if (!userInfo || !userInfo.email) {
+  if (!userInfo) {
     redirect("/auth/signin");
   }
 
