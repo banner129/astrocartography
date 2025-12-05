@@ -60,11 +60,8 @@ export function usePayment() {
     paymentMethod: "stripe" | "creem" = "stripe"
   ) => {
     try {
-      // 检查是否是测试模式（通过环境变量，仅在开发环境可用）
-      const isTestMode = process.env.NEXT_PUBLIC_SKIP_AUTH_FOR_TESTING === "true";
-      
-      // 检查用户登录状态（测试模式下跳过）
-      if (!isTestMode && !user) {
+      // 检查用户登录状态
+      if (!user) {
         setShowSignModal(true);
         return { needAuth: true };
       }

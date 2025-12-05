@@ -57,7 +57,7 @@ export default async function ({
         credits: order.credits?.toString() || "0",
       },
       amount: order.amount,
-      currency: order.currency,
+      currency: order.currency || undefined,
     };
 
     // 调用处理函数（会检查订单状态，防止重复处理）

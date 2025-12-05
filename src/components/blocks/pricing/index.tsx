@@ -31,14 +31,14 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
 
   const handleCheckout = async (item: PricingItem, cn_pay: boolean = false) => {
     try {
-      // 检查是否是测试模式（通过环境变量，仅在开发环境可用）
-      const isTestMode = process.env.NEXT_PUBLIC_SKIP_AUTH_FOR_TESTING === "true";
-      
-      // 在测试模式下默认使用 Creem 支付，否则使用 Stripe
-      const paymentMethod = isTestMode ? "creem" : "stripe";
+      // 检查用户登录状态
+      if (!user) {
+        setShowSignModal(true);
+        return;
+      }
 
-      // 使用统一的支付处理函数
-      const result = await handlePaymentCheckout(item, cn_pay, paymentMethod);
+      // 使用统一的支付处理函数，默认使用 Stripe
+      const result = await handlePaymentCheckout(item, cn_pay, "stripe");
 
       if (result?.needAuth) {
         setShowSignModal(true);
