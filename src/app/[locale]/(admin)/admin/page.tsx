@@ -8,12 +8,15 @@ import { getPostsTotal } from "@/models/post";
 import { DataCard } from "@/types/blocks/base";
 
 export default async function () {
-  const totalPaidOrders = await getPaidOrdersTotal();
-  const totalUsers = await getUsersTotal();
-  const totalFeedbacks = await getFeedbacksTotal();
-  const totalPosts = await getPostsTotal();
+  try {
+    const [totalPaidOrders, totalUsers, totalFeedbacks, totalPosts] = await Promise.all([
+      getPaidOrdersTotal().catch(() => 0),
+      getUsersTotal().catch(() => 0),
+      getFeedbacksTotal().catch(() => 0),
+      getPostsTotal().catch(() => 0),
+    ]);
 
-  const dataCards: DataCard[] = [
+    const dataCards: DataCard[] = [
     {
       title: "Total Users",
       label: "",
@@ -40,50 +43,66 @@ export default async function () {
     },
   ];
 
-  // Get data for the last 30 days
-  const startTime = new Date();
-  startTime.setDate(startTime.getDate() - 90);
-  const orders = await getOrderCountByDate(startTime.toISOString(), "paid");
-  const users = await getUserCountByDate(startTime.toISOString());
+    // Get data for the last 30 days
+    const startTime = new Date();
+    startTime.setDate(startTime.getDate() - 90);
+    const [orders, users] = await Promise.all([
+      getOrderCountByDate(startTime.toISOString(), "paid").catch(() => undefined),
+      getUserCountByDate(startTime.toISOString()).catch(() => undefined),
+    ]);
 
-  // Merge the data into a single array
-  const allDates = new Set([
-    ...(orders ? Array.from(orders.keys()) : []),
-    ...(users ? Array.from(users.keys()) : []),
-  ]);
+    // Merge the data into a single array
+    const allDates = new Set([
+      ...(orders ? Array.from(orders.keys()) : []),
+      ...(users ? Array.from(users.keys()) : []),
+    ]);
 
-  const data = Array.from(allDates)
-    .sort()
-    .map((date) => ({
-      date,
-      users: users?.get(date) || 0,
-      orders: orders?.get(date) || 0,
-    }));
+    const data = Array.from(allDates)
+      .sort()
+      .map((date) => ({
+        date,
+        users: users?.get(date) || 0,
+        orders: orders?.get(date) || 0,
+      }));
 
-  const fields = [
-    { key: "users", label: "Users", color: "var(--primary)" },
-    { key: "orders", label: "Orders", color: "var(--secondary)" },
-  ];
+    const fields = [
+      { key: "users", label: "Users", color: "var(--primary)" },
+      { key: "orders", label: "Orders", color: "var(--secondary)" },
+    ];
 
-  return (
-    <div className="flex flex-col gap-4">
-      <Header />
-      <div className="flex flex-1 flex-col">
-        <div className="@container/main flex flex-1 flex-col gap-2">
-          <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-            <DataCards dataCards={dataCards} />
-            <div className="px-4 lg:px-6">
-              <DataCharts
-                data={data}
-                fields={fields}
-                title="Users and Orders Overview"
-                description="Daily users and orders data"
-                defaultTimeRange="90d"
-              />
+    return (
+      <div className="flex flex-col gap-4">
+        <Header />
+        <div className="flex flex-1 flex-col">
+          <div className="@container/main flex flex-1 flex-col gap-2">
+            <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+              <DataCards dataCards={dataCards} />
+              <div className="px-4 lg:px-6">
+                <DataCharts
+                  data={data}
+                  fields={fields}
+                  title="Users and Orders Overview"
+                  description="Daily users and orders data"
+                  defaultTimeRange="90d"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } catch (e) {
+    console.error("Admin page error: ", e);
+    return (
+      <div className="flex flex-col gap-4">
+        <Header />
+        <div className="flex flex-1 flex-col items-center justify-center p-8">
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold mb-2">Error loading admin data</h2>
+            <p className="text-muted-foreground">Please check the console for details.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
