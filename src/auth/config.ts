@@ -197,7 +197,14 @@ export const authOptions: NextAuthConfig = {
       const tokenUser = token?.user;
       if (tokenUser && typeof tokenUser === "object" && tokenUser !== null && "uuid" in tokenUser && tokenUser.uuid) {
         // 类型断言：tokenUser 符合 JWT 的 user 类型
-        const userData = tokenUser as NonNullable<typeof token.user>;
+        type UserData = {
+          uuid?: string;
+          email?: string;
+          nickname?: string;
+          avatar_url?: string;
+          created_at?: string | Date;
+        };
+        const userData = tokenUser as UserData;
         session.user = {
           ...session.user,
           ...userData,
