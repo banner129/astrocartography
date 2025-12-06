@@ -369,16 +369,33 @@ export const authOptions: NextAuthConfig = {
             console.log("❌ [jwt callback] token.email 不存在，无法恢复用户");
           }
         } else {
-          console.log("✅ [jwt callback] token.user 已存在，无需恢复", {
-            uuid: token.user.uuid,
-            email: token.user.email,
-          });
+          // token.user 已存在，添加类型检查
+          if (token.user && typeof token.user === "object" && "uuid" in token.user) {
+            const userData = token.user as {
+              uuid?: string;
+              email?: string;
+              nickname?: string;
+              avatar_url?: string;
+              created_at?: string | Date;
+            };
+            console.log("✅ [jwt callback] token.user 已存在，无需恢复", {
+              uuid: userData.uuid,
+              email: userData.email,
+            });
+          } else {
+            console.log("✅ [jwt callback] token.user 已存在，无需恢复（类型检查失败）");
+          }
         }
 
+        // 安全地获取 token.user 的属性
+        const tokenUser = token.user && typeof token.user === "object" && "uuid" in token.user
+          ? (token.user as { uuid?: string; email?: string })
+          : null;
+        
         console.log("🔑 [jwt callback] Token 处理完成", {
           hasTokenUser: !!token.user,
-          tokenUserUuid: token.user?.uuid,
-          tokenUserEmail: token.user?.email,
+          tokenUserUuid: tokenUser?.uuid,
+          tokenUserEmail: tokenUser?.email,
         });
         return token;
       } catch (e) {
