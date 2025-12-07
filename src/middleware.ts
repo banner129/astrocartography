@@ -7,6 +7,20 @@ const intl = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
+  // 🔍 调试：检查请求中的 Cookie
+  const requestCookies = request.cookies.getAll();
+  const cookieHeader = request.headers.get("cookie");
+  
+  console.log("🔍 [Middleware] 请求 Cookie 检查", {
+    pathname,
+    requestCookieCount: requestCookies.length,
+    requestCookieNames: requestCookies.map(c => c.name),
+    hasCookieHeader: !!cookieHeader,
+    cookieHeaderLength: cookieHeader?.length || 0,
+    cookieHeaderPreview: cookieHeader ? `${cookieHeader.substring(0, 150)}...` : "无",
+    sessionCookieInRequest: requestCookies.find(c => c.name.includes('authjs') || c.name.startsWith('__Secure-')),
+  });
+  
   // 检查是否有多个连续的语言前缀（如 /es/ms/, /zh/pt/ 等）
   const localePrefixes = routing.locales.join("|");
   const multipleLocalePattern = new RegExp(`^/(${localePrefixes})/(${localePrefixes})(/|$)`);
@@ -18,11 +32,21 @@ export default function middleware(request: NextRequest) {
       const [, firstLocale, secondLocale, restPath] = match;
       // 使用最后一个语言前缀，忽略第一个
       const correctPath = `/${secondLocale}${restPath || '/'}`;
+      console.log("🔄 [Middleware] 重定向到", { from: pathname, to: correctPath });
       return NextResponse.redirect(new URL(correctPath, request.url));
     }
   }
   
+  // 调用 next-intl 中间件
   const response = intl(request) as NextResponse;
+  
+  // 🔍 调试：检查 next-intl 中间件处理后的响应
+  const responseCookies = response.cookies.getAll();
+  console.log("🔍 [Middleware] next-intl 响应 Cookie 检查", {
+    responseCookieCount: responseCookies.length,
+    responseCookieNames: responseCookies.map(c => c.name),
+    sessionCookieInResponse: responseCookies.find(c => c.name.includes('authjs') || c.name.startsWith('__Secure-')),
+  });
 
   const isBlocked =
     pathname === "/zh" ||
@@ -32,6 +56,14 @@ export default function middleware(request: NextRequest) {
   if (isBlocked) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
+  
+  // 🔍 调试：最终返回的响应
+  const finalCookies = response.cookies.getAll();
+  console.log("🔍 [Middleware] 最终响应 Cookie 检查", {
+    finalCookieCount: finalCookies.length,
+    finalCookieNames: finalCookies.map(c => c.name),
+    sessionCookieInFinal: finalCookies.find(c => c.name.includes('authjs') || c.name.startsWith('__Secure-')),
+  });
 
   return response;
 }
