@@ -12,5 +12,12 @@ export function NextAuthSessionProvider({
     return <>{children}</>;
   }
 
-  return <SessionProvider>{children}</SessionProvider>;
+  return (
+    <SessionProvider
+      refetchInterval={0} // 禁用自动刷新，避免频繁请求
+      refetchOnWindowFocus={true} // 窗口聚焦时刷新
+    >
+      {children}
+    </SessionProvider>
+  );
 }

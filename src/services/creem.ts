@@ -42,14 +42,15 @@ export async function createCreemCheckoutSession(
 ): Promise<CreemCheckoutSessionResponse> {
   try {
     const creemApiKey = process.env.CREEM_API_KEY;
-    const creemApiUrl = process.env.CREEM_API_URL || "https://api.creem.io/v1";
+    // 🔥 根据 Creem 文档，尝试多个可能的 API 端点
+    // 如果 /v1/checkout/sessions 不存在，尝试其他端点
+    const creemApiUrl = process.env.CREEM_API_URL || "https://api.creem.io";
 
     // 如果未配置 API Key，使用产品 ID 直接生成支付链接（方案 1）
     if (!creemApiKey) {
       console.log("CREEM_API_KEY not configured, using product ID direct link");
-      const isTestMode =
-        process.env.CREEM_TEST_MODE === "true" ||
-        process.env.NODE_ENV !== "production";
+      const { isCreemTestMode } = await import("@/services/config");
+      const isTestMode = isCreemTestMode();
       const baseUrl = isTestMode
         ? "https://www.creem.io/test/payment"
         : "https://www.creem.io/payment";
@@ -64,50 +65,99 @@ export async function createCreemCheckoutSession(
       };
     }
 
-    // 使用 Creem API 创建支付会话（方案 2）
-    const requestBody = {
-      product_id: params.product_id,
-      product_name: params.product_name,
-      amount: params.amount,
-      currency: params.currency.toLowerCase(),
-      order_no: params.order_no,
-      customer_email: params.user_email,
-      metadata: {
+    // 使用 Creem API 创建支付会话
+    // 根据 Creem 文档：https://docs.creem.io/features/checkout/checkout-api#rest-api
+    // 🔥 关键：使用 request_id 传递 order_no，支付成功后会作为 request_id 查询参数返回
+    // 🔥 注意：根据文档示例，基础参数只需要 product_id 和 success_url
+    // cancel_url 和 customer_email 可能在某些版本中不支持，先移除
+    const requestBody: any = {
+      product_id: params.product_id, // 🔥 必需：产品 ID
+      request_id: params.order_no, // 🔥 关键：使用 request_id 传递订单号
+      success_url: params.success_url, // 🔥 必需：成功后的重定向 URL
+    };
+
+    // 🔥 根据错误日志，测试 API 不支持 cancel_url 和 customer_email
+    // 暂时注释掉，如果后续需要可以尝试添加
+    // if (params.cancel_url) {
+    //   requestBody.cancel_url = params.cancel_url;
+    // }
+
+    // 添加 metadata（用于 webhook，如果支持）
+    if (params.order_no) {
+      requestBody.metadata = {
+        order_no: params.order_no,
         user_uuid: params.user_uuid,
         credits: params.credits.toString(),
         locale: params.locale,
-      },
-      success_url: params.success_url,
-      cancel_url: params.cancel_url,
-      ...(params.is_subscription && {
-        subscription: {
-          interval: params.interval || "month",
-        },
-      }),
-    };
-
-    const response = await fetch(`${creemApiUrl}/checkout/sessions`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${creemApiKey}`,
-      },
-      body: JSON.stringify(requestBody),
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(
-        `Creem API error: ${response.status} ${response.statusText} - ${errorText}`
-      );
+      };
     }
 
-    const data = await response.json();
+    // 如果是订阅，添加订阅参数（如果支持）
+    if (params.is_subscription) {
+      requestBody.subscription = {
+        interval: params.interval || "month",
+      };
+    }
 
-    return {
-      checkout_url: data.checkout_url || data.url || data.payment_url,
-      session_id: data.session_id || data.id || params.order_no,
-    };
+    // 🔥 根据 Creem 文档，API 端点是 /v1/checkouts（不是 /v1/checkout/sessions）
+    // 测试模式使用 test-api.creem.io，生产模式使用 api.creem.io
+    // 文档：https://docs.creem.io/getting-started/test-mode#rest-api
+    const { isCreemTestMode } = await import("@/services/config");
+    const isTestMode = isCreemTestMode();
+    const baseApiUrl = isTestMode ? "https://test-api.creem.io" : "https://api.creem.io";
+    
+    // 🔥 只使用正确的端点
+    const endpoint = `${baseApiUrl}/v1/checkouts`;
+    
+    console.log("🔔 [Creem API] 使用端点:", endpoint);
+    console.log("🔔 [Creem API] 测试模式:", isTestMode);
+    console.log("🔔 [Creem API] 请求体:", JSON.stringify(requestBody, null, 2));
+
+    try {
+      // 🔥 根据 Creem 文档，使用 x-api-key 请求头（不是 Authorization: Bearer）
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": creemApiKey, // 🔥 文档明确使用 x-api-key
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      // 🔥 添加详细日志：打印响应信息
+      console.log("🔔 [Creem API] 响应状态:", response.status, response.statusText);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`❌ [Creem API] 请求失败:`, {
+          endpoint,
+          status: response.status,
+          statusText: response.statusText,
+          error: errorText,
+        });
+        
+        // 尝试解析错误信息
+        try {
+          const errorJson = JSON.parse(errorText);
+          console.error("❌ [Creem API] 错误详情:", errorJson);
+        } catch (e) {
+          // 忽略解析错误
+        }
+        
+        throw new Error(`Creem API error: ${response.status} ${response.statusText} - ${errorText}`);
+      }
+
+      const data = await response.json();
+      console.log("✅ [Creem API] 支付会话创建成功:", data);
+
+      return {
+        checkout_url: data.checkout_url || data.url || data.payment_url,
+        session_id: data.session_id || data.id || params.order_no,
+      };
+    } catch (error: any) {
+      console.error("❌ [Creem API] 请求异常:", error.message);
+      throw error;
+    }
   } catch (error: any) {
     console.error("Failed to create Creem checkout session:", error);
     throw error;
@@ -174,7 +224,8 @@ export function parseCreemWebhookEvent(eventData: any): {
   // Creem webhook 事件可能的结构：
   // 1. { type: "payment.succeeded", data: {...} }
   // 2. { event: "payment.succeeded", ... }
-  // 3. { status: "paid", order_no: "...", ... }
+  // 3. { eventType: "checkout.completed", object: { order: {...} } } - 实际结构
+  // 4. { status: "paid", order_no: "...", ... }
 
   let eventType = "";
   let eventData_obj = eventData;
@@ -183,6 +234,10 @@ export function parseCreemWebhookEvent(eventData: any): {
   if (eventData.type) {
     eventType = eventData.type;
     eventData_obj = eventData.data || eventData;
+  } else if (eventData.eventType) {
+    // 🔥 Creem 实际使用的字段名是 eventType
+    eventType = eventData.eventType;
+    eventData_obj = eventData; // 保持完整数据结构，因为 metadata 可能在 object.order 中
   } else if (eventData.event) {
     eventType = eventData.event;
     eventData_obj = eventData;
@@ -205,7 +260,7 @@ export function parseCreemWebhookEvent(eventData: any): {
 
   return {
     type: eventType,
-    data: eventData_obj,
+    data: eventData_obj, // 返回完整数据，让 handleCreemOrder 自己提取
   };
 }
 

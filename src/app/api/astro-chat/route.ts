@@ -5,6 +5,9 @@ import {
 import { deepseek } from "@ai-sdk/deepseek";
 import { respErr } from "@/lib/resp";
 import { formatChartContext, getSystemPrompt } from "@/lib/astro-format";
+import { getUserUuid } from "@/services/user";
+import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/credit";
+import { getAIChatCreditCost } from "@/services/config";
 
 // 检测用户问题的语言
 function detectUserLanguage(text: string): string {
@@ -80,6 +83,50 @@ export async function POST(req: Request) {
 
     if (!chartData || !chartData.birthData || !chartData.planetLines) {
       return respErr("星盘数据不完整");
+    }
+
+    // 🔥 检查用户是否登录
+    const user_uuid = await getUserUuid();
+    if (!user_uuid) {
+      return new Response(
+        JSON.stringify({ code: 401, message: "请先登录" }),
+        { status: 401, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // 🔥 获取 AI 聊天消耗的积分数量（从配置读取）
+    const creditCost = getAIChatCreditCost();
+    
+    // 🔥 检查用户积分余额
+    const userCredits = await getUserCredits(user_uuid);
+    if (userCredits.left_credits < creditCost) {
+      // 返回 402 状态码，错误信息包含"积分不足"关键词，方便前端识别
+      return new Response(
+        JSON.stringify({
+          code: 402,
+          message: `积分不足，需要 ${creditCost} 积分，当前余额：${userCredits.left_credits} 积分`,
+        }),
+        {
+          status: 402,
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
+    }
+
+    // 🔥 消耗积分（在调用 AI 之前）
+    try {
+      await decreaseCredits({
+        user_uuid,
+        trans_type: CreditsTransType.AIChat,
+        credits: creditCost,
+      });
+      console.log(`✅ [Astro Chat] 用户 ${user_uuid} 消耗 ${creditCost} 积分进行 AI 聊天`);
+    } catch (creditError: any) {
+      console.error("❌ [Astro Chat] 消耗积分失败:", creditError);
+      return new Response(
+        JSON.stringify({ code: 500, message: "积分扣除失败，请稍后重试" }),
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      );
     }
 
     // 检查 DeepSeek API Key

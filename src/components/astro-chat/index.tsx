@@ -1,13 +1,16 @@
 'use client';
 
-import { useState, useRef, useEffect, useMemo } from 'react';
+import { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useChat } from 'ai/react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { MessageCircle, Send, Sparkles, X } from 'lucide-react';
+import { MessageCircle, Send, Sparkles, X, Coins } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { User } from '@/types/user';
+import { useTranslations, useLocale } from 'next-intl';
+import PricingModal from '@/components/pricing/pricing-modal';
+import { Pricing as PricingType } from '@/types/blocks/pricing';
 
 interface AstroChatProps {
   open: boolean;
@@ -47,6 +50,61 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showSuggestions, setShowSuggestions] = useState(true);
+  const [creditCost, setCreditCost] = useState<number>(10); // 默认 10 积分
+  const [userCredits, setUserCredits] = useState<number | null>(null); // 用户积分余额
+  const [lastCredits, setLastCredits] = useState<number | null>(null); // 上次积分值，用于检测变化
+  const [showPricingModal, setShowPricingModal] = useState(false);
+  const [pricingData, setPricingData] = useState<PricingType | null>(null);
+  const t = useTranslations('astro_chat');
+  const locale = useLocale();
+
+  // 获取用户积分余额
+  const fetchUserCredits = useCallback(async () => {
+    if (!user) return;
+    
+    try {
+      const response = await fetch('/api/get-user-credits', {
+        method: 'POST',
+      });
+      const data = await response.json();
+      if (data.code === 0 && data.data) {
+        const credits = data.data.left_credits || 0;
+        // 检测积分变化（使用函数式更新避免依赖 lastCredits）
+        setLastCredits(prev => {
+          if (prev !== null && credits !== prev) {
+            console.log('积分变化:', { old: prev, new: credits });
+          }
+          return credits;
+        });
+        setUserCredits(credits);
+      }
+    } catch (err) {
+      console.error('Failed to fetch user credits:', err);
+    }
+  }, [user]);
+
+  // 获取定价数据
+  const fetchPricingData = async () => {
+    try {
+      const response = await fetch(`/api/get-pricing?locale=${locale}`);
+      const data = await response.json();
+      if (data.success && data.pricing) {
+        setPricingData(data.pricing);
+      }
+    } catch (err) {
+      console.error('Failed to fetch pricing data:', err);
+    }
+  };
+
+  // 处理积分不足的情况
+  const handleInsufficientCredits = useCallback(async () => {
+    // 先获取定价数据（如果还没有）
+    if (!pricingData) {
+      await fetchPricingData();
+    }
+    // 弹出价格弹窗
+    setShowPricingModal(true);
+  }, [pricingData, locale]);
 
   const { messages, input, handleInputChange, handleSubmit, isLoading, error, append, setMessages } = useChat({
     api: '/api/astro-chat',
@@ -55,6 +113,13 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     },
     onError: (error) => {
       console.error('Chat error:', error);
+      // 捕获 402 错误（积分不足），直接弹出价格弹窗
+      const errorMessage = error.message || '';
+      if (errorMessage.includes('积分不足') || 
+          errorMessage.includes('insufficient') || 
+          (errorMessage.includes('需要') && errorMessage.includes('积分'))) {
+        handleInsufficientCredits();
+      }
     },
   });
 
@@ -85,6 +150,59 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages]);
+
+
+  // 获取积分消耗配置和用户积分
+  useEffect(() => {
+    if (open && user) {
+      // 获取积分消耗配置
+      fetch('/api/ai-chat-credit-cost')
+        .then(res => res.json())
+        .then(data => {
+          if (data.success && data.creditCost) {
+            setCreditCost(data.creditCost);
+          }
+        })
+        .catch(err => {
+          console.error('Failed to fetch credit cost:', err);
+        });
+      
+      // 获取用户积分余额
+      fetchUserCredits();
+    } else if (!user) {
+      // 未登录用户清空积分显示
+      setUserCredits(null);
+      setLastCredits(null);
+    }
+  }, [open, user, fetchUserCredits]);
+
+  // 监听页面可见性变化，用户返回时刷新积分
+  useEffect(() => {
+    if (!user || !open) return;
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible' && open) {
+        // 用户返回页面，刷新积分（检测积分变化）
+        fetchUserCredits();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [user, open, fetchUserCredits]);
+
+  // 每次对话完成后刷新积分（检测到消息增加时）
+  useEffect(() => {
+    if (user && messages.length > 0 && !isLoading) {
+      // 延迟一下，确保后端已经处理完积分扣除
+      const timer = setTimeout(() => {
+        fetchUserCredits();
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [messages.length, isLoading, user, fetchUserCredits]);
 
 
   // 处理表单提交
@@ -150,13 +268,20 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
               <div className="size-2 rounded-full bg-green-400 animate-pulse" />
               <span>Chart for: {chartData.birthData.location}</span>
             </div>
-            {!user && (
-              <div className="text-xs text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full border border-yellow-400/20">
-                {remainingFreeQuestions > 0 
-                  ? `Free: ${remainingFreeQuestions} question${remainingFreeQuestions > 1 ? 's' : ''} left`
-                  : 'Sign in for unlimited questions'}
-              </div>
-            )}
+            <div className="flex items-center gap-3">
+              {user && userCredits !== null && (
+                <div className="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full border border-blue-400/20">
+                  Credits: {userCredits}
+                </div>
+              )}
+              {!user && (
+                <div className="text-xs text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full border border-yellow-400/20">
+                  {remainingFreeQuestions > 0 
+                    ? `Free: ${remainingFreeQuestions} question${remainingFreeQuestions > 1 ? 's' : ''} left`
+                    : 'Sign in for unlimited questions'}
+                </div>
+              )}
+            </div>
           </div>
         </DialogHeader>
 
@@ -288,6 +413,21 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
               Please sign in to continue asking questions
             </div>
           )}
+          {/* 已登录用户显示积分消耗说明 */}
+          {user && (
+            <div className="mb-3 flex items-center justify-center gap-2 p-2 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-400 text-xs">
+              <Coins className="size-3.5" />
+              <span>
+                {userCredits !== null && (
+                  <span className="font-semibold">Credits: {userCredits} | </span>
+                )}
+                {creditCost === 1 
+                  ? t('credit_cost_notice_singular', { credits: creditCost })
+                  : t('credit_cost_notice', { credits: creditCost })
+                }
+              </span>
+            </div>
+          )}
           <div className="flex gap-2">
             <Textarea
               ref={textareaRef}
@@ -321,6 +461,19 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
           </div>
         </form>
       </DialogContent>
+
+      {/* 价格弹窗 */}
+      {pricingData && (
+        <PricingModal
+          open={showPricingModal}
+          onOpenChange={setShowPricingModal}
+          pricing={pricingData}
+          onSuccess={() => {
+            // 支付成功后刷新积分
+            fetchUserCredits();
+          }}
+        />
+      )}
     </Dialog>
   );
 }

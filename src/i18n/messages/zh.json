@@ -253,6 +253,13 @@
       "insufficient_title": "积分不足",
       "insufficient_description": "您的积分不足，请升级套餐继续使用AI功能",
       "upgrade_success": "升级成功！功能已解锁"
+    },
+    "success": {
+      "title": "支付成功！",
+      "description": "您的支付已成功处理",
+      "credits_added": "积分已添加到您的账户",
+      "view_orders": "查看我的订单",
+      "auto_redirect": "{seconds} 秒后自动跳转到用户中心..."
     }
   },
   "astrocartographyGenerator": {
@@ -309,5 +316,9 @@
       "description": "我刚刚生成了我的个性化星盘地图！发现你在世界各地的宇宙连接。",
       "hashtags": ["星盘地图", "占星地图", "占星学", "宇宙连接", "出生星盘"]
     }
+  },
+  "astro_chat": {
+    "credit_cost_notice": "每次对话消耗 {credits} 积分",
+    "credit_cost_notice_singular": "每次对话消耗 {credits} 积分"
   }
 }

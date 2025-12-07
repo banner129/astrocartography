@@ -15,12 +15,26 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { signIn } from "next-auth/react";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 export default function SignForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const t = useTranslations();
+  const [providers, setProviders] = useState<Record<string, any> | null>(null);
+
+  // 动态获取可用的 providers
+  useEffect(() => {
+    fetch("/api/auth/providers")
+      .then((res) => res.json())
+      .then((data) => {
+        setProviders(data);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch providers:", err);
+      });
+  }, []);
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
@@ -36,7 +50,8 @@ export default function SignForm({
         <CardContent>
           <div className="grid gap-6">
             <div className="flex flex-col gap-4">
-              {process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" && (
+              {/* 只在 provider 存在时显示 Google 按钮 */}
+              {providers?.google && (
                 <Button
                   variant="outline"
                   className="w-full"
@@ -46,7 +61,8 @@ export default function SignForm({
                   {t("sign_modal.google_sign_in")}
                 </Button>
               )}
-              {process.env.NEXT_PUBLIC_AUTH_GITHUB_ENABLED === "true" && (
+              {/* 只在 provider 存在时显示 GitHub 按钮 */}
+              {providers?.github && (
                 <Button
                   variant="outline"
                   className="w-full"
@@ -55,6 +71,12 @@ export default function SignForm({
                   <SiGithub className="w-4 h-4" />
                   {t("sign_modal.github_sign_in")}
                 </Button>
+              )}
+              {/* 如果没有可用的 providers，显示提示 */}
+              {providers && Object.keys(providers).length === 0 && (
+                <p className="text-sm text-muted-foreground text-center">
+                  {t("sign_modal.no_providers_available") || "No authentication providers available"}
+                </p>
               )}
             </div>
 

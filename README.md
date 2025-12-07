@@ -23,6 +23,36 @@ pnpm dev访问 `http://localhost:3000`
 
 ---
 
+## ⚙️ 环境变量配置
+
+### AI 聊天积分消耗配置
+
+AI 聊天功能每次消耗的积分数量可以通过环境变量配置：
+
+```bash
+# AI 聊天每次消耗的积分数量（默认：10）
+AI_CHAT_CREDIT_COST=10
+```
+
+**说明**：
+- 如果不设置此环境变量，默认每次消耗 **10 积分**
+- 可以通过修改此值来调整 AI 聊天的积分消耗
+- 修改后需要重启服务器才能生效
+
+### 其他必需的环境变量
+
+```bash
+# DeepSeek API Key（AI 聊天必需）
+DEEPSEEK_API_KEY=your_deepseek_api_key
+
+# 数据库连接
+DATABASE_URL=your_database_url
+
+# NextAuth 配置
+AUTH_SECRET=your_auth_secret
+AUTH_URL=http://localhost:3000
+```
+
 ## ⚙️ 性能优化
 
 ### ISR 缓存配置

@@ -74,6 +74,19 @@ export default function SignModal() {
 
 function ProfileForm({ className }: React.ComponentProps<"form">) {
   const t = useTranslations();
+  const [providers, setProviders] = React.useState<Record<string, any> | null>(null);
+
+  // 动态获取可用的 providers
+  React.useEffect(() => {
+    fetch("/api/auth/providers")
+      .then((res) => res.json())
+      .then((data) => {
+        setProviders(data);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch providers:", err);
+      });
+  }, []);
 
   return (
     <div className={cn("grid items-start gap-4", className)}>
@@ -90,7 +103,8 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
         {t("sign_modal.email_sign_in")}
       </Button> */}
 
-      {process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" && (
+      {/* 只在 provider 存在时显示 Google 按钮 */}
+      {providers?.google && (
         <Button
           variant="outline"
           className="w-full flex items-center gap-2"
@@ -103,7 +117,8 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
         </Button>
       )}
 
-      {process.env.NEXT_PUBLIC_AUTH_GITHUB_ENABLED === "true" && (
+      {/* 只在 provider 存在时显示 GitHub 按钮 */}
+      {providers?.github && (
         <Button
           variant="outline"
           className="w-full flex items-center gap-2"

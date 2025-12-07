@@ -1,3 +1,6 @@
+// 初始化代理（如果配置了）
+import "@/lib/proxy";
+
 import CredentialsProvider from "next-auth/providers/credentials";
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
@@ -129,7 +132,7 @@ export const authOptions: NextAuthConfig = {
       name: `${process.env.NODE_ENV === "production" ? "__Secure-" : ""}authjs.session-token`,
       options: {
         httpOnly: true,
-        sameSite: "lax",
+        sameSite: process.env.NODE_ENV === "production" ? "lax" : "lax", // 本地开发也使用 lax
         path: "/",
         secure: process.env.NODE_ENV === "production",
         // 不设置 domain，让浏览器自动处理，确保子域名也能访问
@@ -167,41 +170,98 @@ export const authOptions: NextAuthConfig = {
     async redirect({ url, baseUrl }) {
       console.log("🔄 [redirect callback] 重定向检查", { url, baseUrl });
       
-      // 🔥 关键修复：如果 url 是首页，检查是否有 callbackUrl 参数
-      // NextAuth 5.x 中，callbackUrl 可能通过 query string 传递
-      if (url === baseUrl || url === `${baseUrl}/`) {
-        // 尝试从 URL 的 query string 中获取 callbackUrl
-        try {
-          const urlObj = new URL(url);
-          const callbackUrl = urlObj.searchParams.get("callbackUrl");
-          if (callbackUrl) {
-            const finalUrl = callbackUrl.startsWith("/") 
-              ? `${baseUrl}${callbackUrl}` 
-              : callbackUrl;
-            console.log("🔄 [redirect callback] 从 query 参数获取 callbackUrl", { 
-              callbackUrl, 
-              finalUrl 
-            });
-            return finalUrl;
+      // 🔥 关键修复：如果 URL 是 API 端点，直接返回，不进行任何重定向处理
+      // 这可以防止 API 端点被重定向，导致 ERR_TOO_MANY_REDIRECTS
+      if (url.includes("/api/")) {
+        console.log("🔄 [redirect callback] 检测到 API 端点，直接返回", { url });
+        return url;
+      }
+      
+      // 🔥 修复递归编码问题：如果 callbackUrl 已经包含 callbackUrl，则清理它
+      try {
+        const urlObj = new URL(url);
+        const callbackUrl = urlObj.searchParams.get("callbackUrl");
+        
+        if (callbackUrl) {
+          // 检查是否已经递归编码（包含多层 callbackUrl）
+          if (callbackUrl.includes("callbackUrl=")) {
+            console.log("🔄 [redirect callback] 检测到递归编码的 callbackUrl，清理", { callbackUrl });
+            // 直接返回首页，避免递归
+            return baseUrl;
           }
-        } catch (e) {
-          console.log("🔄 [redirect callback] 解析 URL 失败", { error: e });
+          
+          // 确保 callbackUrl 不是 API 端点
+          if (callbackUrl.includes("/api/")) {
+            console.log("🔄 [redirect callback] callbackUrl 指向 API 端点，使用 baseUrl", { callbackUrl });
+            return baseUrl;
+          }
+          
+          // 正常的 callbackUrl 处理
+          const finalUrl = callbackUrl.startsWith("/") 
+            ? `${baseUrl}${callbackUrl}` 
+            : callbackUrl;
+          
+          // 再次检查 finalUrl 不是 API 端点
+          if (finalUrl.includes("/api/")) {
+            console.log("🔄 [redirect callback] finalUrl 是 API 端点，使用 baseUrl", { finalUrl });
+            return baseUrl;
+          }
+          
+          try {
+            const finalUrlObj = new URL(finalUrl);
+            if (finalUrlObj.origin === new URL(baseUrl).origin) {
+              console.log("🔄 [redirect callback] 使用 callbackUrl", { finalUrl });
+              return finalUrl;
+            }
+          } catch (e) {
+            // 如果不是完整 URL，当作相对路径处理
+            const relativeUrl = finalUrl.startsWith("/") ? finalUrl : `/${finalUrl}`;
+            if (relativeUrl.includes("/api/")) {
+              console.log("🔄 [redirect callback] 相对路径是 API 端点，使用 baseUrl", { relativeUrl });
+              return baseUrl;
+            }
+            console.log("🔄 [redirect callback] 相对路径 callbackUrl", { relativeUrl: `${baseUrl}${relativeUrl}` });
+            return `${baseUrl}${relativeUrl}`;
+          }
         }
+      } catch (e) {
+        console.log("🔄 [redirect callback] 解析 URL 失败", { error: e, url });
+      }
+      
+      // 如果 url 是首页，直接返回
+      if (url === baseUrl || url === `${baseUrl}/`) {
         console.log("🔄 [redirect callback] 检测到首页重定向，保持原样", { url });
         return url;
       }
       
       // Allows relative callback URLs
       if (url.startsWith("/")) {
+        // 如果是 API 端点，不应该重定向
+        if (url.includes("/api/")) {
+          console.log("🔄 [redirect callback] 相对路径是 API 端点，使用 baseUrl", { url });
+          return baseUrl;
+        }
         const finalUrl = `${baseUrl}${url}`;
         console.log("🔄 [redirect callback] 相对路径重定向", { finalUrl });
         return finalUrl;
       }
+      
       // Allows callback URLs on the same origin
-      else if (new URL(url).origin === baseUrl) {
-        console.log("🔄 [redirect callback] 同源重定向", { url });
-        return url;
+      try {
+        const urlObj = new URL(url);
+        if (urlObj.origin === new URL(baseUrl).origin) {
+          // 如果是 API 端点，不应该重定向
+          if (urlObj.pathname.includes("/api/")) {
+            console.log("🔄 [redirect callback] 同源 URL 是 API 端点，使用 baseUrl", { url });
+            return baseUrl;
+          }
+          console.log("🔄 [redirect callback] 同源重定向", { url });
+          return url;
+        }
+      } catch (e) {
+        // URL 解析失败，继续处理
       }
+      
       console.log("🔄 [redirect callback] 默认重定向到 baseUrl", { baseUrl });
       return baseUrl;
     },

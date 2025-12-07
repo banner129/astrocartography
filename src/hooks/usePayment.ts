@@ -128,10 +128,10 @@ export function usePayment() {
 
       // 根据支付方式处理跳转
       if (paymentMethod === "creem") {
-        // Creem 支付：直接跳转到支付链接
+        // Creem 支付：在新标签页打开支付链接
         const { checkout_url } = data;
         if (checkout_url) {
-          window.location.href = checkout_url;
+          window.open(checkout_url, '_blank', 'noopener,noreferrer');
           return { success: true };
         } else {
           toast.error("Failed to get checkout URL");

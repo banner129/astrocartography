@@ -26,7 +26,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
     useOneTapLogin();
   }
 
-  const { data: session } = isAuthEnabled() ? useSession() : { data: null };
+  const { data: session, status: sessionStatus } = isAuthEnabled() ? useSession() : { data: null, status: "unauthenticated" };
 
   const [showSignModal, setShowSignModal] = useState<boolean>(false);
   const [user, setUser] = useState<User | null>(null);
@@ -35,6 +35,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
 
   const fetchUserInfo = async function () {
     try {
+      console.log("🔍 [AppContext] 开始获取用户信息");
       const resp = await fetch("/api/get-user-info", {
         method: "POST",
       });
@@ -48,11 +49,15 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         throw new Error(message);
       }
 
+      console.log("✅ [AppContext] 获取用户信息成功", { 
+        uuid: data?.uuid, 
+        email: data?.email 
+      });
       setUser(data);
 
       updateInvite(data);
-    } catch (e) {
-      console.log("fetch user info failed");
+    } catch (e: any) {
+      console.log("❌ [AppContext] 获取用户信息失败:", e.message);
     }
   };
 
@@ -109,10 +114,21 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
+    console.log("🔄 [AppContext] Session 状态变化", {
+      hasSession: !!session,
+      hasUser: !!(session && session.user),
+      sessionStatus,
+      userEmail: session?.user?.email,
+      userUuid: session?.user?.uuid,
+    });
+    
     if (session && session.user) {
       fetchUserInfo();
+    } else if (sessionStatus === "unauthenticated") {
+      // 如果未认证，清空用户信息
+      setUser(null);
     }
-  }, [session]);
+  }, [session, sessionStatus]);
 
   return (
     <AppContext.Provider

@@ -143,14 +143,8 @@ export async function POST(req: Request) {
     }
 
     const timePeriodMillis = timePeriod.getTime();
-    let delayTimeMillis = 0;
-
-    if (is_subscription) {
-      delayTimeMillis = 24 * 60 * 60 * 1000; // 延迟 24 小时过期
-    }
-
-    const newTimeMillis = timePeriodMillis + delayTimeMillis;
-    const newDate = new Date(newTimeMillis);
+    // 订阅订单支付成功后立即开始计算有效期，不再延迟
+    const newDate = new Date(timePeriodMillis);
 
     expired_at = newDate.toISOString();
 
@@ -172,35 +166,33 @@ export async function POST(req: Request) {
     await insertOrder(order as typeof orders.$inferInsert);
 
     // 构建成功和取消 URL
-    const success_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/pay-success/creem/${order_no}`;
+    // 🔥 根据 Creem 文档：支付成功后会重定向到 success_url，并带有查询参数
+    // - 如果使用 API 创建 checkout：会带有 request_id（对应我们传递的 request_id）
+    // - 如果使用产品 ID 直接链接：我们可以在 URL 中添加 order_no 参数
+    // 为了兼容两种方式，我们使用查询参数方式，支持 request_id 和 order_no
+    // 注意：Creem API 会自动添加 request_id 参数，所以我们不需要在 URL 中手动添加
+    const success_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/pay-success/creem`;
 
     // 金额转换为分（Creem API 需要）
     const amountInCents = Math.round(amount);
 
-    // 如果提供了 Creem 产品 ID，直接使用产品 ID 生成支付链接
-    // 否则使用 API 创建支付会话
-    let checkout_url: string;
-    let session_id: string;
+    // 🔥 优先使用 Creem API 创建支付会话（如果配置了 CREEM_API_KEY）
+    // 如果 API 失败，自动回退到产品 ID 直接链接方式
+    let checkout_url: string | undefined;
+    let session_id: string | undefined;
 
-    if (creem_product_id) {
-      // 方案 1: 使用产品 ID 直接生成支付链接（更简单）
-      const isTestMode = process.env.CREEM_TEST_MODE === "true" || 
-                        process.env.NODE_ENV !== "production";
-      const baseUrl = isTestMode 
-        ? "https://www.creem.io/test/payment"
-        : "https://www.creem.io/payment";
-      
-      checkout_url = `${baseUrl}/${creem_product_id}?order_no=${order_no}&email=${encodeURIComponent(user_email)}`;
-      session_id = creem_product_id;
-    } else {
-      // 方案 2: 使用 Creem API 创建支付会话
+    const creemApiKey = process.env.CREEM_API_KEY;
+    
+    if (creemApiKey) {
+      // 方案 1: 使用 Creem API 创建支付会话（推荐，可以传递 referenceId 和 metadata）
       try {
+        console.log("🔔 [Creem Checkout] 尝试使用 API 方式创建支付会话");
         const checkoutSession = await createCreemCheckoutSession({
           product_id: creem_product_id || product_id,
           product_name: product_name,
           amount: amountInCents,
           currency: currency,
-          order_no: order_no,
+          order_no: order_no, // 作为 referenceId 传递
           user_email: user_email,
           user_uuid: user_uuid,
           credits: credits,
@@ -213,17 +205,48 @@ export async function POST(req: Request) {
 
         checkout_url = checkoutSession.checkout_url;
         session_id = checkoutSession.session_id;
+        console.log("✅ [Creem Checkout] API 支付会话创建成功:", { checkout_url, session_id });
       } catch (error: any) {
-        console.error("Failed to create Creem checkout session:", error);
-        return respErr(`Failed to create Creem checkout: ${error.message}`);
+        console.error("❌ [Creem Checkout] API 创建支付会话失败:", error);
+        console.warn("⚠️ [Creem Checkout] API 方式失败，回退到产品 ID 直接链接方式");
+        // 继续执行，使用产品 ID 方式
       }
     }
 
+    // 方案 2: 如果未配置 API Key 或 API 调用失败，使用产品 ID 直接链接方式
+    if (!checkout_url) {
+      if (!creem_product_id) {
+        return respErr("Creem product ID is required when API Key is not configured");
+      }
+
+      console.log("🔔 [Creem Checkout] 使用产品 ID 直接链接方式");
+      const { isCreemTestMode } = await import("@/services/config");
+      const isTestMode = isCreemTestMode();
+      const baseUrl = isTestMode 
+        ? "https://www.creem.io/test/payment"
+        : "https://www.creem.io/payment";
+      
+      // 🔥 关键：将 order_no 和 email 作为 URL 参数传递
+      // 支付成功后，Creem 会重定向到 success_url，order_no 会在 URL 中
+      checkout_url = `${baseUrl}/${creem_product_id}?order_no=${encodeURIComponent(order_no)}&email=${encodeURIComponent(user_email)}`;
+      session_id = creem_product_id;
+      console.log("✅ [Creem Checkout] 产品 ID 支付链接生成成功:", { checkout_url });
+    }
+
+    // 确保 checkout_url 和 session_id 都有值
+    if (!checkout_url || !session_id) {
+      return respErr("Failed to create checkout session");
+    }
+
     // 保存会话信息
+    // 🔥 关键：将 order_no 也保存到 order_detail，方便后续匹配
     const order_detail = JSON.stringify({
       checkout_url,
       session_id,
       creem_product_id: creem_product_id || product_id,
+      order_no: order_no, // 保存订单号，方便 webhook 匹配
+      user_email: user_email, // 保存邮箱，方便匹配
+      amount: amountInCents, // 保存金额，方便匹配
     });
 
     await updateOrderSession(order_no, session_id, order_detail);

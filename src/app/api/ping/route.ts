@@ -1,12 +1,10 @@
-import {
-  CreditsAmount,
-  CreditsTransType,
-  decreaseCredits,
-} from "@/services/credit";
 import { respData, respErr } from "@/lib/resp";
-
 import { getUserUuid } from "@/services/user";
 
+/**
+ * Ping API - 测试接口
+ * 用于测试 API 连通性，不消耗积分
+ */
 export async function POST(req: Request) {
   try {
     const { message } = await req.json();
@@ -19,13 +17,7 @@ export async function POST(req: Request) {
       return respErr("no auth");
     }
 
-    // decrease credits for ping
-    await decreaseCredits({
-      user_uuid,
-      trans_type: CreditsTransType.Ping,
-      credits: CreditsAmount.PingCost,
-    });
-
+    // 测试接口不消耗积分
     return respData({
       pong: `received message: ${message}`,
     });

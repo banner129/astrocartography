@@ -253,6 +253,13 @@
       "insufficient_title": "Insufficient Credits",
       "insufficient_description": "You don't have enough credits, please upgrade to continue using graffiti features",
       "upgrade_success": "Upgrade successful! Features unlocked"
+    },
+    "success": {
+      "title": "Payment Successful!",
+      "description": "Your payment has been processed successfully",
+      "credits_added": "Credits have been added to your account",
+      "view_orders": "View My Orders",
+      "auto_redirect": "Redirecting to User Center in {seconds} seconds..."
     }
   },
   "astrocartographyGenerator": {
@@ -309,5 +316,9 @@
       "description": "I just generated my personalized astrocartography map! Discover your cosmic connections around the world.",
       "hashtags": ["Astrocartography", "AstroMap", "Astrology", "CosmicConnections", "BirthChart"]
     }
+  },
+  "astro_chat": {
+    "credit_cost_notice": "Each conversation consumes {credits} credits",
+    "credit_cost_notice_singular": "Each conversation consumes {credits} credit"
   }
 }

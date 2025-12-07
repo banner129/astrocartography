@@ -1,4 +1,4 @@
-import { getOrdersByPaidEmail, getOrdersByUserUuid } from "@/models/order";
+import { getOrdersByPaidEmail, getOrdersByUserUuid, getAllOrdersByUserUuid, getAllOrdersByUserEmail } from "@/models/order";
 import { getUserEmail, getUserUuid } from "@/services/user";
 
 import { TableColumn } from "@/types/blocks/table";
@@ -19,10 +19,50 @@ export default async function () {
     redirect(`/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`);
   }
 
+  // 🔥 临时调试：先获取所有订单（包括未支付的），看看订单是否存在
+  let allOrders = await getAllOrdersByUserUuid(user_uuid);
+  console.log("🔔 [My Orders] 用户所有订单（调试）:", {
+    user_uuid,
+    user_email,
+    total_orders: allOrders?.length || 0,
+    orders: allOrders?.map(o => ({
+      order_no: o.order_no,
+      status: o.status,
+      amount: o.amount,
+      user_uuid: o.user_uuid,
+      user_email: o.user_email,
+      paid_email: o.paid_email,
+      created_at: o.created_at,
+      paid_at: o.paid_at,
+    })) || [],
+  });
+
+  // 🔥 临时：也通过邮箱查找所有订单（包括未支付的）
+  let allOrdersByEmail = await getAllOrdersByUserEmail(user_email);
+  console.log("🔔 [My Orders] 通过用户邮箱查找的所有订单（调试）:", {
+    user_email,
+    total_orders: allOrdersByEmail?.length || 0,
+    orders: allOrdersByEmail?.map(o => ({
+      order_no: o.order_no,
+      status: o.status,
+      amount: o.amount,
+      user_uuid: o.user_uuid,
+      user_email: o.user_email,
+      paid_email: o.paid_email,
+      created_at: o.created_at,
+      paid_at: o.paid_at,
+    })) || [],
+  });
+
+  // 只显示已支付的订单
   let orders = await getOrdersByUserUuid(user_uuid);
   if (!orders || orders.length === 0) {
     orders = await getOrdersByPaidEmail(user_email);
   }
+  
+  console.log("🔔 [My Orders] 已支付订单:", {
+    paid_orders_count: orders?.length || 0,
+  });
 
   const columns: TableColumn[] = [
     { name: "order_no", title: t("my_orders.table.order_no") },

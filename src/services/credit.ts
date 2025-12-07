@@ -9,17 +9,22 @@ import { getSnowId } from "@/lib/hash";
 import { Order } from "@/types/order";
 import { UserCredits } from "@/types/user";
 import { getFirstPaidOrderByUserUuid } from "@/models/order";
+import { getAIChatCreditCost as getAIChatCreditCostFromConfig } from "./config";
 
 export enum CreditsTransType {
   NewUser = "new_user", // initial credits for new user
   OrderPay = "order_pay", // user pay for credits
   SystemAdd = "system_add", // system add credits
-  Ping = "ping", // cost for ping api
+  Ping = "ping", // cost for ping api (deprecated, ping API no longer deducts credits)
+  AIChat = "ai_chat", // cost for AI chat
 }
 
-export enum CreditsAmount {
-  NewUserGet = 10,
-  PingCost = 1,
+/**
+ * 获取 AI 聊天消耗的积分数量（从配置服务读取）
+ * @deprecated 请使用 getAIChatCreditCostFromConfig，此函数保留用于向后兼容
+ */
+export function getAIChatCreditCost(): number {
+  return getAIChatCreditCostFromConfig();
 }
 
 export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
