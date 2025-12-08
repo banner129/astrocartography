@@ -37,6 +37,91 @@ export default function middleware(request: NextRequest) {
     }
   }
   
+  // 🔥 关键修复：在调用 next-intl 之前，将 session token 添加到请求 headers
+  // 因为 Middleware 的 response headers 不会传递到 Server Components
+  const sessionToken = request.cookies.get('__Secure-authjs.session-token');
+  if (sessionToken) {
+    // 创建新的 headers，包含 session token
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-middleware-session-token', sessionToken.value);
+    
+    // 创建新的请求对象，包含修改后的 headers
+    const modifiedRequest = new NextRequest(request, {
+      headers: requestHeaders,
+    });
+    
+    console.log("🔧 [Middleware] 将 session token 添加到请求 headers", {
+      hasToken: true,
+      tokenPreview: sessionToken.value.substring(0, 30) + '...',
+    });
+    
+    // 使用修改后的请求调用 next-intl 中间件
+    const response = intl(modifiedRequest) as NextResponse;
+    
+    // 继续手动转发 Cookie
+    console.log("🔧 [Middleware] 开始手动转发 Cookie");
+    const allCookies = request.cookies.getAll();
+    let forwardedCount = 0;
+    
+    allCookies.forEach(cookie => {
+      const existingCookie = response.cookies.get(cookie.name);
+      
+      if (!existingCookie) {
+        const isAuthCookie = cookie.name.includes('authjs') || cookie.name.includes('csrf-token');
+        
+        response.cookies.set(cookie.name, cookie.value, {
+          httpOnly: isAuthCookie,
+          secure: process.env.NODE_ENV === 'production',
+          sameSite: 'lax',
+          path: '/',
+        });
+        
+        forwardedCount++;
+        
+        if (isAuthCookie || cookie.name.startsWith('__Secure-') || cookie.name.startsWith('__Host-')) {
+          console.log("🔧 [Middleware] 转发认证 Cookie", {
+            name: cookie.name,
+            valuePreview: cookie.value.substring(0, 30) + '...',
+          });
+        }
+      }
+    });
+    
+    console.log("✅ [Middleware] Cookie 转发完成", {
+      totalCookies: allCookies.length,
+      forwardedCookies: forwardedCount,
+      responseCookieCount: response.cookies.getAll().length,
+    });
+    
+    // 检查响应
+    const responseCookies = response.cookies.getAll();
+    console.log("🔍 [Middleware] next-intl 响应 Cookie 检查", {
+      responseCookieCount: responseCookies.length,
+      responseCookieNames: responseCookies.map(c => c.name),
+      sessionCookieInResponse: responseCookies.find(c => c.name.includes('authjs') || c.name.startsWith('__Secure-')),
+    });
+
+    const isBlocked =
+      pathname === "/zh" ||
+      pathname === "/docs" ||
+      pathname.startsWith("/docs/");
+
+    if (isBlocked) {
+      response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    }
+    
+    const finalCookies = response.cookies.getAll();
+    console.log("🔍 [Middleware] 最终响应 Cookie 检查", {
+      finalCookieCount: finalCookies.length,
+      finalCookieNames: finalCookies.map(c => c.name),
+      sessionCookieInFinal: finalCookies.find(c => c.name.includes('authjs') || c.name.startsWith('__Secure-')),
+    });
+
+    return response;
+  }
+  
+  console.log("⚠️ [Middleware] 没有找到 session token，使用默认流程");
+  
   // 调用 next-intl 中间件
   const response = intl(request) as NextResponse;
   
@@ -78,19 +163,6 @@ export default function middleware(request: NextRequest) {
     forwardedCookies: forwardedCount,
     responseCookieCount: response.cookies.getAll().length,
   });
-  
-  // 🔥 关键修复：通过 Header 传递 session token 给 Server Components
-  // 因为 Vercel 上 Server Component 的 cookies() API 无法读取 Middleware 设置的 Cookie
-  const sessionToken = request.cookies.get('__Secure-authjs.session-token');
-  if (sessionToken) {
-    response.headers.set('x-middleware-session-token', sessionToken.value);
-    console.log("🔧 [Middleware] 通过 Header 传递 session token", {
-      hasToken: true,
-      tokenPreview: sessionToken.value.substring(0, 30) + '...',
-    });
-  } else {
-    console.log("⚠️ [Middleware] 没有找到 session token");
-  }
   
   //  调试：检查 next-intl 中间件处理后的响应
   const responseCookies = response.cookies.getAll();
