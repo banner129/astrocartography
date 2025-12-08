@@ -79,6 +79,19 @@ export default function middleware(request: NextRequest) {
     responseCookieCount: response.cookies.getAll().length,
   });
   
+  // 🔥 关键修复：通过 Header 传递 session token 给 Server Components
+  // 因为 Vercel 上 Server Component 的 cookies() API 无法读取 Middleware 设置的 Cookie
+  const sessionToken = request.cookies.get('__Secure-authjs.session-token');
+  if (sessionToken) {
+    response.headers.set('x-middleware-session-token', sessionToken.value);
+    console.log("🔧 [Middleware] 通过 Header 传递 session token", {
+      hasToken: true,
+      tokenPreview: sessionToken.value.substring(0, 30) + '...',
+    });
+  } else {
+    console.log("⚠️ [Middleware] 没有找到 session token");
+  }
+  
   //  调试：检查 next-intl 中间件处理后的响应
   const responseCookies = response.cookies.getAll();
   console.log("🔍 [Middleware] next-intl 响应 Cookie 检查", {

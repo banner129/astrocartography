@@ -13,14 +13,17 @@ export default async function ({ children }: { children: ReactNode }) {
   // 🔍 添加详细的 Cookie 和请求头调试
   const cookieStore = await cookies();
   const headersList = await headers();
-  const expectedCookieName = process.env.NODE_ENV === "production" 
-    ? "__Secure-authjs.session-token" 
+  const expectedCookieName = process.env.NODE_ENV === "production"
+    ? "__Secure-authjs.session-token"
     : "authjs.session-token";
   const sessionCookie = cookieStore.get(expectedCookieName);
   const allCookies = cookieStore.getAll();
   const cookieHeader = headersList.get("cookie");
   
-  console.log("🔍 [ConsoleLayout] Cookie 调试信息", {
+  // 🔥 关键修复：从 Middleware 传递的 Header 中获取 session token
+  const sessionTokenFromHeader = headersList.get('x-middleware-session-token');
+  
+  console.log("🔍 [ConsoleLayout] Cookie 和 Header 调试信息", {
     NODE_ENV: process.env.NODE_ENV,
     expectedCookieName,
     hasSessionCookie: !!sessionCookie,
@@ -29,10 +32,23 @@ export default async function ({ children }: { children: ReactNode }) {
     cookieHeaderExists: !!cookieHeader,
     cookieHeaderLength: cookieHeader?.length || 0,
     cookieHeaderPreview: cookieHeader ? `${cookieHeader.substring(0, 100)}...` : "无",
+    hasSessionTokenFromHeader: !!sessionTokenFromHeader,
+    sessionTokenFromHeaderPreview: sessionTokenFromHeader ? `${sessionTokenFromHeader.substring(0, 30)}...` : "无",
     AUTH_URL: process.env.AUTH_URL,
     hasAuthSecret: !!process.env.AUTH_SECRET,
     authSecretPrefix: process.env.AUTH_SECRET?.substring(0, 10),
   });
+  
+  // 🔥 如果从 Header 中获取到了 session token，手动设置到 cookie（临时方案）
+  if (sessionTokenFromHeader && !sessionCookie) {
+    console.log("🔧 [ConsoleLayout] 从 Header 恢复 session token 到 Cookie");
+    cookieStore.set(expectedCookieName, sessionTokenFromHeader, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+    });
+  }
   
   // 先检查 session 是否存在
   console.log("🚪 [ConsoleLayout] 调用 auth() 获取 session");
