@@ -447,18 +447,8 @@
               "target": "_self"
             },
             {
-              "title": "AIStage",
-              "url": "https://aistage.net",
-              "target": "_blank"
-            },
-            {
-              "title": "SeeWhatNewAI",
-              "url": "https://www.seewhatnewai.com",
-              "target": "_blank"
-            },
-            {
-              "title": "AI Toolz Dir",
-              "url": "https://www.aitoolzdir.com",
+              "title": "pdf to video",
+              "url": "https://pdfvideo.org/",
               "target": "_blank"
             }
           ]
