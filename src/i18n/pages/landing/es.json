@@ -16,6 +16,11 @@
           "title": "Inicio",
           "url": "/",
           "icon": "RiHomeLine"
+        },
+        {
+          "title": "Blog",
+          "url": "/posts",
+          "icon": "RiArticleLine"
         }
       ]
     },

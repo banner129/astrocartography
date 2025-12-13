@@ -16,6 +16,11 @@
           "title": "Home",
           "url": "/",
           "icon": "RiHomeLine"
+        },
+        {
+          "title": "Blog",
+          "url": "/posts",
+          "icon": "RiArticleLine"
         }
       ]
     },
@@ -449,6 +454,12 @@
             {
               "title": "pdf to video",
               "url": "https://pdfvideo.org/",
+              "target": "_blank"
+            }
+            ,
+            {
+              "title": "AI Dirs",
+              "url": "https://aidirs.org/",
               "target": "_blank"
             }
           ]
