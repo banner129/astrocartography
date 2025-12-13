@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- ========================================== -->
-  <!-- 当前生效：英文首页、多语言首页、法律页面和联系页面 -->
-  <!-- 更新日期: 2025-12-07                        -->
+  <!-- 当前生效：英文首页、多语言首页、法律页面、联系页面和博客页面 -->
+  <!-- 更新日期: 2025-12-09                        -->
   <!-- ========================================== -->
   
   <!-- 英文首页 - 主关键词: astrocartography -->
@@ -107,6 +107,31 @@
   </url>
   
 
+  <!-- 博客页面
+  ────────────────────────────────────────────────────────── -->
+  <!-- 博客列表页 -->
+  <url>
+    <loc>https://astrocarto.org/posts/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 博客文章详情页 -->
+  <url>
+    <loc>https://astrocarto.org/posts/what-is-astrocartography/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/posts/how-to-read-astrocartography-map/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ═══════════════════════════════════════════════════════════
   待开放页面 - 完成后删除注释标记即可开放 Google 收录
   ═══════════════════════════════════════════════════════════ -->
@@ -114,12 +139,6 @@
   
   <!-- 功能页面
   ────────────────────────────────────────────────────────── -->
-  <!-- <url>
-    <loc>https://astrocarto.org/posts/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url> -->
   
   <!-- <url>
     <loc>https://astrocarto.org/about/</loc>

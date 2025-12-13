@@ -29,10 +29,13 @@ Allow: /pt/contact
 Allow: /es/contact
 Allow: /it/contact
 
+# 允许博客页面
+Allow: /posts
+Allow: /posts/
+
 # 阻止所有其他页面
 Disallow: /ms
 Disallow: /en
-Disallow: /posts
 Disallow: /about
 Disallow: /pricing
 Disallow: /showcase

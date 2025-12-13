@@ -82,12 +82,12 @@
   },
   "blog": {
     "title": "Blog",
-    "description": "Notícias, recursos e atualizações sobre o Wplace Pixel",
+    "description": "Notícias, recursos e atualizações sobre o Astrocartography Calculator",
     "read_more_text": "Leia Mais",
     "tools_notice": {
-      "text": "Procurando ferramentas práticas? Além destes tutoriais, explore nosso conjunto completo de ferramentas de criação de pixel art em nossa",
-      "link_text": "página inicial principal do Wplace Pixel",
-      "suffix": "para geração imediata de pixel art e recursos avançados."
+      "text": "Procurando ferramentas práticas? Além destes tutoriais, explore nosso conjunto completo de ferramentas de astrocartografia em nossa",
+      "link_text": "página inicial principal do Astrocartography Calculator",
+      "suffix": "para geração imediata de mapas astrocartográficos e recursos avançados."
     }
   },
   "my_invites": {

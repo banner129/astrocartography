@@ -81,12 +81,12 @@
   },
   "blog": {
     "title": "Blog",
-    "description": "News, resources, and updates about Graffiti Generator",
+    "description": "News, resources, and updates about Astrocartography Calculator",
     "read_more_text": "Read More",
     "tools_notice": {
-      "text": "Looking for hands-on tools? Beyond these tutorials, explore our complete suite of graffiti creation tools on our",
-      "link_text": "main Graffiti Generator homepage",
-      "suffix": "for immediate graffiti creation and advanced features."
+      "text": "Looking for hands-on tools? Beyond these tutorials, explore our complete suite of astrocartography tools on our",
+      "link_text": "main Astrocartography Calculator homepage",
+      "suffix": "for immediate astrocartography map generation and advanced features."
     }
   },
   "my_invites": {

@@ -82,12 +82,12 @@
   },
   "blog": {
     "title": "博客",
-    "description": "关于 Wplace Pixel 的新闻、资源和更新",
+    "description": "关于 Astrocartography Calculator 的新闻、资源和更新",
     "read_more_text": "阅读更多",
     "tools_notice": {
       "text": "寻找实用工具？除了这些教程，还可以在我们的",
-      "link_text": "Wplace Pixel 主页",
-      "suffix": "探索完整的像素艺术创作工具套件，实现即时像素艺术生成和高级功能。"
+      "link_text": "Astrocartography Calculator 主页",
+      "suffix": "探索完整的占星地图工具套件，实现即时占星地图生成和高级功能。"
     }
   },
   "my_invites": {
