@@ -561,6 +561,28 @@
           "width": 200,
           "height": 54
         }
+      },
+      {
+        "title": "Featured on startupdirs.com",
+        "url": "https://startupdirs.com",
+        "target": "_blank",
+        "image": {
+          "src": "https://startupdirs.com/bage.png",
+          "alt": "Featured on startupdirs.com",
+          "width": 200,
+          "height": 54
+        }
+      },
+      {
+        "title": "Featured on toolfame.com",
+        "url": "https://toolfame.com/item/astrocartography-calculator",
+        "target": "_blank",
+        "image": {
+          "src": "https://toolfame.com/badge-light.svg",
+          "alt": "Featured on toolfame.com",
+          "width": 200,
+          "height": 54
+        }
       }
     ],
     "agreement": {
