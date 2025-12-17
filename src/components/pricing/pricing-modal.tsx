@@ -33,8 +33,8 @@ export default function PricingModal({
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogPortal>
           <DialogOverlay className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
-          <DialogContent className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-5xl translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 p-5 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-h-[85vh] overflow-y-auto">
-            <DialogHeader className="pb-3">
+          <DialogContent className="fixed left-[50%] top-[50%] z-50 flex flex-col w-full max-w-5xl translate-x-[-50%] translate-y-[-50%] gap-0 border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 p-0 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-h-[90vh]">
+            <DialogHeader className="px-5 pt-5 pb-3 flex-shrink-0">
               <DialogTitle className="text-2xl font-bold">
                 {pricing.title || t('payment.modal.title')}
               </DialogTitle>
@@ -44,8 +44,9 @@ export default function PricingModal({
                 </DialogDescription>
               )}
             </DialogHeader>
-            <div className="overflow-y-auto">
-              <Pricing pricing={pricing} />
+            {/* 🔥 修复：使用 flex-1 和 overflow-y-auto 让内容区域可滚动，避免双重滚动 */}
+            <div className="flex-1 overflow-y-auto px-5 pb-5 min-h-0">
+              <Pricing pricing={pricing} isInModal={true} />
             </div>
           </DialogContent>
         </DialogPortal>
@@ -68,7 +69,7 @@ export default function PricingModal({
           )}
         </DrawerHeader>
         <div className="px-3 pb-3 overflow-y-auto">
-          <Pricing pricing={pricing} />
+          <Pricing pricing={pricing} isInModal={true} />
         </div>
       </DrawerContent>
     </Drawer>

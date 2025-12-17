@@ -3,7 +3,7 @@
 import { Check, Loader } from "lucide-react";
 import { PricingItem, Pricing as PricingType } from "@/types/blocks/pricing";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -14,8 +14,10 @@ import { toast } from "sonner";
 import { useAppContext } from "@/contexts/app";
 import { useLocale } from "next-intl";
 import { usePayment } from "@/hooks/usePayment";
+import { paymentEvents } from "@/lib/analytics";
+import { usePricingItemTracking } from "./pricing-item-card";
 
-export default function Pricing({ pricing }: { pricing: PricingType }) {
+export default function Pricing({ pricing, isInModal = false }: { pricing: PricingType; isInModal?: boolean }) {
   if (pricing.disabled) {
     return null;
   }
@@ -60,18 +62,21 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
       setGroup(pricing.items[0].group);
     }
   }, [pricing.items]);
-
+  
   return (
-    <section id={pricing.name} className="py-16">
-      <div className="container">
-        <div className="mx-auto mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-semibold lg:text-5xl">
-            {pricing.title}
-          </h2>
-          <p className="text-muted-foreground lg:text-lg">
-            {pricing.description}
-          </p>
-        </div>
+    <section id={pricing.name} className={isInModal ? "py-0" : "py-16"}>
+      <div className={isInModal ? "w-full" : "container"}>
+        {/* 🔥 在弹窗中不显示标题和描述（已在 DialogHeader 中显示） */}
+        {!isInModal && (
+          <div className="mx-auto mb-12 text-center">
+            <h2 className="mb-4 text-4xl font-semibold lg:text-5xl">
+              {pricing.title}
+            </h2>
+            <p className="text-muted-foreground lg:text-lg">
+              {pricing.description}
+            </p>
+          </div>
+        )}
         <div className="w-full flex flex-col items-center gap-2">
           {pricing.groups && pricing.groups.length > 0 && (
             <div className="flex h-12 mb-12 items-center rounded-md bg-muted p-1 text-lg">
@@ -124,6 +129,9 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
               if (item.group && item.group !== group) {
                 return null;
               }
+
+              // 📊 埋点：查看价格方案
+              usePricingItemTracking(item);
 
               return (
                 <div
@@ -193,7 +201,8 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                       )}
                     </div>
                     <div className="flex flex-col gap-2">
-                      {item.button && (
+                      {/* 🔥 修复：Free 计划不显示按钮 */}
+                      {item.button && item.amount > 0 && (
                         <Button
                           className="w-full flex items-center justify-center gap-2 font-semibold"
                           disabled={isLoading}
@@ -201,6 +210,18 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                             if (isLoading) {
                               return;
                             }
+                            // 📊 埋点：点击购买按钮
+                            paymentEvents.buyButtonClicked(
+                              item.title || 'Unknown Plan',
+                              item.amount / 100, // 转换为美元（假设 amount 是美分）
+                              item.product_id
+                            );
+                            // 📊 埋点：开始支付流程
+                            paymentEvents.paymentInitiated(
+                              item.title || 'Unknown Plan',
+                              item.amount / 100,
+                              item.product_id
+                            );
                             handleCheckout(item);
                           }}
                         >

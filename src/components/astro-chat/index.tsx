@@ -11,6 +11,7 @@ import { User } from '@/types/user';
 import { useTranslations, useLocale } from 'next-intl';
 import PricingModal from '@/components/pricing/pricing-modal';
 import { Pricing as PricingType } from '@/types/blocks/pricing';
+import { askAIEvents, paymentEvents } from '@/lib/analytics';
 
 interface AstroChatProps {
   open: boolean;
@@ -104,7 +105,11 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     }
     // 弹出价格弹窗
     setShowPricingModal(true);
-  }, [pricingData, locale]);
+    // 📊 埋点：积分不足
+    askAIEvents.insufficientCredits(userCredits || 0, creditCost);
+    // 📊 埋点：打开价格弹窗（由积分不足触发）
+    paymentEvents.pricingModalOpened('insufficient_credits');
+  }, [pricingData, locale, userCredits, creditCost]);
 
   const { messages, input, handleInputChange, handleSubmit, isLoading, error, append, setMessages } = useChat({
     api: '/api/astro-chat',
@@ -124,6 +129,16 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
       }
     },
   });
+
+  // 📊 埋点：收到 AI 回复（监听消息变化）
+  useEffect(() => {
+    if (messages.length > 0 && !isLoading) {
+      const lastMessage = messages[messages.length - 1];
+      if (lastMessage.role === 'assistant') {
+        askAIEvents.responseReceived(userMessageCount, lastMessage.content.length);
+      }
+    }
+  }, [messages.length, isLoading, userMessageCount]);
 
   // 计算用户消息数量（只统计 role 为 'user' 的消息）
   const userMessageCount = useMemo(() => {
@@ -221,6 +236,16 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     }
     
     setShowSuggestions(false);
+    
+    // 📊 埋点：发送问题
+    const nextQuestionNumber = userMessageCount + 1;
+    const isFreeQuestion = !user && nextQuestionNumber <= FREE_QUESTIONS_LIMIT;
+    askAIEvents.questionSent(
+      nextQuestionNumber,
+      isFreeQuestion,
+      user ? 'logged_in' : 'guest'
+    );
+    
     handleSubmit(e);
     // 清空输入框后重新聚焦
     setTimeout(() => {
@@ -240,6 +265,16 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     }
     
     setShowSuggestions(false);
+    
+    // 📊 埋点：发送问题（预设问题）
+    const nextQuestionNumber = userMessageCount + 1;
+    const isFreeQuestion = !user && nextQuestionNumber <= FREE_QUESTIONS_LIMIT;
+    askAIEvents.questionSent(
+      nextQuestionNumber,
+      isFreeQuestion,
+      user ? 'logged_in' : 'guest'
+    );
+    
     append({
       role: 'user',
       content: question,

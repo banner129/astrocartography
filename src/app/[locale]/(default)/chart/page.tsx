@@ -10,6 +10,7 @@ import dynamic from 'next/dynamic';
 import AstroChat from '@/components/astro-chat';
 import { useAppContext } from '@/contexts/app';
 import SignModal from '@/components/sign/modal';
+import { askAIEvents, pageEvents } from '@/lib/analytics';
 
 // 动态导入地图组件（避免 SSR 问题）
 const AstrocartographyMap = dynamic(
@@ -31,6 +32,9 @@ interface PlanetLine {
   color: string;
 }
 
+// localStorage key for tracking auto-popup dismissal
+const AUTO_POPUP_DISMISSED_KEY = 'astro-chat-auto-popup-dismissed';
+
 function ChartContent() {
   const searchParams = useSearchParams();
   const { user, setShowSignModal } = useAppContext();
@@ -40,6 +44,7 @@ function ChartContent() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [chatOpen, setChatOpen] = useState(false);
+  const [hasAutoPopped, setHasAutoPopped] = useState(false); // 标记是否已经自动弹出过
 
   useEffect(() => {
     // 从 URL 参数获取出生信息
@@ -61,6 +66,9 @@ function ChartContent() {
       
       setChartData(data);
       calculateChart(data);
+      
+      // 📊 埋点：访问地图页面
+      pageEvents.chartPageViewed();
     } else {
       setError('缺少必要的出生信息');
       setIsLoading(false);
@@ -109,7 +117,66 @@ function ChartContent() {
   // 处理 AI 聊天按钮点击 - 直接打开聊天窗口，不验证登录
   const handleAskAIClick = () => {
     setChatOpen(true);
+    // 📊 埋点：手动打开 Ask AI 对话框
+    askAIEvents.dialogOpened('manual');
   };
+
+  // 处理对话框关闭 - 记录用户手动关闭，避免重复自动弹出
+  const handleChatOpenChange = (open: boolean) => {
+    setChatOpen(open);
+    // 如果用户手动关闭对话框，记录到 localStorage
+    if (!open && hasAutoPopped) {
+      try {
+        localStorage.setItem(AUTO_POPUP_DISMISSED_KEY, 'true');
+      } catch (e) {
+        console.error('Failed to save auto-popup dismissal:', e);
+      }
+    }
+  };
+
+  // 🔥 智能自动弹出逻辑：地图加载完成后，根据用户状态延迟弹出
+  useEffect(() => {
+    // 只在以下条件满足时才自动弹出：
+    // 1. 地图已加载完成（不再加载中，有数据，无错误）
+    // 2. 用户还没有手动关闭过自动弹出
+    // 3. 对话框当前是关闭状态
+    // 4. 还没有自动弹出过（避免重复弹出）
+    if (
+      !isLoading &&
+      birthData &&
+      planetLines.length > 0 &&
+      !error &&
+      !chatOpen &&
+      !hasAutoPopped
+    ) {
+      // 检查用户是否已经手动关闭过自动弹出
+      try {
+        const dismissed = localStorage.getItem(AUTO_POPUP_DISMISSED_KEY);
+        if (dismissed === 'true') {
+          // 用户已经关闭过，不再自动弹出
+          return;
+        }
+      } catch (e) {
+        console.error('Failed to check auto-popup dismissal:', e);
+      }
+
+      // 根据用户登录状态设置不同的延迟时间
+      // 已登录用户：1.5秒（更可能付费，缩短等待时间）
+      // 未登录用户：3秒（给更多时间查看地图）
+      const delay = user ? 1500 : 3000;
+
+      const timer = setTimeout(() => {
+        setChatOpen(true);
+        setHasAutoPopped(true);
+        // 📊 埋点：自动打开 Ask AI 对话框
+        askAIEvents.dialogOpened('auto');
+      }, delay);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [isLoading, birthData, planetLines, error, chatOpen, hasAutoPopped, user]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
@@ -181,14 +248,21 @@ function ChartContent() {
                 </Button>
               </Link>
 
-              {/* AI 聊天按钮 */}
+              {/* AI 聊天按钮 - 更醒目的设计 */}
               {birthData && planetLines.length > 0 && (
                 <Button
                   onClick={handleAskAIClick}
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white justify-start shadow-lg"
+                  className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 text-white justify-center font-bold text-base py-4 shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 transition-all duration-300 transform hover:scale-105 border-2 border-purple-400/50 hover:border-purple-300 relative overflow-hidden group"
                 >
-                  <MessageCircle className="size-4 mr-2" />
-                  Ask AI
+                  {/* 背景光效 */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                  
+                  {/* 按钮内容 */}
+                  <div className="relative flex items-center gap-2">
+                    <MessageCircle className="size-5 animate-pulse" />
+                    <span className="text-lg font-extrabold tracking-wide">Ask AI</span>
+                    <Sparkles className="size-4 text-yellow-300 animate-pulse" />
+                  </div>
                 </Button>
               )}
 
@@ -232,7 +306,7 @@ function ChartContent() {
       {birthData && planetLines.length > 0 && (
         <AstroChat
           open={chatOpen}
-          onOpenChange={setChatOpen}
+          onOpenChange={handleChatOpenChange}
           chartData={{
             birthData: {
               date: birthData.date,

@@ -455,11 +455,15 @@
               "title": "pdf to video",
               "url": "https://pdfvideo.org/",
               "target": "_blank"
-            }
-            ,
+            },
             {
               "title": "AI Dirs",
               "url": "https://aidirs.org/",
+              "target": "_blank"
+            },
+            {
+              "title": "YP for AI",
+              "url": "https://ypforai.com/",
               "target": "_blank"
             }
           ]
