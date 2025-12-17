@@ -130,6 +130,11 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     },
   });
 
+  // 计算用户消息数量（只统计 role 为 'user' 的消息）
+  const userMessageCount = useMemo(() => {
+    return messages.filter(msg => msg.role === 'user').length;
+  }, [messages]);
+
   // 📊 埋点：收到 AI 回复（监听消息变化）
   useEffect(() => {
     if (messages.length > 0 && !isLoading) {
@@ -139,11 +144,6 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
       }
     }
   }, [messages.length, isLoading, userMessageCount]);
-
-  // 计算用户消息数量（只统计 role 为 'user' 的消息）
-  const userMessageCount = useMemo(() => {
-    return messages.filter(msg => msg.role === 'user').length;
-  }, [messages]);
 
   // 检查是否可以继续提问
   const canAskQuestion = useMemo(() => {
