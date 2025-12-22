@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useChat } from 'ai/react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from '@/components/ui/drawer';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { MessageCircle, Send, Sparkles, X, Coins } from 'lucide-react';
@@ -48,6 +50,7 @@ const SUGGESTED_QUESTIONS = [
 const FREE_QUESTIONS_LIMIT = 1; // 免费问题数量限制
 
 export default function AstroChat({ open, onOpenChange, chartData, user, onRequireLogin }: AstroChatProps) {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showSuggestions, setShowSuggestions] = useState(true);
@@ -281,50 +284,12 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
     });
   };
 
-  return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl h-[80vh] flex flex-col bg-gradient-to-br from-purple-900/20 via-gray-900/95 to-gray-900/95 border border-white/10 backdrop-blur-xl">
-        <DialogHeader className="pb-4 border-b border-white/10">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="size-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                <Sparkles className="size-5 text-white" />
-              </div>
-              <div>
-                <DialogTitle className="text-xl font-bold text-white">
-                  Astro Chat
-                </DialogTitle>
-                <p className="text-sm text-gray-400">
-                  Revealing your planetary story
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-sm text-green-400">
-              <div className="size-2 rounded-full bg-green-400 animate-pulse" />
-              <span>Chart for: {chartData.birthData.location}</span>
-            </div>
-            <div className="flex items-center gap-3">
-              {user && userCredits !== null && (
-                <div className="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full border border-blue-400/20">
-                  Credits: {userCredits}
-                </div>
-              )}
-              {!user && (
-                <div className="text-xs text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full border border-yellow-400/20">
-                  {remainingFreeQuestions > 0 
-                    ? `Free: ${remainingFreeQuestions} question${remainingFreeQuestions > 1 ? 's' : ''} left`
-                    : 'Sign in for unlimited questions'}
-                </div>
-              )}
-            </div>
-          </div>
-        </DialogHeader>
-
-        {/* 消息列表 */}
-        <div className="flex-1 px-4 py-4 overflow-y-auto" ref={scrollRef}>
-          <div className="space-y-4">
+  // 聊天内容组件（复用）
+  const chatContent = (
+    <>
+      {/* 消息列表 */}
+      <div className="flex-1 overflow-y-auto px-4 py-4" ref={scrollRef}>
+        <div className="space-y-4">
             {messages.length === 0 && showSuggestions && (
               <div className="space-y-6 py-8">
                 <div className="flex flex-col items-center gap-4">
@@ -442,8 +407,8 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
           </div>
         </div>
 
-        {/* 输入框 */}
-        <form onSubmit={onSubmit} className="pt-4 border-t border-white/10">
+      {/* 输入框 */}
+      <form onSubmit={onSubmit} className="pt-4 border-t border-white/10 px-4 pb-4">
           {/* 未登录且免费问题用尽时的提示 */}
           {!user && !canAskQuestion && (
             <div className="mb-3 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-xs text-center">
@@ -497,7 +462,116 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
             </Button>
           </div>
         </form>
-      </DialogContent>
+    </>
+  );
+
+  // 桌面端使用 Dialog
+  if (isDesktop) {
+    return (
+      <>
+        <Dialog open={open} onOpenChange={onOpenChange}>
+          <DialogContent className="max-w-2xl h-[80vh] flex flex-col bg-gradient-to-br from-purple-900/20 via-gray-900/95 to-gray-900/95 border border-white/10 backdrop-blur-xl">
+            <DialogHeader className="pb-4 border-b border-white/10">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="size-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <Sparkles className="size-5 text-white" />
+                  </div>
+                  <div>
+                    <DialogTitle className="text-xl font-bold text-white">
+                      Astro Chat
+                    </DialogTitle>
+                    <p className="text-sm text-gray-400">
+                      Revealing your planetary story
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 flex items-center justify-between">
+                <div className="flex items-center gap-2 text-sm text-green-400">
+                  <div className="size-2 rounded-full bg-green-400 animate-pulse" />
+                  <span>Chart for: {chartData.birthData.location}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  {user && userCredits !== null && (
+                    <div className="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full border border-blue-400/20">
+                      Credits: {userCredits}
+                    </div>
+                  )}
+                  {!user && (
+                    <div className="text-xs text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full border border-yellow-400/20">
+                      {remainingFreeQuestions > 0 
+                        ? `Free: ${remainingFreeQuestions} question${remainingFreeQuestions > 1 ? 's' : ''} left`
+                        : 'Sign in for unlimited questions'}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </DialogHeader>
+            {chatContent}
+          </DialogContent>
+        </Dialog>
+
+        {/* 价格弹窗 */}
+        {pricingData && (
+          <PricingModal
+            open={showPricingModal}
+            onOpenChange={setShowPricingModal}
+            pricing={pricingData}
+            onSuccess={() => {
+              fetchUserCredits();
+            }}
+          />
+        )}
+      </>
+    );
+  }
+
+  // 移动端使用 Drawer
+  return (
+    <>
+      <Drawer open={open} onOpenChange={onOpenChange}>
+        <DrawerContent className="max-h-[85vh] bg-gradient-to-br from-purple-900/20 via-gray-900/95 to-gray-900/95 border-t border-white/10 backdrop-blur-xl flex flex-col">
+          <DrawerHeader className="pb-3 border-b border-white/10">
+            <div className="flex items-center gap-3">
+              <div className="size-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                <Sparkles className="size-4 text-white" />
+              </div>
+              <div>
+                <DrawerTitle className="text-lg font-bold text-white">
+                  Astro Chat
+                </DrawerTitle>
+                <p className="text-xs text-gray-400">
+                  Revealing your planetary story
+                </p>
+              </div>
+            </div>
+            <div className="mt-2 flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-2 text-xs text-green-400">
+                <div className="size-1.5 rounded-full bg-green-400 animate-pulse" />
+                <span className="truncate max-w-[120px]">Chart for: {chartData.birthData.location}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                {user && userCredits !== null && (
+                  <div className="text-xs text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full border border-blue-400/20">
+                    Credits: {userCredits}
+                  </div>
+                )}
+                {!user && (
+                  <div className="text-xs text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded-full border border-yellow-400/20">
+                    {remainingFreeQuestions > 0 
+                      ? `Free: ${remainingFreeQuestions} left`
+                      : 'Sign in'}
+                  </div>
+                )}
+              </div>
+            </div>
+          </DrawerHeader>
+          <div className="flex-1 overflow-hidden flex flex-col px-3">
+            {chatContent}
+          </div>
+        </DrawerContent>
+      </Drawer>
 
       {/* 价格弹窗 */}
       {pricingData && (
@@ -506,12 +580,11 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
           onOpenChange={setShowPricingModal}
           pricing={pricingData}
           onSuccess={() => {
-            // 支付成功后刷新积分
             fetchUserCredits();
           }}
         />
       )}
-    </Dialog>
+    </>
   );
 }
 

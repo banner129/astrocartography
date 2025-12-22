@@ -280,10 +280,23 @@
         "generating": "Gerando seu mapa de astrocartografia...",
         "almostDone": "Por favor aguarde, quase pronto",
         "processing": "Processando seus dados de astrocartografia...",
-        "mayTakeMoment": "Isso pode levar alguns segundos"
+        "mayTakeMoment": "Isso pode levar alguns segundos",
+        "calculating": "Calculando seu mapa de astrocartografia...",
+        "linkCopied": "Link copiado para a área de transferência!"
       },
       "errorGeneral": {
-        "downloadFailed": "Falha no download, por favor tente novamente mais tarde"
+        "downloadFailed": "Falha no download, por favor tente novamente mais tarde",
+        "downloadInDevelopment": "Funcionalidade de download em desenvolvimento...",
+        "calculationFailed": "Falha no cálculo",
+        "generationFailed": "Falha ao gerar mapa",
+        "missingInfo": "Informações de nascimento necessárias ausentes",
+        "returnToRegenerate": "Voltar para Regenerar"
+      },
+      "buttons": {
+        "returnHome": "Voltar para Início",
+        "download": "Baixar",
+        "share": "Compartilhar",
+        "newChart": "Novo Mapa"
       }
     },
     "result": {

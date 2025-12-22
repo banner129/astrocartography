@@ -352,10 +352,23 @@
         "generating": "Generazione della tua carta astrocartografia...",
         "almostDone": "Per favore attendi, quasi fatto",
         "processing": "Elaborazione dei tuoi dati astrocartografia...",
-        "mayTakeMoment": "Questo potrebbe richiedere alcuni secondi"
+        "mayTakeMoment": "Questo potrebbe richiedere alcuni secondi",
+        "calculating": "Calcolo della tua carta astrocartografia...",
+        "linkCopied": "Link copiato negli appunti!"
       },
       "errorGeneral": {
-        "downloadFailed": "Download fallito, per favore riprova più tardi"
+        "downloadFailed": "Download fallito, per favore riprova più tardi",
+        "downloadInDevelopment": "Funzionalità di download in sviluppo...",
+        "calculationFailed": "Calcolo fallito",
+        "generationFailed": "Generazione carta fallita",
+        "missingInfo": "Informazioni di nascita necessarie mancanti",
+        "returnToRegenerate": "Torna per Rigenerare"
+      },
+      "buttons": {
+        "returnHome": "Torna alla Home",
+        "download": "Scarica",
+        "share": "Condividi",
+        "newChart": "Nuova Carta"
       }
     },
     "result": {

@@ -11,6 +11,7 @@ import { Calendar, Clock, MapPin, Globe, Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
 import CompactSocialShare from '@/components/blocks/social-share/compact';
 import { LocationAutocomplete } from '@/components/ui/location-autocomplete';
+import { DatePicker } from '@/components/ui/date-picker';
 
 export default function MiniaturaAIGenerator() {
   const t = useTranslations('astrocartographyGenerator');
@@ -195,13 +196,10 @@ export default function MiniaturaAIGenerator() {
                     <Calendar className="size-4 text-purple-400" />
                     {t('form.birthDate.label')}
                   </Label>
-                  <Input
+                  <DatePicker
                     id="birthDate"
-                    type="date"
-                    lang="en"
                     value={birthDate}
-                    onChange={(e) => setBirthDate(e.target.value)}
-                    className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
+                    onChange={setBirthDate}
                     placeholder={t('form.birthDate.placeholder')}
                   />
                 </div>

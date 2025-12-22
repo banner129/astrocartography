@@ -305,10 +305,23 @@
         "generating": "Generating your astrocartography chart...",
         "almostDone": "Please wait, almost done",
         "processing": "Processing your astrocartography data...",
-        "mayTakeMoment": "This may take a few seconds"
+        "mayTakeMoment": "This may take a few seconds",
+        "calculating": "Calculating your astrocartography chart...",
+        "linkCopied": "Link copied to clipboard!"
       },
       "errorGeneral": {
-        "downloadFailed": "Download failed, please try again later"
+        "downloadFailed": "Download failed, please try again later",
+        "downloadInDevelopment": "Download feature is under development...",
+        "calculationFailed": "Calculation failed",
+        "generationFailed": "Failed to generate chart",
+        "missingInfo": "Missing required birth information",
+        "returnToRegenerate": "Return to Regenerate"
+      },
+      "buttons": {
+        "returnHome": "Return Home",
+        "download": "Download",
+        "share": "Share",
+        "newChart": "New Chart"
       }
     },
     "result": {

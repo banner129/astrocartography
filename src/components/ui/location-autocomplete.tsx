@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useLocale } from 'next-intl';
 import { Input } from '@/components/ui/input';
 import { Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -35,6 +36,7 @@ export function LocationAutocomplete({
   disabled,
   id
 }: LocationAutocompleteProps) {
+  const locale = useLocale(); // 获取当前页面语言
   const [suggestions, setSuggestions] = useState<LocationResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -42,6 +44,21 @@ export function LocationAutocomplete({
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // 根据页面语言生成 accept-language 参数
+  const getAcceptLanguage = useCallback(() => {
+    // 语言映射：将 next-intl 的 locale 映射到 HTTP Accept-Language 格式
+    const languageMap: Record<string, string> = {
+      en: 'en-US,en',
+      zh: 'zh-CN,zh,en',
+      pt: 'pt-BR,pt,en',
+      es: 'es-ES,es,en',
+      it: 'it-IT,it,en',
+    };
+    
+    // 返回当前语言的 accept-language，如果没有匹配则默认英文
+    return languageMap[locale] || 'en-US,en';
+  }, [locale]);
 
   // 搜索地点建议
   const searchLocations = useCallback(async (query: string) => {
@@ -53,16 +70,19 @@ export function LocationAutocomplete({
 
     setIsLoading(true);
     
+    // 根据页面语言动态设置 accept-language
+    const acceptLanguage = getAcceptLanguage();
+    
     // 直接调用 Nominatim API，避免服务器端网络问题
     const encodedQuery = encodeURIComponent(query);
-    const apiUrl = `https://nominatim.openstreetmap.org/search?q=${encodedQuery}&format=json&limit=5&addressdetails=1&accept-language=zh-CN,zh,en`;
+    const apiUrl = `https://nominatim.openstreetmap.org/search?q=${encodedQuery}&format=json&limit=5&addressdetails=1&accept-language=${acceptLanguage}`;
     
     try {
       const response = await fetch(apiUrl, {
         method: 'GET',
         headers: {
           'User-Agent': 'Astrocartography-App/1.0',
-          'Accept-Language': 'zh-CN,zh,en-US,en'
+          'Accept-Language': acceptLanguage
         }
       });
       
@@ -122,7 +142,7 @@ export function LocationAutocomplete({
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [getAcceptLanguage]);
 
   // 防抖搜索
   useEffect(() => {

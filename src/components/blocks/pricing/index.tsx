@@ -3,7 +3,7 @@
 import { Check, Loader } from "lucide-react";
 import { PricingItem, Pricing as PricingType } from "@/types/blocks/pricing";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -61,6 +61,18 @@ export default function Pricing({ pricing, isInModal = false }: { pricing: Prici
     if (pricing.items) {
       setGroup(pricing.items[0].group);
     }
+  }, [pricing.items]);
+
+  // 🔥 优化：对价格项进行排序，付费方案（amount > 0）排在前面，免费方案（amount === 0）排在后面
+  const sortedItems = useMemo(() => {
+    if (!pricing.items) return [];
+    return [...pricing.items].sort((a, b) => {
+      // 付费方案排在前面
+      if (a.amount > 0 && b.amount === 0) return -1;
+      if (a.amount === 0 && b.amount > 0) return 1;
+      // 如果都是付费或都是免费，保持原有顺序
+      return 0;
+    });
   }, [pricing.items]);
   
   return (
@@ -120,12 +132,12 @@ export default function Pricing({ pricing, isInModal = false }: { pricing: Prici
           )}
           <div
             className={`w-full mt-0 grid gap-6 md:grid-cols-${
-              pricing.items?.filter(
+              sortedItems.filter(
                 (item) => !item.group || item.group === group
               )?.length
             }`}
           >
-            {pricing.items?.map((item, index) => {
+            {sortedItems.map((item, index) => {
               if (item.group && item.group !== group) {
                 return null;
               }

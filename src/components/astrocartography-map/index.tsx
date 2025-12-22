@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { X, Eye, EyeOff, ChevronLeft } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface PlanetLine {
   planet: string;
@@ -92,6 +93,7 @@ const MAJOR_CITIES: Array<{ name: string; lat: number; lng: number; country: str
 ];
 
 export default function AstrocartographyMap({ birthData, planetLines = [] }: AstrocartographyMapProps) {
+  const isMobile = useIsMobile();
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const polylinesRef = useRef<Map<string, L.Polyline>>(new Map());
@@ -130,6 +132,12 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
       setPlanetVisibility(visibility);
     }
   }, [planetLines]);
+
+  // Default panel state based on device type
+  useEffect(() => {
+    // Desktop: open by default; Mobile: closed by default
+    setIsPanelOpen(!isMobile);
+  }, [isMobile]);
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
@@ -398,11 +406,13 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
       
       {/* Planetary control panel */}
       {planetLines.length > 0 && (
-        <div className={`absolute left-0 top-0 bottom-0 z-[1000] transition-transform duration-300 ${
+        <div
+          className={`absolute left-0 top-0 bottom-0 z-[1000] transition-transform duration-300 ${
           isPanelOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}>
+        }`}
+        >
           <div className="h-full bg-black/90 backdrop-blur-md border-r border-white/20 shadow-2xl overflow-y-auto">
-            <div className="p-4 space-y-4 min-w-[200px]">
+            <div className="p-4 space-y-4 min-w-[200px] md:min-w-[240px] w-[70vw] md:w-auto">
               {/* Panel title */}
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-white font-semibold text-sm">Planetary Lines</h3>
@@ -482,7 +492,7 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
       {!isPanelOpen && (
         <button
           onClick={() => setIsPanelOpen(true)}
-          className="absolute left-4 top-4 z-[1000] bg-black/80 hover:bg-black backdrop-blur-md text-white p-2 rounded-md shadow-lg transition-colors"
+          className="absolute left-4 top-16 z-[1000] bg-black/80 hover:bg-black backdrop-blur-md text-white p-2 rounded-md shadow-lg transition-colors"
         >
           <ChevronLeft className="size-5 rotate-180" />
         </button>
