@@ -124,7 +124,7 @@
         "title": "Cálculos Planetarios de Nivel Profesional",
         "description": "La calculadora de astrocartografía utiliza Swiss Ephemeris, el estándar astronómico usado por astrólogos profesionales. Calculamos dónde estaba cada planeta (Sol, Luna, Venus, Marte, Júpiter, Saturno) en posición angular—ascendiendo (ASC), poniéndose (DSC), culminando (MC), o en el nadir (IC)—en tu momento exacto de nacimiento en toda la superficie terrestre. Cada línea de astrocartografía es precisa hasta 1 milla, asegurando que tu carta de astrocartografía coincida con los cálculos de astrólogos profesionales. Cuando te encuentras en una línea planetaria, la energía de ese planeta domina tu experiencia allí.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/1.webp",
           "alt": "Cálculos de astrocartografía de nivel profesional"
         }
       },
@@ -132,7 +132,7 @@
         "title": "Interpretación de Ubicación con IA",
         "description": "Nuestro sistema analiza cómo tu carta natal interactúa con ubicaciones en todo el mundo. La IA explica qué significa cada línea de astrocartografía: las líneas de Venus activan el amor y la creatividad, las líneas de Júpiter traen oportunidades y expansión, las líneas de Saturno fortalecen la disciplina profesional. No solo mostramos dónde están las líneas—explicamos cómo leer los mapas de astrocartografía y qué significa cada ubicación para tu carrera, relaciones, salud y creatividad, haciendo la astrocartografía para relocalización práctica y accesible.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/2.webp",
           "alt": "Interpretación de astrocartografía con IA"
         }
       },
@@ -140,7 +140,7 @@
         "title": "Exportación Instantánea en Múltiples Formatos",
         "description": "Genera tu mapa de astrocartografía en 3 segundos, luego descarga archivos PNG de alta resolución, PDF o SVG. Los mapas marcan claramente todas las líneas planetarias, puntos de poder (intersecciones de líneas) y nombres de ciudades. Junto con informes de interpretación con IA, tu carta de astrocartografía está lista para planificación personal, consultas profesionales o decisiones de relocalización en equipo. Todos los archivos están libres de marcas de agua con derechos comerciales completos.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/3.webp",
           "alt": "Exporta cartas de astrocartografía al instante"
         }
       }
@@ -157,7 +157,7 @@
         "description": "Análisis profesional de astrocartografía con acceso ilimitado gratuito. Usamos la misma biblioteca Swiss Ephemeris en la que confía el software profesional de astrología, con precisión de 1 milla usando cálculos Swiss Ephemeris. Genera cartas de astrocartografía ilimitadas, descarga archivos libres de marcas de agua y accede a interpretaciones con IA—sin tarjeta de crédito, sin tarifas ocultas. Ya seas estudiante, emprendedor o jubilado, accede a análisis profesional de astrocartografía sin costo.",
         "icon": "RiGiftLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Calculadora profesional de astrocartografía gratis"
         }
       },
@@ -166,7 +166,7 @@
         "description": "A diferencia de herramientas que prometen resultados garantizados, reconocemos que la astrocartografía muestra potencial energético, no certezas. Una línea de Venus podría mejorar las relaciones o mostrar desafíos relacionales que necesitas abordar. Nuestra IA considera el contexto de tu carta personal, etapa actual de vida e interacciones planetarias. Las preguntas frecuentes afirman honestamente: usa los mapas de astrocartografía como un factor entre consideraciones prácticas como oportunidades profesionales, costo de vida y requisitos de visa. La astrología real respeta la complejidad—nosotros también.",
         "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Orientación honesta de astrocartografía"
         }
       },
@@ -175,7 +175,7 @@
         "description": "Tus datos de nacimiento se calculan localmente en tu navegador—nunca se suben a servidores, nunca se almacenan en bases de datos, nunca se comparten con terceros. Genera tu carta de astrocartografía con privacidad completa. Todos los archivos tienen derechos comerciales completos: úsalos para planificación personal, consultas profesionales de astrología, enseñanza o publicación sin tarifas de licencia. La privacidad y la calidad profesional no deberían ser exclusivas de clientes que pagan.",
         "icon": "RiLockLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Herramienta de astrocartografía enfocada en privacidad"
         }
       }

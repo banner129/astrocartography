@@ -200,6 +200,8 @@ export default function MiniaturaAIGenerator() {
                     id="birthDate"
                     value={birthDate}
                     onChange={setBirthDate}
+                    onTimeChange={setBirthTime}
+                    timeValue={birthTime}
                     placeholder={t('form.birthDate.placeholder')}
                   />
                 </div>

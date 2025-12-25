@@ -124,7 +124,7 @@
         "title": "Professional-Grade Planetary Calculations",
         "description": "Astrocartography Calculator uses Swiss Ephemeris, the astronomical standard used by professional astrologers. We calculate where each planet (Sun, Moon, Venus, Mars, Jupiter, Saturn) was angular—rising (ASC), setting (DSC), culminating (MC), or at nadir (IC)—at your exact birth moment across Earth's surface. Each astrocartography line is accurate to within 1 mile, ensuring your astrocartography chart matches professional astrologer calculations. When you stand on a planetary line, that planet's energy dominates your experience there.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/1.webp",
           "alt": "Professional-grade astrocartography calculations"
         }
       },
@@ -132,7 +132,7 @@
         "title": "AI-Powered Location Interpretation",
         "description": "Our system analyzes how your birth chart interacts with locations worldwide. The AI explains what each astrocartography line means: Venus lines activate love and creativity, Jupiter lines bring opportunities and expansion, Saturn lines strengthen career discipline. We don't just show where lines are—we explain how to read astrocartography maps and what each location means for your career, relationships, health, and creativity, making astrocartography for relocation practical and accessible.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/2.webp",
           "alt": "AI-powered astrocartography interpretation"
         }
       },
@@ -140,7 +140,7 @@
         "title": "Instant Multi-Format Export",
         "description": "Generate your astrocartography map in 3 seconds, then download high-resolution PNG, PDF, or SVG files. Maps clearly mark all planetary lines, power spots (line intersections), and city names. Paired with AI interpretation reports, your astrocartography chart is ready for personal planning, professional consultations, or team relocation decisions. All files are watermark-free with full commercial rights.",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/3.webp",
           "alt": "Export astrocartography charts instantly"
         }
       }
@@ -157,7 +157,7 @@
         "description": "Professional-grade astrocartography analysis with unlimited free access. We use the same Swiss Ephemeris library that professional astrology software relies on, with 1-mile accuracy using Swiss Ephemeris calculations. Generate unlimited astrocartography charts, download watermark-free files, and access AI interpretations—no credit card, no hidden fees. Whether you're a student, entrepreneur, or retiree, access professional astrocartography analysis at zero cost.",
         "icon": "RiGiftLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Free professional astrocartography calculator"
         }
       },
@@ -166,7 +166,7 @@
         "description": "Unlike tools promising guaranteed outcomes, we acknowledge astrocartography shows energy potential, not certainties. A Venus line might enhance relationships or surface relationship challenges you need to address. Our AI considers your personal chart context, current life stage, and planetary interactions. FAQs honestly state: use astrocartography maps as one factor among practical considerations like career opportunities, cost of living, and visa requirements. Real astrology respects complexity—we do too.",
         "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Honest astrocartography guidance"
         }
       },
@@ -175,7 +175,7 @@
         "description": "Your birth data calculates locally in your browser—never uploaded to servers, never stored in databases, never shared with third parties. Generate your astrocartography chart with complete privacy. All files have full commercial rights: use them for personal planning, professional consultations, teaching, or publishing without licensing fees. Privacy and professional quality shouldn't be exclusive to paying customers.",
         "icon": "RiLockLine",
         "image": {
-          "src": "/imgs/features/hero-web.webp",
+          "src": "/imgs/features/4.webp",
           "alt": "Privacy-focused astrocartography tool"
         }
       }

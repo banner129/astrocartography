@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { toast } from 'sonner';
@@ -37,7 +37,17 @@ export default function SocialShare({
 }: SocialShareProps) {
   const [isUploading, setIsUploading] = useState(false);
   const [shareableUrl, setShareableUrl] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
+  const [hasNativeShare, setHasNativeShare] = useState(false);
   const t = useTranslations('share');
+
+  // 检查原生分享支持（仅在客户端）
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'share' in navigator) {
+      setHasNativeShare(true);
+    }
+  }, []);
 
   // 追踪分享事件
   const trackShare = async (platform: string, imageUrl?: string) => {
@@ -334,7 +344,8 @@ export default function SocialShare({
             </Button>
 
             {/* 原生分享（移动端） */}
-            {typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'share' in navigator && (
+            {/* 使用 mounted 状态避免 hydration mismatch */}
+            {mounted && hasNativeShare && (
               <Button
                 onClick={nativeShare}
                 disabled={isUploading}
