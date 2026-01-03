@@ -3,7 +3,9 @@ import postgres from "postgres";
 
 // Detect if running in Cloudflare Workers environment
 const isCloudflareWorker =
-  typeof globalThis !== "undefined" && "Cloudflare" in globalThis;
+  (typeof globalThis !== "undefined" && "Cloudflare" in globalThis) ||
+  (typeof process !== "undefined" && process.env.CF_PAGES === "1") ||
+  (typeof process !== "undefined" && process.env.CF_WORKERS === "1");
 
 // Database instance for Node.js environment
 let dbInstance: ReturnType<typeof drizzle> | null = null;

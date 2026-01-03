@@ -12,7 +12,6 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
   reactStrictMode: false,
   trailingSlash: true, // 确保URL都带尾部斜杠，与canonical保持一致
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
@@ -24,6 +23,20 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.optimization = {
+        ...config.optimization,
+        usedExports: true,
+        sideEffects: false,
+        minimize: true,
+        moduleIds: 'deterministic',
+        chunkIds: 'deterministic',
+      };
+    }
+    return config;
+  },
+  compress: true,
   async redirects() {
     return [
       {
@@ -42,6 +55,30 @@ const configWithMDX = {
   ...nextConfig,
   experimental: {
     mdxRs: true,
+    optimizePackageImports: [
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-icons",
+      "@radix-ui/react-label",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "lucide-react",
+      "framer-motion",
+    ],
   },
 };
 
