@@ -133,7 +133,19 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
   }, [user, userCredits, creditCost, fetchUserCredits]);
 
   // 🔥 自定义 fetch 函数：在发送请求前修改 body，确保 chartData 被正确传递
-  const customFetch = useCallback(async (url: string, options: RequestInit = {}) => {
+  // 🔥 修复类型错误：使用标准的 fetch 类型签名 (RequestInfo | URL, RequestInit?) => Promise<Response>
+  const customFetch = useCallback(async (input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
+    // 🔥 将 input 转换为字符串 URL（useChat 实际传递的是字符串）
+    const url = typeof input === 'string' 
+      ? input 
+      : input instanceof URL 
+        ? input.toString() 
+        : input instanceof Request 
+          ? input.url 
+          : String(input);
+    
+    const options = init || {};
+    
     // 🔥 关键修复：在发送请求前，动态构建完整的请求体
     let requestBody: any = {};
     
