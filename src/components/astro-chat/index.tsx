@@ -194,6 +194,7 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
       } : { birthData: {}, planetLines: [] },
       questionCount: currentUserMessageCount + 1,
       remainingFreeQuestions: currentRemainingFreeQuestions,
+      userLocale: locale, // 🔥 新增：传递用户语言环境
     };
     
     // 创建新的请求选项，使用修改后的 body

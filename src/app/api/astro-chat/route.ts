@@ -65,12 +65,13 @@ interface ChatRequest {
   };
   questionCount?: number; // 当前是第几个问题
   remainingFreeQuestions?: number; // 剩余免费问题数量
+  userLocale?: string; // 🔥 新增：用户语言环境（用于优化 AI 回答）
 }
 
 export async function POST(req: Request) {
   try {
     const body: ChatRequest = await req.json();
-    const { messages, chartData, questionCount, remainingFreeQuestions } = body;
+    const { messages, chartData, questionCount, remainingFreeQuestions, userLocale } = body;
 
     // 🔥 调试：记录接收到的数据
     console.log('📥 [API] 接收到的请求数据:', {
@@ -229,8 +230,8 @@ export async function POST(req: Request) {
     // 格式化星盘数据为上下文
     const chartContext = formatChartContext(chartData);
     
-    // 根据用户语言和问题次数生成系统提示词
-    const systemPrompt = getSystemPrompt(userLanguage, actualQuestionCount, actualRemainingFreeQuestions);
+    // 根据用户语言和问题次数生成系统提示词（传递 userLocale 以优化回答）
+    const systemPrompt = getSystemPrompt(userLanguage, actualQuestionCount, actualRemainingFreeQuestions, userLocale);
     
     // 注意：追问建议由前端在 onFinish 回调中生成，不需要在这里生成
     
@@ -247,19 +248,19 @@ export async function POST(req: Request) {
       content: `${systemPrompt}\n\n${chartDataIntro}\n\n${chartContext}`,
     };
 
-    // 构建完整的对话上下文（系统消息 + 用户消息历史）
-    // useChat 已经处理了当前消息，我们只需要历史消息
+    // 🔥 修复：构建完整的对话上下文（系统消息 + 所有用户消息，包括当前问题）
+    // useChat 会将当前输入添加到 messages 的最后一条，我们必须包含它，否则 AI 看不到当前问题
     const conversationMessages = [
       systemMessage,
-      ...messages.slice(0, -1), // 排除最后一条（当前用户消息，useChat 会自动添加）
+      ...messages, // ✅ 包含所有消息，包括当前用户问题（最后一条）
     ];
 
     // 调用 AI 生成流式响应
     const result = await streamText({
       model: textModel,
       messages: conversationMessages,
-      maxTokens: 2000,
-      temperature: 0.7, // 平衡创造性和准确性
+      maxTokens: 3000, // 🔥 优化：增加 maxTokens 以支持更详细的回答（从 2000 增至 3000）
+      temperature: 0.5, // 🔥 优化：降低 temperature 提高准确性和一致性（从 0.7 降至 0.5）
     });
 
     // 返回流式响应
