@@ -33,6 +33,7 @@ import { useLocale } from 'next-intl';
 import { loadStripe } from '@stripe/stripe-js';
 import { toast } from 'sonner';
 import { PricingItem } from '@/types/blocks/pricing';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 /**
  * 支付处理 Hook
@@ -44,6 +45,7 @@ import { PricingItem } from '@/types/blocks/pricing';
 export function usePayment() {
   const { user, setShowSignModal } = useAppContext();
   const locale = useLocale();
+  const isMobile = useIsMobile();
   const [isLoading, setIsLoading] = useState(false);
   const [productId, setProductId] = useState<string | null>(null);
 
@@ -136,10 +138,19 @@ export function usePayment() {
 
       // 根据支付方式处理跳转
       if (paymentMethod === "creem") {
-        // Creem 支付：在新标签页打开支付链接
+        // Creem 支付：移动端直接跳转，桌面端新标签页打开
+        // 🔥 原因：移动端浏览器限制异步回调中的 window.open，导致支付表单无法正常加载或交互
+        // 移动端浏览器要求 window.open 必须在用户点击的同步上下文中调用
+        // 当前代码在 await fetch 之后的异步回调中调用 window.open，违反了移动端浏览器的要求
         const { checkout_url } = data;
         if (checkout_url) {
-          window.open(checkout_url, '_blank', 'noopener,noreferrer');
+          if (isMobile) {
+            // 移动端：直接跳转，避免 window.open 导致的表单加载问题
+            window.location.href = checkout_url;
+          } else {
+            // 桌面端：在新标签页打开
+            window.open(checkout_url, '_blank', 'noopener,noreferrer');
+          }
           return { success: true };
         } else {
           toast.error("Failed to get checkout URL");
