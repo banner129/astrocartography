@@ -96,10 +96,18 @@ export function usePayment() {
       const apiEndpoint =
         paymentMethod === "creem" ? "/api/checkout/creem" : "/api/checkout";
 
-      // 如果使用 Creem，添加产品 ID（如果有配置）
+      // 如果使用 Creem，根据 product_id 从环境变量获取对应的产品 ID
       if (paymentMethod === "creem") {
+        // 根据 product_id 映射到对应的环境变量
+        const creemProductIdMap: Record<string, string | undefined> = {
+          "standard": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_STANDARD,
+          "professional": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_PROFESSIONAL,
+        };
+        
         params.creem_product_id =
-          item.creem_product_id || process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID;
+          item.creem_product_id ||  // 优先级1：配置文件中指定（可选）
+          creemProductIdMap[item.product_id] ||  // 优先级2：根据 product_id 从环境变量读取
+          process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID;  // 优先级3：默认值（后备）
       }
 
       // 调用后端API创建订单

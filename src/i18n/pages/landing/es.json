@@ -274,6 +274,10 @@
       {
         "title": "¿Cuál es su política de reembolso?",
         "description": "Ofrecemos una garantía de reembolso de 7 días para el Pase de Acceso de 2 Semanas ($9.9) si has usado el servicio menos de 3 veces. Las suscripciones mensuales se pueden cancelar en cualquier momento, con una garantía de reembolso de 7 días para suscriptores por primera vez. Para términos de reembolso detallados, elegibilidad y cómo solicitar un reembolso, visita nuestra página de Política de Reembolso."
+      },
+      {
+        "title": "¿Qué ciudades analiza la IA? ¿Por qué no puede analizar la ciudad que pregunté?",
+        "description": "La IA solo analiza ciudades específicas por las que pasan tus líneas planetarias (p. ej., Lagos, Madrid, Beijing). Esta limitación se basa en los principios de la astrocartografía: la energía de las líneas planetarias existe solo en trayectorias precisas de círculo máximo. Si preguntas por una ciudad que no está en tus líneas planetarias, la IA te informará honestamente y te recomendará ciudades realmente activadas en tu carta. Los resultados del análisis son solo para referencia y no constituyen asesoramiento profesional. Para un análisis personalizado más flexible, recomendamos consultar a un astrólogo profesional."
       }
     ]
   },
@@ -354,18 +358,19 @@
     "label": "Precios",
     "title": "Elige Tu Plan de Astrocartografía",
     "description": "Mapas interactivos gratuitos para siempre, o desbloquea funciones premium de IA con opciones de precios flexibles",
+    "disclaimer": "⚠️ **Importante**: La IA solo analiza ciudades en tus líneas planetarias. No especulará sobre ciudades que no están en tu carta. Los resultados son solo para referencia.",
     "groups": [],
     "items": [
       {
-        "title": "Mapa Gratuito de Astrocartografía",
-        "description": "Experiencia básica de astrocartografía",
+        "title": "Prueba Gratuita",
+        "description": "Experimenta rápidamente las funciones principales de astrocartografía con IA",
         "features_title": "Incluye",
         "features": [
+          "10 créditos (1 pregunta de IA)",
           "Mapa interactivo de astrocartografía",
           "Explicaciones básicas de líneas planetarias",
           "Generar mapas ilimitados",
-          "Acceso instantáneo",
-          "No se requiere tarjeta de crédito"
+          "Acceso instantáneo"
         ],
         "interval": "one-time",
         "amount": 0,
@@ -373,32 +378,31 @@
         "currency": "USD",
         "price": "Gratis",
         "original_price": "",
-        "unit": "USD",
+        "unit": "",
         "is_featured": false,
-        "tip": "100% gratis para siempre",
+        "tip": "100% gratis para siempre, experimenta funciones principales",
         "button": {
-          "title": "Generar Mapa Gratis",
+          "title": "Comenzar Prueba Gratuita",
           "url": "/#generator",
           "icon": "RiMapLine"
         },
         "product_id": "free",
-        "product_name": "Mapa Gratuito de Astrocartografía",
-        "credits": 0,
+        "product_name": "Prueba Gratuita de Astrocartografía",
+        "credits": 10,
         "valid_months": 0
       },
       {
-        "title": "Pase de Acceso de 2 Semanas",
-        "description": "Perfecto para probar funciones premium",
-        "label": "Popular",
+        "title": "Plan Estándar",
+        "description": "Perfecto para usuarios que toman decisiones serias de reubicación",
+        "label": "Más Popular",
         "features_title": "Funciones Premium",
         "features": [
-          "Acceso ilimitado al chat de IA por 2 semanas",
+          "1000 créditos (100 preguntas de IA)",
           "Análisis de gráfico de reubicación",
           "Acceso al explorador de países",
           "Experiencia sin anuncios",
-          "1000 créditos incluidos",
-          "Pago único",
-          "Sin renovación automática"
+          "Válido para siempre, sin límite de tiempo",
+          "Pago único, sin renovación automática"
         ],
         "interval": "one-time",
         "amount": 990,
@@ -406,17 +410,51 @@
         "currency": "USD",
         "price": "$9.9",
         "original_price": "",
-        "unit": "USD",
+        "unit": "",
         "is_featured": true,
-        "tip": "Pago único, acceso por 14 días",
+        "tip": "Solo $0.099 por pregunta, suficiente para investigar en profundidad 2-3 ciudades",
         "button": {
-          "title": "Comprar Pase",
+          "title": "Comprar Ahora",
           "url": "/#pricing",
           "icon": "RiShoppingCartLine"
         },
-        "product_id": "premium-2weeks",
-        "product_name": "Pase de Acceso Premium - 2 Semanas",
-        "credits": 0,
+        "product_id": "standard",
+        "product_name": "Plan Estándar - Válido para Siempre",
+        "credits": 1000,
+        "valid_months": 0
+      },
+      {
+        "title": "Plan Profesional",
+        "description": "3000 créditos (300 preguntas) | Ideal para investigación profunda en múltiples ciudades y usuarios profesionales",
+        "label": "Mejor Valor",
+        "features_title": "Todas las funciones Estándar, más",
+        "features": [
+          "3000 créditos (300 preguntas de IA)",
+          "Todas las funciones del Plan Estándar",
+          "Exportar historial de chat de IA (archivo TXT)",
+          "Respuesta prioritaria de IA (2x más rápido)",
+          "Análisis avanzado de líneas planetarias (Chiron, Lilith, etc.)",
+          "Soporte por correo electrónico (respuesta en 48 horas)",
+          "Válido para siempre, sin límite de tiempo",
+          "Pago único, sin renovación automática"
+        ],
+        "interval": "one-time",
+        "amount": 1890,
+        "cn_amount": 13290,
+        "currency": "USD",
+        "price": "$18.9",
+        "original_price": "$24.9",
+        "unit": "",
+        "is_featured": false,
+        "tip": "Solo $0.063 por pregunta, 36% más barato que el Estándar",
+        "button": {
+          "title": "Comprar Ahora",
+          "url": "/#pricing",
+          "icon": "RiShoppingCartLine"
+        },
+        "product_id": "professional",
+        "product_name": "Plan Profesional - Válido para Siempre",
+        "credits": 3000,
         "valid_months": 0
       }
     ]

@@ -1070,6 +1070,12 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
                   )}
                 </div>
               </div>
+              {/* 免责声明 - 标题栏下方 */}
+              <div className="mt-3 pt-3 border-t border-white/5">
+                <p className="text-xs text-gray-400 leading-relaxed text-center">
+                  {t('disclaimer')}
+                </p>
+              </div>
             </DialogHeader>
             {chatContent}
           </DialogContent>
@@ -1183,6 +1189,12 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
                   </div>
                 )}
               </div>
+            </div>
+            {/* 免责声明 - 标题栏下方（移动端） */}
+            <div className="mt-2 pt-2 border-t border-white/5">
+              <p className="text-xs text-gray-400 leading-relaxed text-center">
+                {t('disclaimer')}
+              </p>
             </div>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto flex flex-col min-h-0">

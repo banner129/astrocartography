@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -39,6 +39,7 @@ const AUTO_POPUP_DISMISSED_KEY = 'astro-chat-auto-popup-dismissed';
 
 export default function ChartContent() {
   const searchParams = useSearchParams();
+  const params = useParams();
   const t = useTranslations('astrocartographyGenerator');
   const isMobile = useIsMobile();
   const { user, setShowSignModal } = useAppContext();

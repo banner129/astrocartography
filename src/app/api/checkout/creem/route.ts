@@ -135,10 +135,16 @@ export async function POST(req: Request) {
 
     const timePeriod = new Date(currentDate);
 
-    // 特殊处理 2 周通行证
-    if (product_id === "premium-2weeks" && valid_months === 0) {
+    // 🔥 特殊处理：永久有效的套餐（valid_months === 0 且 one-time）
+    if (valid_months === 0 && interval === "one-time") {
+      // 永久有效：设置为 2099-12-31 23:59:59
+      timePeriod.setFullYear(2099, 11, 31); // 11 = 12月（0-based）
+      timePeriod.setHours(23, 59, 59, 999);
+    } else if (product_id === "premium-2weeks" && valid_months === 0) {
+      // 特殊处理 2 周通行证
       timePeriod.setDate(currentDate.getDate() + 14);
     } else {
+      // 正常处理：按月计算
       timePeriod.setMonth(currentDate.getMonth() + valid_months);
     }
 

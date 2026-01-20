@@ -110,8 +110,13 @@ export async function POST(req: Request) {
 
     const timePeriod = new Date(currentDate);
     
-    // Special handling for 2-week pass (product_id: premium-2weeks)
-    if (product_id === "premium-2weeks" && valid_months === 0) {
+    // 🔥 特殊处理：永久有效的套餐（valid_months === 0 且 one-time）
+    if (valid_months === 0 && interval === "one-time") {
+      // 永久有效：设置为 2099-12-31 23:59:59
+      timePeriod.setFullYear(2099, 11, 31); // 11 = 12月（0-based）
+      timePeriod.setHours(23, 59, 59, 999);
+    } else if (product_id === "premium-2weeks" && valid_months === 0) {
+      // Special handling for 2-week pass (product_id: premium-2weeks)
       // Set expiration to 14 days (2 weeks) from now
       timePeriod.setDate(currentDate.getDate() + 14);
     } else {

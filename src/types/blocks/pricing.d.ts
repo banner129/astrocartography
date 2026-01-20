@@ -37,6 +37,7 @@ export interface Pricing {
   name?: string;
   title?: string;
   description?: string;
+  disclaimer?: string;
   items?: PricingItem[];
   groups?: PricingGroup[];
 }
