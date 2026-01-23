@@ -103,10 +103,10 @@ export function DatePicker({
     }
   }, [timeValue])
   
-  // 生成年份列表（当前年份前后各50年）
+  // 生成年份列表（最早1930年，最晚当前年份+50年）
   const currentYear = getYear(currentMonth)
   const years = eachYearOfInterval({
-    start: new Date(currentYear - 50, 0, 1),
+    start: new Date(1930, 0, 1),  // 固定最早年份为1930年
     end: new Date(currentYear + 50, 11, 31),
   })
   
