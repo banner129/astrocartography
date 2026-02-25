@@ -16,7 +16,14 @@ export const revalidate = 604800; // 7 days
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }];
+  return [
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "it" },
+    { locale: "pt" },
+    { locale: "zh" },
+    { locale: "de" },
+  ];
 }
 
 export async function generateMetadata({

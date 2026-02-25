@@ -11,6 +11,7 @@ export async function generateStaticParams() {
     { locale: 'it' },  // 意大利语
     { locale: 'pt' },  // 葡萄牙语
     { locale: 'zh' },  // 中文
+    { locale: 'de' },  // 德语
     // { locale: 'ms' },  // 马来语（暂不开放）
   ];
 }

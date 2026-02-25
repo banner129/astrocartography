@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Kontakt – Astrokartografie Rechner Support",
+    "description": "Kontaktieren Sie das Team des Astrokartografie Rechners. Senden Sie uns Fragen, Feedback oder Support-Anfragen. Wir antworten in der Regel innerhalb von 1–2 Werktagen.",
+    "keywords": ["Astrokartografie Kontakt", "Astrokartografie Support", "Kontaktformular", "Astrokartografie Rechner Hilfe"]
+  },
+  "title": "Kontakt",
+  "subtitle": "Wir freuen uns auf Ihre Nachricht",
+  "description": "Haben Sie eine Frage, einen Vorschlag oder brauchen Sie Hilfe? Füllen Sie das Formular aus – wir melden uns so schnell wie möglich, in der Regel innerhalb von 1–2 Werktagen.",
+  "form": {
+    "name": {
+      "label": "Ihr Name",
+      "placeholder": "Name eingeben"
+    },
+    "email": {
+      "label": "Ihre E-Mail",
+      "placeholder": "E-Mail-Adresse eingeben"
+    },
+    "subject": {
+      "label": "Betreff",
+      "placeholder": "Worum geht es?"
+    },
+    "message": {
+      "label": "Nachricht",
+      "placeholder": "Beschreiben Sie Ihre Frage oder Ihr Feedback..."
+    },
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet!",
+    "success_detail": "Vielen Dank für Ihre Nachricht. Wir haben sie erhalten und antworten innerhalb von 1–2 Werktagen. Sie erhalten in Kürze eine Bestätigungs-E-Mail.",
+    "error": "Nachricht konnte nicht gesendet werden",
+    "error_detail": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es in Kürze erneut oder schreiben Sie uns direkt an support@astrocarto.org."
+  },
+  "alternative": {
+    "title": "Alternative Kontaktmöglichkeiten",
+    "email": {
+      "label": "E-Mail",
+      "value": "support@astrocarto.org",
+      "description": "Schreiben Sie uns direkt eine E-Mail"
+    },
+    "response": "Wir antworten in der Regel innerhalb von 1–2 Werktagen."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Wie schnell erhalte ich eine Antwort?",
+        "answer": "Wir bemühen uns, alle Anfragen innerhalb von 1–2 Werktagen zu beantworten. Bei dringenden Anliegen bitten wir Sie, dies im Betreff zu erwähnen."
+      },
+      {
+        "question": "Was sollte ich in meine Nachricht aufnehmen?",
+        "answer": "Bitte geben Sie so viele Details wie möglich an – inklusive relevanter Screenshots, Fehlermeldungen oder Schritte zur Reproduktion des Problems."
+      },
+      {
+        "question": "Kann ich technischen Support für die Nutzung des Rechners erhalten?",
+        "answer": "Ja. Wir helfen gern bei Fragen zur Nutzung des Astrokartografie Rechners, zur Interpretation der Ergebnisse oder zur Fehlerbehebung."
+      }
+    ]
+  }
+}

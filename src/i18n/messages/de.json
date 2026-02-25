@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "title": "Kostenloser Astrokartografie Rechner mit KI – Präzise Geburtskarte & Relocation-Insights",
+    "description": "Nutzen Sie einen kostenlosen Astrokartografie Rechner mit KI. Präzise Planetenlinien, Relocation-Insights und sofortige Karteninterpretationen. Keine Anmeldung, keine Werbung – nur präzise, KI-gestützte Astrokartografie.",
+    "keywords": "kostenloser Astrokartografie Rechner, KI Astrokartografie, Astrokartografie Karte online kostenlos, Geburtshoroskop Standortkarte, Astrokartografie Linien, Relocation-Astrologie-Tool, Planetenlinien Rechner, Astrokartografie KI-Interpretation, präzise Astrokartografie Karte, bester kostenloser Astrologie-Map"
+  },
+  "user": {
+    "sign_in": "Anmelden",
+    "sign_out": "Abmelden",
+    "credits": "Credits",
+    "api_keys": "API-Schlüssel",
+    "my_orders": "Meine Bestellungen",
+    "user_center": "Benutzerzentrum"
+  },
+  "sign_modal": {
+    "sign_in_title": "Anmelden",
+    "sign_in_description": "Bei Ihrem Konto anmelden",
+    "sign_up_title": "Registrieren",
+    "sign_up_description": "Konto erstellen",
+    "email_title": "E-Mail",
+    "email_placeholder": "E-Mail hier eingeben",
+    "password_title": "Passwort",
+    "password_placeholder": "Passwort hier eingeben",
+    "forgot_password": "Passwort vergessen?",
+    "or": "Oder",
+    "continue": "Weiter",
+    "no_account": "Noch kein Konto?",
+    "email_sign_in": "Mit E-Mail anmelden",
+    "google_sign_in": "Mit Google anmelden",
+    "github_sign_in": "Mit GitHub anmelden",
+    "close_title": "Schließen",
+    "cancel_title": "Abbrechen"
+  },
+  "my_orders": {
+    "title": "Meine Bestellungen",
+    "description": "Bestellungen beim Graffiti Generator.",
+    "no_orders": "Keine Bestellungen gefunden",
+    "tip": "",
+    "activate_order": "Bestellung aktivieren",
+    "actived": "Aktiviert",
+    "join_discord": "Discord beitreten",
+    "read_docs": "Dokumentation lesen",
+    "table": {
+      "order_no": "Bestellnr.",
+      "email": "E-Mail",
+      "product_name": "Produkt",
+      "amount": "Betrag",
+      "paid_at": "Bezahlt am",
+      "github_username": "GitHub-Benutzername",
+      "status": "Status"
+    }
+  },
+  "my_credits": {
+    "title": "Meine Credits",
+    "left_tip": "Verbleibende Credits: {left_credits}",
+    "no_credits": "Keine Credit-Einträge",
+    "recharge": "Aufladen",
+    "table": {
+      "trans_no": "Trans.-Nr.",
+      "trans_type": "Trans.-Typ",
+      "credits": "Credits",
+      "updated_at": "Aktualisiert am",
+      "status": "Status"
+    }
+  },
+  "api_keys": {
+    "title": "API-Schlüssel",
+    "tip": "Bitte bewahren Sie Ihren API-Schlüssel sicher auf.",
+    "no_api_keys": "Keine API-Schlüssel",
+    "create_api_key": "API-Schlüssel erstellen",
+    "table": {
+      "name": "Name",
+      "key": "Schlüssel",
+      "created_at": "Erstellt am"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API-Schlüssel-Name",
+      "submit": "Absenden"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Neuigkeiten und Updates zum Astrokartografie Rechner",
+    "read_more_text": "Weiterlesen",
+    "tools_notice": {
+      "text": "Praktische Tools gesucht? Neben diesen Tutorials finden Sie unsere Astrokartografie-Tools auf der",
+      "link_text": "Astrokartografie Rechner Startseite",
+      "suffix": "für sofortige Kartenerstellung und erweiterte Funktionen."
+    }
+  },
+  "birth_chart_tool": {
+    "error_failed": "Geburtshoroskop konnte nicht erstellt werden.",
+    "form": {
+      "birth_date": "Geburtsdatum",
+      "date_placeholder": "TT/MM/JJJJ",
+      "birth_time": "Geburtszeit",
+      "birth_location": "Geburtsort",
+      "use_city_name": "Stadtname",
+      "use_coordinates": "Koordinaten",
+      "coordinates_placeholder": "z. B. 52.5200, 13.4050",
+      "city_country_placeholder": "Stadt, Land",
+      "location_tip": "Tipp: Land angeben für bessere Genauigkeit (z. B. „Berlin, Deutschland“).",
+      "timezone": "Zeitzone",
+      "generating": "Wird erstellt…",
+      "generate": "Geburtshoroskop erstellen",
+      "privacy_note": "Wir speichern Ihre Geburtsdaten nicht."
+    },
+    "results": {
+      "houses_label": "Häuser:",
+      "houses_suffix": "(Lead-Gen-Modus).",
+      "title": "Ihre Planetenpositionen",
+      "asc_label": "ASC",
+      "table": {
+        "planet": "Planet",
+        "sign": "Zeichen",
+        "degree": "Grad",
+        "house": "Haus"
+      },
+      "bridge_text": "Ihr Geburtshoroskop zeigt, wer Sie sind. Astrokartografie zeigt, wo Sie gedeihen.",
+      "cta_button": "Ihr Chart auf der Weltkarte → Astrokartografie",
+      "cta_help": "Dieser Button überträgt Ihre Geburtsdaten zur interaktiven Weltkarte (keine erneute Eingabe nötig)."
+    }
+  },
+  "my_invites": {
+    "title": "Meine Einladungen",
+    "description": "Einladungsübersicht",
+    "no_invites": "Keine Einladungseinträge",
+    "my_invite_link": "Mein Einladungslink",
+    "edit_invite_link": "Einladungslink bearbeiten",
+    "copy_invite_link": "Einladungslink kopieren",
+    "invite_code": "Einladungscode",
+    "invite_tip": "Laden Sie 1 Freund zum Graffiti Generator ein, Belohnung $50.",
+    "invite_balance": "Einladungsguthaben",
+    "total_invite_count": "Anzahl Einladungen",
+    "total_paid_count": "Anzahl Bezahlungen",
+    "total_award_amount": "Gesamtprämie",
+    "update_invite_code": "Einladungscode setzen",
+    "update_invite_code_tip": "Ihren eigenen Einladungscode eingeben",
+    "update_invite_button": "Speichern",
+    "no_orders": "Sie können erst andere einladen, nachdem Sie den Graffiti Generator gekauft haben.",
+    "no_affiliates": "Sie dürfen andere nicht einladen. Bitte kontaktieren Sie uns für eine Freigabe.",
+    "table": {
+      "invite_time": "Einladungszeit",
+      "invite_user": "Eingeladener Nutzer",
+      "status": "Status",
+      "reward_percent": "Prämienanteil",
+      "reward_amount": "Prämienbetrag",
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen"
+    }
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "Wir freuen uns über Rückmeldung – was gut lief oder wie wir uns verbessern können.",
+    "submit": "Absenden",
+    "loading": "Wird gesendet...",
+    "contact_tip": "Weitere Kontaktmöglichkeiten",
+    "rating_tip": "Wie finden Sie unser Produkt?",
+    "placeholder": "Hier Ihre Nachricht eingeben..."
+  },
+  "share": {
+    "title": "Dieses Graffiti teilen",
+    "text": "Gerade dieses Graffiti kostenlos mit www.graffitigen.com erstellt! Probieren Sie es selbst:",
+    "preparing": "Wird vorbereitet...",
+    "success": "Link in die Zwischenablage kopiert!",
+    "failed": "Link konnte nicht kopiert werden",
+    "uploading": "Graffiti wird zum Teilen vorbereitet...",
+    "platforms": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "pinterest": "Pinterest",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "reddit": "Reddit",
+      "copy": "Kopieren"
+    }
+  },
+  "graffitiGenerator": {
+    "ui": {
+      "title": "Erstellen Sie Ihr Graffiti mit dem kostenlosen Generator",
+      "subtitle": "Verwandeln Sie Text mit KI in Street Art"
+    },
+    "upload": {
+      "title": "Graffiti-Stil wählen",
+      "subtitle": "Aus über 50 professionellen Graffiti-Schriften wählen",
+      "dragDrop": "Unsere Graffiti-Schriftensammlung durchsuchen",
+      "fileInfo": "Bubble Letters • Wildstyle • 3D-Effekte • Modern & mehr"
+    },
+    "instructions": {
+      "title": "Text eingeben",
+      "subtitle": "Text eingeben, der in Graffiti verwandelt werden soll",
+      "translate": "Übersetzen",
+      "autoTranslateEnabled": "Auto-Übersetzung aktiv"
+    },
+    "usage": {
+      "remaining": "Verbleibende kostenlose Graffiti-Erstellungen: {remaining}/3",
+      "signInTip": "Melden Sie sich an für unbegrenzte Graffiti-Erstellungen!",
+      "limitReached": "Tageslimit erreicht (3/3 kostenlose Erstellungen genutzt)",
+      "signInUnlimited": "Anmelden für unbegrenzten Zugang oder morgen erneut versuchen!"
+    },
+    "buttons": {
+      "generate": "Graffiti erstellen",
+      "generating": "Ihr Graffiti wird erstellt...",
+      "limitReached": "Tageslimit erreicht – Anmelden",
+      "download": "Graffiti herunterladen",
+      "regenerate": "Anderen Stil probieren"
+    },
+    "result": {
+      "title": "Bereit zum Erstellen",
+      "subtitle": "Text eingeben, um das Graffiti zu sehen",
+      "readyTitle": "Ihr kostenloser Graffiti Generator wartet",
+      "readySubtitle": "Text eingeben und aus über 50 Graffiti-Stilen wählen. Professionelle Street Art in Sekunden.",
+      "willAppear": "Ihr Graffiti erscheint hier",
+      "creating": "Ihr Graffiti wird erstellt...",
+      "almostDone": "Fast fertig! Ihr Graffiti entsteht",
+      "takeFewMoments": "Das kann einen Moment dauern"
+    },
+    "messages": {
+      "uploadValidImage": "Bitte wählen Sie einen gültigen Graffiti-Stil",
+      "imageTooLarge": "Text ist zu lang, bitte maximal 50 Zeichen",
+      "uploadSuccess": "Graffiti-Stil erfolgreich ausgewählt",
+      "pleaseUploadImage": "Bitte geben Sie Ihren Text ein",
+      "pleaseProvideInstructions": "Bitte wählen Sie eine Graffiti-Schrift",
+      "dailyLimitExceeded": "Tageslimit überschritten! Bitte anmelden für unbegrenzte Erstellungen oder morgen erneut versuchen.",
+      "graffitiGeneratedSuccess": "Graffiti erfolgreich erstellt!",
+      "generationFailed": "Erstellung fehlgeschlagen",
+      "generateGraffitiFailed": "Graffiti konnte nicht erstellt werden. Bitte erneut versuchen.",
+      "imageDownloaded": "Graffiti heruntergeladen!",
+      "imageDownloadFailed": "Graffiti konnte nicht heruntergeladen werden"
+    }
+  },
+  "payment": {
+    "modal": {
+      "title": "Tarif wählen",
+      "description": "Upgrade für mehr Graffiti-Stile und Funktionen",
+      "most_popular": "Am beliebtesten",
+      "credits": "Credits",
+      "month": "Monat",
+      "year": "Jahr",
+      "processing": "Wird verarbeitet...",
+      "select_plan": "Diesen Tarif wählen",
+      "international_payment": "Internationale Zahlung",
+      "china_payment": "Alipay/WeChat Pay",
+      "stripe_payment": "Stripe",
+      "creem_payment": "Creem"
+    },
+    "test": {
+      "basic": { "title": "Basic-Tarif", "description": "100 Credits", "feature1": "100 Graffiti-Erstellungen", "feature2": "Standardgeschwindigkeit", "feature3": "E-Mail-Support" },
+      "pro": { "title": "Pro-Tarif", "description": "500 Credits", "feature1": "500 Graffiti-Erstellungen", "feature2": "Prioritätsgeschwindigkeit", "feature3": "24/7 technischer Support", "feature4": "HD-Ausgabe" },
+      "enterprise": { "title": "Enterprise-Tarif", "description": "2000 Credits", "feature1": "2000 Graffiti-Erstellungen", "feature2": "Höchste Geschwindigkeit", "feature3": "Dedizierter Support", "feature4": "API-Zugang", "feature5": "Stapelverarbeitung" },
+      "test_title": "Zahlungs-Modal Test",
+      "open_default": "Zahlungs-Modal öffnen (Standard)",
+      "open_custom": "Zahlungs-Modal öffnen (Benutzerdefiniert)",
+      "default_description": "Übersetzter Titel und Beschreibung",
+      "custom_description": "Szenario unzureichende Credits",
+      "instructions_title": "Testanleitung",
+      "instruction1": "Desktop: Dialog-Modal",
+      "instruction2": "Mobil: Drawer",
+      "instruction3": "Mehrsprachenumschaltung",
+      "instruction4": "Internationale und China-Zahlungsoptionen",
+      "instruction5": "Anmeldung für Zahlung erforderlich",
+      "success_message": "Zahlung erfolgreich! Credits gutgeschrieben",
+      "insufficient_title": "Unzureichende Credits",
+      "insufficient_description": "Sie haben nicht genug Credits. Bitte upgraden Sie.",
+      "upgrade_success": "Upgrade erfolgreich! Funktionen freigeschaltet"
+    },
+    "success": {
+      "title": "Zahlung erfolgreich!",
+      "description": "Ihre Zahlung wurde erfolgreich verarbeitet.",
+      "credits_added": "Credits wurden Ihrem Konto gutgeschrieben.",
+      "view_orders": "Meine Bestellungen anzeigen",
+      "auto_redirect": "Weiterleitung zum Benutzerzentrum in {seconds} Sekunden..."
+    }
+  },
+  "astrocartographyGenerator": {
+    "ui": {
+      "title": "Ihre Astrokartografie-Karte erstellen",
+      "subtitle": "Geburtsdaten eingeben für Ihre persönliche Astrokartografie-Karte"
+    },
+    "form": {
+      "birthDate": { "label": "Geburtsdatum", "placeholder": "TT/MM/JJJJ" },
+      "birthTime": { "label": "Geburtszeit", "placeholder": "--:--" },
+      "birthLocation": {
+        "label": "Geburtsort",
+        "placeholder": "Geburtsstadt eingeben...",
+        "placeholderCoordinates": "Koordinaten (z. B. 52.5200, 13.4050)",
+        "useCoordinates": "Koordinaten",
+        "useCityName": "Stadtname"
+      },
+      "timezone": { "label": "Zeitzone" },
+      "buttons": {
+        "generate": "✨ Karte erstellen ✨",
+        "generating": "Wird erstellt...",
+        "download": "Karte herunterladen",
+        "generateNew": "Neue Karte erstellen"
+      },
+      "privacy": "Ihre Daten werden sicher verarbeitet und nicht dauerhaft gespeichert. Wir respektieren Ihre Privatsphäre und liefern kosmische Insights."
+    },
+    "messages": {
+      "error": {
+        "birthDateRequired": "Bitte Geburtsdatum eingeben",
+        "birthTimeRequired": "Bitte Geburtszeit eingeben",
+        "birthLocationRequired": "Bitte Geburtsort eingeben"
+      },
+      "success": {
+        "chartDownloaded": "Karte erfolgreich heruntergeladen!",
+        "generating": "Ihre Astrokartografie-Karte wird erstellt...",
+        "almostDone": "Bitte warten, fast fertig",
+        "processing": "Ihre Astrokartografie-Daten werden verarbeitet...",
+        "mayTakeMoment": "Das kann einige Sekunden dauern",
+        "calculating": "Ihre Astrokartografie-Karte wird berechnet...",
+        "linkCopied": "Link in die Zwischenablage kopiert!"
+      },
+      "errorGeneral": {
+        "downloadFailed": "Download fehlgeschlagen, bitte später erneut versuchen",
+        "downloadInDevelopment": "Download-Funktion in Entwicklung...",
+        "calculationFailed": "Berechnung fehlgeschlagen",
+        "generationFailed": "Karte konnte nicht erstellt werden",
+        "missingInfo": "Fehlende Geburtsdaten",
+        "returnToRegenerate": "Zurück zum Neu-Erstellen"
+      },
+      "buttons": {
+        "returnHome": "Zur Startseite",
+        "download": "Herunterladen",
+        "share": "Teilen",
+        "newChart": "Neue Karte"
+      }
+    },
+    "result": {
+      "title": "Schauen Sie sich meine Astrokartografie-Karte an!",
+      "description": "Ich habe gerade meine persönliche Astrokartografie-Karte erstellt! Entdecken Sie Ihre kosmischen Verbindungen weltweit.",
+      "hashtags": ["Astrokartografie", "AstroMap", "Astrologie", "KosmischeVerbindungen", "Geburtshoroskop"]
+    }
+  },
+  "astro_chat": {
+    "credit_cost_notice": "Jedes Gespräch verbraucht {credits} Credits",
+    "credit_cost_notice_singular": "Jedes Gespräch verbraucht {credits} Credit",
+    "insufficient_credits_title": "Unzureichende Credits",
+    "insufficient_credits_message": "Ihre kostenlose Testversion ist aufgebraucht. Für weitere Gespräche bitte auf den Premium-Tarif upgraden.",
+    "insufficient_credits_close": "Schließen",
+    "insufficient_credits_upgrade": "Upgraden",
+    "download_chat": "Chat herunterladen",
+    "download_success": "Chat erfolgreich heruntergeladen",
+    "download_failed": "Download fehlgeschlagen, bitte erneut versuchen",
+    "no_messages": "Keine Nachrichten zum Herunterladen",
+    "welcome_title": "Willkommen! Bereit, Ihren Planeten-Blueprint zu erkunden?",
+    "welcome_subtitle": "Entdecken Sie die Geschichten in Ihren Sternen und Planetenlinien",
+    "disclaimer": "💡 Die KI analysiert nur Städte in Ihrem Chart. Nur zur Orientierung.",
+    "suggested_questions": [
+      "Wohin sollte ich ziehen für Liebe und Erfolg?",
+      "Was sind meine Top-3-Städte für Karriere?",
+      "Wie verändert ein Umzug in eine neue Stadt mein Leben?",
+      "Was verrät meine Venus-Linie über Beziehungen?",
+      "Vergleichen Sie meine besten Orte für Liebe vs. Karriere"
+    ]
+  }
+}

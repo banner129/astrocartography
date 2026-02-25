@@ -3,6 +3,17 @@ import { getCanonicalUrl } from "@/lib/utils";
 import ContactFormClient from "./contact-form-client";
 import { getContactPage } from "@/services/page";
 
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "it" },
+    { locale: "pt" },
+    { locale: "zh" },
+    { locale: "de" },
+  ];
+}
+
 export async function generateMetadata({
   params,
 }: {
