@@ -48,8 +48,8 @@ export default function ToplistBadge() {
           src={`https://toplist.cz/count.asp?id=${TOPLIST_ID}&njs=1`}
           width={88}
           height={31}
-          border={0}
           alt="TOPlist"
+          className="border-0"
         />
       </noscript>
     </a>
