@@ -51,6 +51,13 @@
           "url": "/transit-chart-calculator",
           "children": [
             {
+              "title": "Natal Chart",
+              "description": "Free natal chart calculator: wheel, planets, houses, ascendant",
+              "url": "/chart/natal-chart",
+              "target": "_self",
+              "icon": "RiPieChartLine"
+            },
+            {
               "title": "Transit Chart Calculator",
               "description": "See how transiting planets aspect your birth chart",
               "url": "/transit-chart-calculator",

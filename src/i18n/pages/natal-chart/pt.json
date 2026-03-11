@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "Mapa Astral Grátis — Calculadora Carta Natal, Significado e Casas",
+    "description": "Gere seu mapa astral (carta natal) completo em segundos. Veja posições planetárias, signos e casas astrológicas, descubra o que seu mapa natal revela sobre personalidade, relacionamentos e caminho de vida, e passe para o mapa de astrocartografia para ver onde você prospera.",
+    "keywords": "mapa astral, carta natal, mapa natal, calculadora mapa astral grátis, significado mapa astral, casas astrológicas, ascendente"
+  },
+  "intentAnchor": {
+    "text": "Se você procura um Mapa Astral ou Carta Natal (e não só o horóscopo do signo solar), esta página entrega a ferramenta primeiro: gere a roda do seu mapa astral, revise as posições por signo e casa, e depois explore com a astrocartografia onde seu mapa se ativa no mundo."
+  },
+  "internalLinks": {
+    "title": "Ferramentas relacionadas",
+    "items": [
+      {
+        "text": "Quer a versão em mapa do mundo do seu mapa astral?",
+        "linkText": "Experimente Astrocartografia",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "Precisa de um gerador de carta natal simples?",
+        "linkText": "Gerador de Mapa Astral",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "Prefere tutoriais e exemplos?",
+        "linkText": "Leia o Blog",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "O que é um Mapa Astral (Carta Natal)?",
+    "label": "INTRODUÇÃO",
+    "description": "O mapa astral (ou carta natal) é uma representação de 360° do céu no momento e lugar exatos do seu nascimento. Nossa calculadora de mapa astral transforma sua data, hora e local de nascimento numa roda precisa, com Sol, Lua e planetas por signo e casa, para você ler seu mapa pessoal.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Exemplo de roda de mapa astral"
+    },
+    "items": [
+      {
+        "title": "Cálculos de mapa astral de nível profissional",
+        "description": "Esta calculadora de mapa astral usa rotinas astronômicas profissionais para as posições geocêntricas do Sol, da Lua e dos planetas no momento do nascimento. Convertemos sua hora local para UTC, obtemos as longitudes planetárias e colocamos cada corpo em signo e grau. O resultado é um mapa astral claro que reflete o céu no seu nascimento, não um horóscopo genérico por signo solar.",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "Como um mapa astral é calculado"
+        }
+      },
+      {
+        "title": "Roda de mapa astral clara para iniciantes",
+        "description": "Em vez de muito texto, você obtém uma roda visual do mapa astral com 12 casas, signos do zodíaco e posições planetárias num layout simples e legível. Você vê onde cada planeta está no seu mapa astral de relance e depois pode entrar nos detalhes de graus, signos e casas.",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "Visualização da roda de mapa astral"
+        }
+      },
+      {
+        "title": "Do mapa astral aos lugares no mundo",
+        "description": "O mapa astral responde «quem sou eu?» mas não «onde prospero?». Depois de gerar seu mapa astral, um clique leva os mesmos dados de nascimento para o mapa de astrocartografia. Você pode ver onde os temas do seu mapa astral (carreira, amor, criatividade) se ativam no mundo e quais lugares ressoam mais com sua carta.",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Mapa astral vs astrocartografia"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por que usar esta calculadora de mapa astral",
+    "label": "Principais vantagens",
+    "description": "Nossa calculadora de mapa astral grátis é feita para clareza: posições precisas, roda legível e passagem direta para a astrocartografia, para seu mapa astral ser útil no dia a dia.",
+    "items": [
+      {
+        "title": "Mapa astral preciso, não horóscopos vagos",
+        "description": "Em vez de uma leitura genérica por signo solar, esta ferramenta de mapa astral calcula as posições exatas dos seus planetas, ascendente e casas. Seu mapa astral mostra um padrão único que não se resume a Áries ou Touro: combina Sol, Lua, ascendente e casas numa visão completa.",
+        "icon": "RiFlashlightLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calculadora de mapa astral precisa" }
+      },
+      {
+        "title": "Totalmente grátis e sem limites",
+        "description": "Gere quantos mapas astrais quiser, sem conta nem paywall. Você obtém a roda do mapa astral e uma tabela de posições com signos, graus e casas numa só página.",
+        "icon": "RiListCheck",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calculadora de mapa astral grátis" }
+      },
+      {
+        "title": "Ferramenta de mapa astral com foco em privacidade",
+        "description": "Seu mapa astral é baseado em dados sensíveis como data, hora e local de nascimento. Mantemos o processo simples e com privacidade: você informa os dados, vê seu mapa astral e decide o que guardar ou compartilhar. Não é preciso cadastro para calcular sua carta.",
+        "icon": "RiLockLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Ferramenta mapa astral privacidade" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Como ler seu mapa astral em 3 passos",
+    "label": "COMO USAR",
+    "description": "Esta página de mapa astral foi pensada para quem está começando gerar e ler a própria carta sem se perder em jargão.",
+    "items": [
+      {
+        "title": "Informe os dados de nascimento para seu mapa astral",
+        "description": "Comece com a data de nascimento, hora o mais exata possível (de preferência ao minuto) e local de nascimento. A hora é muito importante para o ascendente e as casas no seu mapa astral. Mesmo com hora aproximada, signos e graus planetários continuam úteis, mas as casas podem mudar.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Gere a roda e as posições do mapa astral",
+        "description": "Clique em gerar para criar seu mapa astral. Você verá uma roda com 12 casas e uma tabela de posições planetárias por signo, grau e casa. Use a roda para uma visão geral e a tabela para os detalhes precisos.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Foque em Sol, Lua, ascendente e casas principais",
+        "description": "Para não se sobrecarregar, comece pelos «três grandes» no seu mapa astral: Sol, Lua e ascendente. Depois veja em quais casas estão seus planetas principais (trabalho, relacionamentos, lar). Essa revisão simples ajuda a construir uma história a partir do seu mapa astral.",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "Envie seu mapa astral para o mapa do mundo",
+        "description": "Quando estiver familiarizado com seu mapa astral, clique para ir ao mapa de astrocartografia. O mapa mantém os dados do seu mapa astral e mostra onde as diferentes partes da sua carta se ativam globalmente.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Recursos do mapa astral",
+    "label": "RECURSOS",
+    "description": "Estes recursos ajudam você a gerar e ler seu mapa astral: da roda e da tabela de posições às casas, local de nascimento e passagem em um clique para o mapa de astrocartografia.",
+    "items": [
+      {
+        "title": "Visualização da roda do mapa astral",
+        "description": "A roda do mapa astral mostra as 12 casas e as posições planetárias num único diagrama. Você vê na hora se seu mapa astral está concentrado numa área (como casas angulares) ou mais distribuído.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Lista de posições planetárias por signo e casa",
+        "description": "Abaixo da roda, uma tabela lista cada planeta do seu mapa astral com signo zodiacal, grau e casa. Assim você pode conferir informações de livros ou leituras usando os graus exatos.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Casas de signo inteiro para mapas astrais legíveis",
+        "description": "Nesta calculadora de mapa astral grátis usamos casas de signo inteiro (Whole Sign). O signo do ascendente vira a 1ª casa e cada signo seguinte a próxima casa. Seu mapa astral fica visualmente limpo e fácil para quem está aprendendo.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Autocompletar local e coordenadas",
+        "description": "Você pode buscar sua cidade de nascimento ou colar coordenadas. O local afeta o ascendente e as casas do seu mapa astral. Duas pessoas nascidas no mesmo horário UTC em cidades diferentes podem ter ascendente e casas diferentes.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Experiência de mapa astral no celular",
+        "description": "O formulário do mapa astral usa campos de data e hora touch-friendly e uma roda e tabela responsivas, para você gerar e ler seu mapa astral no celular.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Um clique para a astrocartografia",
+        "description": "Depois de gerar seu mapa astral você pode enviar seus dados de nascimento para o mapa de astrocartografia. Mapa astral = quais energias você carrega; astrocartografia = onde essas energias são mais fortes no mundo.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Perguntas frequentes",
+    "title": "Mapa astral – perguntas frequentes",
+    "description": "Respostas objetivas às dúvidas mais comuns sobre mapa astral, calculadoras de carta natal e como ler sua própria carta.",
+    "items": [
+      {
+        "title": "O que é um mapa astral e por que importa?",
+        "description": "O mapa astral (ou carta natal) é uma foto do céu no seu nascimento: mostra onde estavam o Sol, a Lua e os planetas por signo e casa. Astrólogos usam o mapa astral para descrever padrões de personalidade, necessidades emocionais e temas de vida. Diferente do horóscopo diário, o mapa astral é único para seu momento e lugar de nascimento."
+      },
+      {
+        "title": "Esta calculadora de mapa astral é grátis?",
+        "description": "Sim. Esta ferramenta de mapa astral é totalmente gratuita. Você pode gerar mapas astrais ilimitados sem cadastro. Cada mapa astral inclui a roda e a tabela de posições."
+      },
+      {
+        "title": "Que dados de nascimento preciso para um mapa astral preciso?",
+        "description": "Para calcular um mapa astral confiável você precisa da data, da hora e do local de nascimento. Hora e local são especialmente importantes para o ascendente e as casas. Se você só tem a data, os signos planetários ainda são válidos, mas as casas e os graus exatos podem ser menos precisos."
+      },
+      {
+        "title": "Qual sistema de casas esta calculadora de mapa astral usa?",
+        "description": "Nesta calculadora de mapa astral grátis usamos casas de signo inteiro (Whole Sign): o signo do ascendente é a 1ª casa, o próximo signo a 2ª e assim por diante. Muitos iniciantes acham mais intuitivo ao aprender o significado das casas."
+      },
+      {
+        "title": "Posso ler meu mapa astral sem astrólogo?",
+        "description": "Sim. Esta página de mapa astral foi feita para você começar a ler sua carta: comece pelo Sol, Lua e ascendente, depois veja em quais casas estão seus planetas. Você pode usar livros ou vídeos para interpretar cada posição."
+      },
+      {
+        "title": "Qual a diferença entre mapa astral e mapa de trânsitos?",
+        "description": "Seu mapa astral é fixo e não muda, porque é baseado no seu nascimento. Um mapa de trânsitos mostra onde os planetas estão agora (ou numa data escolhida) em relação ao seu mapa astral. Esta página foca no mapa astral; para trânsitos você pode usar nossa Calculadora de Trânsitos."
+      },
+      {
+        "title": "Como meu mapa astral se conecta à astrocartografia?",
+        "description": "A astrocartografia projeta seu mapa astral no mapa do mundo. As mesmas posições planetárias do seu mapa astral são usadas para desenhar linhas na Terra onde esses planetas estavam angulares. Seu mapa astral descreve suas energias em geral; a astrocartografia mostra onde elas são mais fortes geograficamente."
+      },
+      {
+        "title": "E se eu não sei minha hora exata de nascimento?",
+        "description": "Se você não sabe a hora exata, ainda pode usar esta calculadora de mapa astral com uma hora aproximada. Os signos planetários continuam significativos, mas o ascendente e as casas podem mudar em poucos minutos; interprete as casas com cautela. Se depois você conseguir a hora exata, pode gerar de novo seu mapa astral."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Gere seu mapa astral grátis agora",
+    "description": "Crie seu mapa astral em segundos, veja seu Sol, Lua e ascendente, revise as posições por signo e casa e explore onde seu mapa astral se ativa no mapa de astrocartografia.",
+    "buttons": [
+      {
+        "title": "Onde seu mapa astral se ativa → Astrocartografia",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

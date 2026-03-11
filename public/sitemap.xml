@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- ========================================== -->
-  <!-- 当前生效：英文首页、多语言首页、法律页面、联系页面、博客页面和 Astrocartography Calculator 页面 -->
-  <!-- 更新日期: 2026-01-27                        -->
+  <!-- 当前生效：首页、多语言、法律、联系、博客、Astrocartography Calculator、Birth Chart、Rising Sign、Transit Chart、Natal Chart -->
+  <!-- 更新日期: 2026-03-11                        -->
   <!-- ========================================== -->
   
   <!-- 英文首页 - 主关键词: astrocartography -->
@@ -341,6 +341,56 @@
   <url>
     <loc>https://astrocarto.org/de/transit-chart-calculator/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Natal Chart 页面 - 主关键词: natal chart / carta natal / Geburtshoroskop / carta natale / mapa astral
+  ────────────────────────────────────────────────────────── -->
+  <!-- 英文版本 - natal chart calculator -->
+  <url>
+    <loc>https://astrocarto.org/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 中文版本 - Natal Chart 本命盘 -->
+  <url>
+    <loc>https://astrocarto.org/zh/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 西班牙语版本 - carta natal -->
+  <url>
+    <loc>https://astrocarto.org/es/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 葡萄牙语版本 - mapa astral -->
+  <url>
+    <loc>https://astrocarto.org/pt/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 意大利语版本 - carta natale -->
+  <url>
+    <loc>https://astrocarto.org/it/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 德语版本 - Geburtshoroskop -->
+  <url>
+    <loc>https://astrocarto.org/de/chart/natal-chart/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -51,6 +51,13 @@
           "url": "/transit-chart-calculator",
           "children": [
             {
+              "title": "Carta Natal",
+              "description": "Calculadora carta natal gratis: rueda, planetas, casas, ascendente",
+              "url": "/chart/natal-chart",
+              "target": "_self",
+              "icon": "RiPieChartLine"
+            },
+            {
               "title": "Calculadora de Tránsitos",
               "description": "Ver cómo los planetas en tránsito aspectan tu carta natal",
               "url": "/transit-chart-calculator",

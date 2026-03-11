@@ -51,6 +51,13 @@
           "url": "/transit-chart-calculator",
           "children": [
             {
+              "title": "Natal Chart 本命盘",
+              "description": "免费生成本命盘轮盘、行星与宫位落点",
+              "url": "/chart/natal-chart",
+              "target": "_self",
+              "icon": "RiPieChartLine"
+            },
+            {
               "title": "过运盘计算器",
               "description": "查看行运行星如何与本命盘形成相位",
               "url": "/transit-chart-calculator",

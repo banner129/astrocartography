@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "Carta Natal Gratis — Calculadora Carta Natal, Significado y Casas",
+    "description": "Genera tu carta natal completa en segundos. Consulta posiciones planetarias, signos del zodiaco y casas astrológicas, descubre qué revela tu carta natal sobre personalidad, relaciones y camino de vida, y pásate al mapa de astrocartografía para ver dónde prosperas.",
+    "keywords": "carta natal, calculadora carta natal, carta natal gratis, carta astral, significado carta natal, casas astrológicas, interpretación carta natal"
+  },
+  "intentAnchor": {
+    "text": "Si buscas una Carta Natal (no solo el horóscopo del signo solar), esta página te ofrece primero la herramienta: genera tu rueda de carta natal, revisa las posiciones por signo y casa, y luego explora en el mapa mundial con Astrocartography dónde tu carta se activa."
+  },
+  "internalLinks": {
+    "title": "Herramientas relacionadas",
+    "items": [
+      {
+        "text": "¿Quieres la versión en mapa del mundo de tu carta natal?",
+        "linkText": "Prueba Astrocartography",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "¿Necesitas un generador de carta natal sencillo?",
+        "linkText": "Generador de Carta Natal",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "¿Prefieres tutoriales y ejemplos?",
+        "linkText": "Lee el Blog",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "¿Qué es una Carta Natal?",
+    "label": "INTRODUCCIÓN",
+    "description": "La carta natal (también llamada carta astral o mapa natal) es una representación del cielo en el momento y lugar exactos de tu nacimiento. Nuestra calculadora de carta natal convierte tu fecha, hora y lugar de nacimiento en una rueda precisa con el Sol, la Luna y los planetas por signo y casa, para que puedas leer tu mapa personal.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Ejemplo de rueda de carta natal"
+    },
+    "items": [
+      {
+        "title": "Cálculos de carta natal de nivel profesional",
+        "description": "Esta calculadora de carta natal usa rutinas astronómicas profesionales para obtener las posiciones geocéntricas del Sol, la Luna y los planetas en tu momento de nacimiento. Convertimos tu hora local a UTC, calculamos las longitudes planetarias y situamos cada cuerpo en signo y grado. El resultado es una carta natal clara que refleja el cielo en tu nacimiento, no un horóscopo genérico por signo solar.",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "Cómo se calcula una carta natal"
+        }
+      },
+      {
+        "title": "Rueda de carta natal clara para principiantes",
+        "description": "En lugar de mucho texto, obtienes una rueda visual de carta natal con 12 casas, signos del zodiaco y posiciones planetarias en un diseño sencillo y legible. Ves dónde está cada planeta en tu carta natal de un vistazo y luego puedes entrar en detalle por grados, signos y casas.",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "Visualización de la rueda de carta natal"
+        }
+      },
+      {
+        "title": "De la carta natal a los lugares en el mundo",
+        "description": "La carta natal responde a «quién soy» pero no «dónde prospero». Una vez generada tu carta natal, un clic lleva los mismos datos de nacimiento al mapa de astrocartografía. Puedes ver dónde se activan en el mapa mundial los temas de tu carta natal (carrera, amor, creatividad) y qué lugares resuenan más con tu carta.",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Carta natal frente a astrocartografía"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por qué usar esta calculadora de carta natal",
+    "label": "Ventajas principales",
+    "description": "Nuestra calculadora de carta natal gratis está pensada para la claridad: posiciones precisas, rueda legible y enlace directo a la astrocartografía para que tu carta natal sea útil en el día a día.",
+    "items": [
+      {
+        "title": "Carta natal precisa, no horóscopos vagos",
+        "description": "En lugar de una lectura genérica por signo solar, esta herramienta de carta natal calcula las posiciones exactas de tus planetas, ascendente y casas. Tu carta natal muestra un patrón único que no se reduce a Aries o Tauro: combina Sol, Luna, ascendente y casas en una imagen completa.",
+        "icon": "RiFlashlightLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calculadora de carta natal precisa" }
+      },
+      {
+        "title": "Totalmente gratis y sin límites",
+        "description": "Genera todas las cartas natales que quieras: sin cuenta ni pago. Obtienes la rueda de carta natal y una tabla de posiciones con signos, grados y casas en una sola página, para explorar tu carta o ayudar a amigos o clientes sin fricciones.",
+        "icon": "RiListCheck",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calculadora de carta natal gratis" }
+      },
+      {
+        "title": "Herramienta de carta natal con privacidad",
+        "description": "Tu carta natal se basa en datos sensibles como fecha, hora y lugar de nacimiento. Mantenemos el proceso simple y centrado en la privacidad: introduces tus datos, ves tu carta natal y decides qué guardar o compartir. No hace falta registrarse para calcular tu carta.",
+        "icon": "RiLockLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Herramienta de carta natal con privacidad" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo leer tu carta natal en 3 pasos",
+    "label": "CÓMO USAR",
+    "description": "Esta página de carta natal está pensada para que los principiantes puedan generar y empezar a leer su carta sin perderse en tecnicismos.",
+    "items": [
+      {
+        "title": "Introduce los datos de nacimiento para tu carta natal",
+        "description": "Empieza con tu fecha de nacimiento, hora exacta (a ser posible al minuto) y lugar de nacimiento. La hora es muy importante para el ascendente y las casas en tu carta natal. Si la hora es aproximada, los signos y grados planetarios siguen siendo útiles, pero las casas pueden variar.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Genera la rueda y las posiciones de tu carta natal",
+        "description": "Pulsa generar para crear tu carta natal. Verás una rueda con 12 casas y una tabla de posiciones por signo, grado y casa. Usa la rueda para una visión general y la tabla para los detalles precisos.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Enfócate en Sol, Luna, ascendente y casas clave",
+        "description": "Para no abrumarte, empieza por los «tres grandes» en tu carta natal: Sol, Luna y ascendente. Luego fíjate en qué casas ocupan tus planetas principales (trabajo, relaciones, hogar). Esta revisión sencilla te ayuda a construir una historia a partir de tu carta natal.",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "Lleva tu carta natal al mapa del mundo",
+        "description": "Cuando te hayas familiarizado con tu carta natal, haz clic para ir al mapa de astrocartografía. El mapa conserva los datos de tu carta natal y muestra dónde se activan globalmente las distintas partes de tu carta.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funciones de la carta natal",
+    "label": "FUNCIONES",
+    "description": "Estas funciones te ayudan a generar y leer tu carta natal: desde la rueda y la tabla de posiciones hasta las casas, el lugar de nacimiento y el enlace en un clic al mapa de astrocartografía.",
+    "items": [
+      {
+        "title": "Visualización de la rueda de carta natal",
+        "description": "La rueda de carta natal muestra las 12 casas y las posiciones planetarias en un solo diagrama. Puedes ver de inmediato si tu carta natal concentra energía en un área (por ejemplo casas angulares) o está más repartida.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Lista de posiciones planetarias por signo y casa",
+        "description": "Debajo de la rueda, una tabla lista cada planeta de tu carta natal con signo zodiacal, grado y casa. Así puedes contrastar información de libros o lecturas usando los grados exactos.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Casas de signo completo para cartas natales legibles",
+        "description": "En esta calculadora de carta natal gratis usamos el sistema de casas por signo completo (Whole Sign). El signo del ascendente es la casa 1 y cada signo siguiente es la siguiente casa. Así la carta natal se mantiene clara y fácil de aprender.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Autocompletado de lugar y coordenadas",
+        "description": "Puedes buscar tu ciudad de nacimiento o pegar coordenadas. El lugar afecta al ascendente y a las casas de tu carta natal. Dos personas nacidas a la misma hora UTC en ciudades distintas pueden tener ascendente y casas diferentes.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Experiencia de carta natal adaptable al móvil",
+        "description": "El formulario de carta natal usa entradas táctiles de fecha y hora y una rueda y tabla responsivas para que puedas generar y leer tu carta natal en el móvil.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Un clic hacia la astrocartografía",
+        "description": "Después de generar tu carta natal puedes enviar tus datos de nacimiento al mapa de astrocartografía. Carta natal = qué energías llevas; astrocartografía = dónde esas energías son más fuertes en el mundo.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes sobre la carta natal",
+    "description": "Respuestas claras a dudas habituales sobre la carta natal, calculadoras de carta natal y cómo leer tu propia carta.",
+    "items": [
+      {
+        "title": "¿Qué es una carta natal y por qué importa?",
+        "description": "La carta natal es una «foto» del cielo en tu nacimiento: muestra dónde estaban el Sol, la Luna y los planetas por signo y casa. Los astrólogos la usan para describir patrones de personalidad, necesidades emocionales y temas de vida. A diferencia del horóscopo diario, la carta natal es única para tu momento y lugar de nacimiento."
+      },
+      {
+        "title": "¿Esta calculadora de carta natal es gratis?",
+        "description": "Sí. Esta herramienta de carta natal es completamente gratuita. Puedes generar cartas natales sin límite y sin registrarte. Cada carta natal incluye la rueda y la tabla de posiciones."
+      },
+      {
+        "title": "¿Qué datos de nacimiento necesito para una carta natal fiable?",
+        "description": "Para calcular una carta natal fiable necesitas la fecha, la hora y el lugar de nacimiento. La hora y el lugar son especialmente importantes para el ascendente y las casas. Si solo conoces la fecha, los signos planetarios siguen siendo válidos, pero las casas pueden ser menos precisas."
+      },
+      {
+        "title": "¿Qué sistema de casas usa esta carta natal?",
+        "description": "En esta calculadora de carta natal gratis usamos casas de signo completo (Whole Sign): el signo del ascendente es la casa 1 y así sucesivamente. Muchos principiantes lo encuentran más intuitivo al aprender el significado de las casas."
+      },
+      {
+        "title": "¿Puedo leer mi carta natal sin un astrólogo?",
+        "description": "Sí. Esta página de carta natal está hecha para que puedas empezar a leer tu carta: empieza por el Sol, la Luna y el ascendente, luego mira en qué casas están tus planetas. Puedes usar libros o vídeos para interpretar cada posición."
+      },
+      {
+        "title": "¿Qué diferencia hay entre carta natal y carta de tránsitos?",
+        "description": "Tu carta natal es fija y no cambia, porque se basa en tu nacimiento. La carta de tránsitos muestra dónde están los planetas ahora (o en una fecha elegida) respecto a tu carta natal. Esta página se centra en la carta natal; si quieres ver cómo los tránsitos aspectan tu carta, puedes usar la Calculadora de Tránsitos."
+      },
+      {
+        "title": "¿Cómo se relaciona mi carta natal con la astrocartografía?",
+        "description": "La astrocartografía proyecta tu carta natal sobre el mapa del mundo. Las mismas posiciones planetarias de tu carta natal se usan para dibujar líneas en la Tierra donde esos planetas eran angulares. Tu carta natal describe tus energías en general; la astrocartografía muestra dónde son más fuertes geográficamente."
+      },
+      {
+        "title": "¿Y si no sé mi hora exacta de nacimiento?",
+        "description": "Si no conoces la hora exacta, puedes usar esta calculadora de carta natal con una hora aproximada. Los signos planetarios seguirán siendo significativos, pero el ascendente y las casas pueden cambiar con pocos minutos, así que interpreta las casas con cautela. Si más adelante obtienes la hora exacta, vuelve a generar tu carta natal."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Genera tu carta natal gratis ahora",
+    "description": "Crea tu carta natal en segundos, consulta tu Sol, Luna y ascendente, revisa las posiciones por signo y casa y explora dónde tu carta natal se activa en el mapa de astrocartografía.",
+    "buttons": [
+      {
+        "title": "Ver dónde se activa tu carta natal → Astrocartography",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

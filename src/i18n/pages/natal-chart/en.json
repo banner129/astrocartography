@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Natal Chart (Free) — Natal Chart Calculator, Birth Chart Meaning & Houses",
+    "description": "Generate your complete natal chart in seconds. See planet positions, zodiac signs and houses, then learn what your natal chart reveals about personality, relationships, career and life path—and hand off your chart to an astrocartography map to explore where you thrive.",
+    "keywords": "natal chart, natal chart calculator, free natal chart, birth chart meaning, natal chart interpretation, natal chart houses"
+  },
+  "intentAnchor": {
+    "text": "If you’re searching for a Natal Chart (not just a generic Sun sign horoscope), this page gives you the tool first: generate your natal chart wheel, review planet placements by sign and house, then explore where your chart thrives on the world map with Astrocartography."
+  },
+  "internalLinks": {
+    "title": "Related Tools",
+    "items": [
+      {
+        "text": "Want the world‑map version of your natal chart?",
+        "linkText": "Try Astrocartography",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "Need a simple birth chart generator?",
+        "linkText": "Birth Chart Generator",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "Prefer tutorials & examples?",
+        "linkText": "Read the Blog",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What is a Natal Chart?",
+    "label": "INTRODUCTION",
+    "description": "A natal chart (also called a birth chart) is a 360° map of the sky at the exact moment and place you were born. Our natal chart calculator turns your birth date, time, and location into a precise chart wheel, showing where the Sun, Moon and planets sit by sign and house so you can read your core blueprint.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Natal chart wheel example"
+    },
+    "items": [
+      {
+        "title": "Professional-grade natal chart calculations",
+        "description": "This natal chart calculator uses professional astronomical routines to compute geocentric positions of the Sun, Moon and planets at your birth moment. We convert your local birth time to UTC, derive planet longitudes, and place each body into a zodiac sign and degree. The result is a clean natal chart that reflects the sky at your birth rather than a generic Sun sign horoscope.",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "How a natal chart is calculated"
+        }
+      },
+      {
+        "title": "Clear natal chart wheel for beginners",
+        "description": "Instead of walls of text, you get a visual natal chart wheel with 12 houses, zodiac signs, and planetary placements laid out in a simple, readable design. You see where each planet sits in your natal chart at a glance, then you can zoom into details like degrees, signs and houses one placement at a time.",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "Natal chart wheel visualization"
+        }
+      },
+      {
+        "title": "From natal chart to places on Earth",
+        "description": "A natal chart answers “who am I?” but not “where do I thrive?” Once your natal chart is generated, one click takes the same birth data into our astrocartography map. You can see where your natal chart themes—career, love, creativity, healing—activate on the world map and which locations resonate most with your chart.",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Natal chart vs astrocartography"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Use This Natal Chart Calculator",
+    "label": "Core Benefits",
+    "description": "Our free natal chart calculator is built for clarity: accurate placements, a readable wheel, and direct handoff to astrocartography so your natal chart becomes practical in real life.",
+    "items": [
+      {
+        "title": "Accurate natal chart, not vague horoscopes",
+        "description": "Instead of a one-size-fits-all Sun sign reading, this natal chart tool calculates the exact positions of your planets, Ascendant and houses. Your natal chart shows a unique pattern that can’t be reduced to “Aries vs. Taurus” — it combines Sun, Moon, Rising and house placements into a full picture.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "Accurate natal chart calculator"
+        }
+      },
+      {
+        "title": "Completely free and unlimited",
+        "description": "Generate as many natal charts as you want—no account, no paywall. You get a natal chart wheel plus a placements table with signs, degrees and houses on a single page, so you can explore your own chart and help friends or clients without friction.",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "Free natal chart calculator"
+        }
+      },
+      {
+        "title": "Privacy-first natal chart tool",
+        "description": "Your natal chart is based on sensitive data like birth date, time and location. We keep the process simple and privacy-focused: enter your data, see your natal chart, and decide what to save or share. You don’t need a login to calculate your chart.",
+        "icon": "RiLockLine",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "Privacy-first natal chart tool"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Read Your Natal Chart in 3 Steps",
+    "label": "HOW TO USE",
+    "description": "This natal chart page is designed so beginners can quickly generate and start reading their chart without getting lost in jargon.",
+    "items": [
+      {
+        "title": "Enter birth data for your natal chart",
+        "description": "Start by entering your birth date, exact birth time (to the minute if possible) and birth location. Birth time matters a lot for the Ascendant and houses in your natal chart. Even if your time is approximate, planet signs and degrees remain useful, but house themes can shift.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Generate the natal chart wheel and placements",
+        "description": "Click generate to create your natal chart. You’ll see a chart wheel with 12 houses plus a table of planet placements by sign, degree and house. Use the natal chart wheel for a quick overview, then use the placements table for precise information.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Focus on Sun, Moon, Rising and key houses",
+        "description": "To avoid overwhelm, start with the “Big Three” in your natal chart: Sun, Moon and Rising sign. Then note which houses your main planets fall into—work, relationships, home, etc. This simple review helps you build a story from your natal chart instead of memorizing keywords.",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "Send your natal chart to the world map",
+        "description": "Once your natal chart feels familiar, click through to the astrocartography map. The map keeps your natal chart data and shows where different parts of your chart activate globally, so “natal chart meaning” becomes tied to specific locations you can visit or move to.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Natal Chart Features",
+    "label": "FEATURES",
+    "description": "These features help you generate and read your natal chart—from a clear wheel and placements table to houses, location input, and one‑click handoff to the astrocartography map.",
+    "items": [
+      {
+        "title": "Natal chart wheel visualization",
+        "description": "The natal chart wheel shows all 12 houses and planetary placements in one clear diagram. You can instantly see whether your natal chart is heavy in one area (like angular houses) or spread out. This directly answers long‑tail searches such as “natal chart wheel explained” and “how to see houses in my natal chart.”",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Planet positions list by sign and house",
+        "description": "Below the wheel, a placements table lists each planet in your natal chart with zodiac sign, degree and house. This helps with “natal chart planets meaning” style questions and lets you cross‑check information from books, videos or readings using exact degrees.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Whole Sign Houses for readable natal charts",
+        "description": "For this free natal chart calculator we use Whole Sign Houses. The rising sign becomes the 1st house and each sign after that is the next house. This keeps your natal chart visually clean and beginner‑friendly while you learn what each house means in real life.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Location autocomplete and coordinates",
+        "description": "You can search your birth city or paste coordinates. Location affects your natal chart Ascendant and house structure. Two people born at the same UTC time in different cities can have different rising signs and houses, so accurate location makes your natal chart more reliable.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Mobile-friendly natal chart experience",
+        "description": "The natal chart form uses touch‑friendly date and time inputs, a compact layout and a responsive wheel and table so you can generate and read your natal chart on your phone. Mobile users searching “free natal chart” get a layout that actually works on small screens.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "One‑click bridge to astrocartography",
+        "description": "After you generate your natal chart, you can immediately send your birth data into an astrocartography map. Natal chart = what energies you carry; astrocartography = where those natal chart energies are loudest on Earth. The tools are linked so that this natal chart page becomes a natural starting point for relocation astrology.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Natal Chart FAQ – Common Questions",
+    "description": "Clear answers to real questions people ask about natal charts, natal chart calculators and how to read your own chart.",
+    "items": [
+      {
+        "title": "What is a natal chart and why does it matter?",
+        "description": "A natal chart is a snapshot of the sky at your birth—showing where the Sun, Moon and planets were by sign and house. Astrologers use natal charts to describe personality patterns, emotional needs, relationship tendencies and life themes. Unlike daily horoscopes, a natal chart is unique to your moment and place of birth, which is why people with the same Sun sign can have very different lives."
+      },
+      {
+        "title": "Is this natal chart calculator free?",
+        "description": "Yes. This natal chart tool is completely free to use. You can generate unlimited charts without registration. Each natal chart includes a wheel plus a placements table so you can explore your chart in detail before deciding whether to dive deeper with astrocartography or other techniques."
+      },
+      {
+        "title": "What birth details do I need for an accurate natal chart?",
+        "description": "To calculate a reliable natal chart you need your birth date, birth time and birth location. Time and location are especially important for the Ascendant and houses in your natal chart. If you only know the date, your planet signs are still valid, but houses and exact degrees may be less precise."
+      },
+      {
+        "title": "Which house system does this natal chart use?",
+        "description": "For this free natal chart calculator we use Whole Sign Houses because it keeps the chart easier to learn. The sign on your Ascendant becomes the 1st house, the next sign is the 2nd, and so on. Many beginners find Whole Sign Houses more intuitive when first learning how natal chart houses work."
+      },
+      {
+        "title": "Can I read my own natal chart without an astrologer?",
+        "description": "Yes. This natal chart page is built so you can start reading your own chart: begin with Sun, Moon and Rising, then look at which houses your planets occupy. You can then use books, articles or videos to interpret each placement. If you get stuck, a professional astrologer can add nuance and timing techniques, but a lot of self‑insight is possible from your natal chart alone."
+      },
+      {
+        "title": "What’s the difference between a natal chart and a transit chart?",
+        "description": "Your natal chart is fixed—it never changes, because it’s based on your birth. A transit chart shows where planets are now (or on a chosen date) relative to your natal chart. This natal chart page focuses on the birth chart itself; if you want to see how current planets aspect your natal chart, you can use our Transit Chart Calculator as a next step."
+      },
+      {
+        "title": "How does my natal chart connect to astrocartography?",
+        "description": "Astrocartography projects your natal chart onto the world map. The same planetary positions shown in your natal chart are used to draw lines on Earth where those planets were angular. So your natal chart describes your energies in general, while astrocartography shows where those natal chart energies are loudest geographically."
+      },
+      {
+        "title": "What if I don’t know my exact birth time?",
+        "description": "If you don’t know your exact time, you can still use this natal chart calculator by entering an approximate time. Your planet signs will remain meaningful, but the Ascendant and natal chart houses can change quickly, so treat house‑based interpretations with caution. If you later find an accurate time, you can regenerate your natal chart for better precision."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Generate Your Free Natal Chart Now",
+    "description": "Create your natal chart in seconds, see your Sun, Moon and Rising signs, review planet placements by sign and house, then explore where your natal chart thrives on the astrocartography map.",
+    "buttons": [
+      {
+        "title": "See where your natal chart activates → Astrocartography",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

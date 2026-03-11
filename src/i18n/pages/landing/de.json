@@ -51,6 +51,13 @@
           "url": "/transit-chart-calculator",
           "children": [
             {
+              "title": "Geburtshoroskop",
+              "description": "Geburtshoroskop kostenlos: Rad, Planeten, Häuser, Aszendent",
+              "url": "/chart/natal-chart",
+              "target": "_self",
+              "icon": "RiPieChartLine"
+            },
+            {
               "title": "Transit Chart Rechner",
               "description": "So sehen Sie, wie Transite Ihre Geburtskarte aspectieren",
               "url": "/transit-chart-calculator",

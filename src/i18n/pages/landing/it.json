@@ -51,6 +51,13 @@
             "url": "/transit-chart-calculator",
             "children": [
               {
+                "title": "Carta Natale",
+                "description": "Calcolatore carta natale gratis: ruota, pianeti, case, ascendente",
+                "url": "/chart/natal-chart",
+                "target": "_self",
+                "icon": "RiPieChartLine"
+              },
+              {
                 "title": "Calcolatore Carta di Transito",
                 "description": "Vedi come i pianeti in transito aspectano la tua carta natale",
                 "url": "/transit-chart-calculator",

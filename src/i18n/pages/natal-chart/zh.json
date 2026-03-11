@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Natal Chart 本命盘 — 免费本命盘生成器与含义解读",
+    "description": "几秒生成你的 Natal Chart 本命盘。查看行星落点、星座与宫位，理解本命盘对性格、人际关系、事业与人生路径的含义，然后一键将本命盘数据带入 Astrocartography 世界地图，探索你在哪些地点更容易发挥潜力。",
+    "keywords": "natal chart, 本命盘, natal chart 本命盘, 本命盘生成器, natal chart 解读, 本命盘含义, natal chart calculator"
+  },
+  "intentAnchor": {
+    "text": "如果你在找的是 Natal Chart 本命盘（而不是只看太阳星座运势），这个页面会先给你工具：生成完整本命盘轮盘，查看行星在星座与宫位中的落点，然后再用 Astrocartography 在世界地图上探索你本命盘能量在哪些地点被放大。"
+  },
+  "internalLinks": {
+    "title": "相关工具",
+    "items": [
+      {
+        "text": "想看本命盘在世界地图上的投射？",
+        "linkText": "试试 Astrocartography",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "只想简单生成一张本命盘？",
+        "linkText": "本命盘生成器（Birth Chart Generator）",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "想看更多教程与示例？",
+        "linkText": "阅读博客",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "什么是 Natal Chart 本命盘？",
+    "label": "介绍",
+    "description": "Natal Chart 本命盘（也常被直接称为本命盘、出生星盘）是在你出生的那一刻、那一个地点，天空 360° 布局的投影。我们的 Natal Chart 计算器会根据你的出生日期、时间与地点，生成一张清晰的本命盘轮盘，告诉你太阳、月亮与行星分别落在什么星座和宫位。",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Natal Chart 本命盘轮盘示例"
+    },
+    "items": [
+      {
+        "title": "专业级 Natal Chart 计算",
+        "description": "这个 Natal Chart 工具不是简单查个太阳星座，而是使用专业天文算法计算你出生瞬间太阳、月亮与行星的地心位置。系统会把本地出生时间转换为 UTC，计算行星在黄道上的经度，再放入对应星座与度数，让你的 Natal Chart 尽量贴近真实天空，而不是模板化的“星座运势”。",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "Natal Chart 本命盘的计算方式"
+        }
+      },
+      {
+        "title": "对新手友好的本命盘轮盘",
+        "description": "页面会生成一张清晰的 Natal Chart 本命盘轮盘：外圈是黄道十二星座，中间是 12 宫，行星落点以符号标注。你可以一眼看到本命盘能量集中在哪些宫位，而不用面对难以阅读的密集符号，从而更轻松地理解自己的 Natal Chart。",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "对新手友好的 Natal Chart 轮盘"
+        }
+      },
+      {
+        "title": "从 Natal Chart 本命盘到现实世界地点",
+        "description": "本命盘（Natal Chart）回答的是“我是谁”，但不会直接告诉你“我在哪里更容易发挥”。当你在这里生成好 Natal Chart 本命盘后，只需一键，就可以把同一份出生数据带入 Astrocartography 世界地图，查看哪些城市与地点更容易放大你的本命盘主题，比如事业发展、人际关系或个人成长。",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Natal Chart 本命盘与 Astrocartography 对比"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么使用这个 Natal Chart 本命盘工具",
+    "label": "核心优势",
+    "description": "这个页面专门针对“natal chart 本命盘”搜索意图，提供精确落点 + 清晰轮盘 + 与 Astrocartography 的自然衔接，而不是一篇空泛的星座文章。",
+    "items": [
+      {
+        "title": "比太阳星座运势更具体",
+        "description": "Natal Chart 本命盘会同时考虑太阳、月亮、上升以及各行星在 12 宫中的落点，而不仅仅是“你是某某星座”。这样，你看到的是一张完整的本命盘结构——包含性格模式、情绪需求、人际关系风格与人生主题的组合，而不是一句话概括。",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "更完整的 Natal Chart 本命盘"
+        }
+      },
+      {
+        "title": "完全免费、无限生成",
+        "description": "这个 Natal Chart 本命盘生成器完全免费：无需注册账号、不绑定银行卡，你可以反复为自己、朋友或客户生成本命盘。页面会同时展示本命盘轮盘和行星落点表（星座、度数与宫位），方便学习与对比。",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "免费 Natal Chart 本命盘生成"
+        }
+      },
+      {
+        "title": "隐私友好的本命盘工具",
+        "description": "本命盘（Natal Chart）需要用到你的出生日期、出生时间和出生地点，这些都属于隐私信息。我们的设计尽量让体验简单且可控：你输入数据 → 生成本命盘 → 按需决定是否保存或分享，不强制登录或社交绑定。",
+        "icon": "RiLockLine",
+        "image": {
+          "src": "/imgs/features/4.webp",
+          "alt": "重视隐私的 Natal Chart 工具"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何快速阅读你的 Natal Chart 本命盘",
+    "label": "使用方法",
+    "description": "很多人第一次接触 Natal Chart 本命盘会被信息量吓到，这里给你一套 3–4 步的小流程，帮助你不迷路。",
+    "items": [
+      {
+        "title": "第一步：输入 Natal Chart 所需的出生信息",
+        "description": "按提示输入出生日期、尽量精确到分钟的出生时间，以及出生城市（或坐标）。时间与地点会影响上升（Ascendant）与宫位结构，因此想要更可靠的 Natal Chart 解读，建议尽量使用真实出生地与准确时间。",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "第二步：生成 Natal Chart 本命盘轮盘与落点表",
+        "description": "点击生成后，你会同时看到一张 Natal Chart 本命盘轮盘以及一张落点列表。轮盘适合用来观察能量集中在哪些宫位；表格则以文字列出“行星 + 星座 + 度数 + 宫位”，方便你对照书籍、课程或网络解读内容。",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "第三步：先看太阳、月亮、上升与关键宫位",
+        "description": "面对整张 Natal Chart 本命盘，不必一次看完所有细节。先确认太阳、月亮与上升（Big Three），再看几个你最关心的宫位（比如事业相关的第 10 宫、关系相关的第 7 宫）。这样，你会更容易把本命盘读成故事，而不是碎片知识。",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "第四步：把 Natal Chart 本命盘带到世界地图上",
+        "description": "当你对自己的 Natal Chart 本命盘已经有初步感觉时，可以一键跳转到 Astrocartography 世界地图。地图会基于同一份本命盘数据，显示哪些城市与地区更容易激活太阳线、金星线、木星线等，让“Natal Chart 本命盘含义”真正和现实地点挂钩。",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Natal Chart 本命盘页面功能亮点",
+    "label": "功能",
+    "description": "以下功能帮助你生成并读懂本命盘：从清晰的轮盘与落点表，到宫位、地点输入，以及一键跳转到星盘地图。",
+    "items": [
+      {
+        "title": "清晰的 Natal Chart 本命盘轮盘",
+        "description": "页面会渲染一张清晰的 Natal Chart 本命盘轮盘，包含 12 宫、黄道星座与行星落点。你可以一眼看到哪些宫位较为拥挤、哪些宫位相对空白，帮助你直观理解本命盘能量的分布，而不仅仅是记住“一句性格描述”。",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "行星落点表：星座 + 宫位 + 度数",
+        "description": "轮盘下面是一张行星落点表，列出太阳到冥王星的所有落点：所在星座、精确度数与所在宫位。对于“natal chart planets meaning” 这类需求，你可以很方便地查到“某个行星在某个星座/宫位”的组合，并对照解读资料加深理解。",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "整宫制 Whole Sign Houses，方便理解本命盘宫位",
+        "description": "本页的 Natal Chart 本命盘使用整宫制 Whole Sign Houses：上升所在星座为第一宫，其后的星座依次为第二宫、第三宫……这种宫位系统在视觉上更干净，也更方便新手理解每一宫所代表的生活领域。",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "地点自动补全与坐标支持",
+        "description": "你可以直接输入“城市 + 国家”自动补全，也可以在需要时改用经纬度坐标。出生地点会影响上升与本命盘宫位结构，因此对于在多个城市之间犹豫的用户，这是探索 Natal Chart 本命盘差异的一个好工具。",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "适配移动端的 Natal Chart 本命盘体验",
+        "description": "考虑到很多人会在手机上搜索“natal chart 本命盘”，本页面针对移动端做了交互优化：日期/时间输入更顺手、地点搜索更易用，本命盘轮盘与落点表在手机上也保持清晰可读。",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "一键衔接到 Astrocartography 世界地图",
+        "description": "生成 Natal Chart 本命盘后，只需点击 CTA 按钮，就可以把本命盘的出生数据带到 Astrocartography 计算器。Natal Chart 解决“我是谁”，Astrocartography 回答“我在哪里更容易发挥”，两者无缝衔接，非常适合搬迁占星、移居规划和“哪里更适合我”的探索。",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "Natal Chart 本命盘常见问题",
+    "description": "围绕 Natal Chart 本命盘、natal chart calculator 以及如何自己阅读本命盘的一些高频问题。",
+    "items": [
+      {
+        "title": "什么是 Natal Chart 本命盘？",
+        "description": "Natal Chart 本命盘是一张你出生瞬间天空布局的地图：展示太阳、月亮与行星落在什么星座、度数与宫位。占星师会用本命盘来描述你的性格模式、情绪需求、人际关系倾向与人生主题。相比每天变化的“运势”，本命盘是固定不变的基础蓝图。"
+      },
+      {
+        "title": "这个 Natal Chart 本命盘工具是免费的吗？",
+        "description": "是的，这个 Natal Chart 本命盘工具完全免费。你可以不限次数生成本命盘，无需注册或付费。每次生成都会同时给出本命盘轮盘和行星落点表，方便你对照学习或与占星师讨论。"
+      },
+      {
+        "title": "生成 Natal Chart 本命盘需要哪些出生信息？",
+        "description": "要想得到比较准确的 Natal Chart 本命盘，一般需要：出生日期、出生时间（尽量精确到分钟）和出生地点。时间与地点主要影响上升与 12 宫结构；如果你只知道大致日期，行星星座仍然有参考价值，但宫位与度数的精确性会下降。"
+      },
+      {
+        "title": "这个 Natal Chart 工具使用哪种宫位系统？",
+        "description": "本页面的 Natal Chart 本命盘使用整宫制 Whole Sign Houses。上升星座所在的整个位列为第一宫，其后每个星座依次对应一宫。对于刚开始学习本命盘的人来说，这种系统在视觉上更直观，也更方便理解“宫位代表生活不同领域”。"
+      },
+      {
+        "title": "我可以自己解读 Natal Chart 本命盘吗？",
+        "description": "可以。这一页的设计就是为了让你能自己读出本命盘的大致结构：先看太阳、月亮与上升（Big Three），再观察主要行星落在哪些宫位（事业、关系、家庭等）。你可以结合书籍、文章或教学视频逐步加深理解；如果想要更细致的时间线与事件分析，再考虑找专业占星师。"
+      },
+      {
+        "title": "Natal Chart 本命盘和过运盘有什么区别？",
+        "description": "Natal Chart 本命盘是固定的，只和你的出生瞬间有关；过运盘（Transit Chart）则是当前或某个日期天空中的行星，和你的本命盘之间形成的相位。本页面专注在本命盘（Natal Chart）本身，如果你想看“现在的行星如何作用在我的本命盘上”，可以进一步使用过运盘计算器。"
+      },
+      {
+        "title": "我的 Natal Chart 本命盘与 Astrocartography 有什么关系？",
+        "description": "Astrocartography 会把你的 Natal Chart 本命盘投射到地球地图上：利用本命盘中的行星位置绘制行星线，显示在哪些地点这些行星能量最强。因此，Natal Chart 本命盘描述的是你携带的能量结构，Astrocartography 则回答“这些能量在地球上的哪里被放大”。"
+      },
+      {
+        "title": "如果我不知道精确的出生时间，还能用 Natal Chart 工具吗？",
+        "description": "可以。你可以先用大致时间生成一张 Natal Chart 本命盘，这样行星的星座和大致度数依然有参考价值。不过，上升和宫位结构会比较敏感，时间差几小时可能改变宫位划分。因此，如果你对本命盘中的宫位主题特别在意，建议尽量找出更精确的出生时间，然后重新生成。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "立即生成你的免费 Natal Chart 本命盘",
+    "description": "几秒生成 Natal Chart 本命盘轮盘，查看太阳、月亮与上升，以及各行星在星座与宫位中的落点。看懂自己的本命盘结构后，一键跳转到 Astrocartography 世界地图，探索哪些城市和地点更适合你。",
+    "buttons": [
+      {
+        "title": "在世界地图上查看你的本命盘 → Astrocartography",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

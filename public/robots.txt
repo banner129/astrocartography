@@ -59,6 +59,19 @@ Allow: /pt/rising-sign-calculator
 Allow: /it/rising-sign-calculator
 Allow: /de/rising-sign-calculator
 Allow: /transit-chart-calculator
+Allow: /zh/transit-chart-calculator
+Allow: /es/transit-chart-calculator
+Allow: /pt/transit-chart-calculator
+Allow: /it/transit-chart-calculator
+Allow: /de/transit-chart-calculator
+
+# 允许 Natal Chart 页面（/chart 下仅开放此路径，其余仍 Disallow）
+Allow: /chart/natal-chart
+Allow: /zh/chart/natal-chart
+Allow: /es/chart/natal-chart
+Allow: /pt/chart/natal-chart
+Allow: /it/chart/natal-chart
+Allow: /de/chart/natal-chart
 
 # 阻止所有其他页面
 Disallow: /ms

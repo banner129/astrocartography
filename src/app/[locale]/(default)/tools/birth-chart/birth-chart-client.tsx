@@ -334,7 +334,30 @@ export default function BirthChartClient() {
                 </div>
 
                 <div className="flex-1">
-                  <div className="space-y-1">
+                  {/* CTA at top so users don't need to scroll to reach the world map */}
+                  <div className="space-y-3">
+                    <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+                      <p className="text-sm text-white/80">
+                        {t("birth_chart_tool.results.bridge_text")}
+                      </p>
+                    </div>
+
+                    <a
+                      href={astrocartographyMapUrl || "#"}
+                      className={cn(
+                        "inline-flex w-full items-center justify-center rounded-md bg-purple-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-700",
+                        !astrocartographyMapUrl && "pointer-events-none opacity-50"
+                      )}
+                    >
+                      {t("birth_chart_tool.results.cta_button")}
+                    </a>
+
+                    <p className="text-xs text-white/55">
+                      {t("birth_chart_tool.results.cta_help")}
+                    </p>
+                  </div>
+
+                  <div className="mt-6 space-y-1">
                     <h2
                       ref={resultsHeadingRef}
                       tabIndex={-1}
@@ -372,28 +395,6 @@ export default function BirthChartClient() {
                         ))}
                       </tbody>
                     </table>
-                  </div>
-
-                  <div className="mt-6 space-y-3">
-                    <div className="rounded-lg border border-white/10 bg-white/5 p-4">
-                      <p className="text-sm text-white/80">
-                        {t("birth_chart_tool.results.bridge_text")}
-                      </p>
-                    </div>
-
-                    <a
-                      href={astrocartographyMapUrl || "#"}
-                      className={cn(
-                        "inline-flex w-full items-center justify-center rounded-md bg-purple-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-700",
-                        !astrocartographyMapUrl && "pointer-events-none opacity-50"
-                      )}
-                    >
-                      {t("birth_chart_tool.results.cta_button")}
-                    </a>
-
-                    <p className="text-xs text-white/55">
-                      {t("birth_chart_tool.results.cta_help")}
-                    </p>
                   </div>
                 </div>
               </div>

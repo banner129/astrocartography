@@ -40,6 +40,10 @@ export async function getBirthChartPage(locale: string): Promise<CalculatorPage>
   return (await getPage("birth-chart", locale)) as CalculatorPage;
 }
 
+export async function getNatalChartPage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("natal-chart", locale)) as CalculatorPage;
+}
+
 export async function getRisingSignPage(locale: string): Promise<CalculatorPage> {
   return (await getPage("rising-sign-calculator", locale)) as CalculatorPage;
 }

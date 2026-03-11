@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "Carta Natale Gratis — Calcolatore Tema Natale, Significato e Case",
+    "description": "Genera la tua carta natale (tema natale) completa in pochi secondi. Visualizza posizioni planetarie, segni zodiacali e case astrologiche, scopri cosa rivela la tua carta natale su personalità, relazioni e percorso di vita, e passa alla mappa di astrocartografia per vedere dove prosperi.",
+    "keywords": "carta natale, tema natale, calcolo carta natale gratis, significato carta natale, case astrologiche, ascendente, interpretazione tema natale"
+  },
+  "intentAnchor": {
+    "text": "Se stai cercando una Carta Natale (o tema natale) e non solo l'oroscopo del segno solare, questa pagina ti offre prima lo strumento: genera la ruota della tua carta natale, rivedi le posizioni per segno e casa, poi esplora con l'astrocartografia dove la tua carta si attiva nel mondo."
+  },
+  "internalLinks": {
+    "title": "Strumenti correlati",
+    "items": [
+      {
+        "text": "Vuoi la versione mappa del mondo della tua carta natale?",
+        "linkText": "Prova Astrocartografia",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "Ti serve un generatore di carta natale semplice?",
+        "linkText": "Generatore Carta Natale",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "Preferisci tutorial e esempi?",
+        "linkText": "Leggi il Blog",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Cos'è una Carta Natale (Tema Natale)?",
+    "label": "INTRODUZIONE",
+    "description": "La carta natale (o tema natale) è una rappresentazione a 360° del cielo nel momento e nel luogo esatti della tua nascita. Il nostro calcolatore di carta natale trasforma data, ora e luogo di nascita in una ruota precisa, con Sole, Luna e pianeti per segno e casa, così puoi leggere la tua mappa personale.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Esempio ruota carta natale"
+    },
+    "items": [
+      {
+        "title": "Calcoli di carta natale di livello professionale",
+        "description": "Questo calcolatore di carta natale usa routine astronomiche professionali per le posizioni geocentriche di Sole, Luna e pianeti al momento della nascita. Convertiamo l'ora locale in UTC, ricaviamo le longitudini planetarie e collochiamo ogni corpo in segno e grado. Il risultato è una carta natale chiara che riflette il cielo alla tua nascita, non un oroscopo generico per segno solare.",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "Come si calcola una carta natale"
+        }
+      },
+      {
+        "title": "Ruota di carta natale chiara per chi inizia",
+        "description": "Invece di lunghi testi, ottieni una ruota visiva della carta natale con 12 case, segni zodiacali e posizioni planetarie in un layout semplice e leggibile. Vedi subito dove si trova ogni pianeta nella tua carta natale, poi puoi entrare nel dettaglio di gradi, segni e case.",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "Visualizzazione ruota carta natale"
+        }
+      },
+      {
+        "title": "Dalla carta natale ai luoghi nel mondo",
+        "description": "La carta natale risponde a «chi sono io?» ma non «dove prospero?». Una volta generata la tua carta natale, un clic porta gli stessi dati di nascita alla mappa di astrocartografia. Puoi vedere dove i temi della tua carta natale (carriera, amore, creatività) si attivano nel mondo e quali luoghi risuonano di più con la tua carta.",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Carta natale vs astrocartografia"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Perché usare questo calcolatore di carta natale",
+    "label": "Vantaggi principali",
+    "description": "Il nostro calcolatore di carta natale gratuito è pensato per la chiarezza: posizioni precise, ruota leggibile e passaggio diretto all'astrocartografia, così la tua carta natale diventa utile nella vita quotidiana.",
+    "items": [
+      {
+        "title": "Carta natale precisa, non oroscopi vaghi",
+        "description": "Invece di una lettura generica per segno solare, questo strumento di carta natale calcola le posizioni esatte di pianeti, ascendente e case. La tua carta natale mostra un pattern unico che non si riduce a Ariete o Toro: combina Sole, Luna, ascendente e case in un quadro completo.",
+        "icon": "RiFlashlightLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calcolatore carta natale preciso" }
+      },
+      {
+        "title": "Completamente gratuito e senza limiti",
+        "description": "Genera quante carte natali vuoi, senza account né paywall. Ottieni la ruota della carta natale e una tabella delle posizioni con segni, gradi e case in una sola pagina.",
+        "icon": "RiListCheck",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calcolatore carta natale gratuito" }
+      },
+      {
+        "title": "Strumento carta natale con privacy al primo posto",
+        "description": "La tua carta natale si basa su dati sensibili come data, ora e luogo di nascita. Manteniamo il processo semplice e rispettoso della privacy: inserisci i dati, visualizza la tua carta natale e decidi cosa conservare o condividere. Non serve registrarsi per calcolare la carta.",
+        "icon": "RiLockLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Strumento carta natale privacy" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Come leggere la tua carta natale in 3 passi",
+    "label": "COME USARE",
+    "description": "Questa pagina sulla carta natale è pensata perché chi inizia possa generare e leggere la propria carta senza perdersi nel gergo tecnico.",
+    "items": [
+      {
+        "title": "Inserisci i dati di nascita per la tua carta natale",
+        "description": "Inizia con data di nascita, ora il più possibile precisa (al minuto) e luogo di nascita. L'ora è molto importante per l'ascendente e le case nella tua carta natale. Anche con un'ora approssimativa, segni e gradi planetari restano utili, ma le case possono spostarsi.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Genera la ruota e le posizioni della carta natale",
+        "description": "Clicca su genera per creare la tua carta natale. Vedrai una ruota con 12 case e una tabella delle posizioni planetarie per segno, grado e casa. Usa la ruota per una visione d'insieme e la tabella per i dettagli precisi.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Concentrati su Sole, Luna, ascendente e case chiave",
+        "description": "Per non essere sopraffatto, inizia con i «tre grandi» nella tua carta natale: Sole, Luna e ascendente. Poi nota in quali case si trovano i pianeti principali (lavoro, relazioni, casa). Questa revisione semplice ti aiuta a costruire una storia dalla tua carta natale.",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "Invia la tua carta natale alla mappa del mondo",
+        "description": "Quando ti sei familiarizzato con la tua carta natale, clicca per passare alla mappa di astrocartografia. La mappa conserva i dati della tua carta natale e mostra dove le diverse parti della tua carta si attivano a livello globale.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funzioni della carta natale",
+    "label": "FUNZIONI",
+    "description": "Queste funzioni ti aiutano a generare e leggere la tua carta natale: dalla ruota e dalla tabella delle posizioni alle case, al luogo di nascita e al passaggio in un clic alla mappa di astrocartografia.",
+    "items": [
+      {
+        "title": "Visualizzazione della ruota di carta natale",
+        "description": "La ruota della carta natale mostra tutte le 12 case e le posizioni planetarie in un unico diagramma. Puoi vedere subito se la tua carta natale è concentrata in un'area (ad esempio case angolari) o più distribuita.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Elenco posizioni planetarie per segno e casa",
+        "description": "Sotto la ruota, una tabella elenca ogni pianeta nella tua carta natale con segno zodiacale, grado e casa. Così puoi confrontare informazioni da libri o letture usando i gradi esatti.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Case a segno intero per carte natali leggibili",
+        "description": "In questo calcolatore di carta natale gratuito usiamo le case a segno intero (Whole Sign). Il segno dell'ascendente diventa la 1ª casa e ogni segno successivo la casa successiva. La tua carta natale resta così chiara e adatta a chi inizia.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Completamento automatico luogo e coordinate",
+        "description": "Puoi cercare la tua città di nascita o incollare le coordinate. Il luogo influisce su ascendente e case nella tua carta natale. Due persone nate allo stesso orario UTC in città diverse possono avere ascendente e case diversi.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Esperienza carta natale adatta al cellulare",
+        "description": "Il modulo della carta natale usa campi data e ora touch-friendly e una ruota e tabella responsive, così puoi generare e leggere la tua carta natale dallo smartphone.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Un clic verso l'astrocartografia",
+        "description": "Dopo aver generato la tua carta natale puoi inviare subito i dati di nascita alla mappa di astrocartografia. Carta natale = quali energie porti; astrocartografia = dove quelle energie sono più forti sulla Terra.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Domande frequenti",
+    "title": "Carta natale – domande frequenti",
+    "description": "Risposte chiare alle domande più comuni su carta natale, calcolatori di tema natale e come leggere la propria carta.",
+    "items": [
+      {
+        "title": "Cos'è una carta natale e perché conta?",
+        "description": "La carta natale (o tema natale) è un'istantanea del cielo alla tua nascita: mostra dove erano Sole, Luna e pianeti per segno e casa. Gli astrologi la usano per descrivere pattern di personalità, bisogni emotivi e temi di vita. A differenza degli oroscopi giornalieri, la carta natale è unica per il tuo momento e luogo di nascita."
+      },
+      {
+        "title": "Questo calcolatore di carta natale è gratuito?",
+        "description": "Sì. Questo strumento di carta natale è completamente gratuito. Puoi generare carte natali illimitate senza registrarti. Ogni carta natale include la ruota e la tabella delle posizioni."
+      },
+      {
+        "title": "Quali dati di nascita servono per una carta natale accurata?",
+        "description": "Per calcolare una carta natale affidabile servono data, ora e luogo di nascita. Ora e luogo sono particolarmente importanti per l'ascendente e le case. Se conosci solo la data, i segni planetari restano validi, ma le case e i gradi esatti possono essere meno precisi."
+      },
+      {
+        "title": "Quale sistema di case usa questa carta natale?",
+        "description": "In questo calcolatore di carta natale gratuito usiamo le case a segno intero (Whole Sign): il segno dell'ascendente è la 1ª casa, il segno successivo la 2ª e così via. Molti principianti le trovano più intuitive quando imparano il significato delle case."
+      },
+      {
+        "title": "Posso leggere la mia carta natale senza un astrologo?",
+        "description": "Sì. Questa pagina sulla carta natale è pensata per iniziare a leggere la propria carta: inizia con Sole, Luna e ascendente, poi guarda in quali case si trovano i tuoi pianeti. Puoi usare libri o video per interpretare ogni posizione."
+      },
+      {
+        "title": "Qual è la differenza tra carta natale e tema di transito?",
+        "description": "La tua carta natale è fissa e non cambia, perché si basa sulla tua nascita. Un tema di transito mostra dove sono i pianeti ora (o in una data scelta) rispetto alla tua carta natale. Questa pagina si concentra sulla carta natale; per i transiti puoi usare il nostro Calcolatore di transiti."
+      },
+      {
+        "title": "Come si collega la mia carta natale all'astrocartografia?",
+        "description": "L'astrocartografia proietta la tua carta natale sulla mappa del mondo. Le stesse posizioni planetarie della tua carta natale servono a disegnare linee sulla Terra dove quei pianeti erano angolari. La tua carta natale descrive le tue energie in generale; l'astrocartografia mostra dove sono più forti geograficamente."
+      },
+      {
+        "title": "E se non conosco l'ora esatta di nascita?",
+        "description": "Se non conosci l'ora esatta puoi usare questo calcolatore di carta natale con un'ora approssimativa. I segni planetari restano significativi, ma ascendente e case possono cambiare in pochi minuti, quindi interpreta le case con cautela. Se in seguito trovi l'ora esatta, puoi rigenerare la tua carta natale."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Genera la tua carta natale gratis ora",
+    "description": "Crea la tua carta natale in secondi, visualizza Sole, Luna e ascendente, rivedi le posizioni per segno e casa e esplora dove la tua carta natale si attiva sulla mappa di astrocartografia.",
+    "buttons": [
+      {
+        "title": "Dove si attiva la tua carta natale → Astrocartografia",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

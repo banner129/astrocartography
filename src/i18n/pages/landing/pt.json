@@ -51,6 +51,13 @@
           "url": "/transit-chart-calculator",
           "children": [
             {
+              "title": "Mapa Astral",
+              "description": "Calculadora mapa astral grátis: roda, planetas, casas, ascendente",
+              "url": "/chart/natal-chart",
+              "target": "_self",
+              "icon": "RiPieChartLine"
+            },
+            {
               "title": "Calculadora de Trânsitos",
               "description": "Veja como os planetas em trânsito aspectam seu mapa natal",
               "url": "/transit-chart-calculator",

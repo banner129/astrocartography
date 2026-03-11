@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "Geburtshoroskop kostenlos — Radix berechnen, Bedeutung & Häuser",
+    "description": "Erstellen Sie Ihr vollständiges Geburtshoroskop (Radix) in Sekunden. Sehen Sie Planetenpositionen, Tierkreiszeichen und Häuser, erfahren Sie, was Ihr Geburtshoroskop über Persönlichkeit, Beziehungen und Lebensweg verrät, und wechseln Sie zur Astrokartografie-Karte, um zu sehen, wo Sie aufgehen.",
+    "keywords": "Geburtshoroskop, Geburtshoroskop berechnen, Radix kostenlos, Geburtshoroskop Bedeutung, Häuser Astrologie, Aszendent berechnen"
+  },
+  "intentAnchor": {
+    "text": "Wenn Sie ein Geburtshoroskop (Radix) suchen und nicht nur ein Sonnenzeichen-Horoskop, bietet diese Seite zuerst das Tool: Erstellen Sie Ihr Geburtshoroskop-Rad, prüfen Sie Planetenstellungen nach Zeichen und Haus, und erkunden Sie dann mit Astrokartografie, wo Ihr Horoskop weltweit wirkt."
+  },
+  "internalLinks": {
+    "title": "Verwandte Tools",
+    "items": [
+      {
+        "text": "Weltkarten-Version Ihres Geburtshoroskops?",
+        "linkText": "Astrokartografie ausprobieren",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "Einfachen Geburtshoroskop-Generator benötigt?",
+        "linkText": "Geburtshoroskop Generator",
+        "url": "/tools/birth-chart-generator"
+      },
+      {
+        "text": "Tutorials und Beispiele?",
+        "linkText": "Blog lesen",
+        "url": "/posts"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Was ist ein Geburtshoroskop (Radix)?",
+    "label": "EINLEITUNG",
+    "description": "Ein Geburtshoroskop (auch Radix genannt) ist eine 360°-Darstellung des Himmels zum exakten Zeitpunkt und Ort Ihrer Geburt. Unser Geburtshoroskop-Rechner wandelt Ihr Geburtsdatum, die Geburtszeit und den Geburtsort in ein präzises Horoskoprad um – mit Sonne, Mond und Planeten nach Zeichen und Haus, damit Sie Ihre Grundstruktur lesen können.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Beispiel Geburtshoroskop-Rad"
+    },
+    "items": [
+      {
+        "title": "Professionelle Berechnung des Geburtshoroskops",
+        "description": "Dieser Geburtshoroskop-Rechner nutzt professionelle astronomische Verfahren für die geozentrischen Positionen von Sonne, Mond und Planeten zu Ihrem Geburtszeitpunkt. Wir rechnen Ihre lokale Geburtszeit in UTC um, leiten Planetenlängen ab und ordnen jeden Körper Zeichen und Grad zu. Das Ergebnis ist ein klares Geburtshoroskop, das den Himmel bei Ihrer Geburt widerspiegelt – kein pauschales Sonnenzeichen-Horoskop.",
+        "image": {
+          "src": "/imgs/features/1.webp",
+          "alt": "So wird ein Geburtshoroskop berechnet"
+        }
+      },
+      {
+        "title": "Klares Geburtshoroskop-Rad für Einsteiger",
+        "description": "Statt langer Texte erhalten Sie eine visuelle Darstellung Ihres Geburtshoroskops mit 12 Häusern, Tierkreiszeichen und Planetenstellungen in einem klaren, lesbaren Layout. Sie sehen auf einen Blick, wo jeder Planet in Ihrem Geburtshoroskop steht, und können dann Grad, Zeichen und Häuser im Detail ansehen.",
+        "image": {
+          "src": "/imgs/features/2.webp",
+          "alt": "Geburtshoroskop-Rad Visualisierung"
+        }
+      },
+      {
+        "title": "Vom Geburtshoroskop zu Orten auf der Welt",
+        "description": "Das Geburtshoroskop beantwortet „Wer bin ich?“, aber nicht „Wo gedeihe ich?“ Sobald Ihr Geburtshoroskop erstellt ist, überträgt ein Klick dieselben Geburtsdaten in unsere Astrokartografie-Karte. Sie sehen, wo die Themen Ihres Geburtshoroskops – Karriere, Liebe, Kreativität – auf der Weltkarte aktiv werden.",
+        "image": {
+          "src": "/imgs/features/3.webp",
+          "alt": "Geburtshoroskop vs. Astrokartografie"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Warum diesen Geburtshoroskop-Rechner nutzen",
+    "label": "Kernvorteile",
+    "description": "Unser kostenloser Geburtshoroskop-Rechner ist auf Klarheit ausgerichtet: präzise Stellungen, ein lesbares Rad und direkter Übergang zur Astrokartografie, damit Ihr Geburtshoroskop im Alltag nutzbar wird.",
+    "items": [
+      {
+        "title": "Präzises Geburtshoroskop, keine vagen Horoskope",
+        "description": "Statt einer pauschalen Sonnenzeichen-Deutung berechnet dieses Geburtshoroskop-Tool die exakten Positionen Ihrer Planeten, des Aszendenten und der Häuser. Ihr Geburtshoroskop zeigt ein einzigartiges Muster – es verbindet Sonne, Mond, Aszendent und Häuser zu einem Gesamtbild.",
+        "icon": "RiFlashlightLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Präziser Geburtshoroskop-Rechner" }
+      },
+      {
+        "title": "Kostenlos und unbegrenzt",
+        "description": "Erstellen Sie so viele Geburtshoroskope wie Sie möchten – ohne Konto oder Bezahlschranke. Sie erhalten das Geburtshoroskop-Rad und eine Stellungstabelle mit Zeichen, Grad und Häusern auf einer Seite.",
+        "icon": "RiListCheck",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Kostenloser Geburtshoroskop-Rechner" }
+      },
+      {
+        "title": "Datenschutz beim Geburtshoroskop",
+        "description": "Ihr Geburtshoroskop basiert auf sensiblen Daten wie Geburtsdatum, -zeit und -ort. Wir halten den Ablauf einfach und datenschutzorientiert: Daten eingeben, Geburtshoroskop ansehen, selbst entscheiden, was Sie speichern oder teilen. Kein Login nötig.",
+        "icon": "RiLockLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Datenschutz Geburtshoroskop-Tool" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Ihr Geburtshoroskop in 3 Schritten lesen",
+    "label": "ANLEITUNG",
+    "description": "Diese Geburtshoroskop-Seite ist so aufgebaut, dass Einsteiger schnell ein Horoskop erstellen und lesen können, ohne in Fachbegriffe abzutauchen.",
+    "items": [
+      {
+        "title": "Geburtsdaten für Ihr Geburtshoroskop eingeben",
+        "description": "Geben Sie Ihr Geburtsdatum, die möglichst genaue Geburtszeit und den Geburtsort ein. Die Geburtszeit ist für Aszendent und Häuser in Ihrem Geburtshoroskop entscheidend. Bei ungefährer Zeit bleiben Planetenzeichen und Grad sinnvoll, die Häuser können sich verschieben.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Geburtshoroskop-Rad und Stellungen erzeugen",
+        "description": "Klicken Sie auf Erstellen, um Ihr Geburtshoroskop zu berechnen. Sie sehen ein Rad mit 12 Häusern und eine Tabelle der Planetenstellungen nach Zeichen, Grad und Haus. Nutzen Sie das Rad für den Überblick, die Tabelle für die genauen Werte.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Fokus auf Sonne, Mond, Aszendent und wichtige Häuser",
+        "description": "Beginnen Sie mit den „Großen Drei“ in Ihrem Geburtshoroskop: Sonne, Mond und Aszendent. Achten Sie dann darauf, in welchen Häusern Ihre Hauptplaneten stehen – Beruf, Beziehungen, Zuhause. So entsteht aus Ihrem Geburtshoroskop eine Geschichte.",
+        "icon": "RiListCheck"
+      },
+      {
+        "title": "Geburtshoroskop auf die Weltkarte übertragen",
+        "description": "Wenn Sie Ihr Geburtshoroskop grob kennen, wechseln Sie per Klick zur Astrokartografie-Karte. Die Karte übernimmt Ihre Geburtshoroskop-Daten und zeigt, wo sich Ihr Horoskop global aktiviert.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Geburtshoroskop-Funktionen",
+    "label": "FUNKTIONEN",
+    "description": "Diese Funktionen helfen Ihnen, Ihr Geburtshoroskop zu erstellen und zu lesen – vom klaren Rad und der Stellungstabelle über die Häuser bis zum Ein-Klick-Übergang zur Astrokartografie-Karte.",
+    "items": [
+      {
+        "title": "Geburtshoroskop-Rad als Grafik",
+        "description": "Das Geburtshoroskop-Rad zeigt alle 12 Häuser und Planetenstellungen in einer Grafik. Sie sehen sofort, ob Ihr Geburtshoroskop in einem Bereich konzentriert ist (z. B. Winkelhäuser) oder breiter verteilt.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Planetenstellungen nach Zeichen und Haus",
+        "description": "Unter dem Rad listet eine Tabelle jeden Planeten in Ihrem Geburtshoroskop mit Tierkreiszeichen, Grad und Haus. So können Sie Angaben aus Büchern oder Beratungen anhand der exakten Grade prüfen.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Ganzzeichen-Häuser für lesbare Geburtshoroskope",
+        "description": "In diesem kostenlosen Geburtshoroskop-Rechner verwenden wir Ganzzeichen-Häuser (Whole Sign). Das Zeichen am Aszendenten wird zum 1. Haus, das nächste Zeichen zum 2. Haus usw. So bleibt Ihr Geburtshoroskop übersichtlich und einsteigerfreundlich.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Ortssuche und Koordinaten",
+        "description": "Sie können Ihren Geburtsort suchen oder Koordinaten eingeben. Der Ort beeinflusst Aszendent und Häuser in Ihrem Geburtshoroskop. Bei gleicher UTC-Zeite in verschiedenen Städten können Aszendent und Häuser unterschiedlich sein.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Geburtshoroskop mobil nutzbar",
+        "description": "Das Geburtshoroskop-Formular ist touchfreundlich; Rad und Tabelle sind responsiv, sodass Sie Ihr Geburtshoroskop auch auf dem Smartphone erstellen und lesen können.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Ein Klick zur Astrokartografie",
+        "description": "Nach der Erstellung Ihres Geburtshoroskops können Sie Ihre Geburtsdaten direkt in die Astrokartografie-Karte übernehmen. Geburtshoroskop = welche Energien Sie tragen; Astrokartografie = wo diese Energien auf der Erde am stärksten wirken.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Häufige Fragen",
+    "title": "Geburtshoroskop – häufige Fragen",
+    "description": "Klare Antworten auf typische Fragen zu Geburtshoroskop, Geburtshoroskop-Rechnern und dem Lesen der eigenen Radix.",
+    "items": [
+      {
+        "title": "Was ist ein Geburtshoroskop und warum ist es wichtig?",
+        "description": "Ein Geburtshoroskop (Radix) ist eine Momentaufnahme des Himmels bei Ihrer Geburt – mit Sonne, Mond und Planeten nach Zeichen und Haus. Astrologinnen und Astrologen nutzen es für Persönlichkeitsmuster, emotionale Bedürfnisse und Lebensthemen. Im Gegensatz zu Tageshoroskopen ist das Geburtshoroskop einzigartig für Ihren Geburtsmoment und -ort."
+      },
+      {
+        "title": "Ist dieser Geburtshoroskop-Rechner kostenlos?",
+        "description": "Ja. Dieses Geburtshoroskop-Tool ist kostenlos. Sie können unbegrenzt Horoskope erstellen, ohne sich zu registrieren. Jedes Geburtshoroskop enthält das Rad und die Stellungstabelle."
+      },
+      {
+        "title": "Welche Geburtsdaten brauche ich für ein genaues Geburtshoroskop?",
+        "description": "Für ein zuverlässiges Geburtshoroskop benötigen Sie Geburtsdatum, Geburtszeit und Geburtsort. Zeit und Ort sind besonders wichtig für Aszendent und Häuser. Wenn Sie nur das Datum kennen, sind die Planetenzeichen noch aussagekräftig, Häuser und genaue Grade können ungenauer sein."
+      },
+      {
+        "title": "Welches Häusersystem nutzt dieses Geburtshoroskop?",
+        "description": "In diesem kostenlosen Geburtshoroskop-Rechner verwenden wir Ganzzeichen-Häuser (Whole Sign): Das Zeichen am Aszendenten ist das 1. Haus, das nächste Zeichen das 2. usw. Viele Einsteiger finden das beim Lernen der Häuser-Bedeutungen intuitiver."
+      },
+      {
+        "title": "Kann ich mein Geburtshoroskop selbst lesen?",
+        "description": "Ja. Diese Geburtshoroskop-Seite ist so aufgebaut, dass Sie selbst einsteigen können: Beginnen Sie mit Sonne, Mond und Aszendent, dann schauen Sie, in welchen Häusern Ihre Planeten stehen. Bücher oder Videos helfen bei der Deutung. Bei Bedarf kann ein Profi Nuancen und Zeittechniken ergänzen."
+      },
+      {
+        "title": "Was ist der Unterschied zwischen Geburtshoroskop und Transithoroskop?",
+        "description": "Ihr Geburtshoroskop ist fest und ändert sich nicht, da es auf Ihrer Geburt basiert. Ein Transithoroskop zeigt, wo die Planeten jetzt (oder an einem gewählten Datum) zu Ihrem Geburtshoroskop stehen. Diese Seite konzentriert sich auf das Geburtshoroskop; für Transite können Sie unseren Transit-Rechner nutzen."
+      },
+      {
+        "title": "Wie hängt mein Geburtshoroskop mit Astrokartografie zusammen?",
+        "description": "Astrokartografie projiziert Ihr Geburtshoroskop auf die Weltkarte. Dieselben Planetenpositionen aus Ihrem Geburtshoroskop werden genutzt, um Linien auf der Erde zu zeichnen, wo diese Planeten angular waren. Ihr Geburtshoroskop beschreibt Ihre Energien allgemein; Astrokartografie zeigt, wo sie geografisch am stärksten sind."
+      },
+      {
+        "title": "Was, wenn ich meine genaue Geburtszeit nicht kenne?",
+        "description": "Wenn Sie die genaue Zeit nicht kennen, können Sie diesen Geburtshoroskop-Rechner mit einer ungefähren Zeit nutzen. Die Planetenzeichen bleiben aussagekräftig; Aszendent und Häuser können sich mit wenigen Minuten stark ändern – deuten Sie hausbasierte Aussagen vorsichtig. Bei später bekannter genauer Zeit können Sie Ihr Geburtshoroskop neu berechnen."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Jetzt kostenlos Ihr Geburtshoroskop erstellen",
+    "description": "Erstellen Sie Ihr Geburtshoroskop in Sekunden, sehen Sie Sonne, Mond und Aszendent, prüfen Sie die Stellungen nach Zeichen und Haus und erkunden Sie, wo Ihr Geburtshoroskop auf der Astrokartografie-Karte wirkt.",
+    "buttons": [
+      {
+        "title": "Wo Ihr Geburtshoroskop wirkt → Astrokartografie",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}
