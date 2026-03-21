@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { X, Eye, EyeOff, ChevronLeft } from 'lucide-react';
+import { X, Eye, EyeOff, ChevronLeft, MessageCircle } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { MAJOR_CITIES } from '@/lib/cities';
+import { useTranslations } from 'next-intl';
 
 interface PlanetLine {
   planet: string;
@@ -23,6 +24,10 @@ interface AstrocartographyMapProps {
     longitude: number;
   };
   planetLines?: PlanetLine[];
+  // 城市快捷提问：由父组件接管“打开 Ask AI 并自动发送”的行为
+  onCityQuickAsk?: (question: string) => void;
+  // Ask Other：仅预填输入框，不自动发送
+  onAskOther?: (prefillText: string) => void;
 }
 
 // Planet symbol mapping
@@ -47,17 +52,175 @@ const LINE_TYPE_LABELS: Record<string, string> = {
   IC: 'Nadir (Imum Coeli)',
 };
 
+type LineCategoryKey = 'ASC_DS' | 'MC_IC';
+
+const PLANET_PRIORITY: Record<string, number> = {
+  Venus: 1,
+  Jupiter: 2,
+  Sun: 3,
+  Moon: 4,
+};
+
+type CityPopupThemeKey =
+  | 'relationships_love'
+  | 'creativity_art'
+  | 'opportunities_career'
+  | 'success_wealth'
+  | 'happiness_confidence'
+  | 'emotional_security_home'
+  | 'stability_long_term'
+  | 'career_breakthrough'
+  | 'drive_competition'
+  | 'communication_writing_learning'
+  | 'spirituality_counselling'
+  | 'change_innovation'
+  | 'deep_transformation';
+
+type LinePopupState = {
+  planet: string;
+  type: PlanetLine['type'];
+  // 仅用于定位（来自点击时的 latlng）
+  position: { left: number; top: number };
+} | null;
+
+function getLineCategoryKey(type: PlanetLine['type']): LineCategoryKey {
+  return type === 'AS' || type === 'DS' ? 'ASC_DS' : 'MC_IC';
+}
+
+function getCityPopupThemeKey(planet: string, categoryKey: LineCategoryKey): CityPopupThemeKey {
+  switch (planet) {
+    case 'Venus':
+      return categoryKey === 'ASC_DS' ? 'relationships_love' : 'creativity_art';
+    case 'Jupiter':
+      return categoryKey === 'ASC_DS' ? 'opportunities_career' : 'success_wealth';
+    case 'Sun':
+      return 'happiness_confidence';
+    case 'Moon':
+      return 'emotional_security_home';
+    case 'Saturn':
+      return categoryKey === 'ASC_DS' ? 'stability_long_term' : 'career_breakthrough';
+    case 'Mars':
+      return 'drive_competition';
+    case 'Mercury':
+      return 'communication_writing_learning';
+    case 'Neptune':
+      return 'spirituality_counselling';
+    case 'Uranus':
+      return 'change_innovation';
+    case 'Pluto':
+    default:
+      return 'deep_transformation';
+  }
+}
+
+function getLineTypeLabel(type: PlanetLine['type']): string {
+  if (type === 'AS') return 'ASC';
+  if (type === 'DS') return 'DSC';
+  if (type === 'MC') return 'MC';
+  return 'IC';
+}
+
+function getPlanetPriority(planet: string): number {
+  return PLANET_PRIORITY[planet] ?? 5;
+}
+
+function calculateDistanceDeg(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const dLat = lat1 - lat2;
+  const dLng = lng1 - lng2;
+  return Math.sqrt(dLat * dLat + dLng * dLng);
+}
+
+function getMinDistanceToLine(
+  city: { lat: number; lng: number },
+  line: { coordinates: [number, number][] }
+): number {
+  const coordinates = line.coordinates;
+  if (!coordinates || coordinates.length === 0) return Infinity;
+
+  // 采样减少开销：坐标密集时取间隔点
+  const samplePoints = coordinates.filter((_, index) => index % 10 === 0);
+  const points = samplePoints.length > 0 ? samplePoints : [coordinates[0]];
+
+  let minDistance = Infinity;
+  for (const [lat, lng] of points) {
+    const distance = calculateDistanceDeg(city.lat, city.lng, lat, lng);
+    if (distance < minDistance) minDistance = distance;
+  }
+  return minDistance;
+}
+
 // MAJOR_CITIES is now imported from @/lib/cities
 
-export default function AstrocartographyMap({ birthData, planetLines = [] }: AstrocartographyMapProps) {
+export default function AstrocartographyMap({ birthData, planetLines = [], onCityQuickAsk, onAskOther }: AstrocartographyMapProps) {
   const isMobile = useIsMobile();
+  const t = useTranslations('astrocartographyMap');
+  const FALLBACK_CITY_ASK_OTHER_THEME_KEYS: CityPopupThemeKey[] = ['happiness_confidence', 'emotional_security_home', 'opportunities_career'];
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const polylinesRef = useRef<Map<string, L.Polyline>>(new Map());
   const [isLoading, setIsLoading] = useState(true);
   const [isPanelOpen, setIsPanelOpen] = useState(true);
+  const [showGuide, setShowGuide] = useState(false);
   const [visiblePlanets, setVisiblePlanets] = useState<Set<string>>(new Set());
   const [planetVisibility, setPlanetVisibility] = useState<Record<string, boolean>>({});
+  const [lineTypeVisibility, setLineTypeVisibility] = useState<Record<PlanetLine["type"], boolean>>({
+    AS: true,
+    DS: true,
+    MC: true,
+    IC: true,
+  });
+  const [selectedLineId, setSelectedLineId] = useState<string | null>(null);
+  const [selectedCity, setSelectedCity] = useState<{
+    name: string;
+    country: string;
+    lat: number;
+    lng: number;
+  } | null>(null);
+  const [popupPosition, setPopupPosition] = useState<{ left: number; top: number } | null>(null);
+  const [hasAutoCityOpened, setHasAutoCityOpened] = useState(false);
+
+  const [selectedLinePopup, setSelectedLinePopup] = useState<LinePopupState>(null);
+
+  const birthSignature = useMemo(() => {
+    // Use key derived from the current chart input so we can show the guide
+    // once per new map generation (birthData change), not once forever.
+    const parts = [
+      birthData.date,
+      birthData.time,
+      birthData.location,
+      birthData.latitude,
+      birthData.longitude,
+    ];
+    return parts.join('|');
+  }, [birthData.date, birthData.time, birthData.location, birthData.latitude, birthData.longitude]);
+
+  const guideDismissedKey = useMemo(() => {
+    return `astrocartography-map-guide-dismissed-${birthSignature}`;
+  }, [birthSignature]);
+
+  const dismissGuide = useCallback(() => {
+    setShowGuide(false);
+    try {
+      localStorage.setItem(guideDismissedKey, 'true');
+    } catch {
+      // ignore localStorage failures (e.g. privacy mode)
+    }
+  }, [guideDismissedKey]);
+
+  // Show guide only once (when map is ready) and dismiss when user clicks city dot or line.
+  useEffect(() => {
+    if (isLoading) return;
+    if (!planetLines || planetLines.length === 0) return;
+
+    try {
+      const dismissed = localStorage.getItem(guideDismissedKey);
+      if (dismissed === 'true') return;
+    } catch {
+      // If localStorage is not available, still show once per mount.
+    }
+
+    setShowGuide(true);
+  }, [isLoading, planetLines, guideDismissedKey]);
 
   // Optimization: Use useMemo to cache planet groupings, reducing redundant calculations
   // Must be defined before useEffect to avoid TDZ (Temporal Dead Zone) errors
@@ -145,8 +308,8 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
         </div>
       `);
 
-      // Automatically open birth location marker popup
-      birthMarker.openPopup();
+      // Avoid auto-opening birth marker popup to keep focus on city exploration.
+      // birthMarker.openPopup();
     }
 
     // Add major city markers (similar to competitor websites)
@@ -169,17 +332,33 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
         fillOpacity: 0.8,
       }).addTo(map);
 
-      // Bind city information popup
-      cityMarker.bindPopup(`
-        <div style="color: #1a1a2e; font-weight: 600; padding: 6px; min-width: 150px;">
-          <div style="font-size: 14px; margin-bottom: 4px;">
-            📍 ${city.name}
-          </div>
-          <div style="font-size: 11px; color: #666;">
-            ${city.country}
-          </div>
-        </div>
-      `);
+      // 城市点击：展示 React 覆盖弹窗（不使用 Leaflet bindPopup）
+      cityMarker.on('click', () => {
+        dismissGuide();
+        const point = map.latLngToContainerPoint([city.lat, city.lng]);
+        const nextCity = {
+          name: city.name,
+          country: city.country,
+          lat: city.lat,
+          lng: city.lng,
+        };
+
+        setSelectedCity((prev) => {
+          const isSame =
+            prev?.name === nextCity.name &&
+            prev?.country === nextCity.country &&
+            prev?.lat === nextCity.lat &&
+            prev?.lng === nextCity.lng;
+
+          if (isSame) {
+            setPopupPosition(null);
+            return null;
+          }
+
+          setPopupPosition({ left: point.x, top: point.y });
+          return nextCity;
+        });
+      });
 
       // Mouse hover effects
       cityMarker.on('mouseover', () => {
@@ -243,6 +422,8 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
       const color = lines[0].color;
       
       lines.forEach((line) => {
+        if (!lineTypeVisibility[line.type]) return;
+
         // Draw main line
         const polyline = L.polyline(line.coordinates, {
           color: color,
@@ -261,21 +442,6 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
           polyline.addTo(map);
         }
 
-        // Bind popup information
-        polyline.bindPopup(`
-          <div style="color: #1a1a2e; font-weight: 600; padding: 8px; min-width: 180px;">
-            <div style="font-size: 16px; margin-bottom: 6px; color: ${color};">
-              ${PLANET_SYMBOLS[planet] || '•'} ${planet}
-            </div>
-            <div style="font-size: 13px; color: #666; margin-bottom: 4px;">
-              ${LINE_TYPE_LABELS[line.type] || line.type} Line
-            </div>
-            <div style="font-size: 11px; color: #999; margin-top: 6px; padding-top: 6px; border-top: 1px solid #eee;">
-              Click anywhere on this line to explore how ${planet} influences this location.
-            </div>
-          </div>
-        `);
-
         // Add mouse hover effects
         polyline.on('mouseover', () => {
           polyline.setStyle({
@@ -285,14 +451,47 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
         });
 
         polyline.on('mouseout', () => {
-          polyline.setStyle({
-            weight: 2.5,
-            opacity: 0.85
-          });
+          const isSelected = selectedLineId === lineId;
+          polyline.setStyle(
+            isSelected
+              ? { weight: 5, opacity: 1 }
+              : { weight: 2.5, opacity: 0.85 }
+          );
+        });
+
+        polyline.on('click', (e) => {
+          dismissGuide();
+          setSelectedLineId((prev) => (prev === lineId ? null : lineId));
+
+          // Line guidance popup: open a React overlay anchored at click position
+          // Leaflet provides latlng via the click event.
+          const latlng = (e as any)?.latlng;
+          if (latlng && mapRef.current) {
+            closeCityPopup();
+            setSelectedLinePopup({
+              planet,
+              type: line.type,
+              position: (() => {
+                const point = mapRef.current!.latLngToContainerPoint([latlng.lat, latlng.lng]);
+                return { left: point.x, top: point.y };
+              })(),
+            });
+          }
         });
       });
     });
-  }, [planetLines, planetVisibility, planetGroups]);
+  }, [planetLines, planetVisibility, planetGroups, lineTypeVisibility, selectedLineId]);
+
+  // Keep selected line highlighted (and others reset) when selection changes.
+  useEffect(() => {
+    polylinesRef.current.forEach((polyline, lineId) => {
+      const isSelected = selectedLineId === lineId;
+      polyline.setStyle(isSelected ? { weight: 5, opacity: 1 } : { weight: 2.5, opacity: 0.85 });
+      if (isSelected) {
+        polyline.bringToFront();
+      }
+    });
+  }, [selectedLineId]);
 
   // Toggle planet visibility
   const togglePlanet = useCallback((planet: string) => {
@@ -308,7 +507,9 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
             const polyline = polylinesRef.current.get(lineId);
             if (polyline) {
               if (newVisibility[planet]) {
-                polyline.addTo(mapRef.current!);
+                if (lineTypeVisibility[line.type]) {
+                  polyline.addTo(mapRef.current!);
+                }
               } else {
                 mapRef.current!.removeLayer(polyline);
               }
@@ -319,7 +520,7 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
       
       return newVisibility;
     });
-  }, [planetLines]);
+  }, [planetLines, lineTypeVisibility]);
 
   // Toggle all planets
   const toggleAllPlanets = useCallback((show: boolean) => {
@@ -332,9 +533,9 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
     // Update all lines on map
     if (mapRef.current) {
       polylinesRef.current.forEach((polyline, lineId) => {
-        const planet = lineId.split('-')[0];
+        const [planet, type] = lineId.split('-') as [string, PlanetLine["type"]];
         if (show) {
-          if (!mapRef.current!.hasLayer(polyline)) {
+          if (newVisibility[planet] && lineTypeVisibility[type] && !mapRef.current!.hasLayer(polyline)) {
             polyline.addTo(mapRef.current!);
           }
         } else {
@@ -342,7 +543,261 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
         }
       });
     }
-  }, [visiblePlanets]);
+  }, [visiblePlanets, lineTypeVisibility]);
+
+  const toggleLineType = useCallback((type: PlanetLine["type"]) => {
+    setLineTypeVisibility((prev) => {
+      const next = { ...prev, [type]: !prev[type] };
+
+      if (mapRef.current) {
+        planetLines.forEach((line) => {
+          if (line.type !== type) return;
+          const lineId = `${line.planet}-${line.type}`;
+          const polyline = polylinesRef.current.get(lineId);
+          if (!polyline) return;
+
+          const planetVisible = planetVisibility[line.planet] ?? true;
+          const typeVisible = next[type];
+          if (planetVisible && typeVisible) {
+            if (!mapRef.current!.hasLayer(polyline)) polyline.addTo(mapRef.current!);
+          } else {
+            mapRef.current!.removeLayer(polyline);
+          }
+        });
+      }
+
+      // If we hid the currently selected type, clear selection.
+      if (selectedLineId && selectedLineId.endsWith(`-${type}`) && !next[type]) {
+        setSelectedLineId(null);
+      }
+
+      return next;
+    });
+  }, [planetLines, planetVisibility, selectedLineId]);
+
+  // 计算城市附近命中的行星线（用于“静态展示”和快捷提问模板选择）
+  const selectedCityLines = useMemo(() => {
+    if (!selectedCity || planetLines.length === 0) return [];
+
+    const MAX_LINES = 3;
+    const MAX_DISTANCE_DEG = 5; // 约等于需求中的“附近阈值”
+
+    const hits = planetLines
+      .map((line) => {
+        const minDistance = getMinDistanceToLine(
+          { lat: selectedCity.lat, lng: selectedCity.lng },
+          line
+        );
+        return { line, minDistance };
+      })
+      .filter(({ minDistance }) => minDistance <= MAX_DISTANCE_DEG);
+
+    hits.sort((a, b) => {
+      const prA = getPlanetPriority(a.line.planet);
+      const prB = getPlanetPriority(b.line.planet);
+      if (prA !== prB) return prA - prB;
+      return a.minDistance - b.minDistance;
+    });
+
+    return hits.slice(0, MAX_LINES).map((h) => h.line);
+  }, [selectedCity, planetLines]);
+
+  const selectedLineQuestions = useMemo(() => {
+    if (!selectedLinePopup) return [];
+
+    const categoryKey = getLineCategoryKey(selectedLinePopup.type);
+    const themeKey = getCityPopupThemeKey(selectedLinePopup.planet, categoryKey);
+    const shortDesc = t(`themes.${themeKey}.shortDesc`);
+
+    return [
+      t('linePopup.question1Template', { shortDesc }),
+      t('linePopup.question2Template', { shortDesc }),
+      t('linePopup.question3Template', { shortDesc }),
+    ];
+  }, [selectedLinePopup, t]);
+
+  const selectedCityQuestions = useMemo(() => {
+    if (!selectedCity) return [];
+
+    if (selectedCityLines.length === 0) {
+      // 兜底：为了更好的转化体验，命中为 0 时也提供 3 个“常问主题”
+      return [
+        t('themes.happiness_confidence.questionTemplate', { city: selectedCity.name }),
+        t('themes.emotional_security_home.questionTemplate', { city: selectedCity.name }),
+        t('themes.opportunities_career.questionTemplate', { city: selectedCity.name }),
+      ];
+    }
+
+    return selectedCityLines.map((line) => {
+      const categoryKey = getLineCategoryKey(line.type);
+      const themeKey = getCityPopupThemeKey(line.planet, categoryKey);
+      return t(`themes.${themeKey}.questionTemplate`, { city: selectedCity.name });
+    });
+  }, [selectedCity, selectedCityLines, t]);
+
+  const cityAskOtherPrefillText = useMemo(() => {
+    if (!selectedCity) return null;
+
+    const uniqueThemeKeys: CityPopupThemeKey[] = [];
+
+    for (const line of selectedCityLines) {
+      const categoryKey = getLineCategoryKey(line.type);
+      const themeKey = getCityPopupThemeKey(line.planet, categoryKey);
+      if (!uniqueThemeKeys.includes(themeKey)) uniqueThemeKeys.push(themeKey);
+    }
+
+    const themeKeys =
+      uniqueThemeKeys.length > 0
+        ? uniqueThemeKeys
+        : FALLBACK_CITY_ASK_OTHER_THEME_KEYS;
+
+    const filledThemeKeys: CityPopupThemeKey[] = [...themeKeys];
+    while (filledThemeKeys.length < 3) {
+      for (const k of FALLBACK_CITY_ASK_OTHER_THEME_KEYS) {
+        if (filledThemeKeys.length >= 3) break;
+        if (!filledThemeKeys.includes(k)) filledThemeKeys.push(k);
+      }
+      if (filledThemeKeys.length >= 3) break;
+      // Safety break (should never happen because fallback has 3 keys)
+      break;
+    }
+
+    const [shortDesc1Key, shortDesc2Key, shortDesc3Key] = filledThemeKeys.slice(0, 3);
+    const shortDesc1 = t(`themes.${shortDesc1Key}.shortDesc`);
+    const shortDesc2 = t(`themes.${shortDesc2Key}.shortDesc`);
+    const shortDesc3 = t(`themes.${shortDesc3Key}.shortDesc`);
+
+    return t('askOther.cityPrefill', {
+      city: selectedCity.name,
+      country: selectedCity.country,
+      shortDesc1,
+      shortDesc2,
+      shortDesc3,
+    });
+  }, [selectedCity, selectedCityLines, t]);
+
+  const lineAskOtherPrefillText = useMemo(() => {
+    if (!selectedLinePopup) return null;
+
+    const categoryKey = getLineCategoryKey(selectedLinePopup.type);
+    const themeKey = getCityPopupThemeKey(selectedLinePopup.planet, categoryKey);
+    const shortDesc = t(`themes.${themeKey}.shortDesc`);
+
+    return t('askOther.linePrefill', {
+      planet: selectedLinePopup.planet,
+      lineTypeLabel: getLineTypeLabel(selectedLinePopup.type),
+      planetSymbol: PLANET_SYMBOLS[selectedLinePopup.planet] || '',
+      shortDesc,
+    });
+  }, [selectedLinePopup, t]);
+
+  const closeCityPopup = useCallback(() => {
+    setSelectedCity(null);
+    setPopupPosition(null);
+    setHasAutoCityOpened(true);
+  }, []);
+
+  const closeLinePopup = useCallback(() => {
+    setSelectedLinePopup(null);
+  }, []);
+
+  // Panel "Ask" entry: open the same line guidance popup flow as clicking the map polyline.
+  // We only expose one Ask per planet, so we must pick a default line type based on current angle filters.
+  const openLinePopupFromPanel = useCallback(
+    (planet: string) => {
+      const defaultType: PlanetLine['type'] | null =
+        lineTypeVisibility.AS
+          ? 'AS'
+          : lineTypeVisibility.DS
+            ? 'DS'
+            : lineTypeVisibility.MC
+              ? 'MC'
+              : lineTypeVisibility.IC
+                ? 'IC'
+                : null;
+
+      if (!defaultType) return;
+
+      dismissGuide();
+
+      // Highlight the corresponding line and open the React overlay.
+      setSelectedLineId(`${planet}-${defaultType}`);
+      closeCityPopup();
+      setSelectedLinePopup({
+        planet,
+        type: defaultType,
+        // Position isn't used by the overlay layout (it is centered fixed),
+        // but the state type requires it.
+        position: { left: 0, top: 0 },
+      });
+    },
+    [closeCityPopup, dismissGuide, lineTypeVisibility]
+  );
+
+  // 在地图缩放/移动时，保持城市弹窗锚点跟随（类似 Leaflet popup 的定位体验）
+  useEffect(() => {
+    if (!selectedCity) return;
+    if (!mapRef.current) return;
+
+    const map = mapRef.current;
+
+    const update = () => {
+      const point = map.latLngToContainerPoint([selectedCity.lat, selectedCity.lng]);
+      setPopupPosition({ left: point.x, top: point.y });
+    };
+
+    update();
+    map.on('move', update);
+    map.on('zoom', update);
+    return () => {
+      map.off('move', update);
+      map.off('zoom', update);
+    };
+  }, [selectedCity]);
+
+  // 出生信息变化时：重置默认城市弹窗状态
+  useEffect(() => {
+    setHasAutoCityOpened(false);
+    setSelectedCity(null);
+    setPopupPosition(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [birthData.latitude, birthData.longitude]);
+
+  // 默认进入页面：根据出生地坐标找最近的城市并自动打开城市弹窗（A 规则）
+  useEffect(() => {
+    if (hasAutoCityOpened) return;
+    if (isLoading) return; // 等待 Leaflet 初始化完成
+    if (!planetLines || planetLines.length === 0) return;
+    if (selectedCity) return;
+
+    if (typeof birthData.latitude !== 'number' || typeof birthData.longitude !== 'number') return;
+    if (!mapRef.current) return;
+
+    const birthLat = birthData.latitude;
+    const birthLng = birthData.longitude;
+
+    let nearest = MAJOR_CITIES[0];
+    let nearestDist = Infinity;
+    for (const c of MAJOR_CITIES) {
+      const d = calculateDistanceDeg(birthLat, birthLng, c.lat, c.lng);
+      if (d < nearestDist) {
+        nearestDist = d;
+        nearest = c;
+      }
+    }
+
+    const nextCity = {
+      name: nearest.name,
+      country: nearest.country,
+      lat: nearest.lat,
+      lng: nearest.lng,
+    };
+
+    const point = mapRef.current.latLngToContainerPoint([nextCity.lat, nextCity.lng]);
+    setSelectedCity(nextCity);
+    setPopupPosition({ left: point.x, top: point.y });
+    setHasAutoCityOpened(true);
+  }, [hasAutoCityOpened, isLoading, planetLines.length, birthData.latitude, birthData.longitude, selectedCity]);
 
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -361,6 +816,32 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
         }}
       />
       
+      {/* First-time guide (dismiss on first click city/line) */}
+      {showGuide && (
+        <div className="absolute left-1/2 top-4 z-[1150] -translate-x-1/2 w-[560px] max-w-[92vw] pointer-events-auto">
+          <div className="rounded-lg border border-white/15 bg-black/70 backdrop-blur-md px-4 py-2.5 shadow-lg">
+            <div className="flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <div className="text-white/90 text-xs font-semibold whitespace-normal break-words">
+                  {t('guide.title')}
+                </div>
+                <div className="text-gray-200 text-[11px] leading-snug whitespace-normal break-words">
+                  {t('guide.text')}
+                </div>
+              </div>
+              <button
+                type="button"
+                aria-label="Dismiss guide"
+                onClick={dismissGuide}
+                className="text-white/70 hover:text-white transition-colors p-1 rounded-md hover:bg-white/5"
+              >
+                <X className="size-3.5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Planetary control panel */}
       {planetLines.length > 0 && (
         <div
@@ -397,11 +878,43 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
                 </button>
               </div>
 
+              {/* Line type filters */}
+              <div className="space-y-2">
+                <div className="text-[11px] text-white/60">Angle types</div>
+                <div className="grid grid-cols-2 gap-2">
+                  {(
+                    [
+                      { type: "AS" as const, label: "ASC (AS)" },
+                      { type: "DS" as const, label: "DSC (DS)" },
+                      { type: "MC" as const, label: "MC" },
+                      { type: "IC" as const, label: "IC" },
+                    ] satisfies Array<{ type: PlanetLine["type"]; label: string }>
+                  ).map(({ type, label }) => {
+                    const active = lineTypeVisibility[type];
+                    return (
+                      <button
+                        key={type}
+                        onClick={() => toggleLineType(type)}
+                        className={`px-3 py-2 text-xs font-medium rounded-md transition-colors border ${
+                          active
+                            ? "bg-white/10 text-white border-white/20 hover:bg-white/15"
+                            : "bg-transparent text-white/50 border-white/10 hover:text-white/70"
+                        }`}
+                      >
+                        {label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Planet list */}
               <div className="space-y-2">
                 {uniquePlanets.map((planet) => {
                   const line = planetLines.find(l => l.planet === planet);
                   const isVisible = planetVisibility[planet] ?? true;
+                  const hasEnabledAngleType =
+                    lineTypeVisibility.AS || lineTypeVisibility.DS || lineTypeVisibility.MC || lineTypeVisibility.IC;
                   
                   return (
                     <button
@@ -413,18 +926,47 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
                         <span className="text-lg">{PLANET_SYMBOLS[planet] || '•'}</span>
                         <span className="text-white text-sm font-medium">{planet}</span>
                       </div>
-                      <div
-                        className="size-5 rounded border-2 flex items-center justify-center transition-colors"
-                        style={{
-                          borderColor: line?.color || '#fff',
-                          backgroundColor: isVisible ? (line?.color || '#fff') : 'transparent',
-                        }}
-                      >
-                        {isVisible ? (
-                          <Eye className="size-3 text-white" />
-                        ) : (
-                          <EyeOff className="size-3 text-white/40" />
-                        )}
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="size-5 rounded border-2 flex items-center justify-center transition-colors"
+                          style={{
+                            borderColor: line?.color || '#fff',
+                            backgroundColor: isVisible ? (line?.color || '#fff') : 'transparent',
+                          }}
+                        >
+                          {isVisible ? (
+                            <Eye className="size-3 text-white" />
+                          ) : (
+                            <EyeOff className="size-3 text-white/40" />
+                          )}
+                        </div>
+
+                        {/* Panel Ask button (opens line guidance popup) */}
+                        <span
+                          role="button"
+                          tabIndex={0}
+                          aria-label={t('panelAsk.buttonLabel')}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (!hasEnabledAngleType) return;
+                            openLinePopupFromPanel(planet);
+                          }}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              if (!hasEnabledAngleType) return;
+                              openLinePopupFromPanel(planet);
+                            }
+                          }}
+                          className={`size-5 rounded-md flex items-center justify-center transition-colors ${
+                            hasEnabledAngleType
+                              ? 'bg-purple-600/90 hover:bg-purple-600 text-white'
+                              : 'bg-white/5 text-white/30 cursor-not-allowed'
+                          }`}
+                        >
+                          <MessageCircle className="size-3.5" />
+                        </span>
                       </div>
                     </button>
                   );
@@ -434,12 +976,197 @@ export default function AstrocartographyMap({ birthData, planetLines = [] }: Ast
               {/* Legend */}
               <div className="mt-6 pt-4 border-t border-white/10">
                 <div className="text-xs text-white/60 space-y-1">
-                  <div><strong className="text-white/80">AS:</strong> Rising (Ascendant)</div>
-                  <div><strong className="text-white/80">DS:</strong> Setting (Descendant)</div>
-                  <div><strong className="text-white/80">MC:</strong> Midheaven</div>
-                  <div><strong className="text-white/80">IC:</strong> Nadir</div>
+                  <div><strong className="text-white/80">ASC (AS):</strong> Rising / Ascendant</div>
+                  <div><strong className="text-white/80">DSC (DS):</strong> Setting / Descendant</div>
+                  <div><strong className="text-white/80">MC:</strong> Midheaven (Career/Public)</div>
+                  <div><strong className="text-white/80">IC:</strong> Nadir / Imum Coeli (Home/Roots)</div>
+                  <div className="pt-2">
+                    <strong className="text-white/80">Line style:</strong> DS &amp; IC are dashed; AS &amp; MC are solid.
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* City quick-ask popup (React overlay) */}
+      {selectedCity && popupPosition && (
+        <div
+          className="absolute z-[1200] pointer-events-auto -translate-x-1/2 -translate-y-full"
+          style={{
+            left: popupPosition.left,
+            top: popupPosition.top,
+          }}
+        >
+          <div className="w-[280px] max-w-[70vw] rounded-md overflow-hidden border border-white/10 bg-black/80 shadow-2xl">
+            {/* Block 1: City basic info */}
+            <div className="px-3 py-2 flex items-start justify-between bg-black/60">
+              <div className="min-w-0">
+                <div className="text-white font-semibold text-sm truncate">{selectedCity.name}</div>
+                <div className="text-gray-300 text-[11px] mt-0.5 truncate">{selectedCity.country}</div>
+              </div>
+              <button
+                type="button"
+                aria-label="Close city popup"
+                onClick={closeCityPopup}
+                className="text-white/70 hover:text-white transition-colors p-1 rounded-md hover:bg-white/5"
+              >
+                <X className="size-4" />
+              </button>
+            </div>
+
+            {/* Block 2: Planet line static info */}
+            <div className="px-3 py-2 bg-black/90 border-t border-white/10">
+              <div className="text-white/90 text-xs font-semibold mb-2">{t('cityPopup.planetsTitle')}</div>
+
+              {selectedCityLines.length > 0 ? (
+                <div className="space-y-2 max-h-[24vh] overflow-y-auto pr-1">
+                  {selectedCityLines.map((line) => {
+                    const categoryKey = getLineCategoryKey(line.type);
+                    const themeKey = getCityPopupThemeKey(line.planet, categoryKey);
+                    const shortDesc = t(`themes.${themeKey}.shortDesc`);
+                    const typeLabel = getLineTypeLabel(line.type);
+                    return (
+                      <div key={`${line.planet}-${line.type}`} className="rounded-md bg-white/5 p-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm text-white/90">{PLANET_SYMBOLS[line.planet] || '•'}</span>
+                          <span className="text-white text-xs font-medium truncate">
+                            {line.planet} {typeLabel}
+                          </span>
+                        </div>
+                        <div className="text-gray-300 text-[11px] mt-1 leading-snug">{shortDesc}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="text-gray-400 text-xs leading-relaxed">
+                  {t('cityPopup.noHitsText')}
+                </div>
+              )}
+            </div>
+
+            {/* Block 3: Quick question buttons */}
+            <div className="px-3 py-2 bg-black/70 border-t border-white/10">
+              <div className="text-white/90 text-xs font-semibold mb-2">{t('cityPopup.quickAskTitle')}</div>
+
+              <div className="space-y-2 max-h-[24vh] overflow-y-auto pr-1">
+                {selectedCityQuestions.map((q, idx) => (
+                  <button
+                    key={`${idx}-${q}`}
+                    type="button"
+                    onClick={() => {
+                      closeCityPopup();
+                      setTimeout(() => {
+                        onCityQuickAsk?.(q);
+                      }, 0);
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-md bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 text-white text-xs font-semibold shadow-lg hover:shadow-xl transition-all"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Block 4: Ask Other (prefill only) */}
+            <div className="px-3 py-2 bg-black/50 border-t border-white/10">
+              <button
+                type="button"
+                onClick={() => {
+                  closeCityPopup();
+                  setTimeout(() => {
+                    if (cityAskOtherPrefillText) onAskOther?.(cityAskOtherPrefillText);
+                  }, 0);
+                }}
+                disabled={!onAskOther || !cityAskOtherPrefillText}
+                className="w-full px-3 py-2 rounded-md bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 text-white text-xs font-semibold shadow-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {t('askOther.buttonLabel')}
+              </button>
+            </div>
+          </div>
+
+        </div>
+      )}
+
+      {/* Line guidance popup (React overlay) */}
+      {selectedLinePopup && (
+        <div
+          className="absolute z-[1250] pointer-events-auto -translate-x-1/2 -translate-y-1/2"
+          style={{
+            // Always show the line popup in a consistent, unobstructed location.
+            // (偏上居中，避免被底部的 Ask AI 按钮遮挡）
+            left: '50%',
+            top: '40%',
+          }}
+        >
+          <div className="w-[280px] max-w-[70vw] rounded-md overflow-hidden border border-white/10 bg-black/80 shadow-2xl">
+            {/* Block 1: Line identity */}
+            <div className="px-3 py-2 flex items-start justify-between bg-black/60">
+              <div className="min-w-0">
+                <div className="text-white font-semibold text-sm truncate">
+                  {PLANET_SYMBOLS[selectedLinePopup.planet] || '•'} {selectedLinePopup.planet}{' '}
+                  {getLineTypeLabel(selectedLinePopup.type)}
+                </div>
+                <div className="text-gray-300 text-[11px] mt-0.5 truncate">{t('linePopup.subtitle')}</div>
+              </div>
+              <button
+                type="button"
+                aria-label="Close line popup"
+                onClick={closeLinePopup}
+                className="text-white/70 hover:text-white transition-colors p-1 rounded-md hover:bg-white/5"
+              >
+                <X className="size-4" />
+              </button>
+            </div>
+
+            {/* Block 2: Short description */}
+            <div className="px-3 py-2 bg-black/90 border-t border-white/10">
+              <div className="text-white/90 text-xs font-semibold mb-2">{t('linePopup.shortDescTitle')}</div>
+              <div className="text-gray-300 text-[11px] leading-snug">
+                {t(`themes.${getCityPopupThemeKey(selectedLinePopup.planet, getLineCategoryKey(selectedLinePopup.type))}.shortDesc`)}
+              </div>
+            </div>
+
+            {/* Block 3: Quick questions */}
+            <div className="px-3 py-2 bg-black/70 border-t border-white/10">
+              <div className="text-white/90 text-xs font-semibold mb-2">{t('linePopup.quickAskTitle')}</div>
+              <div className="space-y-2 max-h-[24vh] overflow-y-auto pr-1">
+                {selectedLineQuestions.map((q, idx) => (
+                  <button
+                    key={`${idx}-${q}`}
+                    type="button"
+                    onClick={() => {
+                      closeLinePopup();
+                      setTimeout(() => {
+                        onCityQuickAsk?.(q);
+                      }, 0);
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-md bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 text-white text-xs font-semibold shadow-lg hover:shadow-xl transition-all"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Block 4: Ask Other (prefill only) */}
+            <div className="px-3 py-2 bg-black/50 border-t border-white/10">
+              <button
+                type="button"
+                onClick={() => {
+                  closeLinePopup();
+                  setTimeout(() => {
+                    if (lineAskOtherPrefillText) onAskOther?.(lineAskOtherPrefillText);
+                  }, 0);
+                }}
+                disabled={!onAskOther || !lineAskOtherPrefillText}
+                className="w-full px-3 py-2 rounded-md bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 text-white text-xs font-semibold shadow-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {t('askOther.buttonLabel')}
+              </button>
             </div>
           </div>
         </div>

@@ -63,6 +63,7 @@ function normalizeDegrees(deg: number): number {
 function parseTimezoneOffset(timezone: string): number {
   const timezoneMap: Record<string, number> = {
     UTC: 0, EST: -5, PST: -8, CST: -6, MST: -7, CET: 1,
+    COT: -5, PET: -5, CLT: -4, ART: -3, BRT: -3,
     JST: 9, AEST: 10, IST: 5.5,
   };
   for (const [tz, offset] of Object.entries(timezoneMap)) {

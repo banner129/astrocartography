@@ -49,6 +49,10 @@ export default function ChartContent() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [chatOpen, setChatOpen] = useState(false);
+  const [autoSendQuestion, setAutoSendQuestion] = useState<string | null>(null);
+  const [autoSendQuestionKey, setAutoSendQuestionKey] = useState(0);
+  const [askOtherPrefillText, setAskOtherPrefillText] = useState<string | null>(null);
+  const [askOtherPrefillKey, setAskOtherPrefillKey] = useState(0);
   const [hasAutoPopped, setHasAutoPopped] = useState(false); // 标记是否已经自动弹出过
   const [isToolbarExpanded, setIsToolbarExpanded] = useState(false); // 右上角工具栏折叠状态
 
@@ -127,10 +131,33 @@ export default function ChartContent() {
     askAIEvents.dialogOpened('manual');
   };
 
+  const handleCityQuickAsk = (question: string) => {
+    // 先打开对话框，再把问题通过 props 传给 AstroChat 自动发送
+    setChatOpen(true);
+    setAutoSendQuestion(question);
+    setAskOtherPrefillText(null);
+    setAutoSendQuestionKey((prev) => prev + 1);
+    // 复用同一个打开入口的埋点逻辑
+    askAIEvents.dialogOpened('manual');
+  };
+
+  const handleAskOther = (prefillText: string) => {
+    // 仅覆盖输入框，不自动提交（不消耗 credits）
+    setChatOpen(true);
+    setAutoSendQuestion(null);
+    setAskOtherPrefillText(prefillText);
+    setAskOtherPrefillKey((prev) => prev + 1);
+    askAIEvents.dialogOpened('manual');
+  };
+
   // 处理对话框关闭 - 记录用户手动关闭，避免重复自动弹出
   const handleChatOpenChange = (open: boolean) => {
     setChatOpen(open);
     // 如果用户手动关闭对话框，记录到 localStorage
+    if (!open) {
+      setAutoSendQuestion(null);
+      setAskOtherPrefillText(null);
+    }
     if (!open && hasAutoPopped) {
       try {
         localStorage.setItem(AUTO_POPUP_DISMISSED_KEY, 'true');
@@ -231,6 +258,8 @@ export default function ChartContent() {
               <AstrocartographyMap 
                 birthData={birthData}
                 planetLines={planetLines}
+                onCityQuickAsk={handleCityQuickAsk}
+                onAskOther={handleAskOther}
               />
             </div>
 
@@ -398,6 +427,10 @@ export default function ChartContent() {
         <AstroChat
           open={chatOpen}
           onOpenChange={handleChatOpenChange}
+          autoSendQuestion={autoSendQuestion}
+          autoSendQuestionKey={autoSendQuestionKey}
+          askOtherPrefillText={askOtherPrefillText}
+          askOtherPrefillKey={askOtherPrefillKey}
           chartData={{
             birthData: {
               date: birthData.date,

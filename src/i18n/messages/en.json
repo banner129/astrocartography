@@ -384,5 +384,87 @@
       "What does my Venus line reveal about relationships?",
       "Compare my best locations for love vs. career"
     ]
+  },
+  "astrocartographyMap": {
+    "guide": {
+      "title": "Tip",
+      "text": "Zoom in and drag to view your lines and city dots—click to get your answers."
+    },
+    "cityPopup": {
+      "planetsTitle": "🪐 Planetary lines passed",
+      "quickAskTitle": "💬 Quick questions",
+      "noHitsText": "No nearby planetary lines detected (based on the distance threshold).",
+      "fallbackQuestion": "Why is {city} one of the best places for me to live?"
+    },
+    "linePopup": {
+      "subtitle": "Line energy guidance",
+      "shortDescTitle": "What this line activates",
+      "quickAskTitle": "💬 Quick questions",
+      "question1Template": "What does this line mean for me—especially through {shortDesc}?",
+      "question2Template": "How will the energy of {shortDesc} show up in my life?",
+      "question3Template": "What should I do to make the most of this {shortDesc} line?"
+    },
+    "askOther": {
+      "buttonLabel": "Ask Other",
+      "cityPrefill": "Based on the nearby planetary lines around {city}, {country}, these energies are activated: 1) {shortDesc1} 2) {shortDesc2} 3) {shortDesc3}.\nMy Question :",
+      "linePrefill": "Your line of {planetSymbol} {planet} {lineTypeLabel} carries the energy of {shortDesc}.\nMy Question :"
+    },
+    "panelAsk": {
+      "buttonLabel": "Ask"
+    },
+    "themes": {
+      "relationships_love": {
+        "shortDesc": "Love and relationship connection energy",
+        "questionTemplate": "What does {city} reveal about my love and relationships?"
+      },
+      "creativity_art": {
+        "shortDesc": "Creativity and aesthetic expression energy",
+        "questionTemplate": "Can {city} spark my creativity and sense of beauty?"
+      },
+      "opportunities_career": {
+        "shortDesc": "Growth and opportunity energy",
+        "questionTemplate": "Is {city} a great place to grow my career and seize opportunities?"
+      },
+      "success_wealth": {
+        "shortDesc": "Career success and wealth energy",
+        "questionTemplate": "Can {city} bring me career success and wealth opportunities?"
+      },
+      "happiness_confidence": {
+        "shortDesc": "Confidence and vitality energy",
+        "questionTemplate": "Where will I feel the happiest—and more confident—in {city}?"
+      },
+      "emotional_security_home": {
+        "shortDesc": "Emotional safety and belonging energy",
+        "questionTemplate": "Will {city} bring the emotional security and comfort my family needs?"
+      },
+      "stability_long_term": {
+        "shortDesc": "Long-term stability and growth energy",
+        "questionTemplate": "Should I move to {city} and settle down for the rest of my life?"
+      },
+      "career_breakthrough": {
+        "shortDesc": "Responsibility and career breakthrough energy",
+        "questionTemplate": "Will {city} help me break through professionally?"
+      },
+      "drive_competition": {
+        "shortDesc": "Drive and competitive edge energy",
+        "questionTemplate": "Will {city} boost my drive and competitive advantage?"
+      },
+      "communication_writing_learning": {
+        "shortDesc": "Communication, writing, and learning energy",
+        "questionTemplate": "Could {city} help me become a successful writer?"
+      },
+      "spirituality_counselling": {
+        "shortDesc": "Spirituality, inspiration, and healing energy",
+        "questionTemplate": "What if I study counselling or therapy in {city}?"
+      },
+      "change_innovation": {
+        "shortDesc": "Change, innovation, and freedom energy",
+        "questionTemplate": "Will {city} bring unexpected changes and more freedom?"
+      },
+      "deep_transformation": {
+        "shortDesc": "Deep transformation and rebirth energy",
+        "questionTemplate": "Will {city} change my life on a deep level?"
+      }
+    }
   }
 }

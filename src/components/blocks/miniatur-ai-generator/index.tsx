@@ -13,6 +13,7 @@ import { toast } from 'sonner';
 import CompactSocialShare from '@/components/blocks/social-share/compact';
 import { LocationAutocomplete } from '@/components/ui/location-autocomplete';
 import { DatePicker } from '@/components/ui/date-picker';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export default function MiniaturaAIGenerator() {
   const t = useTranslations('astrocartographyGenerator');
@@ -301,23 +302,32 @@ export default function MiniaturaAIGenerator() {
                     <Globe className="size-4 text-purple-400" />
                     {t('form.timezone.label')}
                   </Label>
-                  <select
-                    id="timezone"
-                    value={timezone}
-                    onChange={(e) => setTimezone(e.target.value)}
-                    className="w-full h-10 px-3 text-sm rounded-md bg-white/10 border border-white/20 text-white focus:border-purple-500 focus:ring-purple-500 focus:outline-none focus:ring-2"
-                  >
-                    <option value="UTC (London, Dublin)" className="bg-gray-900">UTC (London, Dublin)</option>
-                    <option value="EST (New York)" className="bg-gray-900">EST (New York)</option>
-                    <option value="PST (Los Angeles)" className="bg-gray-900">PST (Los Angeles)</option>
-                    <option value="CST (Chicago)" className="bg-gray-900">CST (Chicago)</option>
-                    <option value="MST (Denver)" className="bg-gray-900">MST (Denver)</option>
-                    <option value="CET (Paris, Berlin)" className="bg-gray-900">CET (Paris, Berlin)</option>
-                    <option value="JST (Tokyo)" className="bg-gray-900">JST (Tokyo)</option>
-                    <option value="AEST (Sydney)" className="bg-gray-900">AEST (Sydney)</option>
-                    <option value="IST (Mumbai)" className="bg-gray-900">IST (Mumbai)</option>
-                    <option value="CST (Beijing)" className="bg-gray-900">CST (Beijing)</option>
-                  </select>
+                  <Select value={timezone} onValueChange={setTimezone}>
+                    <SelectTrigger
+                      className="w-full h-10 px-3 text-sm rounded-md bg-white/10 border border-white/20 text-white focus:border-purple-500 focus:ring-purple-500 focus:outline-none focus:ring-2"
+                      aria-label="Timezone"
+                    >
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="bg-gray-900 border border-white/10 text-white">
+                      <SelectItem value="UTC (London, Dublin)">UTC (London, Dublin)</SelectItem>
+                      <SelectItem value="EST (New York)">EST (New York)</SelectItem>
+                      <SelectItem value="PST (Los Angeles)">PST (Los Angeles)</SelectItem>
+                      <SelectItem value="CST (Chicago)">CST (Chicago)</SelectItem>
+                      <SelectItem value="MST (Denver)">MST (Denver)</SelectItem>
+                      <SelectItem value="CET (Paris, Berlin)">CET (Paris, Berlin)</SelectItem>
+                      <SelectItem value="CST (Mexico City)">CST (Mexico City)</SelectItem>
+                      <SelectItem value="COT (Bogotá)">COT (Bogotá)</SelectItem>
+                      <SelectItem value="PET (Lima)">PET (Lima)</SelectItem>
+                      <SelectItem value="CLT (Santiago)">CLT (Santiago)</SelectItem>
+                      <SelectItem value="ART (Buenos Aires)">ART (Buenos Aires)</SelectItem>
+                      <SelectItem value="BRT (São Paulo)">BRT (São Paulo)</SelectItem>
+                      <SelectItem value="JST (Tokyo)">JST (Tokyo)</SelectItem>
+                      <SelectItem value="AEST (Sydney)">AEST (Sydney)</SelectItem>
+                      <SelectItem value="IST (Mumbai)">IST (Mumbai)</SelectItem>
+                      <SelectItem value="CST (Beijing)">CST (Beijing)</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 {/* 生成按钮 */}

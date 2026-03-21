@@ -85,6 +85,11 @@ function parseTimezoneOffset(timezone: string): number {
     'CST': -6,  // 中部标准时间（美国）或 +8（中国）
     'MST': -7,  // 山地标准时间
     'CET': 1,   // 中欧时间
+    'COT': -5,  // 哥伦比亚时间（Bogotá）
+    'PET': -5,  // 秘鲁时间（Lima）
+    'CLT': -4,  // 智利时间（Santiago）
+    'ART': -3,  // 阿根廷时间（Buenos Aires）
+    'BRT': -3,  // 巴西时间（São Paulo）
     'JST': 9,   // 日本标准时间
     'AEST': 10, // 澳大利亚东部标准时间
     'IST': 5.5, // 印度标准时间

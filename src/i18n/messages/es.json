@@ -431,5 +431,87 @@
       "¿Qué revela mi línea de Venus sobre las relaciones?",
       "Compara mis mejores ubicaciones para el amor vs. la carrera"
     ]
+  },
+  "astrocartographyMap": {
+    "guide": {
+      "title": "Consejo",
+      "text": "Haz zoom y arrastra para ver tus líneas y puntos de ciudad—haz clic para obtener tus respuestas."
+    },
+    "cityPopup": {
+      "planetsTitle": "🪐 Líneas planetarias cercanas",
+      "quickAskTitle": "💬 Preguntas rápidas",
+      "noHitsText": "No se detectaron líneas planetarias cercanas (según el umbral de distancia).",
+      "fallbackQuestion": "¿Por qué {city} es uno de los mejores lugares para mí?"
+    },
+    "linePopup": {
+      "subtitle": "Guía de energía de la línea",
+      "shortDescTitle": "Qué activa esta línea",
+      "quickAskTitle": "💬 Preguntas rápidas",
+      "question1Template": "¿Qué significa esta línea para mí—especialmente a través de {shortDesc}?",
+      "question2Template": "¿Cómo se manifestará la energía de {shortDesc} en mi vida?",
+      "question3Template": "¿Qué debo hacer para aprovechar al máximo esta línea de {shortDesc}?"
+    },
+    "askOther": {
+      "buttonLabel": "Preguntar Otra Cosa",
+      "cityPrefill": "Con base en las líneas planetarias cercanas alrededor de {city}, {country}, estas energías están activadas: 1) {shortDesc1} 2) {shortDesc2} 3) {shortDesc3}.\nMi Pregunta :",
+      "linePrefill": "Tu línea de {planetSymbol} {planet} {lineTypeLabel} lleva la energía de {shortDesc}.\nMi Pregunta :"
+    },
+    "panelAsk": {
+      "buttonLabel": "Preguntar"
+    },
+    "themes": {
+      "relationships_love": {
+        "shortDesc": "Energía del amor y las relaciones",
+        "questionTemplate": "¿Qué revela {city} sobre mi amor y mis relaciones?"
+      },
+      "creativity_art": {
+        "shortDesc": "Energía de creatividad y expresión estética",
+        "questionTemplate": "¿{city} puede inspirar mi creatividad y mi sentido de la belleza?"
+      },
+      "opportunities_career": {
+        "shortDesc": "Energía de crecimiento y oportunidades",
+        "questionTemplate": "¿Es {city} un gran lugar para hacer crecer mi carrera y aprovechar oportunidades?"
+      },
+      "success_wealth": {
+        "shortDesc": "Energía de éxito profesional y riqueza",
+        "questionTemplate": "¿Puede {city} traerme éxito en la carrera y oportunidades de prosperidad?"
+      },
+      "happiness_confidence": {
+        "shortDesc": "Energía de confianza y vitalidad",
+        "questionTemplate": "¿Dónde me sentiré más feliz—y más seguro—en {city}?"
+      },
+      "emotional_security_home": {
+        "shortDesc": "Energía de seguridad emocional y pertenencia",
+        "questionTemplate": "¿{city} traerá la seguridad emocional y la comodidad que necesita mi familia?"
+      },
+      "stability_long_term": {
+        "shortDesc": "Energía de estabilidad y crecimiento a largo plazo",
+        "questionTemplate": "¿Debería mudarme a {city} y establecerme allí el resto de mi vida?"
+      },
+      "career_breakthrough": {
+        "shortDesc": "Energía de responsabilidad y avance profesional",
+        "questionTemplate": "¿{city} me ayudará a dar un salto en mi carrera?"
+      },
+      "drive_competition": {
+        "shortDesc": "Energía de impulso y ventaja competitiva",
+        "questionTemplate": "¿{city} aumentará mi motivación y mi ventaja competitiva?"
+      },
+      "communication_writing_learning": {
+        "shortDesc": "Energía de comunicación, escritura y aprendizaje",
+        "questionTemplate": "¿Podría {city} ayudarme a convertirme en un escritor de éxito?"
+      },
+      "spirituality_counselling": {
+        "shortDesc": "Energía de espiritualidad, inspiración y sanación",
+        "questionTemplate": "¿Qué pasaría si estudio consejería o terapia en {city}?"
+      },
+      "change_innovation": {
+        "shortDesc": "Energía de cambio, innovación y libertad",
+        "questionTemplate": "¿{city} traerá cambios inesperados y más libertad?"
+      },
+      "deep_transformation": {
+        "shortDesc": "Energía de transformación profunda y renacimiento",
+        "questionTemplate": "¿{city} cambiará mi vida a un nivel profundo?"
+      }
+    }
   }
 }

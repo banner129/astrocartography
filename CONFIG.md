@@ -1,209 +1,133 @@
-【目标】
- 我现在需求你，帮我生成一篇 1200–1400 字的落地页内容，既能被Google理解（SEO优化良好），
- 又能吸引真实用户（高转化率），语言自然、有可信度。
- 关键词密度控制在3%~5%%左右，避免关键词堆砌，在确保主关键词密度够的情况下，能覆盖到更多的长尾关键词；
- 必要的时候，你可以上网搜索这个关键词的用户需求和头部竞品网站的做法，来作为你的参考。
- 
-【输入信息】
- 主关键词：Birth Chart Generator
+Mike Elue
+Let me talk		2026-03-20 05:46:06	View user
 
-【细节要求】
-- 总字数：1200–1400，只计算title和description里面的字数之和是1200~1400
-- LSI 与语义词 8–12 次分散使用
-- 句子长度多样化，段落不超过 3–4 句
-- 避免陈词滥调、绝对化表述与未经证实的超大承诺
-- 我会给你我的代码模板，请按照我的代码模板的要求来写。
+Mike Elue
+Cool		2026-03-20 05:45:42	View user
 
-【代码模板】
+Mike Elue
+What can I find in New York City? Also, what about Maine or Nova Scotia	10	2026-03-20 05:45:04	View user
 
-## 2. Introduce 模块（总计 300-250 字）
+Teodora Milosavljevic
+gde je sreca, gde je posao?	10	2026-03-20 05:40:34	View user
+-	It didn't say what my rising sign is?	5	2026-03-20 03:16:18	View user
 
-**label（1-3字）：**
-- INTRODUCTION / OVERVIEW
+Naomi Sanderovsky Price
+What are the top five countries I should live in or spend a lot of time in	10	2026-03-20 00:46:14	View user
 
-**title（5-8字）：**
-- 必须包含主关键词
+Laura Gonzalez
+que son los puntos en	10	2026-03-19 23:24:04	View user
 
-**description（20-30字）：**
-- 一句话概括工具的核心能力
+Mavi Quiroga
+qué significa el sol en esta carta? a dónde voy a vivir mejor?	10	2026-03-19 19:24:46	View user
 
-**items（3个子功能卡片，每个 55-70 字）：**
+Jalna Mariche
+En que lugares es ideal para mi	10	2026-03-19 18:53:31	View user
 
-### 子功能卡片结构：
-**title（6-10字）：**
-- 强调核心特性
-- 可包含次要关键词
+Grace Kelly
+where am i happiest	10	2026-03-19 17:00:51	View user
 
-**description（45-60字）：**
-- 第1句：说明是什么（15-20字）
-- 第2句：核心优势或适用场景（30-40字）
-- 去掉过多细节，保留最打动用户的点
+Lilibeth Juárez
+Dónde encuentro el historial de chat de mi cuenta?	10	2026-03-19 16:39:54	View user
+-	Ksksk	10	2026-03-19 16:36:46	View user
+-	.	10	2026-03-19 14:31:47	View user
 
----
+Maria Fernanda Fonseca
+O que significa as cores da linhas e is pontos marcados?	10	2026-03-19 12:50:19	View user
 
-## 3. Benefit 模块（总计 280-320 字）
+Sophie Sofia
+Donde tendría más suerte en Portugal?	10	2026-03-19 08:26:46	View user
 
-**label（2-4字）：**
-- Core Benefits / Why Choose Us
+Tahira Antonia Alberte
+Mercury line	10	2026-03-19 03:28:26	View user
 
-**title（8-12字）：**
-- 必须包含主关键词
-- 以用户视角出发
+Jasmine Vasquez
+Where would the best place for emotional security for my family	10	2026-03-19 01:40:59	View user
+-	Good	10	2026-03-19 01:15:36	View user
+-	Toets voor www.tijdgeest-magazine.nl	5	2026-03-18 21:57:50	View user
 
-**description（25-35字）：**
-- 总结工具的差异化优势
+Lasse Flyvbjerg
+FUUUUUUUUCK OOOOOFFFF Hows that for feedback??	10	2026-03-18 20:49:41	View user
 
-**items（3个核心优势，每个 85-95 字）：**
+Nelson Burnett
+What is the purple line	10	2026-03-18 14:37:24	View user
 
-### 优势卡片结构：
-**title（4-6字）：**
-- 强调单个核心优势
+Taylor Crawford
+France monaco?	10	2026-03-18 11:21:40	View user
 
-**description（75-85字）：**
-- 说明优势来源和用户价值
-- 避免重复主关键词，使用代称
+m L
+nice	10	2026-03-18 11:13:38	View user
 
----
+Ar C
+Would it be better if I move to New York Boston or Chicago	10	2026-03-18 07:11:40	View user
 
+Thea Santushti
+This chart is wrong, i cannot find the right time zone in the app. I have no option of timezone that actually gets my chart on the right houses.	1	2026-03-18 06:40:21	View user
 
-## 5. Feature 模块（总计 200-240 字）
+Joy Sahyoun
+Good		2026-03-18 03:23:06	View user
 
-**label（1-2字）：**
-- FEATURES
+Joy Sahyoun
+Good	10	2026-03-18 03:22:49	View user
+-	Love this place	10	2026-03-18 02:09:31	View user
 
-**title（5-8字）：**
-- 包含主关键词
+Chloe Gunning
+Would I be a successful writer	10	2026-03-18 01:56:26	View user
 
-**description（25-35字）：**
-- 总结功能价值
+Shara Hiraoka
+Chat disappeared before I could read it	1	2026-03-18 00:03:26	View user
 
-**items（6个特性，每个 30-35 字）：**
+Meg Guynn
+Where is the best place for me to live?	10	2026-03-17 21:28:00	View user
 
-### 特性结构：
-**title（4-6字）：**
-- 清晰描述单个功能
+Gretchen O'Brien
+What cities will change my life?	10	2026-03-17 21:21:49	View user
 
-**description（24-28字）：**
-- 1-2句话说明功能作用和用户收益
-- 去掉过多技术细节
+sigei chumba
+Please pull the previous	10	2026-03-17 15:33:00	View user
 
----
+Shannan Brooke
+Love this	10	2026-03-17 15:22:00	View user
 
-## 4. Usage 模块（总计 120-150 字）
+Riona sheridan
+What is it so not user friendly and doesn’t explain stuff	1	2026-03-17 12:53:21	View user
 
+Aroua Bell
+ذكاء اصطناعي يوجد فيه مشكلة اتمنى ان تصلحو عطل	5	2026-03-17 10:42:51	View user
+-	Blah	10	2026-03-17 05:09:32	View user
 
+Princess K
+So what does this all mean where in the USA are good places for me to live and why for each category like love, career and finance , personal growth, prosperity, spirituality etc	10	2026-03-17 03:53:09	View user
 
-**title（6-10字）：**
-- 包含主关键词
+Jaden Alvarez
+what is mars mean	10	2026-03-17 03:32:59	View user
 
-**description（20-30字）：**
-- 强调简单、快速
+Sutton Fisk
+What does the pink line mean	10	2026-03-17 03:18:16	View user
 
-**items（3个步骤，每个 30-40 字）：**
+Daphne
+What if I want to study counselling? Or therapy of some sort?	10	2026-03-17 01:14:12	View user
 
-### 步骤结构：
-**title（4-6字）：**
-- 描述操作动作
+Dani E
+Where should I move to and settle down for the rest of my life	10	2026-03-16 22:50:56	View user
 
-**description（25-35字）：**
-- 说明具体操作
+Amira Malki
+What is the brown line does it have any significance with Atlanta Georgia	10	2026-03-16 22:35:54	View user
 
----
+Lovely13_girlz0
+Where does my Venus country	10	2026-03-16 17:17:53	View user
 
+Ariel Tineke
+Where am I supposed to live that would make me the happiest	10	2026-03-16 14:13:27	View user
+-	C	10	2026-03-16 12:12:04	View user
 
+Lis
+Wow	10	2026-03-16 09:13:48	View user
 
-## 6. Testimonial 模块（总计 280-320 字）
+a
+Good	10	2026-03-16 05:26:15	View user
 
-**label（1-2字）：**
-- Testimonials
+Alexandra Malina
+How do I interpret this? Where would I feel at ease	10	2026-03-16 04:39:32	View user
 
-**title（6-10字）：**
-- 包含主关键词
-
-**description（15-25字）：**
-- 引导读者查看反馈
-
-**items（6个用户评价，每个 45-50 字）：**
-
-### 评价结构：
-**title（用户名，2-4字）**
-
-**label（职业/身份，3-6字）**
-
-**description（38-45字）：**
-- 第1句：具体使用场景或遇到的问题（15-20字）
-- 第2句：使用后的具体结果或感受（20-25字）
-- 可包含1次次要关键词
-- 数据量化结果更佳（如"转化率提升38%"）
-
-**注意：评价应覆盖不同用户类型和真实使用场景**
-
----
-
-## 7. FAQ 模块（总计 600~800 字）
-
-**label（1字）：**
-- FAQ
-
-**title（3-5字）：**
-- Frequently Asked Questions
-
-**description（15-25字）：**
-- 引导用户寻求帮助
-
-**items（8个问题，每个答案 40 字以上）：**
-
-### FAQ 结构：
-
-**问题 1：是否免费/定价**
-- title（8-12字）：必须包含主关键词或次要关键词
-- description（35-42字）：详细说明免费程度、功能限制、商业授权
-
-**问题 2：支持格式/平台**
-- title（8-12字）：可包含次要关键词
-- description（35-42字）：列举具体格式，说明每种格式的适用场景
-
-**问题 3：使用门槛/技能要求**
-- title（10-15字）
-- description（35-42字）：说明零门槛特性，举例新手如何快速上手
-
-**问题 4：商业使用/版权**
-- title（8-12字）
-- description（35-42字）：明确授权范围，列举可用的商业场景
-
-**问题 5：操作流程/导出**
-- title（8-12字）
-- description（35-42字）：简要说明操作步骤和注意事项
-
-**问题 6：特色功能/支持范围**
-- title（8-12字）：可包含次要关键词
-- description（35-42字）：说明功能细节和支持范围
-
-**问题 7：其他问题
-- title（8-12字）：可包含次要关键词
-- description（42~45字）：
-
-**问题 8：其他问题
-- title（8-12字）：可包含次要关键词
-- description（35-42字）：
-
-**问题 9：其他问题
-- title（8-12字）：可包含次要关键词
-- description（35-42字）：
-
-
----
-
-## 8. CTA 模块（总计 40-60 字）
-
-**title（10-15字）：**
-- 必须包含主关键词
-- 强调"立即"、"现在"等行动词
-
-**description（30-45字）：**
-- 强化核心价值主张
-- 说明无门槛优势
-- 营造紧迫感
-
----
-
+Steph Feels
+Larwill Indiana

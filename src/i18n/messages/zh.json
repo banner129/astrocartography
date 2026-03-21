@@ -384,5 +384,87 @@
       "我的金星线揭示了什么关于关系的信息？",
       "对比我最适合爱情和事业的理想地点"
     ]
+  },
+  "astrocartographyMap": {
+    "guide": {
+      "title": "提示",
+      "text": "您可以通过缩放与拖动，查看您的线和城市红点；点击它们获取您的答案。"
+    },
+    "cityPopup": {
+      "planetsTitle": "🪐 经过行星线",
+      "quickAskTitle": "💬 快捷提问",
+      "noHitsText": "未检测到附近行星线（基于距离阈值计算）。",
+      "fallbackQuestion": "为什么 {city} 是我最适合生活的地方？"
+    },
+    "linePopup": {
+      "subtitle": "线的能量指引",
+      "shortDescTitle": "这条线会激活什么？",
+      "quickAskTitle": "💬 快捷提问",
+      "question1Template": "这条线对我意味着什么？（围绕{shortDesc}）",
+      "question2Template": "{shortDesc} 的能量会如何在我的生活里体现？",
+      "question3Template": "我该怎么做，才能更好地利用这条{shortDesc}线？"
+    },
+    "askOther": {
+      "buttonLabel": "问点别的",
+      "cityPrefill": "根据 {city}（{country}）附近激活的行星线能量，你的盘面主要呈现这些主题：1）{shortDesc1} 2）{shortDesc2} 3）{shortDesc3}。\n我的问题：",
+      "linePrefill": "你的 {planetSymbol} {planet} {lineTypeLabel} 线对应的能量是：{shortDesc}。\n我的问题："
+    },
+    "panelAsk": {
+      "buttonLabel": "问"
+    },
+    "themes": {
+      "relationships_love": {
+        "shortDesc": "美感与人际关系能量",
+        "questionTemplate": "{city}会如何影响我的感情和人际关系？"
+      },
+      "creativity_art": {
+        "shortDesc": "创意与艺术表达能量",
+        "questionTemplate": "{city}能激发我的创意和美感吗？"
+      },
+      "opportunities_career": {
+        "shortDesc": "机遇与成长能量",
+        "questionTemplate": "{city}是否适合我开启事业机会与成长？"
+      },
+      "success_wealth": {
+        "shortDesc": "事业成功与财富能量",
+        "questionTemplate": "{city}能带给我事业成功与财富机遇吗？"
+      },
+      "happiness_confidence": {
+        "shortDesc": "自信与幸福感能量",
+        "questionTemplate": "在{city}我会更快乐、更自信吗？"
+      },
+      "emotional_security_home": {
+        "shortDesc": "情感安全与归属感能量",
+        "questionTemplate": "{city}能给我的家庭带来情感安全感与舒适吗？"
+      },
+      "stability_long_term": {
+        "shortDesc": "长期稳定与积累能量",
+        "questionTemplate": "我应该搬到{city}并在这里定居度过余生吗？"
+      },
+      "career_breakthrough": {
+        "shortDesc": "责任与职业突破能量",
+        "questionTemplate": "{city}能帮助我在职业上获得突破吗？"
+      },
+      "drive_competition": {
+        "shortDesc": "行动力与竞争力能量",
+        "questionTemplate": "{city}会激发我的行动力和竞争优势吗？"
+      },
+      "communication_writing_learning": {
+        "shortDesc": "沟通、写作与学习能量",
+        "questionTemplate": "{city}能让我成为一名成功的作家吗？"
+      },
+      "spirituality_counselling": {
+        "shortDesc": "灵性、启发与疗愈能量",
+        "questionTemplate": "如果我想在{city}学习咨询或治疗，会怎样？"
+      },
+      "change_innovation": {
+        "shortDesc": "变革与创新自由能量",
+        "questionTemplate": "{city}会给我带来意想不到的改变和更多自由吗？"
+      },
+      "deep_transformation": {
+        "shortDesc": "深度转化与重生能量",
+        "questionTemplate": "{city}会在更深层面改变我的人生吗？"
+      }
+    }
   }
 }

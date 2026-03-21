@@ -21,6 +21,12 @@ import { detectLanguage } from '@/lib/astro-format';
 interface AstroChatProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  // 当外部（例如城市快捷提问）传入问题时，自动填入并发送
+  autoSendQuestion?: string | null;
+  autoSendQuestionKey?: number;
+  // Ask Other：仅覆盖输入框，不自动发送
+  askOtherPrefillText?: string | null;
+  askOtherPrefillKey?: number;
   chartData: {
     birthData: {
       date: string;
@@ -43,10 +49,22 @@ interface AstroChatProps {
 
 const FREE_QUESTIONS_LIMIT = 1; // 免费问题数量限制
 
-export default function AstroChat({ open, onOpenChange, chartData, user, onRequireLogin }: AstroChatProps) {
+export default function AstroChat({
+  open,
+  onOpenChange,
+  autoSendQuestion,
+  autoSendQuestionKey = 0,
+  askOtherPrefillText,
+  askOtherPrefillKey = 0,
+  chartData,
+  user,
+  onRequireLogin
+}: AstroChatProps) {
   const isDesktop = useMediaQuery('(min-width: 768px)');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const lastAutoSentKeyRef = useRef<number>(0);
+  const lastAskOtherKeyRef = useRef<number>(0);
   const [showSuggestions, setShowSuggestions] = useState(true);
   const [creditCost, setCreditCost] = useState<number>(10); // 默认 10 积分
   const [userCredits, setUserCredits] = useState<number | null>(null); // 用户积分余额
@@ -783,6 +801,48 @@ export default function AstroChat({ open, onOpenChange, chartData, user, onRequi
       content: question,
     });
   };
+
+  // 外部触发的自动提问：在对话打开时、且 key 发生变化时触发发送。
+  useEffect(() => {
+    if (!open) return;
+    if (!autoSendQuestion) return;
+    if (!autoSendQuestionKey || autoSendQuestionKey <= 0) return;
+    if (lastAutoSentKeyRef.current === autoSendQuestionKey) return;
+
+    lastAutoSentKeyRef.current = autoSendQuestionKey;
+    handleSuggestedQuestionClick(autoSendQuestion);
+  }, [open, autoSendQuestion, autoSendQuestionKey, handleSuggestedQuestionClick]);
+
+  // Ask Other：在对话打开时、且 key 发生变化时覆盖输入框，不自动发送
+  useEffect(() => {
+    if (!open) return;
+    if (!askOtherPrefillText) return;
+    if (!askOtherPrefillKey || askOtherPrefillKey <= 0) return;
+    if (lastAskOtherKeyRef.current === askOtherPrefillKey) return;
+
+    lastAskOtherKeyRef.current = askOtherPrefillKey;
+
+    // useChat 没有直接的 setInput，这里复用 handleInputChange 来覆盖 textarea 的 value
+    const syntheticEvent = {
+      target: {
+        value: askOtherPrefillText,
+      },
+    };
+
+    handleInputChange(syntheticEvent as any);
+
+    // 移动端 focus 可能触发浏览器自动滚动到输入框附近，导致欢迎区/建议区高度看起来变窄
+    // 这里尝试用 preventScroll 保持当前滚动位置不被打断。
+    setTimeout(() => {
+      const el = textareaRef.current;
+      if (!el) return;
+      try {
+        (el as any).focus?.({ preventScroll: true });
+      } catch {
+        el.focus();
+      }
+    }, 0);
+  }, [open, askOtherPrefillText, askOtherPrefillKey, handleInputChange]);
 
   // 聊天内容组件（复用）
   const chatContent = (
