@@ -72,8 +72,6 @@ type CityPopupThemeKey =
 type LinePopupState = {
   planet: string;
   type: PlanetLine['type'];
-  // 仅用于定位（来自点击时的 latlng）
-  position: { left: number; top: number };
 } | null;
 
 function getLineCategoryKey(type: PlanetLine['type']): LineCategoryKey {
@@ -239,7 +237,6 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
     lat: number;
     lng: number;
   } | null>(null);
-  const [popupPosition, setPopupPosition] = useState<{ left: number; top: number } | null>(null);
 
   const [selectedLinePopup, setSelectedLinePopup] = useState<LinePopupState>(null);
 
@@ -401,7 +398,6 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
       // 城市点击：展示 React 覆盖弹窗（不使用 Leaflet bindPopup）
       cityMarker.on('click', () => {
         dismissGuide();
-        const point = map.latLngToContainerPoint([city.lat, city.lng]);
         const nextCity = {
           name: city.name,
           country: city.country,
@@ -417,11 +413,9 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
             prev?.lng === nextCity.lng;
 
           if (isSame) {
-            setPopupPosition(null);
             return null;
           }
 
-          setPopupPosition({ left: point.x, top: point.y });
           return nextCity;
         });
       });
@@ -525,24 +519,16 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
           );
         });
 
-        polyline.on('click', (e) => {
+        polyline.on('click', () => {
           dismissGuide();
           setSelectedLineId((prev) => (prev === lineId ? null : lineId));
 
-          // Line guidance popup: open a React overlay anchored at click position
-          // Leaflet provides latlng via the click event.
-          const latlng = (e as any)?.latlng;
-          if (latlng && mapRef.current) {
-            closeCityPopup();
-            setSelectedLinePopup({
-              planet,
-              type: line.type,
-              position: (() => {
-                const point = mapRef.current!.latLngToContainerPoint([latlng.lat, latlng.lng]);
-                return { left: point.x, top: point.y };
-              })(),
-            });
-          }
+          // Keep popup fixed in viewport center for stable UX on map drag/zoom.
+          closeCityPopup();
+          setSelectedLinePopup({
+            planet,
+            type: line.type,
+          });
         });
       });
     });
@@ -704,7 +690,6 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
 
   const closeCityPopup = useCallback(() => {
     setSelectedCity(null);
-    setPopupPosition(null);
   }, []);
 
   const closeLinePopup = useCallback(() => {
@@ -736,39 +721,14 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
       setSelectedLinePopup({
         planet,
         type: defaultType,
-        // Position isn't used by the overlay layout (it is centered fixed),
-        // but the state type requires it.
-        position: { left: 0, top: 0 },
       });
     },
     [closeCityPopup, dismissGuide, lineTypeVisibility]
   );
 
-  // 在地图缩放/移动时，保持城市弹窗锚点跟随（类似 Leaflet popup 的定位体验）
-  useEffect(() => {
-    if (!selectedCity) return;
-    if (!mapRef.current) return;
-
-    const map = mapRef.current;
-
-    const update = () => {
-      const point = map.latLngToContainerPoint([selectedCity.lat, selectedCity.lng]);
-      setPopupPosition({ left: point.x, top: point.y });
-    };
-
-    update();
-    map.on('move', update);
-    map.on('zoom', update);
-    return () => {
-      map.off('move', update);
-      map.off('zoom', update);
-    };
-  }, [selectedCity]);
-
   // 出生信息变化时：重置城市弹窗
   useEffect(() => {
     setSelectedCity(null);
-    setPopupPosition(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [birthData.latitude, birthData.longitude]);
 
@@ -973,15 +933,16 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
         </div>
       )}
 
-      {/* City quick-ask popup (React overlay) */}
-      {selectedCity && popupPosition && (
+      {/* City quick-ask popup (fixed center modal to avoid map-drag conflicts) */}
+      {selectedCity && (
         <div
-          className={`absolute z-[1200] pointer-events-auto -translate-x-1/2 ${
-            popupPosition.top < 220 ? 'translate-y-3' : '-translate-y-full -mt-2'
-          }`}
-          style={{ left: popupPosition.left, top: popupPosition.top }}
+          className="absolute inset-0 z-[1250] pointer-events-auto bg-black/25"
+          onClick={closeCityPopup}
         >
-          <div className="w-[300px] max-w-[85vw] rounded-xl overflow-hidden border border-white/15 bg-black/85 shadow-2xl backdrop-blur-sm">
+          <div
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] max-w-[85vw] rounded-xl overflow-hidden border border-white/15 bg-black/85 shadow-2xl backdrop-blur-sm"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Header: city name */}
             <div className="px-4 py-3 flex items-center justify-between bg-black/60">
               <div className="min-w-0">
@@ -1031,54 +992,15 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
         </div>
       )}
 
-      {/* Line guidance popup */}
-      {selectedLinePopup && (() => {
-        const { left: clickLeft, top: clickTop } = selectedLinePopup.position;
-        const fromPanel = clickLeft === 0 && clickTop === 0;
-
-        // Mobile: fixed bottom-center (above Ask AI button)
-        if (isMobile) {
-          return (
-            <div className="absolute z-[1250] pointer-events-auto bottom-[88px] left-1/2 -translate-x-1/2">
-              <LinePopupCard
-                selectedLinePopup={selectedLinePopup}
-                t={t}
-                closeLinePopup={closeLinePopup}
-                selectedLineQuestions={selectedLineQuestions}
-                onAskOther={onAskOther}
-              />
-            </div>
-          );
-        }
-
-        // Desktop: near click point (smart above/below), or center if opened from panel
-        if (fromPanel) {
-          return (
-            <div
-              className="absolute z-[1250] pointer-events-auto"
-              style={{ left: '50%', top: '35%', transform: 'translate(-50%, -50%)' }}
-            >
-              <LinePopupCard
-                selectedLinePopup={selectedLinePopup}
-                t={t}
-                closeLinePopup={closeLinePopup}
-                selectedLineQuestions={selectedLineQuestions}
-                onAskOther={onAskOther}
-              />
-            </div>
-          );
-        }
-
-        // Desktop: anchor near the clicked point, flip above if click is in lower half
-        const showAbove = clickTop > 320;
-        return (
+      {/* Line guidance popup (fixed center modal to avoid map-drag conflicts) */}
+      {selectedLinePopup && (
+        <div
+          className="absolute inset-0 z-[1250] pointer-events-auto bg-black/25"
+          onClick={closeLinePopup}
+        >
           <div
-            className="absolute z-[1250] pointer-events-auto"
-            style={{
-              left: clickLeft,
-              top: showAbove ? clickTop - 8 : clickTop + 8,
-              transform: showAbove ? 'translate(-50%, -100%)' : 'translate(-50%, 0)',
-            }}
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            onClick={(e) => e.stopPropagation()}
           >
             <LinePopupCard
               selectedLinePopup={selectedLinePopup}
@@ -1088,8 +1010,8 @@ export default function AstrocartographyMap({ birthData, planetLines = [], onAsk
               onAskOther={onAskOther}
             />
           </div>
-        );
-      })()}
+        </div>
+      )}
 
       {/* Panel toggle button (shown when panel is closed) */}
       {!isPanelOpen && (
