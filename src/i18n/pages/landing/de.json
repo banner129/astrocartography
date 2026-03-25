@@ -63,6 +63,13 @@
               "url": "/transit-chart-calculator",
               "target": "_self",
               "icon": "RiTimeLine"
+            },
+            {
+              "title": "Relocation Chart Rechner",
+              "description": "Gleicher Geburtsmoment, neue Stadt—Häuser und Aszendent vergleichen",
+              "url": "/relocation-chart-calculator",
+              "target": "_self",
+              "icon": "RiFlightTakeoffLine"
             }
           ]
         },

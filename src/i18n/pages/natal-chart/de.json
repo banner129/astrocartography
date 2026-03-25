@@ -13,7 +13,7 @@
       {
         "text": "Weltkarten-Version Ihres Geburtshoroskops?",
         "linkText": "Astrokartografie ausprobieren",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Einfachen Geburtshoroskop-Generator benötigt?",
@@ -203,7 +203,7 @@
       {
         "title": "Wo Ihr Geburtshoroskop wirkt → Astrokartografie",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

@@ -13,7 +13,7 @@
       {
         "text": "Quer a versão em mapa do mundo do seu mapa astral?",
         "linkText": "Experimente Astrocartografia",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Precisa de um gerador de carta natal simples?",
@@ -203,7 +203,7 @@
       {
         "title": "Onde seu mapa astral se ativa → Astrocartografia",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

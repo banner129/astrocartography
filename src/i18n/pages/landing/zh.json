@@ -63,6 +63,13 @@
               "url": "/transit-chart-calculator",
               "target": "_self",
               "icon": "RiTimeLine"
+            },
+            {
+              "title": "移居盘计算器",
+              "description": "同一出生时刻换城市，对比上升点与宫位",
+              "url": "/relocation-chart-calculator",
+              "target": "_self",
+              "icon": "RiFlightTakeoffLine"
             }
           ]
         },

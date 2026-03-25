@@ -65,6 +65,14 @@ Allow: /pt/transit-chart-calculator
 Allow: /it/transit-chart-calculator
 Allow: /de/transit-chart-calculator
 
+# 允许 Relocation Chart Calculator 页面
+Allow: /relocation-chart-calculator
+Allow: /zh/relocation-chart-calculator
+Allow: /es/relocation-chart-calculator
+Allow: /pt/relocation-chart-calculator
+Allow: /it/relocation-chart-calculator
+Allow: /de/relocation-chart-calculator
+
 # 允许 Natal Chart 页面（/chart 下仅开放此路径，其余仍 Disallow）
 Allow: /chart/natal-chart
 Allow: /zh/chart/natal-chart

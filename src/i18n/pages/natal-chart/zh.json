@@ -13,7 +13,7 @@
       {
         "text": "想看本命盘在世界地图上的投射？",
         "linkText": "试试 Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "只想简单生成一张本命盘？",
@@ -212,7 +212,7 @@
       {
         "title": "在世界地图上查看你的本命盘 → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

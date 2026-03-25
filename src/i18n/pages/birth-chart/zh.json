@@ -13,7 +13,7 @@
       {
         "text": "想看世界地图版本？",
         "linkText": "试试 Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "想看教程与示例？",
@@ -214,7 +214,7 @@
       {
         "title": "在世界地图上查看 → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

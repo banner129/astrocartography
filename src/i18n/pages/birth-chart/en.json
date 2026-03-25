@@ -13,7 +13,7 @@
       {
         "text": "Want the world‑map version?",
         "linkText": "Try Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Only need your ascendant?",
@@ -219,7 +219,7 @@
       {
         "title": "See your chart on the world map → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

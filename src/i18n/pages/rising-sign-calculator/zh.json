@@ -18,7 +18,7 @@
       {
         "text": "探索你的星盘在全球何处更易发挥。",
         "linkText": "星盘地图计算器",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       }
     ]
   },
@@ -193,7 +193,7 @@
       {
         "title": "在全球地图上探索我的星盘 → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

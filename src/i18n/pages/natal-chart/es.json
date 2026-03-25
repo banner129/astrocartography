@@ -13,7 +13,7 @@
       {
         "text": "¿Quieres la versión en mapa del mundo de tu carta natal?",
         "linkText": "Prueba Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "¿Necesitas un generador de carta natal sencillo?",
@@ -203,7 +203,7 @@
       {
         "title": "Ver dónde se activa tu carta natal → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

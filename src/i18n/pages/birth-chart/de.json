@@ -13,7 +13,7 @@
       {
         "text": "Weltkarten-Version gewünscht?",
         "linkText": "Astrokartografie ausprobieren",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Nur Ihren Aszendenten benötigt?",
@@ -210,7 +210,7 @@
       {
         "title": "Ihr Chart auf der Weltkarte → Astrokartografie",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

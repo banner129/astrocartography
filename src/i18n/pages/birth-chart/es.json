@@ -13,7 +13,7 @@
       {
         "text": "¿Quieres la versión con mapa del mundo?",
         "linkText": "Prueba Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "¿Prefieres tutoriales y ejemplos?",
@@ -214,7 +214,7 @@
       {
         "title": "Ver en el mapa mundial → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

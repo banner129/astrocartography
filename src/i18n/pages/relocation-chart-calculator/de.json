@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Relokationshoroskop kostenlos | Städte vergleichen",
+    "description": "Kostenloser Rechner: gleicher Geburtsmoment, neue Stadt. Vergleichen Sie Aszendent und ganze Zeichenhäuser (Geburtsort vs. Zielort). Ohne Anmeldung.",
+    "keywords": "Relokationshoroskop, Horoskop anderer Ort, Umzugsastrologie, Astrologie-Rechner, Aszendent, ganze Zeichenhäuser, Astrocartographie"
+  },
+  "intentAnchor": {
+    "text": "Sie möchten wissen, wie sich Ihr Horoskop an einem anderen Wohnort anfühlt? Zuerst das Werkzeug: Geburtsdatum, -uhrzeit und -ort eintragen, dann die Stadt, in die Sie ziehen könnten. Wir halten denselben kosmischen Moment fest und berechnen Winkel und Häuser neu für die neuen Koordinaten — so sehen Sie, wie sich Lebensthemen nach dem Ortswechsel verschieben."
+  },
+  "internalLinks": {
+    "title": "Verwandte Tools",
+    "items": [
+      {
+        "text": "Haupteinstieg: Weltkarte und Haupt-Rechner.",
+        "linkText": "Startseite",
+        "url": "/"
+      },
+      {
+        "text": "Transite zur Radix sehen.",
+        "linkText": "Transit-Rechner",
+        "url": "/transit-chart-calculator"
+      },
+      {
+        "text": "Planetenlinien auf dem Globus.",
+        "linkText": "Astrocartographie-Rechner",
+        "url": "/"
+      },
+      {
+        "text": "Vollrad am Geburtsort.",
+        "linkText": "Geburtshoroskop",
+        "url": "/chart/natal-chart"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Was ist ein Relokationshoroskop",
+    "label": "EINFÜHRUNG",
+    "description": "Ein Relokationshoroskop beantwortet: Wenn ich Geburtsdatum und Uhrzeit beibehalte, aber den Geburtsort durch eine andere Stadt ersetze — wie verändert sich das Rad? Die ekliptikalen Längen der Planeten bleiben gleich: Sonne, Mond und Planeten in denselben Zeichen und Graden, denn der Zeitpunkt ist derselbe. Was sich ändert, sind die Winkel und das System der ganzen Zeichenhäuser, das sich mit dem neuen Aszendenten dreht. Unser kostenloser Rechner zeigt den Aszendenten am Geburtsort neben dem am Zielort und für jeden Planeten das Haus am Geburtsort gegenüber dem Haus nach der Relokation. Ideal zum Vergleich zweier Städte vor Umzug, längerem Aufenthalt oder digitalem Nomadentum. Anders als die Astrocartographie: Die Karte zeigt Linien weltweit; die Relokation fixiert einen einzigen alternativen Ort für denselben Moment. Beides ergänzt sich.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Relokations-Rechner: Geburtsstadt und neue Stadt"
+    },
+    "items": [
+      {
+        "title": "Warum Relokation wichtig ist",
+        "description": "Viele entdecken sie bei Umzugsplänen. Wechsel von Winkeln und Häusern betonen Themen wie Beruf, Partnerschaft und Wurzeln. Kein Ersatz für Rechts- oder Finanzberatung, aber eine strukturierte Frage: Wie könnte sich mein Rad in Paris, Tokio oder der Heimatstadt anfühlen? Wir nutzen denselben astronomischen Ansatz wie bei unseren Geburts-Tools: geozentrische Längen und klare ganze Zeichenhäuser.",
+        "image": { "src": "/imgs/features/1.webp", "alt": "Sinn der Relokation" }
+      },
+      {
+        "title": "Relokation und Astrocartographie-Karte",
+        "description": "Astrocartographie zeichnet Planetenlinien auf der Erde. Relokation wählt einen neuen Punkt und baut das Rad für diesen Punkt neu. Wer Karten liebt, geht danach zur Astrocartographie; wer Tabelle und Winkel für ein Ziel will, ist mit Relokation schneller. Nach dem Rechnen öffnen Sie die Weltkarte per Klick mit denselben Geburtsdaten.",
+        "image": { "src": "/imgs/features/2.webp", "alt": "Relokation versus Astrocartographie" }
+      },
+      {
+        "title": "So rechnen wir",
+        "description": "Sie geben Geburtsdaten und Zielstadt ein. Wir wandeln die lokale Geburtszeit in UTC um, berechnen den Aszendenten auf den Geburtskoordinaten und erneut auf den Zielkoordinaten. Planeten gelten für denselben UTC-Moment. Häuser folgen ganzen Zeichen vom jeweiligen Aszendenten. In der Tabelle: Zeichen und Grad einmal, zwei Hausspalten.",
+        "image": { "src": "/imgs/features/3.webp", "alt": "Berechnung Relokation" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Warum unseren Rechner nutzen",
+    "label": "Vorteile",
+    "description": "Kostenlos, schnell und auf unseren Astrocartographie-Workflow abgestimmt.",
+    "items": [
+      {
+        "title": "Echte Relokationslogik",
+        "description": "Derselbe UTC-Moment, zwei Breiten- und Längengrade, zwei Aszendenten, zwei Hausverteilungen. Die Tabelle zeigt, wie sich die Hauszuordnung jedes Planeten am neuen Ort ändert.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Präzises Relokationshoroskop" }
+      },
+      {
+        "title": "Kostenlos, ohne Registrierung",
+        "description": "So oft rechnen wie Sie wollen und mehrere Städte testen. Daten bleiben in Ihrer Seitensitzung.",
+        "icon": "RiGiftLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Kostenloser Rechner" }
+      },
+      {
+        "title": "Für Umziehende und Langzeitreisende",
+        "description": "Digitale Nomaden, Auslandssemester und Umzugsplaner vergleichen Orte mit Relokation. Danach öffnen Sie die Astrocartographie mit denselben Daten.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Umzug und Reise" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Bedienung des Rechners",
+    "label": "ANWENDUNG",
+    "description": "Vier Schritte: Geburtsdaten, Zielstadt, Auswertung, optional Karte.",
+    "items": [
+      {
+        "title": "Geburtsangaben eintragen",
+        "description": "Wie bei seriöser Radixarbeit: Relokation braucht korrekte Ortszeit und Zeitzone bei der Geburt.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Zielort wählen",
+        "description": "Stadt oder Region eingeben, die Sie prüfen. Sie können die Stadt wechseln und in einer Sitzung mehrfach neu rechnen.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Relokationsergebnis lesen",
+        "description": "Aszendenten vergleichen und die beiden Hausspalten je Planet ansehen. Große Sprünge markieren oft Lebensfelder, die sich nach dem Umzug anders anfühlen.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Astrocartographie öffnen (optional)",
+        "description": "Der Button unter dem Ergebnis öffnet die Weltkarte mit Ihren Geburtsdaten. Relokation zeigt die Raddrehung; die Karte die geografischen Linien.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funktionen",
+    "label": "MERKMALE",
+    "description": "Alles für eine praktische Relokationssitzung online.",
+    "items": [
+      {
+        "title": "Zwei Aszendenten",
+        "description": "Aszendent bei Geburt und am Zielort, mit Zeichen und Grad auf einen Blick.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Geburts- vs. Relokationshäuser",
+        "description": "Jeder Planet mit Haus in ganzen Zeichen am Ursprungsort und am neuen Ort.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Stadt oder Koordinaten",
+        "description": "Breite und Länge für Geburt oder Ziel einfügbar; sonst hilft die Stadtsuche.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Ein Klick zur Karte",
+        "description": "Nach dem Rechnen direkt ins Karten-Tool mit denselben Geburtsdaten.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Zeitzone der Geburt",
+        "description": "Wählen Sie die Zone am Geburtsort; wir wandeln in UTC um, bevor Winkel neu berechnet werden.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Mehrere Städte vergleichen",
+        "description": "Kein Limit für Neuberechnungen — ideal zur Vorauswahl vor dem Umzug.",
+        "icon": "RiRefreshLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Häufige Fragen — Relokationshoroskop",
+    "description": "Typische Fragen zum Horoskop für einen anderen Ort und zu diesem Rechner.",
+    "items": [
+      {
+        "title": "Was ist ein Relokationshoroskop?",
+        "description": "Der Geburtsmoment bleibt fest, der Ort auf der Erde für Winkel und Häuser ändert sich. Planetenzeichen und -grade bleiben; die Radorientierung ändert sich. Wir zeigen zwei Aszendenten und zwei Hausspalten."
+      },
+      {
+        "title": "Ist es kostenlos?",
+        "description": "Ja, beliebig oft ohne Konto. Andere KI-Lesungen auf der Seite können Credits nutzen; die Daten dieses Rechners sind gratis."
+      },
+      {
+        "title": "Ändern sich die Planeten?",
+        "description": "Nein. Geozentrische ekliptikale Längen bleiben gleich; nur Winkel und abgeleitete Häuser ändern sich — üblich in Relokationsarbeit."
+      },
+      {
+        "title": "Unterschied zur Astrocartographie?",
+        "description": "Astrocartographie betont Linien über viele Längen; Relokation fokussiert eine gewählte Stadt und die Haustabelle. Ergänzen sich."
+      },
+      {
+        "title": "Welches Haussystem?",
+        "description": "Ganze Zeichenhäuser vom Aszendenten je Ort — gut lesbar und online für Relokationsvergleiche verbreitet."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Relokation rechnen, dann die Karte sehen",
+    "description": "Nutzen Sie den kostenlosen Rechner oben, dann Planetenlinien am Globus mit denselben Geburtsdaten.",
+    "buttons": [
+      {
+        "title": "Astrocartographie-Rechner öffnen",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Geburtsdatum",
+      "birthTime": "Geburtszeit (möglichst genau)",
+      "birthLocation": "Geburtsort",
+      "timezone": "Zeitzone am Geburtsort",
+      "relocateLocation": "Zielstadt (wo Sie leben könnten)",
+      "submit": "Relokationshoroskop berechnen"
+    },
+    "result": {
+      "title": "Ihr Relokationshoroskop",
+      "relocateLabel": "Relokationsort",
+      "natalAscTitle": "Aszendent bei Geburt",
+      "relocatedAscTitle": "Aszendent am Zielort",
+      "tableTitle": "Planeten: Geburts- vs. Relokationshäuser",
+      "planet": "Planet",
+      "sign": "Zeichen",
+      "degree": "Grad",
+      "natalHouse": "Haus (Geburt)",
+      "relocatedHouse": "Haus (relokiert)",
+      "ctaChart": "Astrocartographie-Karte mit diesen Daten",
+      "footnote": "Ganze Zeichenhäuser. Planetenlängen sind identisch; nur Winkel und Häuser ändern sich."
+    },
+    "errors": {
+      "required": "Bitte Geburtsdaten und Zielstadt ausfüllen.",
+      "location": "Ort nicht gefunden. Versuchen Sie „Stadt, Land“.",
+      "generic": "Berechnung fehlgeschlagen. Bitte Daten prüfen."
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Free Relocation Chart Calculator | Compare Cities",
+    "description": "Free relocation chart calculator: same birth moment, new city. Compare Ascendant and whole-sign houses (birth vs relocation). Unlimited free use.",
+    "keywords": "relocation chart, relocation chart calculator, free relocation chart, relocated chart, relocation astrology, astrocartography, natal chart relocation"
+  },
+  "intentAnchor": {
+    "text": "Looking for a Relocation Chart Calculator? This page puts the tool first. Enter your birth date, time, and birthplace, then choose a city you might move to. The relocation chart uses the same cosmic moment as your birth but recalculates angles and houses for the new coordinates—so you see how life areas reorder when you relocate."
+  },
+  "internalLinks": {
+    "title": "Related Tools",
+    "items": [
+      {
+        "text": "Main entry: free map and core calculator.",
+        "linkText": "Home",
+        "url": "/"
+      },
+      {
+        "text": "Compare timing with transits.",
+        "linkText": "Transit Chart Calculator",
+        "url": "/transit-chart-calculator"
+      },
+      {
+        "text": "See where lines fall on the globe.",
+        "linkText": "Try Astrocartography",
+        "url": "/"
+      },
+      {
+        "text": "Full wheel at birthplace.",
+        "linkText": "Natal Chart",
+        "url": "/chart/natal-chart"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What Is a Relocation Chart",
+    "label": "INTRODUCTION",
+    "description": "A relocation chart answers a precise question: if I keep the same birth date and clock time but imagine I was born in another city, how does my chart change? The relocation chart keeps planetary longitudes the same—Sun, Moon, and planets stay in the same zodiac signs and degrees—because the moment in time is unchanged. What does change in a relocation chart are the angles (Ascendant, Descendant, Midheaven, IC in a full wheel) and therefore the house system: whole-sign houses rotate with the new Ascendant. Our free relocation chart calculator shows your birth-location Ascendant side by side with the relocated Ascendant, and lists every planet with natal house versus relocated house. That makes the relocation chart ideal for comparing two cities before a move, a long trip, or a digital-nomad stint. The relocation chart is different from astrocartography: the map shows planetary lines worldwide; the relocation chart shows one alternate birthplace for the same instant. Use both together—the relocation chart for how the whole wheel reorganizes, astrocartography for geographic emphasis.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Relocation chart calculator comparing birth city and new city"
+    },
+    "items": [
+      {
+        "title": "Why the Relocation Chart Matters",
+        "description": "Most people discover the relocation chart when they plan to leave home. The relocation chart highlights which life topics gain angular emphasis after relocation—career angles, relationship angles, roots and family—because houses are tied to those themes. A relocation chart does not replace legal or financial advice, but it is a structured way to ask how your chart might feel in Paris versus Tokyo versus your hometown. Our relocation chart calculator uses the same astronomical approach as our birth tools: geocentric longitudes and a clear whole-sign house model so the relocation chart stays easy to read.",
+        "image": { "src": "/imgs/features/1.webp", "alt": "Why use a relocation chart" }
+      },
+      {
+        "title": "Relocation Chart vs Astrocartography Map",
+        "description": "Astrocartography draws where each planet’s lines run on Earth. A relocation chart instead fixes one new spot and redraws the wheel for that spot. If you already love maps, run astrocartography next; if you want a table and angles for one destination, the relocation chart is faster. Many serious students keep both: relocation chart for the snapshot, astrocartography for the route. This page’s relocation chart calculator links you to the map with one click after you calculate.",
+        "image": { "src": "/imgs/features/2.webp", "alt": "Relocation chart versus astrocartography" }
+      },
+      {
+        "title": "How We Build Your Relocation Chart",
+        "description": "You enter birth data and a relocation city. We convert your birth clock time to UTC, then compute the Ascendant at your birth coordinates and again at the relocation coordinates. Planets are evaluated at that same UTC instant. Houses follow whole signs from each Ascendant, which is standard for a readable relocation chart on the web. The relocation chart output shows planet sign and degree once, with two house columns—natal and relocated—so you instantly see what moved.",
+        "image": { "src": "/imgs/features/3.webp", "alt": "How relocation chart is calculated" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Use Our Relocation Chart Calculator",
+    "label": "Core Benefits",
+    "description": "The relocation chart calculator is free, fast, and designed to pair with our Astrocartography workflow.",
+    "items": [
+      {
+        "title": "True Relocation Chart Logic",
+        "description": "This is a real relocation chart, not a generic horoscope. Same UTC moment, two latitudes and longitudes, two Ascendants, two house layouts. The relocation chart table shows exactly how each planet’s house assignment changes when you relocate.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Accurate relocation chart" }
+      },
+      {
+        "title": "Free Relocation Chart, No Signup",
+        "description": "Generate a relocation chart as often as you like. Try multiple cities before you decide. The relocation chart stays on your device until you leave the page—privacy-friendly and friction-free.",
+        "icon": "RiGiftLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Free relocation chart calculator" }
+      },
+      {
+        "title": "Built for Movers and Travelers",
+        "description": "Digital nomads, students abroad, and relocation planners all use the relocation chart to compare vibes between places. After the relocation chart, open Astrocartography to see planetary lines for the same birth data.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Relocation chart for travelers" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Use the Relocation Chart Calculator",
+    "label": "HOW TO USE",
+    "description": "Four steps to your relocation chart: birth data, relocation city, results, optional map.",
+    "items": [
+      {
+        "title": "Enter Birth Information",
+        "description": "Use the same precision you would for any natal work. The relocation chart depends on correct local time and time zone at birth. If you only know a date, results are less reliable—try to add time and city.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Choose Relocation Location",
+        "description": "Type the city or region you are considering. The relocation chart recalculates angles for that spot. You can switch cities and recalculate to compare several relocation charts in one session.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Read Your Relocation Chart",
+        "description": "Compare Ascendants and scan the house column pair for each planet. Big house jumps in the relocation chart often mark the themes that will feel different after you move.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Open Astrocartography (Optional)",
+        "description": "Use the button below your relocation chart to launch the world map with your birth data. The relocation chart shows the wheel-style shift; the map shows geographic lines.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Relocation Chart Calculator Features",
+    "label": "FEATURES",
+    "description": "Everything you need for a practical relocation chart session online.",
+    "items": [
+      {
+        "title": "Dual Ascendant Display",
+        "description": "See birth Ascendant and relocated Ascendant with sign and degree. The relocation chart makes the angular shift obvious at a glance.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Natal vs Relocated Houses",
+        "description": "Each planet lists natal house and relocated house using whole signs. This is the core deliverable of the relocation chart for most users.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Coordinates or City Name",
+        "description": "Optionally paste latitude and longitude for birth or relocation when you already have them—useful for remote places. Otherwise autocomplete handles city search.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "One-Click to Astrocartography",
+        "description": "After the relocation chart, jump to our map tool with the same birth parameters to continue location research.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Timezone-Accurate Birth Moment",
+        "description": "Pick the timezone that matches your birthplace when you were born. The relocation chart converts local birth time to the correct UTC instant before recalculating angles—so your relocation chart stays aligned with serious natal work.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Compare Cities in One Session",
+        "description": "Generate a relocation chart, then change the relocation city and calculate again. There is no limit on how many places you can try, which makes this relocation chart calculator ideal for shortlisting destinations before you move.",
+        "icon": "RiRefreshLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Relocation Chart Calculator — Frequently Asked Questions",
+    "description": "Common questions about the relocation chart and how this calculator works.",
+    "items": [
+      {
+        "title": "What is a relocation chart?",
+        "description": "A relocation chart keeps your birth moment fixed in time but changes the place on Earth used to calculate angles and houses. Planetary signs and degrees stay the same; the wheel’s orientation changes. Our calculator shows that shift with two Ascendants and two house columns."
+      },
+      {
+        "title": "Is this relocation chart calculator free?",
+        "description": "Yes. You can run the relocation chart as many times as you want without an account. Premium AI readings elsewhere on the site use credits; the relocation chart data itself is free."
+      },
+      {
+        "title": "Does a relocation chart change my planets?",
+        "description": "No. In this relocation chart model, geocentric ecliptic longitudes are unchanged. Only angles and derived houses change, which is standard for relocation work."
+      },
+      {
+        "title": "How is this different from astrocartography?",
+        "description": "Astrocartography maps many locations at once via lines. A relocation chart focuses on one chosen city and shows the reorganized houses. They answer different questions; use both for a full picture."
+      },
+      {
+        "title": "What house system does the relocation chart use?",
+        "description": "We use whole-sign houses from the Ascendant at each location. It is readable and widely used for relocation-style comparisons online."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Get Your Relocation Chart, Then See the Map",
+    "description": "Use the free relocation chart calculator above, then explore planetary lines on the globe with Astrocartography—same birth data, seamless workflow.",
+    "buttons": [
+      {
+        "title": "Try Astrocartography",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Birth date",
+      "birthTime": "Birth time (exact if possible)",
+      "birthLocation": "Birth location",
+      "timezone": "Timezone at birth",
+      "relocateLocation": "Relocation city (where you might live)",
+      "submit": "Calculate relocation chart"
+    },
+    "result": {
+      "title": "Your Relocation Chart",
+      "relocateLabel": "Relocation location",
+      "natalAscTitle": "Ascendant at birth",
+      "relocatedAscTitle": "Ascendant after relocation",
+      "tableTitle": "Planets: natal vs relocated houses",
+      "planet": "Planet",
+      "sign": "Sign",
+      "degree": "Degree",
+      "natalHouse": "House (birth)",
+      "relocatedHouse": "House (relocated)",
+      "ctaChart": "View astrocartography map for this birth data",
+      "footnote": "Whole-sign houses. Planetary longitudes are identical at birth and relocation; only angles and houses change."
+    },
+    "errors": {
+      "required": "Please complete birth fields and relocation city.",
+      "location": "Could not find that place. Try \"City, Country\".",
+      "generic": "Calculation failed. Check your data and try again."
+    }
+  }
+}

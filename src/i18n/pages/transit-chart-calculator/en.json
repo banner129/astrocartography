@@ -19,6 +19,11 @@
         "text": "Discover where your chart thrives globally.",
         "linkText": "Astrocartography Calculator",
         "url": "/"
+      },
+      {
+        "text": "Compare your chart if you move to a new city.",
+        "linkText": "Relocation Chart Calculator",
+        "url": "/relocation-chart-calculator"
       }
     ]
   },

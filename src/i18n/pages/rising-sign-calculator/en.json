@@ -17,8 +17,8 @@
       },
       {
         "text": "Discover where your chart thrives globally.",
-        "linkText": "Astrocartography Calculator",
-        "url": "/astrocartography-calculator"
+        "linkText": "Try Astrocartography",
+        "url": "/"
       }
     ]
   },
@@ -193,7 +193,7 @@
       {
         "title": "Explore your chart globally → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

@@ -18,7 +18,7 @@
       {
         "text": "Wo Ihr Chart global gedeiht.",
         "linkText": "Astrokartografie Rechner",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       }
     ]
   },
@@ -193,7 +193,7 @@
       {
         "title": "Ihr Chart global erkunden → Astrokartografie",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

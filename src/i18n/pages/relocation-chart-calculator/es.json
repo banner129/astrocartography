@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Carta de reubicación gratis | Compara ciudades",
+    "description": "Calculadora gratuita de carta para otro lugar: misma hora de nacimiento, nueva ciudad. Compara Ascendente y casas enteras (origen vs destino). Sin registro.",
+    "keywords": "carta de reubicación, carta astral otro lugar, astrología del traslado, calculadora astrológica, ascendente, casas enteras, astrocartografía"
+  },
+  "intentAnchor": {
+    "text": "¿Buscas ver cómo cambia tu carta si vives en otra ciudad? Aquí tienes la herramienta al inicio: introduce fecha, hora y lugar de nacimiento, y elige la ciudad a la que podrías mudarte. Mantenemos el mismo instante cósmico y recalculamos ángulos y casas en las nuevas coordenadas, para que veas cómo se reordenan los temas de vida al cambiar de lugar."
+  },
+  "internalLinks": {
+    "title": "Herramientas relacionadas",
+    "items": [
+      {
+        "text": "Entrada principal: mapa mundial y calculadora principal.",
+        "linkText": "Inicio",
+        "url": "/"
+      },
+      {
+        "text": "Ver tránsitos frente a tu carta natal.",
+        "linkText": "Calculadora de tránsitos",
+        "url": "/transit-chart-calculator"
+      },
+      {
+        "text": "Ver líneas planetarias en el mapa.",
+        "linkText": "Calculadora de astrocartografía",
+        "url": "/"
+      },
+      {
+        "text": "Rueda completa en el lugar de nacimiento.",
+        "linkText": "Carta natal",
+        "url": "/chart/natal-chart"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Qué es la carta para otro lugar (reubicación)",
+    "label": "INTRODUCCIÓN",
+    "description": "La carta de reubicación responde: si mantengo la misma fecha y hora del reloj pero cambio el lugar de nacimiento por otra ciudad, ¿cómo cambia la carta? Las longitudes eclípticas de los planetas no varían: Sol, Luna y planetas siguen en los mismos signos y grados, porque el instante es el mismo. Lo que sí cambia son los ángulos y el sistema de casas en signo entero, que gira con el nuevo Ascendente. Nuestra calculadora gratuita muestra el Ascendente del lugar de nacimiento junto al del destino y, para cada planeta, la casa natal frente a la casa en el nuevo lugar. Es ideal para comparar dos ciudades antes de una mudanza, una estancia larga o la vida nómada. La carta de reubicación no es lo mismo que la astrocartografía: el mapa muestra líneas en el mundo; la reubicación fija un solo punto alternativo para el mismo instante. Conviene usar ambas.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Calculadora de carta de reubicación: ciudad natal y nueva ciudad"
+    },
+    "items": [
+      {
+        "title": "Por qué importa la carta de reubicación",
+        "description": "Muchas personas la descubren al planear irse de casa. Los cambios angulares y de casas resaltan temas como carrera, pareja o familia según el nuevo lugar. No sustituye asesoría legal ni financiera, pero ordena la intuición: cómo podría sentirse tu carta en París frente a Tokio o tu ciudad natal. Usamos el mismo enfoque astronómico que en nuestras herramientas de nacimiento: longitudes geocéntricas y casas enteras claras.",
+        "image": { "src": "/imgs/features/1.webp", "alt": "Para qué sirve la carta de reubicación" }
+      },
+      {
+        "title": "Carta de reubicación frente a mapa astrocartográfico",
+        "description": "La astrocartografía dibuja líneas planetarias sobre el globo. La reubicación elige un nuevo sitio y vuelve a armar la rueda para ese sitio. Si ya te gustan los mapas, sigue con astrocartografía; si quieres tabla y ángulos para un destino concreto, la reubicación es más directa. Tras calcular, puedes abrir el mapa con un clic usando los mismos datos de nacimiento.",
+        "image": { "src": "/imgs/features/2.webp", "alt": "Reubicación versus astrocartografía" }
+      },
+      {
+        "title": "Cómo lo calculamos",
+        "description": "Introduces datos de nacimiento y la ciudad de destino. Convertimos la hora local de nacimiento a UTC, calculamos el Ascendente en las coordenadas de nacimiento y otra vez en las del destino. Los planetas se evalúan en ese mismo instante UTC. Las casas son enteras desde cada Ascendente. En la tabla verás signo y grado una vez, con dos columnas de casa: natal y reubicada.",
+        "image": { "src": "/imgs/features/3.webp", "alt": "Cálculo de la carta de reubicación" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por qué usar nuestra calculadora",
+    "label": "Ventajas",
+    "description": "Gratis, rápida y pensada para encajar con nuestro flujo de astrocartografía.",
+    "items": [
+      {
+        "title": "Lógica real de reubicación",
+        "description": "Mismo instante UTC, dos latitudes y longitudes, dos Ascendentes, dos distribuciones de casas. La tabla muestra cómo cambia la casa de cada planeta al cambiar de lugar.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Carta de reubicación precisa" }
+      },
+      {
+        "title": "Gratis y sin registro",
+        "description": "Genera tantas cartas como quieras y prueba varias ciudades antes de decidir. Los datos permanecen en tu sesión de página.",
+        "icon": "RiGiftLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Calculadora gratuita" }
+      },
+      {
+        "title": "Para mudanzas y viajes largos",
+        "description": "Nómadas digitales, estudiantes en el extranjero y quienes planean mudarse usan la reubicación para comparar ambientes. Después puedes abrir la astrocartografía con los mismos datos.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Reubicación para viajeros" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo usar la calculadora",
+    "label": "USO",
+    "description": "Cuatro pasos: datos de nacimiento, ciudad de destino, lectura del resultado y mapa opcional.",
+    "items": [
+      {
+        "title": "Introduce el nacimiento",
+        "description": "Usa la misma precisión que para trabajo natal serio. La reubicación depende de la hora local y la zona horaria correctas en el nacimiento.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Elige el lugar de destino",
+        "description": "Escribe la ciudad o región que consideras. Puedes cambiar de ciudad y recalcular varias veces en la misma sesión.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Lee la carta reubicada",
+        "description": "Compara Ascendentes y recorre las dos columnas de casas por planeta. Los saltos grandes suelen marcar áreas de vida que se sentirán distintas tras la mudanza.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Abre la astrocartografía (opcional)",
+        "description": "El botón bajo el resultado abre el mapa mundial con tus datos de nacimiento. La reubicación muestra el giro de la rueda; el mapa muestra líneas geográficas.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funciones",
+    "label": "CARACTERÍSTICAS",
+    "description": "Todo lo necesario para una sesión práctica de carta de reubicación en línea.",
+    "items": [
+      {
+        "title": "Dos Ascendentes",
+        "description": "Ascendente en el nacimiento y en el destino, con signo y grado visibles de un vistazo.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Casas natal vs reubicadas",
+        "description": "Cada planeta con casa en signo entero en el origen y en el nuevo lugar.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Ciudad o coordenadas",
+        "description": "Puedes pegar latitud y longitud para nacimiento o destino; si no, el autocompletado de ciudad ayuda.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Un clic hacia el mapa",
+        "description": "Tras calcular, salta a la herramienta de mapa con los mismos parámetros de nacimiento.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Hora de nacimiento con zona horaria",
+        "description": "Elige la zona que correspondía a tu lugar de nacimiento; convertimos a UTC antes de recalcular ángulos.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Compara ciudades en una sesión",
+        "description": "Sin límite de recálculos: ideal para acortar lista de destinos antes de mudarte.",
+        "icon": "RiRefreshLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Preguntas frecuentes — carta de reubicación",
+    "description": "Dudas habituales sobre la carta para otro lugar y esta calculadora.",
+    "items": [
+      {
+        "title": "¿Qué es una carta de reubicación?",
+        "description": "Mantiene fijo el instante de nacimiento y cambia el lugar usado para calcular ángulos y casas. Signos y grados planetarios se mantienen; cambia la orientación de la rueda. Mostramos dos Ascendentes y dos columnas de casas."
+      },
+      {
+        "title": "¿Es gratis?",
+        "description": "Sí, puedes usarla todas las veces que quieras sin cuenta. Otras funciones de lectura con IA en el sitio pueden usar créditos; los datos de esta calculadora son gratuitos."
+      },
+      {
+        "title": "¿Cambian los planetas?",
+        "description": "No. Las longitudes eclípticas geocéntricas son las mismas; solo cambian ángulos y casas derivadas, como es habitual en trabajo de reubicación."
+      },
+      {
+        "title": "¿En qué se diferencia de la astrocartografía?",
+        "description": "La astrocartografía enfatiza líneas en muchas longitudes; la reubicación se centra en una ciudad elegida y la tabla de casas. Se complementan."
+      },
+      {
+        "title": "¿Qué sistema de casas usáis?",
+        "description": "Casas enteras desde el Ascendente de cada lugar, legible y muy usada para comparaciones de reubicación en línea."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Calcula tu carta de reubicación y mira el mapa",
+    "description": "Usa la calculadora gratuita arriba y luego explora líneas planetarias en el globo con la misma carta natal.",
+    "buttons": [
+      {
+        "title": "Abrir calculadora de astrocartografía",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Fecha de nacimiento",
+      "birthTime": "Hora de nacimiento (lo más exacta posible)",
+      "birthLocation": "Lugar de nacimiento",
+      "timezone": "Zona horaria del nacimiento",
+      "relocateLocation": "Ciudad de destino (donde podrías vivir)",
+      "submit": "Calcular carta de reubicación"
+    },
+    "result": {
+      "title": "Tu carta de reubicación",
+      "relocateLabel": "Lugar de reubicación",
+      "natalAscTitle": "Ascendente al nacer",
+      "relocatedAscTitle": "Ascendente en el destino",
+      "tableTitle": "Planetas: casas natal vs reubicadas",
+      "planet": "Planeta",
+      "sign": "Signo",
+      "degree": "Grado",
+      "natalHouse": "Casa (nacimiento)",
+      "relocatedHouse": "Casa (reubicación)",
+      "ctaChart": "Ver mapa de astrocartografía con estos datos",
+      "footnote": "Casas enteras. Las longitudes planetarias son idénticas; solo cambian ángulos y casas."
+    },
+    "errors": {
+      "required": "Completa los datos de nacimiento y la ciudad de destino.",
+      "location": "No encontramos ese lugar. Prueba «Ciudad, País».",
+      "generic": "Error de cálculo. Revisa los datos e inténtalo de nuevo."
+    }
+  }
+}

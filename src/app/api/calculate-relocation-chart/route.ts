@@ -1,20 +1,20 @@
 import { unstable_cache } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
-import {
-  computeWholeSignChart,
-  localBirthTimeToUtc,
-} from "@/lib/natal-chart-core";
+import { computeWholeSignChart, localBirthTimeToUtc } from "@/lib/natal-chart-core";
 
-export const revalidate = 3600; // 1 hour
+export const revalidate = 3600;
 export const maxDuration = 30;
 
-interface BirthChartRequest {
+interface RelocationChartRequest {
   birthDate: string;
   birthTime: string;
   birthLocation: string;
   timezone: string;
   latitude?: number;
   longitude?: number;
+  relocateLocation: string;
+  relocateLatitude?: number;
+  relocateLongitude?: number;
 }
 
 const CITY_COORDINATES: Record<string, { latitude: number; longitude: number }> = {
@@ -70,15 +70,42 @@ async function geocodeLocation(location: string): Promise<{ latitude: number; lo
   }
 }
 
-function getCacheKey(input: BirthChartRequest & { latitude: number; longitude: number }) {
-  return `${input.birthDate}-${input.birthTime}-${input.timezone}-${input.latitude}-${input.longitude}`;
+function getCacheKey(parts: {
+  birthDate: string;
+  birthTime: string;
+  timezone: string;
+  birthLat: number;
+  birthLng: number;
+  relocLat: number;
+  relocLng: number;
+}) {
+  return `${parts.birthDate}-${parts.birthTime}-${parts.timezone}-${parts.birthLat}-${parts.birthLng}-${parts.relocLat}-${parts.relocLng}`;
 }
 
-async function getCachedBirthChart(cacheKey: string, input: BirthChartRequest & { latitude: number; longitude: number }) {
+async function getCachedRelocation(
+  cacheKey: string,
+  input: RelocationChartRequest & {
+    latitude: number;
+    longitude: number;
+    relocateLatitude: number;
+    relocateLongitude: number;
+  }
+) {
   return unstable_cache(
     async () => {
       const utcTime = localBirthTimeToUtc(input.birthDate, input.birthTime, input.timezone);
-      const { ascendant, planets } = computeWholeSignChart(utcTime, input.latitude, input.longitude);
+      const natal = computeWholeSignChart(utcTime, input.latitude, input.longitude);
+      const relocated = computeWholeSignChart(utcTime, input.relocateLatitude, input.relocateLongitude);
+
+      const planets = natal.planets.map((p, i) => ({
+        name: p.name,
+        glyph: p.glyph,
+        longitude: p.longitude,
+        sign: p.sign,
+        degree: p.degree,
+        natalHouse: p.house,
+        relocatedHouse: relocated.planets[i].house,
+      }));
 
       return {
         success: true,
@@ -91,24 +118,33 @@ async function getCachedBirthChart(cacheKey: string, input: BirthChartRequest & 
             longitude: input.longitude,
             timezone: input.timezone,
           },
+          relocateData: {
+            location: input.relocateLocation,
+            latitude: input.relocateLatitude,
+            longitude: input.relocateLongitude,
+          },
           system: "Whole Sign Houses",
-          ascendant,
+          natalAscendant: natal.ascendant,
+          relocatedAscendant: relocated.ascendant,
           planets,
         },
       };
     },
-    ["birth-chart", cacheKey],
+    ["relocation-chart", cacheKey],
     { revalidate }
   )();
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const body = (await request.json()) as BirthChartRequest;
-    const { birthDate, birthTime, birthLocation, timezone } = body;
+    const body = (await request.json()) as RelocationChartRequest;
+    const { birthDate, birthTime, birthLocation, timezone, relocateLocation } = body;
 
-    if (!birthDate || !birthTime || !birthLocation || !timezone) {
-      return NextResponse.json({ success: false, error: "Missing required fields." }, { status: 400 });
+    if (!birthDate || !birthTime || !birthLocation || !timezone || !relocateLocation?.trim()) {
+      return NextResponse.json(
+        { success: false, error: "Missing required fields (birth data and relocation city)." },
+        { status: 400 }
+      );
     }
 
     let latitude = body.latitude;
@@ -128,14 +164,47 @@ export async function POST(request: NextRequest) {
       longitude = coords.longitude;
     }
 
-    const cacheKey = getCacheKey({ ...body, latitude, longitude });
-    const result = await getCachedBirthChart(cacheKey, { ...body, latitude, longitude });
+    let relocateLatitude = body.relocateLatitude;
+    let relocateLongitude = body.relocateLongitude;
+    if (relocateLatitude == null || relocateLongitude == null) {
+      const coords = await geocodeLocation(relocateLocation.trim());
+      if (!coords) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: `Unable to find coordinates for "${relocateLocation}". Try a more specific city and country.`,
+          },
+          { status: 400 }
+        );
+      }
+      relocateLatitude = coords.latitude;
+      relocateLongitude = coords.longitude;
+    }
+
+    const cacheKey = getCacheKey({
+      birthDate,
+      birthTime,
+      timezone,
+      birthLat: latitude,
+      birthLng: longitude,
+      relocLat: relocateLatitude,
+      relocLng: relocateLongitude,
+    });
+
+    const result = await getCachedRelocation(cacheKey, {
+      ...body,
+      latitude,
+      longitude,
+      relocateLatitude,
+      relocateLongitude,
+    });
+
     return NextResponse.json(result);
-  } catch (e: any) {
+  } catch (e: unknown) {
     const message =
-      (e && typeof e === "object" && "message" in e && typeof e.message === "string" && e.message) ||
-      String(e) ||
-      "Failed to calculate birth chart.";
+      e && typeof e === "object" && "message" in e && typeof (e as { message: unknown }).message === "string"
+        ? (e as { message: string }).message
+        : String(e) || "Failed to calculate relocation chart.";
     return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }

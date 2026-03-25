@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Mapa de realocação grátis | Compare cidades",
+    "description": "Calculadora gratuita: mesmo instante de nascimento, nova cidade. Compare Ascendente e casas inteiras (local natal vs destino). Sem cadastro.",
+    "keywords": "mapa de realocação, mapa astral outro lugar, astrologia da mudança, calculadora astrológica, Ascendente, casas inteiras, astrocartografia"
+  },
+  "intentAnchor": {
+    "text": "Quer ver como seu mapa muda se você mora em outra cidade? A ferramenta vem primeiro: informe data, hora e local de nascimento e escolha a cidade para onde pode se mudar. Mantemos o mesmo instante cósmico e recalculamos ângulos e casas nas novas coordenadas — assim você vê como as áreas da vida se reorganizam após a mudança."
+  },
+  "internalLinks": {
+    "title": "Ferramentas relacionadas",
+    "items": [
+      {
+        "text": "Entrada principal: mapa mundial e calculadora principal.",
+        "linkText": "Início",
+        "url": "/"
+      },
+      {
+        "text": "Ver trânsitos em relação ao mapa natal.",
+        "linkText": "Calculadora de trânsitos",
+        "url": "/transit-chart-calculator"
+      },
+      {
+        "text": "Ver linhas planetárias no globo.",
+        "linkText": "Calculadora de astrocartografia",
+        "url": "/"
+      },
+      {
+        "text": "Roda completa no local de nascimento.",
+        "linkText": "Mapa natal",
+        "url": "/chart/natal-chart"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "O que é mapa de realocação",
+    "label": "INTRODUÇÃO",
+    "description": "O mapa de realocação responde: se mantenho a mesma data e hora do relógio, mas troco o lugar de nascimento por outra cidade, como o mapa muda? As longitudes eclípticas dos planetas permanecem iguais — Sol, Lua e planetas nos mesmos signos e graus — porque o instante no tempo não muda. O que muda são os ângulos e o sistema de casas inteiras, que giram com o novo Ascendente. Nossa calculadora gratuita mostra o Ascendente do nascimento ao lado do Ascendente no destino e, para cada planeta, a casa no local natal frente à casa após a realocação. É ideal para comparar duas cidades antes de uma mudança, uma longa estadia ou a vida nômade digital. Diferente da astrocartografia: o mapa-múndi mostra linhas; a realocação fixa um só ponto alternativo para o mesmo instante. Use os dois em conjunto.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Calculadora de mapa de realocação: cidade natal e nova cidade"
+    },
+    "items": [
+      {
+        "title": "Por que o mapa de realocação importa",
+        "description": "Muitas pessoas descobrem ao planejar sair de casa. Mudanças de ângulos e casas destacam temas como carreira, relacionamento e raízes. Não substitui assessoria jurídica ou financeira, mas organiza a pergunta: como meu mapa poderia se sentir em Paris, Tóquio ou na cidade natal. Usamos a mesma abordagem astronômica das outras ferramentas: longitudes geocêntricas e casas inteiras claras.",
+        "image": { "src": "/imgs/features/1.webp", "alt": "Para que serve a realocação" }
+      },
+      {
+        "title": "Realocação versus mapa astrocartográfico",
+        "description": "A astrocartografia desenha linhas planetárias na Terra. A realocação escolhe um novo ponto e remonta a roda para esse ponto. Se você gosta de mapas, siga para a astrocartografia; se quer tabela e ângulos para um destino, a realocação é mais direta. Depois de calcular, abrimos o mapa em um clique com os mesmos dados de nascimento.",
+        "image": { "src": "/imgs/features/2.webp", "alt": "Realocação versus astrocartografia" }
+      },
+      {
+        "title": "Como calculamos",
+        "description": "Você informa o nascimento e a cidade de destino. Convertemos a hora local de nascimento para UTC, calculamos o Ascendente nas coordenadas do nascimento e de novo nas do destino. Os planetas são avaliados nesse mesmo instante UTC. As casas seguem signo inteiro a partir de cada Ascendente. Na tabela: signo e grau uma vez, duas colunas de casa.",
+        "image": { "src": "/imgs/features/3.webp", "alt": "Como o cálculo funciona" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por que usar nossa calculadora",
+    "label": "Vantagens",
+    "description": "Grátis, rápida e alinhada ao fluxo de astrocartografia do site.",
+    "items": [
+      {
+        "title": "Lógica real de realocação",
+        "description": "Mesmo instante UTC, duas latitudes e longitudes, dois Ascendentes, duas distribuições de casas. A tabela mostra como a casa de cada planeta muda ao mudar de lugar.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Mapa de realocação preciso" }
+      },
+      {
+        "title": "Grátis, sem cadastro",
+        "description": "Gere quantos mapas quiser e teste várias cidades antes de decidir. Os dados ficam na sessão da página.",
+        "icon": "RiGiftLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Ferramenta gratuita" }
+      },
+      {
+        "title": "Para mudanças e viagens longas",
+        "description": "Nômades digitais, intercambistas e quem planeja mudança usam a realocação para comparar lugares. Depois você abre a astrocartografia com os mesmos dados.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/4.webp", "alt": "Mudança e viagem" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Como usar a calculadora",
+    "label": "USO",
+    "description": "Quatro passos: nascimento, cidade de destino, leitura do resultado e mapa opcional.",
+    "items": [
+      {
+        "title": "Informe o nascimento",
+        "description": "Use a mesma precisão de um trabalho natal sério. A realocação depende da hora local e do fuso corretos no nascimento.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Escolha o destino",
+        "description": "Digite a cidade ou região que você considera. Pode trocar de cidade e recalcular várias vezes na mesma sessão.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Leia o mapa realocado",
+        "description": "Compare os Ascendentes e percorra as duas colunas de casas por planeta. Saltos grandes costumam marcar áreas que mudam de sensação após a mudança.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Abra a astrocartografia (opcional)",
+        "description": "O botão abaixo do resultado abre o mapa mundial com seus dados de nascimento. A realocação mostra o giro da roda; o mapa mostra linhas geográficas.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Recursos",
+    "label": "FUNCIONALIDADES",
+    "description": "Tudo o que você precisa para uma sessão prática de mapa de realocação online.",
+    "items": [
+      {
+        "title": "Dois Ascendentes",
+        "description": "Ascendente no nascimento e no destino, com signo e grau visíveis.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Casas natal vs realocadas",
+        "description": "Cada planeta com casa em signo inteiro no local natal e no novo lugar.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Cidade ou coordenadas",
+        "description": "Cole latitude e longitude para nascimento ou destino; senão o autocomplete de cidade ajuda.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Um clique para o mapa",
+        "description": "Após calcular, vá à ferramenta de mapa com os mesmos parâmetros de nascimento.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Fuso horário de nascimento correto",
+        "description": "Escolha o fuso do local de nascimento; convertemos para UTC antes de recalcular ângulos.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Compare cidades na mesma sessão",
+        "description": "Sem limite de recálculos: ideal para encurtar a lista de destinos antes de mudar.",
+        "icon": "RiRefreshLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Perguntas frequentes — mapa de realocação",
+    "description": "Dúvidas comuns sobre o mapa para outro lugar e esta calculadora.",
+    "items": [
+      {
+        "title": "O que é mapa de realocação?",
+        "description": "Mantém fixo o instante de nascimento e muda o lugar na Terra usado para ângulos e casas. Signos e graus planetários permanecem; muda a orientação da roda. Mostramos dois Ascendentes e duas colunas de casas."
+      },
+      {
+        "title": "É gratuito?",
+        "description": "Sim, use quantas vezes quiser sem conta. Outras leituras com IA no site podem usar créditos; os dados desta calculadora são gratuitos."
+      },
+      {
+        "title": "Os planetas mudam?",
+        "description": "Não. As longitudes eclípticas geocêntricas são as mesmas; só mudam ângulos e casas derivadas, como no trabalho habitual de realocação."
+      },
+      {
+        "title": "Diferença para astrocartografia?",
+        "description": "A astrocartografia enfatiza linhas em muitas longitudes; a realocação foca uma cidade escolhida e a tabela de casas. Complementam-se."
+      },
+      {
+        "title": "Qual sistema de casas?",
+        "description": "Casas inteiras a partir do Ascendente de cada local, legível e muito usada para comparações de realocação online."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Calcule o mapa de realocação e veja o globo",
+    "description": "Use a calculadora gratuita acima e depois explore linhas planetárias no mapa com os mesmos dados de nascimento.",
+    "buttons": [
+      {
+        "title": "Abrir calculadora de astrocartografia",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Data de nascimento",
+      "birthTime": "Hora de nascimento (o mais exato possível)",
+      "birthLocation": "Local de nascimento",
+      "timezone": "Fuso horário do nascimento",
+      "relocateLocation": "Cidade de destino (onde você pode morar)",
+      "submit": "Calcular mapa de realocação"
+    },
+    "result": {
+      "title": "Seu mapa de realocação",
+      "relocateLabel": "Local de realocação",
+      "natalAscTitle": "Ascendente ao nascer",
+      "relocatedAscTitle": "Ascendente no destino",
+      "tableTitle": "Planetas: casas natal vs realocadas",
+      "planet": "Planeta",
+      "sign": "Signo",
+      "degree": "Grau",
+      "natalHouse": "Casa (natal)",
+      "relocatedHouse": "Casa (realocada)",
+      "ctaChart": "Ver mapa de astrocartografia com estes dados",
+      "footnote": "Casas inteiras. Longitudes planetárias idênticas; só mudam ângulos e casas."
+    },
+    "errors": {
+      "required": "Preencha o nascimento e a cidade de destino.",
+      "location": "Local não encontrado. Tente «Cidade, País».",
+      "generic": "Falha no cálculo. Verifique os dados e tente de novo."
+    }
+  }
+}

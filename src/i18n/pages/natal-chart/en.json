@@ -13,7 +13,7 @@
       {
         "text": "Want the world‑map version of your natal chart?",
         "linkText": "Try Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Need a simple birth chart generator?",
@@ -212,7 +212,7 @@
       {
         "title": "See where your natal chart activates → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

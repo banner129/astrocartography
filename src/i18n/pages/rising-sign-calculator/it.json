@@ -18,7 +18,7 @@
       {
         "text": "Scopri dove la tua carta prospera nel mondo.",
         "linkText": "Calcolatore Astrocartography",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       }
     ]
   },
@@ -193,7 +193,7 @@
       {
         "title": "Esplora la tua carta nel mondo → Astrocartography",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }

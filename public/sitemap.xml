@@ -345,6 +345,44 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Relocation Chart Calculator - relocation chart -->
+  <url>
+    <loc>https://astrocarto.org/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/zh/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/es/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/pt/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/it/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/de/relocation-chart-calculator/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Natal Chart 页面 - 主关键词: natal chart / carta natal / Geburtshoroskop / carta natale / mapa astral
   ────────────────────────────────────────────────────────── -->
   <!-- 英文版本 - natal chart calculator -->

@@ -13,7 +13,7 @@
       {
         "text": "Vuoi la versione mappa del mondo della tua carta natale?",
         "linkText": "Prova Astrocartografia",
-        "url": "/astrocartography-calculator"
+        "url": "/"
       },
       {
         "text": "Ti serve un generatore di carta natale semplice?",
@@ -203,7 +203,7 @@
       {
         "title": "Dove si attiva la tua carta natale → Astrocartografia",
         "icon": "RiMapLine",
-        "url": "/astrocartography-calculator",
+        "url": "/",
         "target": "_self",
         "variant": "default"
       }
