@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "title": "Free Synastry Chart Calculator Online | Compatibility & Aspects",
+    "description": "Free synastry chart calculator: compare two birth charts, biwheel, major aspects, optional shared-city overlays, maps & AI. Build your synastry chart in minutes—no guesswork.",
+    "keywords": "synastry chart, synastry chart calculator, free synastry chart, relationship astrology, birth chart compatibility, couple chart, Venus Mars synastry, Sun Moon synastry, astrocartography"
+  },
+  "intentAnchor": {
+    "text": "If you are searching for a synastry chart you can trust, start here. This free synastry chart calculator turns two birth profiles into a clear, printable-style result: a dual wheel, a full matrix of planetary aspects, and—when you add a city—relocated overlays that show how each of you lands in the other’s wheel at that location. A synastry chart is not a single compatibility score; it maps chemistry, friction, timing, and emotional tone through real aspects. Our output lists major contacts with standard orbs so the tightest dialogues surface first. Whether you call it a synastry chart or a two-chart comparison, the goal is the same: see how two natal charts speak to each other."
+  },
+  "internalLinks": {
+    "title": "Related",
+    "items": [
+      {
+        "text": "Hub for maps and calculators.",
+        "linkText": "Home",
+        "url": "/"
+      },
+      {
+        "text": "Single-chart natal tool.",
+        "linkText": "Natal Chart",
+        "url": "/chart/natal-chart"
+      },
+      {
+        "text": "Compare houses before a move.",
+        "linkText": "Relocation Chart",
+        "url": "/relocation-chart-calculator"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What Is a Synastry Chart (and Why It Helps)",
+    "label": "INTRODUCTION",
+    "description": "Synastry overlays two natal charts so you can read relationship dynamics through aspects and—when you add location—house overlays. Unlike a composite chart, synastry keeps both people visible: your planets aspect your partner’s planets directly. It names Venus–Mars attraction, Sun–Moon emotional fit, Mercury patterns, Saturn durability—without reducing a bond to one label. Workflow: generate your synastry chart, scan aspects, optionally test a shared city for relocated angles, then open Astrocartography maps if you need geography.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Synastry chart calculator showing dual wheel and relationship aspects"
+    },
+    "items": [
+      {
+        "title": "Synastry Chart vs. Sun-Sign Matching",
+        "description": "A quick horoscope match can be fun, but a synastry chart goes deeper. Real planetary positions—not only Sun signs—describe chemistry and conflict. Relationship astrology is multidimensional: the Moon speaks to needs, Venus to affection, Mars to pacing, Saturn to durability, Mercury to how you talk things through. Here you get structured inter-chart aspects you can verify—not a vague paragraph. If your goal is a serious synastry chart for real-life conversations, start with accurate birth data; time improves angles and Moon precision.",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Why a synastry chart beats sun sign only" }
+      },
+      {
+        "title": "What This Synastry Chart Calculator Shows",
+        "description": "This synastry chart calculator is built for readability: a biwheel view plus a sortable list of major aspects between ten classical points for both people. You will see conjunctions, oppositions, squares, trines, and sextiles within standard orbs—what most readers check first in any synastry reading. Treat the table as a storyline list: harmony, stretch, and repeating patterns. Optional AI synastry reading (credits, sign-in) can narrate themes responsibly—still grounded in the same synastry chart data you generated above.",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Synastry chart calculator aspects and biwheel" }
+      },
+      {
+        "title": "Synastry Chart + Location: Overlays and Maps",
+        "description": "Aspects in a synastry chart do not change when you travel, but angles and houses do—so we offer an optional shared city for relocated overlays. That adds whole-sign context for one place. For geography alone, open a full map per person; for relationship structure, stay with the synastry chart first.",
+        "image": { "src": "/imgs/features/synastry/3.webp", "alt": "Synastry chart with astrocartography and shared city overlays" }
+      },
+      {
+        "title": "How to Read Your Synastry Chart Responsibly",
+        "description": "A synastry chart describes tendencies, not fate. The healthiest reading pairs astrology with communication: name the aspect, discuss the need behind it, and choose behaviors that fit your values. Avoid turning any synastry chart into a verdict—use it as language for empathy and timing. If birth time is unknown, treat Moon and angle topics as provisional and lean on slower contacts you can still trust without an exact Ascendant. Whether you are new to synastry or revisiting an old pattern, keep questions practical and kind.",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Responsible synastry chart reading guidance" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Use This Synastry Chart Calculator",
+    "label": "BENEFITS",
+    "description": "This synastry chart calculator is for couples, friends, and curious readers who want a synastry chart they can explore without friction: fast inputs, transparent outputs, and a path from chart to maps when location matters.",
+    "items": [
+      {
+        "title": "A Synastry Chart You Can Navigate",
+        "description": "Many tools dump jargon; we focus on clarity: a biwheel plus an aspect list sorted tightest-first so your synastry chart tells a coherent story. If you only have ten minutes, scan the top rows—those are the loudest dialogues in your reading.",
+        "icon": "RiHeartLine",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Navigate your synastry chart easily" }
+      },
+      {
+        "title": "Birth Chart Compatibility Without Hand-Waving",
+        "description": "Relationship astrology works when the comparison is explicit. Your results list planet-to-planet contacts you can research and discuss—so birth chart compatibility becomes conversation, not a mystery score. That is the point of modern synastry: shared language, shared curiosity.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Birth chart compatibility from synastry chart aspects" }
+      },
+      {
+        "title": "From Synastry Chart to Astrocartography",
+        "description": "After you generate your synastry chart, jump to planetary lines for each person. Synastry handles “between you”; maps highlight “on Earth.” Used together, the session becomes a full relationship astrology workflow—especially when travel or relocation themes are active.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Synastry chart then astrocartography maps" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Build Your Synastry Chart",
+    "label": "HOW TO USE",
+    "description": "Follow four steps to generate a synastry chart, then deepen the reading with overlays and maps.",
+    "items": [
+      {
+        "title": "Enter two birth profiles",
+        "description": "Add dates, optional times (defaults to 12:00 local), birth places, and timezones. Accurate data sharpens the synastry chart—especially for the Moon and angles.",
+        "icon": "RiUserLine"
+      },
+      {
+        "title": "Generate your synastry chart",
+        "description": "Submit to calculate. Your synastry chart opens with the biwheel and aspect matrix—the core of the reading.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Add a shared city (optional)",
+        "description": "If you want relocated overlays, enter one city and recalculate. The synastry chart will include partner-house context for that location.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Maps, AI, next questions",
+        "description": "Open Astrocartography for each person, compare lines, or launch AI synastry reading using your chart context (sign-in, credits).",
+        "icon": "RiSparklingLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Synastry Chart Calculator Features",
+    "label": "FEATURES",
+    "description": "One workflow: calculate, visualize, optionally relocate, map, and optionally add AI—so your synastry chart stays the single source of truth.",
+    "items": [
+      {
+        "title": "Major aspects for a complete synastry chart",
+        "description": "Conjunction, opposition, square, trine, and sextile with standard orbs—covering the dynamics readers expect in relationship astrology.",
+        "icon": "RiSparklingLine"
+      },
+      {
+        "title": "Whole-sign houses for consistency",
+        "description": "Whole-sign houses match our other tools, making it easier to compare your synastry chart with natal and relocation work on the same site.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Optional relocated overlays",
+        "description": "Test one city to see how house topics shift when both charts are calculated for the same coordinates—without changing natal synastry aspects themselves.",
+        "icon": "RiFlightTakeoffLine"
+      },
+      {
+        "title": "Dual-map preview after your synastry chart",
+        "description": "See both line sets on one globe as a geographic complement—then open full maps for detail.",
+        "icon": "RiEarthLine"
+      },
+      {
+        "title": "Optional AI synastry reading",
+        "description": "Turn your aspect list into plain-language themes with Astro Chat: same synastry data you just calculated, optional sign-in, and credits—helpful for wording, not a substitute for judgment or therapy.",
+        "icon": "RiChat3Line"
+      },
+      {
+        "title": "Interface in your language",
+        "description": "Switch locales to read labels, steps, and help text in the language you prefer—while numeric results and chart logic stay consistent across the site.",
+        "icon": "RiTranslate"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Synastry Chart FAQ",
+    "description": "Answers for readers who want a reliable synastry chart and a realistic reading process.",
+    "items": [
+      {
+        "title": "What is a synastry chart in simple terms?",
+        "description": "A synastry chart compares two natal charts to show how your planets aspect your partner’s planets. It is the foundation of most birth chart compatibility work beyond Sun signs. Here those contacts are listed clearly so you can study your synastry chart step by step."
+      },
+      {
+        "title": "Is this synastry chart calculator free?",
+        "description": "Yes—generating the synastry chart, biwheel, aspects, overlays, and map previews is free. Optional AI synastry reading uses the same credits as our Astro Chat and requires sign-in."
+      },
+      {
+        "title": "Does my synastry chart change if we move cities?",
+        "description": "Natal aspects between longitudes do not change when you relocate. What changes is house emphasis and angles, which is why we offer optional shared-city overlays alongside your synastry chart."
+      },
+      {
+        "title": "What if I do not know birth time?",
+        "description": "We default to 12:00 local time. Your synastry chart can still show most planetary aspects, but Moon precision and angle topics may be incomplete—use exact time when possible."
+      },
+      {
+        "title": "How is a synastry chart different from a composite chart?",
+        "description": "A synastry chart compares two charts directly. A composite chart blends midpoints into one relationship chart. Many people start with synastry for chemistry and timing, then explore composites later—the synastry chart remains the clearest place to see planet-to-planet dialogue."
+      },
+      {
+        "title": "Which contacts matter most?",
+        "description": "Readers often start with Sun–Moon, Venus–Mars, Mercury, and Saturn for durability—but context matters. Your synastry chart lists many connections; the tightest orbs usually tell the strongest storylines first."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "After Your Synastry Chart, Explore the Map",
+    "description": "A synastry chart explains between-you dynamics; Astrocartography shows where lines emphasize each person on Earth. Continue with the same birth data for location intelligence.",
+    "buttons": [
+      {
+        "title": "Astrocartography Home",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "personA": "You",
+      "personB": "Your partner",
+      "wheelAxisInner": "inner",
+      "wheelAxisOuter": "outer",
+      "biwheelFootnote": "Inner ring: you. Outer ring: your partner. Short lines mark each person’s Ascendant at their birthplace.",
+      "birthDate": "Birth date",
+      "birthTime": "Birth time (optional; defaults to 12:00)",
+      "birthLocation": "Birth location",
+      "timezone": "Timezone at birth",
+      "relocateLocation": "Shared city (optional — for relocated house overlays)",
+      "submit": "Calculate synastry chart"
+    },
+    "tabs": {
+      "synastry": "Synastry chart",
+      "relocated": "Shared city",
+      "maps": "Maps"
+    },
+    "result": {
+      "title": "Your synastry chart",
+      "aspectsTitle": "Planetary aspects (you → partner)",
+      "planetA": "You",
+      "planetB": "Partner",
+      "aspect": "Aspect",
+      "orb": "Orb",
+      "relocatedEmptyHint": "Enter a shared city above and run Calculate again to see relocated house overlays for both charts at the same coordinates.",
+      "relocatedTitle": "Relocated to",
+      "ascA": "Your Ascendant (at shared city)",
+      "ascB": "Partner’s Ascendant (at shared city)",
+      "overlayATitle": "Your planets in your partner’s houses (at shared city)",
+      "overlayBTitle": "Your partner’s planets in your houses (at shared city)",
+      "planet": "Planet",
+      "house": "House",
+      "mapsTitle": "Astrocartography maps",
+      "mapsDesc": "Open the world map with each person’s birth data. Compare lines side by side in two tabs.",
+      "mapLinkA": "Open full map (you)",
+      "mapLinkB": "Open full map (partner)",
+      "dualMapTitle": "Combined astrocartography map",
+      "dualMapDesc": "Both of your planetary line sets on one globe: yours in original colors, your partner’s as dashed cyan. Heavy load — may take a few seconds.",
+      "dualMapLegendSolid": "solid · original colors",
+      "dualMapLegendDashed": "dashed cyan",
+      "dualMapFootnote": "Two full astrocartography line sets on one globe. For detailed line popups and AI, open each person’s map in a separate tab.",
+      "aiTitle": "AI synastry reading",
+      "aiButton": "Open AI reading",
+      "aiHint": "Uses the same credits as Astro Chat. Sign in required. The assistant receives your aspect list and optional relocated overlays.",
+      "footnote": "Whole-sign houses. Synastry aspects use natal longitudes; relocated section uses both charts calculated for the shared coordinates."
+    },
+    "errors": {
+      "required": "Please complete required fields for both you and your partner.",
+      "generic": "Calculation failed. Check your data and try again."
+    }
+  }
+}

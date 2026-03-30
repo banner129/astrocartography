@@ -432,6 +432,120 @@ Correct response should be: "在上海咖啡馆增强吸引力的方法：1. 选
 Remember: Be professional, empathetic, accurate, and engaging. Follow the 5-part structure, make the Core Interpretation detailed (100-150 chars/80-120 words), answer ALL parts of the question, and ALWAYS use A/B/C format for follow-up questions that create value and curiosity!`;
 }
 
+/** Payload for AI synastry mode (no map lines). */
+export interface SynastryPayloadForAI {
+  personA: {
+    birthData: {
+      date: string;
+      time: string;
+      location: string;
+      timezone?: string;
+      latitude?: number;
+      longitude?: number;
+    };
+    ascendant: { sign: string; degree: number };
+    planets: Array<{ name: string; sign: string; house: number }>;
+  };
+  personB: {
+    birthData: {
+      date: string;
+      time: string;
+      location: string;
+      timezone?: string;
+      latitude?: number;
+      longitude?: number;
+    };
+    ascendant: { sign: string; degree: number };
+    planets: Array<{ name: string; sign: string; house: number }>;
+  };
+  aspects: Array<{ planetA: string; planetB: string; aspect: string; orb: number }>;
+  relocated?: {
+    location: string;
+    ascendantA: { sign: string; degree: number };
+    ascendantB: { sign: string; degree: number };
+    aInB: Array<{ planet: string; houseInPartner: number }>;
+    bInA: Array<{ planet: string; houseInPartner: number }>;
+  };
+}
+
+export function formatSynastryContext(data: SynastryPayloadForAI): string {
+  const fmtBirth = (label: string, b: SynastryPayloadForAI["personA"]) => {
+    let s = `${label}\n`;
+    s += `  Birth: ${b.birthData.date} ${b.birthData.time} (${b.birthData.timezone || "TZ"}) — ${b.birthData.location}`;
+    if (b.birthData.latitude != null && b.birthData.longitude != null) {
+      s += ` (${b.birthData.latitude.toFixed(2)}, ${b.birthData.longitude.toFixed(2)})`;
+    }
+    s += `\n  Ascendant: ${b.ascendant.sign} ${b.ascendant.degree.toFixed(1)}°\n`;
+    s += `  Planets (whole-sign houses at birthplace):\n`;
+    for (const p of b.planets) {
+      s += `    ${p.name}: ${p.sign} (H${p.house})\n`;
+    }
+    return s;
+  };
+
+  let txt = "=== SYNASTRY (two natal charts) ===\n\n";
+  txt += fmtBirth("PERSON A", data.personA);
+  txt += "\n";
+  txt += fmtBirth("PERSON B", data.personB);
+  txt += "\n=== INTER-CHART ASPECTS (natal longitudes, major aspects) ===\n";
+  const sorted = [...data.aspects].sort((a, b) => a.orb - b.orb);
+  for (const a of sorted.slice(0, 80)) {
+    txt += `  ${a.planetA} ${a.aspect} ${a.planetB} (orb ${a.orb}°)\n`;
+  }
+  if (data.relocated) {
+    txt += `\n=== SHARED CITY (relocated whole-sign overlays) ===\n`;
+    txt += `  City: ${data.relocated.location}\n`;
+    txt += `  Asc A at city: ${data.relocated.ascendantA.sign} ${data.relocated.ascendantA.degree}°\n`;
+    txt += `  Asc B at city: ${data.relocated.ascendantB.sign} ${data.relocated.ascendantB.degree}°\n`;
+    txt += `  A's planets in B's houses at this location:\n`;
+    for (const r of data.relocated.aInB) {
+      txt += `    ${r.planet} → partner's house ${r.houseInPartner}\n`;
+    }
+    txt += `  B's planets in A's houses at this location:\n`;
+    for (const r of data.relocated.bInA) {
+      txt += `    ${r.planet} → partner's house ${r.houseInPartner}\n`;
+    }
+  }
+  txt += "\n(Natal inter-planet aspects do not change with location; houses do.)\n";
+  return txt;
+}
+
+export function getSynastrySystemPrompt(
+  userMessageLanguage?: string,
+  questionCount: number = 1,
+  remainingFreeQuestions: number = 0,
+  userLocale?: string
+): string {
+  const detectedLanguage =
+    userMessageLanguage ||
+    (userLocale === "zh" || userLocale === "zh-CN"
+      ? "中文"
+      : userLocale === "es"
+        ? "西班牙文"
+        : userLocale === "it"
+          ? "意大利文"
+          : userLocale === "pt"
+            ? "葡萄牙文"
+            : "英文");
+
+  const languageInstruction = detectedLanguage
+    ? `\n\n⚠️ CRITICAL: Respond entirely in **${detectedLanguage}**.\n\n`
+    : "";
+
+  return `${languageInstruction}You are a professional relationship astrologer interpreting SYNASTRY (comparison of two natal charts via planetary aspects and optional house overlays). You are NOT interpreting astrocartography map lines in this mode.
+
+Rules:
+- Base interpretations ONLY on the synastry data provided (aspects, signs, houses). Do not invent aspects.
+- Cover major themes: emotional connection (Moon–Moon, Sun–Moon), attraction (Venus–Mars, Venus–Venus), communication (Mercury), commitment (Saturn aspects), intensity (Pluto), when present in the data.
+- Use a balanced, non-fatalistic tone: highlight strengths and growth areas; avoid deterministic predictions about breakup or marriage.
+- If the user asks about a specific pair (e.g. Sun–Moon), prioritize those aspects in the listing.
+- Encourage self-awareness and communication; astrology is for reflection, not replacement for therapy or legal advice.
+
+Answer length: first reply ~200–350 words in English (or equivalent in Chinese). Structure: (1) warm opening, (2) 2–4 bullet themes from the data, (3) practical relationship tips, (4) optional follow-up A/B/C.
+
+Question context: question #${questionCount}, remaining free (for unauthenticated users conceptually): ${remainingFreeQuestions}.`;
+}
+
 /**
  * 从文本中提取城市名（支持中英文）
  * @param text 要提取的文本

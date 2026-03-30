@@ -16,7 +16,7 @@ import PricingModal from '@/components/pricing/pricing-modal';
 import { Pricing as PricingType } from '@/types/blocks/pricing';
 import { askAIEvents, paymentEvents } from '@/lib/analytics';
 import { toast } from 'sonner';
-import { detectLanguage } from '@/lib/astro-format';
+import { detectLanguage, type SynastryPayloadForAI } from '@/lib/astro-format';
 
 interface AstroChatProps {
   open: boolean;
@@ -43,6 +43,8 @@ interface AstroChatProps {
       color: string;
     }[];
   };
+  /** When set, API uses synastry context; planetLines may be empty. */
+  synastryData?: SynastryPayloadForAI | null;
   user?: User | null;
   onRequireLogin?: () => void;
 }
@@ -57,6 +59,7 @@ export default function AstroChat({
   askOtherPrefillText,
   askOtherPrefillKey = 0,
   chartData,
+  synastryData,
   user,
   onRequireLogin
 }: AstroChatProps) {
@@ -80,8 +83,16 @@ export default function AstroChat({
   // 获取当前语言，如果没有locale参数则说明是默认语言（英文）
   const locale = (params.locale as string) || 'en';
   
-  // 从 i18n 获取预设问题
-  const suggestedQuestions = t.raw('suggested_questions') as string[] || [];
+  const suggestedQuestions = useMemo(() => {
+    if (synastryData) {
+      return [
+        'What do our Sun–Moon and Venus–Mars aspects suggest about emotional and romantic chemistry?',
+        'Where might we misunderstand each other based on Mercury and Moon aspects?',
+        'How do Saturn aspects between us relate to commitment and long-term growth?',
+      ];
+    }
+    return (t.raw('suggested_questions') as string[]) || [];
+  }, [synastryData, t]);
 
   // 🔍 调试日志：检查翻译是否正确获取
   useEffect(() => {
@@ -206,10 +217,13 @@ export default function AstroChat({
     // 构建完整的请求体
     const finalBody = {
       ...requestBody,
-      chartData: chartData ? {
-        birthData: chartData.birthData,
-        planetLines: chartData.planetLines,
-      } : { birthData: {}, planetLines: [] },
+      chartData: chartData
+        ? {
+            birthData: chartData.birthData,
+            planetLines: chartData.planetLines,
+          }
+        : { birthData: {}, planetLines: [] },
+      synastryData: synastryData ?? undefined,
       questionCount: currentUserMessageCount + 1,
       remainingFreeQuestions: currentRemainingFreeQuestions,
       userLocale: locale, // 🔥 新增：传递用户语言环境
@@ -277,7 +291,7 @@ export default function AstroChat({
     
     // 如果是正常的流式响应，直接返回
     return response;
-  }, [chartData, user]);
+  }, [chartData, user, synastryData, locale]);
   
   // 🔥 使用 useChat，body 在 customFetch 中动态添加
   const { messages, input, handleInputChange, handleSubmit, isLoading, error, append, setMessages } = useChat({
@@ -448,7 +462,9 @@ export default function AstroChat({
       let content = 'Astro Chat Conversation\n';
       content += '='.repeat(50) + '\n\n';
       content += `Date: ${dateStr}\n`;
-      content += `Chart for: ${chartData.birthData.location}\n`;
+      content += synastryData
+        ? `Synastry: ${chartData.birthData.location} + partner\n`
+        : `Chart for: ${chartData.birthData.location}\n`;
       content += '\n' + '='.repeat(50) + '\n';
       content += 'Conversation\n';
       content += '='.repeat(50) + '\n\n';
@@ -478,7 +494,7 @@ export default function AstroChat({
       console.error('Failed to download chat:', error);
       toast.error(t('download_failed'));
     }
-  }, [messages, chartData, locale, t]);
+  }, [messages, chartData, synastryData, locale, t]);
 
   // 📊 埋点：收到 AI 回复（监听消息变化）
   useEffect(() => {
@@ -1112,7 +1128,11 @@ export default function AstroChat({
               <div className="mt-3 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-sm text-green-400">
                   <div className="size-2 rounded-full bg-green-400 animate-pulse" />
-                  <span>Chart for: {chartData.birthData.location}</span>
+                  <span>
+                    {synastryData
+                      ? `Synastry · ${chartData.birthData.location} & partner`
+                      : `Chart for: ${chartData.birthData.location}`}
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   {user && userCredits !== null && (
@@ -1232,7 +1252,11 @@ export default function AstroChat({
             <div className="mt-2 flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2 text-xs text-green-400">
                 <div className="size-1.5 rounded-full bg-green-400 animate-pulse" />
-                <span className="truncate max-w-[120px]">Chart for: {chartData.birthData.location}</span>
+                <span className="truncate max-w-[120px]">
+                  {synastryData
+                    ? `Synastry · ${chartData.birthData.location}`
+                    : `Chart for: ${chartData.birthData.location}`}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 {user && userCredits !== null && (

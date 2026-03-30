@@ -4,7 +4,13 @@ import {
 } from "ai";
 import { deepseek } from "@ai-sdk/deepseek";
 import { respErr } from "@/lib/resp";
-import { formatChartContext, getSystemPrompt } from "@/lib/astro-format";
+import {
+  formatChartContext,
+  formatSynastryContext,
+  getSystemPrompt,
+  getSynastrySystemPrompt,
+  type SynastryPayloadForAI,
+} from "@/lib/astro-format";
 import { getUserUuid } from "@/services/user";
 import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/credit";
 import { getAIChatCreditCost } from "@/services/config";
@@ -63,6 +69,8 @@ interface ChatRequest {
       color: string;
     }[];
   };
+  /** When set, uses synastry context instead of map lines (planetLines may be empty). */
+  synastryData?: SynastryPayloadForAI;
   questionCount?: number; // 当前是第几个问题
   remainingFreeQuestions?: number; // 剩余免费问题数量
   userLocale?: string; // 🔥 新增：用户语言环境（用于优化 AI 回答）
@@ -71,7 +79,7 @@ interface ChatRequest {
 export async function POST(req: Request) {
   try {
     const body: ChatRequest = await req.json();
-    const { messages, chartData, questionCount, remainingFreeQuestions, userLocale } = body;
+    const { messages, chartData, synastryData, questionCount, remainingFreeQuestions, userLocale } = body;
 
     // 🔥 调试：记录接收到的数据
     console.log('📥 [API] 接收到的请求数据:', {
@@ -95,66 +103,77 @@ export async function POST(req: Request) {
       return respErr("Question cannot be empty");
     }
 
-    // 🔥 详细检查 chartData
+    // 🔥 详细检查 chartData / synastryData
     if (!chartData) {
       console.error('❌ [API] chartData 为空');
       return respErr("Chart data is incomplete");
     }
-    
-    if (!chartData.birthData) {
-      console.error('❌ [API] chartData.birthData 为空');
-      return respErr("Chart data is incomplete");
-    }
-    
-    if (!chartData.planetLines) {
-      console.error('❌ [API] chartData.planetLines 为空');
-      return respErr("Chart data is incomplete");
-    }
-    
-    // 检查 birthData 的必需字段
-    if (!chartData.birthData.date || !chartData.birthData.time || !chartData.birthData.location) {
-      console.error('❌ [API] birthData 缺少必需字段:', {
-        hasDate: !!chartData.birthData.date,
-        hasTime: !!chartData.birthData.time,
-        hasLocation: !!chartData.birthData.location,
-        birthData: chartData.birthData,
-        allKeys: Object.keys(chartData.birthData),
+
+    if (synastryData) {
+      if (!synastryData.personA?.birthData || !synastryData.personB?.birthData) {
+        return respErr("Synastry data is incomplete");
+      }
+      if (!Array.isArray(synastryData.aspects)) {
+        return respErr("Synastry aspects are missing");
+      }
+      const a = synastryData.personA.birthData;
+      const b = synastryData.personB.birthData;
+      if (!a.date || !a.time || !a.location || !b.date || !b.time || !b.location) {
+        return respErr("Synastry birth data is incomplete");
+      }
+      console.log("✅ [API] synastryData 验证通过");
+    } else {
+      if (!chartData.birthData) {
+        console.error('❌ [API] chartData.birthData 为空');
+        return respErr("Chart data is incomplete");
+      }
+
+      if (!chartData.planetLines) {
+        console.error('❌ [API] chartData.planetLines 为空');
+        return respErr("Chart data is incomplete");
+      }
+
+      if (!chartData.birthData.date || !chartData.birthData.time || !chartData.birthData.location) {
+        console.error('❌ [API] birthData 缺少必需字段:', {
+          hasDate: !!chartData.birthData.date,
+          hasTime: !!chartData.birthData.time,
+          hasLocation: !!chartData.birthData.location,
+          birthData: chartData.birthData,
+          allKeys: Object.keys(chartData.birthData),
+        });
+        return respErr("Chart data is incomplete");
+      }
+
+      if (!Array.isArray(chartData.planetLines) || chartData.planetLines.length === 0) {
+        console.error('❌ [API] planetLines 是空数组或不是数组:', {
+          isArray: Array.isArray(chartData.planetLines),
+          length: chartData.planetLines?.length || 0,
+          planetLines: chartData.planetLines,
+        });
+        return respErr("Chart data is incomplete");
+      }
+
+      const firstLine = chartData.planetLines[0];
+      if (!firstLine || !firstLine.type) {
+        console.error('❌ [API] planetLines[0] 缺少 type 字段或为空:', {
+          firstLine,
+          hasType: !!firstLine?.type,
+          allKeys: firstLine ? Object.keys(firstLine) : [],
+          planetLinesSample: chartData.planetLines.slice(0, 3),
+        });
+        return respErr("Chart data is incomplete");
+      }
+
+      console.log('✅ [API] chartData 验证通过:', {
+        birthData: {
+          date: chartData.birthData.date,
+          time: chartData.birthData.time,
+          location: chartData.birthData.location,
+        },
+        planetLinesCount: chartData.planetLines.length,
+        firstLineType: chartData.planetLines[0].type,
       });
-      return respErr("Chart data is incomplete");
     }
-    
-    // 检查 planetLines 是否为空数组
-    if (!Array.isArray(chartData.planetLines) || chartData.planetLines.length === 0) {
-      console.error('❌ [API] planetLines 是空数组或不是数组:', {
-        isArray: Array.isArray(chartData.planetLines),
-        length: chartData.planetLines?.length || 0,
-        planetLines: chartData.planetLines,
-      });
-      return respErr("Chart data is incomplete");
-    }
-    
-    // 检查第一个 planetLine 是否有 type 字段
-    const firstLine = chartData.planetLines[0];
-    if (!firstLine || !firstLine.type) {
-      console.error('❌ [API] planetLines[0] 缺少 type 字段或为空:', {
-        firstLine,
-        hasType: !!firstLine?.type,
-        allKeys: firstLine ? Object.keys(firstLine) : [],
-        planetLinesSample: chartData.planetLines.slice(0, 3),
-      });
-      return respErr("Chart data is incomplete");
-    }
-    
-    // ✅ 所有检查通过
-    console.log('✅ [API] chartData 验证通过:', {
-      birthData: {
-        date: chartData.birthData.date,
-        time: chartData.birthData.time,
-        location: chartData.birthData.location,
-      },
-      planetLinesCount: chartData.planetLines.length,
-      firstLineType: chartData.planetLines[0].type,
-    });
 
     // 🔥 检查用户是否登录
     const user_uuid = await getUserUuid();
@@ -227,21 +246,23 @@ export async function POST(req: Request) {
     const actualQuestionCount = questionCount ?? messages.filter(m => m.role === 'user').length;
     const actualRemainingFreeQuestions = remainingFreeQuestions ?? 0;
     
-    // 格式化星盘数据为上下文
-    const chartContext = formatChartContext(chartData);
-    
-    // 根据用户语言和问题次数生成系统提示词（传递 userLocale 以优化回答）
-    const systemPrompt = getSystemPrompt(userLanguage, actualQuestionCount, actualRemainingFreeQuestions, userLocale);
-    
-    // 注意：追问建议由前端在 onFinish 回调中生成，不需要在这里生成
-    
-    // 构建系统消息（包含星盘上下文）
-    // 根据用户语言调整星盘数据说明的语言
-    const chartDataIntro = userLanguage === '中文' 
-      ? '以下是用户的星盘数据：'
-      : userLanguage === '英文'
-      ? 'Below is the user\'s astrocartography chart data:'
-      : 'Below is the user\'s astrocartography chart data:';
+    const chartContext = synastryData
+      ? formatSynastryContext(synastryData)
+      : formatChartContext(chartData);
+
+    const systemPrompt = synastryData
+      ? getSynastrySystemPrompt(userLanguage, actualQuestionCount, actualRemainingFreeQuestions, userLocale)
+      : getSystemPrompt(userLanguage, actualQuestionCount, actualRemainingFreeQuestions, userLocale);
+
+    const chartDataIntro = synastryData
+      ? userLanguage === "中文"
+        ? "以下是双方的合盘（比较盘）数据："
+        : "Below is the synastry (two-chart relationship) data:"
+      : userLanguage === "中文"
+        ? "以下是用户的星盘数据："
+        : userLanguage === "英文"
+          ? "Below is the user's astrocartography chart data:"
+          : "Below is the user's astrocartography chart data:";
     
     const systemMessage = {
       role: 'system' as const,

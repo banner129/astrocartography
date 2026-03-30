@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "title": "Calculadora de sinastria grátis online | Compatibilidade e aspectos",
+    "description": "Calculadora de sinastria grátis: compare dois mapas astrais, roda dupla, aspectos maiores, sobreposições opcionais numa cidade compartilhada, mapas e IA. Sua sinastria em minutos, com resultado claro.",
+    "keywords": "sinastria, calculadora sinastria, mapa de sinastria grátis, astrologia de relacionamento, compatibilidade mapas astrais, Vênus Marte sinastria, Sol Lua sinastria, astrocartografia"
+  },
+  "intentAnchor": {
+    "text": "Se você busca uma sinastria em que possa confiar, comece aqui. Esta calculadora gratuita transforma dois perfis de nascimento num resultado claro, quase para imprimir: roda dupla, matriz completa de aspectos e, ao adicionar uma cidade, sobreposições relocadas que mostram como cada um cai na roda do outro naquele lugar. Sinastria não é um único score de compatibilidade: ela mapeia química, atrito, ritmo e tom emocional por meio de aspectos reais. Listamos contatos principais com orbes padrão para que os diálogos mais apertados apareçam primeiro. Chame de sinastria ou de comparação entre dois mapas — o objetivo é ver como dois temas natais conversam."
+  },
+  "internalLinks": {
+    "title": "Ferramentas relacionadas",
+    "items": [
+      {
+        "text": "Central de mapas e calculadoras.",
+        "linkText": "Início",
+        "url": "/"
+      },
+      {
+        "text": "Ferramenta de mapa astral individual.",
+        "linkText": "Mapa natal",
+        "url": "/chart/natal-chart"
+      },
+      {
+        "text": "Comparar casas antes de uma mudança.",
+        "linkText": "Mapa de relocação",
+        "url": "/relocation-chart-calculator"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "O que é sinastria (e por que ajuda)",
+    "label": "INTRODUÇÃO",
+    "description": "Sinastria sobrepõe dois mapas astrais para ler a dinâmica do relacionamento por aspectos e, com um local, por casas relocadas. Diferente do mapa composto (ponto médio numa única roda), a sinastria mantém as duas pessoas visíveis: seus planetas aspectam diretamente os do outro. Atração Vênus–Marte, ajuste Sol–Lua, Mercúrio, Saturno — sem reduzir o vínculo a um rótulo. Fluxo sugerido: calcule a sinastria, percorra os aspectos, teste uma cidade compartilhada se precisar de contexto por lugar e abra astrocartografia quando o foco for geografia.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Calculadora de sinastria com roda dupla e aspectos"
+    },
+    "items": [
+      {
+        "title": "Sinastria versus combinar só o signo solar",
+        "description": "Combinar signos pode ser divertido, mas sinastria vai além. Posições planetárias reais — não só o Sol — descrevem afinidade e tensão. Astrologia relacional é multidimensional: Lua necessidades, Vênus afeto, Marte ritmo, Saturno sustentação, Mercúrio conversa. Aqui você recebe aspectos intermapas que pode conferir — não um parágrafo vago. Para uma sinastria séria no dia a dia, use dados de nascimento confiáveis; horário exato melhora ângulos e precisão lunar.",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Por que sinastria vai além do signo solar" }
+      },
+      {
+        "title": "O que esta calculadora de sinastria mostra",
+        "description": "Feita para leitura clara: vista biwheel e lista dos aspectos maiores entre os dez pontos clássicos de ambos. Conjunção, oposição, quadratura, trígono e sextil com orbes usuais — o que a maioria checa primeiro. IA opcional (créditos, login) pode organizar temas com tom responsável, sempre com base nos mesmos dados de sinastria que você acabou de gerar.",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Calculadora de sinastria: aspectos e roda dupla" }
+      },
+      {
+        "title": "Sinastria + local: sobreposições e mapas",
+        "description": "Aspectos na sinastria não mudam quando você viaja; casas e ângulos mudam — por isso oferecemos cidade compartilhada opcional para sobreposições relocadas em signo inteiro. Para geografia pura, abra um mapa completo por pessoa; para estrutura do relacionamento, fique primeiro na sinastria.",
+        "image": { "src": "/imgs/features/synastry/3.webp", "alt": "Sinastria com astrocartografia e cidade compartilhada" }
+      },
+      {
+        "title": "Ler sinastria com responsabilidade",
+        "description": "Sinastria descreve tendências, não sentença. O uso mais saudável combina astrologia e diálogo: nomeie o aspecto, explore a necessidade por trás, escolha comportamentos alinhados aos seus valores. Evite transformar qualquer sinastria em veredito — use como linguagem para empatia e timing. Sem hora de nascimento, trate Lua e ângulos com cautela.",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Orientação para leitura responsável da sinastria" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por que usar esta calculadora de sinastria",
+    "label": "VANTAGENS",
+    "description": "Para casais, amigos e curiosos que querem uma sinastria clara: entradas rápidas, resultados transparentes e caminho até os mapas quando o lugar importa.",
+    "items": [
+      {
+        "title": "Uma sinastria que dá para navegar",
+        "description": "Muitas ferramentas enchem de jargão; aqui priorizamos clareza: roda dupla e tabela de aspectos com os orbes mais apertados primeiro. Se você só tem dez minutos, veja as linhas do topo — costumam ser os diálogos mais intensos.",
+        "icon": "RiHeartLine",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Navegar a sinastria com facilidade" }
+      },
+      {
+        "title": "Compatibilidade entre mapas sem mistério vazio",
+        "description": "Astrologia relacional funciona quando a comparação é explícita. Seus resultados listam contatos planeta a planeta para pesquisar e conversar — compatibilidade vira diálogo, não pontuação oculta. Essa é a sinastria contemporânea.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Compatibilidade pelos aspectos de sinastria" }
+      },
+      {
+        "title": "Da sinastria à astrocartografia",
+        "description": "Depois de gerar a sinastria, vá às linhas planetárias de cada pessoa. Sinastria trata do «entre vocês»; o mapa, do «na Terra». Juntas formam um fluxo completo — especialmente com viagens ou mudanças.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Após a sinastria, mapas de astrocartografia" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Como montar sua sinastria",
+    "label": "USO",
+    "description": "Quatro passos para gerar a sinastria e aprofundar com sobreposições e mapas.",
+    "items": [
+      {
+        "title": "Informe dois perfis de nascimento",
+        "description": "Datas, hora opcional (padrão 12:00 local), locais e fusos. Dados precisos refinam a sinastria — sobretudo Lua e ângulos.",
+        "icon": "RiUserLine"
+      },
+      {
+        "title": "Gere a sinastria",
+        "description": "Ao enviar, abrem-se roda dupla e matriz de aspectos — núcleo da leitura.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Cidade compartilhada (opcional)",
+        "description": "Para sobreposições relocadas, informe uma cidade e recalcule. A sinastria incluirá contexto de casas do outro naquele lugar.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Mapas, IA, próximas perguntas",
+        "description": "Abra astrocartografia para cada um, compare linhas ou inicie leitura de sinastria com IA usando o contexto do mapa (login, créditos).",
+        "icon": "RiSparklingLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Recursos da calculadora de sinastria",
+    "label": "RECURSOS",
+    "description": "Um fluxo só: calcular, visualizar, relocar opcionalmente, mapear, IA opcional — sua sinastria continua sendo a referência.",
+    "items": [
+      {
+        "title": "Aspectos maiores para sinastria completa",
+        "description": "Da conjunção ao sextil com orbes padrão — o que leitores de astrologia relacional esperam.",
+        "icon": "RiSparklingLine"
+      },
+      {
+        "title": "Casas em signo inteiro, alinhadas ao site",
+        "description": "Mesmo sistema das outras ferramentas: comparar sinastria com trabalho natal ou de relocação fica mais simples.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Sobreposições relocadas opcionais",
+        "description": "Teste uma cidade: como os temas de casa mudam quando ambos os mapas usam as mesmas coordenadas — sem alterar os aspectos natais entre vocês.",
+        "icon": "RiFlightTakeoffLine"
+      },
+      {
+        "title": "Prévia de mapa duplo após a sinastria",
+        "description": "Ambos os conjuntos de linhas num globo como complemento geográfico; detalhes no mapa completo.",
+        "icon": "RiEarthLine"
+      },
+      {
+        "title": "Leitura de sinastria com IA opcional",
+        "description": "O Astro Chat transforma sua lista de aspectos em temas claros: mesmos dados recém-calculados, login e créditos; ajuda a formular, não substitui julgamento ou terapia.",
+        "icon": "RiChat3Line"
+      },
+      {
+        "title": "Interface no seu idioma",
+        "description": "Troque o idioma para rótulos e textos de ajuda; resultados numéricos e lógica do mapa permanecem consistentes no site.",
+        "icon": "RiTranslate"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Perguntas frequentes sobre sinastria",
+    "description": "Respostas para quem quer uma sinastria confiável e um processo de leitura realista.",
+    "items": [
+      {
+        "title": "O que é sinastria, em poucas palavras?",
+        "description": "Sinastria compara dois mapas astrais para mostrar como seus planetas aspectam os do outro. É a base da maioria do trabalho de compatibilidade além do signo solar. Aqui os contatos vêm listados de forma clara para você estudar passo a passo."
+      },
+      {
+        "title": "A calculadora é gratuita?",
+        "description": "Sim — gerar sinastria, roda dupla, aspectos, sobreposições e prévias de mapa é grátis. Leitura opcional de sinastria com IA usa os mesmos créditos do Astro Chat e exige login."
+      },
+      {
+        "title": "A sinastria muda se nos mudarmos de cidade?",
+        "description": "Aspectos natais entre longitudes não mudam ao relocar. O que muda é o destaque de casas e ângulos — daí a cidade compartilhada opcional junto da sinastria."
+      },
+      {
+        "title": "E se eu não souber a hora de nascimento?",
+        "description": "Usamos 12:00 local por padrão. A sinastria ainda mostra muitos aspectos planetários, mas Lua e temas angulares podem ficar incompletos — prefira hora exata quando possível."
+      },
+      {
+        "title": "Sinastria e mapa composto?",
+        "description": "Sinastria confronta dois mapas diretamente. O composto funde pontos médios num único mapa de relacionamento. Muita gente começa pela sinastria para química e timing — o diálogo planeta a planeta continua mais claro ali."
+      },
+      {
+        "title": "Quais contatos olhar primeiro?",
+        "description": "Costuma-se começar por Sol–Lua, Vênus–Marte, Mercúrio e Saturno — mas o contexto importa. Sua sinastria lista muitas conexões; os orbes mais apertados costumam contar a história principal primeiro."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Depois da sinastria, explore o mapa",
+    "description": "Sinastria explica a dinâmica entre vocês; astrocartografia mostra onde as linhas enfatizam cada um na Terra. Continue com os mesmos dados de nascimento para pensar o lugar.",
+    "buttons": [
+      {
+        "title": "Início da astrocartografia",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "personA": "Você",
+      "personB": "Seu parceiro(a)",
+      "wheelAxisInner": "interno",
+      "wheelAxisOuter": "externo",
+      "biwheelFootnote": "Anel interno: você. Anel externo: parceiro(a). Traços curtos marcam o Ascendente no local de nascimento de cada um.",
+      "birthDate": "Data de nascimento",
+      "birthTime": "Hora de nascimento (opcional; padrão 12:00)",
+      "birthLocation": "Local de nascimento",
+      "timezone": "Fuso no nascimento",
+      "relocateLocation": "Cidade compartilhada (opcional — sobreposição de casas relocadas)",
+      "submit": "Calcular sinastria"
+    },
+    "tabs": {
+      "synastry": "Sinastria",
+      "relocated": "Cidade compartilhada",
+      "maps": "Mapas"
+    },
+    "result": {
+      "title": "Sua sinastria",
+      "aspectsTitle": "Aspectos planetários (você → parceiro(a))",
+      "planetA": "Você",
+      "planetB": "Parceiro(a)",
+      "aspect": "Aspecto",
+      "orb": "Orbe",
+      "relocatedEmptyHint": "Informe uma cidade compartilhada acima e calcule de novo para ver sobreposições de casas relocadas para ambos os mapas nas mesmas coordenadas.",
+      "relocatedTitle": "Relocado para",
+      "ascA": "Seu Ascendente (cidade compartilhada)",
+      "ascB": "Ascendente do parceiro(a) (cidade compartilhada)",
+      "overlayATitle": "Seus planetas nas casas do parceiro(a) (cidade compartilhada)",
+      "overlayBTitle": "Planetas do parceiro(a) nas suas casas (cidade compartilhada)",
+      "planet": "Planeta",
+      "house": "Casa",
+      "mapsTitle": "Mapas de astrocartografia",
+      "mapsDesc": "Abra o mapa mundial com os dados de cada pessoa. Compare linhas em duas abas.",
+      "mapLinkA": "Abrir mapa completo (você)",
+      "mapLinkB": "Abrir mapa completo (parceiro(a))",
+      "dualMapTitle": "Mapa de astrocartografia combinado",
+      "dualMapDesc": "Ambos os conjuntos de linhas num globo: os seus nas cores originais, os do parceiro(a) em ciano tracejado. Carregamento pesado — pode levar alguns segundos.",
+      "dualMapLegendSolid": "contínuo · cores originais",
+      "dualMapLegendDashed": "ciano tracejado",
+      "dualMapFootnote": "Dois conjuntos completos de linhas num globo. Para pop-ups detalhados e IA, abra o mapa individual em outra aba.",
+      "aiTitle": "Leitura de sinastria com IA",
+      "aiButton": "Abrir leitura com IA",
+      "aiHint": "Usa os mesmos créditos do Astro Chat. Login obrigatório. O assistente recebe sua tabela de aspectos e sobreposições relocadas opcionais.",
+      "footnote": "Casas em signo inteiro. Aspectos de sinastria usam longitudes natais; a seção relocada calcula ambos os mapas nas coordenadas compartilhadas."
+    },
+    "errors": {
+      "required": "Preencha os campos obrigatórios para ambas as pessoas.",
+      "generic": "Falha no cálculo. Verifique os dados e tente novamente."
+    }
+  }
+}

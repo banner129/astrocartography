@@ -3,7 +3,7 @@
   
   <!-- ========================================== -->
   <!-- 当前生效：首页、多语言、法律、联系、博客、Astrocartography Calculator、Birth Chart、Rising Sign、Transit Chart、Natal Chart -->
-  <!-- 更新日期: 2026-03-20                        -->
+  <!-- 更新日期: 2026-03-30                        -->
   <!-- ========================================== -->
   
   <!-- 英文首页 - 主关键词: astrocartography -->
@@ -379,6 +379,50 @@
   <url>
     <loc>https://astrocarto.org/de/relocation-chart-calculator/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Synastry Chart Calculator 页面
+       ────────────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://astrocarto.org/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/zh/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/es/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/it/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/pt/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/de/synastry-chart-calculator/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

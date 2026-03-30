@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "title": "Synastrie kostenlos online berechnen | Partnerhoroskop, Aspekte & Aszendenten",
+    "description": "Kostenloser Synastrie-Rechner: zwei Radixe, Doppelrad, Hauptaspekte, optional gemeinsamer Ort für Relokations-Häuser, Karten-Vorschau & KI. Ihre Synastrie in wenigen Minuten – nachvollziehbar statt Bauchgefühl.",
+    "keywords": "Synastrie, Synastrie berechnen, Partnerhoroskop, Beziehungsastrologie, Horoskopvergleich, Venus Mars Synastrie, Sonne Mond Synastrie, Astrokartografie"
+  },
+  "intentAnchor": {
+    "text": "Wenn Sie eine Synastrie suchen, der Sie vertrauen können, starten Sie hier. Dieser kostenlose Synastrie-Rechner verwandelt zwei Geburtprofile in ein klares, fast druckreifes Ergebnis: Doppelrad, vollständige Aspektmatrix – und mit einem gemeinsamen Ort Relokations-Overlays, die zeigen, wie Sie im Rad des Partners in dieser Stadt landen. Synastrie ist kein einzelner Kompatibilitäts-Score; sie kartiert Chemie, Reibung, Timing und emotionale Tonlage über echte Aspekte. Wir listen Hauptkontakte mit üblichen Orbis, damit die engsten Dialoge zuerst sichtbar werden. Ob Sie Synastrie oder Zwei-Radix-Vergleich sagen – Ziel bleibt: wie zwei Geburtshoroskope miteinander sprechen."
+  },
+  "internalLinks": {
+    "title": "Verwandte Tools",
+    "items": [
+      {
+        "text": "Zentrale für Karten und Rechner.",
+        "linkText": "Startseite",
+        "url": "/"
+      },
+      {
+        "text": "Einzelnes Geburtshoroskop.",
+        "linkText": "Geburtshoroskop",
+        "url": "/chart/natal-chart"
+      },
+      {
+        "text": "Häuser vor einem Umzug vergleichen.",
+        "linkText": "Relokationshoroskop",
+        "url": "/relocation-chart-calculator"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Was ist Synastrie – und wozu sie hilft",
+    "label": "EINLEITUNG",
+    "description": "Synastrie legt zwei Radix-Horoskope übereinander, damit Sie Beziehungsdynamik über Aspekte lesen – und bei einem Ort auch über Häuser-Overlays. Anders als ein Komposithoroskop (Mittelpunkts-Beziehungsrad) bleiben in der Synastrie beide Personen sichtbar: Ihre Planeten aspektieren die Planeten des Partners direkt. Venus–Mars-Anziehung, Sonne–Mond-Stimmung, Merkur-Gespräch, Saturn-Belastbarkeit – ohne die Verbindung auf ein Schlagwort zu reduzieren. Ablauf: Synastrie berechnen, Aspekte scannen, optional einen gemeinsamen Ort testen, bei Bedarf Astrokartografie öffnen.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Synastrie-Rechner mit Doppelrad und Beziehungsaspekten"
+    },
+    "items": [
+      {
+        "title": "Synastrie vs. reines Sonnenzeichen-Matching",
+        "description": "Ein schnelles Zeichen-Match kann unterhalten, doch Synastrie geht tiefer. Echte Planetenpositionen – nicht nur die Sonne – beschreiben Spannung und Nähe. Partnerschaftsastrologie ist mehrdimensional: Mond Bedürfnisse, Venus Nähe, Mars Tempo, Saturn Halt, Merkur Gespräch. Hier erhalten Sie strukturierte Inter-Aspekte zum Nachprüfen – kein vager Fließtext. Für eine Synastrie, die Sie im Alltag besprechen können, brauchen Sie verlässliche Geburtsdaten; die Zeit schärft vor allem Mond und Winkel.",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Warum Synastrie mehr zeigt als nur das Sonnenzeichen" }
+      },
+      {
+        "title": "Was dieser Synastrie-Rechner zeigt",
+        "description": "Gebaut für Lesbarkeit: Doppelrad plus sortierbare Liste der Hauptaspekte zwischen den klassischen Punkten beider Personen. Konjunktion, Opposition, Quadrat, Trigon und Sextil mit üblichen Orbis – das, was die meisten zuerst prüfen. Optional KI-Synastrie (Credits, Login) kann Themen verantwortungsvoll einordnen – immer auf Basis derselben Daten, die Sie eben berechnet haben.",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Synastrie-Rechner: Aspekte und Doppelrad" }
+      },
+      {
+        "title": "Synastrie + Ort: Overlays und Karten",
+        "description": "Aspekte in der Synastrie ändern sich nicht durch Reisen, Winkel und Häuser schon – deshalb optional ein gemeinsamer Ort für Relokations-Overlays und Ganzzeichen-Kontext. Reine Geografie: volle Karte pro Person; Beziehungsstruktur zuerst in der Synastrie klären.",
+        "image": { "src": "/imgs/features/synastry/3.webp", "alt": "Synastrie mit Astrokartografie und gemeinsamem Ort" }
+      },
+      {
+        "title": "Synastrie verantwortungsvoll lesen",
+        "description": "Synastrie beschreibt Tendenzen, kein Schicksal. Am gesündesten: Aspekt benennen, Bedürfnis dahinter besprechen, Handeln an Werten ausrichten. Kein Urteil aus einem Rad – sondern Sprache für Empathie und Timing. Ohne Geburtszeit: Mond- und Aszendenten-Themen vorsichtig; langsamere Kontakte bleiben oft valide.",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Hinweise für eine reflektierte Synastrie-Deutung" }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Warum dieser Synastrie-Rechner",
+    "label": "VORTEILE",
+    "description": "Für Paare, Freund*innen und Neugierige, die eine Synastrie ohne Friktion erkunden wollen: schnelle Eingabe, transparente Ausgabe, Weiterweg zur Karte, wenn der Ort zählt.",
+    "items": [
+      {
+        "title": "Eine Synastrie, die Sie navigieren können",
+        "description": "Statt Jargon: Doppelrad plus Aspektliste, engste Orbis zuerst – so ergibt die Synastrie eine nachvollziehbare Story. Nur zehn Minuten? Die oberen Zeilen sind meist die lautesten Dialoge.",
+        "icon": "RiHeartLine",
+        "image": { "src": "/imgs/features/synastry/4.webp", "alt": "Synastrie-Ergebnis klar strukturiert" }
+      },
+      {
+        "title": "Radix-Vergleich ohne Esoterik-Score",
+        "description": "Partnerschaftsastrologie funktioniert, wenn der Vergleich konkret ist. Planet-zu-Planet-Kontakte zum Nachlesen und Gespräch – Kompatibilität wird Dialog, kein Geheimcode. Das ist moderne Synastrie.",
+        "icon": "RiShieldCheckLine",
+        "image": { "src": "/imgs/features/synastry/1.webp", "alt": "Geburtshoroskop-Vergleich über Synastrie-Aspekte" }
+      },
+      {
+        "title": "Von der Synastrie zur Astrokartografie",
+        "description": "Nach der Synastrie zu den Planetenlinien jeder Person. Synastrie = zwischen euch; Karte = auf der Erde. Zusammen ein rundes Bild – besonders bei Reise- oder Umzugsthemen.",
+        "icon": "RiMapPinLine",
+        "image": { "src": "/imgs/features/synastry/2.webp", "alt": "Nach der Synastrie zur Astrokartografie-Karte" }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "So erstellen Sie Ihre Synastrie",
+    "label": "ANLEITUNG",
+    "description": "Vier Schritte zur Synastrie, dann Vertiefung mit Overlays und Karten.",
+    "items": [
+      {
+        "title": "Zwei Geburtprofile eintragen",
+        "description": "Daten, optionale Uhrzeit (Standard 12:00 lokal), Geburtsorte, Zeitzonen. Genauigkeit schärft die Synastrie – besonders Mond und Winkel.",
+        "icon": "RiUserLine"
+      },
+      {
+        "title": "Synastrie berechnen",
+        "description": "Absenden: Ergebnis mit Doppelrad und Aspektmatrix – Kern jeder Deutung.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Gemeinsamer Ort (optional)",
+        "description": "Für Relokations-Overlays einen Ort eintragen und neu rechnen. Die Synastrie zeigt dann Partner-Haus-Kontext für diesen Ort.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Karten, KI, nächste Fragen",
+        "description": "Astrokartografie pro Person, Linien vergleichen oder KI-Synastrie mit Chart-Kontext (Login, Credits).",
+        "icon": "RiSparklingLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funktionen des Synastrie-Rechners",
+    "label": "FEATURES",
+    "description": "Ein Ablauf: rechnen, visualisieren, optional relokalisieren, kartieren, optional KI – Ihre Synastrie bleibt die Referenz.",
+    "items": [
+      {
+        "title": "Hauptaspekte für eine vollständige Synastrie",
+        "description": "Konjunktion bis Sextil mit Standard-Orbis – das, was Leser*innen in der Beziehungsastrologie erwarten.",
+        "icon": "RiSparklingLine"
+      },
+      {
+        "title": "Ganzzeichen-Häuser wie überall auf der Site",
+        "description": "Passt zu unseren anderen Tools – Synastrie lässt sich mit Radix und Relokation vergleichen.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Optionale Relokations-Overlays",
+        "description": "Einen Ort testen: wie Häuserthemen sich verschieben, wenn beide Radixe dieselben Koordinaten nutzen – Aspekte bleiben natal.",
+        "icon": "RiFlightTakeoffLine"
+      },
+      {
+        "title": "Doppel-Karten-Vorschau nach der Synastrie",
+        "description": "Beide Liniensätze auf einem Globus – Details in der Vollkarte.",
+        "icon": "RiEarthLine"
+      },
+      {
+        "title": "Optionale KI-Synastrie",
+        "description": "Astro Chat fasst Ihre Aspektliste in Alltagssprache zus – dieselben Daten, Login und Credits; Hilfe beim Formulieren, kein Ersatz für Urteil oder Therapie.",
+        "icon": "RiChat3Line"
+      },
+      {
+        "title": "Oberfläche in Ihrer Sprache",
+        "description": "Locale wechseln für Labels und Hilfetexte – Zahlen und Rechenlogik bleiben konsistent.",
+        "icon": "RiTranslate"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Synastrie – häufige Fragen",
+    "description": "Antworten für alle, die eine belastbare Synastrie und realistische Deutung suchen.",
+    "items": [
+      {
+        "title": "Was ist Synastrie in einfachen Worten?",
+        "description": "Synastrie vergleicht zwei Geburtshoroskope und zeigt, wie Ihre Planeten die des Partners aspektieren. Basis fast jeder Radix-Kompatibilität jenseits des Sonnenzeichens. Hier sind die Kontakte übersichtlich gelistet."
+      },
+      {
+        "title": "Ist der Rechner kostenlos?",
+        "description": "Ja – Synastrie, Doppelrad, Aspekte, Overlays und Karten-Vorschau sind kostenlos. Optionale KI-Synastrie nutzt dieselben Credits wie Astro Chat und erfordert Login."
+      },
+      {
+        "title": "Ändert sich die Synastrie beim Umzug?",
+        "description": "Natal stehen die Aspekte zwischen den Längen fest. Verändern tun sich Betonung der Häuser und Winkel – deshalb gemeinsame Stadt optional neben der Synastrie."
+      },
+      {
+        "title": "Keine Geburtszeit?",
+        "description": "Standard 12:00 lokal. Die meisten Planetenaspekte bleiben sichtbar; Mond und Winkel ungenauer – Zeit nachreichen, wenn möglich."
+      },
+      {
+        "title": "Synastrie und Komposithoroskop?",
+        "description": "Synastrie vergleicht zwei Radixe direkt. Das Komposithoroskop mischt Mittelpunkte zu einem Beziehungsrad. Viele starten mit Synastrie für Chemie und Timing – Planet-zu-Planet bleibt dort am klarsten."
+      },
+      {
+        "title": "Welche Kontakte zuerst?",
+        "description": "Oft Sonne–Mond, Venus–Mars, Merkur, Saturn – Kontext entscheidet. Die Synastrie listet viele Verbindungen; die engsten Orbis erzählen meist zuerst die stärkste Geschichte."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Nach der Synastrie: die Karte erkunden",
+    "description": "Synastrie erklärt das Zwischen-euch; Astrokartografie zeigt, wo welche Linien Sie auf der Erde betonen. Gleiche Geburtsdaten, anderer Blick auf den Ort.",
+    "buttons": [
+      {
+        "title": "Zur Astrokartografie-Startseite",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "personA": "Sie",
+      "personB": "Ihr Partner / Ihre Partnerin",
+      "wheelAxisInner": "innen",
+      "wheelAxisOuter": "außen",
+      "biwheelFootnote": "Innenring: Sie. Außenring: Partner*in. Kurze Striche markieren den Aszendenten am Geburtsort.",
+      "birthDate": "Geburtsdatum",
+      "birthTime": "Geburtszeit (optional; Standard 12:00)",
+      "birthLocation": "Geburtsort",
+      "timezone": "Zeitzone am Geburtsort",
+      "relocateLocation": "Gemeinsamer Ort (optional – für Relokations-Häuser)",
+      "submit": "Synastrie berechnen"
+    },
+    "tabs": {
+      "synastry": "Synastrie",
+      "relocated": "Gemeinsamer Ort",
+      "maps": "Karten"
+    },
+    "result": {
+      "title": "Ihre Synastrie",
+      "aspectsTitle": "Planetenaspekte (Sie → Partner*in)",
+      "planetA": "Sie",
+      "planetB": "Partner*in",
+      "aspect": "Aspekt",
+      "orb": "Orb",
+      "relocatedEmptyHint": "Oben einen gemeinsamen Ort eintragen und erneut berechnen, um Relokations-Häuser-Overlays für beide Radixe an denselben Koordinaten zu sehen.",
+      "relocatedTitle": "Relokiert nach",
+      "ascA": "Ihr Aszendent (gemeinsamer Ort)",
+      "ascB": "Aszendent des Partners / der Partnerin (gemeinsamer Ort)",
+      "overlayATitle": "Ihre Planeten in den Häusern des Partners (gemeinsamer Ort)",
+      "overlayBTitle": "Planeten des Partners in Ihren Häusern (gemeinsamer Ort)",
+      "planet": "Planet",
+      "house": "Haus",
+      "mapsTitle": "Astrokartografie-Karten",
+      "mapsDesc": "Weltkarte mit den Geburtsdaten jeder Person – in zwei Tabs vergleichen.",
+      "mapLinkA": "Vollkarte öffnen (Sie)",
+      "mapLinkB": "Vollkarte öffnen (Partner*in)",
+      "dualMapTitle": "Kombinierte Astrokartografie",
+      "dualMapDesc": "Beide Liniensätze auf einem Globus: Ihre in Originalfarben, die des Partners als türkise Striche. Kann einige Sekunden laden.",
+      "dualMapLegendSolid": "durchgezogen · Originalfarben",
+      "dualMapLegendDashed": "türkis gestrichelt",
+      "dualMapFootnote": "Zwei vollständige Liniensätze auf einem Globus. Für Pop-ups und KI jeweils die Einzelkarte öffnen.",
+      "aiTitle": "KI-Synastrie",
+      "aiButton": "KI-Deutung öffnen",
+      "aiHint": "Gleiche Credits wie Astro Chat. Login nötig. Die Assistentin erhält Ihre Aspektliste und optionale Relokations-Overlays.",
+      "footnote": "Ganzzeichen-Häuser. Synastrie-Aspekte nutzen natale Längen; der Relokationsbereich beide Radixe am gemeinsamen Ort."
+    },
+    "errors": {
+      "required": "Bitte alle Pflichtfelder für beide Personen ausfüllen.",
+      "generic": "Berechnung fehlgeschlagen. Bitte Daten prüfen und erneut versuchen."
+    }
+  }
+}

@@ -56,6 +56,10 @@ export async function getRelocationChartPage(locale: string): Promise<Calculator
   return (await getPage("relocation-chart-calculator", locale)) as CalculatorPage;
 }
 
+export async function getSynastryChartPage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("synastry-chart-calculator", locale)) as CalculatorPage;
+}
+
 export async function getPage(
   name: string,
   locale: string
