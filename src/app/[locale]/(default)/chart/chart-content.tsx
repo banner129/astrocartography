@@ -442,8 +442,8 @@ export default function ChartContent() {
 
       {/* 桌面端：右侧导航栏 */}
       {chartData && !isMobile && (
-        <div className="absolute top-0 right-0 bottom-0 z-[1100] pointer-events-none w-auto">
-            <div className="h-full flex flex-col py-6 px-4 pointer-events-auto">
+        <div className="absolute top-0 right-0 z-[1100] pointer-events-none w-auto">
+            <div className="flex flex-col py-6 px-4 pointer-events-auto">
               {/* 标题和出生信息 */}
               <div className="mb-6 bg-black/80 backdrop-blur-md rounded-lg px-4 py-3 border border-white/20">
                 <h1 className="text-sm md:text-base font-bold text-white mb-2">
