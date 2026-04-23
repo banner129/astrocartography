@@ -64,7 +64,7 @@ export async function generateMetadata({
 
   const metadata: any = {
     title: {
-      template: `%s`,
+      template: `%s | Astrocarto`,
       default: title,
     },
     description,
@@ -84,11 +84,32 @@ export async function generateMetadata({
       description,
       type: "website",
       url: getCanonicalUrl(locale),
+      siteName: "Astrocarto",
+      images: [
+        {
+          url: "/imgs/features/hero-web.webp",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/imgs/features/hero-web.webp"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   };
 
