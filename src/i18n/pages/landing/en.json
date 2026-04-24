@@ -593,7 +593,19 @@
     "social": {
       "items": []
     },
-    "badges": [],
+    "badges": [
+      {
+        "title": "Best Web Development Companies - OnToplist.com",
+        "url": "https://www.ontoplist.com/web-development-companies/",
+        "target": "_blank",
+        "image": {
+          "src": "https://www.ontoplist.com/images/ontoplist31.png?id=69eb5b052cb82",
+          "alt": "Best Web Development Companies - OnToplist.com",
+          "width": 171,
+          "height": 54
+        }
+      }
+    ],
     "agreement": {
       "items": [
         {
