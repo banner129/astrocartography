@@ -32,6 +32,12 @@ export default async function RootLayout({
           </>
         )}
 
+        {/* code.market widget script */}
+        <script 
+          src="https://code.market/widget.min.js" 
+          async 
+        />
+
         <link rel="icon" href="/logo.ico" />
 
         {locales &&

@@ -85,22 +85,41 @@ export default function Footer({
               {footer.badges && footer.badges.length > 0 && (
                 <div className="flex items-center gap-3 opacity-60 hover:opacity-80 transition-opacity">
                   {footer.badges.map((badge, i) => (
-                    <a
-                      key={i}
-                      href={badge.url}
-                      target={badge.target || "_blank"}
-                      rel="noopener noreferrer"
-                      title={badge.title}
-                      className="inline-block hover:opacity-90 transition-opacity"
-                    >
-                      <img
-                        src={badge.image.src}
-                        alt={badge.image.alt || badge.title}
-                        width={Math.round((badge.image.width || 171) * 0.8)} 
-                        height={Math.round((badge.image.height || 54) * 0.8)}
-                        className="h-auto max-h-10"
-                      />
-                    </a>
+                    badge.type === "codemarket_widget" ? (
+                      <div
+                        key={i}
+                        data-codemarket-widget={badge.widget_id}
+                        data-theme-bg="#ffffff"
+                        data-theme-text="slate-600"
+                        data-layout="grid"
+                        data-show-branding="false"
+                      >
+                        <a href={badge.url} title={badge.title} target={badge.target || "_blank"}>
+                          <img
+                            src={badge.image.src}
+                            alt={badge.image.alt || badge.title}
+                            className="h-auto max-h-10"
+                          />
+                        </a>
+                      </div>
+                    ) : (
+                      <a
+                        key={i}
+                        href={badge.url}
+                        target={badge.target || "_blank"}
+                        rel="noopener noreferrer"
+                        title={badge.title}
+                        className="inline-block hover:opacity-90 transition-opacity"
+                      >
+                        <img
+                          src={badge.image.src}
+                          alt={badge.image.alt || badge.title}
+                          width={Math.round((badge.image.width || 171) * 0.8)} 
+                          height={Math.round((badge.image.height || 54) * 0.8)}
+                          className="h-auto max-h-10"
+                        />
+                      </a>
+                    )
                   ))}
                 </div>
               )}

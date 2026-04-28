@@ -5,6 +5,8 @@ export interface Badge {
   url: string;
   target?: string;
   image: Image;
+  type?: "codemarket_widget" | "link";
+  widget_id?: string;
 }
 
 export interface Footer {

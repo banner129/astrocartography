@@ -624,6 +624,56 @@
           "width": 171,
           "height": 54
         }
+      },
+      {
+        "title": "Fazier Launch Badge",
+        "url": "https://fazier.com/launches/astrocarto.org",
+        "target": "_blank",
+        "image": {
+          "src": "https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light",
+          "alt": "Fazier badge",
+          "width": 120
+        }
+      },
+      {
+        "title": "Featured on code.market",
+        "url": "https://code.market?code.market=verified",
+        "target": "_blank",
+        "image": {
+          "src": "https://code.market/assets/manage-product/featured-logo-bright.svg",
+          "alt": "ai tools code.market"
+        },
+        "type": "codemarket_widget",
+        "widget_id": "free-astrocartography-calculator-with-ai-accurate-birth-map"
+      },
+      {
+        "title": "All The Best AI Tools",
+        "url": "https://allinai.tools",
+        "target": "_blank",
+        "image": {
+          "src": "https://allinai.tools/logo.png",
+          "alt": "All in AI Tools"
+        }
+      },
+      {
+        "title": "Featured on Findly.tools",
+        "url": "https://findly.tools/astrocarto?utm_source=astrocarto",
+        "target": "_blank",
+        "image": {
+          "src": "https://findly.tools/badges/findly-tools-badge-light.svg",
+          "alt": "Featured on Findly.tools",
+          "width": 175,
+          "height": 55
+        }
+      },
+      {
+        "title": "MossAI Tools",
+        "url": "https://mossai.org",
+        "target": "_blank",
+        "image": {
+          "src": "https://mossai.org/logo.svg",
+          "alt": "MossAI Tools"
+        }
       }
     ],
     "agreement": {
