@@ -68,6 +68,38 @@ export async function getCompositeChartPage(locale: string): Promise<CalculatorP
   return (await getPage("composite-chart-calculator", locale)) as CalculatorPage;
 }
 
+export async function getAstrocartographyLinesPage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("astrocartography-lines", locale)) as CalculatorPage;
+}
+
+export async function getSunLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("sun-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getVenusLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("venus-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getJupiterLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("jupiter-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getMoonLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("moon-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getMarsLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("mars-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getSaturnLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("saturn-line-astrocartography", locale)) as CalculatorPage;
+}
+
+export async function getMercuryLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("mercury-line-astrocartography", locale)) as CalculatorPage;
+}
+
 export async function getPage(
   name: string,
   locale: string

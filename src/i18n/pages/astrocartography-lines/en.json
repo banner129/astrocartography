@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "title": "Astrocartography Lines: Complete Guide to Every Planetary Line",
+    "description": "Understand every astrocartography line and what each planet means for your life. This complete guide covers Sun, Moon, Venus, Mars, Jupiter, Saturn, Mercury lines—and the 4 angles (ASC, DSC, MC, IC) that determine how each line affects you.",
+    "keywords": "astrocartography lines, astrocartography lines meaning, planetary lines astrocartography, what are astrocartography lines, astrocartography line guide, astrocartography lines explained, best astrocartography lines, astrocartography lines ASC DSC MC IC, how to read astrocartography lines, astrocartography relocation lines"
+  },
+  "intentAnchor": {
+    "text": "This page is a comprehensive reference for every astrocartography line—what each planetary line means, how the four angles change its effect, and how to use this knowledge when choosing where to live or travel."
+  },
+  "internalLinks": {
+    "title": "Quick Navigation",
+    "items": [
+      {
+        "text": "Ready to see your lines on a map?",
+        "linkText": "Free Astrocartography Calculator",
+        "url": "/"
+      },
+      {
+        "text": "Most popular:",
+        "linkText": "Venus Line",
+        "url": "/venus-line-astrocartography"
+      },
+      {
+        "text": "Best for career:",
+        "linkText": "Jupiter Line",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "text": "Best for home:",
+        "linkText": "Moon Line",
+        "url": "/moon-line-astrocartography"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What Are Astrocartography Lines?",
+    "label": "FOUNDATION",
+    "description": "Astrocartography lines are paths drawn across a world map showing where each planet in your birth chart was positioned at the four key angles of the sky at the moment you were born. Every person has a unique set of lines crossing the globe—and living or traveling near those lines amplifies the energy of that planet in your daily experience.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Astrocartography lines map showing planetary lines across the globe"
+    },
+    "items": [
+      {
+        "title": "How Astrocartography Lines Are Calculated",
+        "description": "At your birth moment, every planet occupied a specific position in the sky. Astrocartography calculates where each of those planets was rising (ASC), setting (DSC), culminating at its highest point (MC), or at its lowest point beneath the Earth (IC) for every longitude on the globe. These four positions create four distinct lines per planet—resulting in up to 40 primary planetary lines on your personal map. The lines are calculated using Swiss Ephemeris astronomical data, converting equatorial planetary coordinates (Right Ascension and Declination) into geographic latitude and longitude through spherical trigonometry.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "How astrocartography lines are calculated using planetary angles"
+        }
+      },
+      {
+        "title": "The Four Angles: ASC, DSC, MC, and IC",
+        "description": "Every astrocartography line comes in four versions based on which angle the planet touches. The Ascendant (ASC) line runs north-south through locations where the planet was rising on the eastern horizon at your birth—these places affect your identity, appearance, and how others perceive you. The Descendant (DSC) line marks where the planet was setting on the western horizon—these places affect one-on-one relationships and partnerships. The Midheaven (MC) line marks where the planet was at its highest point in the sky—these places affect career, public reputation, and life direction. The Imum Coeli (IC) line marks where the planet was directly below the Earth—these places affect home, family, roots, and private life. Understanding which angle a line belongs to is as important as knowing which planet creates it.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "The four angles ASC DSC MC IC in astrocartography explained"
+        }
+      },
+      {
+        "title": "How Strong Is the Line's Influence?",
+        "description": "The closer you are to a planetary line, the stronger its influence. Most astrocartographers agree that living within 200–300 miles (320–480 km) of a line produces a noticeable effect, with the effect intensifying significantly within 50 miles. Being exactly on a line is the most powerful experience. Line intersections—called 'paran lines' or 'power spots'—occur where two planetary lines cross, creating zones where two planetary energies are simultaneously activated. Visiting a place doesn't necessarily mean relocating: even short trips or vacations near your lines can produce meaningful, temporary shifts in your experience.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Strength of astrocartography line influence by distance"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Every Planetary Line and What It Means",
+    "label": "PLANETARY LINES",
+    "description": "Each planet in astrocartography carries distinct themes that shape your experience in the locations where its lines fall. Here is a concise guide to all seven major planetary lines, along with how their influence shifts depending on the angle (ASC, DSC, MC, IC).",
+    "items": [
+      {
+        "title": "Sun Line — Identity, Career & Visibility",
+        "description": "Sun lines activate your core identity, confidence, and desire for recognition. On Sun lines, you feel more like yourself and are more likely to be seen and acknowledged. Sun MC lines are especially powerful for career visibility and leadership, while Sun ASC lines boost personal charisma and self-expression. These places demand authenticity—they don't allow you to hide. Sun lines are excellent for people who want to build a public reputation, step into leadership, or reconnect with their sense of purpose. However, they can feel exhausting if you're not comfortable with visibility.",
+        "icon": "RiSunLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "Sun line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Moon Line — Home, Emotions & Family",
+        "description": "Moon lines heighten emotional sensitivity, intuition, and the need for comfort and belonging. These are deeply inward-focused places where feelings surface more readily and domestic life becomes central. Moon IC lines—often called the 'cozy sweater line'—are the most powerful for finding a true sense of home and belonging, making them ideal for permanent relocation. Moon ASC lines enhance emotional expression and self-discovery. These are excellent places for healing, nurturing relationships, or settling down, though the heightened emotionality can feel overwhelming for those who prefer to stay in their heads.",
+        "icon": "RiMoonLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Moon line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Venus Line — Love, Beauty & Relationships",
+        "description": "Venus lines create an atmosphere of ease, attraction, beauty, and social flow. These are places where life feels softer, relationships form more naturally, and pleasure is more accessible. Venus DSC lines are the most powerful for romantic partnerships—often called the 'honeymoon line'—while Venus ASC lines enhance personal magnetism and social confidence. Venus IC lines create beautiful, harmonious home environments. Venus lines are among the most sought-after for relocation because of their gentle, supportive quality. The shadow side is that comfort can reduce motivation and discipline if you're not intentional about your goals.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Venus line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Mars Line — Energy, Drive & Ambition",
+        "description": "Mars lines activate physical energy, assertiveness, ambition, and direct action. These are fast-paced, demanding places where you feel motivated but also restless and potentially confrontational. Mars MC lines are especially powerful for career ambition, entrepreneurship, and leadership—you pursue goals boldly and feel driven to compete and succeed. Mars ASC lines intensify personal drive and physical vitality. While Mars lines are excellent for short-term goal pursuit, athletic endeavors, or launching new initiatives, they can feel draining for long-term living due to the constant activation of your fight response.",
+        "icon": "RiFireLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-planets-overview.webp",
+          "alt": "Mars line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Jupiter Line — Luck, Abundance & Expansion",
+        "description": "Jupiter lines create a sense of expansion, optimism, opportunity, and good fortune. Known as the 'Great Benefic,' Jupiter is considered the most favorable planet for relocation in astrocartography. On Jupiter lines, doors open more easily, people are helpful, and progress feels less obstructed. Jupiter MC lines support career success, recognition, and professional growth, while Jupiter ASC lines expand your worldview and bring a generally uplifting quality to daily life. Jupiter DSC lines attract generous, successful partners and collaborators. The shadow side of Jupiter lines is a tendency toward excess, overconfidence, or failing to apply consistent effort because things feel too easy.",
+        "icon": "RiStarLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "Jupiter line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Saturn Line — Discipline, Challenge & Long-Term Growth",
+        "description": "Saturn lines activate discipline, responsibility, structure, and karmic lessons. These are serious, demanding places where shortcuts don't work and life requires consistent effort. Progress on Saturn lines is slow but durable—achievements here tend to last a lifetime. Saturn MC lines build lasting professional authority through earned reputation, while Saturn IC lines create strong family foundations through obligation and deep roots. Saturn lines are not necessarily bad—for people who need structure or want to build something lasting, they can be transformative. However, they are generally not recommended for rest, play, or seeking ease.",
+        "icon": "RiShieldLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Saturn line astrocartography meaning"
+        }
+      },
+      {
+        "title": "Mercury Line — Communication, Learning & Business",
+        "description": "Mercury lines enhance intellectual activity, communication skills, learning, and networking. These are mentally stimulating environments where your mind feels sharper, conversations flow more easily, and information processing accelerates. Mercury MC lines support careers in writing, journalism, teaching, media, and consulting—your ideas reach audiences and professional communication flourishes. Mercury ASC lines make networking and self-expression feel effortless. Mercury IC lines support private study, deep reading, and intellectual home environments. Mercury lines are excellent for students, writers, teachers, traders, and anyone whose work depends on mental agility. The shadow side is mental overload and difficulty slowing down.",
+        "icon": "RiMessage3Line",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Mercury line astrocartography meaning"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Use Your Astrocartography Lines",
+    "label": "PRACTICAL GUIDE",
+    "description": "Understanding your astrocartography lines is only the first step. Here is how to apply this knowledge practically—whether you're planning a move, a vacation, or simply trying to understand why some places feel so different from others.",
+    "items": [
+      {
+        "title": "Start by Identifying Your Purpose",
+        "description": "Different life goals call for different planetary lines. If you're seeking career advancement and recognition, prioritize your Sun MC or Jupiter MC lines. If you want to find love or improve relationships, focus on your Venus DSC or Moon DSC lines. For a peaceful, nurturing home environment, look at your Moon IC or Venus IC lines. For creative or intellectual growth, explore Mercury or Neptune lines. Knowing what you want before you look at your map prevents you from chasing every line and helps you make intentional decisions about where to invest your time and energy.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Test Lines Before Committing",
+        "description": "You don't need to relocate permanently to feel a planetary line's influence. Visit cities on or near your lines for a few days or weeks first. Pay attention to how you feel, how easily things flow, and whether the environment supports your goals. Many people report that the line's energy becomes apparent within the first 24–48 hours of arrival. This testing approach is especially important for challenging lines like Mars or Saturn, where the demands of the location may outweigh the benefits for your current life situation.",
+        "icon": "RiFlightTakeoffLine"
+      },
+      {
+        "title": "Consider Overlapping Lines and Power Spots",
+        "description": "Where two or more planetary lines cross on your map, a 'power spot' or 'paran zone' is created. These locations activate multiple planetary energies simultaneously, making them particularly complex and intense. A Jupiter-Venus power spot might create an exceptionally romantic and abundant atmosphere, while a Mars-Saturn crossing can feel especially demanding and pressurized. When evaluating a potential location, always check not only which individual lines pass through it, but also which combination of energies is active. Some of the world's most significant cities in people's lives fall on these multi-line intersections.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Use Your Chart to Understand, Not Limit",
+        "description": "Astrocartography lines are a framework for understanding geographic energy patterns, not a set of restrictions. You can live happily and successfully anywhere—your lines simply reveal where certain qualities come more naturally versus where you need to work harder. Many people find that living on a challenging Saturn or Mars line builds their greatest strengths over time. Others choose locations with no strong lines to enjoy a more neutral, self-directed environment. Think of your lines as one lens among many when making location decisions, alongside practical factors like family, career opportunities, and cost of living.",
+        "icon": "RiLightbulbLine"
+      },
+      {
+        "title": "Which Astrocartography Line Is Best for Your Goal?",
+        "description": "The best line depends entirely on what you're seeking. For love and romance, Venus DSC is the most powerful—widely known as the 'honeymoon line.' For career growth and recognition, Jupiter MC or Sun MC are the strongest choices. For a true sense of home and belonging, Moon IC is consistently the top recommendation. For lasting professional authority through mastery, Saturn MC builds the most durable reputation. For ambition and entrepreneurial drive, Mars MC is unmatched. For communication, writing, and business, Mercury MC is the most targeted placement. For personal confidence and identity, Sun ASC or Venus ASC are both excellent. No single line is universally 'best'—the right line is the one that matches what you actually want from a location right now.",
+        "icon": "RiCompassLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "In-Depth Guides for Every Planetary Line",
+    "label": "FULL GUIDES",
+    "description": "Each planetary line has its own complete guide covering the four angles (ASC, DSC, MC, IC), life areas most affected, practical use strategies, and a full FAQ. Choose the line most relevant to your current goals.",
+    "items": [
+      {
+        "title": "Sun Line — Career, Confidence & Identity",
+        "description": "The Sun line amplifies your core identity, confidence, and desire for recognition. Sun MC is the strongest career placement in all of astrocartography. Learn how all four Sun line angles affect your life differently, and whether a Sun line city matches your current goals. Read our complete Sun Line Astrocartography guide for the full breakdown.",
+        "icon": "RiSunLine"
+      },
+      {
+        "title": "Moon Line — Home, Emotions & Family",
+        "description": "Moon lines are the most powerful placement for finding a genuine sense of home and belonging—especially Moon IC, often called the 'cozy sweater line.' They also heighten emotional sensitivity, intuition, and family bonds. Read our complete Moon Line Astrocartography guide to understand which angle best fits your needs.",
+        "icon": "RiMoonLine"
+      },
+      {
+        "title": "Venus Line — Love, Beauty & Relationships",
+        "description": "The Venus line is among the most sought-after in astrocartography for its effect on romance, social ease, and daily quality of life. Venus DSC is the most powerful placement for finding a romantic partner. Read our complete Venus Line Astrocartography guide to understand all four angles and how to use them.",
+        "icon": "RiHeartLine"
+      },
+      {
+        "title": "Jupiter Line — Luck, Expansion & Opportunity",
+        "description": "Jupiter lines are consistently rated the most favorable lines for relocation—career doors open more easily, relationships are more generous, and life carries a quality of expansive optimism. Jupiter MC is especially powerful for professional recognition. Read our complete Jupiter Line Astrocartography guide for a full breakdown.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Mars Line — Energy, Drive & Ambition",
+        "description": "Mars lines amplify physical drive, competitive edge, and ambition. They are excellent for bold career moves and athletic pursuits, but require intentional direction to avoid burnout and conflict. Mars MC is the most professionally productive angle. Read our complete Mars Line Astrocartography guide to decide if a Mars line fits your goals.",
+        "icon": "RiFireLine"
+      },
+      {
+        "title": "Saturn Line — Discipline, Growth & Lasting Achievement",
+        "description": "Saturn lines are the most demanding but also the most rewarding for long-term builders. Saturn MC creates lasting professional authority through genuine mastery and sustained effort. These are not lines to choose for comfort—but for those ready to build something permanent. Read our complete Saturn Line Astrocartography guide.",
+        "icon": "RiShieldLine"
+      },
+      {
+        "title": "Mercury Line — Communication, Learning & Business",
+        "description": "Mercury lines sharpen the mind, accelerate learning, and support all forms of professional communication. Mercury MC is the strongest placement for writers, journalists, educators, traders, and knowledge workers. Read our complete Mercury Line Astrocartography guide to see how all four angles express Mercury's energy.",
+        "icon": "RiMessage3Line"
+      },
+      {
+        "title": "Which Astrocartography Line Is Right for You?",
+        "description": "Your ideal line depends on your current life priority. For career growth and public recognition: Jupiter MC (opportunities come easily), Sun MC (leadership and visibility), Saturn MC (lasting authority through mastery). For love and relationships: Venus DSC (the 'honeymoon line'—most powerful for romance), Moon DSC (deep emotional bonding), Venus ASC (personal magnetism). For finding a true home: Moon IC (the strongest belonging placement in all of astrocartography), Venus IC (beauty and domestic harmony). For ambition and drive: Mars MC (boldest career moves), Mars ASC (physical energy and assertiveness). For communication and learning: Mercury MC (writing, teaching, business), Mercury ASC (social intelligence and networking). Use your free chart to see exactly which cities fall on each of your personal lines—and match each location to your current life goal.",
+        "icon": "RiCompassLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Astrocartography Lines — Frequently Asked Questions",
+    "description": "Answers to the most common questions about understanding and using astrocartography lines.",
+    "items": [
+      {
+        "title": "What are astrocartography lines?",
+        "description": "Astrocartography lines are paths drawn across a world map that show where each planet in your birth chart was positioned at one of the four key angles of the sky (rising, setting, culminating, or at nadir) at the moment you were born. Each planet creates four lines—ASC, DSC, MC, and IC—for a total of up to 40 primary lines on your personal map. Living or traveling near these lines amplifies the energy of that planet in your daily life."
+      },
+      {
+        "title": "How many astrocartography lines do I have?",
+        "description": "Most people's maps show between 28 and 40 primary planetary lines, depending on how many planets and points are included in the calculation. Using the seven traditional planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn) gives 28 lines (7 planets × 4 angles). Adding Uranus, Neptune, and Pluto brings the total to 40. Some systems also include Chiron, the North Node, and other points, which can add additional lines."
+      },
+      {
+        "title": "Which astrocartography lines are the best for relocation?",
+        "description": "The 'best' lines depend entirely on your personal goals. Jupiter lines are generally considered the most favorable for overall expansion and opportunity. Venus lines are excellent for relationships and quality of life. Sun lines support career visibility and identity. Moon lines are ideal for finding a true sense of home. However, 'best' is always relative to what you want from a location. A Saturn line that feels demanding might be exactly what someone seeking discipline and long-term achievement needs."
+      },
+      {
+        "title": "How far from a line do you feel the effects?",
+        "description": "Most astrocartographers agree that the effect is noticeable within 200–300 miles (320–480 km) of a line, with the influence becoming significantly stronger within 50 miles. Being directly on a line is the most intense experience. The exact distance varies by individual sensitivity and by the planet—outer planets like Pluto and Uranus tend to have broader orbs of influence than inner planets like Mercury or Venus."
+      },
+      {
+        "title": "Can I have both good and bad lines in the same city?",
+        "description": "Yes, absolutely. Most cities on your map will have multiple planetary lines passing through or near them, each activating different life areas. A city might fall on both your Venus ASC line (enhancing relationships and beauty) and your Saturn MC line (demanding professional discipline). This creates a nuanced experience where different aspects of your life feel very different from each other in that location—your love life might flourish while your career requires significantly more effort."
+      },
+      {
+        "title": "Do astrocartography lines change over time?",
+        "description": "Your natal astrocartography lines—based on your birth chart—do not change throughout your lifetime. However, astrocartographers also use 'progressed' astrocartography, which calculates lines based on your progressed chart (which does evolve over time). Progressed lines can indicate periods when certain geographic areas become more or less activated in your life, even if your natal lines remain constant."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Find Your Astrocartography Lines Now",
+    "description": "Generate your personalized astrocartography map using Swiss Ephemeris calculations with 1-mile accuracy. See exactly where every planetary line falls on the globe—then click any line or city for an instant AI-powered interpretation. Completely free, no sign-up required.",
+    "buttons": [
+      {
+        "title": "Generate Your Free Chart",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

@@ -95,6 +95,69 @@
           ]
         },
         {
+          "title": "Lines",
+          "icon": "RiMapPinLine",
+          "url": "/astrocartography-lines",
+          "children": [
+            {
+              "title": "All Astrocartography Lines",
+              "description": "Complete guide to every planetary line—what each one means and how the 4 angles change its effect",
+              "url": "/astrocartography-lines",
+              "target": "_self",
+              "icon": "RiGlobalLine"
+            },
+            {
+              "title": "Sun Line",
+              "description": "Career visibility, confidence, and authentic self-expression",
+              "url": "/sun-line-astrocartography",
+              "target": "_self",
+              "icon": "RiSunLine"
+            },
+            {
+              "title": "Moon Line",
+              "description": "Home, emotional security, family, and deep belonging",
+              "url": "/moon-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMoonLine"
+            },
+            {
+              "title": "Venus Line",
+              "description": "Love, beauty, relationships, and daily ease",
+              "url": "/venus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "Mars Line",
+              "description": "Physical energy, drive, ambition, and career competition",
+              "url": "/mars-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
+              "title": "Jupiter Line",
+              "description": "Luck, expansion, abundance, and the best places to thrive",
+              "url": "/jupiter-line-astrocartography",
+              "target": "_self",
+              "icon": "RiStarLine"
+            },
+            {
+              "title": "Saturn Line",
+              "description": "Discipline, structure, long-term growth, and lasting success",
+              "url": "/saturn-line-astrocartography",
+              "target": "_self",
+              "icon": "RiShieldLine"
+            },
+            {
+              "title": "Mercury Line",
+              "description": "Communication, learning, writing, and business acuity",
+              "url": "/mercury-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMessage3Line"
+            }
+          ]
+        },
+        {
           "title": "Blog",
           "url": "/posts",
           "icon": "RiArticleLine"

@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "Moon Line Astrocartography: Home, Emotions & Family",
+    "description": "Understand what the Moon line means in astrocartography—how it shapes emotional sensitivity, home life, and family connection. Explore all four angles (ASC, DSC, MC, IC) and find your Moon line on a free personalized map.",
+    "keywords": "moon line astrocartography, moon line meaning astrocartography, astrocartography moon line, moon IC line astrocartography, moon line home family astrocartography, moon ASC line astrocartography, moon DSC line astrocartography, moon MC line astrocartography, best astrocartography line to live, astrocartography home line, where to live astrocartography"
+  },
+  "intentAnchor": {
+    "text": "This page explains the Moon line in astrocartography in full—what it means emotionally and domestically, how the four angles (ASC, DSC, MC, IC) change its expression, and how to use your Moon line when seeking home, healing, or deeper emotional connection."
+  },
+  "internalLinks": {
+    "title": "Related Resources",
+    "items": [
+      {
+        "text": "Find your Moon line on a world map.",
+        "linkText": "Free Astrocartography Calculator",
+        "url": "/"
+      },
+      {
+        "text": "See how Moon line compares to other lines.",
+        "linkText": "Complete Astrocartography Lines Guide",
+        "url": "/astrocartography-lines"
+      },
+      {
+        "text": "Also seeking love and social ease?",
+        "linkText": "Venus Line Guide",
+        "url": "/venus-line-astrocartography"
+      },
+      {
+        "text": "Want comfort with expansion?",
+        "linkText": "Jupiter Line Guide",
+        "url": "/jupiter-line-astrocartography"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What Is the Moon Line in Astrocartography?",
+    "label": "MOON LINE",
+    "description": "The Moon line in astrocartography is a path on your world map marking where the Moon was positioned at one of the four key angles of the sky at your birth moment. In these geographic locations, lunar energy becomes amplified—your emotional world becomes more active, your need for comfort and belonging intensifies, and domestic life takes on greater significance. Moon lines are among the most personally intimate placements in astrocartography, connecting you directly to your feeling nature and your deepest sense of home.",
+    "image": {
+      "src": "/imgs/features/hero-web.webp",
+      "alt": "Moon line astrocartography map showing where lunar energy is strongest"
+    },
+    "items": [
+      {
+        "title": "What the Moon Governs in Astrocartography",
+        "description": "In astrology, the Moon represents emotions, intuition, comfort, the subconscious, nurturing, memory, and the primal need for security and belonging. It governs your emotional patterns, your relationship to your mother and family of origin, and what makes you feel safe and cared for at the deepest level. In astrocartography, the Moon line amplifies all of these qualities in specific geographic locations. People near their Moon lines consistently report heightened emotional sensitivity—feelings surface more readily, moods are more fluid, and the environment triggers both comfort and vulnerability in ways that other places don't. The Moon line also tends to activate a strong pull toward creating a home base, building domestic routines, and nurturing close relationships.",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-meaning.webp",
+          "alt": "What the Moon governs in astrocartography"
+        }
+      },
+      {
+        "title": "The Four Moon Lines: ASC, DSC, MC, and IC",
+        "description": "Your Moon line appears in four versions, each activating lunar energy in a different life domain. The Moon ASC line places lunar energy in your personal identity and self-expression—you feel more emotionally aware, more in touch with your inner life, and others perceive you as nurturing and emotionally accessible. The Moon DSC line focuses lunar energy on close relationships, creating bonds that feel deeply caring and emotionally supportive, though also potentially intensely codependent. The Moon MC line channels emotional intelligence into career and public life—your work becomes driven by feeling and intuition, and you may be known for your empathy or care for others in a public-facing way. The Moon IC line is the most powerful placement for home and belonging: often called the 'cozy sweater line,' it marks places where you feel most deeply at home, where domestic life is nurturing, and where a genuine sense of roots and belonging emerges.",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-angles.webp",
+          "alt": "Moon ASC DSC MC IC lines in astrocartography explained"
+        }
+      },
+      {
+        "title": "The Emotional Quality of Moon Line Locations",
+        "description": "Living near a Moon line is an inward-focused experience. Unlike Sun lines, which push you outward toward achievement and recognition, Moon lines draw you inward—toward feelings, rest, reflection, and connection. People in Moon line cities often describe feeling more emotionally open than usual, more aware of their subconscious needs, and more drawn to creating comfort in their living environment. Memories surface more readily, old emotional patterns become more visible, and healing from past wounds often happens more naturally in these locations. The shadow side of Moon lines is their capacity for emotional overwhelm: moodiness, oversensitivity, difficulty maintaining emotional boundaries, and occasionally a tendency toward withdrawal or excessive comfort-seeking rather than engaging with the outer world.",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-emotional-experience.webp",
+          "alt": "Emotional experience of living on a Moon line"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Moon Line by Angle: What Each Placement Means",
+    "label": "THE 4 ANGLES",
+    "description": "Each of the four Moon line angles activates lunar energy in a specific domain of your life. Understanding which angle falls in or near a particular city tells you exactly how that city will shape your emotional and domestic experience.",
+    "items": [
+      {
+        "title": "Moon ASC Line — Emotional Openness & Self-Discovery",
+        "description": "On your Moon Ascendant line, lunar energy enters through your personal identity and how you come across to others. You feel more emotionally expressive, more attuned to your inner world, and others perceive you as nurturing, empathetic, and emotionally available. This line is excellent for periods of personal healing and self-discovery—your feelings become easier to access and understand, old patterns surface for examination, and emotional intelligence deepens. People on Moon ASC lines often become more interested in psychology, therapy, or inner work during their time in these cities. The shadow side is oversensitivity and difficulty maintaining clear identity separate from your emotional reactions.",
+        "icon": "RiEmotionLine",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-effects.webp",
+          "alt": "Moon ASC line emotional openness in astrocartography"
+        }
+      },
+      {
+        "title": "Moon DSC Line — Nurturing Relationships & Emotional Bonds",
+        "description": "The Moon Descendant line focuses lunar energy on one-on-one relationships. In these locations, you attract partners and close friends who express Lunar qualities—nurturing, emotionally available, caring, and sometimes maternal or paternal in their approach to connection. Relationships formed in Moon DSC cities tend to have a deeply caring, emotionally bonded quality. Existing relationships deepen emotionally. This line can be excellent for those seeking a relationship characterized by genuine emotional support and mutual nurturing. The potential challenge is emotional dependency or relationship dynamics that become excessively focused on comfort and security at the expense of growth.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-effects.webp",
+          "alt": "Moon DSC line nurturing relationships in astrocartography"
+        }
+      },
+      {
+        "title": "Moon MC Line — Emotional Career & Public Nurturing",
+        "description": "When the Moon falls on your Midheaven line, emotional intelligence and nurturing become the foundation of your public-facing work. Careers involving care, counseling, food, home, children, women's health, or any field where emotional attunement matters are naturally supported here. You may become known in your professional community for your empathy, sensitivity, or ability to care for others at scale. The Moon MC line often produces careers that feel deeply meaningful precisely because they connect your professional life to your feeling nature. The challenge is that career decisions may be excessively driven by emotion rather than strategy, or that the boundary between professional life and personal feelings becomes blurred.",
+        "icon": "RiBriefcaseLine",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-effects.webp",
+          "alt": "Moon MC line career meaning in astrocartography"
+        }
+      },
+      {
+        "title": "Moon IC Line — Home, Roots & Deep Belonging",
+        "description": "The Moon IC line is consistently described as the most powerful placement in all of astrocartography for finding a genuine sense of home and belonging. The IC governs your most private self, family roots, and the psychological foundation beneath everything else—and with the Moon here, these domains become filled with an exceptional quality of comfort, safety, and belonging. People who relocate to their Moon IC cities often describe finally feeling at home for the first time in their adult lives. The environment feels nurturing, domestic life is genuinely restorative, and the community tends to feel like family. This is the ideal line for settling down, raising children, healing family wounds, or creating a home that truly restores your soul.",
+        "icon": "RiHome3Line",
+        "image": {
+          "src": "/imgs/features/moon-line/moon-line-effects.webp",
+          "alt": "Moon IC line home and belonging meaning in astrocartography"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Use Your Moon Line in Astrocartography",
+    "label": "PRACTICAL GUIDE",
+    "description": "The Moon line is one of the most valuable tools in astrocartography for those seeking home, emotional healing, or deeper connection. Here is how to approach it practically.",
+    "items": [
+      {
+        "title": "For Finding Home: Prioritize Moon IC Locations",
+        "description": "If you've been searching for a place that genuinely feels like home—not just where you happen to live—your Moon IC line cities are the most important locations to explore. Visit them with the specific intention of assessing how they feel at a domestic level: walk neighborhoods, spend time in local markets, observe how the community feels, and notice whether you feel an unusual sense of ease and belonging. Moon IC cities often produce an immediate, almost inexplicable feeling of 'I could live here' that is worth taking seriously as guidance.",
+        "icon": "RiHome3Line"
+      },
+      {
+        "title": "For Emotional Healing: Use Moon ASC or IC Locations",
+        "description": "If you're going through a period of emotional healing—recovering from loss, working through childhood patterns, or rebuilding yourself after a major life change—Moon line cities (especially ASC and IC) can provide a uniquely supportive environment for this inner work. The heightened emotional sensitivity of these places can feel difficult initially, but it also makes the healing process more accessible. Old feelings surface more readily, and the environment tends to support rest and reflection in ways that more energizing lines (like Sun or Mars) do not.",
+        "icon": "RiHeartPulseLine"
+      },
+      {
+        "title": "For Long-Term Living: Moon IC Is Most Sustainable",
+        "description": "While Moon ASC and DSC lines can feel intense over extended periods due to their effect on identity and relationships, Moon IC lines tend to be the most sustainably comfortable for long-term living. The IC placement keeps the Moon's influence in the private and domestic domain rather than activating it in your public-facing identity or professional life—creating a stable emotional foundation without overwhelming your outer life with emotional demands. Many astrocartographers recommend Moon IC lines for retirement, family-building, or any life phase focused on rest and rootedness.",
+        "icon": "RiLeafLine"
+      },
+      {
+        "title": "Balance Moon Lines with Active Lines When Needed",
+        "description": "The Moon line's inward focus is deeply restorative, but extended time in purely Moon line environments can produce stagnation, excessive withdrawal, or difficulty engaging with the outer world. If you live on a Moon line for your primary home base, consider intentionally traveling to Sun, Jupiter, or Mars line cities for periods when you need career activation, professional opportunities, or external stimulation. This balance between the Moon's comfort and more activating lines allows you to restore yourself at home while pursuing growth in the outer world.",
+        "icon": "RiBalanceLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Key Facts About the Moon Line",
+    "label": "KEY INSIGHTS",
+    "description": "Important nuances for accurately interpreting and using your Moon line in astrocartography.",
+    "items": [
+      {
+        "title": "Moon IC Is Often Called the 'Ideal Home Line'",
+        "description": "Among all planetary line placements, Moon IC consistently receives the highest ratings for long-term residential comfort and genuine belonging. Astrocartographers from diverse traditions agree that the Moon IC line creates the most naturally 'home-like' environment of any placement—where domestic routines feel restorative, community bonds feel familial, and the land itself seems to hold you. If only one line could be chosen for a permanent home base, many practitioners would choose Moon IC.",
+        "icon": "RiHome3Line"
+      },
+      {
+        "title": "Moon Lines Activate Unconscious Material",
+        "description": "One of the most distinctive features of Moon line locations is their tendency to bring unconscious emotional content to the surface. Old memories arise more readily. Dreams become more vivid and emotionally meaningful. Patterns established in your family of origin become more visible and, often, more workable. While this can feel disorienting, it makes Moon line cities genuinely powerful environments for therapeutic work, deep personal reflection, and healing inherited emotional patterns.",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "Moon Lines Are Particularly Important for Women",
+        "description": "While all planetary lines affect everyone regardless of gender, the Moon's association with feminine principles—cyclical rhythms, emotional intelligence, nurturing, receptivity—means that Moon lines often feel especially resonant for women. Menstrual cycles may regulate more naturally in Moon line cities. The sense of alignment with bodily rhythms often deepens. This is not a rigid rule but a pattern observed across thousands of individual astrocartography experiences.",
+        "icon": "RiUserHeartLine"
+      },
+      {
+        "title": "The Moon's Phase at Your Birth Shapes the Line's Quality",
+        "description": "Your natal Moon's phase—whether it was new, waxing, full, or waning at your birth—adds additional nuance to how your Moon line expresses itself geographically. Those born under a Full Moon tend to experience Moon line locations with particularly intense emotional amplification. Those born under a New Moon may find Moon line cities feel more internally focused and subtly influential rather than dramatically emotional. This additional layer of interpretation adds depth to an already rich placement.",
+        "icon": "RiMoonFoggyLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Moon Line Astrocartography — Frequently Asked Questions",
+    "description": "Answers to the most common questions about the Moon line in astrocartography.",
+    "items": [
+      {
+        "title": "What does the Moon line mean in astrocartography?",
+        "description": "The Moon line in astrocartography marks locations where the Moon was positioned at one of the four key angles (ASC, DSC, MC, IC) of the sky at your birth moment. In these places, lunar energy becomes amplified—emotional sensitivity heightens, the need for comfort and belonging intensifies, and domestic life takes on greater significance. The specific effect depends on the angle: Moon IC for home and deep belonging, Moon ASC for emotional openness and self-discovery, Moon DSC for nurturing relationships, Moon MC for emotionally driven career."
+      },
+      {
+        "title": "Is the Moon IC line really the best for finding a home?",
+        "description": "The Moon IC line is widely considered the most powerful placement in astrocartography for finding a genuine sense of home and belonging—and this reputation is consistently supported by personal accounts. The IC governs your roots, your private self, and your psychological foundation, and with the Moon here, domestic life becomes unusually nurturing and restorative. Many people who relocate to Moon IC cities describe an immediate and unmistakable sense of 'this is where I belong' that they've never experienced in other places."
+      },
+      {
+        "title": "Can Moon line cities feel too emotional or overwhelming?",
+        "description": "Yes—this is the most commonly reported challenge of Moon line living. The heightened emotional sensitivity can feel overwhelming for people who prefer emotional stability and predictability. Old emotional patterns surface more readily, moods fluctuate more easily, and the boundary between your inner emotional life and outer experience can feel thinner. For those going through emotional healing, this amplification is a gift. For those who need emotional steadiness for a demanding professional period, a Moon line might not be the ideal primary home base."
+      },
+      {
+        "title": "How does the Moon IC line differ from the Moon ASC line?",
+        "description": "The Moon IC line keeps lunar energy in the private, domestic domain—it affects your home life, family relationships, and private sense of belonging without necessarily amplifying your emotional expressiveness in public. The Moon ASC line brings lunar energy into your identity and outward presence—you become visibly more emotionally expressive, others perceive your emotional openness clearly, and your social interactions carry more emotional charge. IC is quieter and more domestically focused; ASC is more interpersonally activating."
+      },
+      {
+        "title": "Is the Moon line good for career?",
+        "description": "The Moon line is generally not considered one of the strongest career-advancement placements—that role belongs to Jupiter, Sun, and Saturn lines. However, the Moon MC line can be excellent for careers specifically built around care, emotional attunement, food, home, children, or any field where emotional intelligence is the core professional asset. If your career involves these themes, a Moon MC location may feel like a natural professional home. For more conventional achievement-oriented careers, Sun or Jupiter lines tend to serve better."
+      },
+      {
+        "title": "How far from a Moon line do you feel its effects?",
+        "description": "Like all planetary lines, the Moon line's influence is most noticeable within 200–300 miles (320–480 km), with the effect becoming significantly stronger within 50 miles and most intense directly on the line. The Moon's influence may also be felt through 'parans'—latitude lines where the Moon's line crosses another planetary line—which can activate lunar themes even in cities not directly on the north-south Moon line itself. Visiting Moon IC cities even briefly often produces a palpable quality of calm and belonging that many people describe as immediately noticeable."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Find Where Your Moon Line Falls",
+    "description": "Generate your personal astrocartography map and see exactly where your Moon line crosses the globe—including which of the four angles (ASC, DSC, MC, IC) is active in specific cities. Click any location for an instant AI interpretation of what the Moon line means for your home life, emotional wellbeing, and sense of belonging. Completely free, no sign-up required.",
+    "buttons": [
+      {
+        "title": "Generate Your Free Astrocartography Chart",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  }
+}

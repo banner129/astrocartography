@@ -35,6 +35,16 @@ Allow: /de/contact
 Allow: /posts
 Allow: /posts/
 
+# 允许 Astrocartography Lines 内页
+Allow: /astrocartography-lines
+Allow: /sun-line-astrocartography
+Allow: /moon-line-astrocartography
+Allow: /venus-line-astrocartography
+Allow: /mars-line-astrocartography
+Allow: /jupiter-line-astrocartography
+Allow: /saturn-line-astrocartography
+Allow: /mercury-line-astrocartography
+
 # 允许 Astrocartography Calculator 页面
 Allow: /astrocartography-calculator
 Allow: /zh/astrocartography-calculator
