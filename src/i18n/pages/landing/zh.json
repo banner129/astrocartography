@@ -565,12 +565,8 @@
               "title": "联系我们",
               "url": "/contact",
               "target": "_self"
-            },
-            {
-              "title": "AIStage",
-              "url": "https://aistage.net",
-              "target": "_blank"
             }
+           
           ]
         },
         {
