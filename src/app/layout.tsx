@@ -1,5 +1,4 @@
 import "@/app/globals.css";
-import "leaflet/dist/leaflet.css";
 
 import { getLocale, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/locale";
@@ -22,21 +21,8 @@ export default async function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {googleAdsenseCode && (
-          <>
-            <meta name="google-adsense-account" content={googleAdsenseCode} />
-            <script 
-              async 
-              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseCode}`}
-              crossOrigin="anonymous"
-            />
-          </>
+          <meta name="google-adsense-account" content={googleAdsenseCode} />
         )}
-
-        {/* code.market widget script */}
-        <script 
-          src="https://code.market/widget.min.js" 
-          async 
-        />
 
         <link rel="icon" href="/logo.ico" />
 
@@ -53,6 +39,19 @@ export default async function RootLayout({
       </head>
       <body className={cn("min-h-screen overflow-x-hidden")} suppressHydrationWarning>
         {children}
+        {googleAdsenseCode ? (
+          <Script
+            id="google-adsense"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseCode}`}
+            strategy="lazyOnload"
+            crossOrigin="anonymous"
+          />
+        ) : null}
+        <Script
+          id="code-market-widget"
+          src="https://code.market/widget.min.js"
+          strategy="lazyOnload"
+        />
         <Script id="enforce-external-nofollow" strategy="afterInteractive">
           {`
             (function(){

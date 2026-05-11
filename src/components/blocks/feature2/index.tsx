@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import Fade from "embla-carousel-fade";
+import Image from "next/image";
 import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
 
@@ -103,23 +104,33 @@ export default function Feature2({ section }: { section: SectionType }) {
               ))}
             </Accordion>
           </div>
-          <div className="flex h-full items-center rounded-3xl border border-border/60 bg-background/90 p-3 shadow-sm">
+          <div className="flex h-full min-w-0 w-full items-center rounded-3xl border border-border/60 bg-background/90 p-3 shadow-sm">
             <Carousel
+              className="w-full"
               opts={{
                 duration: 50,
               }}
               setApi={setApi}
               plugins={[Fade()]}
             >
-              <CarouselContent>
+              <CarouselContent className="w-full">
                 {section.items?.map((item, i) => (
-                  <CarouselItem key={i}>
-                    <div className="h-full min-h-[320px] overflow-hidden rounded-2xl lg:min-h-[420px]">
-                      <img
-                        src={item.image?.src}
-                        alt={item.image?.alt || item.title}
-                        className="h-full w-full object-cover"
-                      />
+                  <CarouselItem
+                    key={i}
+                    className="!min-w-full shrink-0 basis-full"
+                  >
+                    {/* min-w-0 on default CarouselItem + fill 图片会导致宽度塌成一条；强制全宽 + aspect 给 fill 明确盒子 */}
+                    <div className="relative aspect-[4/3] w-full min-h-[280px] overflow-hidden rounded-2xl bg-muted lg:min-h-[320px]">
+                      {item.image?.src ? (
+                        <Image
+                          src={item.image.src}
+                          alt={item.image.alt || item.title || ""}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          priority={i === 0}
+                        />
+                      ) : null}
                     </div>
                   </CarouselItem>
                 ))}

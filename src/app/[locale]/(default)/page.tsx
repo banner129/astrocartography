@@ -16,21 +16,15 @@ export async function generateStaticParams() {
   ];
 }
 
-import Branding from "@/components/blocks/branding";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
 import Feature from "@/components/blocks/feature";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
 import Hero from "@/components/blocks/hero";
-import MiniaturaAIHero from "@/components/blocks/miniatura-ai-hero";
-import MiniaturaAIGenerator from "@/components/blocks/miniatur-ai-generator";
-import FeatureWhatOne from "@/components/blocks/feature-what-one";
-import Feature2WhyOne from "@/components/blocks/feature2-why-one";
+import MiniaturaAIGenerator from "@/components/blocks/miniatur-ai-generator/loadable";
 import FeatureWhatTwo from "@/components/blocks/feature-what-two";
 import Pricing from "@/components/blocks/pricing";
-import Showcase from "@/components/blocks/showcase";
-import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";

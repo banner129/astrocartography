@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { getCalculatorPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";
-import MiniaturaAIGenerator from "@/components/blocks/miniatur-ai-generator";
+import MiniaturaAIGenerator from "@/components/blocks/miniatur-ai-generator/loadable";
 import FeatureWhatTwo from "@/components/blocks/feature-what-two";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";

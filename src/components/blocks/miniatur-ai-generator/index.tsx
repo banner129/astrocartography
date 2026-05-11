@@ -231,9 +231,24 @@ export default function MiniaturaAIGenerator() {
     }
   }, []);
   
-  // 页面加载时检查使用限制
+  // 接近视口再检查额度，减少首屏主线程与网络竞争（不影响功能）
   useEffect(() => {
-    checkUsageLimit();
+    const el = document.getElementById("generator");
+    if (!el) {
+      checkUsageLimit();
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          checkUsageLimit();
+          io.disconnect();
+        }
+      },
+      { rootMargin: "240px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
   }, [checkUsageLimit]);
   
   // 清理定时器

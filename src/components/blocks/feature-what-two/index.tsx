@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Icon from "@/components/icon";
 import { cn } from "@/lib/utils";
 import { Section as SectionType } from "@/types/blocks/section";
@@ -53,11 +54,15 @@ export default function FeatureWhatTwo({
                     )}
                   >
                     <div className="relative aspect-[4/3] w-full bg-muted">
-                      <img
-                        src={item.image?.src}
-                        alt={item.image?.alt || item.title}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
+                      {item.image?.src ? (
+                        <Image
+                          src={item.image.src}
+                          alt={item.image.alt || item.title || ""}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                      ) : null}
                     </div>
                   </div>
                 )}
