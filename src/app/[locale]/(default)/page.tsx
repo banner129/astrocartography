@@ -66,11 +66,13 @@ export async function generateMetadata({
     alternates: {
       canonical: getCanonicalUrl(locale),
       languages: {
-        'en': getCanonicalUrl('en', '/'),
-        'zh': getCanonicalUrl('zh', '/'),
-        'pt': getCanonicalUrl('pt', '/'),
-        'es': getCanonicalUrl('es', '/'),
-        'it': getCanonicalUrl('it', '/'),
+        en: getCanonicalUrl("en", "/"),
+        de: getCanonicalUrl("de", "/"),
+        es: getCanonicalUrl("es", "/"),
+        it: getCanonicalUrl("it", "/"),
+        pt: getCanonicalUrl("pt", "/"),
+        zh: getCanonicalUrl("zh", "/"),
+        "x-default": getCanonicalUrl("en", "/"),
       },
     },
     openGraph: {
