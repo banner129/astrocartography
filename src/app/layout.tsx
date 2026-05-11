@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 
 import { getLocale, setRequestLocale } from "next-intl/server";
-import { locales } from "@/i18n/locale";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
 
@@ -13,7 +12,6 @@ export default async function RootLayout({
   const locale = await getLocale();
   setRequestLocale(locale);
 
-  const webUrl = process.env.NEXT_PUBLIC_WEB_URL || "";
   const googleAdsenseCode = process.env.NEXT_PUBLIC_GOOGLE_ADCODE || "";
 
   return (
@@ -25,17 +23,6 @@ export default async function RootLayout({
         )}
 
         <link rel="icon" href="/logo.ico" />
-
-        {locales &&
-          locales.map((loc) => (
-            <link
-              key={loc}
-              rel="alternate"
-              hrefLang={loc}
-              href={`${webUrl}${loc === "en" ? "" : `/${loc}`}/`}
-            />
-          ))}
-        <link rel="alternate" hrefLang="x-default" href={webUrl} />
       </head>
       <body className={cn("min-h-screen overflow-x-hidden")} suppressHydrationWarning>
         {children}
