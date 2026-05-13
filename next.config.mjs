@@ -16,6 +16,7 @@ const nextConfig = {
   trailingSlash: true, // 确保URL都带尾部斜杠，与canonical保持一致
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   images: {
+    unoptimized: true, // 禁用图片优化，Cloudflare Workers 不支持 Next.js Image Optimization
     remotePatterns: [
       {
         protocol: "https",
