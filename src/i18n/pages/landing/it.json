@@ -145,7 +145,19 @@
         "icon": "RiMapPinLine"
       }
     ],
-    "show_happy_users": false,
+    "show_happy_users": true,
+    "happy_users": {
+      "rating": 5,
+      "count": "714+",
+      "label": "utenti felici di astrologia",
+      "avatars": [
+        "/imgs/users/1.png",
+        "/imgs/users/2.png",
+        "/imgs/users/3.png",
+        "/imgs/users/4.png",
+        "/imgs/users/5.png"
+      ]
+    },
     "show_badge": false
   },
   "branding": {
