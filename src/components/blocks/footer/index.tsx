@@ -3,7 +3,6 @@
 import { usePathname } from "next/navigation";
 import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
-import ToplistBadge from "./toplist-badge";
 
 export default function Footer({
   footer,
@@ -134,12 +133,6 @@ export default function Footer({
                       </a>
                     )
                   ))}
-                </div>
-              )}
-              {/* TOPlist.cz 流量统计（仅英文站） */}
-              {locale === "en" && (
-                <div className="flex items-center gap-3">
-                  <ToplistBadge />
                 </div>
               )}
               
