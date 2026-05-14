@@ -10,11 +10,11 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 
-// 🔥 性能优化：懒加载 Starfield 组件，避免阻塞首屏渲染
+// 🔥 性能优化：懒加载 CobeGlobe 组件，避免阻塞首屏渲染
 // Cloudflare Workers 兼容：dynamic import 在 Edge Runtime 中完全支持
-const Starfield = dynamic(() => import("@/components/ui/animated-shader-background"), {
-  ssr: false,  // Starfield 依赖 Canvas API，只在客户端渲染
-  loading: () => <div className="absolute inset-0" />,  // 占位符，避免布局偏移
+const CobeGlobe = dynamic(() => import("@/components/ui/cobe-globe").then(mod => ({ default: mod.Globe })), {
+  ssr: false,  // CobeGlobe 依赖 WebGL，只在客户端渲染
+  loading: () => <div className="absolute inset-0 bg-black" />,  // 占位符，避免布局偏移
 });
 
 export default function Hero({ hero }: { hero: HeroType }) {
@@ -34,8 +34,18 @@ export default function Hero({ hero }: { hero: HeroType }) {
         "relative flex min-h-[860px] w-full items-center justify-center overflow-hidden text-foreground py-20"
       )}
     >
-      <div className="pointer-events-none absolute inset-0">
-        <Starfield />
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <CobeGlobe 
+          className="w-full max-w-[650px] md:max-w-[800px] opacity-75"
+          dark={0.85}
+          mapBrightness={4}
+          baseColor={[0.15, 0.2, 0.35]}
+          markerColor={[0.9, 0.95, 1.0]}
+          glowColor={[0.3, 0.4, 0.7]}
+          diffuse={2.5}
+          speed={0.004}
+          mapSamples={8000}
+        />
       </div>
 
       <section className="relative z-10 w-full">
