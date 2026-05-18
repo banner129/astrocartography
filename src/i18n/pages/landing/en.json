@@ -298,6 +298,45 @@
       }
     ]
   },
+  "howToRead": {
+    "name": "howToRead",
+    "title": "How to Read Your Astrocartography Map",
+    "label": "Reading Guide",
+    "description": "Understanding your astrocartography map unlocks powerful insights for relocation and life planning. Learn the core concepts that professional astrologers use to interpret planetary lines, angles, and power spots.",
+    "items": [
+      {
+        "title": "Understand Planetary Lines",
+        "description": "Each colored line on your map represents a planet's energy at that location. Sun lines boost confidence and career visibility, Venus lines attract love and beauty, Jupiter lines bring luck and expansion, while Saturn lines build discipline and long-term success. The closer you are to a line (within 100-300 miles), the stronger its influence on your daily life experiences.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Learn the 4 Angle Types",
+        "description": "Every planet creates four lines: Ascendant (ASC) affects your identity and self-expression, Descendant (DSC) influences relationships and partnerships, Midheaven (MC) shapes career and public life, and Imum Coeli (IC) relates to home and emotional foundations. Each angle expresses the planet's energy in different life areas — understanding these distinctions is key to accurate interpretation.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Identify Power Spots",
+        "description": "Power spots are where two or more planetary lines intersect, creating the strongest energetic influence zones. A Venus-Jupiter crossing might bring love and prosperity, while a Sun-Mercury crossing enhances communication and self-expression. These convergence points are prime candidates for relocation or extended visits, as multiple planetary energies activate simultaneously.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Match Lines to Your Goals",
+        "description": "Choose planetary lines based on your current life goals. Seeking career growth? Look for Sun MC or Jupiter MC lines. Want to find love? Explore Venus DSC lines. Need emotional security? Consider Moon IC lines. Even challenging lines like Saturn can bring valuable growth through discipline and structure when you're ready for transformation.",
+        "icon": "RiTargetLine"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Dive Deeper?",
+      "description": "Our complete guide covers advanced interpretation techniques, planetary meanings in different zodiac signs, real-world relocation examples, and how to use AI chat for personalized analysis.",
+      "button": {
+        "title": "Read Complete Guide",
+        "icon": "RiArticleLine",
+        "url": "/posts/astrocartography-map-interpretation",
+        "target": "_self",
+        "variant": "outline"
+      }
+    }
+  },
   "benefit": {
     "name": "benefit",
     "title": "Why Choose Our Astrocartography Calculator",

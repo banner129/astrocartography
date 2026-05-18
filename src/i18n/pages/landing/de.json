@@ -299,6 +299,45 @@
       }
     ]
   },
+  "howToRead": {
+    "name": "howToRead",
+    "title": "So Lesen Sie Ihre Astrokartografie-Karte",
+    "label": "Leseanleitung",
+    "description": "Das Verständnis Ihrer Astrokartografie-Karte eröffnet kraftvolle Einblicke für Umzug und Lebensplanung. Lernen Sie die Kernkonzepte, die professionelle Astrologen zur Interpretation von Planetenlinien, Winkeln und Kraftpunkten verwenden.",
+    "items": [
+      {
+        "title": "Planetenlinien Verstehen",
+        "description": "Jede farbige Linie auf Ihrer Karte repräsentiert die Energie eines Planeten an diesem Ort. Sonnenlinien steigern Selbstvertrauen und berufliche Sichtbarkeit, Venuslinien ziehen Liebe und Schönheit an, Jupiterlinien bringen Glück und Expansion, während Saturnlinien Disziplin und langfristigen Erfolg aufbauen. Je näher Sie einer Linie sind (innerhalb von 100-300 Meilen), desto stärker ist ihr Einfluss auf Ihre täglichen Lebenserfahrungen.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Die 4 Winkeltypen Lernen",
+        "description": "Jeder Planet erzeugt vier Linien: Aszendent (ASC) beeinflusst Ihre Identität und Selbstausdruck, Deszendent (DSC) beeinflusst Beziehungen und Partnerschaften, Medium Coeli (MC) formt Karriere und öffentliches Leben, und Imum Coeli (IC) bezieht sich auf Zuhause und emotionale Grundlagen. Jeder Winkel drückt die Energie des Planeten in verschiedenen Lebensbereichen aus — das Verständnis dieser Unterschiede ist der Schlüssel zur genauen Interpretation.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Kraftpunkte Identifizieren",
+        "description": "Kraftpunkte sind Orte, an denen sich zwei oder mehr Planetenlinien kreuzen und die stärksten energetischen Einflusszonen schaffen. Eine Venus-Jupiter-Kreuzung könnte Liebe und Wohlstand bringen, während eine Sonne-Merkur-Kreuzung Kommunikation und Selbstausdruck verbessert. Diese Konvergenzpunkte sind Hauptkandidaten für Umzug oder längere Besuche, da mehrere planetarische Energien gleichzeitig aktiviert werden.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Linien mit Ihren Zielen Abgleichen",
+        "description": "Wählen Sie Planetenlinien basierend auf Ihren aktuellen Lebenszielen. Suchen Sie berufliches Wachstum? Suchen Sie nach Sonne MC oder Jupiter MC Linien. Möchten Sie Liebe finden? Erkunden Sie Venus DSC Linien. Brauchen Sie emotionale Sicherheit? Erwägen Sie Mond IC Linien. Selbst herausfordernde Linien wie Saturn können wertvolles Wachstum durch Disziplin und Struktur bringen, wenn Sie bereit für Transformation sind.",
+        "icon": "RiTargetLine"
+      }
+    ],
+    "cta": {
+      "title": "Bereit für Tiefere Einblicke?",
+      "description": "Unser vollständiger Leitfaden behandelt fortgeschrittene Interpretationstechniken, planetarische Bedeutungen in verschiedenen Tierkreiszeichen, reale Umzugsbeispiele und wie Sie KI-Chat für personalisierte Analysen nutzen.",
+      "button": {
+        "title": "Vollständigen Leitfaden Lesen",
+        "icon": "RiArticleLine",
+        "url": "/de/posts/astrocartography-map-interpretation",
+        "target": "_self",
+        "variant": "outline"
+      }
+    }
+  },
   "faq": {
     "name": "faq",
     "label": "FAQ",

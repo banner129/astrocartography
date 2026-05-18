@@ -21,6 +21,7 @@ import FAQ from "@/components/blocks/faq";
 import Feature from "@/components/blocks/feature";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
+import FeatureGrid from "@/components/blocks/feature-grid";
 import Hero from "@/components/blocks/hero";
 import MiniaturaAIGenerator from "@/components/blocks/miniatur-ai-generator/loadable";
 import FeatureWhatTwo from "@/components/blocks/feature-what-two";
@@ -208,6 +209,9 @@ export default async function LandingPage({
         {page.introduce && <FeatureWhatTwo section={page.introduce} />}
       {/* <不带图片 /> */}
       {/* {page.introduce && <FeatureWhatOne section={page.introduce} />} */}
+
+      {/* How to Read Your Astrocartography Map：教用户如何解读地图（教育内容）----------- */}
+      {page.howToRead && <FeatureGrid section={page.howToRead} />}
 
 
       {/* ，Why Choose [Tool Name]：列出3~4个理由，说明与其他工具的差异------ */}

@@ -13,3 +13,37 @@
   background-color: var(--background-secondary);
   color: var(--foreground);
 }
+
+/* Table styles */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.markdown table th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.markdown table td {
+  color: #374151;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.markdown table tr:nth-child(even) td {
+  background-color: #f9fafb;
+}
+
+.markdown table tr:hover td {
+  background-color: #f3f4f6;
+}

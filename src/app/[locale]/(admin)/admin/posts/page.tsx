@@ -24,10 +24,13 @@ export default async function () {
       {
         name: "title",
         title: "Title",
-      },
-      {
-        name: "description",
-        title: "Description",
+        callback: (item: Post) => {
+          return (
+            <div className="max-w-md truncate" title={item.title}>
+              {item.title}
+            </div>
+          );
+        },
       },
       {
         name: "slug",

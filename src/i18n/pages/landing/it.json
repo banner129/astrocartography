@@ -334,6 +334,45 @@
       }
     ]
   },
+  "howToRead": {
+    "name": "howToRead",
+    "title": "Come Leggere la Tua Mappa di Astrocartografia",
+    "label": "Guida alla Lettura",
+    "description": "Comprendere la tua mappa di astrocartografia sblocca potenti intuizioni per il trasferimento e la pianificazione della vita. Impara i concetti fondamentali che gli astrologi professionisti usano per interpretare linee planetarie, angoli e punti di potere.",
+    "items": [
+      {
+        "title": "Comprendere le Linee Planetarie",
+        "description": "Ogni linea colorata sulla tua mappa rappresenta l'energia di un pianeta in quella posizione. Le linee del Sole aumentano fiducia e visibilità professionale, le linee di Venere attraggono amore e bellezza, le linee di Giove portano fortuna ed espansione, mentre le linee di Saturno costruiscono disciplina e successo a lungo termine. Più sei vicino a una linea (entro 100-300 miglia), più forte sarà la sua influenza sulle tue esperienze quotidiane.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Imparare i 4 Tipi di Angoli",
+        "description": "Ogni pianeta crea quattro linee: Ascendente (ASC) influenza la tua identità e autoespressione, Discendente (DSC) influenza relazioni e partnership, Medio Cielo (MC) modella carriera e vita pubblica, e Imum Coeli (IC) si riferisce a casa e fondamenta emotive. Ogni angolo esprime l'energia del pianeta in diverse aree della vita — comprendere queste distinzioni è fondamentale per un'interpretazione accurata.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Identificare i Punti di Potere",
+        "description": "I punti di potere sono dove due o più linee planetarie si intersecano, creando le zone di influenza energetica più forti. Un incrocio Venere-Giove potrebbe portare amore e prosperità, mentre un incrocio Sole-Mercurio migliora comunicazione e autoespressione. Questi punti di convergenza sono candidati principali per trasferimento o visite prolungate, poiché multiple energie planetarie si attivano simultaneamente.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Abbinare le Linee ai Tuoi Obiettivi",
+        "description": "Scegli linee planetarie basate sui tuoi obiettivi di vita attuali. Cerchi crescita professionale? Cerca linee Sole MC o Giove MC. Vuoi trovare amore? Esplora linee Venere DSC. Hai bisogno di sicurezza emotiva? Considera linee Luna IC. Anche linee impegnative come Saturno possono portare crescita preziosa attraverso disciplina e struttura quando sei pronto per la trasformazione.",
+        "icon": "RiTargetLine"
+      }
+    ],
+    "cta": {
+      "title": "Pronto ad Approfondire?",
+      "description": "La nostra guida completa copre tecniche di interpretazione avanzate, significati planetari in diversi segni zodiacali, esempi di trasferimento del mondo reale e come usare la chat AI per analisi personalizzate.",
+      "button": {
+        "title": "Leggi la Guida Completa",
+        "icon": "RiArticleLine",
+        "url": "/it/posts/astrocartography-map-interpretation",
+        "target": "_self",
+        "variant": "outline"
+      }
+    }
+  },
   "faq": {
     "name": "faq",
     "label": "Domande Frequenti",

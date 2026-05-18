@@ -6,42 +6,42 @@
   
   <url>
     <loc>https://astrocarto.org/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/es/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/it/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/pt/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/zh/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://astrocarto.org/de/</loc>
-    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -124,11 +124,47 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- How to Read Astrocartography Map - All Languages -->
   <url>
-    <loc>https://astrocarto.org/posts/how-to-read-astrocartography-map/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <loc>https://astrocarto.org/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/zh/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/es/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/pt/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/it/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/de/posts/astrocartography-map-interpretation/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>

@@ -334,6 +334,45 @@
       }
     ]
   },
+  "howToRead": {
+    "name": "howToRead",
+    "title": "Como Ler Seu Mapa de Astrocartografia",
+    "label": "Guia de Leitura",
+    "description": "Compreender seu mapa de astrocartografia desbloqueia insights poderosos para realocação e planejamento de vida. Aprenda os conceitos centrais que astrólogos profissionais usam para interpretar linhas planetárias, ângulos e pontos de poder.",
+    "items": [
+      {
+        "title": "Compreender Linhas Planetárias",
+        "description": "Cada linha colorida no seu mapa representa a energia de um planeta naquela localização. Linhas do Sol aumentam confiança e visibilidade profissional, linhas de Vênus atraem amor e beleza, linhas de Júpiter trazem sorte e expansão, enquanto linhas de Saturno constroem disciplina e sucesso a longo prazo. Quanto mais perto você estiver de uma linha (dentro de 100-300 milhas), mais forte será sua influência nas suas experiências diárias.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Aprender os 4 Tipos de Ângulos",
+        "description": "Cada planeta cria quatro linhas: Ascendente (ASC) afeta sua identidade e autoexpressão, Descendente (DSC) influencia relacionamentos e parcerias, Meio do Céu (MC) molda carreira e vida pública, e Imum Coeli (IC) relaciona-se com lar e fundações emocionais. Cada ângulo expressa a energia do planeta em diferentes áreas da vida — compreender essas distinções é chave para interpretação precisa.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Identificar Pontos de Poder",
+        "description": "Pontos de poder são onde duas ou mais linhas planetárias se cruzam, criando as zonas de influência energética mais fortes. Um cruzamento Vênus-Júpiter pode trazer amor e prosperidade, enquanto um cruzamento Sol-Mercúrio melhora comunicação e autoexpressão. Esses pontos de convergência são candidatos principais para realocação ou visitas prolongadas, já que múltiplas energias planetárias se ativam simultaneamente.",
+        "icon": "RiStarLine"
+      },
+      {
+        "title": "Combinar Linhas com Seus Objetivos",
+        "description": "Escolha linhas planetárias baseadas em seus objetivos de vida atuais. Buscando crescimento profissional? Procure linhas Sol MC ou Júpiter MC. Quer encontrar amor? Explore linhas Vênus DSC. Precisa de segurança emocional? Considere linhas Lua IC. Até linhas desafiadoras como Saturno podem trazer crescimento valioso através de disciplina e estrutura quando você estiver pronto para transformação.",
+        "icon": "RiTargetLine"
+      }
+    ],
+    "cta": {
+      "title": "Pronto para Se Aprofundar?",
+      "description": "Nosso guia completo cobre técnicas de interpretação avançadas, significados planetários em diferentes signos zodiacais, exemplos de realocação do mundo real e como usar o chat de IA para análise personalizada.",
+      "button": {
+        "title": "Ler Guia Completo",
+        "icon": "RiArticleLine",
+        "url": "/pt/posts/astrocartography-map-interpretation",
+        "target": "_self",
+        "variant": "outline"
+      }
+    }
+  },
   "faq": {
     "name": "faq",
     "label": "Perguntas Frequentes",

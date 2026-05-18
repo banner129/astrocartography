@@ -22,11 +22,23 @@ export async function generateMetadata({
     canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/posts/${slug}`;
   }
 
+  // Build hreflang alternates for multi-language SEO
+  const baseUrl = process.env.NEXT_PUBLIC_WEB_URL;
+  
   return {
     title: post?.title,
     description: post?.description,
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        'en': `${baseUrl}/posts/${slug}`,
+        'zh': `${baseUrl}/zh/posts/${slug}`,
+        'pt': `${baseUrl}/pt/posts/${slug}`,
+        'es': `${baseUrl}/es/posts/${slug}`,
+        'it': `${baseUrl}/it/posts/${slug}`,
+        'de': `${baseUrl}/de/posts/${slug}`,
+        'x-default': `${baseUrl}/posts/${slug}`,
+      },
     },
   };
 }
@@ -43,5 +55,66 @@ export default async function ({
     return <Empty message="Post not found" />;
   }
 
-  return <BlogDetail post={post as unknown as Post} />;
+  // Generate hreflang links for the head
+  const baseUrl = process.env.NEXT_PUBLIC_WEB_URL;
+  const hreflangLinks = [
+    { lang: 'en', url: `${baseUrl}/posts/${slug}` },
+    { lang: 'zh', url: `${baseUrl}/zh/posts/${slug}` },
+    { lang: 'pt', url: `${baseUrl}/pt/posts/${slug}` },
+    { lang: 'es', url: `${baseUrl}/es/posts/${slug}` },
+    { lang: 'it', url: `${baseUrl}/it/posts/${slug}` },
+    { lang: 'de', url: `${baseUrl}/de/posts/${slug}` },
+    { lang: 'x-default', url: `${baseUrl}/posts/${slug}` },
+  ];
+
+  // Generate Article Schema Markup for SEO
+  const currentUrl = locale === 'en' 
+    ? `${baseUrl}/posts/${slug}` 
+    : `${baseUrl}/${locale}/posts/${slug}`;
+  
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    image: `${baseUrl}/imgs/features/astrocartography-lines-calculation.webp`,
+    datePublished: post.created_at,
+    dateModified: post.updated_at || post.created_at,
+    author: {
+      '@type': 'Organization',
+      name: 'AstroCartography',
+      url: baseUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AstroCartography',
+      url: baseUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': currentUrl,
+    },
+    inLanguage: locale,
+  };
+
+  return (
+    <>
+      {/* Hreflang tags for multi-language SEO */}
+      {hreflangLinks.map(({ lang, url }) => (
+        <link key={lang} rel="alternate" hrefLang={lang} href={url} />
+      ))}
+      
+      {/* Article Schema Markup for Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      
+      <BlogDetail post={post as unknown as Post} />
+    </>
+  );
 }

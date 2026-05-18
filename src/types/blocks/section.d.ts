@@ -23,4 +23,9 @@ export interface Section {
   image?: Image;
   buttons?: Button[];
   items?: SectionItem[];
+  cta?: {
+    title?: string;
+    description?: string;
+    button?: Button;
+  };
 }
