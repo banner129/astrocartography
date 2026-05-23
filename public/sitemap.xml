@@ -112,7 +112,7 @@
 
   <url>
     <loc>https://astrocarto.org/posts/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -655,5 +655,44 @@
     <priority>0.6</priority>
   </url> -->
  
+  <!-- ========================================== -->
+  <!-- NEW BLOG ARTICLES - Planet Symbols -->
+  <!-- Added: 2026-05-23 -->
+  <!-- ========================================== -->
+  
+  <url>
+    <loc>https://astrocarto.org/posts/sun-symbol/</loc>
+    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/posts/moon-symbol/</loc>
+    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/posts/venus-symbol/</loc>
+    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/posts/mars-symbol/</loc>
+    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://astrocarto.org/posts/mercury-symbol/</loc>
+    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
