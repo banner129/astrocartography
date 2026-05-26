@@ -30,7 +30,84 @@ import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";
+import { Section as SectionType } from "@/types/blocks/section";
+import Icon from "@/components/icon";
+import Link from "next/link";
 // import TestPaymentModal from '@/components/payment/test-payment-modal';
+
+function PopularLinesSection({ section }: { section?: SectionType }) {
+  if (!section || section.disabled) {
+    return null;
+  }
+
+  return (
+    <section id={section.name || "popular-lines"} className="bg-background py-12 md:py-16">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-3xl text-center">
+          {section.label && (
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-primary">
+              {section.label}
+            </p>
+          )}
+          {section.title && (
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+              {section.title}
+            </h2>
+          )}
+          {section.description && (
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+              {section.description}
+            </p>
+          )}
+        </div>
+
+        <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {section.items?.map((item, index) => (
+            <Link
+              key={`${item.title}-${index}`}
+              href={item.url || "/astrocartography-lines"}
+              className="group rounded-lg border bg-card p-5 text-card-foreground transition-colors hover:border-primary/40 hover:bg-muted/40"
+            >
+              <div className="flex items-start gap-4">
+                {item.icon && (
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+                    <Icon name={item.icon} className="h-5 w-5" />
+                  </div>
+                )}
+                <div>
+                  {item.title && (
+                    <h3 className="font-semibold leading-tight group-hover:text-primary">
+                      {item.title}
+                    </h3>
+                  )}
+                  {item.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {section.cta?.button && (
+          <div className="mt-8 text-center">
+            <Link
+              href={section.cta.button.url || "/astrocartography-lines"}
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+            >
+              {section.cta.button.icon && (
+                <Icon name={section.cta.button.icon} className="h-4 w-4" />
+              )}
+              {section.cta.button.title}
+            </Link>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
 
 
 
@@ -209,6 +286,9 @@ export default async function LandingPage({
         {page.introduce && <FeatureWhatTwo section={page.introduce} />}
       {/* <不带图片 /> */}
       {/* {page.introduce && <FeatureWhatOne section={page.introduce} />} */}
+
+      {/* Popular Astrocartography Lines：低风险内链模块，帮助首页传递主题权重到 Lines 页面 */}
+      {page.popularLines && <PopularLinesSection section={page.popularLines} />}
 
       {/* How to Read Your Astrocartography Map：教用户如何解读地图（教育内容）----------- */}
       {page.howToRead && <FeatureGrid section={page.howToRead} />}

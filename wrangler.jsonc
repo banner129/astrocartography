@@ -31,7 +31,7 @@
 
     "NEXT_PUBLIC_LOCALE_DETECTION": "false",
     "NEXT_PUBLIC_DEFAULT_THEME": "dark",
-    "NEXT_PUBLIC_GOOGLE_ADCODE": "",
+    "NEXT_PUBLIC_GOOGLE_ADCODE": "ca-pub-1740791303497483",
     "NEXT_PUBLIC_SUPPORT_EMAIL": "support@astrocarto.org",
     "NEXT_PUBLIC_ENABLE_TEST_LOGIN": "true",
     "NEXT_PUBLIC_CREEM_PRODUCT_ID": "prod_QAEVIPLBmS289UAhOqPo8",
@@ -45,16 +45,6 @@
 
 
   },
-  // D1 数据库绑定
-  // 创建 D1 后将 database_id 替换为实际值：npx wrangler d1 create astrocarto-db
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "astrocarto-db",
-      "database_id": "eb570ccb-cb45-47cb-b8db-0fa126a725dd"
-    }
-  ],
-
   // 由 OpenNext Cloudflare 生成
   "main": ".open-next/worker.js",
   // 静态资源目录（OpenNext 输出）

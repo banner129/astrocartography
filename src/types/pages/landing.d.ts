@@ -11,6 +11,7 @@ export interface LandingPage {
   hero?: Hero;
   branding?: Section;
   introduce?: Section;
+  popularLines?: Section;
   howToRead?: Section;
   benefit?: Section;
   usage?: Section;

@@ -298,6 +298,59 @@
       }
     ]
   },
+  "popularLines": {
+    "name": "popular-lines",
+    "title": "Popular Astrocartography Lines",
+    "label": "Planetary Line Guides",
+    "description": "Explore the planetary lines people search for most often, then use the free calculator to see where they appear on your personal map.",
+    "items": [
+      {
+        "title": "Sun Line",
+        "description": "Career visibility, confidence, leadership, and authentic self-expression.",
+        "icon": "RiSunLine",
+        "url": "/sun-line-astrocartography"
+      },
+      {
+        "title": "Moon Line",
+        "description": "Home, emotional security, family, intuition, and a deeper sense of belonging.",
+        "icon": "RiMoonLine",
+        "url": "/moon-line-astrocartography"
+      },
+      {
+        "title": "Venus Line",
+        "description": "Love, beauty, relationships, social ease, pleasure, and creative flow.",
+        "icon": "RiHeartLine",
+        "url": "/venus-line-astrocartography"
+      },
+      {
+        "title": "Jupiter Line",
+        "description": "Luck, expansion, abundance, opportunity, travel, and personal growth.",
+        "icon": "RiStarLine",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "title": "Saturn Line",
+        "description": "Discipline, responsibility, long-term career growth, maturity, and structure.",
+        "icon": "RiShieldLine",
+        "url": "/saturn-line-astrocartography"
+      },
+      {
+        "title": "Mercury Line",
+        "description": "Communication, learning, writing, networking, business, and mental clarity.",
+        "icon": "RiMessage3Line",
+        "url": "/mercury-line-astrocartography"
+      }
+    ],
+    "cta": {
+      "button": {
+        "title": "See All Astrocartography Lines",
+        "icon": "RiArrowRightLine",
+        "url": "/astrocartography-lines",
+        "target": "_self",
+        "variant": "link"
+      }
+    }
+  },
   "howToRead": {
     "name": "howToRead",
     "title": "How to Read Your Astrocartography Map",
