@@ -36,9 +36,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 获取文本模型（使用与 astro-chat 相同的模型）
-    const modelName = process.env.AI_MODEL || 'deepseek-chat';
-    const textModel: LanguageModelV1 = deepseek(modelName);
+    // 追问建议用轻量模型，速度更快成本更低
+    const textModel: LanguageModelV1 = deepseek('deepseek-chat');
 
     // 调用 AI 生成追问建议（使用 generateText 而非 streamText，因为追问建议很短）
     const result = await generateText({
@@ -81,6 +80,8 @@ function getFollowUpPrompt(userQuestion: string, aiResponse: string, language: s
 4. 问题必须具体且可操作（不要问开放式问题）
 5. 基于 AI 回答中提到的城市、行星线等内容生成相关问题
 6. 每个问题应该在 5-15 个字之间
+7. 三个问题应分别覆盖：更深层原因、具体行动建议、替代城市/时间/区域
+8. 保持正向好奇，不要制造焦虑或恐惧
 
 用户的原始问题：${userQuestion}
 
@@ -105,6 +106,8 @@ REQUIREMENTS (CRITICAL):
 4. Questions must be SPECIFIC and ACTIONABLE (not open-ended)
 5. Base questions on cities, planetary lines, or other details mentioned in the AI response
 6. Each question should be 5-15 words
+7. The three questions should cover: deeper reasoning, practical next steps, and alternative cities/timing/areas
+8. Keep them positively curious; never use fear or anxiety as the hook
 
 User's original question: ${userQuestion}
 
@@ -129,6 +132,8 @@ REQUISITOS (CRÍTICO):
 4. Las preguntas deben ser ESPECÍFICAS y ACCIONABLES (no abiertas)
 5. Basa las preguntas en ciudades, líneas planetarias u otros detalles mencionados en la respuesta de la IA
 6. Cada pregunta debe tener 5-15 palabras
+7. Las tres preguntas deben cubrir: razón más profunda, próximos pasos prácticos y ciudades/tiempos/zonas alternativas
+8. Mantén una curiosidad positiva; nunca uses miedo o ansiedad como gancho
 
 Pregunta original del usuario: ${userQuestion}
 
@@ -153,6 +158,8 @@ REQUISITI (CRITICI):
 4. Le domande devono essere SPECIFICHE e AZIONABILI (non aperte)
 5. Basa le domande su città, linee planetarie o altri dettagli menzionati nella risposta dell'IA
 6. Ogni domanda dovrebbe avere 5-15 parole
+7. Le tre domande devono coprire: ragione più profonda, prossimi passi pratici e città/tempi/aree alternative
+8. Mantieni una curiosità positiva; non usare mai paura o ansia come gancio
 
 Domanda originale dell'utente: ${userQuestion}
 
@@ -177,6 +184,8 @@ REQUISITOS (CRÍTICO):
 4. As perguntas devem ser ESPECÍFICAS e ACIONÁVEIS (não abertas)
 5. Baseie as perguntas em cidades, linhas planetárias ou outros detalhes mencionados na resposta da IA
 6. Cada pergunta deve ter 5-15 palavras
+7. As três perguntas devem cobrir: razão mais profunda, próximos passos práticos e cidades/tempos/áreas alternativas
+8. Mantenha uma curiosidade positiva; nunca use medo ou ansiedade como gancho
 
 Pergunta original do usuário: ${userQuestion}
 

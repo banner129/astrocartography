@@ -235,9 +235,9 @@ export async function POST(req: Request) {
     }
 
     // 初始化 DeepSeek 模型
-    // 使用 deepseek-chat 模型（性能好、成本低、中文支持佳）
-    // deepseek() 会自动从环境变量 DEEPSEEK_API_KEY 读取 API Key
-    const textModel: LanguageModelV1 = deepseek("deepseek-chat");
+    // 使用 deepseek-reasoner 模型（内部推理链，回答质量更高、逻辑更严谨）
+    // 推理过程在后台运行，前端只接收最终答案，不影响用户体验
+    const textModel: LanguageModelV1 = deepseek("deepseek-reasoner");
 
     // 检测用户问题的语言
     const userLanguage = detectUserLanguage(lastMessage.content);
@@ -287,7 +287,7 @@ export async function POST(req: Request) {
     // 返回流式响应
     // 注意：追问建议由前端在 onFinish 回调中生成，不需要在这里追加
     return result.toDataStreamResponse({
-      sendReasoning: false, // DeepSeek chat 不支持推理过程
+      sendReasoning: false, // 不向前端传输推理内容，用户直接看到最终答案
     });
 
   } catch (err) {

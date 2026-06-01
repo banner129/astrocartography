@@ -282,7 +282,7 @@ export default function AstroChat({
           }
         : { birthData: {}, planetLines: [] },
       synastryData: synastryData ?? undefined,
-      questionCount: currentUserMessageCount + 1,
+      questionCount: currentUserMessageCount,
       remainingFreeQuestions: currentRemainingFreeQuestions,
       userLocale: locale, // 🔥 新增：传递用户语言环境
     };
@@ -1083,10 +1083,15 @@ export default function AstroChat({
                   <Sparkles className="size-4 text-white" />
                 </div>
                 <div className="bg-white/10 text-gray-100 border border-white/10 rounded-2xl px-4 py-3">
-                  <div className="flex gap-1">
-                    <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '0ms' }} />
-                    <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '150ms' }} />
-                    <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '300ms' }} />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-xs text-purple-300 font-medium animate-pulse">
+                      ✨ Analyzing your birth chart...
+                    </p>
+                    <div className="flex gap-1">
+                      <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '0ms' }} />
+                      <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '150ms' }} />
+                      <div className="size-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '300ms' }} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1550,4 +1555,3 @@ export default function AstroChat({
     </>
   );
 }
-
