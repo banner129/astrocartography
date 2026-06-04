@@ -1,0 +1,81 @@
+{
+  "key": "chiron",
+  "slug": "chiron-placement-calculator",
+  "toolType": "chiron",
+  "metadata": {
+    "title": "Chiron berechnen - Zeichen, Haus und Heilungsthema",
+    "description": "Berechne Chiron im Geburtshoroskop nach Datum, Uhrzeit und Ort. Verstehe Zeichen, Haus, Sensibilitat und Heilung.",
+    "keywords": "chiron berechnen, chiron zeichen, chiron im horoskop, chiron astrologie, chiron rechner, verwundeter heiler"
+  },
+  "hero": {
+    "eyebrow": "Astrologischer Heilungsleitfaden",
+    "title": "Chiron berechnen",
+    "subtitle": "Erkunde Chiron als verwundeten Heiler: ein Chart-Thema für alte Empfindlichkeit, Wachstum und Orte, an denen Heilung mehr Raum bekommt."
+  },
+  "form": {
+    "submit": "Meinen Chiron berechnen"
+  },
+  "result": {
+    "title": "Deine Chiron-Position",
+    "cta": "Karte öffnen und unterstützende Orte suchen"
+  },
+  "sections": [
+    {
+      "title": "Wofür ein Chiron-Rechner gut ist",
+      "body": [
+        "Ein Chiron-Rechner zeigt, wo Chiron in deinem Geburtshoroskop steht. In der modernen Astrologie gilt Chiron als verwundeter Heiler: ein Symbol für empfindliche Themen, alte Schutzmuster und die Weisheit, die durch Erfahrung wachsen kann.",
+        "Dieses Tool berechnet Zeichen, Grad und Haus mit Geburtsdaten und einer geozentrischen Ephemeride. Es ist keine Diagnose und ersetzt keine Therapie oder medizinische Hilfe. Es ist symbolische Sprache für achtsame Reflexion."
+      ]
+    },
+    {
+      "title": "Chiron ohne Angst lesen",
+      "body": [
+        "Chiron sollte nicht dramatisiert werden. Nutzlich wird er, wenn er zeigt, wo du dich verletzlich fuhlst und zugleich besondere Wahrnehmung entwickelst. Chiron in Widder kann Identitat beruhren; in Stier Wert und Körper; in Zwillinge Stimme; in Krebs Zugehörigkeit.",
+        "Die bessere Frage lautet nicht: Was stimmt nicht mit mir? Sondern: Welcher Teil von mir hat gelernt, sich zu schutzen, und welche Bedingungen helfen ihm, freier zu werden?"
+      ]
+    },
+    {
+      "title": "Chiron und unterstützende Orte",
+      "body": [
+        "In der Astrokartografie kannst du Chiron mit weicheren oder intensiveren Linien vergleichen. Mond, Venus, Jupiter oder IC können für Ruhe, Bindung und Reparatur hilfreich sein. Mars, Saturn und Pluto können Wachstum bringen, verlangen aber oft mehr Struktur.",
+        "Nutze den Rechner als Start: kenne Chiron, öffne die Karte und frage, welche Orte Heilung ermutigen, ohne dich ständig zu überfordern."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ist Chiron ein Planet?",
+      "answer": "Nein, Chiron ist kein traditioneller Planet. Er ist ein kleiner Himmelskorper, meist als Zentaur klassifiziert."
+    },
+    {
+      "question": "Sagt Chiron Trauma voraus?",
+      "answer": "Nein. Chiron sollte nicht für Diagnose oder Vorhersage von Trauma genutzt werden."
+    },
+    {
+      "question": "Brauche ich genaue Geburtszeit?",
+      "answer": "Die Zeit andert selten das Chiron-Zeichen, kann aber das Haus und den Kontext verandern."
+    },
+    {
+      "question": "Wie verbinde ich Chiron mit Astrokartografie?",
+      "answer": "Vergleiche dein Chiron-Thema mit Orten, die sicherer, kreativer, emotionaler oder herausfordernder wirken."
+    }
+  ],
+  "schemaName": "Chiron Rechner",
+  "relatedLinks": [
+    {
+      "text": "Unterstützende Orte suchen?",
+      "linkText": "Astrokartografie testen",
+      "url": "/"
+    },
+    {
+      "text": "Brauchst du das ganze Horoskop?",
+      "linkText": "Geburtshoroskop-Generator",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Sanftere Orte vergleichen.",
+      "linkText": "Venuslinie",
+      "url": "/venus-line-astrocartography"
+    }
+  ]
+}

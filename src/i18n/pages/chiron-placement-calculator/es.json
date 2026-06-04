@@ -1,0 +1,81 @@
+{
+  "key": "chiron",
+  "slug": "chiron-placement-calculator",
+  "toolType": "chiron",
+  "metadata": {
+    "title": "Calculadora de Quirón - Signo, casa y tema de sanación",
+    "description": "Calcula tu Quirón natal por fecha, hora y lugar. Lee su signo, casa y significado como herida, aprendizaje y sanación.",
+    "keywords": "calculadora quiron, signo de quiron, quiron carta natal, quiron astrología, calcular quiron, sanador herido astrología"
+  },
+  "hero": {
+    "eyebrow": "Guia astrologica de sanación",
+    "title": "Calculadora de Quirón",
+    "subtitle": "Explora Quirón como el sanador herido: un punto de la carta qué habla de sensibilidad antigua, aprendizaje profundo y entornos donde sanar puede sentirse posible."
+  },
+  "form": {
+    "submit": "Calcular mi Quirón"
+  },
+  "result": {
+    "title": "Tu posición de Quirón",
+    "cta": "Abrir el mapa y buscar lugares de apoyo"
+  },
+  "sections": [
+    {
+      "title": "Para qué sirve una calculadora de Quirón",
+      "body": [
+        "Una calculadora de Quirón ubica este cuerpo en tu carta natal. En astrología moderna, Quirón se asocia con el sanador herido: una zona sensible, una memoria de vulnerabilidad y también una forma de sabiduría que se desarrolla con experiencia.",
+        "Esta herramienta calcula signo, grado y casa de Quirón usando tus datos de nacimiento y una efeméride geocéntrica. No es un diagnóstico ni reemplaza terapia o apoyo profesional. Es lenguaje simbólico para mirar con más compasión ciertos temas repetidos."
+      ]
+    },
+    {
+      "title": "Leer Quirón sin miedo",
+      "body": [
+        "Quirón a veces se describe de manera dramatica, pero la lectura más útil es humana y concreta. Puede mostrar donde te sientes expuesto, y también donde aprendes a acompanar a otros porque conoces ese territorio desde dentro.",
+        "La pregunta no es qué esta mal en mi, sino qué parte de mi aprendio a protegerse. Quirón en Aries puede tocar identidad y coraje; en Tauro, valor y cuerpo; en Géminis, voz; en Cáncer, pertenencia. Cada signo muestra sensibilidad y medicina."
+      ]
+    },
+    {
+      "title": "Quirón y lugares qué sostienen",
+      "body": [
+        "En astrocartografía, el tema de Quirón puede compararse con líneas más suaves o más intensas. Luna, Venus, Júpiter o el IC pueden sentirse más contenedores para descanso, vinculo y reparacion. Marte, Saturno o Plutón pueden ser importantes, pero suelen pedir más estructura.",
+        "Usa la calculadora como punto de partida: conoce tu Quirón, mira tu mapa y pregunta qué ciudades ayudan a sanar sin vivir en constante activacion. El mejor resultado no es una ciudad perfecta, sino una decision más consciente."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Quirón es un planeta?",
+      "answer": "No es un planeta tradicional. Es un cuerpo menor, normalmente clasificado como centauro, usado simbolicamente en astrología."
+    },
+    {
+      "question": "Quirón predice trauma?",
+      "answer": "No. Quirón no debe usarse para diagnosticar ni predecir trauma. Es una herramienta simbolica para reflexionar sobre sensibilidad y crecimiento."
+    },
+    {
+      "question": "Necesito hora exacta para Quirón?",
+      "answer": "La hora rara vez cambia el signo de Quirón, pero si puede cambiar la casa y el contexto de la carta."
+    },
+    {
+      "question": "Como conecto Quirón con astrocartografía?",
+      "answer": "Compara tu tema de Quirón con lugares del mapa qué se sientan más seguros, creativos, emocionales o exigentes para ti."
+    }
+  ],
+  "schemaName": "Calculadora de Quirón",
+  "relatedLinks": [
+    {
+      "text": "¿Quieres lugares de apoyo?",
+      "linkText": "Prueba la astrocartografía",
+      "url": "/"
+    },
+    {
+      "text": "¿Necesitas tu carta completa?",
+      "linkText": "Generador de carta natal",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Compara lugares más suaves.",
+      "linkText": "Línea de Venus",
+      "url": "/venus-line-astrocartography"
+    }
+  ]
+}

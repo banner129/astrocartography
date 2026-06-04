@@ -42,6 +42,27 @@
               "url": "/rising-sign-calculator",
               "target": "_self",
               "icon": "RiCompass3Line"
+            },
+            {
+              "title": "Calcolatore del Segno di Venere",
+              "description": "Calcola Venere per amore, valori e attrazione",
+              "url": "/venus-sign-calculator",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "Calcolatore dei Nodi Lunari",
+              "description": "Calcola Nodo Nord, Nodo Sud e crescita",
+              "url": "/lunar-nodes-calculator",
+              "target": "_self",
+              "icon": "RiNodeTree"
+            },
+            {
+              "title": "Calcolatore di Chirone",
+              "description": "Trova segno, casa e tema di guarigione",
+              "url": "/chiron-placement-calculator",
+              "target": "_self",
+              "icon": "RiFirstAidKitLine"
             }
           ]
         },

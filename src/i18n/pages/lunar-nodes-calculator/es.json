@@ -1,0 +1,81 @@
+{
+  "key": "lunarNodes",
+  "slug": "lunar-nodes-calculator",
+  "toolType": "lunar-nodes",
+  "metadata": {
+    "title": "Calculadora de Nodos Lunares - Nodo Norte y Nodo Sur",
+    "description": "Calcula tu Nodo Norte y Nodo Sur por nacimiento. Entiende dirección vital, patrones conocidos, crecimiento y astrocartografía.",
+    "keywords": "calculadora nodos lunares, nodo norte, nodo sur, calcular nodo norte, nodos lunares astrología, nodo norte carta natal"
+  },
+  "hero": {
+    "eyebrow": "Herramienta astrologica gratis",
+    "title": "Calculadora de Nodos Lunares",
+    "subtitle": "Calcula tu Nodo Norte y Nodo Sur para leer la dirección de crecimiento, los patrones conocidos y los temas vitales que tu carta vuelve a poner sobre la mesa."
+  },
+  "form": {
+    "submit": "Calcular mis nodos lunares"
+  },
+  "result": {
+    "title": "Tus nodos lunares",
+    "cta": "Explorar donde se activa tu camino de crecimiento"
+  },
+  "sections": [
+    {
+      "title": "Qué son los nodos lunares",
+      "body": [
+        "Una calculadora de nodos lunares encuentra el Nodo Norte y el Nodo Sur en tu carta natal. No son planetas fisicos: son los puntos donde la orbita de la Luna cruza la trayectoria aparente del Sol. En astrología se leen como una tension entre lo conocido y aquello qué pide desarrollo.",
+        "El Nodo Sur suele describir talentos, respuestas automaticas y zonas de comodidad. El Nodo Norte senala cualidades menos familiares pero importantes para crecer. Esta calculadora usa tus datos de nacimiento para calcular el nodo medio y su punto opuesto, junto con la casa de signo entero."
+      ]
+    },
+    {
+      "title": "Nodo Norte, Nodo Sur y dirección vital",
+      "body": [
+        "Los nodos no deben leerse como un destino rigido. Funcionan mejor como mapa de reflexion. Nodo Norte en Aries puede pedir autonomia y coraje; en Libra, cooperacion y escucha; en Capricornio, estructura; en Cáncer, pertenencia y honestidad emocional.",
+        "El Nodo Sur no es algo qué debas rechazar. Es una habilidad ya conocida qué puede volverse repetitiva si decide por ti. La lectura más útil consiste en usar sus dones con conciencia mientras prácticas el movimiento del Nodo Norte."
+      ]
+    },
+    {
+      "title": "Nodos lunares y astrocartografía",
+      "body": [
+        "Los nodos hablan de dirección, y la ubicación influye mucho en la dirección de vida. Una ciudad puede hacer más fuerte una parte de tu carta; otra puede invitar a una versión de ti que antes estaba dormida. Después de calcular tus nodos, mira el mapa de astrocartografía y pregunta qué lugares apoyan tus temas de Nodo Norte.",
+        "Si tu Nodo Norte enfatiza comunicación, las líneas de Mercurio pueden interesarte. Si habla de pertenencia, mira Luna o Venus. Si pide visibilidad, Sol o MC pueden ser útiles. La calculadora da el marco; el mapa ayuda a probarlo en el mundo real."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Cual es la diferencia entre Nodo Norte y Nodo Sur?",
+      "answer": "El Nodo Norte apunta a crecimiento y desarrollo. El Nodo Sur describe patrones familiares, talentos y zonas de comodidad."
+    },
+    {
+      "question": "La calculadora usa nodo medio o nodo verdadero?",
+      "answer": "Esta herramienta usa una calculacion de nodo medio para un resultado estable y facil de leer."
+    },
+    {
+      "question": "Los nodos sirven para astrocartografía?",
+      "answer": "Sí, como capa interpretativa. Los nodos muestran temas de crecimiento y el mapa ayuda a explorar qué lugares los apoyan o los activan."
+    },
+    {
+      "question": "Los nodos son karmicos?",
+      "answer": "Algunos astrologos los leen como karma; otros los leen psicologicamente. Aqui usamos ambas ideas con cuidado, sin tratarlas como destino fijo."
+    }
+  ],
+  "schemaName": "Calculadora de Nodos Lunares",
+  "relatedLinks": [
+    {
+      "text": "¿Quieres temas de crecimiento por lugar?",
+      "linkText": "Prueba la astrocartografía",
+      "url": "/"
+    },
+    {
+      "text": "¿Necesitas tu carta natal?",
+      "linkText": "Generador de carta natal",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "¿Solo necesitas el ascendente?",
+      "linkText": "Calculadora de ascendente",
+      "url": "/rising-sign-calculator"
+    }
+  ]
+}

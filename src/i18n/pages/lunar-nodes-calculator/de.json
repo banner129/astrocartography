@@ -1,0 +1,81 @@
+{
+  "key": "lunarNodes",
+  "slug": "lunar-nodes-calculator",
+  "toolType": "lunar-nodes",
+  "metadata": {
+    "title": "Mondknoten berechnen - Nordknoten und Südknoten",
+    "description": "Berechne Nordknoten und Südknoten im Geburtshoroskop. Verstehe Entwicklung, Muster, Lebensrichtung und Astrokartografie.",
+    "keywords": "mondknoten berechnen, nordknoten, sudknoten, nordknoten rechner, mondknoten astrologie, nordknoten horoskop"
+  },
+  "hero": {
+    "eyebrow": "Kostenloses Astrologie-Tool",
+    "title": "Mondknoten berechnen",
+    "subtitle": "Berechne Nordknoten und Südknoten, um Entwicklungsrichtung, vertraute Muster und Lebensthemen in deinem Chart klarer zu sehen."
+  },
+  "form": {
+    "submit": "Meine Mondknoten berechnen"
+  },
+  "result": {
+    "title": "Deine Mondknoten",
+    "cta": "Orte für deinen Entwicklungsweg erkunden"
+  },
+  "sections": [
+    {
+      "title": "Was die Mondknoten bedeuten",
+      "body": [
+        "Ein Mondknoten-Rechner findet Nordknoten und Südknoten im Geburtshoroskop. Diese Punkte sind keine Planeten, sondern Schnittpunkte der Mondbahn mit der scheinbaren Sonnenbahn. Astrologisch zeigen sie die Spannung zwischen Vertrautem und Entwicklung.",
+        "Der Südknoten beschreibt Muster, Talente und Gewohnheiten, die leicht abrufbar sind. Der Nordknoten zeigt Qualitaten, die weniger gewohnt sind, aber Wachstum bringen. Dieser Rechner nutzt den mittleren Mondknoten und die ganze-Zeichen-Hauser."
+      ]
+    },
+    {
+      "title": "Nordknoten, Südknoten und Lebensrichtung",
+      "body": [
+        "Die Knoten sind kein starres Schicksal. Sie sind eher ein Reflexionsrahmen. Nordknoten in Widder kann Mut und Eigenständigkeit betonen; in Waage Beziehung und Fairness; in Steinbock Verantwortung; in Krebs Zugehörigkeit und emotionale Ehrlichkeit.",
+        "Der Südknoten ist nicht falsch. Er ist eine bekannte Fahigkeit, die zu einer Wiederholung werden kann. Die Kunst besteht darin, seine Gaben bewusst zu nutzen und trotzdem in Richtung Nordknoten zu uben."
+      ]
+    },
+    {
+      "title": "Mondknoten und Astrokartografie",
+      "body": [
+        "Da die Knoten mit Richtung zu tun haben, ist Ort wichtig. Eine Stadt kann einen Teil deines Charts stärker machen; ein anderes Land kann eine neue Version von dir einladen. Nach dem Berechnen kannst du fragen, welche Orte deine Nordknoten-Themen unterstutzen.",
+        "Bei Kommunikations-Themen können Merkur-Linien interessant sein. Bei Zugehörigkeit Mond oder Venus. Bei Sichtbarkeit Sonne oder MC. Der Rechner liefert die Frage, die Karte macht sie geografisch."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Was ist der Unterschied zwischen Nordknoten und Südknoten?",
+      "answer": "Der Nordknoten zeigt Entwicklung. Der Südknoten zeigt vertraute Muster, Talente und Komfortzonen."
+    },
+    {
+      "question": "Nutzt der Rechner wahren oder mittleren Knoten?",
+      "answer": "Dieses Tool nutzt den mittleren Mondknoten für ein stabiles und leicht lesbares Ergebnis."
+    },
+    {
+      "question": "Helfen Mondknoten bei Astrokartografie?",
+      "answer": "Ja, als Deutungsebene. Die Knoten zeigen Wachstumsthemen; die Karte zeigt, welche Orte sie unterstutzen oder aktivieren."
+    },
+    {
+      "question": "Sind Mondknoten karmisch?",
+      "answer": "Viele Astrologen lesen sie karmisch, andere psychologisch. Hier werden beide Perspektiven vorsichtig und nicht fatalistisch genutzt."
+    }
+  ],
+  "schemaName": "Mondknoten Rechner",
+  "relatedLinks": [
+    {
+      "text": "Wachstum nach Ort betrachten?",
+      "linkText": "Astrokartografie testen",
+      "url": "/"
+    },
+    {
+      "text": "Brauchst du dein Geburtshoroskop?",
+      "linkText": "Geburtshoroskop-Generator",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Nur den Aszendenten berechnen?",
+      "linkText": "Aszendent-Rechner",
+      "url": "/rising-sign-calculator"
+    }
+  ]
+}

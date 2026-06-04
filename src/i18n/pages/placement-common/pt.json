@@ -1,0 +1,74 @@
+{
+  "introLabel": "INTRODUÇÃO",
+  "benefitLabel": "Benefícios principais",
+  "benefitTitleTemplate": "Por que usar {title}",
+  "benefitDescription": "Veja primeiro a posição e depois leia uma interpretação clara, prática e conectada à astrocartografia.",
+  "usageLabel": "COMO USAR",
+  "usageTitleTemplate": "Como usar {title}",
+  "usageDescription": "Calcule primeiro e transforme o resultado em uma pergunta concreta sobre mapa ou localização.",
+  "usageItems": [
+    {
+      "title": "Informe os dados",
+      "description": "Adicione data, hora, local de nascimento e fuso horário. A hora exata melhora o grau e a casa.",
+      "icon": "RiCalendarLine"
+    },
+    {
+      "title": "Calcule a posição",
+      "description": "Clique em {submit} para ver signo, grau e casa quando disponível.",
+      "icon": "RiTimeLine"
+    },
+    {
+      "title": "Leia o significado",
+      "description": "{sectionSummary}",
+      "icon": "RiListCheck"
+    },
+    {
+      "title": "Continue para o mapa",
+      "description": "Abra a astrocartografia com os mesmos dados e veja onde esse tema fica mais ativo.",
+      "icon": "RiGlobalLine"
+    }
+  ],
+  "featureLabel": "RECURSOS",
+  "featureTitleTemplate": "Recursos de {title}",
+  "featureDescription": "Feito para clareza: calculadora focada, interpretação objetiva e caminho direto para locais.",
+  "featureItems": [
+    {
+      "title": "Ferramenta em primeiro lugar",
+      "description": "A calculadora aparece antes do texto longo para quem quer uma resposta rápida.",
+      "icon": "RiFlashlightLine"
+    },
+    {
+      "title": "Interpretação simples",
+      "description": "Termos astrológicos são explicados em linguagem acessível.",
+      "icon": "RiMessage3Line"
+    },
+    {
+      "title": "Contexto do mapa natal",
+      "description": "O resultado combina signo, grau e casa, não apenas uma etiqueta genérica.",
+      "icon": "RiPieChartLine"
+    },
+    {
+      "title": "Ligação com astrocartografia",
+      "description": "Depois do cálculo, você pode comparar como o tema aparece em diferentes lugares.",
+      "icon": "RiMapLine"
+    },
+    {
+      "title": "Perguntas para intenção de busca",
+      "description": "Perguntas comuns respondem dúvidas reais e ajudam o Google a entender a página.",
+      "icon": "RiQuestionLine"
+    },
+    {
+      "title": "Limites confiáveis",
+      "description": "O texto evita promessas absolutas e mantém a leitura prática.",
+      "icon": "RiShieldCheckLine"
+    }
+  ],
+  "faqLabel": "Perguntas frequentes",
+  "faqTitleTemplate": "{title}: perguntas frequentes",
+  "faqDescriptionTemplate": "Perguntas comuns sobre {title}, interpretação e conexão com a astrocartografia.",
+  "ctaTitleTemplate": "Continue de {title} para a astrocartografia",
+  "ctaDescription": "A posição fica mais útil quando conectada a lugares reais. Gere seu mapa e compare cidades.",
+  "ctaButton": "Explorar meu mapa no mundo",
+  "breadcrumbHome": "Início",
+  "breadcrumbTools": "Ferramentas"
+}

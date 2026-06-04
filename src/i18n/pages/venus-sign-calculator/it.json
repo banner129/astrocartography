@@ -1,0 +1,81 @@
+{
+  "key": "venus",
+  "slug": "venus-sign-calculator",
+  "toolType": "venus",
+  "metadata": {
+    "title": "Calcolatore del segno di Venere - Amore e attrazione",
+    "description": "Calcola il tuo segno di Venere con data, ora e luogo di nascita. Leggi amore, attrazione, valori e astrocartografia.",
+    "keywords": "calcolatore segno venere, segno di venere, venere astrologia, venere tema natale, calcolare venere, venere amore"
+  },
+  "hero": {
+    "eyebrow": "Strumento astrologico gratuito",
+    "title": "Calcolatore del Segno di Venere",
+    "subtitle": "Trova la tua Venere natale e capisci come il tema parla di amore, attrazione, bellezza, valori e luoghi dove le relazioni possono scorrere meglio."
+  },
+  "form": {
+    "submit": "Calcola la mia Venere"
+  },
+  "result": {
+    "title": "La tua posizione di Venere",
+    "cta": "Vedi dove la tua linea di Venere e più forte"
+  },
+  "sections": [
+    {
+      "title": "Cosa rivela il segno di Venere",
+      "body": [
+        "Il calcolatore del segno di Venere mostra dove si trovava Venere nello zodiaco alla tua nascita. In astrologia, Venere parla di affetto, desiderio, gusto, piacere e valori. Non racconta tutta la vita sentimentale, ma offre un punto di partenza concreto per capire attrazione, stile relazionale e cio che ti fa sentire accolto.",
+        "Lo strumento usa data, ora e luogo di nascita per calcolare segno, grado e casa. Il segno descrive il tono: diretto in Ariete, sensuale in Toro, curioso in Gemelli, protettivo in Cancro, espressivo in Leone, attento in Vergine, relazionale in Bilancia, intenso in Scorpione, libero in Sagittario, costante in Capricorno, indipendente in Acquario e sensibile in Pesci."
+      ]
+    },
+    {
+      "title": "Venere, amore e luoghi",
+      "body": [
+        "Molti cercano Venere per avere una lettura più personale della semplice compatibilita solare. Venere aiuta a capire se ti nutrono parole, stabilita, avventura, profondita emotiva o spazio. Mostra anche il tipo di bellezza, piacere e valore che riconosci naturalmente.",
+        "In astrocartografia, Venere diventa geografica. La posizione natale indica lo stile; la linea di Venere mostra dove quella qualita puo emergere con più facilita. Puo riguardare incontri, amicizie, arte, ospitalita, piacere e sostegno sociale."
+      ]
+    },
+    {
+      "title": "Come usare il risultato",
+      "body": [
+        "Parti dal segno, poi guarda la casa e confronta il risultato con la tua esperienza. Venere in Bilancia cerca equilibrio; Venere in Scorpione profondita; Venere in Acquario amicizia e liberta mentale. Non sceglie il partner per te, ma rende più chiaro cio che ti nutre.",
+        "Dopo il calcolo, apri la mappa di astrocartografia con gli stessi dati e osserva Venere ASC, DSC, MC e IC. Venere DSC parla di relazioni; Venere MC di fascino pubblico e creativita; Venere IC di casa, calma e piacere privato."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Il calcolatore del segno di Venere e gratuito?",
+      "answer": "Si. Puoi calcolare Venere con data, ora e luogo di nascita."
+    },
+    {
+      "question": "Serve l'ora esatta?",
+      "answer": "L'ora migliora grado e casa. Se Venere cambiava segno vicino alla nascita, puo essere importante anche per il segno."
+    },
+    {
+      "question": "Differenza tra segno di Venere e linea di Venere?",
+      "answer": "Il segno descrive Venere nel tema natale. La linea mostra dove quell'energia puo attivarsi geograficamente."
+    },
+    {
+      "question": "Venere dice con chi devo stare?",
+      "answer": "No. Venere indica attrazione e valori, ma una relazione dipende da molte parti dei temi natali e dalla vita reale."
+    }
+  ],
+  "schemaName": "Calcolatore del Segno di Venere",
+  "relatedLinks": [
+    {
+      "text": "Vuoi la versione su mappa mondiale?",
+      "linkText": "Prova l'astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Esplora l'amore per luogo.",
+      "linkText": "Linea di Venere",
+      "url": "/venus-line-astrocartography"
+    },
+    {
+      "text": "Ti serve il tema completo?",
+      "linkText": "Generatore tema natale",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

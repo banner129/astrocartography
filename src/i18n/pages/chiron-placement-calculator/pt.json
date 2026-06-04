@@ -1,0 +1,81 @@
+{
+  "key": "chiron",
+  "slug": "chiron-placement-calculator",
+  "toolType": "chiron",
+  "metadata": {
+    "title": "Calculadora de Quíron - Signo, casa e tema de cura",
+    "description": "Calcule Quíron no mapa natal por data, hora e local. Veja signo, casa e significado para cura, sensibilidade e astrocartografia.",
+    "keywords": "calculadora quiron, signo de quiron, quiron mapa astral, quiron astrologia, calcular quiron, curador ferido astrologia"
+  },
+  "hero": {
+    "eyebrow": "Guia astrologico de cura",
+    "title": "Calculadora de Quíron",
+    "subtitle": "Explore Quíron como o curador ferido: um ponto do mapa ligado a sensibilidade antiga, aprendizado profundo e ambientes onde a cura pode ter mais espaço."
+  },
+  "form": {
+    "submit": "Calcular meu Quíron"
+  },
+  "result": {
+    "title": "Sua posição de Quíron",
+    "cta": "Abrir o mapa e buscar lugares de apoio"
+  },
+  "sections": [
+    {
+      "title": "Para que serve a calculadora de Quíron",
+      "body": [
+        "A calculadora de Quíron localiza esse corpo no seu mapa natal. Na astrologia moderna, Quíron é associado ao curador ferido: uma área sensível, uma memória de vulnerabilidade e também uma sabedoria que cresce com experiência.",
+        "A ferramenta calcula signo, grau e casa de Quíron usando seus dados de nascimento e uma efeméride geocêntrica. Não e diagnóstico nem substitui terapia, cuidado médico ou apoio profissional. É uma linguagem simbólica para refletir com mais compaixão."
+      ]
+    },
+    {
+      "title": "Como ler Quíron sem medo",
+      "body": [
+        "Quíron pode mostrar onde você se sente exposto, mas também onde desenvolve percepção e capacidade de acolher. Quíron em Áries pode tocar identidade; em Touro, valor e corpo; em Gêmeos, voz; em Câncer, pertencimento.",
+        "A leitura mais útil não pergunta o que ha de errado comigo. Ela pergunta que parte de mim aprendeu a se proteger e que condições ajudam essa parte a respirar."
+      ]
+    },
+    {
+      "title": "Quíron e lugares de apoio",
+      "body": [
+        "Na astrocartografia, compare o tema de Quíron com linhas mais suaves e mais intensas. Lua, Vênus, Júpiter e IC podem ser bons indicadores de descanso, vínculo e reparação. Marte, Saturno e Plutão podem trazer crescimento, mas pedem mais estrutura.",
+        "Use a calculadora como início: conheça Quíron, veja o mapa e pergunte quais cidades ajudam a curar sem viver em ativação constante."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Quíron é um planeta?",
+      "answer": "Não é um planeta tradicional. E um corpo menor, geralmente classificado como centauro, usado de forma simbólica na astrologia."
+    },
+    {
+      "question": "Quíron prediz trauma?",
+      "answer": "Não. Quíron não deve diagnosticar nem prever trauma. Ele serve como símbolo para refletir sobre sensibilidade e crescimento."
+    },
+    {
+      "question": "Preciso de hora exata?",
+      "answer": "A hora raramente muda o signo de Quíron, mas pode mudar a casa e o contexto da leitura."
+    },
+    {
+      "question": "Como ligar Quíron a astrocartografia?",
+      "answer": "Compare o tema de Quíron com lugares do mapa que pareçam mais seguros, criativos, emocionais ou exigentes para você."
+    }
+  ],
+  "schemaName": "Calculadora de Quíron",
+  "relatedLinks": [
+    {
+      "text": "Quer lugares de apoio?",
+      "linkText": "Teste a astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Precisa do mapa completo?",
+      "linkText": "Gerador de mapa astral",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Compare lugares mais suaves.",
+      "linkText": "Linha de Vênus",
+      "url": "/venus-line-astrocartography"
+    }
+  ]
+}

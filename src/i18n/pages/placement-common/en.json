@@ -1,0 +1,74 @@
+{
+  "introLabel": "INTRODUCTION",
+  "benefitLabel": "Core Benefits",
+  "benefitTitleTemplate": "Why Choose Our {title}",
+  "benefitDescription": "Get the placement first, then read it in plain English. The page is designed for quick answers, credible interpretation, and a natural handoff into astrocartography.",
+  "usageLabel": "HOW TO USE",
+  "usageTitleTemplate": "How to Use the {title}",
+  "usageDescription": "Use the calculator first, then turn the result into a practical chart or location question.",
+  "usageItems": [
+    {
+      "title": "Enter birth data",
+      "description": "Add your birth date, time, birthplace, and timezone. Exact time improves house placement and degree accuracy.",
+      "icon": "RiCalendarLine"
+    },
+    {
+      "title": "Calculate the placement",
+      "description": "Click {submit} to get the placement this page focuses on, with sign, degree, and house when available.",
+      "icon": "RiTimeLine"
+    },
+    {
+      "title": "Read the meaning",
+      "description": "{sectionSummary}",
+      "icon": "RiListCheck"
+    },
+    {
+      "title": "Continue to the map",
+      "description": "Open astrocartography with the same birth data and explore where this chart theme may feel stronger.",
+      "icon": "RiGlobalLine"
+    }
+  ],
+  "featureLabel": "FEATURES",
+  "featureTitleTemplate": "{title} Features",
+  "featureDescription": "Built for clarity: a focused calculator, concise interpretation, related astrology context, and a direct path into location-based exploration.",
+  "featureItems": [
+    {
+      "title": "Tool-first layout",
+      "description": "The calculator appears before the long educational content, matching high-intent users who want an answer quickly.",
+      "icon": "RiFlashlightLine"
+    },
+    {
+      "title": "Plain-English interpretation",
+      "description": "Professional astrology terms are explained in accessible language so beginners and experienced users can both follow the result.",
+      "icon": "RiMessage3Line"
+    },
+    {
+      "title": "Birth-chart context",
+      "description": "The result connects sign, degree, and house themes instead of treating the placement as a generic zodiac label.",
+      "icon": "RiPieChartLine"
+    },
+    {
+      "title": "Astrocartography handoff",
+      "description": "After the placement, users can continue into the world map and ask how this theme may express through different locations.",
+      "icon": "RiMapLine"
+    },
+    {
+      "title": "FAQ for search intent",
+      "description": "Common questions are answered clearly and marked up with FAQPage schema for better search understanding.",
+      "icon": "RiQuestionLine"
+    },
+    {
+      "title": "Credible boundaries",
+      "description": "The copy avoids overpromising and keeps astrology reflective, practical, and trustworthy for real decisions.",
+      "icon": "RiShieldCheckLine"
+    }
+  ],
+  "faqLabel": "FAQ",
+  "faqTitleTemplate": "{title} - Frequently Asked Questions",
+  "faqDescriptionTemplate": "Common questions about using this {title}, interpreting your result, and connecting the placement with astrocartography.",
+  "ctaTitleTemplate": "Continue from {title} to Astrocartography",
+  "ctaDescription": "Your placement becomes more useful when you connect it to real places. Generate your map, choose a city, and ask how love, growth, healing, work, or belonging may express there.",
+  "ctaButton": "Explore your chart on the world map",
+  "breadcrumbHome": "Home",
+  "breadcrumbTools": "Tools"
+}

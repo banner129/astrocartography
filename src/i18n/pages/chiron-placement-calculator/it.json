@@ -1,0 +1,81 @@
+{
+  "key": "chiron",
+  "slug": "chiron-placement-calculator",
+  "toolType": "chiron",
+  "metadata": {
+    "title": "Calcolatore di Chirone - Segno, casa e guarigione",
+    "description": "Calcola Chirone nel tema natale per data, ora e luogo. Leggi segno, casa, sensibilita e temi di guarigione.",
+    "keywords": "calcolatore chirone, segno di chirone, chirone tema natale, chirone astrologia, calcolare chirone, guaritore ferito"
+  },
+  "hero": {
+    "eyebrow": "Guida astrologica alla guarigione",
+    "title": "Calcolatore di Chirone",
+    "subtitle": "Esplora Chirone come guaritore ferito: un punto del tema legato a sensibilita antiche, apprendimento profondo e luoghi che possono sostenere la guarigione."
+  },
+  "form": {
+    "submit": "Calcola il mio Chirone"
+  },
+  "result": {
+    "title": "La tua posizione di Chirone",
+    "cta": "Apri la mappa e cerca luoghi di sostegno"
+  },
+  "sections": [
+    {
+      "title": "A cosa serve il calcolatore di Chirone",
+      "body": [
+        "Il calcolatore di Chirone individua Chirone nel tema natale. Nell'astrologia moderna Chirone e il guaritore ferito: un simbolo di sensibilita, vecchi punti delicati e saggezza che cresce attraverso l'esperienza.",
+        "Lo strumento calcola segno, grado e casa usando i dati di nascita e un'efemeride geocentrica. Non è una diagnosi e non sostituisce terapia o supporto professionale. È un linguaggio simbolico per riflettere con delicatezza."
+      ]
+    },
+    {
+      "title": "Leggere Chirone senza paura",
+      "body": [
+        "Chirone non va usato per spaventare. Diventa utile quando mostra dove ti senti esposto e dove hai sviluppato sensibilita e competenza. Chirone in Ariete puo toccare identita; in Toro valore e corpo; in Gemelli voce; in Cancro appartenenza.",
+        "La domanda migliore non e cosa c'e di sbagliato in me. E quale parte di me ha imparato a proteggersi e quali condizioni la aiutano a respirare."
+      ]
+    },
+    {
+      "title": "Chirone e luoghi di sostegno",
+      "body": [
+        "In astrocartografia puoi confrontare Chirone con linee più morbide o più intense. Luna, Venere, Giove e IC possono sostenere riposo, relazione e riparazione. Marte, Saturno e Plutone possono portare crescita, ma chiedono più struttura.",
+        "Usa il calcolo come partenza: conosci Chirone, apri la mappa e chiedi quali luoghi aiutano la guarigione senza tenerti sempre in allerta."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Chirone e un pianeta?",
+      "answer": "No. Chirone non e un pianeta tradizionale; e un corpo minore spesso classificato come centauro."
+    },
+    {
+      "question": "Chirone predice traumi?",
+      "answer": "No. Chirone non deve diagnosticare o prevedere traumi. E un simbolo per riflettere su sensibilita e crescita."
+    },
+    {
+      "question": "Serve l'ora esatta?",
+      "answer": "L'ora raramente cambia il segno di Chirone, ma puo cambiare casa e contesto."
+    },
+    {
+      "question": "Come collego Chirone all'astrocartografia?",
+      "answer": "Confronta il tema di Chirone con luoghi che senti più sicuri, creativi, emotivi o sfidanti."
+    }
+  ],
+  "schemaName": "Calcolatore di Chirone",
+  "relatedLinks": [
+    {
+      "text": "Cerchi luoghi di sostegno?",
+      "linkText": "Prova l'astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Ti serve il tema completo?",
+      "linkText": "Generatore tema natale",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Confronta luoghi più morbidi.",
+      "linkText": "Linea di Venere",
+      "url": "/venus-line-astrocartography"
+    }
+  ]
+}

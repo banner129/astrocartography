@@ -1,0 +1,81 @@
+{
+  "key": "venus",
+  "slug": "venus-sign-calculator",
+  "toolType": "venus",
+  "metadata": {
+    "title": "Calculadora del Signo de Venus - Amor, valores y atracción",
+    "description": "Calcula tu signo de Venus por fecha, hora y lugar de nacimiento. Lee qué significa Venus para amor, deseo, valores y astrocartografía.",
+    "keywords": "calculadora signo venus, signo de venus, venus en astrología, venus carta natal, calcular venus, venus amor astrología"
+  },
+  "hero": {
+    "eyebrow": "Herramienta astrologica gratis",
+    "title": "Calculadora del Signo de Venus",
+    "subtitle": "Descubre tu Venus natal y entiende como tu carta habla de amor, atracción, placer, valores y lugares donde la energía relaciónal puede sentirse más natural."
+  },
+  "form": {
+    "submit": "Calcular mi signo de Venus"
+  },
+  "result": {
+    "title": "Tu posición de Venus",
+    "cta": "Ver donde tu línea de Venus se activa más"
+  },
+  "sections": [
+    {
+      "title": "Qué muestra una calculadora del signo de Venus",
+      "body": [
+        "Una calculadora del signo de Venus ubica a Venus en el zodíaco en el momento de tu nacimiento. En astrología, Venus describe como te vinculas, qué te resulta bello, como das y recibes afecto y qué tipo de placer hace qué la vida se sienta más amable. No explica toda tu vida amorosa, pero si ofrece una entrada muy útil para entender preferencias románticas, gusto estético, sociabilidad y valores personales.",
+        "Esta herramienta usa fecha, hora y lugar de nacimiento para calcular el signo, grado y casa de Venus. El signo indica el estilo: directo en Aries, sensual en Tauro, curioso en Géminis, protector en Cáncer, expresivo en Leo, cuidadoso en Virgo, relaciónal en Libra, intenso en Escorpio, aventurero en Sagitario, constante en Capricornio, libre en Acuario y sensible en Piscis."
+      ]
+    },
+    {
+      "title": "Venus, amor y lugares",
+      "body": [
+        "Muchas personas buscan una calculadora del signo de Venus porque quieren algo más personal qué la compatibilidad por signo solar. Venus ayuda a entender por qué una persona necesita palabras, otra estabilidad, otra aventura y otra seguridad emocional. Tambien muestra aquello qué valoras de manera natural: belleza, comodidad, lealtad, libertad, refinamiento o conexión profunda.",
+        "En astrocartografía, Venus se vuelve geográfico. Tu posición natal muestra el estilo de Venus; la línea de Venus en el mapa muestra donde esa energía puede sentirse más visible. Puede relaciónarse con citas, amistades, arte, diseño, hospitalidad, placer o apoyo social. Por eso esta calculadora funciona mejor cuando luego comparas el resultado con el mapa mundial."
+      ]
+    },
+    {
+      "title": "Como usar tu resultado",
+      "body": [
+        "Empieza por el signo, mira despues la casa y compara el resultado con tu historia real. Venus en Libra suele buscar armonia y reciprocidad; Venus en Escorpio puede necesitar profundidad y honestidad emocional; Venus en Acuario valora amistad, espacio y conexión mental. Ninguna posición garantiza pareja ideal, pero si da lenguaje para reconocer lo qué nutre y lo qué desgasta.",
+        "Después de calcular tu Venus, abre el mapa de astrocartografía con los mismos datos. Revisa las líneas Venus ASC, DSC, MC e IC. Venus DSC suele ser importante para relaciónes; Venus MC puede favorecer encanto publico o trabajo creativo; Venus IC puede sentirse agradable para hogar y descanso. La clave es convertir el simbolo natal en una pregunta práctica sobre donde amar, crear o pertenecer."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Esta calculadora del signo de Venus es gratis?",
+      "answer": "Sí. Puedes calcular tu Venus con fecha, hora y lugar de nacimiento. El resultado muestra signo, grado y casa cuando los datos son suficientes."
+    },
+    {
+      "question": "Necesito la hora exacta de nacimiento?",
+      "answer": "Para el signo de Venus muchas veces basta con la fecha, pero la hora mejora el grado y la casa. Si Venus cambio de signo cerca de tu nacimiento, la hora exacta es más importante."
+    },
+    {
+      "question": "Qué diferencia hay entre signo de Venus y línea de Venus?",
+      "answer": "El signo de Venus describe como funciona Venus en tu carta natal. La línea de Venus muestra donde esa energía puede activarse geográficamente en astrocartografía."
+    },
+    {
+      "question": "Venus puede decirme con quien debo salir?",
+      "answer": "No. Venus habla de atracción, valores y estilo afectivo, pero una relación depende también de madurez, comunicación, tiempo y del resto de ambas cartas."
+    }
+  ],
+  "schemaName": "Calculadora del Signo de Venus",
+  "relatedLinks": [
+    {
+      "text": "¿Quieres la versión en mapa mundial?",
+      "linkText": "Prueba la astrocartografía",
+      "url": "/"
+    },
+    {
+      "text": "Explora el amor por ubicación.",
+      "linkText": "Línea de Venus",
+      "url": "/venus-line-astrocartography"
+    },
+    {
+      "text": "¿Necesitas tu carta completa?",
+      "linkText": "Generador de carta natal",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

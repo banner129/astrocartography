@@ -1,0 +1,106 @@
+{
+  "key": "lunarNodes",
+  "slug": "lunar-nodes-calculator",
+  "toolType": "lunar-nodes",
+  "metadata": {
+    "title": "Lunar Nodes Calculator - Find Your North Node & South Node",
+    "description": "Calculate your North Node and South Node by birth date, time, and location. Learn what lunar nodes mean for growth, comfort zones, life direction, and astrocartography.",
+    "keywords": "lunar nodes calculator, north node calculator, south node calculator, north node sign, south node astrology, lunar nodes meaning"
+  },
+  "hero": {
+    "eyebrow": "Free astrology tool",
+    "title": "Lunar Nodes Calculator",
+    "subtitle": "Calculate your North Node and South Node to understand the growth direction, familiar patterns, and life themes your chart keeps asking you to work with."
+  },
+  "form": {
+    "submit": "Calculate My Lunar Nodes"
+  },
+  "result": {
+    "title": "Your Lunar Nodes",
+    "cta": "Explore where your growth path activates"
+  },
+  "sections": [
+    {
+      "title": "What a Lunar Nodes Calculator Shows",
+      "body": [
+        "A lunar nodes calculator finds the North Node and South Node in your birth chart. These points are not physical planets. They are the places where the Moon's orbit crosses the apparent path of the Sun. In astrology, the nodes are often used to describe a meaningful tension between what feels familiar and what asks you to grow. The South Node describes patterns that can feel natural, automatic, or overused. The North Node points toward qualities that may feel less familiar but more developmental.",
+        "This lunar nodes calculator uses your birth date, time, and location to calculate the mean lunar node and its opposite point. Your North Node sign gives language for the direction of growth. Your South Node sign describes the comfort zone you may rely on when life feels uncertain. The house placement adds a practical layer, showing which area of life tends to carry the growth story most strongly."
+      ]
+    },
+    {
+      "title": "North Node, South Node, and Life Direction",
+      "body": [
+        "The nodes should not be read as a rigid destiny script. A good lunar nodes calculator gives you a reflective map, not a command. If your North Node is in Aries, growth may involve courage, independence, and direct action. If it is in Libra, growth may involve cooperation, diplomacy, and relational awareness. If it is in Capricorn, growth may involve structure and responsibility. If it is in Cancer, growth may involve emotional honesty, belonging, and care.",
+        "The South Node matters too. It often describes a skill you already know how to use, but also a pattern you can overdo. The goal is not to reject the South Node. It is to use it consciously while moving toward the North Node. This is why lunar nodes are so useful for people asking bigger life questions: What am I growing into? What pattern am I ready to soften? What kind of environment supports my next chapter?"
+      ]
+    },
+    {
+      "title": "Using Lunar Nodes with Astrocartography",
+      "body": [
+        "The lunar nodes connect naturally with astrocartography because they describe direction, and location often shapes direction. A city can make one part of your chart feel louder. A country can encourage a version of you that was quiet at home. After using this lunar nodes calculator, open your astrocartography map and ask how different places support your North Node themes. You might explore where confidence, community, responsibility, creativity, or healing feels easier to practice.",
+        "This is where the tool becomes practical. If your North Node emphasizes communication, Mercury lines may matter. If it emphasizes love and belonging, Venus or Moon lines may be useful. If it emphasizes visibility, Sun or MC lines may be relevant. Your lunar nodes calculator result helps frame the question; the map helps you test where that question becomes geographic."
+      ]
+    },
+    {
+      "title": "Why the Houses Matter",
+      "body": [
+        "Many people stop after finding the node signs, but the house placement is often what makes a lunar nodes calculator useful in real life. The sign describes the quality of growth. The house describes the life area where that growth becomes visible. North Node in the first house may ask for self-definition, courage, and personal agency. North Node in the seventh house may ask for partnership, negotiation, and the ability to meet another person without disappearing into them.",
+        "The same logic applies across the chart. A tenth-house North Node can point toward public contribution, career responsibility, and visible authority. A fourth-house North Node can point toward roots, private life, emotional security, and family patterns. When you know both sign and house, the interpretation becomes less vague. You can ask: is my growth story about identity, money, learning, home, creativity, health, relationships, shared resources, travel, career, community, or inner life?"
+      ]
+    },
+    {
+      "title": "How to Work With Node Results",
+      "body": [
+        "The North Node can feel exciting, but also uncomfortable. It often describes qualities you respect but do not always trust in yourself yet. The South Node can feel easier, but it may keep you in old loops if you lean on it unconsciously. A useful lunar nodes calculator should help you see both sides clearly. You are not supposed to abandon the South Node. You are learning to use its gifts without letting them make every decision.",
+        "After you calculate your lunar nodes, write down one North Node behavior you can practice this month and one South Node habit you can soften. Then look at your astrocartography map through that lens. A place that supports your node story is not always the easiest place; sometimes it is the place where the right kind of growth feels possible. That is the difference between chasing a lucky location and choosing an environment that helps you become more honest with your own direction."
+      ]
+    },
+    {
+      "title": "What a Node Reading Should Not Do",
+      "body": [
+        "A lunar nodes calculator should not make you feel late, wrong, or trapped by a past-life story. The nodes are most helpful when they describe a pattern you can actually observe. If the interpretation sounds dramatic but does not help you make a clearer choice, slow down and bring it back to daily behavior. Where do you default under stress? What quality are you practicing? Which environments make that practice easier?",
+        "This grounded approach is especially important for relocation astrology. A city cannot complete your North Node work for you, but it can create conditions that encourage it. Your map may reveal places where learning, leadership, intimacy, creativity, or rest becomes easier to prioritize. The value is not mystical certainty. The value is a better conversation between your chart, your plans, and your real life."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between North Node and South Node?",
+      "answer": "The North Node points toward growth and development. The South Node describes familiar patterns, gifts, and comfort zones. They work as a pair rather than separate predictions."
+    },
+    {
+      "question": "Does this lunar nodes calculator use mean node or true node?",
+      "answer": "This tool uses a mean lunar node calculation for a stable, readable result. Some professional software offers true node options, which can vary slightly."
+    },
+    {
+      "question": "Can lunar nodes help with relocation astrology?",
+      "answer": "Yes, as a reflective layer. The nodes describe growth themes; astrocartography helps you explore which locations may activate or support those themes."
+    },
+    {
+      "question": "Are the lunar nodes karmic?",
+      "answer": "Many astrologers read the nodes through a karmic lens, while others read them psychologically as familiar patterns and growth direction. This page uses both ideas gently, without treating the result as fixed fate."
+    },
+    {
+      "question": "How often do lunar nodes change signs?",
+      "answer": "The lunar nodes move backward through the zodiac and change signs roughly every year and a half. Exact dates depend on the calculation method, which is why a birth-date based calculator is useful."
+    }
+  ],
+  "schemaName": "Lunar Nodes Calculator",
+  "relatedLinks": [
+    {
+      "text": "Want location-based growth themes?",
+      "linkText": "Try Astrocartography",
+      "url": "/"
+    },
+    {
+      "text": "Need your complete natal chart?",
+      "linkText": "Birth Chart Generator",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Only need your ascendant?",
+      "linkText": "Rising Sign Calculator",
+      "url": "/rising-sign-calculator"
+    }
+  ]
+}

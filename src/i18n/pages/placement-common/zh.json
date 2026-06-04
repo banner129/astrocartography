@@ -1,0 +1,74 @@
+{
+  "introLabel": "介绍",
+  "benefitLabel": "核心价值",
+  "benefitTitleTemplate": "为什么使用{title}",
+  "benefitDescription": "先得到清晰计算结果，再用容易理解的语言阅读含义，并自然连接到占星地图中的地点问题。",
+  "usageLabel": "如何使用",
+  "usageTitleTemplate": "如何使用{title}",
+  "usageDescription": "先计算位置，再把结果转化成更具体的星盘问题或地点问题。",
+  "usageItems": [
+    {
+      "title": "输入出生信息",
+      "description": "填写出生日期、时间、出生地和时区。准确时间会提升宫位和度数的准确性。",
+      "icon": "RiCalendarLine"
+    },
+    {
+      "title": "计算位置",
+      "description": "点击“{submit}”，查看本页面关注的位置、星座、度数和宫位。",
+      "icon": "RiTimeLine"
+    },
+    {
+      "title": "阅读含义",
+      "description": "{sectionSummary}",
+      "icon": "RiListCheck"
+    },
+    {
+      "title": "继续查看地图",
+      "description": "用同一组出生数据打开占星地图，观察这个主题在哪些地点更容易被激活。",
+      "icon": "RiGlobalLine"
+    }
+  ],
+  "featureLabel": "页面功能",
+  "featureTitleTemplate": "{title}功能",
+  "featureDescription": "以工具为先，配合清晰解释、相关占星背景和地点探索入口。",
+  "featureItems": [
+    {
+      "title": "先给结果",
+      "description": "计算器放在长文内容前面，适合搜索意图明确、想快速得到答案的用户。",
+      "icon": "RiFlashlightLine"
+    },
+    {
+      "title": "通俗解释",
+      "description": "专业占星词会用更容易理解的方式解释，适合新手和有基础的用户。",
+      "icon": "RiMessage3Line"
+    },
+    {
+      "title": "结合本命盘",
+      "description": "结果会结合星座、度数和宫位，不只是给一个笼统标签。",
+      "icon": "RiPieChartLine"
+    },
+    {
+      "title": "连接占星地图",
+      "description": "计算后可以继续查看世界地图，比较不同地点如何放大这个主题。",
+      "icon": "RiMapLine"
+    },
+    {
+      "title": "FAQ 覆盖搜索意图",
+      "description": "常见问题以清晰方式回答，也帮助搜索引擎理解页面内容。",
+      "icon": "RiQuestionLine"
+    },
+    {
+      "title": "不过度承诺",
+      "description": "文案保持反思性和实用性，不把占星结果说成绝对命运。",
+      "icon": "RiShieldCheckLine"
+    }
+  ],
+  "faqLabel": "常见问题",
+  "faqTitleTemplate": "{title}常见问题",
+  "faqDescriptionTemplate": "关于{title}的使用、结果解读以及如何结合占星地图的常见问题。",
+  "ctaTitleTemplate": "从{title}继续进入占星地图",
+  "ctaDescription": "当你把星盘位置连接到真实地点时，结果会更有用。生成地图、选择城市，比较爱情、成长、疗愈、工作或归属感如何在当地呈现。",
+  "ctaButton": "在世界地图上探索我的星盘",
+  "breadcrumbHome": "首页",
+  "breadcrumbTools": "工具"
+}

@@ -42,6 +42,27 @@
               "url": "/rising-sign-calculator",
               "target": "_self",
               "icon": "RiCompass3Line"
+            },
+            {
+              "title": "Venuszeichen berechnen",
+              "description": "Venus fur Liebe, Werte und Anziehung berechnen",
+              "url": "/venus-sign-calculator",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "Mondknoten berechnen",
+              "description": "Nordknoten, Sudknoten und Entwicklung lesen",
+              "url": "/lunar-nodes-calculator",
+              "target": "_self",
+              "icon": "RiNodeTree"
+            },
+            {
+              "title": "Chiron berechnen",
+              "description": "Chiron-Zeichen, Haus und Heilungsthema finden",
+              "url": "/chiron-placement-calculator",
+              "target": "_self",
+              "icon": "RiFirstAidKitLine"
             }
           ]
         },
@@ -165,23 +186,38 @@
     "items": [
       {
         "title": "Swiss Ephemeris",
-        "image": { "src": "/imgs/logos/nextjs.svg", "alt": "Swiss Ephemeris" }
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Swiss Ephemeris"
+        }
       },
       {
         "title": "Berechnungen in Profi-Qualität",
-        "image": { "src": "/imgs/logos/react.svg", "alt": "Berechnungen in Profi-Qualität" }
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "Berechnungen in Profi-Qualität"
+        }
       },
       {
         "title": "KI-Interpretation",
-        "image": { "src": "/imgs/logos/tailwindcss.svg", "alt": "KI-Analyse" }
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "KI-Analyse"
+        }
       },
       {
         "title": "Globale Abdeckung",
-        "image": { "src": "/imgs/logos/shadcn.svg", "alt": "Globale Orte" }
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Globale Orte"
+        }
       },
       {
         "title": "Datenschutz zuerst",
-        "image": { "src": "/imgs/logos/vercel.svg", "alt": "Lokale Verarbeitung" }
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Lokale Verarbeitung"
+        }
       }
     ]
   },
@@ -190,22 +226,33 @@
     "title": "Was ist der Astrokartografie Rechner",
     "label": "Einführung",
     "description": "Der Astrokartografie Rechner projiziert Ihr Geburtshoroskop global und zeigt, wo Planeten zu Ihrem Geburtszeitpunkt im Winkel standen. Astrokartografie verbindet Geburtszeit mit geografischen Orten.",
-    "image": { "src": "/imgs/features/hero-web.webp" },
+    "image": {
+      "src": "/imgs/features/hero-web.webp"
+    },
     "items": [
       {
         "title": "Planetenberechnungen in Profi-Qualität",
         "description": "Der Astrokartografie Rechner nutzt Swiss Ephemeris, den astronomischen Standard professioneller Astrologen. Wir berechnen, wo jeder Planet (Sonne, Mond, Venus, Mars, Jupiter, Saturn) zu Ihrem exakten Geburtszeitpunkt über der Erdoberfläche im Winkel stand – aufsteigend (ASC), untergehend (DSC), im Zenit (MC) oder am Nadir (IC). Jede Astrokartografie-Linie ist auf 1 Meile genau; Ihre Astrokartografie-Karte entspricht professionellen Berechnungen. Auf einer Planetenlinie dominiert die Energie dieses Planeten Ihr Erleben vor Ort.",
-        "image": { "src": "/imgs/features/astrocartography-lines-calculation.webp", "alt": "Professionelle Astrokartografie-Berechnungen" }
+        "image": {
+          "src": "/imgs/features/astrocartography-lines-calculation.webp",
+          "alt": "Professionelle Astrokartografie-Berechnungen"
+        }
       },
       {
         "title": "KI-gestützte Standortinterpretation",
         "description": "Unser System analysiert, wie Ihr Geburtshoroskop mit Orten weltweit wechselwirkt. Die KI erklärt, was jede Astrokartografie-Linie bedeutet: Venus-Linien aktivieren Liebe und Kreativität, Jupiter-Linien bringen Chancen und Expansion, Saturn-Linien stärken Karriere und Disziplin. Wir zeigen nicht nur, wo die Linien verlaufen – wir erklären, wie man Astrokartografie-Karten liest und was jeder Ort für Karriere, Beziehungen, Gesundheit und Kreativität bedeutet. So wird Astrokartografie für Umzüge praktisch und zugänglich.",
-        "image": { "src": "/imgs/features/planetary-lines-meaning-map.webp", "alt": "KI-Astrokartografie-Interpretation" }
+        "image": {
+          "src": "/imgs/features/planetary-lines-meaning-map.webp",
+          "alt": "KI-Astrokartografie-Interpretation"
+        }
       },
       {
         "title": "Sofortiger Export in mehreren Formaten",
         "description": "Erstellen Sie Ihre Astrokartografie-Karte in wenigen Sekunden und laden Sie hochauflösende PNG-, PDF- oder SVG-Dateien herunter. Die Karten zeigen alle Planetenlinien, Power-Spots (Linienkreuzungen) und Städtenamen. Zusammen mit KI-Interpretationsberichten ist Ihre Astrokartografie-Karte bereit für persönliche Planung, Beratung oder Team-Entscheidungen. Alle Dateien sind ohne Wasserzeichen und für die kommerzielle Nutzung freigegeben.",
-        "image": { "src": "/imgs/features/astrocartography-relocation-planning.webp", "alt": "Astrokartografie-Karten sofort exportieren" }
+        "image": {
+          "src": "/imgs/features/astrocartography-relocation-planning.webp",
+          "alt": "Astrokartografie-Karten sofort exportieren"
+        }
       }
     ]
   },
@@ -219,19 +266,28 @@
         "title": "Professionelle Präzision, komplett kostenlos",
         "description": "Astrokartografie-Analyse in Profi-Qualität mit unbegrenztem kostenlosen Zugang. Wir nutzen dieselbe Swiss Ephemeris-Bibliothek wie professionelle Astrologie-Software, mit 1-Meilen-Genauigkeit. Erstellen Sie unbegrenzt Astrokartografie-Karten, laden Sie dateien ohne Wasserzeichen herunter und nutzen Sie KI-Interpretationen – ohne Kreditkarte, ohne versteckte Kosten. Ob Studierende, Unternehmer oder Ruheständler: professionelle Astrokartografie-Analyse ohne Kosten.",
         "icon": "RiGiftLine",
-        "image": { "src": "/imgs/features/free-astrocartography-calculator-tool.webp", "alt": "Kostenloser Astrokartografie Rechner" }
+        "image": {
+          "src": "/imgs/features/free-astrocartography-calculator-tool.webp",
+          "alt": "Kostenloser Astrokartografie Rechner"
+        }
       },
       {
         "title": "Ehrliche, kontextbewusste Beratung",
         "description": "Anders als Tools mit Garantieversprechen machen wir klar: Astrokartografie zeigt Energiepotenziale, keine Gewissheiten. Eine Venus-Linie kann Beziehungen fördern oder Beziehungsthemen sichtbar machen. Unsere KI berücksichtigt Ihren Chart, Lebensphase und Planetenwechsel. In den FAQs steht ehrlich: Nutzen Sie Astrokartografie-Karten als einen Faktor neben Karriere, Lebenshaltungskosten und Visa. Echte Astrologie respektiert Komplexität – wir auch.",
         "icon": "RiShieldCheckLine",
-        "image": { "src": "/imgs/features/astrocartography-guidance-interpretation.webp", "alt": "Ehrliche Astrokartografie-Beratung" }
+        "image": {
+          "src": "/imgs/features/astrocartography-guidance-interpretation.webp",
+          "alt": "Ehrliche Astrokartografie-Beratung"
+        }
       },
       {
         "title": "Datenschutz durch lokale Verarbeitung",
         "description": "Ihre Geburtsdaten werden lokal im Browser berechnet – nie auf Server hochgeladen, nie in Datenbanken gespeichert, nie an Dritte weitergegeben. Erstellen Sie Ihre Astrokartografie-Karte mit vollständigem Datenschutz. Alle Dateien haben volle kommerzielle Rechte: für persönliche Planung, Beratung, Lehre oder Veröffentlichung ohne Lizenzgebühren.",
         "icon": "RiLockLine",
-        "image": { "src": "/imgs/features/privacy-astrocartography-calculator.webp", "alt": "Datenschutzorientiertes Astrokartografie-Tool" }
+        "image": {
+          "src": "/imgs/features/privacy-astrocartography-calculator.webp",
+          "alt": "Datenschutzorientiertes Astrokartografie-Tool"
+        }
       }
     ]
   },
@@ -474,7 +530,11 @@
         "unit": "",
         "is_featured": false,
         "tip": "100 % dauerhaft kostenlos, Kernfunktionen testen",
-        "button": { "title": "Kostenlose Testversion starten", "url": "/#generator", "icon": "RiMapLine" },
+        "button": {
+          "title": "Kostenlose Testversion starten",
+          "url": "/#generator",
+          "icon": "RiMapLine"
+        },
         "product_id": "free",
         "product_name": "Kostenlose Astrokartografie-Testversion",
         "credits": 10,
@@ -502,7 +562,11 @@
         "unit": "",
         "is_featured": true,
         "tip": "Nur 0,099 $ pro Frage, ausreichend für 2–3 Städte",
-        "button": { "title": "Jetzt kaufen", "url": "/#pricing", "icon": "RiShoppingCartLine" },
+        "button": {
+          "title": "Jetzt kaufen",
+          "url": "/#pricing",
+          "icon": "RiShoppingCartLine"
+        },
         "product_id": "standard",
         "product_name": "Standard-Tarif – Unbegrenzt gültig",
         "credits": 1000,
@@ -532,7 +596,11 @@
         "unit": "",
         "is_featured": false,
         "tip": "Nur 0,063 $ pro Frage, 36 % günstiger als Standard",
-        "button": { "title": "Jetzt kaufen", "url": "/#pricing", "icon": "RiShoppingCartLine" },
+        "button": {
+          "title": "Jetzt kaufen",
+          "url": "/#pricing",
+          "icon": "RiShoppingCartLine"
+        },
         "product_id": "professional",
         "product_name": "Profi-Tarif – Unbegrenzt gültig",
         "credits": 3000,
@@ -545,7 +613,10 @@
     "brand": {
       "title": "Astrokartografie Rechner",
       "description": "Der Astrokartografie Rechner bietet professionelle Astrokartografie-Tools für digitale Nomaden, Umzugsplaner und Astrologie-Praktiker. Wir nutzen Swiss Ephemeris für astronomische Präzision; KI macht komplexe Planetenlinien-Interpretationen zugänglich. Strikter Datenschutz, globale Standortanalyse – professionelle Astrokartografie-Karten für alle.",
-      "logo": { "src": "/logo.png", "alt": "Astrokartografie Rechner" },
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Astrokartografie Rechner"
+      },
       "url": "/"
     },
     "copyright": "© 2025 • Astrokartografie Rechner. Alle Rechte vorbehalten.",
@@ -554,28 +625,61 @@
         {
           "title": "Produkt",
           "children": [
-            { "title": "Astrokartografie Rechner", "url": "/astrocartography-calculator", "target": "_self" }
+            {
+              "title": "Astrokartografie Rechner",
+              "url": "/astrocartography-calculator",
+              "target": "_self"
+            }
           ]
         },
         {
           "title": "Ressourcen",
           "children": [
-            { "title": "FAQ", "url": "/#faq" },
-            { "title": "Kontakt", "url": "/contact", "target": "_self" },
-            { "title": "numerologycalculators", "url": "https://numerologycalculators.org", "target": "_blank" },
-            { "title": "matrix-destiny", "url": "https://matrix-destiny.net", "target": "_blank" }
+            {
+              "title": "FAQ",
+              "url": "/#faq"
+            },
+            {
+              "title": "Kontakt",
+              "url": "/contact",
+              "target": "_self"
+            },
+            {
+              "title": "numerologycalculators",
+              "url": "https://numerologycalculators.org",
+              "target": "_blank"
+            },
+            {
+              "title": "matrix-destiny",
+              "url": "https://matrix-destiny.net",
+              "target": "_blank"
+            }
           ]
         },
-        { "title": "Community", "children": [] }
+        {
+          "title": "Community",
+          "children": []
+        }
       ]
     },
-    "social": { "items": [] },
+    "social": {
+      "items": []
+    },
     "badges": [],
     "agreement": {
       "items": [
-        { "title": "Datenschutz", "url": "/privacy-policy" },
-        { "title": "Nutzungsbedingungen", "url": "/terms-of-service" },
-        { "title": "Rückerstattung", "url": "/refund-policy" }
+        {
+          "title": "Datenschutz",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Nutzungsbedingungen",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "Rückerstattung",
+          "url": "/refund-policy"
+        }
       ]
     }
   }

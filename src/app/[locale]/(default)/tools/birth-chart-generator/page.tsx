@@ -97,7 +97,7 @@ export default async function BirthChartGeneratorPage({
 
   return (
     <>
-      <div className="container max-w-4xl px-4 pt-6 pb-4 lg:pt-12 lg:pb-6">
+      <div className="container max-w-4xl px-4 pt-20 pb-5 lg:pt-24 lg:pb-7">
         <h1 className="text-center text-white text-2xl font-bold leading-tight lg:text-4xl lg:leading-relaxed">
           {h1Title}
         </h1>
@@ -105,7 +105,7 @@ export default async function BirthChartGeneratorPage({
 
       {/* Intent anchor (SEO) */}
       {page.intentAnchor && (
-        <div className="container max-w-4xl px-4 pb-4 lg:pb-6">
+        <div className="container max-w-4xl px-4 pb-6 lg:pb-7">
           <p className="text-center text-white text-sm font-medium leading-relaxed lg:text-xl lg:leading-snug">
             {page.intentAnchor.text}
           </p>
@@ -114,7 +114,7 @@ export default async function BirthChartGeneratorPage({
 
       {/* Internal links */}
       {page.internalLinks && (
-        <div className="container max-w-4xl px-4 pb-8">
+        <div className="container max-w-4xl px-4 pb-12 lg:pb-16">
           <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-center sm:gap-6">
             {page.internalLinks.items.map((item, index) => (
               <Link
@@ -222,4 +222,3 @@ export default async function BirthChartGeneratorPage({
     </>
   );
 }
-

@@ -106,7 +106,7 @@ export default async function CalculatorPage({
   return (
     <>
       {/* H1 标签 - SEO 关键元素，页面唯一主标题 */}
-      <div className="container max-w-4xl px-4 pt-6 pb-4 lg:pt-12 lg:pb-6">
+      <div className="container max-w-4xl px-4 pt-20 pb-5 lg:pt-24 lg:pb-7">
         <h1 className="text-center text-white text-2xl font-bold leading-tight lg:text-4xl lg:leading-relaxed">
           {h1Title}
         </h1>
@@ -114,7 +114,7 @@ export default async function CalculatorPage({
 
       {/* Intent 锚点段 - 明确页面定位（给Google看的），放在表单上方，移动端小字体，桌面端大字体 */}
       {page.intentAnchor && (
-        <div className="container max-w-4xl px-4 pb-4 lg:pb-6">
+        <div className="container max-w-4xl px-4 pb-6 lg:pb-7">
           <p className="text-center text-white text-base font-semibold leading-tight lg:text-3xl lg:leading-relaxed">
             {page.intentAnchor.text}
           </p>
@@ -123,7 +123,7 @@ export default async function CalculatorPage({
 
       {/* 内链部分 - 反向定义首页，避免关键词内耗，移到上方 */}
       {page.internalLinks && (
-        <div className="container max-w-4xl px-4 pb-8">
+        <div className="container max-w-4xl px-4 pb-12 lg:pb-16">
           <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-center sm:gap-6">
             {page.internalLinks.items.map((item, index) => (
               <Link

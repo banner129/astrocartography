@@ -42,6 +42,27 @@
               "url": "/rising-sign-calculator",
               "target": "_self",
               "icon": "RiCompass3Line"
+            },
+            {
+              "title": "金星星座计算器",
+              "description": "查询爱情、审美、价值观与金星位置",
+              "url": "/venus-sign-calculator",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "南北交点计算器",
+              "description": "计算北交点、南交点与成长方向",
+              "url": "/lunar-nodes-calculator",
+              "target": "_self",
+              "icon": "RiNodeTree"
+            },
+            {
+              "title": "凯龙星位置计算器",
+              "description": "查询凯龙星星座、宫位与疗愈主题",
+              "url": "/chiron-placement-calculator",
+              "target": "_self",
+              "icon": "RiFirstAidKitLine"
             }
           ]
         },
@@ -617,7 +638,6 @@
               "url": "/contact",
               "target": "_self"
             }
-           
           ]
         },
         {

@@ -1,0 +1,81 @@
+{
+  "key": "venus",
+  "slug": "venus-sign-calculator",
+  "toolType": "venus",
+  "metadata": {
+    "title": "Calculadora do signo de Vênus - Amor, valores e atração",
+    "description": "Calcule seu signo de Vênus pela data, hora e local de nascimento. Entenda amor, atração, valores e astrocartografia.",
+    "keywords": "calculadora signo venus, signo de venus, venus no mapa astral, calcular venus, venus astrologia, venus amor"
+  },
+  "hero": {
+    "eyebrow": "Ferramenta astrologica gratuita",
+    "title": "Calculadora do Signo de Vênus",
+    "subtitle": "Descubra seu Vênus natal e entenda como seu mapa fala de amor, atração, beleza, valores e lugares onde a vida afetiva pode fluir melhor."
+  },
+  "form": {
+    "submit": "Calcular meu signo de Vênus"
+  },
+  "result": {
+    "title": "Sua posição de Vênus",
+    "cta": "Ver onde sua linha de Vênus fica mais forte"
+  },
+  "sections": [
+    {
+      "title": "O que a calculadora do signo de Vênus mostra",
+      "body": [
+        "A calculadora do signo de Vênus localiza Vênus no zodíaco no momento do seu nascimento. Na astrologia, Vênus descreve como você ama, o que acha bonito, como recebe carinho e quais experiências tornam a vida mais prazerosa. Ela não resume toda a vida amorosa, mas oferece uma entrada clara para entender atração, gosto, sociabilidade e valores.",
+        "A ferramenta usa data, hora e local de nascimento para calcular signo, grau e casa de Vênus. O signo mostra o estilo: impulsivo em Áries, sensorial em Touro, curioso em Gêmeos, protetor em Câncer, expressivo em Leão, seletivo em Virgem, relacional em Libra, intenso em Escorpião, livre em Sagitário, constante em Capricornio, independente em Aquário e sensível em Peixes."
+      ]
+    },
+    {
+      "title": "Vênus, amor e astrocartografia",
+      "body": [
+        "Muita gente procura uma calculadora do signo de Vênus porque quer algo mais pessoal do que compatibilidade por signo solar. Vênus ajuda a perceber se você precisa de palavras, estabilidade, aventura, profundidade emocional ou espaço para se sentir amado.",
+        "Na astrocartografia, Vênus ganha uma camada geográfica. Sua posição natal mostra o estilo de amor; a linha de Vênus no mapa mostra onde essa energia pode aparecer com mais facilidade. Pode ter relação com namoro, amizades, arte, beleza, hospitalidade, prazer e apoio social."
+      ]
+    },
+    {
+      "title": "Como usar o resultado",
+      "body": [
+        "Comece pelo signo, veja a casa e compare com experiências reais. Vênus em Libra pode buscar harmonia; Vênus em Escorpião pode pedir verdade emocional; Vênus em Aquário pode valorizar amizade e liberdade. Nenhuma posição escolhe um parceiro por você, mas ajuda a nomear o que nutre e o que cansa.",
+        "Depois, abra o mapa de astrocartografia com os mesmos dados e observe Vênus ASC, DSC, MC e IC. Vênus DSC fala mais de encontros e parcerias; Vênus MC pode favorecer visibilidade social e trabalho criativo; Vênus IC pode trazer conforto e prazer no lar."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "A calculadora do signo de Vênus e gratuita?",
+      "answer": "Sim. Voce pode calcular seu Vênus informando data, hora e local de nascimento."
+    },
+    {
+      "question": "Preciso saber a hora exata?",
+      "answer": "A hora exata melhora o grau e a casa. Se Vênus mudou de signo perto do seu nascimento, ela também pode ser importante para o signo."
+    },
+    {
+      "question": "Qual a diferenca entre signo de Vênus e linha de Vênus?",
+      "answer": "O signo mostra como Vênus funciona no mapa natal. A linha mostra onde essa energia pode se manifestar geográficamente."
+    },
+    {
+      "question": "Vênus diz quem combina comigo?",
+      "answer": "Não sozinha. Vênus mostra estilo afetivo e valores, mas compatibilidade depende de várias partes dos dois mapas e da vida real."
+    }
+  ],
+  "schemaName": "Calculadora do Signo de Vênus",
+  "relatedLinks": [
+    {
+      "text": "Quer a versão no mapa mundial?",
+      "linkText": "Teste a astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Explore o amor por localização.",
+      "linkText": "Linha de Vênus",
+      "url": "/venus-line-astrocartography"
+    },
+    {
+      "text": "Precisa do mapa completo?",
+      "linkText": "Gerador de mapa astral",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

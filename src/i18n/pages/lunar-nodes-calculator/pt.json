@@ -1,0 +1,81 @@
+{
+  "key": "lunarNodes",
+  "slug": "lunar-nodes-calculator",
+  "toolType": "lunar-nodes",
+  "metadata": {
+    "title": "Calculadora dos Nodos Lunares - Nodo Norte e Nodo Sul",
+    "description": "Calcule Nodo Norte e Nodo Sul no mapa natal. Entenda direcao de crescimento, zona de conforto e astrocartografia.",
+    "keywords": "calculadora nodos lunares, nodo norte, nodo sul, calcular nodo norte, nodos lunares astrologia, nodo norte mapa astral"
+  },
+  "hero": {
+    "eyebrow": "Ferramenta astrologica gratuita",
+    "title": "Calculadora dos Nodos Lunares",
+    "subtitle": "Calcule Nodo Norte e Nodo Sul para entender sua direcao de crescimento, padroes conhecidos e temas de vida que pedem prática consciente."
+  },
+  "form": {
+    "submit": "Calcular meus nodos lunares"
+  },
+  "result": {
+    "title": "Seus nodos lunares",
+    "cta": "Explorar onde seu caminho de crescimento ativa"
+  },
+  "sections": [
+    {
+      "title": "O que são os nodos lunares",
+      "body": [
+        "A calculadora dos nodos lunares encontra Nodo Norte e Nodo Sul no mapa natal. Eles não são planetas fisicos, mas pontos onde a orbita da Lua cruza o caminho aparente do Sol. Na astrologia, eles mostram a tensão entre o que e familiar e o que pede desenvolvimento.",
+        "O Nodo Sul costuma falar de habilidades ja conhecidas, respostas automaticas e zonas de conforto. O Nodo Norte aponta qualidades menos familiares que ajudam no crescimento. Esta calculadora usa nascimento para estimar o nodo medio e a casa por signo inteiro."
+      ]
+    },
+    {
+      "title": "Nodo Norte, Nodo Sul e direcao de vida",
+      "body": [
+        "Os nodos não precisam ser lidos como destino fixo. Eles funcionam melhor como mapa de reflexao. Nodo Norte em Áries pode pedir coragem; em Libra, parceria; em Capricornio, estrutura; em Câncer, pertencimento e cuidado emocional.",
+        "O Nodo Sul não deve ser rejeitado. Ele é um talento que pode virar repetição. A prática é usar seus dons sem deixar que eles escolham tudo por você."
+      ]
+    },
+    {
+      "title": "Nodos lunares e astrocartografia",
+      "body": [
+        "Como os nodos falam de direcao, a localização importa. Uma cidade pode fortalecer uma parte do mapa e outra pode abrir uma versão sua que estava menos visivel. Depois de calcular os nodos, use o mapa para perguntar quais lugares apoiam os temas do Nodo Norte.",
+        "Se o Nodo Norte fala de comunicacao, Mercurio pode interessar. Se fala de afeto e pertencimento, Lua e Vênus podem ajudar. Se fala de visibilidade, Sol ou MC podem ser relevantes."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a diferenca entre Nodo Norte e Nodo Sul?",
+      "answer": "Nodo Norte indica crescimento. Nodo Sul mostra padroes familiares, talentos e zona de conforto."
+    },
+    {
+      "question": "A ferramenta usa nodo medio ou verdadeiro?",
+      "answer": "Ela usa nodo medio para oferecer uma leitura estavel e simples."
+    },
+    {
+      "question": "Os nodos ajudam em astrocartografia?",
+      "answer": "Sim, como camada interpretativa para entender que lugares apoiam ou desafiam seu caminho de crescimento."
+    },
+    {
+      "question": "Os nodos são karmicos?",
+      "answer": "Muitos astrologos leem os nodos de forma karmica; aqui usamos essa ideia com cuidado, sem tratar como destino obrigatorio."
+    }
+  ],
+  "schemaName": "Calculadora dos Nodos Lunares",
+  "relatedLinks": [
+    {
+      "text": "Quer temas de crescimento por lugar?",
+      "linkText": "Teste a astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Precisa do mapa natal completo?",
+      "linkText": "Gerador de mapa astral",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Só precisa do ascendente?",
+      "linkText": "Calculadora de ascendente",
+      "url": "/rising-sign-calculator"
+    }
+  ]
+}

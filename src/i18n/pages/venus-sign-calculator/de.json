@@ -1,0 +1,81 @@
+{
+  "key": "venus",
+  "slug": "venus-sign-calculator",
+  "toolType": "venus",
+  "metadata": {
+    "title": "Venuszeichen berechnen - Liebe, Werte und Anziehung",
+    "description": "Berechne dein Venuszeichen mit Geburtsdatum, Uhrzeit und Ort. Verstehe Liebe, Anziehung, Werte und Astrokartografie.",
+    "keywords": "venuszeichen berechnen, venus zeichen, venus astrologie, venus im horoskop, venus rechner, venus liebe"
+  },
+  "hero": {
+    "eyebrow": "Kostenloses Astrologie-Tool",
+    "title": "Venuszeichen berechnen",
+    "subtitle": "Finde deine Venus im Geburtshoroskop und verstehe, wie dein Chart über Liebe, Anziehung, Schönheit, Werte und passende Orte spricht."
+  },
+  "form": {
+    "submit": "Mein Venuszeichen berechnen"
+  },
+  "result": {
+    "title": "Deine Venus-Position",
+    "cta": "Zeigen, wo deine Venuslinie stärker wirkt"
+  },
+  "sections": [
+    {
+      "title": "Was ein Venuszeichen-Rechner zeigt",
+      "body": [
+        "Ein Venuszeichen-Rechner zeigt, in welchem Tierkreiszeichen Venus bei deiner Geburt stand. In der Astrologie beschreibt Venus, wie du Zuneigung gibst und empfangst, was du als schon empfindest und welche Art von Nahe sich angenehm anfühlt. Es ist nicht die ganze Liebesgeschichte, aber ein sehr guter Einstieg in Beziehungsmuster, Geschmack und Werte.",
+        "Dieser Rechner nutzt Geburtsdatum, genaue Uhrzeit und Ort, um Zeichen, Grad und Haus zu bestimmen. Das Zeichen beschreibt den Stil von Venus: direkt in Widder, sinnlich in Stier, neugierig in Zwillinge, schutzend in Krebs, ausdrucksvoll in Löwe, sorgfältig in Jungfrau, verbindend in Waage, intensiv in Skorpion, frei in Schütze, verlässlich in Steinbock, eigenständig in Wassermann und feinfühlig in Fische."
+      ]
+    },
+    {
+      "title": "Venus, Liebe und Astrokartografie",
+      "body": [
+        "Viele suchen nach Venus, weil Sonnenzeichen-Kompatibilität zu allgemein ist. Venus zeigt, ob du Worte, Beständigkeit, Abenteuer, emotionale Tiefe oder Freiraum brauchst, um dich geliebt zu fühlen. Sie beschreibt auch Werte: Schönheit, Komfort, Loyalität, Freiheit, Raffinesse oder echte Verbindung.",
+        "In der Astrokartografie wird Venus geografisch. Die Geburtshoroskop-Position zeigt den Stil; die Venuslinie zeigt Orte, an denen diese Energie leichter sichtbar werden kann. Das kann Dating, Freundschaft, Kunst, Gastfreundschaft, Genuss oder soziale Unterstützung betreffen."
+      ]
+    },
+    {
+      "title": "So nutzt du dein Ergebnis",
+      "body": [
+        "Beginne mit dem Zeichen, lies danach das Haus und vergleiche es mit echten Erfahrungen. Venus in Waage sucht oft Ausgleich; Venus in Skorpion braucht Tiefe; Venus in Wassermann schatzt Freundschaft und geistigen Raum. Kein Rechner wählt den Partner für dich, aber er gibt Sprache für das, was dich nährt.",
+        "Öffne danach deine Astrokartografie-Karte mit denselben Geburtsdaten. Achte auf Venus ASC, DSC, MC und IC. Venus DSC ist besonders interessant für Partnerschaft; Venus MC für Sichtbarkeit und kreative Arbeit; Venus IC für Zuhause, Ruhe und Genuss."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ist der Venuszeichen-Rechner kostenlos?",
+      "answer": "Ja. Du kannst dein Venuszeichen mit Geburtsdatum, Uhrzeit und Geburtsort kostenlos berechnen."
+    },
+    {
+      "question": "Brauche ich die genaue Geburtszeit?",
+      "answer": "Die Geburtszeit verbessert Grad und Haus. Wenn Venus nahe an einem Zeichenwechsel stand, kann sie auch für das Zeichen wichtig sein."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Venuszeichen und Venuslinie?",
+      "answer": "Das Venuszeichen beschreibt die Venus im Geburtshoroskop. Die Venuslinie zeigt, wo diese Energie geografisch stärker wirken kann."
+    },
+    {
+      "question": "Kann Venus mir sagen, wen ich daten soll?",
+      "answer": "Nein. Venus zeigt Anziehung und Werte, aber Beziehung hängt auch von Reife, Kommunikation, Timing und beiden Horoskopen ab."
+    }
+  ],
+  "schemaName": "Venuszeichen Rechner",
+  "relatedLinks": [
+    {
+      "text": "Möchtest du die Weltkarten-Version?",
+      "linkText": "Astrokartografie testen",
+      "url": "/"
+    },
+    {
+      "text": "Liebe nach Ort erkunden.",
+      "linkText": "Venuslinie",
+      "url": "/venus-line-astrocartography"
+    },
+    {
+      "text": "Brauchst du das ganze Horoskop?",
+      "linkText": "Geburtshoroskop-Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

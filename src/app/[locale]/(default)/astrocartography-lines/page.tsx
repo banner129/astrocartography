@@ -66,14 +66,14 @@ export default async function AstrocartographyLinesPage({
 
   return (
     <>
-      <div className="container max-w-4xl px-4 pt-6 pb-4 lg:pt-12 lg:pb-6">
+      <div className="container max-w-4xl px-4 pt-20 pb-5 lg:pt-24 lg:pb-7">
         <h1 className="text-center text-white text-2xl font-bold leading-tight lg:text-4xl lg:leading-relaxed">
           {h1Title}
         </h1>
       </div>
 
       {page.intentAnchor && (
-        <div className="container max-w-4xl px-4 pb-4 lg:pb-6">
+        <div className="container max-w-4xl px-4 pb-6 lg:pb-7">
           <p className="text-center text-white text-sm font-medium leading-relaxed lg:text-xl lg:leading-snug">
             {page.intentAnchor.text}
           </p>
@@ -81,7 +81,7 @@ export default async function AstrocartographyLinesPage({
       )}
 
       {page.internalLinks && (
-        <div className="container max-w-4xl px-4 pb-8">
+        <div className="container max-w-4xl px-4 pb-12 lg:pb-16">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {page.internalLinks.items.map((item, index) => (
               <Link

@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 
+import type { Metadata } from "next";
 import { getLocale, setRequestLocale } from "next-intl/server";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
@@ -10,6 +11,10 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL((process.env.NEXT_PUBLIC_WEB_URL || "https://astrocarto.org").replace(/\/$/, "")),
+};
 
 export default async function RootLayout({
   children,

@@ -1,0 +1,81 @@
+{
+  "key": "lunarNodes",
+  "slug": "lunar-nodes-calculator",
+  "toolType": "lunar-nodes",
+  "metadata": {
+    "title": "Calcolatore dei Nodi Lunari - Nodo Nord e Nodo Sud",
+    "description": "Calcola Nodo Nord e Nodo Sud nel tema natale. Comprendi crescita, zona di comfort, direzione e astrocartografia.",
+    "keywords": "calcolatore nodi lunari, nodo nord, nodo sud, calcolare nodo nord, nodi lunari astrologia, nodo nord tema natale"
+  },
+  "hero": {
+    "eyebrow": "Strumento astrologico gratuito",
+    "title": "Calcolatore dei Nodi Lunari",
+    "subtitle": "Calcola Nodo Nord e Nodo Sud per leggere direzione di crescita, schemi conosciuti e temi di vita che chiedono consapevolezza."
+  },
+  "form": {
+    "submit": "Calcola i miei nodi lunari"
+  },
+  "result": {
+    "title": "I tuoi nodi lunari",
+    "cta": "Esplora dove si attiva il tuo percorso"
+  },
+  "sections": [
+    {
+      "title": "Cosa sono i nodi lunari",
+      "body": [
+        "Il calcolatore dei nodi lunari trova Nodo Nord e Nodo Sud nel tema natale. Non sono pianeti fisici, ma punti in cui l'orbita della Luna incrocia il percorso apparente del Sole. In astrologia parlano della tensione tra cio che conosci e cio che ti fa crescere.",
+        "Il Nodo Sud descrive talenti, automatismi e zone di comfort. Il Nodo Nord indica qualita meno familiari ma evolutive. Questa lettura usa il nodo medio e le case a segno intero per dare un risultato chiaro."
+      ]
+    },
+    {
+      "title": "Nodo Nord, Nodo Sud e direzione",
+      "body": [
+        "I nodi non sono un destino rigido. Sono piùttosto una bussola simbolica. Nodo Nord in Ariete puo chiedere coraggio; in Bilancia cooperazione; in Capricorno struttura; in Cancro appartenenza e cura emotiva.",
+        "Il Nodo Sud non va rifiutato. E una competenza gia conosciuta che puo diventare ripetizione. La pratica e usarne i doni senza lasciare che decidano sempre per te."
+      ]
+    },
+    {
+      "title": "Nodi lunari e astrocartografia",
+      "body": [
+        "Poiche i nodi parlano di direzione, i luoghi contano. Una città puo rendere più forte una parte del tema; un'altra puo aprire una versione di te meno visibile. Dopo il calcolo, guarda quali luoghi sostengono i temi del Nodo Nord.",
+        "Se il Nodo Nord riguarda comunicazione, Mercurio puo interessare. Se riguarda appartenenza, Luna o Venere. Se riguarda visibilita, Sole o MC. Il calcolatore formula la domanda; la mappa la porta nel mondo."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Differenza tra Nodo Nord e Nodo Sud?",
+      "answer": "Il Nodo Nord indica crescita. Il Nodo Sud indica schemi familiari, talenti e zona di comfort."
+    },
+    {
+      "question": "Usate nodo medio o vero?",
+      "answer": "Questo strumento usa il nodo medio per un risultato stabile e leggibile."
+    },
+    {
+      "question": "I nodi aiutano in astrocartografia?",
+      "answer": "Si, come livello interpretativo: mostrano temi di crescita e la mappa indica dove possono essere sostenuti."
+    },
+    {
+      "question": "I nodi sono karmici?",
+      "answer": "Alcuni astrologi li leggono in chiave karmica, altri psicologica. Qui l'approccio resta pratico e non fatalista."
+    }
+  ],
+  "schemaName": "Calcolatore dei Nodi Lunari",
+  "relatedLinks": [
+    {
+      "text": "Vuoi temi di crescita per luogo?",
+      "linkText": "Prova l'astrocartografia",
+      "url": "/"
+    },
+    {
+      "text": "Ti serve il tema natale?",
+      "linkText": "Generatore tema natale",
+      "url": "/tools/birth-chart-generator"
+    },
+    {
+      "text": "Ti serve solo l'ascendente?",
+      "linkText": "Calcolatore ascendente",
+      "url": "/rising-sign-calculator"
+    }
+  ]
+}

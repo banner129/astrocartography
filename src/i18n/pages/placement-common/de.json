@@ -1,0 +1,74 @@
+{
+  "introLabel": "EINFÜHRUNG",
+  "benefitLabel": "Kernvorteile",
+  "benefitTitleTemplate": "Warum {title} nutzen",
+  "benefitDescription": "Du bekommst zuerst die Position und danach eine klare, praktische Deutung mit Bezug zur Astrokartografie.",
+  "usageLabel": "ANWENDUNG",
+  "usageTitleTemplate": "So nutzt du {title}",
+  "usageDescription": "Berechne zuerst und verwandle das Ergebnis in eine konkrete Horoskop- oder Ortsfrage.",
+  "usageItems": [
+    {
+      "title": "Geburtsdaten eingeben",
+      "description": "Gib Datum, Uhrzeit, Geburtsort und Zeitzone ein. Eine exakte Zeit verbessert Grad und Haus.",
+      "icon": "RiCalendarLine"
+    },
+    {
+      "title": "Position berechnen",
+      "description": "Klicke auf {submit}, um Zeichen, Grad und Haus zu erhalten.",
+      "icon": "RiTimeLine"
+    },
+    {
+      "title": "Bedeutung lesen",
+      "description": "{sectionSummary}",
+      "icon": "RiListCheck"
+    },
+    {
+      "title": "Zur Karte weitergehen",
+      "description": "Öffne die Astrokartografie mit denselben Daten und vergleiche Orte.",
+      "icon": "RiGlobalLine"
+    }
+  ],
+  "featureLabel": "FUNKTIONEN",
+  "featureTitleTemplate": "{title}: Funktionen",
+  "featureDescription": "Fokussierter Rechner, klare Deutung und direkter Weg zur ortsbasierten Erkundung.",
+  "featureItems": [
+    {
+      "title": "Rechner zuerst",
+      "description": "Der Rechner steht vor langem Inhalt, damit Suchende schnell eine Antwort bekommen.",
+      "icon": "RiFlashlightLine"
+    },
+    {
+      "title": "Klare Deutung",
+      "description": "Astrologische Begriffe werden verständlich erklärt.",
+      "icon": "RiMessage3Line"
+    },
+    {
+      "title": "Horoskop-Kontext",
+      "description": "Das Ergebnis verbindet Zeichen, Grad und Haus.",
+      "icon": "RiPieChartLine"
+    },
+    {
+      "title": "Anschluss an Astrokartografie",
+      "description": "Nach der Berechnung kannst du Orte vergleichen, an denen das Thema stärker wirkt.",
+      "icon": "RiMapLine"
+    },
+    {
+      "title": "Fragen zur Suchintention",
+      "description": "Häufige Fragen werden klar beantwortet und als FAQPage markiert.",
+      "icon": "RiQuestionLine"
+    },
+    {
+      "title": "Glaubwürdige Grenzen",
+      "description": "Die Texte vermeiden absolute Versprechen und bleiben praktisch.",
+      "icon": "RiShieldCheckLine"
+    }
+  ],
+  "faqLabel": "Häufige Fragen",
+  "faqTitleTemplate": "{title}: häufige Fragen",
+  "faqDescriptionTemplate": "Häufige Fragen zu {title}, Deutung und Astrokartografie.",
+  "ctaTitleTemplate": "Von {title} zur Astrokartografie",
+  "ctaDescription": "Die Position wird nützlicher, wenn du sie mit realen Orten verbindest. Erstelle deine Karte und vergleiche Städte.",
+  "ctaButton": "Mein Horoskop auf der Weltkarte erkunden",
+  "breadcrumbHome": "Start",
+  "breadcrumbTools": "Tools"
+}
