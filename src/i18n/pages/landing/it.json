@@ -116,6 +116,76 @@
           ]
         },
         {
+          "title": "Linee",
+          "icon": "RiMapPinLine",
+          "url": "/astrocartography-lines",
+          "children": [
+            {
+              "title": "Tutte le linee di astrocartografia",
+              "description": "Guida completa a ogni linea planetaria e a come i 4 angoli ne cambiano l’effetto",
+              "url": "/astrocartography-lines",
+              "target": "_self",
+              "icon": "RiGlobalLine"
+            },
+            {
+              "title": "Linea del Sole",
+              "description": "Visibilità professionale, fiducia ed espressione autentica",
+              "url": "/sun-line-astrocartography",
+              "target": "_self",
+              "icon": "RiSunLine"
+            },
+            {
+              "title": "Linea della Luna",
+              "description": "Casa, sicurezza emotiva, famiglia e appartenenza profonda",
+              "url": "/moon-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMoonLine"
+            },
+            {
+              "title": "Linea di Venere",
+              "description": "Amore, bellezza, relazioni e facilità quotidiana",
+              "url": "/venus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "Linea di Marte",
+              "description": "Energia fisica, spinta, ambizione e competizione professionale",
+              "url": "/mars-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
+              "title": "Linea di Giove",
+              "description": "Fortuna, espansione, abbondanza e luoghi migliori per prosperare",
+              "url": "/jupiter-line-astrocartography",
+              "target": "_self",
+              "icon": "RiStarLine"
+            },
+            {
+              "title": "Linea di Saturno",
+              "description": "Disciplina, struttura, crescita a lungo termine e successo duraturo",
+              "url": "/saturn-line-astrocartography",
+              "target": "_self",
+              "icon": "RiShieldLine"
+            },
+            {
+              "title": "Linea di Mercurio",
+              "description": "Comunicazione, apprendimento, scrittura e intuito commerciale",
+              "url": "/mercury-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMessage3Line"
+            },
+            {
+              "title": "Linea di Urano",
+              "description": "Libertà, cambiamenti improvvisi, reinvenzione e percorsi non convenzionali",
+              "url": "/uranus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFlashlightLine"
+            }
+          ]
+        },
+        {
           "title": "Blog",
           "url": "/posts",
           "icon": "RiArticleLine"

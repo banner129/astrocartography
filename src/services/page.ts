@@ -100,6 +100,10 @@ export async function getMercuryLinePage(locale: string): Promise<CalculatorPage
   return (await getPage("mercury-line-astrocartography", locale)) as CalculatorPage;
 }
 
+export async function getUranusLinePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("uranus-line-astrocartography", locale)) as CalculatorPage;
+}
+
 export async function getPage(
   name: string,
   locale: string

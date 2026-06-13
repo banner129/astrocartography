@@ -116,6 +116,76 @@
           ]
         },
         {
+          "title": "Linien",
+          "icon": "RiMapPinLine",
+          "url": "/astrocartography-lines",
+          "children": [
+            {
+              "title": "Alle Astrokartografie-Linien",
+              "description": "Vollständiger Leitfaden zu jeder Planetenlinie und wie die 4 Winkel ihre Wirkung verändern",
+              "url": "/astrocartography-lines",
+              "target": "_self",
+              "icon": "RiGlobalLine"
+            },
+            {
+              "title": "Sonnenlinie",
+              "description": "Berufliche Sichtbarkeit, Selbstvertrauen und authentischer Ausdruck",
+              "url": "/sun-line-astrocartography",
+              "target": "_self",
+              "icon": "RiSunLine"
+            },
+            {
+              "title": "Mondlinie",
+              "description": "Zuhause, emotionale Sicherheit, Familie und tiefe Zugehörigkeit",
+              "url": "/moon-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMoonLine"
+            },
+            {
+              "title": "Venuslinie",
+              "description": "Liebe, Schönheit, Beziehungen und Leichtigkeit im Alltag",
+              "url": "/venus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiHeartLine"
+            },
+            {
+              "title": "Marslinie",
+              "description": "Körperliche Energie, Antrieb, Ehrgeiz und beruflicher Wettbewerb",
+              "url": "/mars-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
+              "title": "Jupiterlinie",
+              "description": "Glück, Expansion, Fülle und beste Orte zum Aufblühen",
+              "url": "/jupiter-line-astrocartography",
+              "target": "_self",
+              "icon": "RiStarLine"
+            },
+            {
+              "title": "Saturnlinie",
+              "description": "Disziplin, Struktur, langfristiges Wachstum und dauerhafter Erfolg",
+              "url": "/saturn-line-astrocartography",
+              "target": "_self",
+              "icon": "RiShieldLine"
+            },
+            {
+              "title": "Merkurlinie",
+              "description": "Kommunikation, Lernen, Schreiben und geschäftlicher Scharfsinn",
+              "url": "/mercury-line-astrocartography",
+              "target": "_self",
+              "icon": "RiMessage3Line"
+            },
+            {
+              "title": "Uranus-Linie",
+              "description": "Freiheit, plötzlicher Wandel, Neuerfindung und unkonventionelle Lebenswege",
+              "url": "/uranus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFlashlightLine"
+            }
+          ]
+        },
+        {
           "title": "Blog",
           "url": "/posts",
           "icon": "RiArticleLine"

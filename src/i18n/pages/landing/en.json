@@ -175,6 +175,13 @@
               "url": "/mercury-line-astrocartography",
               "target": "_self",
               "icon": "RiMessage3Line"
+            },
+            {
+              "title": "Uranus Line",
+              "description": "Freedom, sudden change, reinvention, and unconventional life paths",
+              "url": "/uranus-line-astrocartography",
+              "target": "_self",
+              "icon": "RiFlashlightLine"
             }
           ]
         },
