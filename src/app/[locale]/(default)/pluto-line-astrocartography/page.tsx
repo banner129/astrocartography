@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/utils";
-import { getUranusLinePage } from "@/services/page";
+import { getPlutoLinePage } from "@/services/page";
 import FeatureWhatTwo from "@/components/blocks/feature-what-two";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
@@ -8,13 +8,19 @@ import Feature from "@/components/blocks/feature";
 import FAQ from "@/components/blocks/faq";
 import CTA from "@/components/blocks/cta";
 import { Link } from "@/i18n/navigation";
+import { setRequestLocale } from "next-intl/server";
+import NextLink from "next/link";
 
 export const dynamic = "force-static";
 export const revalidate = 604800;
 export const dynamicParams = false;
 
-const PATH = "/uranus-line-astrocartography";
+const PATH = "/pluto-line-astrocartography";
 const LOCALES = ["en", "zh", "pt", "es", "it", "de"];
+const ENGLISH_ONLY_RELATED_PATHS = new Set([
+  "/astrocartography-lines",
+  "/saturn-line-astrocartography",
+]);
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -26,7 +32,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const page = await getUranusLinePage(locale);
+  setRequestLocale(locale);
+  const page = await getPlutoLinePage(locale);
   const { title, description, keywords } = page.metadata;
 
   return {
@@ -48,28 +55,47 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      type: "website",
+      type: "article",
       url: getCanonicalUrl(locale, PATH),
       siteName: "Astrocartography Calculator",
-      images: [{ url: "/imgs/features/hero-web.webp", width: 1200, height: 630, alt: title }],
+      images: [
+        {
+          url: "/imgs/posts/pluto-symbol.webp",
+          width: 1200,
+          height: 900,
+          alt: title,
+        },
+      ],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/imgs/features/hero-web.webp"] },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/imgs/posts/pluto-symbol.webp"],
+    },
     robots: {
       index: true,
       follow: true,
-      googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
   };
 }
 
-export default async function UranusLinePage({
+export default async function PlutoLinePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const page = await getUranusLinePage(locale);
-  const h1Title = page.metadata.title.split(" - ")[0].replace(/\s+\d{4}$/, "").trim();
+  setRequestLocale(locale);
+  const page = await getPlutoLinePage(locale);
+  const h1Title = page.metadata.title;
 
   return (
     <>
@@ -91,16 +117,33 @@ export default async function UranusLinePage({
         <div className="container max-w-4xl px-4 pb-12 lg:pb-16">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {page.internalLinks.items.map((item, index) => (
-              <Link
-                key={index}
-                href={item.url as any}
-                className="group flex flex-col gap-1.5 rounded-xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10 hover:border-primary/30 transition-all"
-              >
-                <span className="text-xs text-muted-foreground leading-relaxed">{item.text}</span>
-                <span className="text-sm font-semibold text-primary group-hover:underline">
-                  {item.linkText} →
-                </span>
-              </Link>
+              ENGLISH_ONLY_RELATED_PATHS.has(item.url) ? (
+                <NextLink
+                  key={index}
+                  href={item.url}
+                  className="group flex flex-col gap-1.5 rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition-all hover:border-primary/30 hover:bg-white/10"
+                >
+                  <span className="text-xs leading-relaxed text-muted-foreground">
+                    {item.text}
+                  </span>
+                  <span className="text-sm font-semibold text-primary group-hover:underline">
+                    {item.linkText} →
+                  </span>
+                </NextLink>
+              ) : (
+                <Link
+                  key={index}
+                  href={item.url as any}
+                  className="group flex flex-col gap-1.5 rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition-all hover:border-primary/30 hover:bg-white/10"
+                >
+                  <span className="text-xs leading-relaxed text-muted-foreground">
+                    {item.text}
+                  </span>
+                  <span className="text-sm font-semibold text-primary group-hover:underline">
+                    {item.linkText} →
+                  </span>
+                </Link>
+              )
             ))}
           </div>
         </div>
@@ -122,8 +165,15 @@ export default async function UranusLinePage({
             headline: h1Title,
             description: page.metadata.description,
             url: getCanonicalUrl(locale, PATH),
-            author: { "@type": "Organization", name: "Astrocartography Calculator" },
-            publisher: { "@type": "Organization", name: "Astrocartography Calculator", url: getCanonicalUrl("en", "/") },
+            author: {
+              "@type": "Organization",
+              name: "Astrocartography Calculator",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Astrocartography Calculator",
+              url: getCanonicalUrl("en", "/"),
+            },
           }),
         }}
       />
@@ -135,9 +185,24 @@ export default async function UranusLinePage({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: getCanonicalUrl(locale, "/") },
-              { "@type": "ListItem", position: 2, name: "Astrocartography Lines", item: getCanonicalUrl(locale, "/astrocartography-lines") },
-              { "@type": "ListItem", position: 3, name: "Uranus Line", item: getCanonicalUrl(locale, PATH) },
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: getCanonicalUrl(locale, "/"),
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Astrocartography Lines",
+                item: getCanonicalUrl("en", "/astrocartography-lines"),
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Pluto Line",
+                item: getCanonicalUrl(locale, PATH),
+              },
             ],
           }),
         }}
@@ -153,7 +218,10 @@ export default async function UranusLinePage({
               mainEntity: page.faq.items.map((item) => ({
                 "@type": "Question",
                 name: item.title,
-                acceptedAnswer: { "@type": "Answer", text: item.description },
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.description,
+                },
               })),
             }),
           }}

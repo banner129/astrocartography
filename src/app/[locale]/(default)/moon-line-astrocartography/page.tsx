@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation";
 
 export const dynamic = "force-static";
 export const revalidate = 604800;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 const PATH = "/moon-line-astrocartography";
 const LOCALES = ["en"];
@@ -98,7 +98,7 @@ export default async function MoonLinePage({
         </div>
       )}
 
-      {page.introduce && <FeatureWhatTwo section={page.introduce} />}
+      {page.introduce && <FeatureWhatTwo section={page.introduce} compactTop />}
       {page.benefit && <Feature2 section={page.benefit} />}
       {page.usage && <Feature3 section={page.usage} />}
       {page.feature && <Feature section={page.feature} />}

@@ -13,12 +13,12 @@
     "nav": {
       "items": [
         {
-          "title": "Home",
+          "title": "Mappa Astrocartografica",
           "url": "/",
-          "icon": "RiHomeLine"
+          "icon": "RiGlobalLine"
         },
         {
-          "title": "Strumenti",
+          "title": "Calcolatori",
           "icon": "RiToolsLine",
           "url": "/astrocartography-calculator",
           "children": [
@@ -67,7 +67,7 @@
           ]
         },
         {
-          "title": "Carta",
+          "title": "Carte",
           "icon": "RiPieChart2Line",
           "url": "/transit-chart-calculator",
           "children": [
@@ -122,7 +122,7 @@
           "children": [
             {
               "title": "Tutte le linee di astrocartografia",
-              "description": "Guida completa a ogni linea planetaria e a come i 4 angoli ne cambiano l’effetto",
+              "description": "Esplora ogni linea planetaria, angolo e guida dettagliata",
               "url": "/astrocartography-lines",
               "target": "_self",
               "icon": "RiGlobalLine"
@@ -149,13 +149,6 @@
               "icon": "RiHeartLine"
             },
             {
-              "title": "Linea di Marte",
-              "description": "Energia fisica, spinta, ambizione e competizione professionale",
-              "url": "/mars-line-astrocartography",
-              "target": "_self",
-              "icon": "RiFireLine"
-            },
-            {
               "title": "Linea di Giove",
               "description": "Fortuna, espansione, abbondanza e luoghi migliori per prosperare",
               "url": "/jupiter-line-astrocartography",
@@ -170,25 +163,18 @@
               "icon": "RiShieldLine"
             },
             {
-              "title": "Linea di Mercurio",
-              "description": "Comunicazione, apprendimento, scrittura e intuito commerciale",
-              "url": "/mercury-line-astrocartography",
+              "title": "Esplora tutte le linee",
+              "description": "Consulta la directory completa per pianeta o obiettivo",
+              "url": "/astrocartography-lines#lines-directory",
               "target": "_self",
-              "icon": "RiMessage3Line"
-            },
-            {
-              "title": "Linea di Urano",
-              "description": "Libertà, cambiamenti improvvisi, reinvenzione e percorsi non convenzionali",
-              "url": "/uranus-line-astrocartography",
-              "target": "_self",
-              "icon": "RiFlashlightLine"
+              "icon": "RiArrowRightCircleLine"
             }
           ]
         },
         {
-          "title": "Blog",
+          "title": "Impara",
           "url": "/posts",
-          "icon": "RiArticleLine"
+          "icon": "RiBookOpenLine"
         }
       ]
     },
