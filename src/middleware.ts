@@ -4,17 +4,6 @@ import { NextRequest, NextResponse } from "next/server";
 
 const intl = createMiddleware(routing);
 
-const englishOnlyLinePaths = new Set([
-  "astrocartography-lines",
-  "sun-line-astrocartography",
-  "moon-line-astrocartography",
-  "mercury-line-astrocartography",
-  "venus-line-astrocartography",
-  "mars-line-astrocartography",
-  "jupiter-line-astrocartography",
-  "saturn-line-astrocartography",
-]);
-
 function getResponseLocale(pathname: string) {
   const firstSegment = pathname.split("/").filter(Boolean)[0];
   return routing.locales.includes(firstSegment as any)
@@ -43,23 +32,6 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  // These guides currently have English content only. Redirect locale-prefixed
-  // variants to the real English canonical instead of serving duplicate English
-  // content or returning a 404. Remove a slug from this set when that locale is
-  // genuinely published.
-  const localizedLineMatch = pathname.match(
-    new RegExp(`^/(${localePrefixes})/([^/]+)/?$`)
-  );
-  if (
-    localizedLineMatch &&
-    localizedLineMatch[1] !== routing.defaultLocale &&
-    englishOnlyLinePaths.has(localizedLineMatch[2])
-  ) {
-    const englishUrl = request.nextUrl.clone();
-    englishUrl.pathname = `/${localizedLineMatch[2]}/`;
-    return NextResponse.redirect(englishUrl, 308);
-  }
-  
   // 🔥 关键修复：在调用 next-intl 之前，将 session token 添加到请求 headers
   // 因为 Middleware 的 response headers 不会传递到 Server Components
   const sessionToken = request.cookies.get('__Secure-authjs.session-token');

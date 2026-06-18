@@ -121,13 +121,6 @@
           "url": "/astrocartography-lines",
           "children": [
             {
-              "title": "全部 Astrocartography 行星线",
-              "description": "按行星、角度与人生目标浏览完整指南",
-              "url": "/astrocartography-lines",
-              "target": "_self",
-              "icon": "RiGlobalLine"
-            },
-            {
               "title": "太阳线",
               "description": "事业可见度、自信与真实自我表达",
               "url": "/sun-line-astrocartography",

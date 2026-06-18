@@ -84,7 +84,9 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
               >
                 {item.children.map((iitem, ii) => {
                   const isViewAll =
-                    isLinesMenu && iitem.url === item.url;
+                    isLinesMenu &&
+                    (iitem.url === item.url ||
+                      Boolean(iitem.url?.startsWith(`${item.url}#`)));
 
                   return (
                     <Link

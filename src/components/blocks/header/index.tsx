@@ -144,7 +144,8 @@ export default function Header({ header }: { header: HeaderType }) {
                             {item.children.map((iitem, ii) => {
                               const isViewAll =
                                 item.url === "/astrocartography-lines" &&
-                                iitem.url === item.url;
+                                (iitem.url === item.url ||
+                                  Boolean(iitem.url?.startsWith(`${item.url}#`)));
 
                               return (
                                 <Link

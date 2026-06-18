@@ -121,13 +121,6 @@
           "url": "/astrocartography-lines",
           "children": [
             {
-              "title": "Todas as linhas de astrocartografia",
-              "description": "Explore cada linha planetária, ângulo e guia detalhado",
-              "url": "/astrocartography-lines",
-              "target": "_self",
-              "icon": "RiGlobalLine"
-            },
-            {
               "title": "Linha do Sol",
               "description": "Visibilidade profissional, confiança e expressão autêntica",
               "url": "/sun-line-astrocartography",

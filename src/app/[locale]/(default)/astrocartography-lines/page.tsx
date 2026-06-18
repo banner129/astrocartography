@@ -11,7 +11,7 @@ import LinesDirectory from "@/components/astrocartography/lines-directory";
 
 export const dynamic = "force-static";
 export const revalidate = 604800;
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 const PATH = "/astrocartography-lines";
 const LOCALES = ["en"];
