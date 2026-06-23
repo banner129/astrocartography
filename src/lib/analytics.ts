@@ -183,6 +183,42 @@ export const askAIEvents = {
 };
 
 /**
+ * 城市检查与城市比较事件
+ */
+export const cityToolEvents = {
+  opened: (tool: 'check_city' | 'compare_cities') => {
+    trackEvent('city_tool_opened', {
+      tool,
+      event_category: 'City Tools',
+    });
+  },
+
+  citySelected: (
+    tool: 'check_city' | 'compare_cities',
+    cityName: string,
+    country: string
+  ) => {
+    trackEvent('city_tool_city_selected', {
+      tool,
+      city_name: cityName,
+      country,
+      event_category: 'City Tools',
+    });
+  },
+
+  aiContinued: (
+    tool: 'check_city' | 'compare_cities',
+    cityCount: number
+  ) => {
+    trackEvent('city_tool_ai_continued', {
+      tool,
+      city_count: cityCount,
+      event_category: 'City Tools',
+    });
+  },
+};
+
+/**
  * 付费相关事件
  */
 export const paymentEvents = {
@@ -318,4 +354,3 @@ export const pageEvents = {
     });
   },
 };
-

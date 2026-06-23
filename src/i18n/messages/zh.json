@@ -366,7 +366,11 @@
         "returnHome": "返回首页",
         "download": "下载",
         "share": "分享",
-        "newChart": "新星盘图"
+        "newChart": "新星盘图",
+        "checkCity": "检查城市",
+        "compareCities": "城市对比",
+        "askAI": "询问 AI",
+        "new": "新"
       }
     },
     "result": {
@@ -431,6 +435,76 @@
     },
     "panelAsk": {
       "buttonLabel": "问"
+    },
+    "inlineResult": {
+      "eyebrow": "页面内结果", "title": "你的占星地图", "download": "下载", "openFullMap": "打开完整地图",
+      "calculating": "正在计算你的行星线……", "calculationError": "地图计算失败，请重试。", "downloadError": "地图下载失败，请重试。",
+      "interpretTitle": "解读这张地图", "interpretDescription": "检查城市、对比地点，然后根据地图证据向 AI 提问。", "askAI": "询问 AI",
+      "checkCity": "检查城市", "checkCityDescription": "查看附近的行星线、距离和强度。",
+      "compareCities": "对比城市", "compareCitiesDescription": "添加 2–4 个城市，选择目标并对比证据。",
+      "quickQuestionsTitle": "快捷问题", "viewMore": "查看更多问题", "showFewer": "收起更多问题",
+      "quickQuestions": ["我应该搬家还是留下？哪些地方更适合我？", "哪些城市更支持我的事业、财富和认可？", "为了爱情、友谊和归属感，我应该搬到哪里？", "将我当前的城市与更适合居住和身心健康的地方进行比较。"]
+    },
+    "cityTools": {
+      "checkEyebrow": "城市检查", "checkTitle": "根据你的地图检查城市",
+      "checkDescription": "输入真实城市，查看附近行星线、近似距离、强度与地图证据。",
+      "compareTitle": "对比城市", "compareDescription": "添加 2–4 个地点，选择目标，并排比较支持、谨慎因素与取舍。",
+      "searchPlaceholder": "例如：伦敦、悉尼、东京……", "addCity": "添加", "nearbyLines": "附近行星线",
+      "noNearbyLines": "在附近阈值内没有检测到行星线。", "runCheck": "检查城市", "askAI": "让 AI 深入分析这些城市证据",
+      "distanceNotice": "距离为近似值，用于表示该城市与计算所得行星线的接近程度。",
+      "decisionNotice": "行星线距离用于辅助决策，不代表确定性结论。请同时考虑出生时间准确度、现实规划和个人体验。",
+      "compareNow": "开始对比", "compareWithAI": "使用 AI 深入分析", "selectAtLeastTwo": "请至少选择两个城市进行对比。",
+      "goalTitle": "你主要想比较什么？", "resultsTitle": "对比证据",
+      "evidenceNotice": "对比基于行星线距离证据，用于辅助决策，不代表确定性结论。",
+      "support": "支持", "mixed": "混合", "caution": "谨慎", "strong": "强", "moderate": "中等", "subtle": "较弱", "close": "关闭",
+      "removeCity": "移除 {city}", "noEvidence": "800 公里内没有检测到较近的行星线。",
+      "cityAIPrompt": "请根据以下占星地图证据分析 {city}（{country}）。区分支持因素、谨慎因素和现实取舍，不要因为距离更近就简单判断为更好。\n{evidence}",
+      "compareAIPrompt": "请仅根据提供的占星地图证据，对比这些城市的迁居适配度。我的比较目标是“{goal}”。请说明支持因素、谨慎因素和取舍，不要简单宣布某个城市绝对最好。请重点回答这个问题：{focus}\n{evidence}",
+      "defaultAIFocus": "哪个城市最符合我选择的目标？为什么？我需要考虑哪些取舍？",
+      "comparisonSummary": "针对“{goal}”，{city} 当前显示出更明确的地图支持。",
+      "rankingDisclaimer": "这是针对当前目标的信号排序，并不代表某个城市在所有生活方面都绝对最好。",
+      "keySignal": "免费关键证据",
+      "moreSignals": "另有 {count} 条重要信号待解读",
+      "statusHints": {
+        "support": "与当前目标的匹配信号较明确",
+        "mixed": "支持因素与现实取舍同时存在",
+        "caution": "做决定前需要进一步分析"
+      },
+      "lockedTitle": "AI 深度对比分析",
+      "lockedDescription": "进一步了解排名形成的原因、城市之间的主要取舍，以及哪个选择更符合当前目标。",
+      "askHooksTitle": "值得进一步了解",
+      "askHooks": {
+        "whyFirst": "为什么 {city} 在我的目标中排名第一？",
+        "keyDifference": "{first} 和 {second} 的关键区别是什么？",
+        "longTerm": "哪座城市更适合长期生活，而不只是短期发展？"
+      },
+      "compareCTAHelp": "点击后先填写问题，只有在 AI 对话中发送时才按现有规则消耗积分。",
+      "goals": {
+        "overall": {"title": "整体迁居适配度", "description": "搬迁、定居与长期生活"},
+        "career": {"title": "事业与认可", "description": "工作、收入、曝光与机会"},
+        "relationships": {"title": "关系与归属", "description": "爱情、伴侣、朋友与社交舒适度"},
+        "home": {"title": "家庭与情绪稳定", "description": "家庭、扎根、私人生活与稳定性"},
+        "travel": {"title": "旅行与探索", "description": "短期停留、发现、流动与灵感"}
+      },
+      "planetNames": {
+        "Sun": "太阳", "Moon": "月亮", "Mercury": "水星", "Venus": "金星", "Mars": "火星",
+        "Jupiter": "木星", "Saturn": "土星", "Uranus": "天王星", "Neptune": "海王星", "Pluto": "冥王星"
+      },
+      "lineMeanings": {
+        "template": "{planet}突出{themes}。{angle}",
+        "planets": {
+          "Sun": "自信、曝光与生命力", "Moon": "情绪、归属与家庭", "Mercury": "沟通、学习与流动",
+          "Venus": "关系、吸引与创造力", "Mars": "行动、勇气与竞争", "Jupiter": "成长、机会与扩展",
+          "Saturn": "责任、纪律与耐力", "Uranus": "改变、自由与重塑", "Neptune": "想象、灵性与敏感",
+          "Pluto": "强度、权力与转化", "fallback": "个人生活主题"
+        },
+        "angles": {
+          "AS": "上升线会把这股能量带入身份、外在表现，以及你在当地开启生活的方式。",
+          "DS": "下降线会把这股能量带入伴侣、吸引力、客户与一对一关系。",
+          "MC": "天顶线会把这股能量带入事业、声誉、野心与公众生活。",
+          "IC": "天底线会把这股能量带入家庭、根基、私人生活与情绪基础。"
+        }
+      }
     },
     "themes": {
       "relationships_love": {

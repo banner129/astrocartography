@@ -5,7 +5,16 @@ import { useSearchParams, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Download, Share2, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  ArrowLeft,
+  ChevronDown,
+  ChevronUp,
+  Download,
+  GitCompareArrows,
+  Search,
+  Share2,
+  Sparkles,
+} from 'lucide-react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import AstroChat from '@/components/astro-chat';
@@ -43,7 +52,7 @@ interface PlanetLine {
   color: string;
 }
 
-// localStorage key for tracking auto-popup dismissal
+const MOBILE_COMPARE_NEW_KEY = 'astrocartography-mobile-compare-seen';
 const AUTO_POPUP_DISMISSED_KEY = 'astro-chat-auto-popup-dismissed';
 
 export default function ChartContent() {
@@ -68,8 +77,19 @@ export default function ChartContent() {
   const [autoSendQuestionKey, setAutoSendQuestionKey] = useState(0);
   const [askOtherPrefillText, setAskOtherPrefillText] = useState<string | null>(null);
   const [askOtherPrefillKey, setAskOtherPrefillKey] = useState(0);
-  const [hasAutoPopped, setHasAutoPopped] = useState(false); // 标记是否已经自动弹出过
   const [isToolbarExpanded, setIsToolbarExpanded] = useState(false); // 右上角工具栏折叠状态
+  const [showMobileCompareNew, setShowMobileCompareNew] = useState(false);
+  const [hasAutoPopped, setHasAutoPopped] = useState(false);
+
+  useEffect(() => {
+    try {
+      setShowMobileCompareNew(
+        localStorage.getItem(MOBILE_COMPARE_NEW_KEY) !== 'true'
+      );
+    } catch {
+      setShowMobileCompareNew(true);
+    }
+  }, []);
 
   useEffect(() => {
     // 从 URL 参数获取出生信息
@@ -233,10 +253,8 @@ export default function ChartContent() {
     askAIEvents.dialogOpened('manual');
   };
 
-  // 处理对话框关闭 - 记录用户手动关闭，避免重复自动弹出
   const handleChatOpenChange = (open: boolean) => {
     setChatOpen(open);
-    // 如果用户手动关闭对话框，记录到 localStorage
     if (!open) {
       setAutoSendQuestion(null);
       setAskOtherPrefillText(null);
@@ -250,13 +268,8 @@ export default function ChartContent() {
     }
   };
 
-  // 🔥 智能自动弹出逻辑：地图加载完成后，根据用户状态延迟弹出
+  // 地图加载完成后，根据用户状态延迟自动弹出 Ask AI
   useEffect(() => {
-    // 只在以下条件满足时才自动弹出：
-    // 1. 地图已加载完成（不再加载中，有数据，无错误）
-    // 2. 用户还没有手动关闭过自动弹出
-    // 3. 对话框当前是关闭状态
-    // 4. 还没有自动弹出过（避免重复弹出）
     if (
       !isLoading &&
       birthData &&
@@ -265,26 +278,18 @@ export default function ChartContent() {
       !chatOpen &&
       !hasAutoPopped
     ) {
-      // 检查用户是否已经手动关闭过自动弹出
       try {
-        const dismissed = localStorage.getItem(AUTO_POPUP_DISMISSED_KEY);
-        if (dismissed === 'true') {
-          // 用户已经关闭过，不再自动弹出
+        if (localStorage.getItem(AUTO_POPUP_DISMISSED_KEY) === 'true') {
           return;
         }
       } catch (e) {
         console.error('Failed to check auto-popup dismissal:', e);
       }
 
-      // 根据用户登录状态设置不同的延迟时间
-      // 已登录用户：1.5秒（更可能付费，缩短等待时间）
-      // 未登录用户：3秒（给更多时间查看地图）
       const delay = user ? 1500 : 3000;
-
       const timer = setTimeout(() => {
         setChatOpen(true);
         setHasAutoPopped(true);
-        // 📊 埋点：自动打开 Ask AI 对话框
         askAIEvents.dialogOpened('auto');
       }, delay);
 
@@ -293,6 +298,16 @@ export default function ChartContent() {
       };
     }
   }, [isLoading, birthData, planetLines, error, chatOpen, hasAutoPopped, user]);
+
+  const handleMobileCompareClick = () => {
+    setShowMobileCompareNew(false);
+    try {
+      localStorage.setItem(MOBILE_COMPARE_NEW_KEY, 'true');
+    } catch {
+      // Ignore storage failures; the feature remains usable.
+    }
+    mapExportRef.current?.openCompareCities();
+  };
 
   // 防止 hydration 不匹配：只在客户端挂载后渲染内容
   const [mounted, setMounted] = useState(false);
@@ -410,20 +425,40 @@ export default function ChartContent() {
       {chartData && birthData && planetLines.length > 0 && !chatOpen && (
         <div
           className={`fixed z-[1100] pointer-events-none
-            bottom-0 left-0 right-0
+            bottom-16 left-3 right-3
             md:bottom-5 md:right-5 md:left-auto md:w-auto`}
         >
-          {/* 移动端：全宽底部栏 */}
-          <div className="pointer-events-auto md:hidden bg-black/90 backdrop-blur-md border-t border-white/10 px-4 py-3 flex items-center gap-3">
-            <div className="flex-1 min-w-0">
-              <p className="text-white text-sm font-semibold leading-tight">✨ Ask about your chart</p>
-              <p className="text-white/50 text-xs mt-0.5 truncate">Tap a line or city, then ask</p>
-            </div>
+          {/* 移动端：三项核心操作，使用文字增强新功能感知 */}
+          <div
+            className="pointer-events-auto grid grid-cols-3 gap-2 rounded-2xl border border-white/15 bg-black/92 p-2 shadow-2xl backdrop-blur-md md:hidden"
+          >
+            <Button
+              variant="outline"
+              onClick={() => mapExportRef.current?.openCheckCity()}
+              className="h-14 min-w-0 flex-col gap-1 rounded-xl border-white/15 bg-white/5 px-1 py-1.5 text-[11px] font-semibold text-white hover:bg-white/10"
+            >
+              <Search className="size-4 text-purple-300" />
+              <span className="truncate">{t('messages.buttons.checkCity')}</span>
+            </Button>
+            <Button
+              variant="outline"
+              onClick={handleMobileCompareClick}
+              className="relative h-14 min-w-0 flex-col gap-1 rounded-xl border-white/15 bg-white/5 px-1 py-1.5 text-[11px] font-semibold text-white hover:bg-white/10"
+            >
+              {showMobileCompareNew && (
+                <span className="absolute -right-1 -top-1 rounded-full bg-amber-300 px-1.5 py-0.5 text-[8px] font-black uppercase leading-none text-black shadow">
+                  {t('messages.buttons.new')}
+                </span>
+              )}
+              <GitCompareArrows className="size-4 text-amber-300" />
+              <span className="truncate">{t('messages.buttons.compareCities')}</span>
+            </Button>
             <Button
               onClick={handleAskAIClick}
-              className="flex-shrink-0 h-11 min-w-[224px] px-7 justify-center rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:opacity-90 text-white font-bold text-base shadow-lg shadow-purple-500/40 transition-all"
+              className="h-14 min-w-0 flex-col gap-1 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 px-1 py-1.5 text-[11px] font-bold text-white shadow-lg shadow-purple-500/30 hover:opacity-90"
             >
-              Ask <Sparkles className="size-3.5 ml-1.5 text-yellow-300 inline" />
+              <Sparkles className="size-4 text-yellow-200" />
+              <span className="truncate">{t('messages.buttons.askAI')}</span>
             </Button>
           </div>
 
@@ -506,6 +541,28 @@ export default function ChartContent() {
                     {t('messages.buttons.newChart')}
                   </Button>
                 </Link>
+
+                <div className="mt-2 border-t border-white/15 pt-3">
+                  <p className="mb-2 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/45">
+                    Explore locations
+                  </p>
+                  <div className="flex flex-col gap-2">
+                    <Button
+                      onClick={() => mapExportRef.current?.openCheckCity()}
+                      className="w-full justify-start bg-black/80 backdrop-blur-md hover:bg-black/90 text-white border border-white/20"
+                    >
+                      <Search className="size-4 mr-2 text-purple-300" />
+                      Check City
+                    </Button>
+                    <Button
+                      onClick={() => mapExportRef.current?.openCompareCities()}
+                      className="w-full justify-start bg-black/80 backdrop-blur-md hover:bg-black/90 text-white border border-white/20"
+                    >
+                      <GitCompareArrows className="size-4 mr-2 text-amber-300" />
+                      Compare Cities
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -558,4 +615,3 @@ export default function ChartContent() {
     </div>
   );
 }
-

@@ -366,7 +366,11 @@
         "returnHome": "Return Home",
         "download": "Download",
         "share": "Share",
-        "newChart": "New Chart"
+        "newChart": "New Chart",
+        "checkCity": "Check City",
+        "compareCities": "Compare",
+        "askAI": "Ask AI",
+        "new": "New"
       }
     },
     "result": {
@@ -431,6 +435,110 @@
     },
     "panelAsk": {
       "buttonLabel": "Ask"
+    },
+    "inlineResult": {
+      "eyebrow": "INLINE RESULT",
+      "title": "Your Astrocartography Map",
+      "download": "Download",
+      "openFullMap": "Open full map",
+      "calculating": "Calculating your planetary lines…",
+      "calculationError": "Unable to calculate the map. Please try again.",
+      "downloadError": "Unable to download the map. Please try again.",
+      "interpretTitle": "Interpret this map",
+      "interpretDescription": "Check a city, compare places, then ask AI using the map evidence.",
+      "askAI": "Ask AI",
+      "checkCity": "Check City",
+      "checkCityDescription": "Review nearby planetary lines, distance, and strength.",
+      "compareCities": "Compare Cities",
+      "compareCitiesDescription": "Add 2–4 cities, choose a goal, and compare evidence.",
+      "quickQuestionsTitle": "QUICK QUESTIONS",
+      "viewMore": "View more questions",
+      "showFewer": "Show fewer questions",
+      "quickQuestions": [
+        "Should I move or stay, and which places fit me better?",
+        "Which cities support my career, money, and recognition?",
+        "Where should I move for love, friendship, and belonging?",
+        "Compare my current city with better places for home and wellbeing."
+      ]
+    },
+    "cityTools": {
+      "checkEyebrow": "CITY CHECK",
+      "checkTitle": "Check a City Against Your Map",
+      "checkDescription": "Enter a real city to review nearby planetary lines, approximate distance, strength, and map evidence.",
+      "compareTitle": "Compare Cities",
+      "compareDescription": "Add 2–4 places, choose a goal, and compare calculated support, caution, and trade-offs side by side.",
+      "searchPlaceholder": "Try London, Sydney, Tokyo...",
+      "addCity": "Add",
+      "nearbyLines": "Nearby planetary lines",
+      "noNearbyLines": "No planetary line was found within the nearby threshold.",
+      "runCheck": "Check City",
+      "askAI": "Ask AI about this city evidence",
+      "distanceNotice": "Distances are approximate and describe proximity to the calculated planetary lines.",
+      "decisionNotice": "Line distance is decision-support context, not certainty. Consider birth-time accuracy, real-world planning, and your own experience.",
+      "compareNow": "Compare Cities",
+      "compareWithAI": "Explore this comparison with AI",
+      "selectAtLeastTwo": "Select at least two cities to compare.",
+      "goalTitle": "What goal are you comparing for?",
+      "resultsTitle": "Comparison evidence",
+      "evidenceNotice": "This comparison uses calculated line-distance evidence as decision-support context, not certainty.",
+      "support": "Support",
+      "mixed": "Mixed",
+      "caution": "Caution",
+      "strong": "Strong",
+      "moderate": "Moderate",
+      "subtle": "Subtle",
+      "close": "Close",
+      "removeCity": "Remove {city}",
+      "noEvidence": "No close planetary line was detected within 800 km.",
+      "cityAIPrompt": "Analyze {city}, {country} using the following astrocartography evidence. Separate supportive themes, cautions, and practical trade-offs; do not assume a closer line is automatically better.\n{evidence}",
+      "compareAIPrompt": "Compare these cities for relocation using only the supplied astrocartography evidence. My selected goal is {goal}. Explain support, caution, and trade-offs instead of declaring one universally best. Focus especially on this question: {focus}\n{evidence}",
+      "defaultAIFocus": "Which city fits my selected goal best, why, and what trade-offs should I consider?",
+      "comparisonSummary": "For {goal}, {city} currently shows the clearest map support.",
+      "rankingDisclaimer": "This is a goal-specific signal ranking, not a claim that one city is best in every part of life.",
+      "keySignal": "Key free signal",
+      "moreSignals": "+{count} important signals to interpret",
+      "statusHints": {
+        "support": "More aligned with your selected goal",
+        "mixed": "Support and trade-offs appear together",
+        "caution": "Needs closer review before deciding"
+      },
+      "lockedTitle": "AI deeper comparison",
+      "lockedDescription": "Explore why the ranking formed, the main trade-offs between cities, and which option better fits your selected goal.",
+      "askHooksTitle": "Questions worth exploring",
+      "askHooks": {
+        "whyFirst": "Why does {city} rank first for my goal?",
+        "keyDifference": "What is the key difference between {first} and {second}?",
+        "longTerm": "Which city is better for long-term living rather than short-term growth?"
+      },
+      "compareCTAHelp": "The question is filled in first. Credits are only used when you send it in AI chat.",
+      "goals": {
+        "overall": {"title": "Overall relocation fit", "description": "Moving, staying, and long-term life"},
+        "career": {"title": "Career & recognition", "description": "Work, money, visibility, and opportunity"},
+        "relationships": {"title": "Relationships & belonging", "description": "Love, partnership, friends, and social ease"},
+        "home": {"title": "Home & emotional stability", "description": "Family, grounding, private life, and steadiness"},
+        "travel": {"title": "Travel & exploration", "description": "Short stays, discovery, movement, and inspiration"}
+      },
+      "planetNames": {
+        "Sun": "Sun", "Moon": "Moon", "Mercury": "Mercury", "Venus": "Venus", "Mars": "Mars",
+        "Jupiter": "Jupiter", "Saturn": "Saturn", "Uranus": "Uranus", "Neptune": "Neptune", "Pluto": "Pluto"
+      },
+      "lineMeanings": {
+        "template": "{planet} highlights {themes}. {angle}",
+        "planets": {
+          "Sun": "confidence, visibility, and vitality", "Moon": "emotion, belonging, and home",
+          "Mercury": "communication, learning, and movement", "Venus": "connection, attraction, and creativity",
+          "Mars": "drive, courage, and competition", "Jupiter": "growth, opportunity, and expansion",
+          "Saturn": "responsibility, discipline, and endurance", "Uranus": "change, freedom, and reinvention",
+          "Neptune": "imagination, spirituality, and sensitivity", "Pluto": "intensity, power, and transformation",
+          "fallback": "personal life themes"
+        },
+        "angles": {
+          "AS": "ASC brings this energy into identity, visibility, and how you begin life in a place.",
+          "DS": "DSC brings this energy into partners, attraction, clients, and one-to-one relationships.",
+          "MC": "MC brings this energy into career, reputation, ambition, and public life.",
+          "IC": "IC brings this energy into home, family, roots, privacy, and emotional foundations."
+        }
+      }
     },
     "themes": {
       "relationships_love": {

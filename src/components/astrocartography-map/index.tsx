@@ -15,6 +15,10 @@ import { X, Eye, EyeOff, ChevronLeft, MessageCircle } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { MAJOR_CITIES } from '@/lib/cities';
 import { useTranslations } from 'next-intl';
+import CityTools, {
+  type CityToolsHandle,
+  type MapCity,
+} from './city-tools';
 
 interface PlanetLine {
   planet: string;
@@ -25,6 +29,8 @@ interface PlanetLine {
 
 export type AstrocartographyMapHandle = {
   exportMapPng: () => Promise<string | null>;
+  openCheckCity: () => void;
+  openCompareCities: () => void;
 };
 
 interface AstrocartographyMapProps {
@@ -40,6 +46,8 @@ interface AstrocartographyMapProps {
   onCityQuickAsk?: (question: string) => void;
   // Ask Other：仅预填输入框，不自动发送
   onAskOther?: (prefillText: string) => void;
+  defaultPanelOpen?: boolean;
+  showInitialGuide?: boolean;
 }
 
 // Planet symbol mapping
@@ -228,7 +236,13 @@ const AstrocartographyMap = forwardRef<
   AstrocartographyMapHandle,
   AstrocartographyMapProps
 >(function AstrocartographyMap(
-  { birthData, planetLines = [], onAskOther },
+  {
+    birthData,
+    planetLines = [],
+    onAskOther,
+    defaultPanelOpen,
+    showInitialGuide = true,
+  },
   ref
 ) {
   const isMobile = useIsMobile();
@@ -236,8 +250,15 @@ const AstrocartographyMap = forwardRef<
   const leafletMapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const polylinesRef = useRef<Map<string, L.Polyline>>(new Map());
+  const cityToolsRef = useRef<CityToolsHandle>(null);
 
   useImperativeHandle(ref, () => ({
+    openCheckCity() {
+      cityToolsRef.current?.openCheckCity();
+    },
+    openCompareCities() {
+      cityToolsRef.current?.openCompareCities();
+    },
     async exportMapPng() {
       if (!mapContainerRef.current) return null;
       try {
@@ -284,22 +305,7 @@ const AstrocartographyMap = forwardRef<
 
   const [selectedLinePopup, setSelectedLinePopup] = useState<LinePopupState>(null);
 
-  const birthSignature = useMemo(() => {
-    // Use key derived from the current chart input so we can show the guide
-    // once per new map generation (birthData change), not once forever.
-    const parts = [
-      birthData.date,
-      birthData.time,
-      birthData.location,
-      birthData.latitude,
-      birthData.longitude,
-    ];
-    return parts.join('|');
-  }, [birthData.date, birthData.time, birthData.location, birthData.latitude, birthData.longitude]);
-
-  const guideDismissedKey = useMemo(() => {
-    return `astrocartography-map-guide-dismissed-${birthSignature}`;
-  }, [birthSignature]);
+  const guideDismissedKey = 'astrocartography-map-guide-dismissed';
 
   const dismissGuide = useCallback(() => {
     setShowGuide(false);
@@ -308,10 +314,23 @@ const AstrocartographyMap = forwardRef<
     } catch {
       // ignore localStorage failures (e.g. privacy mode)
     }
-  }, [guideDismissedKey]);
+  }, []);
+
+  const focusCity = useCallback((city: MapCity) => {
+    dismissGuide();
+    setSelectedLinePopup(null);
+    setSelectedCity(city);
+    leafletMapRef.current?.setView([city.lat, city.lng], 5, {
+      animate: true,
+    });
+  }, [dismissGuide]);
 
   // Show guide only once (when map is ready) and dismiss when user clicks city dot or line.
   useEffect(() => {
+    if (!showInitialGuide) {
+      setShowGuide(false);
+      return;
+    }
     if (isLoading) return;
     if (!planetLines || planetLines.length === 0) return;
 
@@ -323,7 +342,7 @@ const AstrocartographyMap = forwardRef<
     }
 
     setShowGuide(true);
-  }, [isLoading, planetLines, guideDismissedKey]);
+  }, [isLoading, planetLines, guideDismissedKey, showInitialGuide]);
 
   // Optimization: Use useMemo to cache planet groupings, reducing redundant calculations
   // Must be defined before useEffect to avoid TDZ (Temporal Dead Zone) errors
@@ -358,9 +377,8 @@ const AstrocartographyMap = forwardRef<
 
   // Default panel state based on device type
   useEffect(() => {
-    // Desktop: open by default; Mobile: closed by default
-    setIsPanelOpen(!isMobile);
-  }, [isMobile]);
+    setIsPanelOpen(defaultPanelOpen ?? !isMobile);
+  }, [defaultPanelOpen, isMobile]);
 
   useEffect(() => {
     if (!mapContainerRef.current || leafletMapRef.current) return;
@@ -818,6 +836,15 @@ const AstrocartographyMap = forwardRef<
             </div>
           </div>
         </div>
+      )}
+
+      {planetLines.length > 0 && (
+        <CityTools
+          ref={cityToolsRef}
+          planetLines={planetLines}
+          onFocusCity={focusCity}
+          onAskOther={onAskOther}
+        />
       )}
 
       {/* Planetary control panel */}

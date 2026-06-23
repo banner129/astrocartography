@@ -401,7 +401,11 @@
         "returnHome": "Torna alla Home",
         "download": "Scarica",
         "share": "Condividi",
-        "newChart": "Nuova Carta"
+        "newChart": "Nuova Carta",
+        "checkCity": "Controlla città",
+        "compareCities": "Confronta",
+        "askAI": "Chiedi all'IA",
+        "new": "Novità"
       }
     },
     "result": {
@@ -465,6 +469,67 @@
     },
     "panelAsk": {
       "buttonLabel": "Chiedi"
+    },
+    "inlineResult": {
+      "eyebrow": "RISULTATO NELLA PAGINA", "title": "La tua mappa di astrocartografia", "download": "Scarica", "openFullMap": "Apri mappa completa",
+      "calculating": "Calcolo delle linee planetarie…", "calculationError": "Impossibile calcolare la mappa. Riprova.", "downloadError": "Impossibile scaricare la mappa. Riprova.",
+      "interpretTitle": "Interpreta questa mappa", "interpretDescription": "Controlla una città, confronta luoghi e chiedi all'IA usando le prove della mappa.", "askAI": "Chiedi all'IA",
+      "checkCity": "Controlla città", "checkCityDescription": "Esamina linee planetarie vicine, distanza e intensità.",
+      "compareCities": "Confronta città", "compareCitiesDescription": "Aggiungi 2–4 città, scegli un obiettivo e confronta le prove.",
+      "quickQuestionsTitle": "DOMANDE RAPIDE", "viewMore": "Mostra altre domande", "showFewer": "Mostra meno domande",
+      "quickQuestions": ["Dovrei trasferirmi o restare, e quali luoghi sono più adatti a me?", "Quali città favoriscono carriera, denaro e riconoscimento?", "Dove dovrei trasferirmi per amore, amicizia e appartenenza?", "Confronta la mia città attuale con luoghi migliori per casa e benessere."]
+    },
+    "cityTools": {
+      "checkEyebrow": "CONTROLLO CITTÀ", "checkTitle": "Controlla una città sulla tua mappa",
+      "checkDescription": "Inserisci una città reale per vedere linee planetarie vicine, distanza approssimativa, intensità e prove.",
+      "compareTitle": "Confronta città", "compareDescription": "Aggiungi 2–4 luoghi, scegli un obiettivo e confronta sostegno, cautele e compromessi.",
+      "searchPlaceholder": "Prova Londra, Sydney, Tokyo...", "addCity": "Aggiungi", "nearbyLines": "Linee planetarie vicine",
+      "noNearbyLines": "Nessuna linea planetaria trovata entro la soglia di vicinanza.", "runCheck": "Controlla città", "askAI": "Chiedi all'IA di queste prove",
+      "distanceNotice": "Le distanze sono approssimative e indicano la vicinanza alle linee planetarie calcolate.",
+      "decisionNotice": "La distanza dalle linee aiuta a decidere, ma non è una certezza. Considera l'accuratezza dell'ora di nascita, la pianificazione reale e la tua esperienza.",
+      "compareNow": "Confronta città", "compareWithAI": "Analizza con l'IA", "selectAtLeastTwo": "Seleziona almeno due città da confrontare.",
+      "goalTitle": "Qual è l'obiettivo del confronto?", "resultsTitle": "Prove del confronto",
+      "evidenceNotice": "Questo confronto usa le distanze calcolate dalle linee come supporto decisionale, non come certezza.",
+      "support": "Favorevole", "mixed": "Misto", "caution": "Cautela", "strong": "Forte", "moderate": "Moderata", "subtle": "Lieve", "close": "Chiudi",
+      "removeCity": "Rimuovi {city}", "noEvidence": "Nessuna linea planetaria vicina rilevata entro 800 km.",
+      "cityAIPrompt": "Analizza {city}, {country}, usando le seguenti prove di astrocartografia. Separa fattori favorevoli, cautele e compromessi pratici; non presumere che una linea più vicina sia automaticamente migliore.\n{evidence}",
+      "compareAIPrompt": "Confronta queste città per un trasferimento usando solo le prove di astrocartografia fornite. Il mio obiettivo è {goal}. Spiega sostegni, cautele e compromessi senza dichiarare una città universalmente migliore. Rispondi soprattutto a questa domanda: {focus}\n{evidence}",
+      "defaultAIFocus": "Quale città corrisponde meglio al mio obiettivo, perché e quali compromessi devo considerare?",
+      "comparisonSummary": "Per {goal}, {city} mostra attualmente il sostegno più chiaro sulla mappa.",
+      "rankingDisclaimer": "È una classifica di segnali per l'obiettivo scelto, non significa che una città sia migliore sotto ogni aspetto.",
+      "keySignal": "Segnale gratuito principale", "moreSignals": "+{count} segnali importanti da interpretare",
+      "statusHints": {"support": "Più allineata all'obiettivo scelto", "mixed": "Sostegno e compromessi compaiono insieme", "caution": "Richiede un'analisi più attenta"},
+      "lockedTitle": "Confronto approfondito con l'IA",
+      "lockedDescription": "Esplora come nasce la classifica, i principali compromessi e quale opzione si adatta meglio al tuo obiettivo.",
+      "askHooksTitle": "Domande che vale la pena esplorare",
+      "askHooks": {"whyFirst": "Perché {city} è al primo posto per il mio obiettivo?", "keyDifference": "Qual è la differenza principale tra {first} e {second}?", "longTerm": "Quale città è migliore per viverci a lungo e non solo per una crescita temporanea?"},
+      "compareCTAHelp": "La domanda viene prima compilata. I crediti vengono usati solo quando la invii nella chat IA.",
+      "goals": {
+        "overall": {"title": "Compatibilità generale col trasferimento", "description": "Trasferimento, permanenza e vita a lungo termine"},
+        "career": {"title": "Carriera e riconoscimento", "description": "Lavoro, denaro, visibilità e opportunità"},
+        "relationships": {"title": "Relazioni e appartenenza", "description": "Amore, coppia, amici e facilità sociale"},
+        "home": {"title": "Casa e stabilità emotiva", "description": "Famiglia, radicamento, vita privata e stabilità"},
+        "travel": {"title": "Viaggi ed esplorazione", "description": "Soggiorni brevi, scoperta, movimento e ispirazione"}
+      },
+      "planetNames": {
+        "Sun": "Sole", "Moon": "Luna", "Mercury": "Mercurio", "Venus": "Venere", "Mars": "Marte",
+        "Jupiter": "Giove", "Saturn": "Saturno", "Uranus": "Urano", "Neptune": "Nettuno", "Pluto": "Plutone"
+      },
+      "lineMeanings": {
+        "template": "{planet} mette in risalto {themes}. {angle}",
+        "planets": {
+          "Sun": "fiducia, visibilità e vitalità", "Moon": "emozioni, appartenenza e casa", "Mercury": "comunicazione, apprendimento e movimento",
+          "Venus": "connessione, attrazione e creatività", "Mars": "slancio, coraggio e competizione", "Jupiter": "crescita, opportunità ed espansione",
+          "Saturn": "responsabilità, disciplina e resistenza", "Uranus": "cambiamento, libertà e reinvenzione", "Neptune": "immaginazione, spiritualità e sensibilità",
+          "Pluto": "intensità, potere e trasformazione", "fallback": "temi della vita personale"
+        },
+        "angles": {
+          "AS": "ASC porta questa energia nell'identità, nella visibilità e nel modo in cui inizi la vita in un luogo.",
+          "DS": "DSC porta questa energia in partner, attrazione, clienti e relazioni individuali.",
+          "MC": "MC porta questa energia in carriera, reputazione, ambizione e vita pubblica.",
+          "IC": "IC porta questa energia in casa, famiglia, radici, privacy e fondamenta emotive."
+        }
+      }
     },
     "themes": {
       "relationships_love": {

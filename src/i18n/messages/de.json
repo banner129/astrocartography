@@ -354,7 +354,11 @@
         "returnHome": "Zur Startseite",
         "download": "Herunterladen",
         "share": "Teilen",
-        "newChart": "Neue Karte"
+        "newChart": "Neue Karte",
+        "checkCity": "Stadt prüfen",
+        "compareCities": "Vergleichen",
+        "askAI": "KI fragen",
+        "new": "Neu"
       }
     },
     "result": {
@@ -418,6 +422,67 @@
     },
     "panelAsk": {
       "buttonLabel": "Fragen"
+    },
+    "inlineResult": {
+      "eyebrow": "ERGEBNIS AUF DER SEITE", "title": "Deine Astrocartography-Karte", "download": "Herunterladen", "openFullMap": "Vollständige Karte öffnen",
+      "calculating": "Deine Planetenlinien werden berechnet…", "calculationError": "Die Karte konnte nicht berechnet werden. Bitte versuche es erneut.", "downloadError": "Die Karte konnte nicht heruntergeladen werden. Bitte versuche es erneut.",
+      "interpretTitle": "Diese Karte deuten", "interpretDescription": "Prüfe eine Stadt, vergleiche Orte und frage dann die KI anhand der Kartendaten.", "askAI": "KI fragen",
+      "checkCity": "Stadt prüfen", "checkCityDescription": "Prüfe nahe Planetenlinien, Entfernung und Stärke.",
+      "compareCities": "Städte vergleichen", "compareCitiesDescription": "Füge 2–4 Städte hinzu, wähle ein Ziel und vergleiche die Hinweise.",
+      "quickQuestionsTitle": "SCHNELLE FRAGEN", "viewMore": "Mehr Fragen anzeigen", "showFewer": "Weniger Fragen anzeigen",
+      "quickQuestions": ["Sollte ich umziehen oder bleiben, und welche Orte passen besser zu mir?", "Welche Städte fördern Karriere, Geld und Anerkennung?", "Wohin sollte ich für Liebe, Freundschaft und Zugehörigkeit ziehen?", "Vergleiche meine aktuelle Stadt mit besseren Orten für Zuhause und Wohlbefinden."]
+    },
+    "cityTools": {
+      "checkEyebrow": "STADTPRÜFUNG", "checkTitle": "Eine Stadt auf deiner Karte prüfen",
+      "checkDescription": "Gib eine echte Stadt ein, um nahe Planetenlinien, ungefähre Entfernung, Stärke und Kartendaten zu prüfen.",
+      "compareTitle": "Städte vergleichen", "compareDescription": "Füge 2–4 Orte hinzu, wähle ein Ziel und vergleiche Unterstützung, Vorsichtspunkte und Abwägungen.",
+      "searchPlaceholder": "Zum Beispiel London, Sydney, Tokio...", "addCity": "Hinzufügen", "nearbyLines": "Nahe Planetenlinien",
+      "noNearbyLines": "Innerhalb des Nahbereichs wurde keine Planetenlinie gefunden.", "runCheck": "Stadt prüfen", "askAI": "KI zu diesen Stadtdaten fragen",
+      "distanceNotice": "Entfernungen sind Näherungswerte und beschreiben die Nähe zu den berechneten Planetenlinien.",
+      "decisionNotice": "Die Linienentfernung unterstützt Entscheidungen, ist aber keine Gewissheit. Berücksichtige Geburtszeitgenauigkeit, reale Planung und eigene Erfahrungen.",
+      "compareNow": "Städte vergleichen", "compareWithAI": "Mit KI vertiefen", "selectAtLeastTwo": "Wähle mindestens zwei Städte für den Vergleich.",
+      "goalTitle": "Welches Ziel möchtest du vergleichen?", "resultsTitle": "Vergleichsdaten",
+      "evidenceNotice": "Dieser Vergleich nutzt berechnete Linienentfernungen als Entscheidungshilfe, nicht als Gewissheit.",
+      "support": "Förderlich", "mixed": "Gemischt", "caution": "Vorsicht", "strong": "Stark", "moderate": "Mittel", "subtle": "Dezent", "close": "Schließen",
+      "removeCity": "{city} entfernen", "noEvidence": "Im Umkreis von 800 km wurde keine nahe Planetenlinie erkannt.",
+      "cityAIPrompt": "Analysiere {city}, {country}, anhand der folgenden Astrocartography-Daten. Trenne unterstützende Themen, Vorsichtspunkte und praktische Abwägungen; eine nähere Linie ist nicht automatisch besser.\n{evidence}",
+      "compareAIPrompt": "Vergleiche diese Städte für einen Umzug ausschließlich anhand der bereitgestellten Astrocartography-Daten. Mein Ziel ist {goal}. Erkläre Unterstützung, Vorsichtspunkte und Abwägungen, ohne eine Stadt pauschal zur besten zu erklären. Beantworte besonders diese Frage: {focus}\n{evidence}",
+      "defaultAIFocus": "Welche Stadt passt am besten zu meinem Ziel, warum und welche Abwägungen sollte ich beachten?",
+      "comparisonSummary": "Für {goal} zeigt {city} derzeit die klarste Unterstützung auf der Karte.",
+      "rankingDisclaimer": "Dies ist eine zielbezogene Signalrangfolge und keine Aussage, dass eine Stadt in jedem Lebensbereich die beste ist.",
+      "keySignal": "Wichtigstes kostenloses Signal", "moreSignals": "+{count} wichtige Signale zur Deutung",
+      "statusHints": {"support": "Stärker auf das gewählte Ziel ausgerichtet", "mixed": "Unterstützung und Abwägungen treten gemeinsam auf", "caution": "Vor der Entscheidung genauer prüfen"},
+      "lockedTitle": "Vertiefter Vergleich mit KI",
+      "lockedDescription": "Erkunde die Gründe für die Rangfolge, die wichtigsten Abwägungen und welche Option besser zu deinem Ziel passt.",
+      "askHooksTitle": "Fragen, die sich zu klären lohnen",
+      "askHooks": {"whyFirst": "Warum liegt {city} für mein Ziel auf Platz eins?", "keyDifference": "Was ist der wichtigste Unterschied zwischen {first} und {second}?", "longTerm": "Welche Stadt eignet sich besser zum langfristigen Leben statt nur für kurzfristiges Wachstum?"},
+      "compareCTAHelp": "Die Frage wird zuerst eingetragen. Credits werden erst beim Senden im KI-Chat verwendet.",
+      "goals": {
+        "overall": {"title": "Allgemeine Umzugseignung", "description": "Umziehen, bleiben und langfristiges Leben"},
+        "career": {"title": "Karriere und Anerkennung", "description": "Arbeit, Geld, Sichtbarkeit und Chancen"},
+        "relationships": {"title": "Beziehungen und Zugehörigkeit", "description": "Liebe, Partnerschaft, Freunde und soziales Wohlgefühl"},
+        "home": {"title": "Zuhause und emotionale Stabilität", "description": "Familie, Verwurzelung, Privatleben und Beständigkeit"},
+        "travel": {"title": "Reisen und Entdecken", "description": "Kurze Aufenthalte, Entdeckung, Bewegung und Inspiration"}
+      },
+      "planetNames": {
+        "Sun": "Sonne", "Moon": "Mond", "Mercury": "Merkur", "Venus": "Venus", "Mars": "Mars",
+        "Jupiter": "Jupiter", "Saturn": "Saturn", "Uranus": "Uranus", "Neptune": "Neptun", "Pluto": "Pluto"
+      },
+      "lineMeanings": {
+        "template": "{planet} betont {themes}. {angle}",
+        "planets": {
+          "Sun": "Selbstvertrauen, Sichtbarkeit und Vitalität", "Moon": "Gefühl, Zugehörigkeit und Zuhause", "Mercury": "Kommunikation, Lernen und Bewegung",
+          "Venus": "Verbindung, Anziehung und Kreativität", "Mars": "Antrieb, Mut und Wettbewerb", "Jupiter": "Wachstum, Chancen und Erweiterung",
+          "Saturn": "Verantwortung, Disziplin und Ausdauer", "Uranus": "Veränderung, Freiheit und Neuerfindung", "Neptune": "Fantasie, Spiritualität und Sensibilität",
+          "Pluto": "Intensität, Macht und Transformation", "fallback": "persönliche Lebensthemen"
+        },
+        "angles": {
+          "AS": "ASC bringt diese Energie in Identität, Sichtbarkeit und deinen Start an einem Ort.",
+          "DS": "DSC bringt diese Energie in Partnerschaften, Anziehung, Kunden und persönliche Beziehungen.",
+          "MC": "MC bringt diese Energie in Karriere, Ruf, Ehrgeiz und öffentliches Leben.",
+          "IC": "IC bringt diese Energie in Zuhause, Familie, Wurzeln, Privatsphäre und emotionale Grundlagen."
+        }
+      }
     },
     "themes": {
       "relationships_love": {
