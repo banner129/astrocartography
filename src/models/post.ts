@@ -55,6 +55,17 @@ export async function findPostBySlug(
   return post;
 }
 
+export async function findOnlineLocalesForSlug(slug: string): Promise<string[]> {
+  const data = await db()
+    .select({ locale: posts.locale })
+    .from(posts)
+    .where(and(eq(posts.slug, slug), eq(posts.status, PostStatus.Online)));
+
+  return data
+    .map((row) => row.locale)
+    .filter((locale): locale is string => Boolean(locale));
+}
+
 export async function getAllPosts(
   page: number = 1,
   limit: number = 50

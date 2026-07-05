@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Blog as BlogType } from "@/types/blocks/blog";
+import { getPostPath } from "@/lib/utils";
 
 export default function Blog({ blog }: { blog: BlogType }) {
   if (blog.disabled) {
@@ -29,7 +30,12 @@ export default function Blog({ blog }: { blog: BlogType }) {
             {blog.items?.map((item, idx) => (
               <a
                 key={idx}
-                href={item.url || `/${item.locale}/posts/${item.slug}`}
+                href={
+                  item.url ||
+                  (item.slug && item.locale
+                    ? getPostPath(item.locale, item.slug)
+                    : "#")
+                }
                 target={item.target || "_self"}
                 className="group block"
                 style={{ textAlign: 'center' }}

@@ -29,6 +29,27 @@ export function getCanonicalUrl(locale: string, path: string = '/'): string {
   return `${baseUrl}/${locale}${cleanPath}/`;
 }
 
+/** Relative post path; English uses /posts/ without locale prefix. */
+export function getPostPath(locale: string, slug: string): string {
+  return getCanonicalUrl(locale, `/posts/${slug}`).replace(getBaseUrl(), '');
+}
+
+/** Build hreflang alternates for posts that exist in the database. */
+export function buildPostHreflangAlternates(
+  slug: string,
+  locales: string[]
+): Record<string, string> {
+  const languages = Object.fromEntries(
+    locales.map((locale) => [locale, getCanonicalUrl(locale, `/posts/${slug}`)])
+  );
+
+  if (locales.includes('en')) {
+    languages['x-default'] = getCanonicalUrl('en', `/posts/${slug}`);
+  }
+
+  return languages;
+}
+
 // ========================================
 // 社交媒体配置工具函数 (Social Media Configuration)
 // ========================================

@@ -45,6 +45,16 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/en/posts/:slug",
+        destination: "/posts/:slug/",
+        permanent: true,
+      },
+      {
+        source: "/en/posts",
+        destination: "/posts/",
+        permanent: true,
+      },
       // ✅ 删除所有UTM参数的重定向规则
       // 让robots.txt处理SEO，保留UTM追踪功能
     ];

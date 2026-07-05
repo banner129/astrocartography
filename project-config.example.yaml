@@ -240,3 +240,34 @@ quality_gates:
     - "Follow existing App Router, next-intl, JSON content, and component patterns."
     - "Avoid editing payment, auth, database, or unrelated utility pages unless the page requires it."
     - "Run available checks after implementation, normally `pnpm build`; use `pnpm lint` only if the project lint command is healthy."
+
+keyword_filter:
+  competitor_brands:
+    - "astro.com"
+    - "astro com"
+    - "astrodienst"
+    - "astro-seek"
+    - "astro-charts"
+  blocked_contains:
+    - "astro databank"
+    - "astro-databank"
+  reject_navigational: false
+  synonym_groups:
+    - ["birth chart", "natal chart", "birthchart", "natalchart"]
+    - ["rising sign", "ascendant", "rising sign calculator", "ascendant calculator"]
+    - ["astrocartography map", "astrocartography calculator", "astrocartography chart"]
+    - ["synastry chart", "synastry calculator", "relationship chart"]
+    - ["composite chart", "composite calculator"]
+    - ["solar return", "solar return chart", "solar return calculator"]
+    - ["transit chart", "transit calculator", "transits chart"]
+    - ["relocation chart", "relocation calculator", "relocated chart"]
+  review_policies:
+    - "【优先级】主题类 reject（forbidden / generic_horoscope / competitor / celebrity / sensitive）一旦命中 → 必须 reject，不得因无 Volume/Clicks 异常改为 review。"
+    - "【优先级】数据安全网（missing_volume / clicks_exceed_volume）只用于主题未决的 accept/review，不能覆盖已明确的主题拒绝。"
+    - "【跨语言】关键词语言在 site.locales 内时，不得因与英文词库 near_duplicate 而 duplicate；应评估该 locale 独立页（accept/review），near_duplicate 仅在同语言内生效。"
+    - "名人/真实姓名 + birth chart / natal chart / synastry → reject，不做名人专题页。"
+    - "敏感公众人物 → reject。"
+    - "竞品品牌拼写变体 → reject。"
+    - "无 Volume 或 Clicks>Volume 且主题 fit 未定时 → review，不要直接 accept。"
+    - "支持 en/zh/pt/es/it/de；多语言 product fit 强时可 accept，路径带 locale 前缀。"
+    - "通用 horoscope 运势流量（无计算器/星盘意图）→ reject。"
