@@ -98,6 +98,7 @@
   "my_credits": {
     "title": "我的积分",
     "left_tip": "剩余积分: {left_credits}",
+    "subscription_active": "Plus 订阅中（{plan}）· 续费日 {renewal}",
     "no_credits": "没有积分记录",
     "recharge": "充值",
     "table": {

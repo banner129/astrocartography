@@ -603,13 +603,25 @@
     "name": "pricing",
     "label": "Precios",
     "title": "Elige Tu Plan de Astrocartografía",
-    "description": "Mapas interactivos gratuitos para siempre, o desbloquea funciones premium de IA con opciones de precios flexibles",
-    "disclaimer": "⚠️ **Importante**: La IA solo analiza ciudades en tus líneas planetarias. No especulará sobre ciudades que no están en tu carta. Los resultados son solo para referencia.",
-    "groups": [],
+    "description": "Mapas interactivos gratis para siempre, o desbloquea funciones premium de IA con opciones de precios flexibles",
+    "disclaimer": "⚠️ **Importante**: La IA solo analiza ciudades en tus líneas planetarias. No especulará sobre ciudades que no estén en tu carta. Los resultados son solo de referencia.",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "Pago único",
+        "description": "Decide ahora — los créditos nunca expiran"
+      },
+      {
+        "name": "subscription",
+        "title": "Suscripción",
+        "description": "Entrada mensual baja — prueba la IA de pago antes de comprometerte"
+      }
+    ],
     "items": [
       {
         "title": "Prueba Gratuita",
         "description": "Experimenta rápidamente las funciones principales de astrocartografía con IA",
+        "group": "one-time",
         "features_title": "Incluye",
         "features": [
           "10 créditos (1 pregunta de IA)",
@@ -628,7 +640,7 @@
         "is_featured": false,
         "tip": "100% gratis para siempre, experimenta funciones principales",
         "button": {
-          "title": "Comenzar Prueba Gratuita",
+          "title": "Iniciar Prueba Gratuita",
           "url": "/#generator",
           "icon": "RiMapLine"
         },
@@ -640,12 +652,14 @@
       {
         "title": "Plan Estándar",
         "description": "Perfecto para usuarios que toman decisiones serias de reubicación",
+        "group": "one-time",
         "label": "Más Popular",
         "features_title": "Funciones Premium",
         "features": [
           "1000 créditos (100 preguntas de IA)",
-          "Análisis de gráfico de reubicación",
+          "Análisis de carta de reubicación",
           "Acceso al explorador de países",
+          "Exportar chat de IA en TXT y descargar mapas (acceso de por vida; crédito del sitio en imágenes)",
           "Experiencia sin anuncios",
           "Válido para siempre, sin límite de tiempo",
           "Pago único, sin renovación automática"
@@ -658,7 +672,9 @@
         "original_price": "",
         "unit": "",
         "is_featured": true,
-        "tip": "Solo $0.099 por pregunta, suficiente para investigar en profundidad 2-3 ciudades",
+        "tip": "100 preguntas, para siempre — mejor valor que 2 meses de Plus",
+        "switch_group": "subscription",
+        "switch_group_label": "Desde $6.9/mes →",
         "button": {
           "title": "Comprar Ahora",
           "url": "/#pricing",
@@ -671,16 +687,17 @@
       },
       {
         "title": "Plan Profesional",
-        "description": "3000 créditos (300 preguntas) | Ideal para investigación profunda en múltiples ciudades y usuarios profesionales",
+        "description": "Ideal para investigación profunda en múltiples ciudades y usuarios profesionales",
+        "group": "one-time",
         "label": "Mejor Valor",
         "features_title": "Todas las funciones Estándar, más",
         "features": [
           "3000 créditos (300 preguntas de IA)",
+          "Historial de chat permanente — ver, revisar y exportar en tu cuenta (no incluido en suscripción)",
           "Todas las funciones del Plan Estándar",
-          "Exportar historial de chat de IA (archivo TXT)",
           "Respuesta prioritaria de IA (2x más rápido)",
           "Análisis avanzado de líneas planetarias (Chiron, Lilith, etc.)",
-          "Soporte por correo electrónico (respuesta en 48 horas)",
+          "Soporte por correo (respuesta en 48 horas)",
           "Válido para siempre, sin límite de tiempo",
           "Pago único, sin renovación automática"
         ],
@@ -692,7 +709,7 @@
         "original_price": "$24.9",
         "unit": "",
         "is_featured": false,
-        "tip": "Solo $0.063 por pregunta, 36% más barato que el Estándar",
+        "tip": "Historial de chat permanente exclusivo — solo $0.063 por pregunta",
         "button": {
           "title": "Comprar Ahora",
           "url": "/#pricing",
@@ -702,6 +719,68 @@
         "product_name": "Plan Profesional - Válido para Siempre",
         "credits": 3000,
         "valid_months": 0
+      },
+      {
+        "title": "Plus Mensual",
+        "description": "Ideal para: probar la IA de pago este mes — aún no listo para un plan único.",
+        "group": "subscription",
+        "label": "Flexible",
+        "features_title": "Incluye",
+        "features": [
+          "500 créditos (50 preguntas de IA) al mes",
+          "Mapas de astrocartografía ilimitados",
+          "Descarga de mapas PNG y exportación de chat TXT",
+          "Renovación mensual — cancela cuando quieras"
+        ],
+        "interval": "month",
+        "amount": 690,
+        "cn_amount": 4900,
+        "currency": "USD",
+        "price": "$6.9",
+        "original_price": "",
+        "unit": "/mes",
+        "is_featured": true,
+        "tip": "Desde $6.9 — sin $9.9 por adelantado · Más funciones de suscripción próximamente",
+        "button": {
+          "title": "Suscribirse",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-monthly",
+        "product_name": "Suscripción Plus - Mensual",
+        "credits": 500,
+        "valid_months": 1
+      },
+      {
+        "title": "Plus Anual",
+        "description": "Ideal para: usuarios comprometidos que saben que se suscribirán un año completo.",
+        "group": "subscription",
+        "label": "Ahorra ~29%",
+        "features_title": "Incluye",
+        "features": [
+          "500 créditos (50 preguntas de IA) al mes",
+          "Mapas de astrocartografía ilimitados",
+          "Descarga de mapas PNG y exportación de chat TXT",
+          "Renovación anual — cancela cuando quieras"
+        ],
+        "interval": "year",
+        "amount": 5900,
+        "cn_amount": 41900,
+        "currency": "USD",
+        "price": "$59",
+        "original_price": "$82.8",
+        "unit": "/año",
+        "is_featured": false,
+        "tip": "Aprox. $4.9/mes — ahorra ~29% vs mensual",
+        "button": {
+          "title": "Suscripción Anual",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-yearly",
+        "product_name": "Suscripción Plus - Anual",
+        "credits": 500,
+        "valid_months": 12
       }
     ]
   },

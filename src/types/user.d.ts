@@ -34,5 +34,7 @@ export interface UserCredits {
   is_recharged?: boolean;
   /** True when left_credits > 0; legacy name — do not use for tier-gated features. */
   is_pro?: boolean;
+  /** Active Plus subscription summary, if any. */
+  subscription?: import("@/services/subscription").ActiveSubscriptionSummary | null;
   entitlements?: UserEntitlements;
 }

@@ -690,11 +690,23 @@
     "title": "Choose Your Astrocartography Plan",
     "description": "Free interactive maps forever, or unlock premium AI features with flexible pricing options",
     "disclaimer": "⚠️ **Important**: AI only analyzes cities on your planetary lines. It will not speculate about cities not in your chart. Results are for reference only.",
-    "groups": [],
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "One-Time",
+        "description": "Decide now — credits never expire"
+      },
+      {
+        "name": "subscription",
+        "title": "Subscription",
+        "description": "Low entry monthly — try paid AI before committing"
+      }
+    ],
     "items": [
       {
         "title": "Free Trial",
         "description": "Quickly experience core AI astrocartography features",
+        "group": "one-time",
         "features_title": "Includes",
         "features": [
           "10 credits (1 AI question)",
@@ -725,12 +737,14 @@
       {
         "title": "Standard Plan",
         "description": "Perfect for users making serious relocation decisions",
+        "group": "one-time",
         "label": "Most Popular",
         "features_title": "Premium Features",
         "features": [
           "1000 credits (100 AI questions)",
           "Relocation chart analysis",
           "Country explorer access",
+          "Export AI chat as TXT & download maps (paid; lifetime access; site credit on images)",
           "Ad-free experience",
           "Valid forever, no time limit",
           "One-time payment, no auto-renewal"
@@ -743,7 +757,9 @@
         "original_price": "",
         "unit": "",
         "is_featured": true,
-        "tip": "Only $0.099 per question, enough to deeply research 2-3 cities",
+        "tip": "100 questions, forever — better value than 2 months of Plus",
+        "switch_group": "subscription",
+        "switch_group_label": "From $6.9/mo →",
         "button": {
           "title": "Buy Now",
           "url": "/#pricing",
@@ -756,13 +772,14 @@
       },
       {
         "title": "Professional Plan",
-        "description": "3000 credits (300 questions) | Ideal for deep research on multiple cities and professional users",
+        "description": "Ideal for deep research on multiple cities and professional users",
+        "group": "one-time",
         "label": "Best Value",
         "features_title": "All Standard features, plus",
         "features": [
           "3000 credits (300 AI questions)",
+          "Permanent chat history — view, review & export in your account (not in subscription)",
           "All Standard Plan features",
-          "Export AI chat history (TXT file)",
           "Priority AI response (2x faster)",
           "Advanced planetary line analysis (Chiron, Lilith, etc.)",
           "Email support (48-hour response)",
@@ -777,7 +794,7 @@
         "original_price": "$24.9",
         "unit": "",
         "is_featured": false,
-        "tip": "Only $0.063 per question, 36% cheaper than Standard",
+        "tip": "Permanent chat history exclusive — only $0.063 per question",
         "button": {
           "title": "Buy Now",
           "url": "/#pricing",
@@ -787,6 +804,68 @@
         "product_name": "Professional Plan - Valid Forever",
         "credits": 3000,
         "valid_months": 0
+      },
+      {
+        "title": "Plus Monthly",
+        "description": "Best for: trying paid AI this month — not ready to commit to a one-time plan.",
+        "group": "subscription",
+        "label": "Flexible",
+        "features_title": "Includes",
+        "features": [
+          "500 credits (50 AI questions) per month",
+          "Unlimited astrocartography maps",
+          "PNG map download & TXT chat export",
+          "Renews monthly — cancel anytime"
+        ],
+        "interval": "month",
+        "amount": 690,
+        "cn_amount": 4900,
+        "currency": "USD",
+        "price": "$6.9",
+        "original_price": "",
+        "unit": "/month",
+        "is_featured": true,
+        "tip": "Start at $6.9 — no $9.9 upfront · More subscriber features coming soon",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-monthly",
+        "product_name": "Plus Subscription - Monthly",
+        "credits": 500,
+        "valid_months": 1
+      },
+      {
+        "title": "Plus Yearly",
+        "description": "Best for: committed users who know they'll subscribe for a full year.",
+        "group": "subscription",
+        "label": "Save ~29%",
+        "features_title": "Includes",
+        "features": [
+          "500 credits (50 AI questions) per month",
+          "Unlimited astrocartography maps",
+          "PNG map download & TXT chat export",
+          "Renews yearly — cancel anytime"
+        ],
+        "interval": "year",
+        "amount": 5900,
+        "cn_amount": 41900,
+        "currency": "USD",
+        "price": "$59",
+        "original_price": "$82.8",
+        "unit": "/year",
+        "is_featured": false,
+        "tip": "About $4.9/month — save ~29% vs monthly",
+        "button": {
+          "title": "Subscribe Yearly",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-yearly",
+        "product_name": "Plus Subscription - Yearly",
+        "credits": 500,
+        "valid_months": 12
       }
     ]
   },

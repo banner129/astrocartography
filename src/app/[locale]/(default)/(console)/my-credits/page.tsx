@@ -20,12 +20,24 @@ export default async function () {
 
   const userCredits = await getUserCredits(user_uuid);
 
+  const subscriptionTip = userCredits.subscription?.is_active
+    ? t("my_credits.subscription_active", {
+        plan: userCredits.subscription.product_name || "Plus",
+        renewal: userCredits.subscription.renewal_label || "—",
+      })
+    : null;
+
   const table: TableSlotType = {
     title: t("my_credits.title"),
     tip: {
-      title: t("my_credits.left_tip", {
-        left_credits: userCredits?.left_credits || 0,
-      }),
+      title: [
+        t("my_credits.left_tip", {
+          left_credits: userCredits?.left_credits || 0,
+        }),
+        subscriptionTip,
+      ]
+        .filter(Boolean)
+        .join(" · "),
     },
     // TODO: 暂时隐藏 Recharge 按钮
     /* toolbar: {

@@ -139,6 +139,19 @@ export async function updateOrderSubscription(
   return order;
 }
 
+export async function findOrderBySubId(
+  sub_id: string
+): Promise<typeof orders.$inferSelect | undefined> {
+  const [order] = await db()
+    .select()
+    .from(orders)
+    .where(eq(orders.sub_id, sub_id))
+    .orderBy(desc(orders.created_at))
+    .limit(1);
+
+  return order;
+}
+
 export async function getOrdersByUserUuid(
   user_uuid: string
 ): Promise<(typeof orders.$inferSelect)[] | undefined> {

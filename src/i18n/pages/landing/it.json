@@ -603,16 +603,28 @@
     "name": "pricing",
     "label": "Prezzi",
     "title": "Scegli Il Tuo Piano di Astrocartografia",
-    "description": "Mappe interattive gratuite per sempre, o sblocca funzionalità AI premium con opzioni di prezzo flessibili",
-    "disclaimer": "⚠️ **Importante**: L'IA analizza solo le città sulle tue linee planetarie. Non speculerà su città che non sono nella tua carta. I risultati sono solo per riferimento.",
-    "groups": [],
+    "description": "Mappe interattive gratuite per sempre, o sblocca funzionalità IA premium con opzioni di prezzo flessibili",
+    "disclaimer": "⚠️ **Importante**: L'IA analizza solo le città sulle tue linee planetarie. Non speculerà su città non presenti nella tua carta. I risultati sono solo a scopo informativo.",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "Pagamento unico",
+        "description": "Decidi ora — i crediti non scadono mai"
+      },
+      {
+        "name": "subscription",
+        "title": "Abbonamento",
+        "description": "Ingresso mensile basso — prova l'IA a pagamento prima di impegnarti"
+      }
+    ],
     "items": [
       {
         "title": "Prova Gratuita",
-        "description": "Sperimenta rapidamente le funzionalità principali di astrocartografia con IA",
+        "description": "Prova rapidamente le funzionalità principali di astrocartografia con IA",
+        "group": "one-time",
         "features_title": "Include",
         "features": [
-          "10 crediti (1 domanda AI)",
+          "10 crediti (1 domanda IA)",
           "Mappa interattiva di astrocartografia",
           "Spiegazioni base delle linee planetarie",
           "Genera mappe illimitate",
@@ -622,30 +634,32 @@
         "amount": 0,
         "cn_amount": 0,
         "currency": "USD",
-        "price": "Gratis",
+        "price": "Gratuito",
         "original_price": "",
         "unit": "",
         "is_featured": false,
-        "tip": "100% gratuito per sempre, sperimenta funzionalità principali",
+        "tip": "100% gratuito per sempre, prova le funzionalità principali",
         "button": {
           "title": "Inizia Prova Gratuita",
           "url": "/#generator",
           "icon": "RiMapLine"
         },
         "product_id": "free",
-        "product_name": "Prova Gratuita di Astrocartografia",
+        "product_name": "Prova Gratuita Astrocartografia",
         "credits": 10,
         "valid_months": 0
       },
       {
         "title": "Piano Standard",
-        "description": "Perfetto per gli utenti che prendono decisioni serie di trasferimento",
+        "description": "Perfetto per utenti che prendono decisioni serie di trasferimento",
+        "group": "one-time",
         "label": "Più Popolare",
         "features_title": "Funzionalità Premium",
         "features": [
-          "1000 crediti (100 domande AI)",
-          "Analisi grafico di rilocazione",
+          "1000 crediti (100 domande IA)",
+          "Analisi carta di trasferimento",
           "Accesso all'esploratore di paesi",
+          "Esporta chat IA in TXT e scarica mappe (accesso a vita; credito sito sulle immagini)",
           "Esperienza senza pubblicità",
           "Valido per sempre, nessun limite di tempo",
           "Pagamento unico, nessun rinnovo automatico"
@@ -658,7 +672,9 @@
         "original_price": "",
         "unit": "",
         "is_featured": true,
-        "tip": "Solo $0.099 per domanda, sufficiente per ricerche approfondite su 2-3 città",
+        "tip": "100 domande, per sempre — miglior valore di 2 mesi di Plus",
+        "switch_group": "subscription",
+        "switch_group_label": "Da $6.9/mese →",
         "button": {
           "title": "Acquista Ora",
           "url": "/#pricing",
@@ -671,14 +687,15 @@
       },
       {
         "title": "Piano Professionale",
-        "description": "3000 crediti (300 domande) | Ideale per ricerche approfondite su più città e utenti professionali",
+        "description": "Ideale per ricerche approfondite su più città e utenti professionali",
+        "group": "one-time",
         "label": "Miglior Valore",
         "features_title": "Tutte le funzionalità Standard, più",
         "features": [
-          "3000 crediti (300 domande AI)",
+          "3000 crediti (300 domande IA)",
+          "Cronologia chat permanente — visualizza, rivedi ed esporta nel tuo account (non inclusa nell'abbonamento)",
           "Tutte le funzionalità del Piano Standard",
-          "Esporta cronologia chat AI (file TXT)",
-          "Risposta AI prioritaria (2x più veloce)",
+          "Risposta IA prioritaria (2x più veloce)",
           "Analisi avanzata delle linee planetarie (Chiron, Lilith, ecc.)",
           "Supporto email (risposta entro 48 ore)",
           "Valido per sempre, nessun limite di tempo",
@@ -692,7 +709,7 @@
         "original_price": "$24.9",
         "unit": "",
         "is_featured": false,
-        "tip": "Solo $0.063 per domanda, 36% più economico dello Standard",
+        "tip": "Cronologia chat permanente esclusiva — solo $0,063 per domanda",
         "button": {
           "title": "Acquista Ora",
           "url": "/#pricing",
@@ -702,6 +719,68 @@
         "product_name": "Piano Professionale - Valido per Sempre",
         "credits": 3000,
         "valid_months": 0
+      },
+      {
+        "title": "Plus Mensile",
+        "description": "Ideale per: provare l'IA a pagamento questo mese — non ancora pronto per un piano unico.",
+        "group": "subscription",
+        "label": "Flessibile",
+        "features_title": "Include",
+        "features": [
+          "500 crediti (50 domande IA) al mese",
+          "Mappe di astrocartografia illimitate",
+          "Download mappe PNG ed esportazione chat TXT",
+          "Rinnovo mensile — annulla quando vuoi"
+        ],
+        "interval": "month",
+        "amount": 690,
+        "cn_amount": 4900,
+        "currency": "USD",
+        "price": "$6.9",
+        "original_price": "",
+        "unit": "/mese",
+        "is_featured": true,
+        "tip": "Inizia con $6,9 — senza $9,9 anticipati · Altre funzionalità abbonamento in arrivo",
+        "button": {
+          "title": "Abbonati",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-monthly",
+        "product_name": "Abbonamento Plus - Mensile",
+        "credits": 500,
+        "valid_months": 1
+      },
+      {
+        "title": "Plus Annuale",
+        "description": "Ideale per: utenti impegnati che sanno di abbonarsi per un anno intero.",
+        "group": "subscription",
+        "label": "Risparmia ~29%",
+        "features_title": "Include",
+        "features": [
+          "500 crediti (50 domande IA) al mese",
+          "Mappe di astrocartografia illimitate",
+          "Download mappe PNG ed esportazione chat TXT",
+          "Rinnovo annuale — annulla quando vuoi"
+        ],
+        "interval": "year",
+        "amount": 5900,
+        "cn_amount": 41900,
+        "currency": "USD",
+        "price": "$59",
+        "original_price": "$82.8",
+        "unit": "/anno",
+        "is_featured": false,
+        "tip": "Circa $4,9/mese — risparmia ~29% vs mensile",
+        "button": {
+          "title": "Abbonati Annuale",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-yearly",
+        "product_name": "Abbonamento Plus - Annuale",
+        "credits": 500,
+        "valid_months": 12
       }
     ]
   },

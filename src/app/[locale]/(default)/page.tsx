@@ -29,6 +29,7 @@ import Pricing from "@/components/blocks/pricing";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
+import { applySubscriptionPricingFilter } from "@/services/subscription";
 import { getCanonicalUrl } from "@/lib/utils";
 import { Section as SectionType } from "@/types/blocks/section";
 import Icon from "@/components/icon";
@@ -205,6 +206,7 @@ export default async function LandingPage({
 }) {
   const { locale } = await params;
   const page = await getLandingPage(locale);
+  const pricing = applySubscriptionPricingFilter(page.pricing);
 
   const faqSchema = page.faq?.items?.length ? {
     "@context": "https://schema.org",
@@ -315,7 +317,7 @@ export default async function LandingPage({
       {page.testimonial && <Testimonial section={page.testimonial} />}
 
      {/* 价格信息*/}
-      {page.pricing && <Pricing pricing={page.pricing} />}
+      {pricing && <Pricing pricing={pricing} />}
        
       {/* FAQ（Frequently Asked Questions）：3~5个问题+简短回答，每个回答≤80字- */}
       {page.faq && <FAQ section={page.faq} />}

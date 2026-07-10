@@ -12,6 +12,11 @@ import { sendOrderConfirmationEmail } from "@/services/email";
 import { getIsoTimestr } from "@/lib/time";
 import { Order } from "@/types/order";
 import { logCreemEvent, logCreemError } from "@/lib/paypal-logger";
+import {
+  handleCreemCheckoutCompleted,
+  handleCreemSubscriptionPaid,
+  handleCreemSubscriptionEnded,
+} from "@/services/creem-subscription";
 
 export async function POST(req: Request) {
   try {
@@ -82,26 +87,42 @@ export async function POST(req: Request) {
 
     // 处理不同类型的事件
     switch (type) {
+      case "checkout.completed": {
+        await handleCreemCheckoutCompleted(data);
+        break;
+      }
+
       case "payment.succeeded":
       case "payment.success":
-      case "checkout.completed":
       case "charge.succeeded": {
-        // 🔥 直接处理支付成功事件，避免调用可能出错的 handleCreemOrder
         await handleCreemPaymentSuccess(data);
+        break;
+      }
+
+      case "subscription.paid": {
+        await handleCreemSubscriptionPaid(data);
+        break;
+      }
+
+      case "subscription.canceled":
+      case "subscription.cancelled":
+      case "subscription.expired":
+      case "subscription.scheduled_cancel": {
+        await handleCreemSubscriptionEnded(data, type);
         break;
       }
 
       case "payment.failed":
       case "charge.failed": {
-        // 处理支付失败事件（可选）
         console.log("Payment failed:", data);
         break;
       }
 
       case "subscription.created":
-      case "subscription.updated": {
-        // 处理订阅事件（可选）
-        console.log("Subscription event:", data);
+      case "subscription.updated":
+      case "subscription.active":
+      case "subscription.update": {
+        console.log("Subscription sync event:", type);
         break;
       }
 

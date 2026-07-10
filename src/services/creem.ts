@@ -92,12 +92,8 @@ export async function createCreemCheckoutSession(
       };
     }
 
-    // 如果是订阅，添加订阅参数（如果支持）
-    if (params.is_subscription) {
-      requestBody.subscription = {
-        interval: params.interval || "month",
-      };
-    }
+    // Creem 产品在后台已定义为订阅/一次性类型，/v1/checkouts 只需传 product_id，
+    // 不要额外传 subscription 字段（API 会返回 "property subscription should not exist"）
 
     // 🔥 根据 Creem 文档，API 端点是 /v1/checkouts（不是 /v1/checkout/sessions）
     // 测试模式使用 test-api.creem.io，生产模式使用 api.creem.io

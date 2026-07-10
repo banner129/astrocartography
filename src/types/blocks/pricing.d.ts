@@ -19,6 +19,9 @@ export interface PricingItem {
   features?: string[];
   button?: Button;
   tip?: string;
+  /** Switch pricing tab (e.g. standard → subscription) */
+  switch_group?: string;
+  switch_group_label?: string;
   is_featured?: boolean;
   interval: "month" | "year" | "one-time";
   product_id: string;

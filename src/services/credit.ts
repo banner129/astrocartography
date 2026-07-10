@@ -1,8 +1,4 @@
-import {
-  findCreditByOrderNo,
-  getUserValidCredits,
-  insertCredit,
-} from "@/models/credit";
+import { findCreditByOrderNo, findCreditByTransNo, getUserValidCredits, insertCredit } from "@/models/credit";
 import { credits as creditsTable } from "@/db/schema";
 import { getIsoTimestr } from "@/lib/time";
 import { getSnowId } from "@/lib/hash";
@@ -11,6 +7,7 @@ import { UserCredits } from "@/types/user";
 import { getFirstPaidOrderByUserUuid } from "@/models/order";
 import { getAIChatCreditCost as getAIChatCreditCostFromConfig } from "./config";
 import { getUserEntitlements } from "./entitlements";
+import { getActivePlusSubscriptionSummary } from "./subscription";
 
 export enum CreditsTransType {
   NewUser = "new_user", // initial credits for new user
@@ -55,6 +52,8 @@ export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
     }
 
     user_credits.entitlements = await getUserEntitlements(user_uuid);
+    user_credits.subscription =
+      await getActivePlusSubscriptionSummary(user_uuid);
 
     return user_credits;
   } catch (e) {
@@ -166,4 +165,33 @@ export async function updateCreditForOrder(order: Order) {
     console.log("update credit for order failed: ", e);
     throw e;
   }
+}
+
+/** Idempotent monthly/renewal credit grant for Plus subscriptions. */
+export async function grantSubscriptionPeriodCredits({
+  user_uuid,
+  credits,
+  order_no,
+  expired_at,
+  idempotency_key,
+}: {
+  user_uuid: string;
+  credits: number;
+  order_no: string;
+  expired_at: string;
+  idempotency_key: string;
+}): Promise<boolean> {
+  const existing = await findCreditByTransNo(idempotency_key);
+  if (existing) return false;
+
+  await insertCredit({
+    trans_no: idempotency_key,
+    created_at: new Date(getIsoTimestr()),
+    expired_at: new Date(expired_at),
+    user_uuid,
+    trans_type: CreditsTransType.OrderPay,
+    credits,
+    order_no,
+  });
+  return true;
 }

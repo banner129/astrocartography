@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getPricingPage } from '@/services/page';
+import { applySubscriptionPricingFilter } from '@/services/subscription';
 import { headers } from 'next/headers';
 
 /**
@@ -12,6 +13,10 @@ export async function GET(request: Request) {
     const locale = searchParams.get('locale') || 'en';
 
     const page = await getPricingPage(locale);
+
+    if (page.pricing) {
+      page.pricing = applySubscriptionPricingFilter(page.pricing) ?? page.pricing;
+    }
     
     if (!page || !page.pricing) {
       return NextResponse.json(

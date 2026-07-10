@@ -33,7 +33,6 @@
     "title": "Tukar Foto Menjadi Karya Miniatur dengan Miniatur AI",
     "highlight_text": "Miniatur AI",
     "description": "Tukar foto biasa menjadi dunia miniatur yang luar biasa dengan kesan tilt-shift menakjubkan dan diorama memikat. Teknologi Miniatur AI canggih kami menganalisis setiap piksel untuk mencipta kesan kedalaman bidang autentik yang menyaingi lensa kamera mahal. Hanya muat naik foto anda dan lihat kecerdasan buatan mencipta karya miniatur profesional dalam beberapa saat, sempurna untuk media sosial, portfolio, dan projek kreatif.",
-   
     "images": [
       {
         "src": "/imgs/features/1.png",
@@ -42,7 +41,7 @@
       },
       {
         "src": "/imgs/features/2.png",
-        "alt": "Contoh Transformasi Miniatur AI 2", 
+        "alt": "Contoh Transformasi Miniatur AI 2",
         "title": "Penjanaan Figur AI"
       }
     ],
@@ -363,19 +362,31 @@
     "name": "pricing",
     "label": "Harga",
     "title": "Pilih Pelan Astrocartografi Anda",
-    "description": "Peta interaktif percuma selama-lamanya, atau buka kunci ciri AI premium dengan pilihan harga yang fleksibel",
-    "disclaimer": "⚠️ **Penting**: AI hanya menganalisis bandar pada garis planet anda. Ia tidak akan membuat spekulasi tentang bandar yang tidak ada dalam carta anda. Hasil adalah untuk rujukan sahaja.",
-    "groups": [],
+    "description": "Peta interaktif percuma selama-lamanya, atau buka kunci ciri AI premium dengan pilihan harga fleksibel",
+    "disclaimer": "⚠️ **Penting**: AI hanya menganalisis bandar pada garisan planet anda. Ia tidak akan spekulasi tentang bandar yang tiada dalam carta anda. Keputusan adalah untuk rujukan sahaja.",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "Sekali bayar",
+        "description": "Putuskan sekarang — kredit tidak pernah luput"
+      },
+      {
+        "name": "subscription",
+        "title": "Langganan",
+        "description": "Kemasukan bulanan rendah — cuba AI berbayar sebelum komited"
+      }
+    ],
     "items": [
       {
         "title": "Percubaan Percuma",
-        "description": "Alami dengan cepat ciri utama astrocartografi AI",
+        "description": "Alami ciri teras astrocartografi AI dengan cepat",
+        "group": "one-time",
         "features_title": "Termasuk",
         "features": [
           "10 kredit (1 soalan AI)",
           "Peta astrocartografi interaktif",
-          "Penjelasan garis planet asas",
-          "Hasilkan peta tanpa had",
+          "Penjelasan asas garisan planet",
+          "Jana peta tanpa had",
           "Akses segera"
         ],
         "interval": "one-time",
@@ -386,26 +397,28 @@
         "original_price": "",
         "unit": "",
         "is_featured": false,
-        "tip": "100% percuma selama-lamanya, alami ciri utama",
+        "tip": "100% percuma selama-lamanya, alami ciri teras",
         "button": {
           "title": "Mula Percubaan Percuma",
           "url": "/#generator",
           "icon": "RiMapLine"
         },
         "product_id": "free",
-        "product_name": "Percubaan Percuma Astrocartografi",
+        "product_name": "Percubaan Astrocartografi Percuma",
         "credits": 10,
         "valid_months": 0
       },
       {
         "title": "Pelan Standard",
-        "description": "Sempurna untuk pengguna yang membuat keputusan penempatan semula yang serius",
+        "description": "Sesuai untuk pengguna yang membuat keputusan relokasi serius",
+        "group": "one-time",
         "label": "Paling Popular",
         "features_title": "Ciri Premium",
         "features": [
           "1000 kredit (100 soalan AI)",
-          "Analisis carta penempatan semula",
-          "Akses penjelajah negara",
+          "Analisis carta relokasi",
+          "Akses peneroka negara",
+          "Eksport sembang AI sebagai TXT & muat turun peta (akses seumur hidup; kredit laman pada imej)",
           "Pengalaman tanpa iklan",
           "Sah selama-lamanya, tiada had masa",
           "Pembayaran sekali, tiada pembaharuan automatik"
@@ -418,7 +431,9 @@
         "original_price": "",
         "unit": "",
         "is_featured": true,
-        "tip": "Hanya $0.099 setiap soalan, cukup untuk penyelidikan mendalam 2-3 bandar",
+        "tip": "100 soalan, selama-lamanya — nilai lebih baik daripada 2 bulan Plus",
+        "switch_group": "subscription",
+        "switch_group_label": "Dari $6.9/bulan →",
         "button": {
           "title": "Beli Sekarang",
           "url": "/#pricing",
@@ -431,13 +446,14 @@
       },
       {
         "title": "Pelan Profesional",
-        "description": "3000 kredit (300 soalan) | Sesuai untuk penyelidikan mendalam pelbagai bandar dan pengguna profesional",
+        "description": "Ideal untuk penyelidikan mendalam pelbagai bandar dan pengguna profesional",
+        "group": "one-time",
         "label": "Nilai Terbaik",
-        "features_title": "Semua ciri Standard, tambah",
+        "features_title": "Semua ciri Standard, tambahan",
         "features": [
           "3000 kredit (300 soalan AI)",
+          "Sejarah sembang kekal — lihat, semak & eksport dalam akaun (tidak termasuk langganan)",
           "Semua ciri Pelan Standard",
-          "Eksport sejarah sembang AI (laporan penuh PDF)",
           "Tindak balas AI keutamaan (2x lebih cepat)",
           "Analisis garis planet lanjutan (Chiron, Lilith, dll.)",
           "Sokongan emel (balasan dalam 48 jam)",
@@ -452,7 +468,7 @@
         "original_price": "$24.9",
         "unit": "",
         "is_featured": false,
-        "tip": "Hanya $0.063 setiap soalan, 36% lebih murah daripada Standard",
+        "tip": "Sejarah sembang kekal eksklusif — hanya $0.063 setiap soalan",
         "button": {
           "title": "Beli Sekarang",
           "url": "/#pricing",
@@ -462,6 +478,68 @@
         "product_name": "Pelan Profesional - Sah Selama-lamanya",
         "credits": 3000,
         "valid_months": 0
+      },
+      {
+        "title": "Plus Bulanan",
+        "description": "Sesuai untuk: mencuba AI berbayar bulan ini — belum bersedia untuk pelan sekali bayar.",
+        "group": "subscription",
+        "label": "Fleksibel",
+        "features_title": "Termasuk",
+        "features": [
+          "500 kredit (50 soalan AI) sebulan",
+          "Peta astrocartografi tanpa had",
+          "Muat turun peta PNG & eksport sembang TXT",
+          "Pembaharuan bulanan — batal bila-bila masa"
+        ],
+        "interval": "month",
+        "amount": 690,
+        "cn_amount": 4900,
+        "currency": "USD",
+        "price": "$6.9",
+        "original_price": "",
+        "unit": "/bulan",
+        "is_featured": true,
+        "tip": "Bermula $6.9 — tanpa $9.9 di muka · Lebih ciri langganan akan datang",
+        "button": {
+          "title": "Langgan",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-monthly",
+        "product_name": "Langganan Plus - Bulanan",
+        "credits": 500,
+        "valid_months": 1
+      },
+      {
+        "title": "Plus Tahunan",
+        "description": "Sesuai untuk: pengguna komited yang akan melanggan sepenuhnya setahun.",
+        "group": "subscription",
+        "label": "Jimat ~29%",
+        "features_title": "Termasuk",
+        "features": [
+          "500 kredit (50 soalan AI) sebulan",
+          "Peta astrocartografi tanpa had",
+          "Muat turun peta PNG & eksport sembang TXT",
+          "Pembaharuan tahunan — batal bila-bila masa"
+        ],
+        "interval": "year",
+        "amount": 5900,
+        "cn_amount": 41900,
+        "currency": "USD",
+        "price": "$59",
+        "original_price": "$82.8",
+        "unit": "/tahun",
+        "is_featured": false,
+        "tip": "Kira-kira $4.9/bulan — jimat ~29% vs bulanan",
+        "button": {
+          "title": "Langgan Tahunan",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-yearly",
+        "product_name": "Langganan Plus - Tahunan",
+        "credits": 500,
+        "valid_months": 12
       }
     ]
   },
@@ -511,9 +589,7 @@
     "social": {
       "items": []
     },
-    "badges": [
-    
-    ],
+    "badges": [],
     "agreement": {
       "items": [
         {

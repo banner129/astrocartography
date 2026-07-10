@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Pricing from "@/components/blocks/pricing";
 import { getPricingPage } from "@/services/page";
 import { getCanonicalUrl } from "@/lib/utils";
+import { applySubscriptionPricingFilter } from "@/services/subscription";
 
 export async function generateMetadata({
   params,
@@ -45,6 +46,10 @@ export default async function PricingPage({
 }) {
   const { locale } = await params;
   const page = await getPricingPage(locale);
+
+  if (page.pricing) {
+    page.pricing = applySubscriptionPricingFilter(page.pricing) ?? page.pricing;
+  }
 
   return <>{page.pricing && <Pricing pricing={page.pricing} />}</>;
 }

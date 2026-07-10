@@ -1,5 +1,9 @@
 import { getOrdersByUserUuid, OrderStatus } from "@/models/order";
 import type { UserEntitlements } from "@/types/user";
+import {
+  getActivePlusSubscription,
+  isPlusProductId,
+} from "@/services/subscription";
 
 /** Paid SKUs that unlock chart download and current-session chat export (not full history). */
 export const PAID_TIER_PRODUCT_IDS = new Set([
@@ -20,13 +24,14 @@ function orderGrantsProfessional(productId: string | null): boolean {
 /**
  * Entitlements from paid orders (product_id), not from remaining credits.
  * Use this for gating exports, downloads, and history — do not use left_credits > 0.
+ *
+ * Plus subscription (active): PNG/TXT export — NOT chat history (Professional one-time only).
  */
 export async function getUserEntitlements(
   user_uuid: string
 ): Promise<UserEntitlements> {
   const orders = await getOrdersByUserUuid(user_uuid);
-  const paid =
-    orders?.filter((o) => o.status === OrderStatus.Paid) ?? [];
+  const paid = orders?.filter((o) => o.status === OrderStatus.Paid) ?? [];
 
   let canExportCurrentChat = false;
   let canDownloadChart = false;
@@ -43,6 +48,12 @@ export async function getUserEntitlements(
     }
   }
 
+  const activePlus = await getActivePlusSubscription(user_uuid);
+  if (activePlus) {
+    canExportCurrentChat = true;
+    canDownloadChart = true;
+  }
+
   return {
     canExportCurrentChat,
     canDownloadChart,
@@ -54,3 +65,5 @@ export async function userHasProfessional(user_uuid: string): Promise<boolean> {
   const e = await getUserEntitlements(user_uuid);
   return e.canViewChatHistory;
 }
+
+export { isPlusProductId };

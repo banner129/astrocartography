@@ -64,6 +64,7 @@
   "my_credits": {
     "title": "My Credits",
     "left_tip": "left credits: {left_credits}",
+    "subscription_active": "Plus active ({plan}) · renews {renewal}",
     "no_credits": "No credits records",
     "recharge": "Recharge",
     "table": {

@@ -97,6 +97,14 @@ export function usePayment() {
       return { needAuth: true };
     }
 
+    const isSubscriptionItem =
+      item.interval === "month" || item.interval === "year";
+
+    // Subscriptions always use Creem (PayPal is one-time only here)
+    if (isSubscriptionItem) {
+      return await processPayment(item, cn_pay, "creem");
+    }
+
     // 如果有多个支付方式，显示选择器
     if (hasMultiplePaymentMethods()) {
       setPendingPayment({ item, cn_pay });
@@ -131,6 +139,19 @@ export function usePayment() {
     cn_pay: boolean,
     paymentMethod: PaymentMethod
   ): Promise<{ success?: boolean; message?: string; needAuth?: boolean }> => {
+    // Subscriptions: Creem only (PayPal one-time in this project)
+    const isSubscriptionItem =
+      item.interval === "month" || item.interval === "year";
+
+    if (isSubscriptionItem) {
+      if (paymentMethod !== "creem") {
+        toast.error(
+          "Subscriptions are available via card checkout (Creem) only."
+        );
+        return { success: false, message: "subscription_requires_creem" };
+      }
+    }
+
     try {
       // 构建支付参数
       const params: {
@@ -159,8 +180,10 @@ export function usePayment() {
       // 如果使用 Creem，根据 product_id 从环境变量获取对应的产品 ID
       if (paymentMethod === "creem") {
         const creemProductIdMap: Record<string, string | undefined> = {
-          "standard": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_STANDARD,
-          "professional": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_PROFESSIONAL,
+          standard: process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_STANDARD,
+          professional: process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_PROFESSIONAL,
+          "plus-monthly": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_PLUS_MONTHLY,
+          "plus-yearly": process.env.NEXT_PUBLIC_CREEM_PRODUCT_ID_PLUS_YEARLY,
         };
 
         params.creem_product_id =

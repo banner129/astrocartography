@@ -605,11 +605,23 @@
     "title": "Escolha Seu Plano de Astrocartografia",
     "description": "Mapas interativos gratuitos para sempre, ou desbloqueie recursos premium de IA com opções de preços flexíveis",
     "disclaimer": "⚠️ **Importante**: A IA apenas analisa cidades em suas linhas planetárias. Não especulará sobre cidades que não estão em seu mapa. Os resultados são apenas para referência.",
-    "groups": [],
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "Pagamento único",
+        "description": "Decida agora — créditos nunca expiram"
+      },
+      {
+        "name": "subscription",
+        "title": "Assinatura",
+        "description": "Entrada baixa mensal — experimente a IA paga antes de se comprometer"
+      }
+    ],
     "items": [
       {
         "title": "Teste Gratuito",
         "description": "Experimente rapidamente os principais recursos de astrocartografia com IA",
+        "group": "one-time",
         "features_title": "Inclui",
         "features": [
           "10 créditos (1 pergunta de IA)",
@@ -640,12 +652,14 @@
       {
         "title": "Plano Padrão",
         "description": "Perfeito para usuários que tomam decisões sérias de relocação",
+        "group": "one-time",
         "label": "Mais Popular",
         "features_title": "Recursos Premium",
         "features": [
           "1000 créditos (100 perguntas de IA)",
           "Análise de gráfico de relocação",
           "Acesso ao explorador de países",
+          "Exportar chat de IA em TXT e baixar mapas (acesso vitalício; crédito do site nas imagens)",
           "Experiência sem anúncios",
           "Válido para sempre, sem limite de tempo",
           "Pagamento único, sem renovação automática"
@@ -658,7 +672,9 @@
         "original_price": "",
         "unit": "",
         "is_featured": true,
-        "tip": "Apenas $0.099 por pergunta, suficiente para pesquisar profundamente 2-3 cidades",
+        "tip": "100 perguntas, para sempre — melhor valor que 2 meses de Plus",
+        "switch_group": "subscription",
+        "switch_group_label": "A partir de $6,9/mês →",
         "button": {
           "title": "Comprar Agora",
           "url": "/#pricing",
@@ -671,13 +687,14 @@
       },
       {
         "title": "Plano Profissional",
-        "description": "3000 créditos (300 perguntas) | Ideal para pesquisa profunda em múltiplas cidades e usuários profissionais",
+        "description": "Ideal para pesquisa profunda em múltiplas cidades e usuários profissionais",
+        "group": "one-time",
         "label": "Melhor Valor",
         "features_title": "Todos os recursos Padrão, mais",
         "features": [
           "3000 créditos (300 perguntas de IA)",
+          "Histórico de chat permanente — visualizar, revisar e exportar na sua conta (não incluído na assinatura)",
           "Todos os recursos do Plano Padrão",
-          "Exportar histórico de chat de IA (arquivo TXT)",
           "Resposta prioritária de IA (2x mais rápido)",
           "Análise avançada de linhas planetárias (Chiron, Lilith, etc.)",
           "Suporte por e-mail (resposta em 48 horas)",
@@ -692,7 +709,7 @@
         "original_price": "$24.9",
         "unit": "",
         "is_featured": false,
-        "tip": "Apenas $0.063 por pergunta, 36% mais barato que o Padrão",
+        "tip": "Histórico de chat permanente exclusivo — apenas $0,063 por pergunta",
         "button": {
           "title": "Comprar Agora",
           "url": "/#pricing",
@@ -702,6 +719,68 @@
         "product_name": "Plano Profissional - Válido para Sempre",
         "credits": 3000,
         "valid_months": 0
+      },
+      {
+        "title": "Plus Mensal",
+        "description": "Ideal para: experimentar a IA paga este mês — ainda não pronto para um plano único.",
+        "group": "subscription",
+        "label": "Flexível",
+        "features_title": "Inclui",
+        "features": [
+          "500 créditos (50 perguntas de IA) por mês",
+          "Mapas de astrocartografia ilimitados",
+          "Download de mapas PNG e exportação de chat TXT",
+          "Renovação mensal — cancele a qualquer momento"
+        ],
+        "interval": "month",
+        "amount": 690,
+        "cn_amount": 4900,
+        "currency": "USD",
+        "price": "$6.9",
+        "original_price": "",
+        "unit": "/mês",
+        "is_featured": true,
+        "tip": "Comece com $6,9 — sem $9,9 adiantado · Mais recursos de assinatura em breve",
+        "button": {
+          "title": "Assinar",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-monthly",
+        "product_name": "Assinatura Plus - Mensal",
+        "credits": 500,
+        "valid_months": 1
+      },
+      {
+        "title": "Plus Anual",
+        "description": "Ideal para: usuários comprometidos que sabem que assinarão por um ano completo.",
+        "group": "subscription",
+        "label": "Economize ~29%",
+        "features_title": "Inclui",
+        "features": [
+          "500 créditos (50 perguntas de IA) por mês",
+          "Mapas de astrocartografia ilimitados",
+          "Download de mapas PNG e exportação de chat TXT",
+          "Renovação anual — cancele a qualquer momento"
+        ],
+        "interval": "year",
+        "amount": 5900,
+        "cn_amount": 41900,
+        "currency": "USD",
+        "price": "$59",
+        "original_price": "$82.8",
+        "unit": "/ano",
+        "is_featured": false,
+        "tip": "Cerca de $4,9/mês — economize ~29% vs mensal",
+        "button": {
+          "title": "Assinar Anual",
+          "url": "/#pricing",
+          "icon": "RiRefreshLine"
+        },
+        "product_id": "plus-yearly",
+        "product_name": "Assinatura Plus - Anual",
+        "credits": 500,
+        "valid_months": 12
       }
     ]
   },
