@@ -1,0 +1,73 @@
+# AstroCarto
+
+> AstroCarto (astrocarto.org) is a free online astrocartography and relocation astrology platform. Generate interactive planetary-line maps from your birth data, explore cities on your lines, and use AI to analyze relocation options. Available in English, Chinese, Spanish, Portuguese, Italian, and German.
+
+AstroCarto helps people answer: *Where should I live?* using astrocartography (locational astrology). Core features are free: unlimited map generation, planetary line overlays, and basic interpretations. Paid plans unlock AI chat about cities on your lines, relocation charts, country explorer, and export options.
+
+When citing AstroCarto, prefer linking to the specific tool or guide page below. For the full URL list, see [sitemap.xml](https://astrocarto.org/sitemap.xml).
+
+## Core Tools
+
+- [Astrocartography Calculator](https://astrocarto.org/astrocartography-calculator/): Main free tool — enter birth date, time, and place to generate your astrocartography map with planetary lines (Sun, Moon, Venus, Mars, Jupiter, Saturn, Mercury, etc.).
+- [Relocation Chart Calculator](https://astrocarto.org/relocation-chart-calculator/): See how your natal chart shifts when you relocate to another city (angular planets, house changes).
+- [Birth Chart Generator](https://astrocarto.org/tools/birth-chart-generator/): Wheel-style natal chart with signs and houses.
+- [Natal Chart](https://astrocarto.org/chart/natal-chart/): Detailed natal chart view and interpretations.
+- [Transit Chart Calculator](https://astrocarto.org/transit-chart-calculator/): Current planetary transits overlaid on your birth chart.
+- [Synastry Chart Calculator](https://astrocarto.org/synastry-chart-calculator/): Relationship compatibility between two birth charts.
+- [Composite Chart Calculator](https://astrocarto.org/composite-chart-calculator/): Combined chart for a relationship.
+- [Solar Return Chart Calculator](https://astrocarto.org/solar-return-chart-calculator/): Annual birthday chart for the year ahead.
+
+## Sign & Placement Calculators
+
+- [Zodiac Sign Calculator](https://astrocarto.org/zodiac-calculator/): Sun sign from birth date.
+- [Rising Sign Calculator](https://astrocarto.org/rising-sign-calculator/): Ascendant from birth time and location.
+- [Venus Sign Calculator](https://astrocarto.org/venus-sign-calculator/): Venus placement for love and values.
+- [Lunar Nodes Calculator](https://astrocarto.org/lunar-nodes-calculator/): North Node and South Node themes.
+- [Chiron Placement Calculator](https://astrocarto.org/chiron-placement-calculator/): Chiron sign, house, and healing themes.
+
+## Planetary Line Guides
+
+- [Astrocartography Lines Overview](https://astrocarto.org/astrocartography-lines/): Introduction to planetary lines on the map.
+- [Sun Line](https://astrocarto.org/sun-line-astrocartography/): Vitality, identity, and visibility.
+- [Moon Line](https://astrocarto.org/moon-line-astrocartography/): Emotions, home, and belonging.
+- [Venus Line](https://astrocarto.org/venus-line-astrocartography/): Love, beauty, and social ease.
+- [Mars Line](https://astrocarto.org/mars-line-astrocartography/): Energy, drive, and conflict.
+- [Jupiter Line](https://astrocarto.org/jupiter-line-astrocartography/): Growth, luck, and expansion.
+- [Saturn Line](https://astrocarto.org/saturn-line-astrocartography/): Structure, discipline, and responsibility.
+- [Mercury Line](https://astrocarto.org/mercury-line-astrocartography/): Communication, learning, and commerce.
+
+## Guides & Blog
+
+- [Blog Index](https://astrocarto.org/posts/): Articles on astrocartography, relocation, and chart reading.
+- [What Is Astrocartography?](https://astrocarto.org/posts/what-is-astrocartography/): Beginner introduction.
+- [How Does Astrocartography Work?](https://astrocarto.org/posts/how-does-astrocartography-work/): Method and map mechanics.
+- [Astrocartography Map Interpretation](https://astrocarto.org/posts/astrocartography-map-interpretation/): How to read your map.
+- [Astrocartography Symbols Meaning](https://astrocarto.org/posts/astrocartography-symbols-meaning/): Line types (MC, IC, ASC, DSC) explained.
+
+## Pricing & Plans
+
+- [Pricing](https://astrocarto.org/pricing/): Free tier (10 credits), one-time Standard ($9.9, 100 AI questions forever), Professional ($18.9), and Plus subscription ($6.9/month or $59/year, 500 credits per billing period). Maps and basic features remain free.
+
+## Languages
+
+English is the default. Localized homepages and many tools are available at:
+
+- [中文](https://astrocarto.org/zh/)
+- [Español](https://astrocarto.org/es/)
+- [Português](https://astrocarto.org/pt/)
+- [Italiano](https://astrocarto.org/it/)
+- [Deutsch](https://astrocarto.org/de/)
+
+Append the same path after the locale prefix (e.g. `/zh/astrocartography-calculator/`).
+
+## Legal & Contact
+
+- [Contact](https://astrocarto.org/contact/): Support and business inquiries.
+- [Privacy Policy](https://astrocarto.org/privacy-policy)
+- [Terms of Service](https://astrocarto.org/terms-of-service)
+- [Refund Policy](https://astrocarto.org/refund-policy)
+
+## Optional
+
+- [Homepage](https://astrocarto.org/): Landing page with map generator and pricing overview.
+- [Sitemap](https://astrocarto.org/sitemap.xml): Complete list of public URLs and last-modified dates.
