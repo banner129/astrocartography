@@ -3,7 +3,7 @@
 import { Check, Loader } from "lucide-react";
 import { PricingItem, Pricing as PricingType } from "@/types/blocks/pricing";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -172,15 +172,23 @@ export default function Pricing({
     setShowPaymentSelector,
   } = usePayment();
 
+  const tabsId = useId();
+  const groupNamesKey =
+    pricing.groups?.map((g) => g.name).filter(Boolean).join("|") ?? "";
+
   const [group, setGroup] = useState(
     pricing.groups?.[0]?.name ?? pricing.items?.[0]?.group ?? ""
   );
 
+  // Only resync when available tabs change and current selection is invalid.
+  // Do NOT reset to groups[0] on every new array reference — that blocks
+  // switching to "subscription".
   useEffect(() => {
-    if (pricing.groups?.length) {
-      setGroup(pricing.groups[0].name ?? "");
+    const names = groupNamesKey.split("|").filter(Boolean);
+    if (names.length && !names.includes(group)) {
+      setGroup(names[0] ?? "");
     }
-  }, [pricing.groups]);
+  }, [groupNamesKey, group]);
 
   const activeGroup = pricing.groups?.find((g) => g.name === group);
 
@@ -281,23 +289,33 @@ export default function Pricing({
                 value={group}
                 className="h-full grid grid-cols-2"
                 onValueChange={(value) => {
-                  setGroup(value);
+                  if (value) setGroup(value);
                 }}
               >
-                {pricing.groups.map((item, i) => {
+                {pricing.groups.map((item) => {
+                  const name = item.name || "";
+                  const radioId = `${tabsId}-${name}`;
+                  const selected = group === name;
                   return (
                     <div
-                      key={i}
-                      className='h-full rounded-md transition-all has-[button[data-state="checked"]]:bg-white'
+                      key={name || radioId}
+                      className={`h-full rounded-md transition-all ${
+                        selected ? "bg-white" : ""
+                      }`}
                     >
                       <RadioGroupItem
-                        value={item.name || ""}
-                        id={item.name}
+                        value={name}
+                        id={radioId}
                         className="peer sr-only"
                       />
                       <Label
-                        htmlFor={item.name}
-                        className="flex h-full cursor-pointer items-center justify-center px-4 md:px-7 font-semibold text-muted-foreground peer-data-[state=checked]:text-primary text-sm md:text-base"
+                        htmlFor={radioId}
+                        onClick={() => {
+                          if (name) setGroup(name);
+                        }}
+                        className={`flex h-full cursor-pointer items-center justify-center px-4 md:px-7 font-semibold text-sm md:text-base ${
+                          selected ? "text-primary" : "text-muted-foreground"
+                        }`}
                       >
                         {item.title}
                         {item.label && (
