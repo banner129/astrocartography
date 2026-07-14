@@ -1,34 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
-import * as Astronomy from "astronomy-engine";
-export const maxDuration = 30;
+import {
+  calculateAscendantLongitude,
+  degreeInSign,
+  localBirthTimeToUtc,
+  SIGNS,
+  signIndexFromLongitude,
+} from "@/lib/natal-chart-core";
 
-const SIGNS = [
-  "Aries",
-  "Taurus",
-  "Gemini",
-  "Cancer",
-  "Leo",
-  "Virgo",
-  "Libra",
-  "Scorpio",
-  "Sagittarius",
-  "Capricorn",
-  "Aquarius",
-  "Pisces",
-] as const;
+export const maxDuration = 30;
 
 /** Modern ruler: sign index (0–11) → planet name */
 const RISING_SIGN_RULERS: Record<number, string> = {
-  0: "Mars",    // Aries
-  1: "Venus",   // Taurus
+  0: "Mars", // Aries
+  1: "Venus", // Taurus
   2: "Mercury", // Gemini
-  3: "Moon",    // Cancer
-  4: "Sun",     // Leo
+  3: "Moon", // Cancer
+  4: "Sun", // Leo
   5: "Mercury", // Virgo
-  6: "Venus",   // Libra
-  7: "Pluto",   // Scorpio
+  6: "Venus", // Libra
+  7: "Pluto", // Scorpio
   8: "Jupiter", // Sagittarius
-  9: "Saturn",  // Capricorn
+  9: "Saturn", // Capricorn
   10: "Uranus", // Aquarius
   11: "Neptune", // Pisces
 };
@@ -54,73 +46,6 @@ interface RisingSignRequest {
   longitude?: number;
 }
 
-function normalizeDegrees(deg: number): number {
-  let x = deg % 360;
-  if (x < 0) x += 360;
-  return x;
-}
-
-function degToRad(deg: number): number {
-  return (deg * Math.PI) / 180;
-}
-
-function radToDeg(rad: number): number {
-  return (rad * 180) / Math.PI;
-}
-
-function parseTimezoneOffset(timezone: string): number {
-  const timezoneMap: Record<string, number> = {
-    UTC: 0,
-    EST: -5,
-    PST: -8,
-    CST: -6,
-    MST: -7,
-    CET: 1,
-    COT: -5,
-    PET: -5,
-    CLT: -4,
-    ART: -3,
-    BRT: -3,
-    JST: 9,
-    AEST: 10,
-    IST: 5.5,
-  };
-  for (const [tz, offset] of Object.entries(timezoneMap)) {
-    if (timezone.toUpperCase().includes(tz)) {
-      if (tz === "CST" && (timezone.includes("Beijing") || timezone.includes("China"))) return 8;
-      return offset;
-    }
-  }
-  return 0;
-}
-
-function getLocalSiderealTime(dateUtc: Date, longitude: number): number {
-  const time = Astronomy.MakeTime(dateUtc);
-  const gmstHours = Astronomy.SiderealTime(time);
-  const lstDeg = (gmstHours * 15 + longitude) % 360;
-  return lstDeg < 0 ? lstDeg + 360 : lstDeg;
-}
-
-function calculateAscendantLongitude(dateUtc: Date, latitude: number, longitude: number): number {
-  const epsDeg = 23.4392911;
-  const eps = degToRad(epsDeg);
-  const phi = degToRad(latitude);
-  const theta = degToRad(getLocalSiderealTime(dateUtc, longitude));
-  const asc = Math.atan2(
-    Math.sin(theta),
-    Math.cos(theta) * Math.cos(eps) - Math.tan(phi) * Math.sin(eps)
-  );
-  return normalizeDegrees(radToDeg(asc));
-}
-
-function signIndexFromLongitude(lon: number): number {
-  return Math.floor(normalizeDegrees(lon) / 30);
-}
-
-function degreeInSign(lon: number): number {
-  return normalizeDegrees(lon) % 30;
-}
-
 const CITY_COORDINATES: Record<string, { latitude: number; longitude: number }> = {
   "new york": { latitude: 40.7128, longitude: -74.006 },
   "new york, usa": { latitude: 40.7128, longitude: -74.006 },
@@ -138,6 +63,8 @@ const CITY_COORDINATES: Record<string, { latitude: number; longitude: number }> 
   dubai: { latitude: 25.2048, longitude: 55.2708 },
   beijing: { latitude: 39.9042, longitude: 116.4074 },
   shanghai: { latitude: 31.2304, longitude: 121.4737 },
+  lima: { latitude: -12.0464, longitude: -77.0428 },
+  "lima, peru": { latitude: -12.0464, longitude: -77.0428 },
 };
 
 async function geocodeLocation(location: string): Promise<{ latitude: number; longitude: number } | null> {
@@ -188,13 +115,7 @@ export async function POST(request: NextRequest) {
       longitude = coords.longitude;
     }
 
-    const timezoneOffset = parseTimezoneOffset(timezone);
-    const [hours, minutes] = birthTime.split(":").map(Number);
-    const localTime = new Date(
-      `${birthDate}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00`
-    );
-    const utcTime = new Date(localTime.getTime() - timezoneOffset * 60 * 60 * 1000);
-
+    const utcTime = localBirthTimeToUtc(birthDate, birthTime, timezone);
     const ascLon = calculateAscendantLongitude(utcTime, latitude, longitude);
     const signIndex = signIndexFromLongitude(ascLon);
     const sign = SIGNS[signIndex];

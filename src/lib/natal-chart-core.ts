@@ -100,12 +100,20 @@ export function getLocalSiderealTime(dateUtc: Date, longitude: number): number {
   return lstDeg < 0 ? lstDeg + 360 : lstDeg;
 }
 
+/**
+ * Ecliptic longitude of the Ascendant (ASC), not MC.
+ * Formula: atan2(cos θ, -(sin θ · cos ε + tan φ · sin ε))
+ * where θ = local sidereal time, φ = geographic latitude, ε = obliquity.
+ */
 export function calculateAscendantLongitude(dateUtc: Date, latitude: number, longitude: number): number {
   const epsDeg = 23.4392911;
   const eps = degToRad(epsDeg);
   const phi = degToRad(latitude);
   const theta = degToRad(getLocalSiderealTime(dateUtc, longitude));
-  const asc = Math.atan2(Math.sin(theta), Math.cos(theta) * Math.cos(eps) - Math.tan(phi) * Math.sin(eps));
+  const asc = Math.atan2(
+    Math.cos(theta),
+    -(Math.sin(theta) * Math.cos(eps) + Math.tan(phi) * Math.sin(eps))
+  );
   return normalizeDegrees(radToDeg(asc));
 }
 
@@ -123,11 +131,12 @@ export function localBirthTimeToUtc(
   timezone: string
 ): Date {
   const timezoneOffset = parseTimezoneOffset(timezone);
+  const [year, month, day] = birthDate.split(/[-/]/).map(Number);
   const [hours, minutes] = birthTime.split(":").map(Number);
-  const localTime = new Date(
-    `${birthDate}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00`
-  );
-  return new Date(localTime.getTime() - timezoneOffset * 60 * 60 * 1000);
+  // Build from UTC components so host timezone cannot skew the civil clock time.
+  // Then subtract the zone offset: local 18:42 PET (-5) → 23:42 UTC.
+  const asUtcMs = Date.UTC(year, month - 1, day, hours, minutes, 0);
+  return new Date(asUtcMs - timezoneOffset * 60 * 60 * 1000);
 }
 
 export type PlanetRow = {
