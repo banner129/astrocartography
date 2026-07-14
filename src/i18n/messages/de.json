@@ -361,6 +361,16 @@
         "new": "Neu"
       }
     },
+    "inlineResult": {
+      "eyebrow": "ERGEBNIS AUF DER SEITE",
+      "title": "Ihre Astrokartografie-Karte",
+      "openFullMap": "Vollbildkarte öffnen",
+      "mobileFullMapHint": "Vollständige Karte mit mehr Platz öffnen →",
+      "interpretTitle": "Diese Karte deuten",
+      "interpretDescription": "Beginnen Sie mit der erstellten Karte. Prüfen Sie eine Stadt, vergleichen Sie Orte und fragen Sie dann die KI mit Kartennachweisen.",
+      "nextStepTitle": "Was als Nächstes?",
+      "nextStepDescription": "Nutzen Sie KI fragen für eine Deutung, Stadt prüfen für einen bestimmten Ort oder Städte vergleichen, wenn Sie zwischen Orten wählen."
+    },
     "result": {
       "title": "Schauen Sie sich meine Astrokartografie-Karte an!",
       "description": "Ich habe gerade meine persönliche Astrokartografie-Karte erstellt! Entdecken Sie Ihre kosmischen Verbindungen weltweit.",

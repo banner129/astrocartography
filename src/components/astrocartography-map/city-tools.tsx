@@ -360,9 +360,7 @@ const CityTools = forwardRef<CityToolsHandle, CityToolsProps>(function CityTools
     useState<ComparisonGoal>("overall");
   const [comparisonReady, setComparisonReady] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [showMobileAIShortcut, setShowMobileAIShortcut] = useState(false);
   const comparisonResultsRef = useRef<HTMLDivElement>(null);
-  const fullAIButtonRef = useRef<HTMLButtonElement>(null);
   const comparisonResults = useMemo(
     () =>
       [...compareCities]
@@ -386,24 +384,6 @@ const CityTools = forwardRef<CityToolsHandle, CityToolsProps>(function CityTools
       document.body.style.overflow = previousOverflow;
     };
   }, [mode]);
-
-  useEffect(() => {
-    if (mode !== "compare" || !comparisonReady) {
-      setShowMobileAIShortcut(false);
-      return;
-    }
-
-    setShowMobileAIShortcut(true);
-    const target = fullAIButtonRef.current;
-    if (!target || typeof IntersectionObserver === "undefined") return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setShowMobileAIShortcut(!entry.isIntersecting),
-      { threshold: 0.6 }
-    );
-    observer.observe(target);
-    return () => observer.disconnect();
-  }, [comparisonReady, mode]);
 
   useImperativeHandle(ref, () => ({
     openCheckCity() {
@@ -937,7 +917,6 @@ const CityTools = forwardRef<CityToolsHandle, CityToolsProps>(function CityTools
                           ))}
                       </div>
                       <button
-                        ref={fullAIButtonRef}
                         type="button"
                         onClick={() => compareWithAI()}
                         className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 px-4 py-3 text-sm font-bold text-white hover:opacity-90"
@@ -954,20 +933,6 @@ const CityTools = forwardRef<CityToolsHandle, CityToolsProps>(function CityTools
               </div>
             )}
 
-            {mode === "compare" &&
-              comparisonReady &&
-              showMobileAIShortcut && (
-                <div className="fixed bottom-16 left-4 right-4 z-[1820] md:hidden">
-                  <button
-                    type="button"
-                    onClick={() => compareWithAI()}
-                    className="flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 px-4 py-3.5 text-sm font-bold text-white shadow-2xl shadow-purple-950/60"
-                  >
-                    <Sparkles className="size-4" />
-                    {t("compareWithAI")}
-                  </button>
-                </div>
-              )}
           </div>
         </div>,
     document.body

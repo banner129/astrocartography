@@ -408,6 +408,16 @@
         "new": "Novità"
       }
     },
+    "inlineResult": {
+      "eyebrow": "RISULTATO NELLA PAGINA",
+      "title": "La tua mappa di astrocartografia",
+      "openFullMap": "Apri mappa completa",
+      "mobileFullMapHint": "Apri la mappa completa per più spazio →",
+      "interpretTitle": "Interpreta questa mappa",
+      "interpretDescription": "Inizia dalla mappa generata. Controlla una città, confronta luoghi e poi chiedi all'AI usando le evidenze della mappa.",
+      "nextStepTitle": "Cosa fare dopo",
+      "nextStepDescription": "Usa Chiedi all'AI per l'interpretazione, Controlla città per un luogo specifico o Confronta città quando scegli tra località."
+    },
     "result": {
       "title": "Guarda la Mia Carta Astrocartografia!",
       "description": "Ho appena generato la mia mappa astrocartografia personalizzata! Scopri le tue connessioni cosmiche in tutto il mondo.",

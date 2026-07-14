@@ -2,23 +2,71 @@
 import { useTranslations } from 'next-intl';
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, MapPin, Globe, Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
-import CompactSocialShare from '@/components/blocks/social-share/compact';
 import { LocationAutocomplete } from '@/components/ui/location-autocomplete';
 import { DatePicker } from '@/components/ui/date-picker';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useAppContext } from '@/contexts/app';
-import PricingModal from '@/components/pricing/pricing-modal';
-import { Pricing as PricingType } from '@/types/blocks/pricing';
-import type { UserEntitlements } from '@/types/user';
-import { paymentEvents } from '@/lib/analytics';
-import { applyBrandingFooterToPngDataUrl } from '@/lib/export-branding';
+import { homeInlineMapEvents } from '@/lib/analytics';
+
+const InlineMapResult = dynamic(
+  () => import('@/components/astrocartography-map/inline-map-result'),
+  { ssr: false }
+);
+
+type PlanetLine = {
+  planet: string;
+  type: 'AS' | 'DS' | 'MC' | 'IC';
+  coordinates: [number, number][];
+  color: string;
+};
+
+type InlineBirthData = {
+  date: string;
+  time: string;
+  location: string;
+  latitude: number;
+  longitude: number;
+};
+
+type InlineChartData = {
+  birthDate: string;
+  birthTime: string;
+  birthLocation: string;
+  timezone: string;
+};
+
+function parseCoordinateInput(value: string) {
+  const match = value
+    .trim()
+    .match(/^(-?\d+(?:\.\d+)?)\s*[,，]\s*(-?\d+(?:\.\d+)?)$/);
+
+  if (!match) {
+    return null;
+  }
+
+  const latitude = Number(match[1]);
+  const longitude = Number(match[2]);
+
+  if (
+    !Number.isFinite(latitude) ||
+    !Number.isFinite(longitude) ||
+    latitude < -90 ||
+    latitude > 90 ||
+    longitude < -180 ||
+    longitude > 180
+  ) {
+    return null;
+  }
+
+  return { latitude, longitude };
+}
 
 export default function MiniaturaAIGenerator() {
   const t = useTranslations('astrocartographyGenerator');
@@ -40,21 +88,19 @@ export default function MiniaturaAIGenerator() {
   
   // 生成状态
   const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedChart, setGeneratedChart] = useState<string | null>(null);
-  const [generatedChartData, setGeneratedChartData] = useState<string | null>(null);
-  const [progress, setProgress] = useState(0);
-  const [showProgress, setShowProgress] = useState(false);
-  const [showShareOptions, setShowShareOptions] = useState(false);
+  const [inlineChartData, setInlineChartData] =
+    useState<InlineChartData | null>(null);
+  const [inlineBirthData, setInlineBirthData] =
+    useState<InlineBirthData | null>(null);
+  const [inlinePlanetLines, setInlinePlanetLines] = useState<PlanetLine[]>([]);
+  const [inlineChartPath, setInlineChartPath] = useState<string | null>(null);
   const [usageInfo, setUsageInfo] = useState<{
     canUse: boolean;
     remaining: number;
     isLoggedIn: boolean;
   } | null>(null);
-  const [miniEntitlements, setMiniEntitlements] =
-    useState<UserEntitlements | null>(null);
-  const [showPricingModal, setShowPricingModal] = useState(false);
-  const [pricingData, setPricingData] = useState<PricingType | null>(null);
-  const progressTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const inlineResultRef = useRef<HTMLDivElement | null>(null);
+  const shouldScrollToResultRef = useRef(false);
 
   // 检查使用限制
   const checkUsageLimit = useCallback(async () => {
@@ -73,29 +119,6 @@ export default function MiniaturaAIGenerator() {
       }
     } catch (error) {
       console.error('Failed to check usage limit:', error);
-    }
-  }, []);
-
-  // 记录使用
-  const recordUsage = useCallback(async () => {
-    try {
-      const response = await fetch('/api/check-usage-limit', {
-        method: 'POST',
-      });
-      const data = await response.json();
-      
-      if (data.success) {
-        setUsageInfo({
-          canUse: data.canUse,
-          remaining: data.remaining || 0,
-          isLoggedIn: data.isLoggedIn
-        });
-      }
-      
-      return data.success;
-    } catch (error) {
-      console.error('Failed to record usage:', error);
-      return false;
     }
   }, []);
 
@@ -122,115 +145,123 @@ export default function MiniaturaAIGenerator() {
       return;
     }
 
-    // 跳转到 chart 页面，带上用户输入的数据
-    const params = new URLSearchParams({
+    const manualCoordinates = useCoordinates
+      ? parseCoordinateInput(birthLocation)
+      : null;
+    const resolvedCoordinates =
+      manualCoordinates || (!useCoordinates ? selectedLocationCoords : null);
+
+    const requestData = {
+      birthDate,
+      birthTime,
+      birthLocation,
+      timezone,
+      // 如果用户从自动完成列表选择了地点，或手动输入了坐标，使用明确坐标
+      ...(resolvedCoordinates && {
+        latitude: resolvedCoordinates.latitude,
+        longitude: resolvedCoordinates.longitude,
+      }),
+    };
+
+    // 保留原 chart 页面路径，作为 Open full map 与异常兜底
+    const chartParams = new URLSearchParams({
       birthDate,
       birthTime,
       birthLocation,
       timezone,
       useCoordinates: useCoordinates.toString(),
-      // 如果用户从自动完成列表选择了地点，使用保存的坐标
-      ...(selectedLocationCoords && !useCoordinates && {
-        latitude: selectedLocationCoords.latitude.toString(),
-        longitude: selectedLocationCoords.longitude.toString(),
+      ...(resolvedCoordinates && {
+        latitude: resolvedCoordinates.latitude.toString(),
+        longitude: resolvedCoordinates.longitude.toString(),
       })
     });
     
     // 🔥 修复：构建包含语言前缀的路径
     // 根据 localePrefix = "as-needed"，默认语言（en）不需要前缀
     const chartPath = locale === 'en' 
-      ? `/chart?${params.toString()}`
-      : `/${locale}/chart?${params.toString()}`;
+      ? `/chart?${chartParams.toString()}`
+      : `/${locale}/chart?${chartParams.toString()}`;
     
     // 调试日志（仅在开发环境）
     if (process.env.NODE_ENV === 'development') {
-      console.log('🔍 [MiniaturaAIGenerator] 跳转到 chart 页面:', {
+      console.log('🔍 [MiniaturaAIGenerator] 首页内嵌生成地图:', {
         currentLocale: locale,
         chartPath,
-        params: params.toString(),
+        params: chartParams.toString(),
       });
     }
-    
-    // 使用 window.location.href 确保 query 参数正确传递（与 locale/toggle.tsx 保持一致）
-    window.location.href = chartPath;
-  }, [birthDate, birthTime, birthLocation, timezone, useCoordinates, selectedLocationCoords, validateBirthData, locale]);
 
-  const fetchMiniPricing = useCallback(async () => {
+    setIsGenerating(true);
+    setInlineChartPath(chartPath);
+
     try {
-      const response = await fetch(`/api/get-pricing?locale=${locale}`);
-      const data = await response.json();
-      if (data.success && data.pricing) {
-        setPricingData(data.pricing);
+      const response = await fetch('/api/calculate-astrocartography', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || t('messages.errorGeneral.calculationFailed'));
       }
-    } catch (e) {
-      console.error('Failed to fetch pricing:', e);
+
+      setInlineChartData({ birthDate, birthTime, birthLocation, timezone });
+      setInlineBirthData(result.data.birthData);
+      setInlinePlanetLines(result.data.planetLines || []);
+      shouldScrollToResultRef.current = true;
+      homeInlineMapEvents.generated();
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : t('messages.errorGeneral.generationFailed');
+      console.error('Failed to generate inline astrocartography map:', error);
+      homeInlineMapEvents.generationFailed(message);
+      toast.error(t('messages.errorGeneral.generationFailed'));
+      // 兜底：保持原主流程，避免用户卡死在首页
+      window.location.href = chartPath;
+    } finally {
+      setIsGenerating(false);
     }
-  }, [locale]);
+  }, [birthDate, birthTime, birthLocation, timezone, useCoordinates, selectedLocationCoords, validateBirthData, locale, t]);
 
   useEffect(() => {
-    if (!user) {
-      setMiniEntitlements(null);
+    if (
+      !shouldScrollToResultRef.current ||
+      !inlineBirthData ||
+      !inlineChartData ||
+      !inlineChartPath
+    ) {
       return;
     }
-    fetch('/api/get-user-credits', { method: 'POST' })
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.code === 0 && data.data?.entitlements) {
-          setMiniEntitlements(data.data.entitlements);
-        }
-      })
-      .catch(() => {});
-  }, [user]);
 
-  const handleDownload = useCallback(async () => {
-    if (!generatedChartData) return;
-    if (!user) {
-      setShowSignModal(true);
-      return;
-    }
-    if (!miniEntitlements?.canDownloadChart) {
-      toast.error(t('messages.errorGeneral.chartDownloadRequiresPaid'));
-      await fetchMiniPricing();
-      setShowPricingModal(true);
-      paymentEvents.pricingModalOpened('other');
-      return;
-    }
-    try {
-      const dataUrl = await applyBrandingFooterToPngDataUrl(generatedChartData);
-      const link = document.createElement('a');
-      link.href = dataUrl;
-      link.download = `astrocartography-chart-${Date.now()}.png`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      toast.success(t('messages.success.chartDownloaded'));
-    } catch (error) {
-      toast.error(t('messages.errorGeneral.downloadFailed'));
-    }
-  }, [
-    generatedChartData,
-    t,
-    user,
-    miniEntitlements?.canDownloadChart,
-    fetchMiniPricing,
-    setShowSignModal,
-  ]);
+    shouldScrollToResultRef.current = false;
 
-  // 分享回调
-  const handleShare = useCallback((platform: string) => {
-    // 这里可以添加分享统计逻辑
-    console.log(`Shared to ${platform}`);
-    
-    // 发送分享事件到分析工具
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'share', {
-        method: platform,
-        content_type: 'image',
-        content_id: 'miniature_generation',
+    const scrollTimer = window.setTimeout(() => {
+      if (!inlineResultRef.current) {
+        return;
+      }
+
+      const headerOffset =
+        window.matchMedia('(max-width: 767px)').matches ? 96 : 120;
+      const targetTop =
+        inlineResultRef.current.getBoundingClientRect().top +
+        window.scrollY -
+        headerOffset;
+
+      window.scrollTo({
+        top: Math.max(targetTop, 0),
+        behavior: 'smooth',
       });
-    }
-  }, []);
-  
+    }, 80);
+
+    return () => window.clearTimeout(scrollTimer);
+  }, [inlineBirthData, inlineChartData, inlineChartPath]);
+
   // 接近视口再检查额度，减少首屏主线程与网络竞争（不影响功能）
   useEffect(() => {
     const el = document.getElementById("generator");
@@ -251,19 +282,10 @@ export default function MiniaturaAIGenerator() {
     return () => io.disconnect();
   }, [checkUsageLimit]);
   
-  // 清理定时器
-  useEffect(() => {
-    return () => {
-      if (progressTimerRef.current) {
-        clearInterval(progressTimerRef.current);
-      }
-    };
-  }, []);
-
   return (
     <section className="relative py-8 bg-transparent" id="generator">
       <div className="container">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-[1200px]">
           {/* 标题 */}
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-2 text-white">
@@ -275,7 +297,7 @@ export default function MiniaturaAIGenerator() {
           </div>
 
           {/* 表单卡片 */}
-          <Card className="shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md relative overflow-visible">
+          <Card className="mx-auto max-w-3xl shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md relative overflow-visible">
             <CardContent className="p-6 md:p-8 relative overflow-visible">
               <div className="space-y-4">
                 {/* 出生日期 */}
@@ -425,121 +447,20 @@ export default function MiniaturaAIGenerator() {
             </CardContent>
           </Card>
 
-          {/* 生成结果展示 */}
-          {(generatedChart || isGenerating) && (
-            <Card className="mt-8 shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md">
-              <CardContent className="p-8">
-                {isGenerating ? (
-                  <div className="flex flex-col items-center justify-center py-16">
-                    {showProgress ? (
-                      <>
-                        {/* 环形进度条 */}
-                        <div className="relative mb-6">
-                          <svg className="size-32 transform -rotate-90" viewBox="0 0 100 100">
-                            {/* 背景圆环 */}
-                            <circle
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              stroke="currentColor"
-                              strokeWidth="8"
-                              fill="none"
-                              className="text-white/20"
-                            />
-                            {/* 进度圆环 */}
-                            <circle
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              stroke="currentColor"
-                              strokeWidth="8"
-                              fill="none"
-                              strokeDasharray={`${2 * Math.PI * 45}`}
-                              strokeDashoffset={`${2 * Math.PI * 45 * (1 - progress / 100)}`}
-                              className="text-purple-400 transition-all duration-1000 ease-in-out"
-                              strokeLinecap="round"
-                            />
-                          </svg>
-                          {/* 进度文字 */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-2xl font-bold text-purple-400">{progress}%</span>
-                          </div>
-                        </div>
-                        <p className="text-lg font-medium mb-2 text-white">{t('messages.success.generating')}</p>
-                        <p className="text-sm text-gray-400">{t('messages.success.almostDone')}</p>
-                      </>
-                    ) : (
-                      <>
-                        <div className="size-16 animate-spin rounded-full border-4 border-purple-400 border-t-transparent mb-4" />
-                        <p className="text-lg font-medium mb-2 text-white">{t('messages.success.processing')}</p>
-                        <p className="text-sm text-gray-400">{t('messages.success.mayTakeMoment')}</p>
-                      </>
-                    )}
-                  </div>
-                ) : generatedChart ? (
-                  <div className="space-y-6">
-                    <div className="rounded-lg overflow-hidden border-2 border-white/20">
-                      <img
-                        src={generatedChart}
-                        alt="Generated Astrocartography Chart"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                    
-                    <div className="flex flex-col sm:flex-row gap-3">
-                      <Button 
-                        variant="outline" 
-                        className="flex-1 h-12 border-white/30 text-white hover:bg-white/10 bg-white/5"
-                        onClick={() => void handleDownload()}
-                      >
-                        <Calendar className="mr-2 size-4" />
-                        {t('form.buttons.download')}
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="flex-1 h-12 border-white/30 text-white hover:bg-white/10 bg-white/5"
-                        onClick={handleGenerate}
-                      >
-                        <Sparkles className="mr-2 size-4" />
-                        {t('form.buttons.generateNew')}
-                      </Button>
-                    </div>
-                    
-                    {/* 分享选项 */}
-                    {showShareOptions && generatedChartData && (
-                      <CompactSocialShare
-                        imageUrl={generatedChart || ''}
-                        imageData={generatedChartData}
-                        mimeType="image/png"
-                        title={t('result.title')}
-                        description={t('result.description')}
-                        hashtags={t.raw('result.hashtags') as string[]}
-                        onShare={handleShare}
-                      />
-                    )}
-                  </div>
-                ) : null}
-              </CardContent>
-            </Card>
+          {inlineBirthData && inlineChartData && inlineChartPath && (
+            <div ref={inlineResultRef}>
+              <InlineMapResult
+                birthData={inlineBirthData}
+                chartData={inlineChartData}
+                planetLines={inlinePlanetLines}
+                chartPath={inlineChartPath}
+                user={user}
+                onRequireLogin={() => setShowSignModal(true)}
+              />
+            </div>
           )}
         </div>
       </div>
-      {pricingData && (
-        <PricingModal
-          open={showPricingModal}
-          onOpenChange={setShowPricingModal}
-          pricing={pricingData}
-          onSuccess={() => {
-            fetch('/api/get-user-credits', { method: 'POST' })
-              .then((r) => r.json())
-              .then((data) => {
-                if (data.code === 0 && data.data?.entitlements) {
-                  setMiniEntitlements(data.data.entitlements);
-                }
-              });
-          }}
-        />
-      )}
     </section>
   );
 }

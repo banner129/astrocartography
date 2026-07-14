@@ -374,6 +374,16 @@
         "new": "New"
       }
     },
+    "inlineResult": {
+      "eyebrow": "INLINE RESULT",
+      "title": "Your Astrocartography Map",
+      "openFullMap": "Open full map",
+      "mobileFullMapHint": "Open full map for more space →",
+      "interpretTitle": "Interpret this map",
+      "interpretDescription": "Start with the generated map. Check one city, compare places, then ask AI using the map evidence.",
+      "nextStepTitle": "What to do next",
+      "nextStepDescription": "Use Ask AI for interpretation, Check City for a specific place, or Compare Cities when choosing between locations."
+    },
     "result": {
       "title": "Check out my Astrocartography Chart!",
       "description": "I just generated my personalized astrocartography map! Discover your cosmic connections around the world.",

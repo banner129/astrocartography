@@ -219,6 +219,48 @@ export const cityToolEvents = {
 };
 
 /**
+ * 首页内嵌地图结果事件
+ */
+export const homeInlineMapEvents = {
+  generated: () => {
+    trackEvent('home_inline_map_generated', {
+      event_category: 'Home Inline Map',
+    });
+  },
+
+  generationFailed: (reason?: string) => {
+    trackEvent('home_inline_generation_failed', {
+      reason: reason || 'unknown',
+      event_category: 'Home Inline Map',
+    });
+  },
+
+  openFullMapClicked: () => {
+    trackEvent('home_inline_open_full_map_clicked', {
+      event_category: 'Home Inline Map',
+    });
+  },
+
+  askAIClicked: () => {
+    trackEvent('home_inline_ask_ai_clicked', {
+      event_category: 'Home Inline Map',
+    });
+  },
+
+  checkCityClicked: () => {
+    trackEvent('home_inline_check_city_clicked', {
+      event_category: 'Home Inline Map',
+    });
+  },
+
+  compareCitiesClicked: () => {
+    trackEvent('home_inline_compare_cities_clicked', {
+      event_category: 'Home Inline Map',
+    });
+  },
+};
+
+/**
  * 付费相关事件
  */
 export const paymentEvents = {

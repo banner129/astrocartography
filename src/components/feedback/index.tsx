@@ -125,15 +125,16 @@ export default function Feedback({
   }
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-5 left-5 z-50 md:bottom-8 md:left-auto md:right-8">
       <Dialog open={showFeedback} onOpenChange={setShowFeedback}>
         <DialogTrigger asChild>
           <Button
             size="icon"
-            className="h-12 w-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="h-10 w-10 rounded-full border border-white/15 bg-black/70 text-white shadow-lg backdrop-blur-md transition-all duration-300 hover:bg-black/85 hover:shadow-xl md:h-12 md:w-12 md:border-transparent md:bg-primary md:text-primary-foreground md:hover:bg-primary/90"
             onClick={() => setShowFeedback(true)}
+            aria-label={t("feedback.title")}
           >
-            <MessageCircle className="h-6 w-6" />
+            <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[500px]">

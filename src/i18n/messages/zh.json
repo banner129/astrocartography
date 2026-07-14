@@ -374,6 +374,16 @@
         "new": "新"
       }
     },
+    "inlineResult": {
+      "eyebrow": "页面内结果",
+      "title": "你的星盘地图",
+      "openFullMap": "打开全屏地图",
+      "mobileFullMapHint": "想查看完整地图？打开全屏地图 →",
+      "interpretTitle": "解读这张地图",
+      "interpretDescription": "先从生成的地图开始。你可以检查一个城市、对比多个地点，然后基于地图证据询问 AI。",
+      "nextStepTitle": "下一步做什么",
+      "nextStepDescription": "用 Ask AI 获取解读，用检查城市查看具体地点，或在多个城市之间做对比。"
+    },
     "result": {
       "title": "查看我的星盘地图！",
       "description": "我刚刚生成了我的个性化星盘地图！发现你在世界各地的宇宙连接。",

@@ -335,6 +335,16 @@
         "new": "Novo"
       }
     },
+    "inlineResult": {
+      "eyebrow": "RESULTADO NA PÁGINA",
+      "title": "Seu mapa de astrocartografia",
+      "openFullMap": "Abrir mapa completo",
+      "mobileFullMapHint": "Abrir mapa completo para ver melhor →",
+      "interpretTitle": "Interpretar este mapa",
+      "interpretDescription": "Comece pelo mapa gerado. Verifique uma cidade, compare lugares e depois pergunte à IA usando as evidências do mapa.",
+      "nextStepTitle": "O que fazer agora",
+      "nextStepDescription": "Use Perguntar à IA para interpretação, Verificar cidade para um lugar específico ou Comparar cidades ao escolher entre locais."
+    },
     "result": {
       "title": "Confira meu Mapa de Astrocartografia!",
       "description": "Acabei de gerar meu mapa de astrocartografia personalizado! Descubra suas conexões cósmicas ao redor do mundo.",
