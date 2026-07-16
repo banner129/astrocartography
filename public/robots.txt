@@ -69,6 +69,15 @@ Allow: /es/rising-sign-calculator
 Allow: /pt/rising-sign-calculator
 Allow: /it/rising-sign-calculator
 Allow: /de/rising-sign-calculator
+
+# Midheaven Calculator
+Allow: /midheaven-calculator
+Allow: /zh/midheaven-calculator
+Allow: /es/midheaven-calculator
+Allow: /pt/midheaven-calculator
+Allow: /it/midheaven-calculator
+Allow: /de/midheaven-calculator
+
 Allow: /transit-chart-calculator
 Allow: /zh/transit-chart-calculator
 Allow: /es/transit-chart-calculator

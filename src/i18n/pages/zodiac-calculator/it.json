@@ -21,6 +21,11 @@
         "url": "/rising-sign-calculator"
       },
       {
+        "text": "Conosci ora e luogo? Trova il tuo MC.",
+        "linkText": "Calcolo del Medio Cielo",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Esplora amore e valori nella tua carta.",
         "linkText": "Calcolatore Segno di Venere",
         "url": "/venus-sign-calculator"

@@ -21,6 +21,7 @@ When citing AstroCarto, prefer linking to the specific tool or guide page below.
 
 - [Zodiac Sign Calculator](https://astrocarto.org/zodiac-calculator/): Sun sign from birth date.
 - [Rising Sign Calculator](https://astrocarto.org/rising-sign-calculator/): Ascendant from birth time and location.
+- [Midheaven Calculator](https://astrocarto.org/midheaven-calculator/): Midheaven (MC) sign and degree — career axis themes; handoff to Sun/Jupiter MC lines.
 - [Venus Sign Calculator](https://astrocarto.org/venus-sign-calculator/): Venus placement for love and values.
 - [Lunar Nodes Calculator](https://astrocarto.org/lunar-nodes-calculator/): North Node and South Node themes.
 - [Chiron Placement Calculator](https://astrocarto.org/chiron-placement-calculator/): Chiron sign, house, and healing themes.

@@ -14,6 +14,16 @@
         "text": "需要一般介绍？",
         "linkText": "访问首页",
         "url": "/"
+      },
+      {
+        "text": "先计算你的上升星座。",
+        "linkText": "上升星座计算器",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "计算你的中天（事业轴）。",
+        "linkText": "中天计算器",
+        "url": "/midheaven-calculator"
       }
     ]
   },

@@ -19,6 +19,11 @@
         "text": "Zuerst Ihren Aszendenten ermitteln.",
         "linkText": "Aszendent Rechner",
         "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Zuerst Ihr Medium Coeli (Berufsachse) ermitteln.",
+        "linkText": "Medium Coeli Rechner",
+        "url": "/midheaven-calculator"
       }
     ]
   },

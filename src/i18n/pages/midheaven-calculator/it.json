@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "title": "Calcolo del Medio Cielo — MC Gratis | AstroCarto",
+    "description": "Calcola il Medio Cielo (MC): segno, grado e IC con data, ora e luogo. Confronta per città ed esplora le linee MC di Sole e Giove sulla mappa.",
+    "keywords": "calcolo del Medio Cielo, calcolatore MC, calcolare Medio Cielo, medium coeli, astrologia vocazionale, segno del Medio Cielo"
+  },
+  "intentAnchor": {
+    "text": "Cerchi un calcolo del Medio Cielo? Inserisci data, ora esatta e luogo di nascita per ottenere segno MC, grado e reggente di carta, più l'IC opposto. Solo inquadramento simbolico della carriera: il Medio Cielo descrive temi di direzione pubblica e reputazione, non garanzie lavorative. Continua su Astrocartography per vedere dove le linee MC del Sole e di Giove amplificano la visibilità."
+  },
+  "internalLinks": {
+    "title": "Strumenti correlati",
+    "items": [
+      {
+        "text": "Ti serve prima l'Ascendente?",
+        "linkText": "Calcolatore Segno Ascendente",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Esplora la visibilità sulle linee MC del Sole.",
+        "linkText": "Guida Linea del Sole",
+        "url": "/sun-line-astrocartography"
+      },
+      {
+        "text": "Esplora l'espansione sulle linee MC di Giove.",
+        "linkText": "Guida Linea di Giove",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "text": "Torna alla mappa principale e agli strumenti.",
+        "linkText": "Home Astrocartography",
+        "url": "/"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Cos'è un calcolo del Medio Cielo",
+    "label": "INTRODUZIONE",
+    "description": "Un calcolo del Medio Cielo determina il segno zodiacale e il grado del tuo Medium Coeli (MC): il punto più alto dell'eclittica nel momento della nascita. Nella maggior parte dei sistemi di case, l'MC è la cuspide della X casa: immagine pubblica, temi vocazionali e come vieni visto nel mondo. A differenza dell'Ascendente (che dipende dalla latitudine), il Medio Cielo si calcola solo dal tempo sidereo locale e dalla longitudine. Ora esatta e fuso orario restano importanti: l'MC avanza circa un grado ogni quattro minuti.",
+    "image": {
+      "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+      "alt": "Risultato del calcolo del Medio Cielo con segno MC, grado, IC e confronto tra città"
+    },
+    "items": [
+      {
+        "title": "MC vs segno ascendente: assi diversi",
+        "description": "Il segno ascendente è l'orizzonte orientale (identità e prima impressione). Il Medio Cielo è il meridiano sopra la testa (vita pubblica e direzione). Qualcuno può avere Leone ascendente e Capricorno al MC: presenza calorosa con orientamento vocazionale strutturato. Questo calcolo del Medio Cielo si concentra sull'asse MC/IC per abbinarlo al Calcolatore del Segno Ascendente e avere un quadro angolare completo prima di aprire la mappa mondiale.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Diagramma degli angoli ASC, DSC, MC e IC in astrologia del Medio Cielo e dell'ascendente"
+        }
+      },
+      {
+        "title": "Perché l'ora di nascita conta per l'MC",
+        "description": "Il Medio Cielo avanza circa un grado zodiacale ogni quattro minuti. Un errore di mezz'ora può spostare il grado in modo significativo; vicino ai confini tra segni può cambiare del tutto il segno MC. Inserisci l'ora dell'atto di nascita quando possibile e seleziona il fuso orario vigente al luogo di nascita. Avviso simbolico: i temi MC descrivono schemi simbolici di carriera e reputazione, non consigli lavorativi né previsioni di successo.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines-calculation.webp",
+          "alt": "Illustrazione del calcolo preciso del Medio Cielo in base all'ora esatta di nascita"
+        }
+      },
+      {
+        "title": "Dal Medio Cielo alle linee MC di Astrocartography",
+        "description": "Conoscere il segno natale del Medio Cielo è il primo passo. Astrocartography mappa poi dove ogni pianeta era sul Medio Cielo alla nascita—MC del Sole, MC di Giove, MC di Venere e altro—come linee verticali sul globo. Vivere o viaggiare vicino a quelle linee può intensificare visibilità vocazionale, espansione o altri temi planetari. Usa gli stessi dati di nascita in entrambi gli strumenti: calcola l'MC qui, poi apri la mappa per le linee MC del Sole e di Giove.",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Mappa Astrocartography con linee del Medio Cielo del Sole e di Giove"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Perché usare il nostro calcolo del Medio Cielo",
+    "label": "Vantaggi",
+    "description": "Ottieni in pochi secondi segno MC, grado preciso, reggente di carta e IC opposto, più un controllo geografico di come cambia il Medio Cielo in base alla città. Gratuito, senza registrazione, pensato per passare facilmente ad Astrocartography.",
+    "items": [
+      {
+        "title": "Formula MC di livello professionale",
+        "description": "Calcoliamo il Medio Cielo dal tempo sidereo locale con la conversione eclittica standard del software astrologico moderno. I risultati includono segno, grado con due decimali, reggente moderno e IC opposto (casa e radici private). Confronta con Astro.com o il tuo software preferito quando verifichi l'asse vocazionale.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Risultato del Medio Cielo con grado MC esatto e IC opposto"
+        }
+      },
+      {
+        "title": "Chiarezza sull'asse vocazionale, gratis",
+        "description": "Usa questo calcolo del Medio Cielo senza account né paywall. Solo inquadramento simbolico della carriera: l'MC descrive direzione pubblica e simbolismo della reputazione, non titoli di lavoro o previsioni di reddito. Rifletti su segno e reggente, poi decidi se gli insight di relocation sulla mappa ti sono utili.",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Scheda gratuita del Medio Cielo con interpretazione del segno e confronto tra città"
+        }
+      },
+      {
+        "title": "Passaggio alle linee MC planetarie",
+        "description": "Una volta conosciuto il Medio Cielo natale, la domanda naturale è dove le linee MC del Sole e di Giove attraversano la Terra. Quelle linee sono strumenti vocazionali centrali di Astrocartography. Un clic trasferisce i dati di nascita alla mappa del tema per esplorare visibilità ed espansione per luogo, non solo per segno natale.",
+        "icon": "RiMapPinLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Passaggio dal calcolo del Medio Cielo alle linee MC del Sole e di Giove"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Come usare il calcolo del Medio Cielo",
+    "label": "COME USARE",
+    "description": "Trova il tuo Medio Cielo in meno di un minuto: inserisci i dati di nascita, leggi MC e IC, confronta le città e, opzionalmente, apri Astrocartography per le linee MC del Sole e di Giove.",
+    "items": [
+      {
+        "title": "Inserisci data, ora e luogo di nascita",
+        "description": "Fornisci data, ora esatta, luogo (città o coordinate) e fuso orario. Il Medio Cielo dipende dal tempo sidereo locale a quella longitudine. Un fuso orario errato è una causa frequente di errori MC: verifica l'ora legale storica se l'anno di nascita è ambiguo.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Leggi segno MC, grado e reggente",
+        "description": "Consulta il segno del Medio Cielo (es. Capricorno 18°22'), grado e reggente moderno di quel segno. Una breve interpretazione inquadra lo stile di vita pubblica senza promettere risultati. L'IC (punto opposto) appare come polarità privata/casa dello stesso asse.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Confronta il Medio Cielo tra le città",
+        "description": "Lo stesso momento UTC di nascita produce segni MC diversi a longitudini diverse. La nostra lista geografica mostra città importanti per percepire come il luogo sposta l'asse vocazionale: un ponte intuitivo verso l'astrologia locazionale.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Esplora le linee MC del Sole e di Giove (opzionale)",
+        "description": "Continua sulla mappa Astrocartography con i dati di nascita precompilati. Osserva soprattutto le linee MC del Sole (visibilità, leadership) e MC di Giove (crescita, opportunità simboliche). Tratta le linee come mappe esplorative, non come ordini di trasferimento.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funzioni del calcolo del Medio Cielo",
+    "label": "FUNZIONI",
+    "description": "Grado MC esatto, IC opposto, pianeta reggente, interpretazioni per segno, confronto tra città e passaggio alla mappa con un clic per linee MC planetarie.",
+    "items": [
+      {
+        "title": "Segno e grado esatti del Medio Cielo",
+        "description": "Consulta segno MC e grado preciso: utile per aspetti, progressioni e confronto software. La precisione del grado aiuta anche vicino a una cuspide di segno per capire se vale Capricorno o Acquario al MC.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "IC opposto incluso",
+        "description": "Ogni Medio Cielo ha un Imum Coeli a 180°. Mostriamo segno e grado dell'IC per riflettere sulla polarità pubblico/privato: visibilità vocazionale versus casa e radici. Avviso simbolico: solo temi simbolici, non consigli familiari o abitativi.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Interpretazioni per segno MC",
+        "description": "Testi brevi e credibili per ogni segno del Medio Cielo si concentrano su stile pubblico e tono della reputazione, non su elenchi di lavori o stipendi. Usali come spunti di riflessione insieme al tema completo e all'esperienza reale.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Prospettiva geografica del Medio Cielo",
+        "description": "Confronta come lo stesso UTC di nascita si traduce in segni MC a New York, Londra, Tokyo, Sydney e altri hub. La longitudine sposta l'MC; questa funzione lo rende tangibile prima di studiare linee MC planetarie sul globo.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Calcolo con fuso orario",
+        "description": "Seleziona l'etichetta del fuso orario corretta così l'ora locale di nascita si converte correttamente in UTC prima del calcolo del tempo sidereo. Un fuso orario preciso è importante per il Medio Cielo quanto per l'Ascendente.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Passaggio ad Astrocartography",
+        "description": "Trasferisci i dati di nascita alla mappa mondiale con un clic. Lì puoi studiare linee MC planetarie—specialmente MC del Sole e MC di Giove—per simbolismo vocazionale per luogo che integra il segno natale del Medio Cielo.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Calcolo del Medio Cielo — Domande frequenti",
+    "description": "Domande comuni sul calcolo del Medio Cielo, MC vs ascendente, precisione dell'ora, IC e linee MC di Astrocartography.",
+    "items": [
+      {
+        "title": "Questo calcolo del Medio Cielo è gratuito?",
+        "description": "Sì. Calcola segno MC, grado, reggente e IC quante volte vuoi senza account né pagamento. Opzionalmente continua su Astrocartography per esplorare linee MC planetarie sulla mappa."
+      },
+      {
+        "title": "Cos'è il Medio Cielo (MC)?",
+        "description": "Il Medio Cielo, o Medium Coeli, è il punto più alto dell'eclittica alla nascita. Nella maggior parte dei sistemi è la cuspide della X casa e simboleggia vita pubblica, direzione vocazionale e reputazione. Non è un pianeta: è un punto angolare definito da tempo e luogo."
+      },
+      {
+        "title": "In cosa differisce il Medio Cielo dal segno ascendente?",
+        "description": "Il segno ascendente (Ascendente) è l'orizzonte orientale e dipende da latitudine e longitudine. Il Medio Cielo è il punto meridiano sopra la testa e dipende dal tempo sidereo locale (sensibile alla longitudine, indipendente dalla latitudine nella formula standard). L'ASC è presentazione personale; l'MC è simbolismo dell'asse pubblico/vocazionale."
+      },
+      {
+        "title": "Il Medio Cielo predice la mia carriera?",
+        "description": "No. Avviso simbolico: i temi del Medio Cielo descrivono direzione pubblica e schemi di reputazione. Non garantiscono titoli, promozioni, reddito o successo. Usa i risultati per riflettere insieme a competenze, opportunità e pianificazione pratica, non come consulenza lavorativa."
+      },
+      {
+        "title": "Perché l'ora di nascita conta per l'MC?",
+        "description": "Il Medio Cielo si sposta circa un grado ogni quattro minuti. Vicino a un confine di segno, un piccolo errore orario può cambiare il segno MC. Usa l'ora più precisa e il fuso orario corretto per risultati affidabili."
+      },
+      {
+        "title": "Cos'è l'IC nel risultato?",
+        "description": "L'Imum Coeli (IC) è opposto al Medio Cielo. Spesso riguarda casa, radici e vita privata come contrappeso alla visibilità pubblica. Mostriamo segno e grado dell'IC solo come contesto dell'asse, non come consulenza abitativa o familiare."
+      },
+      {
+        "title": "Come si collega ad Astrocartography?",
+        "description": "Il tuo Medio Cielo natale è un punto del tema. Astrocartography mappa dove ogni pianeta era sul Medio Cielo alla nascita come linee sulla Terra. Le linee MC del Sole e di Giove sono popolari per temi di visibilità e crescita. Calcola l'MC qui, poi apri la mappa con gli stessi dati di nascita."
+      },
+      {
+        "title": "Quanto è preciso questo calcolatore MC?",
+        "description": "Usiamo una formula astronomica standard del Medio Cielo. La precisione dipende dai dati inseriti: ora esatta, fuso orario e longitudine. Verifica casi importanti con Astro.com o software professionale. La latitudine non serve per l'MC in sé, ma viene salvata per il passaggio alla mappa."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Scopri il tuo Medio Cielo ora",
+    "description": "Calcola gratis segno MC, grado, reggente e IC; poi esplora le linee MC del Sole e di Giove sulla mappa Astrocartography per simbolismo vocazionale per luogo.",
+    "buttons": [
+      {
+        "title": "Esplora linee MC del Sole e di Giove → Mappa",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Data di nascita",
+      "birthTime": "Ora di nascita (esatta se possibile)",
+      "birthLocation": "Luogo di nascita",
+      "timezone": "Fuso orario",
+      "submit": "Calcola Medio Cielo"
+    },
+    "result": {
+      "title": "Il tuo Medio Cielo (MC)",
+      "sign": "Medio Cielo",
+      "degree": "Grado",
+      "ruler": "Reggente del segno",
+      "ic": "IC (opposto)",
+      "interpretation": "Interpretazione",
+      "geoTitle": "Stesso momento: città diverse, Medio Cielo diverso",
+      "geoSubtitle": "L'MC cambia con la longitudine. Prossimo passo: esplora le linee MC del Sole e di Giove sulla mappa mondiale.",
+      "ctaChart": "Vedi le mie linee MC del Sole e di Giove sulla mappa",
+      "disclaimer": "Solo temi simbolici di carriera e reputazione, non consigli lavorativi o di reddito."
+    },
+    "errors": {
+      "required": "Compila tutti i campi per calcolare il tuo Medio Cielo.",
+      "location": "Luogo non trovato. Prova città e paese (es. Roma, Italia).",
+      "generic": "Errore di calcolo. Verifica i dati di nascita e riprova."
+    },
+    "interpretations": {
+      "Aries": "Medio Cielo in Ariete spesso inquadra la vita pubblica con iniziativa, coraggio e azione pionieristica. Nota simbolica di carriera: temi di leadership e avvio progetti, non un titolo garantito.",
+      "Taurus": "Medio Cielo in Toro suggerisce un percorso pubblico orientato a costanza, mestiere e risultati tangibili. La reputazione può crescere grazie a affidabilità e qualità estetica o materiale.",
+      "Gemini": "Medio Cielo in Gemelli mette in evidenza comunicazione, apprendimento e versatilità nella sfera pubblica. La visibilità arriva spesso scrivendo, insegnando, nei media o collegando idee.",
+      "Cancer": "Medio Cielo in Cancro enfatizza cura, protezione e intelligenza emotiva nei ruoli pubblici. Nota simbolica: temi di accoglienza, non un obbligo di lavorare solo in ambito assistenziale.",
+      "Leo": "Medio Cielo in Leone indica visibilità creativa, performance ed espressione autentica nel mondo. Compaiono temi di riconoscimento; i risultati dipendono da impegno e contesto.",
+      "Virgo": "Medio Cielo in Vergine inquadra la vocazione attraverso servizio, precisione e miglioramento. La reputazione pubblica può basarsi su competenza e lavoro utile nei dettagli.",
+      "Libra": "Medio Cielo in Bilancia suggerisce diplomazia, estetica e partnership nella vita pubblica. Inquadramento simbolico: temi di equilibrio e giustizia, non carriere legali o di design garantite.",
+      "Scorpio": "Medio Cielo in Scorpione descrive spesso profondità, trasformazione e intensità strategica nei ruoli pubblici. Temi di ricerca, crisi o cambiamento profondo, non script del destino.",
+      "Sagittarius": "Medio Cielo in Sagittario tende a significato, viaggio, insegnamento e orizzonti ampi nell'arena pubblica. Temi di crescita e credenza colorano la reputazione.",
+      "Capricorn": "Medio Cielo in Capricorno è il classico simbolismo di struttura, responsabilità e realizzazione a lungo termine. Avviso simbolico: temi di ambizione, non promessa di status o ricchezza.",
+      "Aquarius": "Medio Cielo in Acquario mette in evidenza innovazione, comunità e visione indipendente nella vita pubblica. La reputazione può formarsi attorno a contributi progressisti o non convenzionali.",
+      "Pisces": "Medio Cielo in Pesci suggerisce compassione, immaginazione e confini permeabili tra vocazione e ispirazione. Nota simbolica: temi artistici o di guarigione, non consigli medici o finanziari."
+    }
+  }
+}

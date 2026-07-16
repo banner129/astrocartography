@@ -16,6 +16,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "Brauchst du auch deine Karriereachse (MC)?",
+        "linkText": "Medium Coeli Rechner",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Vollständiges Geburtshoroskop benötigt?",
         "linkText": "Geburtshoroskop Generator",
         "url": "/tools/birth-chart-generator"

@@ -51,6 +51,13 @@
               "icon": "RiCompass3Line"
             },
             {
+              "title": "Calculadora de Meio do Céu",
+              "description": "Calcule seu MC: eixo de carreira e vida pública",
+              "url": "/midheaven-calculator",
+              "target": "_self",
+              "icon": "RiTrophyLine"
+            },
+            {
               "title": "Calculadora do Signo de Venus",
               "description": "Calcule Venus para amor, valores e atracao",
               "url": "/venus-sign-calculator",

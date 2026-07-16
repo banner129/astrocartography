@@ -26,6 +26,11 @@
         "url": "/rising-sign-calculator"
       },
       {
+        "text": "Need your Midheaven (career axis)?",
+        "linkText": "Midheaven Calculator",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Prefer tutorials & examples?",
         "linkText": "Read the Blog",
         "url": "/posts"

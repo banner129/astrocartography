@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "title": "Calculadora de Meio do Céu — Signo MC Grátis | AstroCarto",
+    "description": "Calcule o Meio do Céu (MC): signo, grau e IC com data, hora e local. Compare por cidade e explore as linhas MC de Sol e Júpiter no mapa.",
+    "keywords": "calculadora de meio do céu, calculadora MC, calcular meio do céu, medium coeli, astrologia profissional, signo meio do céu"
+  },
+  "intentAnchor": {
+    "text": "Procura uma calculadora de meio do céu? Insira data de nascimento, hora exata e local para encontrar o signo MC, o grau e o regente do signo—além do IC oposto. Apenas enquadramento simbólico de carreira: o Meio do Céu descreve direção pública e temas de reputação, não garantias de emprego. Continue para a Astrocartografia e veja onde as linhas MC de Sol e Júpiter amplificam a visibilidade."
+  },
+  "internalLinks": {
+    "title": "Ferramentas relacionadas",
+    "items": [
+      {
+        "text": "Precisa do seu Ascendente primeiro?",
+        "linkText": "Calculadora de Signo Ascendente",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Explore a visibilidade nas linhas MC do Sol.",
+        "linkText": "Guia da Linha do Sol",
+        "url": "/sun-line-astrocartography"
+      },
+      {
+        "text": "Explore a expansão nas linhas MC de Júpiter.",
+        "linkText": "Guia da Linha de Júpiter",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "text": "Voltar ao mapa principal e às ferramentas.",
+        "linkText": "Início Astrocartografia",
+        "url": "/"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "O Que É a Calculadora de Meio do Céu",
+    "label": "INTRODUÇÃO",
+    "description": "A calculadora de meio do céu encontra o signo zodiacal e o grau do seu Medium Coeli (MC)—o ponto mais alto da eclíptica no momento do nascimento. Na maioria dos sistemas de casas, o MC é a cúspide da casa 10: imagem pública, temas vocacionais e como você é visto no mundo. Diferente do Ascendente (que depende da latitude), o Meio do Céu é calculado apenas pelo tempo sideral local e pela longitude. Hora exata e fuso horário ainda importam: o MC se move cerca de um grau a cada quatro minutos.",
+    "image": {
+      "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+      "alt": "Resultado da calculadora de meio do céu mostrando signo MC, grau, IC e comparação entre cidades"
+    },
+    "items": [
+      {
+        "title": "MC vs Signo Ascendente—eixos diferentes",
+        "description": "O signo ascendente é o horizonte oriental (identidade e primeiras impressões). O Meio do Céu é o meridiano acima (vida pública e direção). Alguém pode ter Leão ascendente e Capricórnio no Meio do Céu—presença calorosa com orientação profissional estruturada. Esta calculadora de meio do céu foca no eixo MC/IC para combinar com a Calculadora de Signo Ascendente e ter um quadro angular completo antes de abrir o mapa mundial.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Diagrama dos ângulos ASC, DSC, MC e IC usados na astrologia do Meio do Céu e do Ascendente"
+        }
+      },
+      {
+        "title": "Por que a hora de nascimento ainda importa para o MC",
+        "description": "O Meio do Céu avança cerca de um grau zodiacal a cada quatro minutos. Um erro de meia hora pode mudar o grau drasticamente; perto dos limites entre signos pode alterar o signo MC por completo. Use a hora da certidão de nascimento quando possível e selecione o fuso horário vigente no local de nascimento. Aviso simbólico: os temas do MC descrevem padrões profissionais e de reputação—não são conselhos de emprego nem previsões de sucesso.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines-calculation.webp",
+          "alt": "Ilustração do cálculo preciso do Meio do Céu dependendo da hora exata de nascimento"
+        }
+      },
+      {
+        "title": "Do Meio do Céu às linhas MC na Astrocartografia",
+        "description": "Conhecer o signo natal do Meio do Céu é o primeiro passo. A Astrocartografia mapeia então onde cada planeta estava no Meio do Céu ao nascer—Sol MC, Júpiter MC, Vênus MC e mais—como linhas verticais no globo. Morar ou viajar perto dessas linhas pode intensificar visibilidade profissional, expansão ou outros temas planetários. Use os mesmos dados de nascimento nas duas ferramentas: calcule o MC aqui e abra o mapa para explorar as linhas MC de Sol e Júpiter.",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Mapa de astrocartografia mostrando apenas as linhas Meio do Céu de Sol e Júpiter"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por Que Usar Nossa Calculadora de Meio do Céu",
+    "label": "Benefícios principais",
+    "description": "Obtenha em segundos signo MC, grau preciso, regente do signo e IC oposto—mais uma verificação geográfica de como o Meio do Céu muda por cidade. Grátis, sem cadastro, feita para passar com fluidez à Astrocartografia.",
+    "items": [
+      {
+        "title": "Fórmula MC profissional",
+        "description": "Calculamos o Meio do Céu a partir do tempo sideral local com a conversão eclíptica padrão do software astrológico moderno. Os resultados incluem signo, grau com duas casas decimais, regente moderno e o IC oposto (lar e raízes privadas). Confira com Astro.com ou seu software preferido ao validar trabalhos sensíveis no eixo profissional.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Resultado da calculadora de meio do céu com grau MC exato e IC oposto"
+        }
+      },
+      {
+        "title": "Clareza gratuita no eixo profissional",
+        "description": "Use esta calculadora de meio do céu sem contas nem paywalls. Apenas enquadramento simbólico de carreira: o MC descreve direção pública e simbolismo de reputação, não cargos nem previsões de renda. Reflita sobre o signo e o regente e decida se os insights de relocação no mapa são úteis para você.",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Cartão de resultado gratuito do Meio do Céu com interpretação do signo e comparação entre cidades"
+        }
+      },
+      {
+        "title": "Ponte para as linhas MC planetárias",
+        "description": "Depois de conhecer o Meio do Céu natal, a pergunta natural é onde as linhas Sol MC e Júpiter MC cruzam a Terra. Essas linhas são ferramentas centrais de carreira na Astrocartografia. Um clique transfere os dados de nascimento para o mapa para explorar visibilidade e expansão por lugar—não só por signo natal.",
+        "icon": "RiMapPinLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Transição da calculadora de meio do céu para as linhas MC de Sol e Júpiter"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Como Usar a Calculadora de Meio do Céu",
+    "label": "COMO USAR",
+    "description": "Encontre seu Meio do Céu em menos de um minuto: insira os dados de nascimento, leia MC e IC, compare cidades e, opcionalmente, abra a Astrocartografia para as linhas MC de Sol e Júpiter.",
+    "items": [
+      {
+        "title": "Insira data, hora e local de nascimento",
+        "description": "Informe data de nascimento, hora exata, local (cidade ou coordenadas) e fuso horário. O Meio do Céu depende do tempo sideral local naquela longitude. Fuso horário errado é uma causa comum de erros no MC—confira o horário de verão histórico se o ano de nascimento for ambíguo.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Leia signo MC, grau e regente",
+        "description": "Veja o signo do Meio do Céu (ex.: Capricórnio 18°22'), o grau e o regente moderno desse signo. Uma breve interpretação enquadra o estilo de vida pública sem prometer resultados. O IC (ponto oposto) aparece como a polaridade privada/lar do mesmo eixo.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Compare o Meio do Céu entre cidades",
+        "description": "O mesmo momento UTC de nascimento produz signos MC diferentes em longitudes distintas. Nossa lista geográfica mostra as principais cidades para sentir como o lugar desloca o eixo profissional—uma ponte intuitiva para a astrologia locacional.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Explore linhas MC de Sol e Júpiter (opcional)",
+        "description": "Continue no mapa de Astrocartografia com os dados de nascimento pré-preenchidos. Observe especialmente as linhas Sol Meio do Céu (visibilidade, liderança) e Júpiter Meio do Céu (crescimento, oportunidade simbólica). Trate as linhas como mapas exploratórios, não como ordens de mudança.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Recursos da Calculadora de Meio do Céu",
+    "label": "RECURSOS",
+    "description": "Grau MC exato, IC oposto, planeta regente, interpretações por signo, comparação entre cidades e transição com um clique para o mapa das linhas MC planetárias.",
+    "items": [
+      {
+        "title": "Signo e grau exatos do Meio do Céu",
+        "description": "Veja o signo MC e o grau preciso—útil para aspectos, progressões e comparação entre softwares. A precisão do grau também ajuda perto de uma cúspide, para saber se vale Capricórnio ou Aquário no Meio do Céu.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "IC oposto incluído",
+        "description": "Todo Meio do Céu tem um Imum Coeli a 180°. Mostramos signo e grau do IC para refletir sobre a polaridade público/privado: visibilidade profissional versus lar e raízes. Aviso simbólico: apenas temas simbólicos, não conselhos familiares ou habitacionais.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "Interpretações por signo MC",
+        "description": "Textos curtos e credíveis para cada signo no Meio do Céu, focados em estilo público e tom de reputação—não listas de empregos nem promessas de salário. Use-os como estímulos de reflexão junto ao mapa completo e à experiência real.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Perspectiva geográfica do Meio do Céu",
+        "description": "Compare como o mesmo UTC de nascimento corresponde a signos MC diferentes em Nova York, Londres, Tóquio, Sydney e outros hubs. A longitude desloca o MC; este recurso torna isso tangível antes de estudar as linhas MC planetárias no globo.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Cálculo com fuso horário correto",
+        "description": "Selecione o fuso horário adequado para que a hora local se converta corretamente em UTC antes do cálculo do tempo sideral. O tratamento preciso do fuso é tão importante para o Meio do Céu quanto para o Ascendente.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Transição para Astrocartografia",
+        "description": "Transfira os dados de nascimento para o mapa mundial com um clique. Lá você pode estudar as linhas MC planetárias—especialmente Sol MC e Júpiter MC—para simbolismo profissional por local que complementa o signo natal do Meio do Céu.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Calculadora de Meio do Céu — Perguntas Frequentes",
+    "description": "Perguntas comuns sobre o cálculo do Meio do Céu, MC vs signo ascendente, precisão da hora de nascimento, IC e linhas MC na Astrocartografia.",
+    "items": [
+      {
+        "title": "A calculadora de meio do céu é grátis?",
+        "description": "Sim. Calcule signo MC, grau, regente e IC quantas vezes quiser, sem conta nem pagamento. Opcionalmente, continue para a Astrocartografia e explore as linhas MC planetárias no mapa."
+      },
+      {
+        "title": "O que é o Meio do Céu (MC)?",
+        "description": "O Meio do Céu, ou Medium Coeli, é o ponto mais alto da eclíptica no nascimento. Na maioria dos sistemas é a cúspide da casa 10 e simboliza vida pública, direção vocacional e reputação. Não é um planeta—é um ponto angular definido por tempo e lugar."
+      },
+      {
+        "title": "Como o Meio do Céu difere do signo ascendente?",
+        "description": "O signo ascendente (Ascendente) é o horizonte oriental e depende de latitude e longitude. O Meio do Céu é o meridiano acima e depende do tempo sideral local (sensível à longitude, independente da latitude na fórmula padrão). O ASC é apresentação pessoal; o MC é simbolismo do eixo público/profissional."
+      },
+      {
+        "title": "O Meio do Céu prevê minha carreira?",
+        "description": "Não. Aviso simbólico: os temas do Meio do Céu descrevem direção pública e padrões de reputação. Não garantem cargos, promoções, renda ou sucesso. Use os resultados para reflexão junto a habilidades, oportunidades e planejamento prático—não como conselho de emprego."
+      },
+      {
+        "title": "Por que a hora de nascimento importa para o MC?",
+        "description": "O Meio do Céu se move cerca de um grau a cada quatro minutos. Perto de um limite entre signos, um pequeno erro de horário pode mudar o signo MC. Use a hora mais precisa e o fuso horário correto para resultados confiáveis."
+      },
+      {
+        "title": "O que é o IC no resultado?",
+        "description": "O Imum Coeli (IC) é oposto ao Meio do Céu. Costuma relacionar-se a lar, raízes e vida privada como contrapolo à visibilidade pública. Mostramos signo e grau do IC apenas para contexto do eixo—não como aconselhamento habitacional ou familiar."
+      },
+      {
+        "title": "Como isso se relaciona à Astrocartografia?",
+        "description": "O Meio do Céu natal é um ponto do mapa. A Astrocartografia mapeia onde cada planeta estava no Meio do Céu ao nascer como linhas na Terra. As linhas Sol MC e Júpiter MC são populares para visibilidade e crescimento. Calcule o MC aqui e abra o mapa com os mesmos dados de nascimento."
+      },
+      {
+        "title": "Quão precisa é esta calculadora MC?",
+        "description": "Usamos uma fórmula astronômica padrão para o Meio do Céu. A precisão depende dos dados informados: hora exata, fuso horário e longitude. Confira casos importantes com Astro.com ou software profissional. A latitude não é necessária para o MC, mas é salva para a transição ao mapa."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Descubra Seu Meio do Céu Agora",
+    "description": "Calcule grátis signo MC, grau, regente e IC—depois explore as linhas Meio do Céu de Sol e Júpiter no mapa de Astrocartografia para simbolismo profissional por local.",
+    "buttons": [
+      {
+        "title": "Explorar linhas MC Sol e Júpiter → Mapa",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Data de nascimento",
+      "birthTime": "Hora de nascimento (exata se possível)",
+      "birthLocation": "Local de nascimento",
+      "timezone": "Fuso horário",
+      "submit": "Calcular Meio do Céu"
+    },
+    "result": {
+      "title": "Seu Meio do Céu (MC)",
+      "sign": "Meio do Céu",
+      "degree": "Grau",
+      "ruler": "Regente do signo",
+      "ic": "IC (oposto)",
+      "interpretation": "Interpretação",
+      "geoTitle": "Mesmo momento—cidades diferentes, Meio do Céu diferente",
+      "geoSubtitle": "O MC muda com a longitude. Próximo passo: explore as linhas MC de Sol e Júpiter no mapa mundial.",
+      "ctaChart": "Ver minhas linhas MC Sol e Júpiter no mapa",
+      "disclaimer": "Apenas temas simbólicos de carreira e reputação—não conselhos sobre emprego ou renda."
+    },
+    "errors": {
+      "required": "Preencha todos os campos para calcular o Meio do Céu.",
+      "location": "Local não encontrado. Tente cidade e país (ex.: São Paulo, Brasil).",
+      "generic": "Erro no cálculo. Verifique os dados de nascimento e tente novamente."
+    },
+    "interpretations": {
+      "Aries": "Meio do Céu em Áries costuma enquadrar a vida pública com iniciativa, coragem e ação pioneira. Nota simbólica de carreira: temas de liderança e início de projetos—não um cargo garantido.",
+      "Taurus": "Meio do Céu em Touro sugere um caminho público orientado à constância, ao ofício e a resultados tangíveis. A reputação pode crescer pela confiabilidade e qualidade estética ou material.",
+      "Gemini": "Meio do Céu em Gêmeos destaca comunicação, aprendizado e versatilidade na esfera pública. A visibilidade frequentemente chega por escrita, ensino, mídia ou conexão de ideias.",
+      "Cancer": "Meio do Céu em Câncer enfatiza cuidado, proteção e inteligência emocional em papéis públicos. Nota simbólica: temas de acolhimento—não uma obrigação de trabalhar apenas em áreas de cuidado.",
+      "Leo": "Meio do Céu em Leão aponta para visibilidade criativa, performance e expressão autêntica no mundo. Temas de reconhecimento aparecem; os resultados ainda dependem do esforço e do contexto.",
+      "Virgo": "Meio do Céu em Virgem enquadra a vocação pelo serviço, precisão e melhoria. A reputação pública pode repousar em competência e trabalho detalhado útil.",
+      "Libra": "Meio do Céu em Libra sugere diplomacia, estética e parceria na vida pública. Enquadramento simbólico: temas de equilíbrio e justiça—não carreiras jurídicas ou de design garantidas.",
+      "Scorpio": "Meio do Céu em Escorpião costuma descrever profundidade, transformação e intensidade estratégica em papéis públicos. Temas de pesquisa, trabalho em crise ou mudança profunda—não roteiros de destino.",
+      "Sagittarius": "Meio do Céu em Sagitário inclina para significado, viagem, ensino e horizontes amplos na arena pública. Temas de crescimento e crença coloram a reputação.",
+      "Capricorn": "Meio do Céu em Capricórnio é o clássico simbolismo de estrutura, responsabilidade e conquista de longo prazo. Aviso simbólico: temas de ambição—não promessa de status ou riqueza.",
+      "Aquarius": "Meio do Céu em Aquário destaca inovação, comunidade e visão independente na vida pública. A reputação pode se formar em torno de contribuições progressistas ou não convencionais.",
+      "Pisces": "Meio do Céu em Peixes sugere compaixão, imaginação e fronteiras porosas entre vocação e inspiração. Nota simbólica: temas artísticos ou de cura—não conselhos médicos ou financeiros."
+    }
+  }
+}

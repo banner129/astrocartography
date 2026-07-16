@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "title": "Midheaven Calculator — Free MC Sign by Birth Time | AstroCarto",
+    "description": "Free Midheaven (MC) calculator: enter birth date, time, and place for your MC sign, degree, ruler, and IC—then explore Sun & Jupiter MC lines on the map.",
+    "keywords": "midheaven calculator, MC calculator, calculate midheaven, medium coeli, career astrology calculator, midheaven sign"
+  },
+  "intentAnchor": {
+    "text": "Looking for a Midheaven Calculator? Enter birth date, exact time, and location to find your MC sign, degree, and chart ruler—plus the opposite IC. Soft career framing only: the Midheaven describes public direction and reputation themes, not job guarantees. Continue to Astrocartography to see where Sun and Jupiter MC lines amplify visibility."
+  },
+  "internalLinks": {
+    "title": "Related Tools",
+    "items": [
+      {
+        "text": "Need your Ascendant first?",
+        "linkText": "Rising Sign Calculator",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Explore visibility on Sun MC lines.",
+        "linkText": "Sun Line Guide",
+        "url": "/sun-line-astrocartography"
+      },
+      {
+        "text": "Explore expansion on Jupiter MC lines.",
+        "linkText": "Jupiter Line Guide",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "text": "Back to the main map and tools.",
+        "linkText": "Astrocartography Home",
+        "url": "/"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What Is a Midheaven Calculator",
+    "label": "INTRODUCTION",
+    "description": "A Midheaven Calculator finds the zodiac sign and degree of your Medium Coeli (MC)—the highest point of the ecliptic at your birth moment. In most house systems the MC is the 10th-house cusp: public image, vocation themes, and how you are seen in the wider world. Unlike the Ascendant (which depends on latitude), the Midheaven is calculated from local sidereal time and longitude only. Accurate birth time and timezone still matter: the MC moves about one degree every four minutes.",
+    "image": {
+      "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+      "alt": "Midheaven calculator result showing MC sign, degree, IC, and city comparison"
+    },
+    "items": [
+      {
+        "title": "MC vs Rising Sign—Different Axes",
+        "description": "Your rising sign is the eastern horizon (identity and first impressions). Your Midheaven is the meridian overhead (public life and direction). Someone can have Leo rising and Capricorn Midheaven—warm presence with a structured career orientation. This Midheaven Calculator focuses on the MC/IC axis so you can pair it with our Rising Sign Calculator for a complete angular picture before opening the world map.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Diagram of ASC, DSC, MC, and IC angles used in Midheaven and rising sign astrology"
+        }
+      },
+      {
+        "title": "Why Birth Time Still Matters for MC",
+        "description": "The Midheaven advances roughly one zodiac degree every four minutes. A half-hour error can shift the degree dramatically; near sign boundaries it can change the MC sign entirely. Enter the time from your birth certificate when possible, and select the timezone that was in effect at the birthplace. Soft disclaimer: MC themes describe symbolic career and reputation patterns—they are not employment advice or predictions of success.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines-calculation.webp",
+          "alt": "Illustration of precise Midheaven calculation depending on exact birth time"
+        }
+      },
+      {
+        "title": "From Midheaven to Astrocartography MC Lines",
+        "description": "Knowing your natal Midheaven sign is step one. Astrocartography then maps where each planet was on the Midheaven at birth—Sun MC, Jupiter MC, Venus MC, and more—as vertical lines on the globe. Living or traveling near those lines can intensify career visibility, expansion, or other planetary themes. Use the same birth data in both tools: calculate MC here, then open the map to explore Sun and Jupiter Midheaven lines.",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Astrocartography map showing Sun and Jupiter Midheaven lines only"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Use Our Midheaven Calculator",
+    "label": "Core Benefits",
+    "description": "Get your MC sign, precise degree, chart ruler, and IC opposite in seconds—plus a geographic check of how Midheaven changes by city. Free, no signup, built to hand off cleanly into Astrocartography.",
+    "items": [
+      {
+        "title": "Professional MC Formula",
+        "description": "We compute Midheaven from local sidereal time using the standard ecliptic conversion used in modern astrology software. Results include sign, degree to two decimals, modern ruler, and the opposite IC (home and private roots). Cross-check with Astro.com or your preferred software when verifying sensitive career-axis work.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Midheaven calculator result with exact MC degree and IC opposite"
+        }
+      },
+      {
+        "title": "Free Career-Axis Clarity",
+        "description": "Use this Midheaven Calculator without accounts or paywalls. Soft career framing only: the MC describes public direction and reputation symbolism, not job titles or income forecasts. Reflect on the sign and ruler, then decide whether map-based relocation insights are useful for you.",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Free Midheaven result card with sign interpretation and city comparison"
+        }
+      },
+      {
+        "title": "Bridge to Planetary MC Lines",
+        "description": "After you know your natal Midheaven, the natural next question is where Sun MC and Jupiter MC lines cross the Earth. Those lines are core Astrocartography career tools. One click transfers birth data to the chart map so you can explore visibility and expansion themes by place—not just by natal sign.",
+        "icon": "RiMapPinLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Map handoff from Midheaven calculator to Sun and Jupiter MC lines"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Use the Midheaven Calculator",
+    "label": "HOW TO USE",
+    "description": "Find your Midheaven in under a minute: enter birth details, read MC and IC, compare cities, then optionally open Astrocartography for Sun and Jupiter MC lines.",
+    "items": [
+      {
+        "title": "Enter Birth Date, Time, and Place",
+        "description": "Provide birth date, exact time, location (city or coordinates), and timezone. The Midheaven depends on local sidereal time at that longitude. Wrong timezone is a common source of MC errors—double-check historical daylight saving if your birth year is ambiguous.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "Read Your MC Sign, Degree, and Ruler",
+        "description": "See your Midheaven sign (e.g., Capricorn 18°22'), degree, and modern chart ruler for that sign. A short interpretation frames public-life style without promising outcomes. The IC (opposite point) appears as the private/home polarity of the same axis.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Compare Midheaven Across Cities",
+        "description": "The same UTC birth moment produces different Midheaven signs at different longitudes. Our geographic list shows major cities so you can feel how place shifts the career axis—an intuitive bridge into locational astrology.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Explore Sun & Jupiter MC Lines (Optional)",
+        "description": "Continue to the Astrocartography map with your birth data prefilled. Look especially at Sun Midheaven lines (visibility, leadership themes) and Jupiter Midheaven lines (growth, opportunity symbolism). Treat lines as exploratory maps, not relocation commands.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Midheaven Calculator Features",
+    "label": "FEATURES",
+    "description": "Exact MC degree, IC opposite, ruling planet, sign interpretations, city comparison, and one-click map handoff for planetary Midheaven lines.",
+    "items": [
+      {
+        "title": "Exact Midheaven Sign and Degree",
+        "description": "See both the MC sign and precise degree—useful for aspects, progressions, and comparing software. Degree precision also helps when you are near a sign cusp and need to know whether Capricorn or Aquarius Midheaven applies.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "IC Opposite Included",
+        "description": "Every Midheaven has an Imum Coeli 180° away. We show IC sign and degree so you can reflect on the public/private polarity: career visibility versus home and roots. Soft disclaimer: symbolic themes only, not family or housing advice.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "MC Sign Interpretations",
+        "description": "Short, credible blurbs for each Midheaven sign focus on public style and reputation tone—not job lists or salary claims. Use them as reflection prompts alongside your full chart and real-world experience.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Geographic Midheaven Perspective",
+        "description": "Compare how the same birth UTC maps to Midheaven signs in New York, London, Tokyo, Sydney, and other hubs. Longitude shifts MC; this feature makes that tangible before you study planetary MC lines on the globe.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Timezone-Aware Calculation",
+        "description": "Select a matching timezone label so local birth time converts correctly to UTC before sidereal time is computed. Accurate timezone handling is as important for Midheaven as it is for Ascendant.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Astrocartography Handoff",
+        "description": "Transfer birth data to the world map in one click. There you can study planetary Midheaven lines—especially Sun MC and Jupiter MC—for location-based career symbolism that complements your natal Midheaven sign.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Midheaven Calculator — Frequently Asked Questions",
+    "description": "Common questions about Midheaven calculation, MC vs rising sign, birth time accuracy, IC, and Astrocartography MC lines.",
+    "items": [
+      {
+        "title": "Is this Midheaven Calculator free?",
+        "description": "Yes. Calculate your MC sign, degree, ruler, and IC as often as you like with no account or payment. Optionally continue to Astrocartography to explore planetary Midheaven lines on the map."
+      },
+      {
+        "title": "What is the Midheaven (MC)?",
+        "description": "The Midheaven, or Medium Coeli, is the highest point of the ecliptic at your birth. In most systems it is the 10th-house cusp and symbolizes public life, vocation direction, and reputation. It is not a planet—it is an angular point defined by time and place."
+      },
+      {
+        "title": "How is Midheaven different from rising sign?",
+        "description": "Rising sign (Ascendant) is the eastern horizon and depends on latitude and longitude. Midheaven is the meridian point overhead and depends on local sidereal time (longitude-sensitive, latitude-independent in the standard formula). ASC is personal presentation; MC is public/career axis symbolism."
+      },
+      {
+        "title": "Does Midheaven predict my career?",
+        "description": "No. Soft disclaimer: Midheaven themes describe symbolic public direction and reputation patterns. They do not guarantee job titles, promotions, income, or success. Use results for reflection alongside skills, opportunity, and practical planning—not as employment advice."
+      },
+      {
+        "title": "Why does birth time matter for MC?",
+        "description": "The Midheaven moves about one degree every four minutes. Near a sign boundary, a small timing error can change the MC sign. Use the most precise birth time and correct timezone for reliable results."
+      },
+      {
+        "title": "What is the IC in the result?",
+        "description": "The Imum Coeli (IC) is opposite the Midheaven. It often relates to home, roots, and private life as the counterpole to public visibility. We show IC sign and degree for axis context only—not as housing or family counseling."
+      },
+      {
+        "title": "How does this relate to Astrocartography?",
+        "description": "Your natal Midheaven is one chart point. Astrocartography maps where each planet was on the Midheaven at birth as lines on Earth. Sun MC and Jupiter MC lines are popular for visibility and growth themes. Calculate MC here, then open the map with the same birth data."
+      },
+      {
+        "title": "How accurate is this MC calculator?",
+        "description": "We use a standard astronomical Midheaven formula. Accuracy tracks your inputs: exact time, timezone, and longitude. Spot-check important cases against Astro.com or professional software. Latitude is not required for MC itself but is stored for map handoff."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Find Your Midheaven Now",
+    "description": "Calculate your MC sign, degree, ruler, and IC free—then explore Sun and Jupiter Midheaven lines on the Astrocartography map for location-based career symbolism.",
+    "buttons": [
+      {
+        "title": "Explore Sun & Jupiter MC lines → Map",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Birth date",
+      "birthTime": "Birth time (exact if possible)",
+      "birthLocation": "Birth location",
+      "timezone": "Timezone",
+      "submit": "Calculate Midheaven"
+    },
+    "result": {
+      "title": "Your Midheaven (MC)",
+      "sign": "Midheaven",
+      "degree": "Degree",
+      "ruler": "Sign ruler",
+      "ic": "IC (opposite)",
+      "interpretation": "Interpretation",
+      "geoTitle": "Same moment—different cities, different Midheaven",
+      "geoSubtitle": "MC shifts with longitude. Next: explore Sun & Jupiter MC lines on the world map.",
+      "ctaChart": "See my Sun & Jupiter MC lines on the map",
+      "disclaimer": "Symbolic career and reputation themes only—not job or income advice."
+    },
+    "errors": {
+      "required": "Please complete all fields to calculate your Midheaven.",
+      "location": "Location not found. Try a city and country (e.g., New York, USA).",
+      "generic": "Calculation error. Please verify your birth data and try again."
+    },
+    "interpretations": {
+      "Aries": "Aries Midheaven often frames public life through initiative, courage, and pioneering action. Soft career note: themes of leadership and starting projects—not a promised job title.",
+      "Taurus": "Taurus Midheaven suggests a public path oriented to steadiness, craft, and tangible results. Reputation may grow through reliability and aesthetic or material quality.",
+      "Gemini": "Gemini Midheaven highlights communication, learning, and versatility in the public sphere. Visibility often arrives through writing, teaching, media, or connecting ideas.",
+      "Cancer": "Cancer Midheaven emphasizes care, protection, and emotional intelligence in public roles. Soft note: nurturing themes—not a mandate to work only in caregiving fields.",
+      "Leo": "Leo Midheaven points to creative visibility, performance, and heartfelt self-expression in the world. Recognition themes appear; outcomes still depend on effort and context.",
+      "Virgo": "Virgo Midheaven frames vocation through service, precision, and improvement. Public reputation may rest on competence and useful detail work.",
+      "Libra": "Libra Midheaven suggests diplomacy, aesthetics, and partnership in public life. Soft career framing: balance and fairness themes—not guaranteed legal or design careers.",
+      "Scorpio": "Scorpio Midheaven often describes depth, transformation, and strategic intensity in public roles. Themes of research, crisis work, or profound change—not destiny scripts.",
+      "Sagittarius": "Sagittarius Midheaven leans toward meaning, travel, teaching, and broad horizons in the public arena. Growth and belief themes color reputation.",
+      "Capricorn": "Capricorn Midheaven is classic structure, responsibility, and long-range achievement symbolism. Soft disclaimer: ambition themes—not a promise of status or wealth.",
+      "Aquarius": "Aquarius Midheaven highlights innovation, community, and independent vision in public life. Reputation may form around progressive or unconventional contributions.",
+      "Pisces": "Pisces Midheaven suggests compassion, imagination, and porous boundaries between vocation and inspiration. Soft note: artistic or healing themes—not medical or financial advice."
+    }
+  }
+}

@@ -343,6 +343,48 @@
   </url>
 
   <url>
+    <loc>https://astrocarto.org/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/zh/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/es/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/pt/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/it/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/de/midheaven-calculator/</loc>
+    <lastmod>2026-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://astrocarto.org/venus-sign-calculator/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>

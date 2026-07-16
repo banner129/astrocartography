@@ -21,6 +21,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "Ti serve il Medio Cielo (asse di carriera)?",
+        "linkText": "Calcolo del Medio Cielo",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Preferisci guide ed esempi?",
         "linkText": "Leggi il Blog",
         "url": "/posts"

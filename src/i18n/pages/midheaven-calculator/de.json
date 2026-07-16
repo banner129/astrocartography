@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "title": "Medium Coeli Rechner — MC Zeichen kostenlos | AstroCarto",
+    "description": "Medium Coeli (MC) kostenlos berechnen: Zeichen, Grad und IC aus Geburtsdatum, -zeit und -ort. Dann Sonnen- und Jupiter-MC-Linien auf der Karte erkunden.",
+    "keywords": "Medium Coeli Rechner, MC Rechner, Medium Coeli berechnen, Medium Coeli, Karriere Astrologie Rechner, MC Zeichen"
+  },
+  "intentAnchor": {
+    "text": "Sie suchen einen Medium Coeli Rechner? Geburtsdatum, exakte Zeit und Ort eingeben, um MC-Zeichen, Grad und Chart-Herrscher sowie den gegenüberliegenden IC zu erhalten. Nur sanfte Karriere-Deutung: Das Medium Coeli beschreibt öffentliche Richtung und Reputationsthemen, keine Jobgarantien. Weiter zu Astrocartography, um zu sehen, wo Sonnen- und Jupiter-MC-Linien die Sichtbarkeit verstärken."
+  },
+  "internalLinks": {
+    "title": "Verwandte Tools",
+    "items": [
+      {
+        "text": "Zuerst Ihren Aszendenten benötigt?",
+        "linkText": "Aszendent Rechner",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Sichtbarkeit auf Sonnen-MC-Linien erkunden.",
+        "linkText": "Sonnenlinien-Leitfaden",
+        "url": "/sun-line-astrocartography"
+      },
+      {
+        "text": "Expansion auf Jupiter-MC-Linien erkunden.",
+        "linkText": "Jupiterlinien-Leitfaden",
+        "url": "/jupiter-line-astrocartography"
+      },
+      {
+        "text": "Zurück zur Hauptkarte und den Tools.",
+        "linkText": "Astrocartography Startseite",
+        "url": "/"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Was ist ein Medium Coeli Rechner",
+    "label": "EINFÜHRUNG",
+    "description": "Ein Medium Coeli Rechner ermittelt das Tierkreiszeichen und den Grad Ihres Medium Coeli (MC) – den höchsten Punkt der Ekliptik in Ihrem Geburtsmoment. In den meisten Häusersystemen ist der MC der 10.-Haus-Spitzengrad: öffentliches Image, Berufsthemen und wie Sie in der weiten Welt wahrgenommen werden. Anders als der Aszendent (latitudensabhängig) wird das Medium Coeli nur aus lokaler Sternzeit und Länge berechnet. Exakte Geburtszeit und Zeitzone bleiben wichtig: Der MC bewegt sich etwa einen Grad alle vier Minuten.",
+    "image": {
+      "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+      "alt": "Medium Coeli Rechner Ergebnis mit MC-Zeichen, Grad, IC und Stadtvergleich"
+    },
+    "items": [
+      {
+        "title": "MC vs. Aszendent – verschiedene Achsen",
+        "description": "Ihr Aszendent ist der östliche Horizont (Identität und erster Eindruck). Ihr Medium Coeli ist der Meridian über dem Kopf (öffentliches Leben und Richtung). Jemand kann Löwe-Aszendent und Steinbock-MC haben – warme Präsenz mit strukturierter Berufsorientierung. Dieser Medium Coeli Rechner fokussiert die MC/IC-Achse, damit Sie ihn mit unserem Aszendent Rechner für ein vollständiges Winkelbild kombinieren können, bevor Sie die Weltkarte öffnen.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Diagramm der Winkel ASC, DSC, MC und IC in Medium Coeli- und Aszendent-Astrologie"
+        }
+      },
+      {
+        "title": "Warum die Geburtszeit für den MC wichtig ist",
+        "description": "Das Medium Coeli rückt etwa einen Tierkreisgrad alle vier Minuten vor. Ein halbstündiger Fehler kann den Grad deutlich verschieben; nahe Zeichengrenzen kann sich das MC-Zeichen ganz ändern. Nutzen Sie wenn möglich die Zeit aus Ihrer Geburtsurkunde und wählen Sie die damals gültige Zeitzone am Geburtsort. Sanfter Hinweis: MC-Themen beschreiben symbolische Karriere- und Reputationsmuster – keine Beschäftigungsberatung oder Erfolgsvorhersagen.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines-calculation.webp",
+          "alt": "Illustration der präzisen Medium Coeli-Berechnung abhängig von der exakten Geburtszeit"
+        }
+      },
+      {
+        "title": "Vom Medium Coeli zu Astrocartography-MC-Linien",
+        "description": "Ihr natales MC-Zeichen zu kennen ist Schritt eins. Astrocartography kartiert dann, wo jeder Planet bei der Geburt am Medium Coeli stand – Sonnen-MC, Jupiter-MC, Venus-MC und mehr – als vertikale Linien auf dem Globus. Leben oder Reisen nahe dieser Linien kann Berufssichtbarkeit, Expansion oder andere Planetenthemen verstärken. Nutzen Sie dieselben Geburtsdaten in beiden Tools: MC hier berechnen, dann die Karte für Sonnen- und Jupiter-MC-Linien öffnen.",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Astrocartography-Karte mit Sonnen- und Jupiter-Medium-Coeli-Linien"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Warum unseren Medium Coeli Rechner nutzen",
+    "label": "Kernvorteile",
+    "description": "Erhalten Sie in Sekunden MC-Zeichen, exakten Grad, Chart-Herrscher und gegenüberliegenden IC – plus einen geografischen Check, wie sich das Medium Coeli je nach Stadt ändert. Kostenlos, ohne Anmeldung, sauber übertragbar zu Astrocartography.",
+    "items": [
+      {
+        "title": "Professionelle MC-Formel",
+        "description": "Wir berechnen das Medium Coeli aus lokaler Sternzeit mit der standardmäßigen ekliptischen Umrechnung moderner Astrologie-Software. Ergebnisse umfassen Zeichen, Grad auf zwei Dezimalstellen, modernen Herrscher und den gegenüberliegenden IC (Zuhause und private Wurzeln). Gegenprüfung mit Astro.com oder Ihrer bevorzugten Software bei sensibler Berufsachsen-Arbeit.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Medium Coeli Ergebnis mit exaktem MC-Grad und gegenüberliegendem IC"
+        }
+      },
+      {
+        "title": "Kostenlose Klarheit zur Berufsachse",
+        "description": "Nutzen Sie diesen Medium Coeli Rechner ohne Konto oder Paywall. Nur sanfte Karriere-Deutung: Der MC beschreibt öffentliche Richtung und Reputationssymbolik, keine Jobtitel oder Einkommensprognosen. Reflektieren Sie Zeichen und Herrscher, dann entscheiden Sie, ob standortbasierte Karten-Insights für Sie nützlich sind.",
+        "icon": "RiListCheck",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-result-card.webp",
+          "alt": "Kostenlose Medium Coeli Ergebniskarte mit Zeicheninterpretation und Stadtvergleich"
+        }
+      },
+      {
+        "title": "Brücke zu planetaren MC-Linien",
+        "description": "Sobald Sie Ihr natales Medium Coeli kennen, lautet die nächste Frage: Wo kreuzen Sonnen-MC- und Jupiter-MC-Linien die Erde? Diese Linien sind zentrale Astrocartography-Berufstools. Ein Klick überträgt Geburtsdaten zur Chart-Karte, um Sichtbarkeits- und Expansionsthemen nach Ort zu erkunden – nicht nur nach natal Zeichen.",
+        "icon": "RiMapPinLine",
+        "image": {
+          "src": "/imgs/features/midheaven-calculator/mc-lines-sun-jupiter.webp",
+          "alt": "Übergang vom Medium Coeli Rechner zu Sonnen- und Jupiter-MC-Linien"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "So nutzen Sie den Medium Coeli Rechner",
+    "label": "ANLEITUNG",
+    "description": "Finden Sie Ihr Medium Coeli in unter einer Minute: Geburtsdaten eingeben, MC und IC lesen, Städte vergleichen, optional Astrocartography für Sonnen- und Jupiter-MC-Linien öffnen.",
+    "items": [
+      {
+        "title": "Geburtsdatum, -zeit und -ort eingeben",
+        "description": "Geburtsdatum, exakte Zeit, Ort (Stadt oder Koordinaten) und Zeitzone angeben. Das Medium Coeli hängt von der lokalen Sternzeit an dieser Länge ab. Falsche Zeitzone ist eine häufige MC-Fehlerquelle – prüfen Sie historische Sommerzeit, wenn Ihr Geburtsjahr unklar ist.",
+        "icon": "RiCalendarLine"
+      },
+      {
+        "title": "MC-Zeichen, Grad und Herrscher lesen",
+        "description": "Sehen Sie Ihr Medium-Coeli-Zeichen (z. B. Steinbock 18°22'), Grad und modernen Chart-Herrscher für dieses Zeichen. Eine kurze Interpretation rahmt den öffentlichen Lebensstil ein, ohne Ergebnisse zu versprechen. Der IC (Gegenpunkt) erscheint als private/Heim-Polarität derselben Achse.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Medium Coeli zwischen Städten vergleichen",
+        "description": "Derselbe UTC-Geburtsmoment erzeugt an verschiedenen Längen unterschiedliche MC-Zeichen. Unsere geografische Liste zeigt große Städte, damit Sie spüren, wie der Ort die Berufsachse verschiebt – eine intuitive Brücke zur Lokationsastrologie.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Sonnen- und Jupiter-MC-Linien erkunden (optional)",
+        "description": "Weiter zur Astrocartography-Karte mit vorausgefüllten Geburtsdaten. Achten Sie besonders auf Sonnen-MC-Linien (Sichtbarkeit, Führungsthemen) und Jupiter-MC-Linien (Wachstum, Chancensymbolik). Behandeln Sie Linien als Erkundungskarten, nicht als Umzugsbefehle.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Funktionen des Medium Coeli Rechners",
+    "label": "FUNKTIONEN",
+    "description": "Exakter MC-Grad, gegenüberliegender IC, Herrscherplanet, Zeicheninterpretationen, Stadtvergleich und Ein-Klick-Übergabe für planetare MC-Linien.",
+    "items": [
+      {
+        "title": "Exaktes MC-Zeichen und Grad",
+        "description": "Sehen Sie MC-Zeichen und präzisen Grad – nützlich für Aspekte, Progressionen und Softwarevergleich. Gradgenauigkeit hilft auch nahe einer Zeichenspitze zu klären, ob Steinbock- oder Wassermann-MC gilt.",
+        "icon": "RiPieChartLine"
+      },
+      {
+        "title": "Gegenüberliegender IC inklusive",
+        "description": "Jedes Medium Coeli hat ein Imum Coeli 180° entfernt. Wir zeigen IC-Zeichen und -Grad für die öffentlich/privat-Polarität: Berufssichtbarkeit versus Zuhause und Wurzeln. Sanfter Hinweis: nur symbolische Themen, keine Familien- oder Wohnberatung.",
+        "icon": "RiTableLine"
+      },
+      {
+        "title": "MC-Zeichen-Interpretationen",
+        "description": "Kurze, glaubwürdige Texte für jedes MC-Zeichen fokussieren öffentlichen Stil und Reputationston – keine Joblisten oder Gehaltsversprechen. Nutzen Sie sie als Reflexionsimpulse neben Ihrem vollen Chart und Ihrer Erfahrung.",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "Geografische Medium Coeli-Perspektive",
+        "description": "Vergleichen Sie, wie derselbe Geburts-UTC in New York, London, Tokio, Sydney und anderen Zentren auf MC-Zeichen abgebildet wird. Länge verschiebt den MC; diese Funktion macht das greifbar, bevor Sie planetare MC-Linien auf dem Globus studieren.",
+        "icon": "RiSearchLine"
+      },
+      {
+        "title": "Zeitzonenbewusste Berechnung",
+        "description": "Wählen Sie die passende Zeitzonenbezeichnung, damit die lokale Geburtszeit korrekt in UTC umgerechnet wird, bevor die Sternzeit berechnet wird. Präzise Zeitzone ist für Medium Coeli genauso wichtig wie für den Aszendenten.",
+        "icon": "RiCompass3Line"
+      },
+      {
+        "title": "Astrocartography-Übergabe",
+        "description": "Geburtsdaten mit einem Klick auf die Weltkarte übertragen. Dort können Sie planetare MC-Linien studieren – besonders Sonnen-MC und Jupiter-MC – für standortbasiertes Berufssymbolik, das Ihr natales MC-Zeichen ergänzt.",
+        "icon": "RiArrowRightLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Medium Coeli Rechner — Häufig gestellte Fragen",
+    "description": "Häufige Fragen zur Medium Coeli-Berechnung, MC vs. Aszendent, Geburtszeitgenauigkeit, IC und Astrocartography-MC-Linien.",
+    "items": [
+      {
+        "title": "Ist dieser Medium Coeli Rechner kostenlos?",
+        "description": "Ja. Berechnen Sie MC-Zeichen, Grad, Herrscher und IC so oft Sie möchten – ohne Konto oder Zahlung. Optional weiter zu Astrocartography, um planetare MC-Linien auf der Karte zu erkunden."
+      },
+      {
+        "title": "Was ist das Medium Coeli (MC)?",
+        "description": "Das Medium Coeli ist der höchste Punkt der Ekliptik bei Ihrer Geburt. In den meisten Systemen ist es die 10.-Haus-Spitze und symbolisiert öffentliches Leben, Berufsrichtung und Reputation. Es ist kein Planet – ein Winkelpunkt aus Zeit und Ort."
+      },
+      {
+        "title": "Wie unterscheidet sich Medium Coeli vom Aszendenten?",
+        "description": "Der Aszendent ist der östliche Horizont und hängt von Breite und Länge ab. Das Medium Coeli ist der Meridianpunkt über dem Kopf und hängt von lokaler Sternzeit ab (längenempfindlich, in der Standardformel latitudenunabhängig). ASC ist persönliche Präsentation; MC ist Symbolik der öffentlichen/Berufsachse."
+      },
+      {
+        "title": "Sagt das Medium Coeli meine Karriere voraus?",
+        "description": "Nein. Sanfter Hinweis: MC-Themen beschreiben symbolische öffentliche Richtung und Reputationsmuster. Sie garantieren keine Jobtitel, Beförderungen, Einkommen oder Erfolg. Nutzen Sie Ergebnisse zur Reflexion neben Fähigkeiten, Chancen und praktischer Planung – nicht als Beschäftigungsberatung."
+      },
+      {
+        "title": "Warum ist die Geburtszeit für den MC wichtig?",
+        "description": "Das Medium Coeli bewegt sich etwa einen Grad alle vier Minuten. Nahe einer Zeichengrenze kann ein kleiner Zeitfehler das MC-Zeichen ändern. Nutzen Sie die präziseste Geburtszeit und die korrekte Zeitzone für zuverlässige Ergebnisse."
+      },
+      {
+        "title": "Was ist der IC im Ergebnis?",
+        "description": "Das Imum Coeli (IC) liegt dem Medium Coeli gegenüber. Es betrifft oft Zuhause, Wurzeln und Privatleben als Gegenpol zur öffentlichen Sichtbarkeit. Wir zeigen IC-Zeichen und -Grad nur als Achsenkontext – nicht als Wohn- oder Familienberatung."
+      },
+      {
+        "title": "Wie hängt das mit Astrocartography zusammen?",
+        "description": "Ihr natales Medium Coeli ist ein Chart-Punkt. Astrocartography kartiert, wo jeder Planet bei der Geburt am MC stand, als Linien auf der Erde. Sonnen-MC- und Jupiter-MC-Linien sind beliebt für Sichtbarkeits- und Wachstumsthemen. MC hier berechnen, dann die Karte mit denselben Geburtsdaten öffnen."
+      },
+      {
+        "title": "Wie genau ist dieser MC-Rechner?",
+        "description": "Wir nutzen eine standardmäßige astronomische Medium Coeli-Formel. Die Genauigkeit hängt von Ihren Eingaben ab: exakte Zeit, Zeitzone und Länge. Wichtige Fälle gegen Astro.com oder professionelle Software prüfen. Breite ist für den MC selbst nicht nötig, wird aber für die Kartenübergabe gespeichert."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Finden Sie jetzt Ihr Medium Coeli",
+    "description": "Berechnen Sie kostenlos MC-Zeichen, Grad, Herrscher und IC – dann Sonnen- und Jupiter-MC-Linien auf der Astrocartography-Karte für standortbasierte Berufssymbolik erkunden.",
+    "buttons": [
+      {
+        "title": "Sonnen- und Jupiter-MC-Linien erkunden → Karte",
+        "icon": "RiMapLine",
+        "url": "/",
+        "target": "_self",
+        "variant": "default"
+      }
+    ]
+  },
+  "tool": {
+    "form": {
+      "birthDate": "Geburtsdatum",
+      "birthTime": "Geburtszeit (möglichst exakt)",
+      "birthLocation": "Geburtsort",
+      "timezone": "Zeitzone",
+      "submit": "Medium Coeli berechnen"
+    },
+    "result": {
+      "title": "Ihr Medium Coeli (MC)",
+      "sign": "Medium Coeli",
+      "degree": "Grad",
+      "ruler": "Zeichenherrscher",
+      "ic": "IC (gegenüber)",
+      "interpretation": "Interpretation",
+      "geoTitle": "Gleicher Moment – verschiedene Städte, verschiedenes Medium Coeli",
+      "geoSubtitle": "Der MC verschiebt sich mit der Länge. Als Nächstes: Sonnen- und Jupiter-MC-Linien auf der Weltkarte erkunden.",
+      "ctaChart": "Meine Sonnen- und Jupiter-MC-Linien auf der Karte ansehen",
+      "disclaimer": "Nur symbolische Karriere- und Reputationsthemen – keine Job- oder Einkommensberatung."
+    },
+    "errors": {
+      "required": "Bitte füllen Sie alle Felder aus, um Ihr Medium Coeli zu berechnen.",
+      "location": "Ort nicht gefunden. Versuchen Sie Stadt und Land (z. B. Berlin, Deutschland).",
+      "generic": "Berechnungsfehler. Bitte prüfen Sie Ihre Geburtsdaten und versuchen Sie es erneut."
+    },
+    "interpretations": {
+      "Aries": "Widder-MC rahmt öffentliches Leben oft durch Initiative, Mut und Pionierhandeln. Sanfter Karrierehinweis: Führungs- und Projektstart-Themen – kein garantierter Jobtitel.",
+      "Taurus": "Stier-MC deutet auf einen öffentlichen Weg mit Beständigkeit, Handwerk und greifbaren Ergebnissen. Reputation kann durch Zuverlässigkeit und ästhetische oder materielle Qualität wachsen.",
+      "Gemini": "Zwillinge-MC betont Kommunikation, Lernen und Vielseitigkeit in der Öffentlichkeit. Sichtbarkeit kommt oft durch Schreiben, Lehren, Medien oder Ideenverbindung.",
+      "Cancer": "Krebs-MC hebt Fürsorge, Schutz und emotionale Intelligenz in öffentlichen Rollen hervor. Sanfter Hinweis: Fürsorgethemen – kein Zwang, nur in Pflegeberufen zu arbeiten.",
+      "Leo": "Löwe-MC zeigt auf kreative Sichtbarkeit, Performance und herzliche Selbstentfaltung in der Welt. Anerkennungsthemen erscheinen; Ergebnisse hängen von Einsatz und Kontext ab.",
+      "Virgo": "Jungfrau-MC rahmt Berufung durch Dienst, Präzision und Verbesserung. Öffentliche Reputation kann auf Kompetenz und nützlicher Detailarbeit beruhen.",
+      "Libra": "Waage-MC deutet auf Diplomatie, Ästhetik und Partnerschaft im öffentlichen Leben. Sanfte Karrieredeutung: Balance- und Fairness-Themen – keine garantierten Rechts- oder Designkarrieren.",
+      "Scorpio": "Skorpion-MC beschreibt oft Tiefe, Transformation und strategische Intensität in öffentlichen Rollen. Themen von Forschung, Krisenarbeit oder tiefgreifendem Wandel – keine Schicksalsskripte.",
+      "Sagittarius": "Schütze-MC neigt zu Sinn, Reise, Lehren und weiten Horizonten in der Öffentlichkeit. Wachstums- und Glaubensthemen färben die Reputation.",
+      "Capricorn": "Steinbock-MC ist klassische Symbolik für Struktur, Verantwortung und langfristige Leistung. Sanfter Hinweis: Ambitionsthemen – kein Versprechen von Status oder Reichtum.",
+      "Aquarius": "Wassermann-MC betont Innovation, Gemeinschaft und unabhängige Vision im öffentlichen Leben. Reputation kann sich um progressive oder unkonventionelle Beiträge bilden.",
+      "Pisces": "Fische-MC deutet auf Mitgefühl, Fantasie und durchlässige Grenzen zwischen Berufung und Inspiration. Sanfter Hinweis: künstlerische oder heilende Themen – keine medizinische oder finanzielle Beratung."
+    }
+  }
+}

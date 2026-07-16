@@ -16,6 +16,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "¿También necesitas tu eje de carrera (MC)?",
+        "linkText": "Calculadora del Medio Cielo",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "¿Necesitas tu carta natal completa?",
         "linkText": "Generador de Carta Natal",
         "url": "/tools/birth-chart-generator"

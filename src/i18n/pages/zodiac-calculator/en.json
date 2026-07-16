@@ -21,6 +21,11 @@
         "url": "/rising-sign-calculator"
       },
       {
+        "text": "Know time and place? Find your MC.",
+        "linkText": "Midheaven Calculator",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Explore love and values in your chart.",
         "linkText": "Venus Sign Calculator",
         "url": "/venus-sign-calculator"

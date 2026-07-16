@@ -48,6 +48,10 @@ export async function getRisingSignPage(locale: string): Promise<CalculatorPage>
   return (await getPage("rising-sign-calculator", locale)) as CalculatorPage;
 }
 
+export async function getMidheavenCalculatorPage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("midheaven-calculator", locale)) as CalculatorPage;
+}
+
 export async function getZodiacCalculatorPage(locale: string): Promise<CalculatorPage> {
   return (await getPage("zodiac-calculator", locale)) as CalculatorPage;
 }

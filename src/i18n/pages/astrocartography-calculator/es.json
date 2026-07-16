@@ -14,6 +14,16 @@
         "text": "¿Buscas una introducción general?",
         "linkText": "Visita la Página Principal",
         "url": "/"
+      },
+      {
+        "text": "Calcula primero tu signo ascendente.",
+        "linkText": "Calculadora del Signo Ascendente",
+        "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Calcula tu Medio Cielo (eje vocacional).",
+        "linkText": "Calculadora del Medio Cielo",
+        "url": "/midheaven-calculator"
       }
     ]
   },

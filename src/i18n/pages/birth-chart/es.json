@@ -21,6 +21,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "¿Necesitas tu Medio Cielo (eje de carrera)?",
+        "linkText": "Calculadora del Medio Cielo",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "¿Prefieres tutoriales y ejemplos?",
         "linkText": "Lee el Blog",
         "url": "/posts"

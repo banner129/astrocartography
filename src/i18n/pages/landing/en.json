@@ -51,6 +51,13 @@
               "icon": "RiCompass3Line"
             },
             {
+              "title": "Midheaven Calculator",
+              "description": "Find your MC sign for career axis and public life themes",
+              "url": "/midheaven-calculator",
+              "target": "_self",
+              "icon": "RiTrophyLine"
+            },
+            {
               "title": "Venus Sign Calculator",
               "description": "Find your Venus sign for love, values, and attraction",
               "url": "/venus-sign-calculator",

@@ -16,6 +16,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "Also need your career axis (MC)?",
+        "linkText": "Midheaven Calculator",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Need your complete natal chart?",
         "linkText": "Birth Chart Generator",
         "url": "/tools/birth-chart-generator"

@@ -21,6 +21,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "Precisa do Meio do Céu (eixo de carreira)?",
+        "linkText": "Calculadora de Meio do Céu",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Prefere tutoriais e exemplos?",
         "linkText": "Leia o Blog",
         "url": "/posts"

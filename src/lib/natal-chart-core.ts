@@ -117,6 +117,19 @@ export function calculateAscendantLongitude(dateUtc: Date, latitude: number, lon
   return normalizeDegrees(radToDeg(asc));
 }
 
+/**
+ * Ecliptic longitude of the Midheaven (MC / Medium Coeli).
+ * Independent of latitude: λ = atan2(sin θ, cos θ · cos ε)
+ * where θ = local sidereal time (RAMC), ε = obliquity.
+ */
+export function calculateMidheavenLongitude(dateUtc: Date, longitude: number): number {
+  const epsDeg = 23.4392911;
+  const eps = degToRad(epsDeg);
+  const theta = degToRad(getLocalSiderealTime(dateUtc, longitude));
+  const mc = Math.atan2(Math.sin(theta), Math.cos(theta) * Math.cos(eps));
+  return normalizeDegrees(radToDeg(mc));
+}
+
 export function signIndexFromLongitude(lon: number): number {
   return Math.floor(normalizeDegrees(lon) / 30);
 }

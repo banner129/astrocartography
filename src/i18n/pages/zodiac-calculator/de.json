@@ -21,6 +21,11 @@
         "url": "/rising-sign-calculator"
       },
       {
+        "text": "Zeit und Ort bekannt? Finde dein MC.",
+        "linkText": "Medium Coeli Rechner",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Liebe und Werte in Ihrem Chart erkunden.",
         "linkText": "Venuszeichen Rechner",
         "url": "/venus-sign-calculator"

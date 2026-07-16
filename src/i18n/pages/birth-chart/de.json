@@ -26,6 +26,11 @@
         "url": "/rising-sign-calculator"
       },
       {
+        "text": "Brauchst du dein Medium Coeli (Karriereachse)?",
+        "linkText": "Medium Coeli Rechner",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "Tutorials und Beispiele bevorzugt?",
         "linkText": "Blog lesen",
         "url": "/posts"

@@ -16,6 +16,11 @@
         "url": "/zodiac-calculator"
       },
       {
+        "text": "还需要事业轴（中天 MC）吗？",
+        "linkText": "中天计算器",
+        "url": "/midheaven-calculator"
+      },
+      {
         "text": "需要完整本命盘？",
         "linkText": "本命盘生成器",
         "url": "/tools/birth-chart-generator"

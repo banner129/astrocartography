@@ -19,6 +19,11 @@
         "text": "Find your rising sign first.",
         "linkText": "Rising Sign Calculator",
         "url": "/rising-sign-calculator"
+      },
+      {
+        "text": "Find your Midheaven (career axis).",
+        "linkText": "Midheaven Calculator",
+        "url": "/midheaven-calculator"
       }
     ]
   },

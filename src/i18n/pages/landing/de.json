@@ -51,6 +51,13 @@
               "icon": "RiCompass3Line"
             },
             {
+              "title": "Medium Coeli Rechner",
+              "description": "MC berechnen: Karriereachse und öffentliches Leben",
+              "url": "/midheaven-calculator",
+              "target": "_self",
+              "icon": "RiTrophyLine"
+            },
+            {
               "title": "Venuszeichen berechnen",
               "description": "Venus fur Liebe, Werte und Anziehung berechnen",
               "url": "/venus-sign-calculator",
