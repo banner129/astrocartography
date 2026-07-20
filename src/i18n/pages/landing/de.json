@@ -142,6 +142,13 @@
               "icon": "RiGlobalLine"
             },
             {
+              "title": "Wohnort finden",
+              "description": "Vergleiche Städte für Liebe, Beruf, Zuhause und Umzugsentscheidungen",
+              "url": "/astrocartography-where-to-live",
+              "target": "_self",
+              "icon": "RiHomeHeartLine"
+            },
+            {
               "title": "Sonnenlinie",
               "description": "Berufliche Sichtbarkeit, Selbstvertrauen und authentischer Ausdruck",
               "url": "/sun-line-astrocartography",

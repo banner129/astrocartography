@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "title": "Astrocartography Where to Live - Find Places That Fit Your Birth Chart",
+    "description": "Learn how to use your astrocartography map to compare places for love, career, home, growth, and relocation decisions.",
+    "keywords": "astrocartography where to live, where should I live based on my birth chart, best places to live astrocartography, where to live based on astrology, astrocartography chart where to live, relocation astrology, best place to live astrology"
+  },
+  "intentAnchor": {
+    "text": "Use this guide to turn your astrocartography map into a practical where-to-live decision workflow: start with your birth data, compare candidate cities, match planetary lines to your life goals, and keep real-world relocation factors in the picture."
+  },
+  "guideHero": {
+    "badge": "Relocation Guide",
+    "overviewTitle": "Where to Live",
+    "overviewEyebrow": "Guide overview",
+    "overviewItems": [
+      {
+        "label": "Start with",
+        "value": "Birth data and candidate cities"
+      },
+      {
+        "label": "Compare for",
+        "value": "Love, career, home, and growth"
+      },
+      {
+        "label": "Best use",
+        "value": "Shortlist places before deeper research"
+      },
+      {
+        "label": "Remember",
+        "value": "Blend astrology with practical planning"
+      }
+    ],
+    "actions": [
+      {
+        "title": "Generate Your Map",
+        "url": "/astrocartography-calculator",
+        "icon": "RiArrowRightLine"
+      },
+      {
+        "title": "Compare All Lines",
+        "url": "/astrocartography-lines",
+        "icon": "RiRouteLine",
+        "variant": "secondary"
+      }
+    ]
+  },
+  "internalLinks": {
+    "title": "Plan Your Next Location",
+    "items": [
+      {
+        "text": "Need your map first?",
+        "linkText": "Free Astrocartography Calculator",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "Want every line meaning?",
+        "linkText": "Astrocartography Lines",
+        "url": "/astrocartography-lines"
+      },
+      {
+        "text": "Comparing one city?",
+        "linkText": "Relocation Chart Calculator",
+        "url": "/relocation-chart-calculator"
+      },
+      {
+        "text": "Looking for opportunity?",
+        "linkText": "Jupiter Line Guide",
+        "url": "/jupiter-line-astrocartography"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Can Astrocartography Help You Decide Where to Live?",
+    "label": "RELOCATION FOCUS",
+    "description": "Astrocartography cannot choose a city for you by itself, but it can give you a useful symbolic map for comparing places. When you enter your birth date, exact birth time, and birth place, your map shows where each planet in your natal chart was angular around the world. Those lines can help you understand which locations may emphasize visibility, comfort, love, discipline, momentum, or growth.",
+    "image": {
+      "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+      "alt": "Astrocartography map used to compare where to live"
+    },
+    "items": [
+      {
+        "title": "Start With Your Birth Data and Candidate Places",
+        "description": "A where-to-live reading begins with accurate birth data: date, time, and birth place. The birth time matters because the Ascendant, Descendant, Midheaven, and IC angles shift quickly. Once your map is generated, add a few candidate cities instead of looking at the entire world at once. This keeps the question practical. You are not asking the chart to name the perfect place; you are asking how each realistic option might activate different parts of your life.",
+        "image": {
+          "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+          "alt": "Birth data and candidate cities for astrocartography relocation"
+        }
+      },
+      {
+        "title": "Match Planetary Lines to the Life You Want Next",
+        "description": "The strongest use of astrocartography for relocation is goal matching. If you want career visibility, Sun or Jupiter Midheaven lines may be worth studying. If you want beauty, ease, social connection, or partnership, Venus lines are usually relevant. If you want emotional belonging and a settled home rhythm, Moon IC can be important. If you want structure, mastery, or long-term discipline, Saturn can be meaningful, even when it feels demanding. The best place is not always the softest place; it is the place that fits the chapter you are trying to build.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Planetary lines matched to life goals in astrocartography"
+        }
+      },
+      {
+        "title": "Use Astrology as One Lens, Not the Whole Decision",
+        "description": "Relocation decisions involve work, housing, visas, healthcare, family, culture, safety, and money. Astrocartography can add a personal chart-based layer to that research, but it should not replace practical planning. A beautiful Venus line in a city with no job fit may still be unrealistic. A serious Saturn line in a city with excellent professional opportunities may be useful if you are ready for responsibility. Treat the map as a decision support tool, then combine it with visits, budgets, interviews, and local research.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Practical relocation research alongside astrocartography"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Best Astrocartography Lines for Different Places to Live",
+    "label": "LIFE-GOAL LINE MATCHING",
+    "description": "There is no single best astrocartography line for everyone. A good place to live depends on what you want the location to support. Use these three broad patterns to narrow your map before you compare individual cities.",
+    "items": [
+      {
+        "title": "Career, Visibility, and Public Direction",
+        "description": "For career growth, look first at Sun MC, Jupiter MC, and sometimes Saturn MC. Sun MC can highlight visibility, leadership, and public recognition. Jupiter MC can feel expansive and opportunity-oriented when you are ready to grow. Saturn MC may be slower and more demanding, but it can support authority, craft, and long-term reputation. A Mars MC line can also be useful for entrepreneurs or high-energy launches, though it may feel intense for everyday living.",
+        "icon": "RiBriefcaseLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "Astrocartography career lines for where to live"
+        }
+      },
+      {
+        "title": "Love, Beauty, Friendship, and Ease",
+        "description": "For relationship and quality-of-life questions, Venus lines are often the first place to look. Venus DSC is commonly associated with partnership themes, while Venus ASC can increase charm, style, and social ease. Moon DSC can bring emotional closeness, and Moon IC can make a place feel more familiar or inwardly nourishing. These lines can be supportive, but they do not guarantee romance or happiness. They show themes to explore, not outcomes you can force.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Venus and Moon lines for love and home"
+        }
+      },
+      {
+        "title": "Home, Roots, Healing, and Belonging",
+        "description": "For settling down, family life, and emotional grounding, Moon IC and Venus IC are especially relevant. Moon IC may emphasize privacy, ancestry, caregiving, and the feeling of being rooted. Venus IC can support a pleasing home environment, hospitality, and softer domestic rhythms. If you want a quiet life, also look at places away from intense line crossings. Sometimes a less activated place gives you more room to define your life without constant pressure from one planetary theme.",
+        "icon": "RiHomeHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Astrocartography home lines for choosing where to live"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Compare Cities With Astrocartography",
+    "label": "CANDIDATE CITY WORKFLOW",
+    "description": "Instead of scanning the whole map and hoping one city jumps out, use a simple comparison process. It keeps your reading grounded and makes the result easier to discuss with an AI interpretation or a professional astrologer.",
+    "items": [
+      {
+        "title": "Generate Your Map",
+        "description": "Start with the free astrocartography calculator and enter your birth date, exact birth time, and birth place. If you do not know your birth time, treat the result as exploratory because the angles may shift. Save or note the lines near each city you are considering.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Pick Two to Five Realistic Cities",
+        "description": "Choose places you could actually visit, work in, study in, or move to. Include your current city as a baseline. Comparing a dream city, a practical city, and your current location often reveals the most useful contrast.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Match Each City to One Goal",
+        "description": "Give every city a primary purpose: career, love, home, study, healing, creativity, or reinvention. Then read the planetary lines through that lens. A Mars line may be excellent for ambition but less ideal for rest. A Moon line may be excellent for belonging but less focused on public achievement.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Check the Relocation Chart",
+        "description": "For a finalist city, run a relocation chart to see how your natal planets shift into houses in that location. Astrocartography shows the geographic line pattern; the relocation chart gives a city-specific chart view. Together, they give a clearer picture than either method alone.",
+        "icon": "RiPieChartLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Where to Live Based on Your Birth Chart Goals",
+    "label": "DECISION FRAMEWORK",
+    "description": "Use these goal-based prompts when reading your astrocartography chart. They help you turn a map full of lines into a more specific location shortlist.",
+    "items": [
+      {
+        "title": "If You Want Career Momentum",
+        "description": "Prioritize cities near Sun MC, Jupiter MC, Mercury MC, or Mars MC depending on your work style. Sun supports visibility, Jupiter supports expansion, Mercury supports communication and knowledge work, and Mars supports drive. Then ask whether the city also has a realistic market, network, salary path, or client base for your career.",
+        "icon": "RiRocketLine"
+      },
+      {
+        "title": "If You Want Love or Partnership",
+        "description": "Look at Venus DSC, Moon DSC, Venus ASC, and sometimes Jupiter DSC. These placements can describe relationship-centered themes, but they do not remove the normal requirements of compatibility, timing, communication, and emotional maturity. A good love location still needs real-life social opportunity.",
+        "icon": "RiHeart2Line"
+      },
+      {
+        "title": "If You Want to Feel at Home",
+        "description": "Study Moon IC, Venus IC, and supportive fourth-house themes in the relocation chart. Also notice how your body responds when you visit. A home line may feel gentle, familiar, nostalgic, protective, or emotionally revealing. The right home place often has both symbolic support and practical daily ease.",
+        "icon": "RiHome4Line"
+      },
+      {
+        "title": "If You Want Study, Writing, or Business",
+        "description": "Mercury lines are useful for learning, teaching, networking, writing, sales, media, and business communication. Mercury MC is especially relevant for public work, while Mercury ASC can make it easier to meet people and exchange ideas. Watch for overstimulation if you need deep rest.",
+        "icon": "RiMessage3Line"
+      },
+      {
+        "title": "If You Want Deep Change",
+        "description": "Uranus, Neptune, and Pluto lines can be powerful but less predictable for long-term living. Uranus can bring freedom and disruption. Neptune can bring inspiration and confusion. Pluto can bring intensity and transformation. These lines deserve extra care, short visits, and practical backup plans before any major move.",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "If a Place Has No Major Lines",
+        "description": "A city without strong nearby lines is not a bad choice. It may feel neutral, flexible, or easier to shape through your own choices. For many people, a low-intensity place is better for stability, family, recovery, or steady work than a dramatic line crossing. Neutral can be a feature, not a flaw.",
+        "icon": "RiLeafLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Astrocartography Where to Live FAQ",
+    "description": "Practical answers for using astrocartography to compare places without turning the map into a guarantee.",
+    "items": [
+      {
+        "title": "Can astrocartography tell me where to live?",
+        "description": "Astrocartography can help you compare places by showing which planetary themes are emphasized in different locations. It is best used as a decision framework, not as a final command. Combine your map with work options, housing, cost of living, family needs, legal requirements, health access, and real visits."
+      },
+      {
+        "title": "What is the best astrocartography line to live on?",
+        "description": "There is no universal best line. Jupiter lines are often associated with expansion, Venus lines with ease and relationships, Sun lines with visibility, Moon lines with home, and Saturn lines with responsibility and long-term building. The best line is the one that fits your current goal."
+      },
+      {
+        "title": "Where should I live based on my birth chart?",
+        "description": "Start by generating your astrocartography map, then shortlist realistic cities. For each city, identify nearby planetary lines and angles, compare them with your goal, and check the relocation chart for a city-specific view. Your birth chart can clarify themes, but practical fit still matters."
+      },
+      {
+        "title": "Is living on a Venus line always good?",
+        "description": "Venus lines can support beauty, pleasure, social ease, and relationship themes, but they are not automatically perfect. They can also make comfort more tempting than effort. Whether a Venus line is good for you depends on the angle, the rest of your chart, the city itself, and what you are trying to build."
+      },
+      {
+        "title": "How close do I need to be to an astrocartography line?",
+        "description": "Many astrologers use a broad working range of about 200 to 300 miles, with the strongest effect closer to the line. Exact distance rules vary by method and by the sensitivity of the person reading the map. If a city is near multiple lines or crossings, read the combination rather than one line alone."
+      },
+      {
+        "title": "Should I use a relocation chart too?",
+        "description": "Yes, especially for serious moves. Astrocartography shows where planetary lines fall around the world, while a relocation chart shows how your birth chart is reframed for one specific place. For a finalist city, using both gives a more complete view."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Find Places That Fit Your Chart",
+    "description": "Generate your map, compare your candidate cities, and use AI-assisted interpretation when you want a deeper reading of the places you are considering.",
+    "buttons": [
+      {
+        "title": "Generate Your Free Astrocartography Map",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "Compare Line Meanings",
+        "icon": "RiCompassLine",
+        "url": "/astrocartography-lines",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  }
+}

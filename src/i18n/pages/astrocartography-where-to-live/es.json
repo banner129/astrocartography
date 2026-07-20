@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "title": "Mejores lugares para vivir según la astrocartografía",
+    "description": "Aprende a usar tu mapa de astrocartografía para comparar ciudades para amor, carrera, hogar, crecimiento y decisiones de mudanza.",
+    "keywords": "mejores lugares para vivir según la astrocartografía, astrocartografía donde vivir, dónde vivir según mi carta natal, mejor lugar para vivir astrología, carta astrocartográfica donde vivir, astrología de reubicación"
+  },
+  "intentAnchor": {
+    "text": "Usa esta guía para convertir tu mapa de astrocartografía en un proceso práctico para decidir dónde vivir: empieza con tus datos de nacimiento, compara ciudades candidatas, conecta las líneas planetarias con tus objetivos y conserva los factores reales de mudanza en la decisión."
+  },
+  "guideHero": {
+    "badge": "Guía de reubicación",
+    "overviewTitle": "Dónde vivir",
+    "overviewEyebrow": "Resumen de la guía",
+    "overviewItems": [
+      {
+        "label": "Empieza con",
+        "value": "Datos natales y ciudades candidatas"
+      },
+      {
+        "label": "Compara por",
+        "value": "Amor, carrera, hogar y crecimiento"
+      },
+      {
+        "label": "Mejor uso",
+        "value": "Crear una lista corta antes de investigar más"
+      },
+      {
+        "label": "Recuerda",
+        "value": "Combinar astrología y planificación real"
+      }
+    ],
+    "actions": [
+      {
+        "title": "Genera tu mapa",
+        "url": "/astrocartography-calculator",
+        "icon": "RiArrowRightLine"
+      },
+      {
+        "title": "Compara todas las líneas",
+        "url": "/astrocartography-lines",
+        "icon": "RiRouteLine",
+        "variant": "secondary"
+      }
+    ]
+  },
+  "internalLinks": {
+    "title": "Planifica tu próximo lugar",
+    "items": [
+      {
+        "text": "¿Necesitas tu mapa primero?",
+        "linkText": "Calculadora de astrocartografía gratis",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "¿Quieres el significado de cada línea?",
+        "linkText": "Líneas de astrocartografía",
+        "url": "/astrocartography-lines"
+      },
+      {
+        "text": "¿Comparas una ciudad concreta?",
+        "linkText": "Calculadora de carta relocada",
+        "url": "/relocation-chart-calculator"
+      },
+      {
+        "text": "¿Buscas oportunidad?",
+        "linkText": "Guía de la línea de Júpiter",
+        "url": "/jupiter-line-astrocartography"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "¿Puede la astrocartografía ayudarte a decidir dónde vivir?",
+    "label": "ENFOQUE DE REUBICACIÓN",
+    "description": "La astrocartografía no puede elegir una ciudad por ti, pero sí ofrece un mapa simbólico útil para comparar lugares. Al introducir fecha, hora y lugar de nacimiento, el mapa muestra dónde se activan angularmente tus planetas natales alrededor del mundo.",
+    "image": {
+      "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+      "alt": "Mapa de astrocartografía para comparar dónde vivir"
+    },
+    "items": [
+      {
+        "title": "Empieza con tus datos natales y ciudades candidatas",
+        "description": "Una lectura para elegir dónde vivir empieza con datos de nacimiento precisos. La hora importa porque los ángulos ASC, DSC, MC e IC cambian rápido. Después de generar tu mapa, añade unas pocas ciudades reales en lugar de mirar todo el mundo a la vez.",
+        "image": {
+          "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+          "alt": "Datos natales y ciudades candidatas para reubicación"
+        }
+      },
+      {
+        "title": "Conecta las líneas planetarias con la vida que quieres",
+        "description": "Para visibilidad profesional, estudia líneas de Sol o Júpiter en MC. Para amor, belleza y conexión social, Venus suele ser relevante. Para pertenencia emocional y hogar, la Luna en IC puede ser importante.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Líneas planetarias conectadas con objetivos de vida"
+        }
+      },
+      {
+        "title": "Usa la astrología como una lente, no como toda la decisión",
+        "description": "Mudarse implica trabajo, vivienda, visados, salud, familia, cultura, seguridad y dinero. La astrocartografía añade una capa personal basada en la carta, pero no sustituye la planificación práctica.",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Planificación práctica junto con astrocartografía"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Mejores líneas de astrocartografía según el tipo de lugar para vivir",
+    "label": "LÍNEAS POR OBJETIVO",
+    "description": "No existe una línea perfecta para todos. Un buen lugar depende de lo que quieras que esa ubicación apoye ahora.",
+    "items": [
+      {
+        "title": "Carrera, visibilidad y dirección pública",
+        "description": "Para crecimiento profesional, mira primero Sol MC, Júpiter MC y a veces Saturno MC. Sol aporta visibilidad, Júpiter expansión y Saturno construcción a largo plazo.",
+        "icon": "RiBriefcaseLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "Líneas de carrera en astrocartografía"
+        }
+      },
+      {
+        "title": "Amor, belleza, amistad y facilidad",
+        "description": "Para relaciones y calidad de vida, las líneas de Venus suelen ser el primer punto de referencia. Venus DSC se relaciona con pareja, mientras Venus ASC puede aumentar encanto y facilidad social.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "Líneas de Venus y Luna para amor y hogar"
+        }
+      },
+      {
+        "title": "Hogar, raíces, sanación y pertenencia",
+        "description": "Para establecerte, Luna IC y Venus IC son especialmente relevantes. A veces un lugar con menos líneas fuertes también puede ser mejor para estabilidad y vida cotidiana.",
+        "icon": "RiHomeHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "Líneas de hogar en astrocartografía"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo comparar ciudades con astrocartografía",
+    "label": "PROCESO DE CIUDADES",
+    "description": "Usa un proceso simple para que el mapa sea práctico y fácil de interpretar.",
+    "items": [
+      {
+        "title": "Genera tu mapa",
+        "description": "Introduce fecha, hora exacta y lugar de nacimiento. Si no conoces la hora, trata el resultado como exploratorio.",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "Elige dos a cinco ciudades realistas",
+        "description": "Incluye lugares donde podrías vivir, estudiar, trabajar o visitar, además de tu ciudad actual como referencia.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Asigna un objetivo a cada ciudad",
+        "description": "Lee las líneas según un propósito principal: carrera, amor, hogar, estudio, sanación, creatividad o reinvención.",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "Revisa la carta relocada",
+        "description": "Para una ciudad finalista, usa la carta relocada para ver cómo cambian las casas de tu carta natal en ese lugar.",
+        "icon": "RiPieChartLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Dónde vivir según los objetivos de tu carta natal",
+    "label": "MARCO DE DECISIÓN",
+    "description": "Estas preguntas convierten un mapa lleno de líneas en una lista corta de lugares.",
+    "items": [
+      {
+        "title": "Si quieres impulso profesional",
+        "description": "Prioriza Sol MC, Júpiter MC, Mercurio MC o Marte MC según tu estilo de trabajo, y confirma que la ciudad tenga mercado real.",
+        "icon": "RiRocketLine"
+      },
+      {
+        "title": "Si quieres amor o pareja",
+        "description": "Observa Venus DSC, Luna DSC, Venus ASC y a veces Júpiter DSC, sin olvidar compatibilidad, comunicación y oportunidad social.",
+        "icon": "RiHeart2Line"
+      },
+      {
+        "title": "Si quieres sentirte en casa",
+        "description": "Estudia Luna IC, Venus IC y los temas de casa cuatro en la carta relocada. También importa cómo se siente tu cuerpo al visitar.",
+        "icon": "RiHome4Line"
+      },
+      {
+        "title": "Si quieres estudiar, escribir o hacer negocios",
+        "description": "Las líneas de Mercurio son útiles para aprendizaje, enseñanza, ventas, medios y comunicación empresarial.",
+        "icon": "RiMessage3Line"
+      },
+      {
+        "title": "Si quieres cambio profundo",
+        "description": "Urano, Neptuno y Plutón pueden ser potentes pero menos previsibles. Prueba con visitas cortas antes de mudarte.",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "Si un lugar no tiene líneas principales",
+        "description": "Una ciudad neutral no es mala. Puede ser flexible, estable y más fácil de moldear con tus propias decisiones.",
+        "icon": "RiLeafLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Preguntas frecuentes sobre dónde vivir según la astrocartografía",
+    "description": "Respuestas prácticas para comparar lugares sin convertir el mapa en una garantía.",
+    "items": [
+      {
+        "title": "¿La astrocartografía puede decirme dónde vivir?",
+        "description": "Puede ayudarte a comparar temas planetarios por ubicación, pero debe usarse como marco de decisión junto con trabajo, vivienda, familia, salud, seguridad y presupuesto."
+      },
+      {
+        "title": "¿Cuál es la mejor línea para vivir en astrocartografía?",
+        "description": "No hay una línea universal. Júpiter suele asociarse con expansión, Venus con facilidad, Sol con visibilidad, Luna con hogar y Saturno con responsabilidad."
+      },
+      {
+        "title": "¿Dónde debería vivir según mi carta natal?",
+        "description": "Genera tu mapa, selecciona ciudades realistas, identifica líneas y ángulos cercanos, y revisa una carta relocada para cada finalista."
+      },
+      {
+        "title": "¿Vivir en una línea de Venus siempre es bueno?",
+        "description": "No siempre. Venus puede apoyar belleza, placer y relaciones, pero también comodidad excesiva. Depende del ángulo, la carta completa y la ciudad."
+      },
+      {
+        "title": "¿Qué tan cerca debo estar de una línea?",
+        "description": "Muchos astrólogos usan un rango aproximado de 200 a 300 millas, con mayor fuerza cerca de la línea. Las reglas varían por método."
+      },
+      {
+        "title": "¿También debería usar una carta relocada?",
+        "description": "Sí, especialmente para mudanzas serias. El mapa muestra líneas geográficas; la carta relocada muestra una vista específica de la ciudad."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Encuentra lugares que encajen con tu carta",
+    "description": "Genera tu mapa, compara ciudades candidatas y usa interpretación asistida por IA cuando necesites una lectura más profunda.",
+    "buttons": [
+      {
+        "title": "Generar mapa de astrocartografía gratis",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "Comparar significados de líneas",
+        "icon": "RiCompassLine",
+        "url": "/astrocartography-lines",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  }
+}

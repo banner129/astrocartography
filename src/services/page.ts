@@ -80,6 +80,10 @@ export async function getAstrocartographyLinesPage(locale: string): Promise<Calc
   return (await getPage("astrocartography-lines", locale)) as CalculatorPage;
 }
 
+export async function getAstrocartographyWhereToLivePage(locale: string): Promise<CalculatorPage> {
+  return (await getPage("astrocartography-where-to-live", locale)) as CalculatorPage;
+}
+
 export async function getSunLinePage(locale: string): Promise<CalculatorPage> {
   return (await getPage("sun-line-astrocartography", locale)) as CalculatorPage;
 }

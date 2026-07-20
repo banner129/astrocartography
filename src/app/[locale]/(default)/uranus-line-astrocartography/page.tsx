@@ -7,7 +7,7 @@ import Feature3 from "@/components/blocks/feature3";
 import Feature from "@/components/blocks/feature";
 import FAQ from "@/components/blocks/faq";
 import CTA from "@/components/blocks/cta";
-import { Link } from "@/i18n/navigation";
+import GuideHero from "@/components/blocks/guide-hero";
 
 export const dynamic = "force-static";
 export const revalidate = 604800;
@@ -15,6 +15,99 @@ export const dynamicParams = true;
 
 const PATH = "/uranus-line-astrocartography";
 const LOCALES = ["en", "zh", "pt", "es", "it", "de"];
+
+const heroCopyByLocale = {
+  en: {
+    badge: "Uranus Line Guide",
+    overviewEyebrow: "Guide overview",
+    overviewTitle: "Uranus Line",
+    overviewItems: [
+      { label: "Core energy", value: "Freedom and reinvention" },
+      { label: "Best for", value: "Breakthroughs and fresh starts" },
+      { label: "Watch for", value: "Instability and sudden changes" },
+      { label: "Angles", value: "ASC, DSC, MC, and IC" },
+    ],
+    actions: [
+      { title: "Find Your Uranus Line", url: "/", icon: "RiArrowRightLine" },
+      { title: "Compare All Lines", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+  zh: {
+    badge: "天王星线指南",
+    overviewEyebrow: "指南概览",
+    overviewTitle: "天王星线",
+    overviewItems: [
+      { label: "核心能量", value: "自由与自我重塑" },
+      { label: "适合", value: "突破、创新和全新开始" },
+      { label: "注意", value: "不稳定和突然变化" },
+      { label: "角点", value: "ASC、DSC、MC、IC" },
+    ],
+    actions: [
+      { title: "找到你的天王星线", url: "/", icon: "RiArrowRightLine" },
+      { title: "比较全部行星线", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+  pt: {
+    badge: "Guia da linha de Urano",
+    overviewEyebrow: "Resumo do guia",
+    overviewTitle: "Linha de Urano",
+    overviewItems: [
+      { label: "Energia central", value: "Liberdade e reinvenção" },
+      { label: "Melhor para", value: "Rupturas e novos começos" },
+      { label: "Atenção", value: "Instabilidade e mudanças repentinas" },
+      { label: "Ângulos", value: "ASC, DSC, MC e IC" },
+    ],
+    actions: [
+      { title: "Encontrar sua linha de Urano", url: "/", icon: "RiArrowRightLine" },
+      { title: "Comparar todas as linhas", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+  es: {
+    badge: "Guía de la línea de Urano",
+    overviewEyebrow: "Resumen de la guía",
+    overviewTitle: "Línea de Urano",
+    overviewItems: [
+      { label: "Energía central", value: "Libertad y reinvención" },
+      { label: "Mejor para", value: "Avances y nuevos comienzos" },
+      { label: "Cuidado con", value: "Inestabilidad y cambios repentinos" },
+      { label: "Ángulos", value: "ASC, DSC, MC e IC" },
+    ],
+    actions: [
+      { title: "Encontrar tu línea de Urano", url: "/", icon: "RiArrowRightLine" },
+      { title: "Comparar todas las líneas", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+  it: {
+    badge: "Guida alla linea di Urano",
+    overviewEyebrow: "Panoramica guida",
+    overviewTitle: "Linea di Urano",
+    overviewItems: [
+      { label: "Energia centrale", value: "Libertà e reinvenzione" },
+      { label: "Ideale per", value: "Svolte e nuovi inizi" },
+      { label: "Attenzione a", value: "Instabilità e cambiamenti improvvisi" },
+      { label: "Angoli", value: "ASC, DSC, MC e IC" },
+    ],
+    actions: [
+      { title: "Trova la tua linea di Urano", url: "/", icon: "RiArrowRightLine" },
+      { title: "Confronta tutte le linee", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+  de: {
+    badge: "Uranus-Linie Leitfaden",
+    overviewEyebrow: "Leitfaden-Überblick",
+    overviewTitle: "Uranus-Linie",
+    overviewItems: [
+      { label: "Kernenergie", value: "Freiheit und Neuerfindung" },
+      { label: "Gut für", value: "Durchbrüche und Neuanfänge" },
+      { label: "Achte auf", value: "Instabilität und plötzliche Änderungen" },
+      { label: "Achsen", value: "ASC, DSC, MC und IC" },
+    ],
+    actions: [
+      { title: "Deine Uranus-Linie finden", url: "/", icon: "RiArrowRightLine" },
+      { title: "Alle Linien vergleichen", url: "/astrocartography-lines", icon: "RiRouteLine", variant: "secondary" as const },
+    ],
+  },
+};
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -70,41 +163,22 @@ export default async function UranusLinePage({
   const { locale } = await params;
   const page = await getUranusLinePage(locale);
   const h1Title = page.metadata.title.split(" - ")[0].replace(/\s+\d{4}$/, "").trim();
+  const heroCopy = heroCopyByLocale[locale as keyof typeof heroCopyByLocale] ?? heroCopyByLocale.en;
 
   return (
     <>
-      <div className="container max-w-4xl px-4 pt-20 pb-5 lg:pt-24 lg:pb-7">
-        <h1 className="text-center text-white text-2xl font-bold leading-tight lg:text-4xl lg:leading-relaxed">
-          {h1Title}
-        </h1>
-      </div>
-
-      {page.intentAnchor && (
-        <div className="container max-w-4xl px-4 pb-6 lg:pb-7">
-          <p className="text-center text-white text-sm font-medium leading-relaxed lg:text-xl lg:leading-snug">
-            {page.intentAnchor.text}
-          </p>
-        </div>
-      )}
-
-      {page.internalLinks && (
-        <div className="container max-w-4xl px-4 pb-12 lg:pb-16">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {page.internalLinks.items.map((item, index) => (
-              <Link
-                key={index}
-                href={item.url as any}
-                className="group flex flex-col gap-1.5 rounded-xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10 hover:border-primary/30 transition-all"
-              >
-                <span className="text-xs text-muted-foreground leading-relaxed">{item.text}</span>
-                <span className="text-sm font-semibold text-primary group-hover:underline">
-                  {item.linkText} →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
+      <GuideHero
+        badge={heroCopy.badge}
+        badgeIcon="RiFlashlightLine"
+        title={h1Title}
+        description={page.intentAnchor?.text}
+        overviewTitle={heroCopy.overviewTitle}
+        overviewEyebrow={heroCopy.overviewEyebrow}
+        overviewIcon="RiFlashlightLine"
+        overviewItems={heroCopy.overviewItems}
+        actions={heroCopy.actions}
+        links={page.internalLinks?.items}
+      />
 
       {page.introduce && <FeatureWhatTwo section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}

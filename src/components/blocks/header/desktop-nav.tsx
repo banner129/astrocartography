@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,12 +20,18 @@ import { cn } from "@/lib/utils";
  */
 export default function DesktopNav({ header }: { header: HeaderType }) {
   const [isMounted, setIsMounted] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const pathname = usePathname();
 
   // 🔥 关键优化：等待客户端挂载后再渲染交互式组件
   // 这样 SSR 时只渲染静态链接，客户端 hydration 后再启用下拉菜单
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    setOpenMenu(null);
+  }, [pathname]);
 
   if (!header.nav?.items || header.nav.items.length === 0) {
     return null;
@@ -33,6 +40,8 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
   return (
     <div className="flex items-center gap-1">
       {header.nav.items.map((item, i) => {
+        const menuKey = item.title || String(i);
+
         if (item.children && item.children.length > 0) {
           // 🔥 SSR 时渲染静态按钮，客户端挂载后渲染完整的 DropdownMenu
           if (!isMounted) {
@@ -56,7 +65,11 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
           }
 
           return (
-            <DropdownMenu key={i}>
+            <DropdownMenu
+              key={i}
+              open={openMenu === menuKey}
+              onOpenChange={(open) => setOpenMenu(open ? menuKey : null)}
+            >
               <DropdownMenuTrigger
                 className={cn(
                   "text-muted-foreground",
@@ -79,6 +92,7 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
                     )}
                     href={iitem.url as any}
                     target={iitem.target}
+                    onClick={() => setOpenMenu(null)}
                   >
                     {iitem.icon && (
                       <Icon name={iitem.icon} className="size-5 shrink-0" />
@@ -105,6 +119,7 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
             )}
             href={item.url as any}
             target={item.target}
+            onClick={() => setOpenMenu(null)}
           >
             {item.icon && (
               <Icon name={item.icon} className="size-3 shrink-0 mr-1" />
@@ -116,4 +131,3 @@ export default function DesktopNav({ header }: { header: HeaderType }) {
     </div>
   );
 }
-

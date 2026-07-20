@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "title": "占星地图适合居住地 - 用星盘比较适合生活的城市",
+    "description": "学习如何用占星地图和搬迁星盘比较城市，判断哪些地方更适合爱情、事业、家庭、成长和长期居住。",
+    "keywords": "占星地图适合居住地, 星盘适合居住的城市, 根据星盘适合住哪里, astrocartography 哪里适合居住, 占星地图居住, 搬迁占星, 搬迁星盘"
+  },
+  "intentAnchor": {
+    "text": "这份指南会把占星地图变成一个实用的择居流程：先输入出生资料，再列出候选城市，把行星线与爱情、事业、家庭和成长目标对应起来，同时保留现实层面的搬迁判断。"
+  },
+  "guideHero": {
+    "badge": "搬迁占星指南",
+    "overviewTitle": "适合居住地",
+    "overviewEyebrow": "指南概览",
+    "overviewItems": [
+      {
+        "label": "先准备",
+        "value": "出生资料和候选城市"
+      },
+      {
+        "label": "比较目标",
+        "value": "爱情、事业、家庭和成长"
+      },
+      {
+        "label": "适合用来",
+        "value": "先筛选地点，再深入研究"
+      },
+      {
+        "label": "请记得",
+        "value": "把占星与现实规划结合"
+      }
+    ],
+    "actions": [
+      {
+        "title": "生成你的占星地图",
+        "url": "/astrocartography-calculator",
+        "icon": "RiArrowRightLine"
+      },
+      {
+        "title": "比较全部行星线",
+        "url": "/astrocartography-lines",
+        "icon": "RiRouteLine",
+        "variant": "secondary"
+      }
+    ]
+  },
+  "internalLinks": {
+    "title": "规划你的下一个地点",
+    "items": [
+      {
+        "text": "还没有生成地图？",
+        "linkText": "免费占星地图计算器",
+        "url": "/astrocartography-calculator"
+      },
+      {
+        "text": "想了解每条行星线？",
+        "linkText": "占星地图行星线指南",
+        "url": "/astrocartography-lines"
+      },
+      {
+        "text": "正在比较某一个城市？",
+        "linkText": "搬迁星盘计算器",
+        "url": "/relocation-chart-calculator"
+      },
+      {
+        "text": "想找成长和机会？",
+        "linkText": "木星线指南",
+        "url": "/jupiter-line-astrocartography"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "占星地图能帮你判断适合住哪里吗？",
+    "label": "搬迁重点",
+    "description": "占星地图不能替你直接决定搬到哪座城市，但它可以提供一张有参考价值的象征地图。输入出生日期、准确出生时间和出生地点后，你可以看到出生星盘里的行星在世界各地被哪些角点激活，从而比较不同地点会强调可见度、舒适感、爱情、纪律、行动力或成长。",
+    "image": {
+      "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+      "alt": "用占星地图比较适合居住的城市"
+    },
+    "items": [
+      {
+        "title": "从出生资料和候选城市开始",
+        "description": "择居解读首先需要准确的出生日期、出生时间和出生地点。出生时间尤其重要，因为上升、下降、中天和天底角点移动很快。生成地图后，不要一开始就看全世界，而是先加入两到五个真实可行的候选城市，这样问题会更具体。",
+        "image": {
+          "src": "/imgs/features/where-to-live/call_3XQYdJKZLcXaXyfwdgdwJ0Ps.webp",
+          "alt": "占星地图中的出生资料和候选城市"
+        }
+      },
+      {
+        "title": "把行星线对应到你下一阶段想要的生活",
+        "description": "如果你想要事业曝光，可以重点看太阳或木星中天线；如果你想要关系、美感和社交舒适度，金星线通常更相关；如果你想要家庭感和情绪安定，月亮天底线值得研究。关键不是寻找所谓完美城市，而是看一个地方是否匹配你当前的人生主题。",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "把行星线与生活目标匹配"
+        }
+      },
+      {
+        "title": "把占星当作一个视角，而不是全部答案",
+        "description": "搬迁涉及工作、住房、签证、医疗、家庭、文化、安全和金钱。占星地图可以增加一层个人星盘视角，但不能替代现实调研。适合的地点应该同时经得起象征层面和现实层面的比较。",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "把占星地图和现实搬迁规划结合"
+        }
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "不同居住目标适合关注哪些占星地图行星线",
+    "label": "人生目标匹配",
+    "description": "没有一条行星线适合所有人。适合居住的地方，取决于你希望这个城市支持你生活中的哪一部分。",
+    "items": [
+      {
+        "title": "事业、曝光和公共方向",
+        "description": "事业成长可以优先研究太阳中天线、木星中天线，有时也包括土星中天线。太阳强调可见度，木星强调扩张，土星虽然较慢但适合长期建立专业声誉。",
+        "icon": "RiBriefcaseLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-foundation.webp",
+          "alt": "占星地图事业线"
+        }
+      },
+      {
+        "title": "爱情、审美、友谊和舒适感",
+        "description": "关系和生活质量问题通常会先看金星线。金星下降线与伴侣主题相关，金星上升线会增强魅力、风格和社交轻松感。月亮线也常与亲密感和归属感有关。",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-influence-distance.webp",
+          "alt": "金星线和月亮线适合爱情与家庭"
+        }
+      },
+      {
+        "title": "家庭、根基、疗愈和归属",
+        "description": "想安定下来时，月亮天底线和金星天底线尤其值得关注。也可以看那些没有强烈行星线经过的城市，因为低强度地点有时更适合恢复、稳定和长期生活。",
+        "icon": "RiHomeHeartLine",
+        "image": {
+          "src": "/imgs/features/astrocartography-lines/astrocartography-lines-angles.webp",
+          "alt": "适合居住的占星地图家庭线"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何用占星地图比较城市",
+    "label": "候选城市流程",
+    "description": "与其盯着整张世界地图等待答案，不如用一个清晰流程比较城市。",
+    "items": [
+      {
+        "title": "生成你的地图",
+        "description": "输入出生日期、准确出生时间和出生地点。若出生时间不确定，请把结果当作探索参考，因为角点可能会变化。",
+        "icon": "RiMapLine"
+      },
+      {
+        "title": "选择两到五个现实城市",
+        "description": "加入你真的可能访问、学习、工作或搬去的地方，并把当前城市作为基准。",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "给每座城市设定一个目标",
+        "description": "把每个候选城市对应到事业、爱情、家庭、学习、疗愈、创造力或重塑，再按这个目标解读行星线。",
+        "icon": "RiCompassLine"
+      },
+      {
+        "title": "再检查搬迁星盘",
+        "description": "对于最后入围的城市，用搬迁星盘查看出生星盘的宫位如何变化。占星地图看地理线条，搬迁星盘看城市级别的星盘结构。",
+        "icon": "RiPieChartLine"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "根据出生星盘目标选择居住地",
+    "label": "决策框架",
+    "description": "用这些目标提示，把一张复杂的占星地图变成更清晰的地点清单。",
+    "items": [
+      {
+        "title": "如果你想要事业动能",
+        "description": "关注太阳 MC、木星 MC、水星 MC 或火星 MC，并同时确认城市本身是否有职业市场、薪资路径、人脉和客户基础。",
+        "icon": "RiRocketLine"
+      },
+      {
+        "title": "如果你想要爱情或伴侣关系",
+        "description": "研究金星 DSC、月亮 DSC、金星 ASC 和有时的木星 DSC，但关系仍然需要真实社交机会、沟通和时机。",
+        "icon": "RiHeart2Line"
+      },
+      {
+        "title": "如果你想要家的感觉",
+        "description": "看月亮 IC、金星 IC，以及搬迁星盘中的第四宫主题，也要观察你实际到访时身体和情绪的反应。",
+        "icon": "RiHome4Line"
+      },
+      {
+        "title": "如果你想学习、写作或做生意",
+        "description": "水星线适合学习、写作、销售、媒体、教学和商业沟通。若你需要深度休息，要注意过度刺激。",
+        "icon": "RiMessage3Line"
+      },
+      {
+        "title": "如果你想要深层变化",
+        "description": "天王星、海王星和冥王星线能量强但不稳定，适合先短期访问并保留现实备用方案。",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "如果一个地方没有主要行星线",
+        "description": "没有强线不代表不好。中性地点可能更稳定、更灵活，也更适合恢复、家庭和长期工作。",
+        "icon": "RiLeafLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "占星地图适合居住地常见问题",
+    "description": "关于用占星地图比较居住城市的实用回答。",
+    "items": [
+      {
+        "title": "占星地图能告诉我应该住哪里吗？",
+        "description": "它可以帮助你比较不同地点会激活哪些行星主题，但不应该被当成最终命令。工作、住房、签证、家庭、安全、健康和预算同样重要。"
+      },
+      {
+        "title": "占星地图里最适合居住的行星线是哪条？",
+        "description": "没有通用答案。木星常与扩张有关，金星与舒适和关系有关，太阳与可见度有关，月亮与家庭有关，土星与责任和长期建设有关。"
+      },
+      {
+        "title": "如何根据出生星盘选择城市？",
+        "description": "先生成占星地图，列出真实候选城市，查看附近行星线和角点，再用搬迁星盘做城市级别补充。"
+      },
+      {
+        "title": "住在金星线一定好吗？",
+        "description": "不一定。金星线可以支持美感、社交和关系，但也可能让人过度追求舒适。具体要看角点、完整星盘和城市现实条件。"
+      },
+      {
+        "title": "离行星线多近才有影响？",
+        "description": "很多占星师会使用约 200 到 300 英里的参考范围，越靠近线条通常越明显，但不同方法和个人敏感度会不同。"
+      },
+      {
+        "title": "还需要看搬迁星盘吗？",
+        "description": "建议看，尤其是认真考虑搬家时。占星地图显示地理线条，搬迁星盘显示某个城市中的宫位变化，两者结合更完整。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "找到更适合你星盘的地点",
+    "description": "生成你的占星地图，比较候选城市，并在需要时用 AI 解读深入理解这些地点。",
+    "buttons": [
+      {
+        "title": "生成免费占星地图",
+        "icon": "RiMapLine",
+        "url": "/astrocartography-calculator",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "比较行星线含义",
+        "icon": "RiCompassLine",
+        "url": "/astrocartography-lines",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  }
+}

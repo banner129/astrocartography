@@ -142,6 +142,13 @@
               "icon": "RiGlobalLine"
             },
             {
+              "title": "Dove vivere",
+              "description": "Confronta città per amore, carriera, casa e decisioni di trasferimento",
+              "url": "/astrocartography-where-to-live",
+              "target": "_self",
+              "icon": "RiHomeHeartLine"
+            },
+            {
               "title": "Linea del Sole",
               "description": "Visibilità professionale, fiducia ed espressione autentica",
               "url": "/sun-line-astrocartography",

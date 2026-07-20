@@ -103,6 +103,21 @@ export interface CalculatorPage {
     description: string;
     keywords?: string;
   };
+  guideHero?: {
+    badge: string;
+    overviewTitle: string;
+    overviewEyebrow?: string;
+    overviewItems: Array<{
+      label: string;
+      value: string;
+    }>;
+    actions: Array<{
+      title: string;
+      url: string;
+      icon: string;
+      variant?: "primary" | "secondary";
+    }>;
+  };
   intentAnchor?: {
     text: string;
   };

@@ -697,6 +697,42 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://astrocarto.org/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/zh/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/pt/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/es/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/it/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://astrocarto.org/de/astrocartography-where-to-live/</loc>
+    <lastmod>2026-07-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://astrocarto.org/sun-line-astrocartography/</loc>
     <lastmod>2026-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>

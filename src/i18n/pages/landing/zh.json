@@ -142,6 +142,13 @@
               "icon": "RiGlobalLine"
             },
             {
+              "title": "适合居住地",
+              "description": "比较爱情、事业、家庭和搬迁决策中的候选城市",
+              "url": "/astrocartography-where-to-live",
+              "target": "_self",
+              "icon": "RiHomeHeartLine"
+            },
+            {
               "title": "太阳线",
               "description": "事业可见度、自信与真实自我表达",
               "url": "/sun-line-astrocartography",
