@@ -72,6 +72,13 @@
               "icon": "RiHeartLine"
             },
             {
+              "title": "Marszeichen berechnen",
+              "description": "Mars für Antrieb, Durchsetzung und Wunsch berechnen",
+              "url": "/mars-sign-calculator",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
               "title": "Mondknoten berechnen",
               "description": "Nordknoten, Sudknoten und Entwicklung lesen",
               "url": "/lunar-nodes-calculator",

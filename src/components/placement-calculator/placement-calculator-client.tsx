@@ -207,7 +207,11 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<PlacementResult["data"] | null>(null);
 
-  const canSubmit = Boolean(birthDate && birthTime && birthLocation && timezone && !isLoading);
+  // Mars sign is usually stable across a day; keep time required for Moon and other faster placements.
+  const birthTimeOptional = page.toolType === "mars";
+  const canSubmit = Boolean(
+    birthDate && birthLocation && timezone && !isLoading && (birthTimeOptional || birthTime)
+  );
 
   useEffect(() => {
     if (!result) return;
@@ -293,6 +297,11 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
               <label htmlFor={`${page.slug}-time`} className="flex items-center gap-2 text-sm font-semibold text-purple-300">
                 <Clock className="size-4 text-purple-400" />
                 {copy.birthTime}
+                {birthTimeOptional ? (
+                  <span className="font-normal text-white/50">
+                    {locale === "zh" ? "（可选）" : locale === "es" ? "(opcional)" : locale === "pt" ? "(opcional)" : locale === "de" ? "(optional)" : locale === "it" ? "(facoltativo)" : "(optional)"}
+                  </span>
+                ) : null}
               </label>
               <Input
                 id={`${page.slug}-time`}
@@ -301,6 +310,13 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
                 onChange={(e) => setBirthTime(e.target.value)}
                 className="h-10 text-sm bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-500 focus:ring-purple-500"
               />
+              {birthTimeOptional ? (
+                <p className="text-xs text-white/50">
+                  {locale === "en"
+                    ? "Optional for most birthdays. Add time for ingress days and a reliable Mars house; otherwise we use local noon."
+                    : copy.tip}
+                </p>
+              ) : null}
             </div>
 
             <div className="space-y-1.5 relative z-10">

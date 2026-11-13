@@ -1,0 +1,111 @@
+{
+  "key": "mars",
+  "slug": "mars-sign-calculator",
+  "toolType": "mars",
+  "metadata": {
+    "title": "Calcolatore del Segno di Marte - Impulso, desiderio e azione",
+    "description": "Calcolatore gratuito del segno di Marte: inserisci data, luogo e ora opzionale per segno, grado e casa. Impulso, rabbia e la tua linea di Marte.",
+    "keywords": "calcolatore del segno di marte, segno di marte, qual è il mio segno di marte, marte nel tema natale, calcolatore marte, marte in astrologia"
+  },
+  "hero": {
+    "eyebrow": "Strumento di astrologia gratis",
+    "title": "Calcolatore del Segno di Marte",
+    "subtitle": "Trova il tuo segno di Marte e capisci come il tema descrive impulso, affermazione, desiderio, stile di conflitto e i luoghi in cui questa energia può sentirsi più forte."
+  },
+  "form": {
+    "submit": "Calcola il mio segno di Marte"
+  },
+  "result": {
+    "title": "La tua posizione di Marte",
+    "cta": "Vedi dove la tua linea di Marte è più forte"
+  },
+  "sections": [
+    {
+      "title": "Cosa rivela un calcolatore del segno di Marte",
+      "body": [
+        "Un calcolatore del segno di Marte identifica il segno zodiacale occupato da Marte alla nascita. In astrologia Marte descrive come insegui obiettivi, esprimi rabbia, proteggi ciò che conta, usi energia fisica e ti muovi verso il desiderio. Il segno di Marte non è un verdetto sul temperamento: è un punto di partenza pratico.",
+        "Questo strumento usa data di nascita, ora opzionale e luogo per calcolare Marte nello zodiaco tropicale e mostrare la casa a segno intero. Le posizioni arrivano dalla longitudine eclittica geocentrica di astronomy-engine—lo stesso motore delle altre tool natali del sito."
+      ]
+    },
+    {
+      "title": "Serve l'ora esatta di nascita per Marte?",
+      "body": [
+        "Molti chiedono qual è il mio segno di Marte con sola la data. Marte resta di solito da sei a otto settimane in un segno, quindi il segno è stabile per la maggior parte dei compleanni. Il luogo conta per il fuso orario. Solo nei giorni di ingresso l'ora decide il lato del cambio.",
+        "L'ora esatta conta di più per la casa che per il segno. Se l'ora è approssimativa, tratta la casa di Marte come provvisoria e tieni il segno come strato più affidabile."
+      ]
+    },
+    {
+      "title": "Marte rispetto a Sole e Venere",
+      "body": [
+        "Il Sole descrive identità e vitalità. Venere descrive attrazione, valori e ciò che è piacevole. Marte descrive cosa fai del desiderio. Due persone possono condividere il Sole e comunque competere o litigare in modi molto diversi a causa di Marte.",
+        "Marte può chiarire dinamiche di relazione senza sostituire una sinastria completa. Venere può mostrare cosa sembra bello; Marte mostra come arrivano desiderio e attrito."
+      ]
+    },
+    {
+      "title": "Come usare il risultato di Marte con l'astrocartografia",
+      "body": [
+        "Parti dal segno, leggi la casa e confronta con pattern reali: come inizi progetti, ti riprendi dal conflitto o gestisci la competizione. Marte di fuoco spesso preferisce calore e velocità; di terra, progresso tangibile; di aria, parole e piani; di acqua, emozione e intensità contenuta.",
+        "Dopo aver calcolato il segno di Marte, usa gli stessi dati sulla mappa gratuita e apri la guida della linea di Marte. Il segno è stile natale; la linea è amplificazione geografica su ASC, DSC, MC e IC."
+      ]
+    },
+    {
+      "title": "Significato del segno di Marte per elemento",
+      "body": [
+        "Un modo semplice di leggere Marte è per elemento. Marte di fuoco—Ariete, Leone e Sagittario—di solito ha bisogno di slancio visibile e coraggio. Marte di terra—Toro, Vergine e Capricorno—accumula pressione lentamente e agisce quando il percorso è pratico.",
+        "Marte di aria—Gemelli, Bilancia e Aquario—spesso combatte o insegue con idee e negoziazione. Marte di acqua—Cancro, Scorpione e Pesci—protegge emotivamente e agisce d'istinto. L'elemento è il primo strato."
+      ]
+    },
+    {
+      "title": "Cosa questo calcolatore può e non può promettere",
+      "body": [
+        "Può dare linguaggio di tema preciso dal momento di nascita, ma non deve promettere che una sola posizione spieghi ogni conflitto, desiderio o mossa di carriera. Marte lavora con Luna, Venere, angoli, aspetti, timing e le tue scelte.",
+        "Se usi questa pagina prima di un viaggio o un trasferimento, tratta Marte come supporto decisionale, non come garanzia. Un luogo forte in Marte può aumentare impulso, competitività o irritabilità."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Questo calcolatore del segno di Marte è gratis?",
+      "answer": "Sì. Puoi calcolare il tuo segno di Marte gratis con data e luogo di nascita. L'ora è opzionale nella maggior parte dei giorni; aggiungila nei giorni di ingresso e per una casa più affidabile."
+    },
+    {
+      "question": "Serve l'ora esatta per trovare il mio segno di Marte?",
+      "answer": "Di solito basta la data perché Marte resta settimane in un segno. L'ora conta nei giorni di ingresso ed è necessaria per una casa affidabile. Senza ora, dai priorità al segno."
+    },
+    {
+      "question": "Cos'è il mio segno di Marte in parole semplici?",
+      "answer": "È il segno zodiacale che Marte occupava alla nascita. Descrive come ti affermi, insegui obiettivi, gestisci la rabbia ed esprimi desiderio. Usa il modulo sopra per calcolarlo."
+    },
+    {
+      "question": "Qual è la differenza tra segno di Marte e linea di Marte?",
+      "answer": "Il segno è una posizione natale. La linea di Marte in astrocartografia è un percorso geografico dove Marte era angolare alla nascita. Usa questa pagina per il segno e la guida della linea per il luogo."
+    },
+    {
+      "question": "Il calcolatore può dire con chi uscire o come finirà un litigio?",
+      "answer": "No. Marte può descrivere stile di inseguimento e conflitto, ma non sceglie un partner né predice un esito. Contano anche il resto di entrambi i temi, il timing e le scelte reali."
+    }
+  ],
+  "schemaName": "Calcolatore del Segno di Marte",
+  "relatedLinks": [
+    {
+      "text": "Genera la tua carta di astrocartografia gratis sulla mappa mondiale.",
+      "linkText": "Carta e mappa di astrocartografia gratis",
+      "url": "/it"
+    },
+    {
+      "text": "Esplora l'impulso per luogo.",
+      "linkText": "Linea di Marte",
+      "url": "/mars-line-astrocartography"
+    },
+    {
+      "text": "Confronta desiderio e valori.",
+      "linkText": "Calcolatore del Segno di Venere",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Ti serve prima il tema completo?",
+      "linkText": "Generatore di tema natale",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

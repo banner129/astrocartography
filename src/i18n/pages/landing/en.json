@@ -72,6 +72,13 @@
               "icon": "RiHeartLine"
             },
             {
+              "title": "Mars Sign Calculator",
+              "description": "Find your Mars sign for drive, assertion, and desire style",
+              "url": "/mars-sign-calculator",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
               "title": "Lunar Nodes Calculator",
               "description": "Calculate North Node and South Node growth themes",
               "url": "/lunar-nodes-calculator",

@@ -72,6 +72,13 @@
               "icon": "RiHeartLine"
             },
             {
+              "title": "Calculadora do Signo de Marte",
+              "description": "Calcule Marte para impulso, afirmação e desejo",
+              "url": "/mars-sign-calculator",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
               "title": "Calculadora dos Nodos Lunares",
               "description": "Calcule Nodo Norte, Nodo Sul e crescimento",
               "url": "/lunar-nodes-calculator",

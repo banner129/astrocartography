@@ -72,6 +72,13 @@
               "icon": "RiHeartLine"
             },
             {
+              "title": "火星星座计算器",
+              "description": "查询行动力、主张方式与欲望风格",
+              "url": "/mars-sign-calculator",
+              "target": "_self",
+              "icon": "RiFireLine"
+            },
+            {
               "title": "南北交点计算器",
               "description": "计算北交点、南交点与成长方向",
               "url": "/lunar-nodes-calculator",

@@ -1,0 +1,111 @@
+{
+  "key": "mars",
+  "slug": "mars-sign-calculator",
+  "toolType": "mars",
+  "metadata": {
+    "title": "Marszeichen berechnen - Antrieb, Wunsch und Handlung",
+    "description": "Kostenlos Marszeichen berechnen: Geburtsdatum, Ort und optionale Uhrzeit eingeben für Zeichen, Grad und Haus. Antrieb, Ärger und deine Marslinie.",
+    "keywords": "marszeichen berechnen, mars zeichen, welches marszeichen habe ich, mars im horoskop, mars rechner, mars astrologie"
+  },
+  "hero": {
+    "eyebrow": "Kostenloses Astrologie-Tool",
+    "title": "Marszeichen berechnen",
+    "subtitle": "Finde dein Marszeichen und verstehe, wie dein Horoskop Antrieb, Durchsetzung, Wunsch, Konfliktstil und Orte beschreibt, an denen diese Energie lauter wirken kann."
+  },
+  "form": {
+    "submit": "Mein Marszeichen berechnen"
+  },
+  "result": {
+    "title": "Deine Mars-Position",
+    "cta": "Zeigen, wo deine Marslinie stärker wirkt"
+  },
+  "sections": [
+    {
+      "title": "Was ein Marszeichen-Rechner zeigt",
+      "body": [
+        "Ein Marszeichen-Rechner zeigt, in welchem Tierkreiszeichen Mars bei deiner Geburt stand. In der Astrologie beschreibt Mars, wie du Ziele verfolgst, Ärger ausdrückst, Wichtiges schützt, körperliche Energie nutzt und dich auf Wunsch zubewegst. Dein Marszeichen ist kein Temperamentsurteil, sondern ein praktischer Einstieg.",
+        "Dieser Rechner nutzt Geburtsdatum, optionale Uhrzeit und Ort, um Mars im tropischen Tierkreis zu berechnen und das Haus im Ganzzeichen-System zu zeigen. Die Positionen stammen aus der geozentrischen ekliptikalen Länge von astronomy-engine—demselben Motor wie bei anderen Natal-Tools dieser Seite."
+      ]
+    },
+    {
+      "title": "Brauchst du die genaue Geburtszeit für Mars?",
+      "body": [
+        "Viele fragen nach ihrem Marszeichen nur mit dem Geburtstag. Mars bleibt meist sechs bis acht Wochen in einem Zeichen, deshalb ist das Zeichen an den meisten Tagen stabil. Der Geburtsort zählt wegen der Zeitzone. Nur an Grenzwechseltagen entscheidet die genaue Uhrzeit.",
+        "Die genaue Zeit ist für das Haus wichtiger als für das Zeichen. Bei ungefährer Zeit behandle das Marshaus als vorläufig und halte das Zeichen für die zuverlässigere Schicht."
+      ]
+    },
+    {
+      "title": "Mars gegenüber Sonne und Venus",
+      "body": [
+        "Die Sonne beschreibt Identität und Vitalität. Venus beschreibt Anziehung, Werte und das Angenehme. Mars beschreibt, was du mit dem Wollen tust. Zwei Menschen können dasselbe Sonnenzeichen teilen und trotzdem völlig anders kämpfen oder konkurrieren, weil ihr Marszeichen anders ist.",
+        "Mars kann Beziehungsmuster klären, ohne eine volle Synastrie zu ersetzen. Venus zeigt oft, was sich schön anfühlt; Mars zeigt, wie Wunsch und Reibung ankommen."
+      ]
+    },
+    {
+      "title": "So nutzt du dein Mars-Ergebnis mit Astrokartografie",
+      "body": [
+        "Beginne mit dem Zeichen, lies danach das Haus und vergleiche es mit echten Mustern: Wie startest du Projekte, erholst dich nach Konflikt oder gehst mit Wettbewerb um. Feuer-Mars mag oft Hitze und Tempo; Erd-Mars greifbaren Fortschritt; Luft-Mars Worte und Pläne; Wasser-Mars Emotion und stille Intensität.",
+        "Nach der Berechnung öffne mit denselben Daten die kostenlose Astrokartografie-Karte und den Marslinien-Guide. Das Zeichen ist nataler Stil; die Linie ist geografische Verstärkung über ASC, DSC, MC und IC."
+      ]
+    },
+    {
+      "title": "Marszeichen-Bedeutung nach Element",
+      "body": [
+        "Eine einfache Lesart von Mars ist nach Element. Feuer-Mars—Widder, Löwe und Schütze—braucht oft sichtbaren Schwung und Mut. Erd-Mars—Stier, Jungfrau und Steinbock—baut Druck langsam auf und handelt, wenn der Weg praktisch ist.",
+        "Luft-Mars—Zwillinge, Waage und Wassermann—kämpft oder verfolgt oft über Ideen und Verhandlung. Wasser-Mars—Krebs, Skorpion und Fische—schützt emotional und handelt aus Instinkt. Das Element ist die erste Schicht."
+      ]
+    },
+    {
+      "title": "Was dieser Rechner versprechen kann und was nicht",
+      "body": [
+        "Er kann präzise Horoskopsprache aus deinem Geburtsmoment liefern, sollte aber nicht versprechen, dass eine Stellung jeden Konflikt, Wunsch oder Karriereschritt erklärt. Mars wirkt mit Mond, Venus, Achsen, Aspekten, Timing und deinen Entscheidungen.",
+        "Nutzt du die Seite vor Reise oder Umzug, behandle Mars als Entscheidungshilfe, nicht als Garantie. Ein starker Mars-Ort kann Antrieb, Wettbewerbsgeist oder Reizbarkeit erhöhen."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ist der Marszeichen-Rechner kostenlos?",
+      "answer": "Ja. Du kannst dein Marszeichen kostenlos mit Geburtsdatum und Geburtsort berechnen. Die Uhrzeit ist an den meisten Tagen optional; füge sie an Grenzwechseltagen und für ein zuverlässigeres Marshaus hinzu."
+    },
+    {
+      "question": "Brauche ich die genaue Geburtszeit für mein Marszeichen?",
+      "answer": "Meist reicht das Datum, weil Mars oft Wochen in einem Zeichen bleibt. Die Uhrzeit zählt an Grenzwechseltagen und ist für ein zuverlässiges Haus nötig. Ohne Zeit priorisiere das Zeichen."
+    },
+    {
+      "question": "Was ist mein Marszeichen in einfachen Worten?",
+      "answer": "Dein Marszeichen ist das Tierkreiszeichen, in dem Mars bei deiner Geburt stand. Es beschreibt, wie du dich durchsetzt, Ziele verfolgst, Ärger handhabst und Wunsch ausdrückst. Nutze das Formular oben zur Berechnung."
+    },
+    {
+      "question": "Worin unterscheiden sich Marszeichen und Marslinie?",
+      "answer": "Das Marszeichen ist eine Natalstellung. Die Marslinie in der Astrokartografie ist ein geografischer Pfad, wo Mars bei der Geburt angular war. Nutze diese Seite für das Zeichen und den Linien-Guide für den Ort."
+    },
+    {
+      "question": "Kann der Rechner sagen, wen ich daten soll oder wie ein Streit endet?",
+      "answer": "Nein. Mars kann Verfolgungs- und Konfliktstil beschreiben, aber wählt keinen Partner und sagt kein Ergebnis voraus. Auch der Rest beider Horoskope, Timing und reale Entscheidungen zählen."
+    }
+  ],
+  "schemaName": "Marszeichen berechnen",
+  "relatedLinks": [
+    {
+      "text": "Erstelle deine kostenlose Astrokartografie-Karte auf der Weltkarte.",
+      "linkText": "Kostenlose Astrokartografie-Karte",
+      "url": "/de"
+    },
+    {
+      "text": "Antrieb nach Ort erkunden.",
+      "linkText": "Marslinie",
+      "url": "/mars-line-astrocartography"
+    },
+    {
+      "text": "Wunsch und Werte vergleichen.",
+      "linkText": "Venuszeichen berechnen",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Brauchst du zuerst das volle Horoskop?",
+      "linkText": "Geburtshoroskop-Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

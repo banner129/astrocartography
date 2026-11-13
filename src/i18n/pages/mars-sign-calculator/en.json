@@ -1,0 +1,111 @@
+{
+  "key": "mars",
+  "slug": "mars-sign-calculator",
+  "toolType": "mars",
+  "metadata": {
+    "title": "Mars Sign Calculator - Find Your Mars Sign & Drive Style",
+    "description": "Free Mars sign calculator: enter birth date, time, and place to find your Mars sign, degree, and house. See drive, anger style, and link to your Mars line map.",
+    "keywords": "mars sign calculator, what is my mars sign, mars sign, mars placement calculator, mars sign meaning, free mars sign calculator, mars in astrology"
+  },
+  "hero": {
+    "eyebrow": "Free astrology tool",
+    "title": "Mars Sign Calculator",
+    "subtitle": "Find your Mars sign and understand how your chart describes drive, assertion, desire, conflict style, and the places where that energy can feel louder on a map."
+  },
+  "form": {
+    "submit": "Calculate My Mars Sign"
+  },
+  "result": {
+    "title": "Your Mars Placement",
+    "cta": "See where your Mars line is strongest"
+  },
+  "sections": [
+    {
+      "title": "What a Mars Sign Calculator Reveals",
+      "body": [
+        "A Mars sign calculator identifies the zodiac sign Mars occupied at your birth. In astrology, Mars describes how you pursue goals, express anger, protect what matters, use physical energy, and move toward desire. Your Mars sign is not a verdict about temperament. It is a practical starting point for noticing how you act under pressure, how quickly you initiate, and what kind of challenge feels motivating rather than draining.",
+        "This Mars sign calculator uses your birth date, optional birth time, and location to calculate Mars in the tropical zodiac and show its whole-sign house. Planetary positions come from astronomy-engine geocentric ecliptic longitude—the same engine used across this site's natal tools—not from hand-looked tables alone. The sign describes style: direct in Aries, steady in Taurus, restless in Gemini, protective in Cancer, dramatic in Leo, precise in Virgo, strategic in Libra, intense in Scorpio, adventurous in Sagittarius, disciplined in Capricorn, detached in Aquarius, and porous in Pisces. The house adds context by showing where Mars themes often become visible in work, relationships, body, or public life."
+      ]
+    },
+    {
+      "title": "Do You Need Exact Birth Time for Mars?",
+      "body": [
+        "People often ask what is my Mars sign when they only know a birthday. Mars usually stays in one sign for about six to eight weeks, so the sign is stable for most birthdays. Birth place still matters because it sets the time zone used for the chart. On days when Mars crossed a sign boundary, only an accurate birth time settles which side of the ingress you were born on.",
+        "Exact birth time is always more important for house placement than for the sign itself. If your time is approximate, treat the Mars house as provisional and keep the sign as the more reliable layer. When the result notes a boundary-sensitive day, refine the time from a birth certificate or family record before making decisions from the house alone."
+      ]
+    },
+    {
+      "title": "Mars Versus Sun and Venus",
+      "body": [
+        "Sun describes identity and vitality. Venus describes attraction, values, and what feels pleasant. Mars describes what you do about wanting something. Two people can share a Sun sign and still fight, compete, or pursue in completely different ways because their Mars signs differ. That is why a dedicated Mars sign calculator is useful even after you already know your Sun or Venus.",
+        "Mars can also clarify relationship dynamics without replacing a full synastry chart. Venus may show what feels lovely; Mars shows how desire and friction arrive. Reading both together is more honest than treating either placement as a dating script. The same caution applies to career: Mars can describe ambition style, but it does not guarantee a job outcome."
+      ]
+    },
+    {
+      "title": "How to Use Your Mars Result with Astrocartography",
+      "body": [
+        "Start with the sign, then read the house, then compare the language with real patterns: how you start projects, recover after conflict, or handle competition. Fire-sign Mars often prefers open heat and speed. Earth-sign Mars often prefers tangible progress. Air-sign Mars often works through words, plans, and debate. Water-sign Mars often moves through emotion, loyalty, and unspoken intensity.",
+        "After you calculate your Mars sign, use the same birth data on the free astrocartography map and open the Mars line guide. Your Mars sign is natal style. Your Mars line is geographic amplification across ASC, DSC, MC, and IC paths. Mars MC can feel career-pushing. Mars ASC can feel bodily and assertive. Mars DSC can intensify one-to-one friction or chemistry. Mars IC can heat private life and family dynamics. The useful move is to combine both: natal signature first, then location experiments that match a real goal."
+      ]
+    },
+    {
+      "title": "Mars Sign Meaning by Element",
+      "body": [
+        "A simple way to read Mars is by element. Fire Mars signs—Aries, Leo, and Sagittarius—usually need visible momentum, courage, and a sense of aliveness. They may escalate quickly and recover through action. Earth Mars signs—Taurus, Virgo, and Capricorn—tend to build pressure slowly, prefer competence, and act when the path is practical. They can look patient until a real threshold is crossed.",
+        "Air Mars signs—Gemini, Libra, and Aquarius—often fight or pursue through ideas, negotiation, humor, or principle. They may need mental space before physical confrontation. Water Mars signs—Cancer, Scorpio, and Pisces—often protect emotionally, act from instinct, and hold intensity under the surface. When you use a Mars sign calculator, the element is the first layer. Degree, house, aspects, and Mars lines refine the story without turning it into fate."
+      ]
+    },
+    {
+      "title": "What This Calculator Can and Cannot Promise",
+      "body": [
+        "A Mars sign calculator can give accurate chart language from your birth moment, but it should not promise that one placement explains every conflict, desire, or career move. Mars works with the Moon, Venus, the angles, aspects, timing, and your choices. The best use of the result is concrete: notice your initiation style, compare it with lived experience, then decide whether a Mars-heavy city or trip is worth testing.",
+        "If you are using this page before travel or relocation, treat Mars as decision support rather than a guarantee. A strong Mars place may heighten drive, competitiveness, athleticism, or irritability. Culture, safety, workload, and personal readiness still decide outcomes. Astrology is most useful when it sharpens attention instead of replacing judgment."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this Mars sign calculator free?",
+      "answer": "Yes. You can calculate your Mars sign for free by entering your birth date and birth location. Birth time is optional for most days; add it for ingress days and a more reliable Mars house. The result shows your Mars sign, degree, and whole-sign house when enough birth information is provided."
+    },
+    {
+      "question": "Do I need my exact birth time to find my Mars sign?",
+      "answer": "Usually the birth date is enough for the sign because Mars often stays in one sign for weeks. Exact birth time matters on ingress days and is required for a reliable Mars house. If your time is unknown, prioritize the sign and treat the house cautiously."
+    },
+    {
+      "question": "What is my Mars sign in plain terms?",
+      "answer": "Your Mars sign is the zodiac sign Mars occupied when you were born. It describes how you tend to assert yourself, chase goals, handle anger, and express desire. Use the form above to calculate it from your birth data."
+    },
+    {
+      "question": "How is my Mars sign different from my Mars line?",
+      "answer": "Your Mars sign is a natal placement in the birth chart. Your Mars line in astrocartography is a geographic path showing where Mars was angular at birth. Use this page for the sign, then the Mars line guide and homepage map for location."
+    },
+    {
+      "question": "Can a Mars sign calculator tell me who I should date or how fights will end?",
+      "answer": "No. Mars can describe pursuit and conflict style, but it cannot choose a partner or predict an outcome. Compatibility and conflict resolution also depend on the rest of both charts, timing, communication, and real-world choices."
+    }
+  ],
+  "schemaName": "Mars Sign Calculator",
+  "relatedLinks": [
+    {
+      "text": "Generate your free astrocartography chart on the world map.",
+      "linkText": "Free Astrocartography Chart & Map",
+      "url": "/"
+    },
+    {
+      "text": "Explore drive by location.",
+      "linkText": "Mars Line",
+      "url": "/mars-line-astrocartography"
+    },
+    {
+      "text": "Compare desire and values.",
+      "linkText": "Venus Sign Calculator",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Need your full chart first?",
+      "linkText": "Birth Chart Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

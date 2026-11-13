@@ -1,0 +1,111 @@
+{
+  "key": "mars",
+  "slug": "mars-sign-calculator",
+  "toolType": "mars",
+  "metadata": {
+    "title": "Calculadora del Signo de Marte - Impulso, deseo y acción",
+    "description": "Calculadora gratuita del signo de Marte: introduce fecha, lugar y hora opcional para ver signo, grado y casa. Impulso, ira y tu línea de Marte.",
+    "keywords": "calculadora del signo de marte, signo de marte, qué signo de marte soy, marte en la carta natal, calculadora de marte, marte en astrología"
+  },
+  "hero": {
+    "eyebrow": "Herramienta de astrología gratis",
+    "title": "Calculadora del Signo de Marte",
+    "subtitle": "Descubre tu signo de Marte y cómo tu carta describe impulso, asertividad, deseo, estilo de conflicto y los lugares donde esa energía puede sentirse más fuerte."
+  },
+  "form": {
+    "submit": "Calcular mi signo de Marte"
+  },
+  "result": {
+    "title": "Tu posición de Marte",
+    "cta": "Ver dónde tu línea de Marte es más fuerte"
+  },
+  "sections": [
+    {
+      "title": "Qué revela una calculadora del signo de Marte",
+      "body": [
+        "Una calculadora del signo de Marte identifica el signo zodiacal que ocupaba Marte al nacer. En astrología, Marte describe cómo persigues metas, expresas la ira, proteges lo importante, usas energía física y te mueves hacia el deseo. Tu signo de Marte no es un veredicto de temperamento: es un punto de partida práctico para notar cómo actúas bajo presión y qué tipo de reto te motiva.",
+        "Esta calculadora usa fecha de nacimiento, hora opcional y lugar para calcular Marte en el zodíaco tropical y mostrar su casa de signo entero. Las posiciones vienen de la longitud eclíptica geocéntrica de astronomy-engine—el mismo motor de otras herramientas natales del sitio. El signo describe estilo; la casa añade dónde suelen verse los temas de Marte."
+      ]
+    },
+    {
+      "title": "¿Necesitas la hora exacta de nacimiento para Marte?",
+      "body": [
+        "Muchas personas preguntan cuál es mi signo de Marte con solo la fecha. Marte suele permanecer de seis a ocho semanas en un signo, así que el signo es estable en la mayoría de los cumpleaños. El lugar importa por la zona horaria. Solo en días de ingreso de signo la hora decide el lado del cambio.",
+        "La hora exacta importa más para la casa que para el signo. Si la hora es aproximada, trata la casa de Marte como provisional y conserva el signo como capa más fiable."
+      ]
+    },
+    {
+      "title": "Marte frente al Sol y a Venus",
+      "body": [
+        "El Sol describe identidad y vitalidad. Venus describe atracción, valores y lo agradable. Marte describe qué haces con el deseo. Dos personas pueden compartir Sol y pelear o competir de formas muy distintas por Marte. Por eso una calculadora dedicada sigue siendo útil aunque ya conozcas tu Sol o Venus.",
+        "Marte también aclara dinámicas de pareja sin sustituir una sinastría completa. Venus puede mostrar lo que se siente bien; Marte muestra cómo llegan deseo y fricción."
+      ]
+    },
+    {
+      "title": "Cómo usar tu resultado de Marte con la astrocartografía",
+      "body": [
+        "Empieza por el signo, lee la casa y compara con patrones reales: cómo inicias proyectos, te recuperas del conflicto o manejas la competencia. Marte de fuego suele preferir calor y velocidad; de tierra, progreso tangible; de aire, palabras y planes; de agua, emoción e intensidad contenida.",
+        "Después de calcular tu signo de Marte, usa los mismos datos en el mapa gratuito y abre la guía de la línea de Marte. El signo es estilo natal; la línea es amplificación geográfica en ASC, DSC, MC e IC."
+      ]
+    },
+    {
+      "title": "Significado del signo de Marte por elemento",
+      "body": [
+        "Una forma sencilla de leer Marte es por elemento. Marte de fuego—Aries, Leo y Sagitario—suele necesitar impulso visible y coraje. Marte de tierra—Tauro, Virgo y Capricornio—acumula presión despacio y actúa cuando el camino es práctico.",
+        "Marte de aire—Géminis, Libra y Acuario—a menudo pelea o persigue con ideas y negociación. Marte de agua—Cáncer, Escorpio y Piscis—protege emocionalmente y actúa por instinto. El elemento es la primera capa; grado, casa, aspectos y líneas refinan la historia."
+      ]
+    },
+    {
+      "title": "Qué puede y no puede prometer esta calculadora",
+      "body": [
+        "Puede dar lenguaje de carta preciso desde tu momento de nacimiento, pero no debe prometer que una sola posición explica cada conflicto, deseo o movimiento laboral. Marte trabaja con Luna, Venus, ángulos, aspectos, timing y tus elecciones.",
+        "Si usas esta página antes de viajar o mudarte, trata Marte como apoyo a la decisión, no como garantía. Un lugar fuerte en Marte puede aumentar impulso, competitividad o irritabilidad. Cultura, seguridad y preparación personal siguen decidiendo el resultado."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Esta calculadora del signo de Marte es gratis?",
+      "answer": "Sí. Puedes calcular tu signo de Marte gratis con fecha y lugar de nacimiento. La hora es opcional la mayoría de los días; añádela en ingresos de signo y para una casa más fiable."
+    },
+    {
+      "question": "¿Necesito la hora exacta para saber mi signo de Marte?",
+      "answer": "Normalmente basta la fecha porque Marte suele estar semanas en un signo. La hora importa en días de ingreso y es necesaria para una casa fiable. Sin hora, prioriza el signo."
+    },
+    {
+      "question": "¿Qué es mi signo de Marte en términos simples?",
+      "answer": "Es el signo zodiacal que ocupaba Marte al nacer. Describe cómo te afirmas, persigues metas, manejas la ira y expresas deseo. Usa el formulario de arriba para calcularlo."
+    },
+    {
+      "question": "¿En qué se diferencia el signo de Marte de la línea de Marte?",
+      "answer": "El signo es una posición natal. La línea de Marte en astrocartografía es un camino geográfico donde Marte estaba angular al nacer. Usa esta página para el signo y la guía de línea para el lugar."
+    },
+    {
+      "question": "¿Puede decirme con quién salir o cómo terminará una pelea?",
+      "answer": "No. Marte puede describir estilo de persecución y conflicto, pero no elige pareja ni predice resultados. También importan el resto de ambas cartas, el timing y las elecciones reales."
+    }
+  ],
+  "schemaName": "Calculadora del Signo de Marte",
+  "relatedLinks": [
+    {
+      "text": "Genera tu carta de astrocartografía gratis en el mapa mundial.",
+      "linkText": "Carta y mapa de astrocartografía gratis",
+      "url": "/es"
+    },
+    {
+      "text": "Explora el impulso por ubicación.",
+      "linkText": "Línea de Marte",
+      "url": "/mars-line-astrocartography"
+    },
+    {
+      "text": "Compara deseo y valores.",
+      "linkText": "Calculadora del Signo de Venus",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "¿Necesitas tu carta completa?",
+      "linkText": "Generador de carta natal",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

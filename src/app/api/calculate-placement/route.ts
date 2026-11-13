@@ -13,17 +13,21 @@ import { getBigFourAsteroidPlacements } from "@/lib/asteroid-ephemeris";
 export const revalidate = 3600;
 export const maxDuration = 30;
 
-type PlacementType = "venus" | "moon" | "lunar-nodes" | "chiron" | "asteroids";
+type PlacementType = "venus" | "moon" | "mars" | "lunar-nodes" | "chiron" | "asteroids";
 
 interface PlacementRequest {
   type: PlacementType;
   birthDate: string;
-  birthTime: string;
+  birthTime?: string;
   birthLocation: string;
   timezone: string;
   latitude?: number;
   longitude?: number;
 }
+
+/** Mars (and similar slow planets) can usually resolve the sign from date + place; noon is a safe default. */
+const TIME_OPTIONAL_TYPES = new Set<PlacementType>(["mars"]);
+const DEFAULT_LOCAL_NOON = "12:00";
 
 const CITY_COORDINATES: Record<string, { latitude: number; longitude: number }> = {
   "new york": { latitude: 40.7128, longitude: -74.006 },
@@ -90,7 +94,11 @@ function signFromLongitude(lon: number) {
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as PlacementRequest;
-    const { type, birthDate, birthTime, birthLocation, timezone } = body;
+    const { type, birthDate, birthLocation, timezone } = body;
+    const timeOptional = Boolean(type && TIME_OPTIONAL_TYPES.has(type));
+    const birthTime = (body.birthTime || "").trim() || (timeOptional ? DEFAULT_LOCAL_NOON : "");
+    const usedDefaultNoon = timeOptional && !(body.birthTime || "").trim();
+
     if (!type || !birthDate || !birthTime || !birthLocation || !timezone) {
       return NextResponse.json({ success: false, error: "Missing required fields." }, { status: 400 });
     }
@@ -135,6 +143,24 @@ export async function POST(request: NextRequest) {
           placements: moon ? [{ ...moon, label: "Moon" }] : [],
           note:
             "Moon is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. The Moon changes signs about every 2.5 days—exact birth time matters most on sign-boundary days.",
+        },
+      });
+    }
+
+    if (type === "mars") {
+      const mars = chart.planets.find((p) => p.name === "Mars");
+      const noonNote = usedDefaultNoon
+        ? " No birth time was provided, so Mars was calculated for local noon at the birth place—accurate for most birthdays, but not for ingress days or house placement."
+        : "";
+      return NextResponse.json({
+        success: true,
+        data: {
+          type,
+          birthData: { date: birthDate, time: birthTime, location: birthLocation, latitude, longitude, timezone },
+          placements: mars ? [{ ...mars, label: "Mars" }] : [],
+          note:
+            "Mars is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. Mars usually stays in a sign for weeks; exact birth time matters most on ingress days and for house placement." +
+            noonNote,
         },
       });
     }

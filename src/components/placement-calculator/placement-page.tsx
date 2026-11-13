@@ -76,6 +76,35 @@ const MOON_BENEFIT_IMAGES = [
   MOON_INTRO_IMAGES[2],
 ];
 
+const MARS_INTRO_IMAGES = [
+  {
+    src: "/imgs/mars-sign-calculator/mars-sign-calculator-birth-time.webp",
+    alt: "Rust-red Mars beside a clock, showing when birth time matters for a Mars sign.",
+  },
+  {
+    src: "/imgs/mars-sign-calculator/mars-sign-calculator-sun-venus.webp",
+    alt: "Sun, Venus, and Mars on separate orbital paths, comparing Mars sign with Sun and Venus.",
+  },
+  {
+    src: "/imgs/mars-sign-calculator/mars-sign-calculator-result-to-map.webp",
+    alt: "Mars connected by light trails to a world map, linking a Mars sign to Mars lines.",
+  },
+  {
+    src: "/imgs/mars-sign-calculator/mars-sign-calculator-element-meaning.webp",
+    alt: "Mars surrounded by fire, earth, air, and water atmospheres for Mars sign elements.",
+  },
+  {
+    src: "/imgs/mars-sign-calculator/mars-sign-calculator-methodology-limits.webp",
+    alt: "Mars inside a partial ephemeris arc, showing a calculated but bounded Mars placement.",
+  },
+];
+
+const MARS_BENEFIT_IMAGES = [
+  MARS_INTRO_IMAGES[0],
+  MARS_INTRO_IMAGES[1],
+  MARS_INTRO_IMAGES[2],
+];
+
 function getH1Title(title: string): string {
   const idx = title.search(/\s[—–]\s|\s-\s/);
   const base = idx >= 0 ? title.slice(0, idx).trim() : title.trim();
@@ -115,10 +144,12 @@ function buildIntro(page: PlacementPageContent, ui: PlacementPageUiContent) {
           ? ASTEROID_INTRO_IMAGES[index]
           : page.key === "moon"
             ? MOON_INTRO_IMAGES[index]
-            : {
-                src: `/imgs/features/${(index % 4) + 1}.webp`,
-                alt: `${section.title} explanation`,
-              };
+            : page.key === "mars"
+              ? MARS_INTRO_IMAGES[index]
+              : {
+                  src: `/imgs/features/${(index % 4) + 1}.webp`,
+                  alt: `${section.title} explanation`,
+                };
 
       return {
         title: section.title,
@@ -146,10 +177,12 @@ function buildBenefit(page: PlacementPageContent, h1Title: string, ui: Placement
           ? ASTEROID_BENEFIT_IMAGE
           : page.key === "moon"
             ? MOON_BENEFIT_IMAGES[index]
-            : {
-                src: "/imgs/features/hero-web.webp",
-                alt: `${section.title} visual explanation`,
-              },
+            : page.key === "mars"
+              ? MARS_BENEFIT_IMAGES[index]
+              : {
+                  src: "/imgs/features/hero-web.webp",
+                  alt: `${section.title} visual explanation`,
+                },
     })),
   };
 }
