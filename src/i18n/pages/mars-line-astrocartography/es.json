@@ -16,6 +16,11 @@
         "url": "/es"
       },
       {
+        "text": "Primero calcula tu signo natal de Marte.",
+        "linkText": "Calculadora del Signo de Marte",
+        "url": "/mars-sign-calculator"
+      },
+      {
         "text": "Compara la línea de Marte con otras líneas planetarias.",
         "linkText": "Guía Completa de Líneas de Astrocartografía",
         "url": "/astrocartography-lines"

@@ -16,6 +16,11 @@
         "url": "/tools/birth-chart-generator"
       },
       {
+        "text": "Explore impulso e afirmação no seu mapa.",
+        "linkText": "Calculadora do Signo de Marte",
+        "url": "/mars-sign-calculator"
+      },
+      {
         "text": "Procurando seu signo lunar?",
         "linkText": "Calculadora de Signo Lunar",
         "url": "/moon-sign-calculator"

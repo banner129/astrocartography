@@ -16,6 +16,11 @@
         "url": "/zh"
       },
       {
+        "text": "先查你的本命火星星座。",
+        "linkText": "火星星座计算器",
+        "url": "/mars-sign-calculator"
+      },
+      {
         "text": "将火星线与其他行星线对比。",
         "linkText": "星盘地图行星线完整指南",
         "url": "/astrocartography-lines"

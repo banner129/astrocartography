@@ -16,6 +16,11 @@
         "url": "/de"
       },
       {
+        "text": "Finde zuerst dein natal Marszeichen.",
+        "linkText": "Marszeichen berechnen",
+        "url": "/mars-sign-calculator"
+      },
+      {
         "text": "Vergleichen Sie die Mars-Linie mit anderen Planetenlinien.",
         "linkText": "Vollständiger Astrokartografie-Linien-Leitfaden",
         "url": "/astrocartography-lines"
