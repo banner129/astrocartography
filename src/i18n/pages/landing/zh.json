@@ -86,6 +86,20 @@
               "icon": "RiQuillPenLine"
             },
             {
+              "title": "木星星座计算器",
+              "description": "查询成长、信念与学习风格",
+              "url": "/jupiter-sign-calculator",
+              "target": "_self",
+              "icon": "RiPlanetLine"
+            },
+            {
+              "title": "土星星座计算器",
+              "description": "查询时间、责任与长期功课",
+              "url": "/saturn-sign-calculator",
+              "target": "_self",
+              "icon": "RiTimerLine"
+            },
+            {
               "title": "南北交点计算器",
               "description": "计算北交点、南交点与成长方向",
               "url": "/lunar-nodes-calculator",

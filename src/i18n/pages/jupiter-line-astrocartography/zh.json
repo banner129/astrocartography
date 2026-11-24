@@ -16,6 +16,11 @@
         "url": "/zh"
       },
       {
+        "text": "阅读木星线之前，先查出本命木星星座。",
+        "linkText": "木星星座计算器",
+        "url": "/jupiter-sign-calculator"
+      },
+      {
         "text": "查看所有行星线及其含义。",
         "linkText": "星盘地图行星线完整指南",
         "url": "/astrocartography-lines"

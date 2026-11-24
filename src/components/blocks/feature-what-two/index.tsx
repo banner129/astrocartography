@@ -6,12 +6,35 @@ import { cn } from "@/lib/utils";
 import { Section as SectionType } from "@/types/blocks/section";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useLocale } from "next-intl";
+
+const READ_MORE_BY_LOCALE: Record<string, string> = {
+  en: "Read More",
+  zh: "阅读更多",
+  es: "Leer más",
+  pt: "Leia mais",
+  de: "Weiterlesen",
+  it: "Leggi di più",
+};
+
+const SHOW_LESS_BY_LOCALE: Record<string, string> = {
+  en: "Show Less",
+  zh: "收起",
+  es: "Mostrar menos",
+  pt: "Mostrar menos",
+  de: "Weniger anzeigen",
+  it: "Mostra meno",
+};
 
 export default function FeatureWhatTwo({
   section,
 }: {
   section: SectionType;
 }) {
+  const locale = useLocale();
+  const readMore = READ_MORE_BY_LOCALE[locale] || READ_MORE_BY_LOCALE.en;
+  const showLess = SHOW_LESS_BY_LOCALE[locale] || SHOW_LESS_BY_LOCALE.en;
+
   if (section.disabled) {
     return null;
   }
@@ -56,6 +79,8 @@ export default function FeatureWhatTwo({
                 isReversed={isReversed}
                 isLongDescription={isLongDescription}
                 shortDescription={shortDescription}
+                readMore={readMore}
+                showLess={showLess}
               />
             );
           })}
@@ -71,12 +96,16 @@ function FeatureItem({
   isReversed,
   isLongDescription,
   shortDescription,
+  readMore,
+  showLess,
 }: {
   item: any;
   hasImage: boolean;
   isReversed: boolean;
   isLongDescription: boolean;
   shortDescription?: string;
+  readMore: string;
+  showLess: string;
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -141,7 +170,7 @@ function FeatureItem({
                     className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
                     aria-expanded={isExpanded}
                   >
-                    {isExpanded ? "Show Less" : "Read More"}
+                    {isExpanded ? showLess : readMore}
                     <ChevronDown
                       className={cn(
                         "size-4 transition-transform duration-200",

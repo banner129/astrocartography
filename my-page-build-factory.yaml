@@ -116,7 +116,7 @@ seo:
     - "https://www.alabe.com"
 
   # 已有内容提醒：避免新页面和已有页面抢同一个关键词
-  existing_content_notes: "Core existing SEO pages include `/`, `/astrocartography-calculator`, `/astrocartography-lines`, `/sun-line-astrocartography`, `/moon-line-astrocartography`, `/mercury-line-astrocartography`, `/venus-line-astrocartography`, `/mars-line-astrocartography`, `/jupiter-line-astrocartography`, `/saturn-line-astrocartography`, `/uranus-line-astrocartography`, `/neptune-line-astrocartography`, `/pluto-line-astrocartography`, `/tools/birth-chart-generator`, `/chart/natal-chart`, `/rising-sign-calculator`, `/moon-sign-calculator`, `/venus-sign-calculator`, `/mars-sign-calculator`, `/mercury-sign-calculator`, `/lunar-nodes-calculator`, `/chiron-placement-calculator`, `/relocation-chart-calculator`, `/solar-return-chart-calculator`, `/synastry-chart-calculator`, `/composite-chart-calculator`, `/transit-chart-calculator`, and `/planetary-positions-today`. Avoid creating near-duplicate pages for these exact intents. `/chart` and user/account pages are functional and should not be treated as SEO landing pages. `/color` and `/converter` are unrelated utility pages and should not guide future astrology SEO unless intentionally retained."
+  existing_content_notes: "Core existing SEO pages include `/`, `/astrocartography-calculator`, `/astrocartography-lines`, `/sun-line-astrocartography`, `/moon-line-astrocartography`, `/mercury-line-astrocartography`, `/venus-line-astrocartography`, `/mars-line-astrocartography`, `/jupiter-line-astrocartography`, `/saturn-line-astrocartography`, `/uranus-line-astrocartography`, `/neptune-line-astrocartography`, `/pluto-line-astrocartography`, `/tools/birth-chart-generator`, `/chart/natal-chart`, `/rising-sign-calculator`, `/moon-sign-calculator`, `/venus-sign-calculator`, `/mars-sign-calculator`, `/mercury-sign-calculator`, `/jupiter-sign-calculator`, `/saturn-sign-calculator`, `/lunar-nodes-calculator`, `/chiron-placement-calculator`, `/relocation-chart-calculator`, `/solar-return-chart-calculator`, `/synastry-chart-calculator`, `/composite-chart-calculator`, `/transit-chart-calculator`, and `/planetary-positions-today`. Avoid creating near-duplicate pages for these exact intents. `/chart` and user/account pages are functional and should not be treated as SEO landing pages. `/color` and `/converter` are unrelated utility pages and should not guide future astrology SEO unless intentionally retained."
 
   # 当前比较值得继续评估的 SEO 缺口
   priority_gaps:
@@ -128,8 +128,6 @@ seo:
     - "astrocartography chart interpretation"
     - "astrology houses guide"
     - "astrology aspects guide"
-    - "jupiter sign calculator"
-    - "saturn sign calculator"
 
 content_inventory:
   pages:
@@ -192,6 +190,40 @@ content_inventory:
         de: "merkurzeichen berechnen"
       topic_cluster: "natal placement calculators"
       differentiation_notes: "Natal Mercury sign only. Distinct from /mercury-line-astrocartography geographic lines."
+    - path: "/jupiter-sign-calculator"
+      primary_keyword: "jupiter sign calculator"
+      secondary_keywords:
+        - "what is my jupiter sign"
+        - "jupiter sign"
+        - "free jupiter sign calculator"
+      page_type: "tool"
+      locale: "en"
+      locales:
+        - en
+        - zh
+        - es
+        - pt
+        - de
+        - it
+      topic_cluster: "natal placement calculators"
+      differentiation_notes: "Natal Jupiter sign only. Distinct from /jupiter-line-astrocartography geographic lines. Shipped in six locales with en-slug."
+    - path: "/saturn-sign-calculator"
+      primary_keyword: "saturn sign calculator"
+      secondary_keywords:
+        - "what is my saturn sign"
+        - "saturn sign"
+        - "free saturn sign calculator"
+      page_type: "tool"
+      locale: "en"
+      locales:
+        - en
+        - zh
+        - es
+        - pt
+        - de
+        - it
+      topic_cluster: "natal placement calculators"
+      differentiation_notes: "Natal Saturn sign only. Distinct from /saturn-line-astrocartography geographic lines. Shipped in six locales with en-slug."
     - path: "/locational-astrology"
       primary_keyword: "locational astrology"
       secondary_keywords:

@@ -1,0 +1,412 @@
+{
+  "key": "jupiter",
+  "slug": "jupiter-sign-calculator",
+  "toolType": "jupiter",
+  "metadata": {
+    "title": "Calculadora do Signo de Júpiter - Encontre seu signo",
+    "description": "Calculadora do signo de Júpiter grátis. Informe data e local de nascimento para ver o signo tropical de Júpiter, o significado e os anos em que ele ocupou esse signo.",
+    "keywords": "calculadora do signo de Júpiter, signo de júpiter, qual é meu signo de júpiter, júpiter por ano, júpiter na astrologia"
+  },
+  "hero": {
+    "eyebrow": "Ferramenta de astrologia grátis",
+    "title": "Calculadora do Signo de Júpiter",
+    "subtitle": "Encontre seu signo de Júpiter, leia o que essa posição descreve e confira os anos em que Júpiter o ocupou."
+  },
+  "form": {
+    "submit": "Calcular meu signo de Júpiter"
+  },
+  "result": {
+    "title": "Sua posição de Júpiter",
+    "cta": "Abrir estes dados no mapa natal",
+    "lineCta": "Ler o guia da linha de Júpiter",
+    "lineUrl": "/jupiter-line-astrocartography",
+    "boundaryNote": "Este grau fica a menos de um grau de um limite de signo. Júpiter pode permanecer assim por vários dias, então o signo vizinho é possível. Acrescente uma hora de nascimento antes de confiar no signo.",
+    "provisionalHouse": "A casa fica provisória até você acrescentar uma hora exata.",
+    "houseReadings": {
+      "1": "Júpiter na casa 1 coloca o crescimento na sua presença e no modo como você entra numa sala. Oportunidades costumam começar porque você aparece e diz o que quer. O risco é prometer uma vida maior do que a semana consegue sustentar.",
+      "2": "Júpiter na casa 2 busca crescimento por meio de dinheiro, habilidades e do que você consegue guardar. A renda pode ampliar quando você ensina, vende ou constrói algo útil. O risco é deixar o gasto crescer só porque a renda cresceu.",
+      "3": "Júpiter na casa 3 cresce com perguntas, escrita e as pessoas próximas. Você costuma aprender ao explicar, e uma viagem curta ou um irmão pode abrir o próximo assunto. O risco é acumular mais conversas do que você termina.",
+      "4": "Júpiter na casa 4 coloca o crescimento no lar, na família e nas raízes privadas. Uma casa, um pai ou um senso de pertencimento pode ser o lugar onde a vida fica maior. O risco é pedir ao lar que carregue toda esperança.",
+      "5": "Júpiter na casa 5 cresce com brincadeira, trabalho criativo, romance e filhos. Você costuma aprender ao fazer algo que outras pessoas possam desfrutar. O risco é apostar mais do que o prazer vale.",
+      "6": "Júpiter na casa 6 cresce com trabalho útil e um método que você pode melhorar. A habilidade se amplia quando você resolve um problema prático. O risco é transformar um bom hábito num padrão que ninguém consegue cumprir.",
+      "7": "Júpiter na casa 7 busca crescimento na parceria. Um cônjuge, um cliente ou um colaborador próximo pode ampliar o que você tenta. O risco é entregar o horizonte inteiro à outra pessoa.",
+      "8": "Júpiter na casa 8 cresce por meio de confiança, dinheiro compartilhado e assuntos que costumam ficar privados. Pesquisa ou um compromisso profundo podem ampliar a vida. O risco é confundir intensidade com segurança.",
+      "9": "Júpiter na casa 9 cresce com estudo, viagem, ensino e uma crença que você consegue explicar. O mapa mais amplo é o ponto. O risco é perseguir a próxima filosofia antes de ter vivido a atual.",
+      "10": "Júpiter na casa 10 coloca o crescimento no trabalho que o público consegue ver. Um papel, uma reputação ou um projeto longo pode ser o lugar onde a oportunidade aparece. O risco é igualar um título a uma vida com sentido.",
+      "11": "Júpiter na casa 11 cresce com amigos, grupos e um futuro que você planeja com outras pessoas. Uma comunidade pode multiplicar o que você sabe. O risco é pertencer a todos os círculos e se comprometer com nenhum.",
+      "12": "Júpiter na casa 12 cresce na solidão, na imaginação e na ajuda dada sem plateia. Fé ou arte podem se ampliar quando a sala está quieta. O risco é desaparecer na história maior e pular o próximo passo prático."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Júpiter em cada signo",
+    "meaningsIntro": "Depois de calcular, leia o parágrafo do seu signo. Cada um descreve um estilo de crescimento, estudo e crença. Não é uma promessa de sorte, dinheiro ou um ano fácil. Duas pessoas com o mesmo signo de Júpiter ainda vivem vidas diferentes.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Júpiter em Áries",
+        "body": "Júpiter em Áries cresce ao começar antes de o plano parecer terminado. A confiança chega ao ir primeiro: abrir uma aula, marcar a viagem ou iniciar um projeto enquanto outras pessoas ainda discutem. A crença soa direta, e um sim claro é mais fácil de confiar do que um argumento longo. A parte generosa é a coragem que você pode emprestar a quem está travado. A parte custosa é a velocidade. Um horizonte mais amplo só ajuda se você ficar tempo o bastante para terminar o que começou. Olhe os riscos que você continua escolhendo e note quais você de fato completa."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Júpiter em Touro",
+        "body": "Júpiter em Touro cresce por meio do que pode ser construído, guardado e repetido. Dinheiro, habilidade, terra, comida e uma rotina estável são lugares comuns onde a oportunidade se torna real. Você pode se expandir devagar e costuma querer um resultado que consiga segurar, mais do que uma promessa de que só se fala. A generosidade costuma parecer provisão: uma refeição, um salário, uma ferramenta, um cômodo que funciona. A tensão aparece quando o conforto vira a única medida de uma boa vida, ou quando você acumula bens sem perguntar se ainda servem. A pergunta útil é o que você está disposto a manter por anos."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Júpiter em Gêmeos",
+        "body": "Júpiter em Gêmeos cresce ao perguntar, ensinar e reunir mais de um ponto de vista. Escrita, conversa, idiomas e assuntos vizinhos são portas típicas. Você costuma entender uma ideia só depois de explicá-la a outra pessoa. Sorte, quando a palavra cabe, tende a chegar por uma mensagem, um contato ou uma pergunta que você não planejou. A tensão é a dispersão. Uma lista de leitura ampla não é o mesmo que um aprendizado terminado. Fique com os assuntos que ainda mudam o modo como você fala, e deixe o resto como curiosidade, não como outra obrigação pela metade."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Júpiter em Câncer",
+        "body": "Júpiter em Câncer cresce por meio de cuidado, memória e um círculo em que você confia. Lar, família e as histórias que você herdou podem ser o lugar onde a vida fica maior, às vezes antes de qualquer plano público. Você pode alimentar pessoas, acolhê-las ou proteger uma história que de outro modo se perderia. A crença costuma parecer pessoal: tem uma cozinha, um pai ou uma orla ligada a ela. A tensão é carregar todo mundo dentro desse círculo, inclusive problemas que não são seus para resolver. O crescimento aqui pede um lar que possa abrigar você sem se tornar o único mundo que você permite."
+      },
+      {
+        "sign": "Leo",
+        "title": "Júpiter em Leão",
+        "body": "Júpiter em Leão cresce onde o trabalho pode ser visto. Projetos criativos, performance, filhos e liderança pedem um palco, mesmo que pequeno. Você costuma aprender ao fazer algo que outras pessoas possam nomear, e a generosidade pode parecer aplauso que você dá com a mesma liberdade com que espera receber. Reconhecimento não é vaidade por padrão. É informação sobre se o trabalho chegou. A tensão é precisar que a sala responda antes de confiar no trabalho em si. Uma vida mais ampla ainda conta quando o público é uma pessoa honesta, não só uma multidão."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Júpiter em Virgem",
+        "body": "Júpiter em Virgem cresce ao melhorar um método. Ofício, rotinas de saúde, edição e serviço útil são as salas de aula habituais. Você tende a confiar mais na habilidade do que no espetáculo, e se expande um detalhe que funciona de cada vez. O ensino acontece quando você mostra como uma coisa é de fato feita. A tensão é um padrão que não para de se mover, de modo que nenhum resultado parece terminado o bastante para compartilhar. A oportunidade neste signo costuma ser modesta no começo: um processo melhor, uma explicação mais limpa, um problema resolvido para quem precisava que fosse feito direito. Deixe a utilidade contar, mesmo quando não é dramática."
+      },
+      {
+        "sign": "Libra",
+        "title": "Júpiter em Libra",
+        "body": "Júpiter em Libra cresce por meio de acordos justos e planos compartilhados. Parceria, conselho, arte e negociação são lugares comuns onde uma ideia pequena se torna maior. Você costuma aprender ao pesar os dois lados, e outra pessoa pode ser o motivo de uma porta se abrir. A generosidade parece fazer espaço para uma segunda visão sem abandonar a sua. A tensão é esperar o equilíbrio perfeito antes de escolher. Um relacionamento pode ampliar sua vida e também pode adiá-la. O acordo útil é o que você consegue cumprir numa terça comum, não só o que soa justo na teoria."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Júpiter em Escorpião",
+        "body": "Júpiter em Escorpião cresce pela profundidade mais do que pela exibição. Pesquisa, dinheiro compartilhado, confiança e assuntos que outras pessoas evitam são território típico. Você pode se comprometer com poucas pessoas e poucas perguntas, e ficar até entender o que estava escondido. A oportunidade costuma chegar depois de uma perda, um segredo ou um fato que muda os termos. A tensão é tratar cada vínculo como um teste, ou guardar informação muito depois de ela já ter feito o trabalho. Uma vida mais ampla aqui não é uma mais barulhenta. É uma mais verdadeira: menos promessas, cumpridas com mais honestidade sobre poder, dinheiro e lealdade."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Júpiter em Sagitário",
+        "body": "Júpiter em Sagitário cresce por meio de sentido, viagem, estudo e um horizonte além da resposta local. Ensino, publicação, direito, religião e longas jornadas são expressões familiares, embora o signo não atribua a você uma profissão. Você costuma aprender ao seguir uma pergunta mais longe do que a conveniência sugere. A crença quer espaço. A tensão é uma certeza que ultrapassa a experiência, ou uma passagem comprada para evitar um problema que ainda estará lá quando você pousar. A posição descreve a necessidade de um mapa maior. Não torna sábia toda viagem e não supera o resto do mapa."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Júpiter em Capricórnio",
+        "body": "Júpiter em Capricórnio cresce por meio da responsabilidade que dura. Um papel, um ofício, um negócio ou uma instituição pode ser o lugar onde a oportunidade se torna visível, em geral depois de um longo prazo. Você pode se expandir ao levar o trabalho a sério antes de alguém oferecer aplauso. A generosidade pode parecer estrutura: um padrão, um salário, uma porta que você mantém aberta porque já passou por ela. A tensão é adiar todo prazer até a conquista estar segura. Rank não é a mesma coisa que uma vida. Pergunte quais deveres ainda constroem algo que você respeita, e quais você mantém só porque parecem sólidos."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Júpiter em Aquário",
+        "body": "Júpiter em Aquário cresce por meio de um grupo, um princípio ou um sistema que não depende de uma só personalidade. Amigos, comunidades de pesquisa, tecnologia e planos voltados ao futuro são cenários comuns. Você pode confiar mais no padrão à frente do que no costume familiar, e costuma aprender ao comparar sua ideia com pessoas que ainda não concordam. A tensão é ficar acima da sala: reformar um grupo sem pertencer a ele, ou reunir causas sem fazer o trabalho pouco glamouroso. O crescimento aqui precisa do princípio mais amplo e de uma comunidade específica que possa discutir com você."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Júpiter em Peixes",
+        "body": "Júpiter em Peixes cresce por meio de imaginação, fé e compaixão. Música, sonhos, prática espiritual e cuidado com pessoas à margem de um sistema são expressões frequentes. Você pode sentir uma história maior antes de poder defendê-la, e costuma aprender em lugares que não estão totalmente mapeados. A generosidade pode ser genuína e também exaustiva. A tensão é uma simpatia sem limite, ou uma crença tão porosa que qualquer humor pode passar por verdade. Uma vida mais ampla neste signo ainda precisa de um limite: a quem você pode ajudar, o que pode imaginar e quando volta aos fatos à sua frente."
+      }
+    ],
+    "yearsTitle": "Signo de Júpiter por ano de nascimento",
+    "yearsIntro": "Júpiter costuma ficar num signo por cerca de um ano. O movimento retrógrado pode devolvê-lo ao signo anterior, então alguns anos aparecem mais de uma vez. Encontre sua data de nascimento no intervalo e use a calculadora se você nasceu no primeiro ou no último dia.",
+    "yearsNote": "Estas datas vêm do mesmo cálculo tropical e geocêntrico do formulário. A data final é o último dia antes de o próximo signo começar. Um aniversário em qualquer borda pode cair no signo vizinho conforme a hora e o local. A calculadora é a autoridade para esse dia. Esta tabela não mostra o retrógrado como um status separado.",
+    "years": [
+      {
+        "range": "31 jul 1989 – 17 ago 1990",
+        "sign": "Cancer"
+      },
+      {
+        "range": "18 ago 1990 – 11 set 1991",
+        "sign": "Leo"
+      },
+      {
+        "range": "12 set 1991 – 9 out 1992",
+        "sign": "Virgo"
+      },
+      {
+        "range": "10 out 1992 – 9 nov 1993",
+        "sign": "Libra"
+      },
+      {
+        "range": "10 nov 1993 – 8 dez 1994",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "9 dez 1994 – 2 jan 1996",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "3 jan 1996 – 20 jan 1997",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "21 jan 1997 – 3 fev 1998",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "4 fev 1998 – 12 fev 1999",
+        "sign": "Pisces"
+      },
+      {
+        "range": "13 fev 1999 – 27 jun 1999",
+        "sign": "Aries"
+      },
+      {
+        "range": "28 jun 1999 – 22 out 1999",
+        "sign": "Taurus"
+      },
+      {
+        "range": "23 out 1999 – 13 fev 2000",
+        "sign": "Aries"
+      },
+      {
+        "range": "14 fev 2000 – 29 jun 2000",
+        "sign": "Taurus"
+      },
+      {
+        "range": "30 jun 2000 – 12 jul 2001",
+        "sign": "Gemini"
+      },
+      {
+        "range": "13 jul 2001 – 31 jul 2002",
+        "sign": "Cancer"
+      },
+      {
+        "range": "1 ago 2002 – 26 ago 2003",
+        "sign": "Leo"
+      },
+      {
+        "range": "27 ago 2003 – 24 set 2004",
+        "sign": "Virgo"
+      },
+      {
+        "range": "25 set 2004 – 25 out 2005",
+        "sign": "Libra"
+      },
+      {
+        "range": "26 out 2005 – 23 nov 2006",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "24 nov 2006 – 17 dez 2007",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "18 dez 2007 – 4 jan 2009",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "5 jan 2009 – 17 jan 2010",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "18 jan 2010 – 5 jun 2010",
+        "sign": "Pisces"
+      },
+      {
+        "range": "6 jun 2010 – 8 set 2010",
+        "sign": "Aries"
+      },
+      {
+        "range": "9 set 2010 – 21 jan 2011",
+        "sign": "Pisces"
+      },
+      {
+        "range": "22 jan 2011 – 3 jun 2011",
+        "sign": "Aries"
+      },
+      {
+        "range": "4 jun 2011 – 10 jun 2012",
+        "sign": "Taurus"
+      },
+      {
+        "range": "11 jun 2012 – 25 jun 2013",
+        "sign": "Gemini"
+      },
+      {
+        "range": "26 jun 2013 – 15 jul 2014",
+        "sign": "Cancer"
+      },
+      {
+        "range": "16 jul 2014 – 10 ago 2015",
+        "sign": "Leo"
+      },
+      {
+        "range": "11 ago 2015 – 8 set 2016",
+        "sign": "Virgo"
+      },
+      {
+        "range": "9 set 2016 – 9 out 2017",
+        "sign": "Libra"
+      },
+      {
+        "range": "10 out 2017 – 7 nov 2018",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "8 nov 2018 – 1 dez 2019",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "2 dez 2019 – 18 dez 2020",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "19 dez 2020 – 12 mai 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "13 mai 2021 – 27 jul 2021",
+        "sign": "Pisces"
+      },
+      {
+        "range": "28 jul 2021 – 28 dez 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "29 dez 2021 – 10 mai 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "11 mai 2022 – 27 out 2022",
+        "sign": "Aries"
+      },
+      {
+        "range": "28 out 2022 – 19 dez 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "20 dez 2022 – 15 mai 2023",
+        "sign": "Aries"
+      },
+      {
+        "range": "16 mai 2023 – 25 mai 2024",
+        "sign": "Taurus"
+      },
+      {
+        "range": "26 mai 2024 – 8 jun 2025",
+        "sign": "Gemini"
+      },
+      {
+        "range": "9 jun 2025 – 29 jun 2026",
+        "sign": "Cancer"
+      },
+      {
+        "range": "30 jun 2026 – 25 jul 2027",
+        "sign": "Leo"
+      },
+      {
+        "range": "26 jul 2027 – 23 ago 2028",
+        "sign": "Virgo"
+      },
+      {
+        "range": "24 ago 2028 – 23 set 2029",
+        "sign": "Libra"
+      },
+      {
+        "range": "24 set 2029 – 21 out 2030",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "22 out 2030 – 15 nov 2031",
+        "sign": "Sagittarius"
+      }
+    ],
+    "limitsTitle": "Retrógrado e o que esta página deixa de fora",
+    "limitsBody": [
+      "Esta calculadora do signo de Júpiter não diz se Júpiter estava retrógrado quando você nasceu. O retrógrado muda a velocidade aparente e, perto da borda de um signo, pode devolver Júpiter ao signo anterior. Esses movimentos já aparecem na tabela de anos e no grau que o formulário devolve. Um símbolo separado de retrógrado não faz parte deste resultado.",
+      "Trânsitos, retornos e datas electionais também ficam fora desta página. Use um mapa completo ou uma ferramenta de trânsitos quando o signo natal estiver claro. O uso honesto do resultado é estreito: aprenda o signo, note se a hora foi real ou o meio-dia local, e deixe a casa sem interpretação até conhecer o relógio."
+    ]
+  },
+  "sections": [
+    {
+      "title": "O que uma calculadora do signo de Júpiter mostra",
+      "body": [
+        "Informe uma data e um local de nascimento. Esta calculadora do signo de Júpiter devolve seu signo tropical de Júpiter e o grau. Sem hora, usa o meio-dia local e marca a casa como provisória. Os significados descrevem um estilo de crescimento. Não prometem sorte nem dinheiro."
+      ]
+    },
+    {
+      "title": "Qual é meu signo de Júpiter",
+      "body": [
+        "Seu signo de Júpiter é o signo do zodíaco que Júpiter ocupava no nascimento. Júpiter pode cair em qualquer signo e costuma ficar nele por cerca de um ano. O signo nomeia como você busca crescimento, estudo e um horizonte mais amplo. Não substitui o resto do mapa."
+      ]
+    },
+    {
+      "title": "Quando a hora de nascimento importa",
+      "body": [
+        "Data e local decidem o signo num dia comum. Acrescente uma hora quando o grau estiver a menos de um grau de 0 ou 29, porque Júpiter pode ficar perto de um limite por vários dias. Uma casa confiável sempre precisa da hora exata. Esta página usa o zodíaco tropical."
+      ]
+    },
+    {
+      "title": "Signo de Júpiter e a linha de Júpiter",
+      "body": [
+        "O signo fica com você em toda cidade. Uma linha de Júpiter marca onde Júpiter estava num ângulo no nascimento, então o mesmo tema pode parecer mais forte num lugar. Leia o signo primeiro. Use o guia da linha de Júpiter quando a pergunta for sobre uma cidade, e acrescente uma hora de nascimento antes de viajar a partir do mapa."
+      ]
+    },
+    {
+      "title": "Como ler o resultado",
+      "body": [
+        "Leia o parágrafo do signo para o estilo de crescimento e depois o grau para ver se Júpiter está no começo ou no fim desse signo. O grau não é uma pontuação de força. Uma leitura de casa aparece só quando você informou uma hora de nascimento. Se a hora ficou em branco, ignore a casa."
+      ]
+    },
+    {
+      "title": "O que esta calculadora não pode prometer",
+      "body": [
+        "O resultado não mostra movimento retrógrado, trânsitos nem um ano de sorte. Um signo de Júpiter descreve uma direção de crescimento. Trabalho, dinheiro, outras pessoas e o resto do mapa ainda decidem o que acontece."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Esta calculadora do signo de Júpiter é grátis?",
+      "answer": "Sim. Informe data e local de nascimento para calcular seu signo de Júpiter grátis. A hora é opcional. O resultado mostra o signo tropical, o grau e uma leitura desse signo. Com hora exata, também mostra a casa de signo inteiro."
+    },
+    {
+      "question": "Preciso da hora de nascimento para encontrar meu signo de Júpiter?",
+      "answer": "Na maioria dos aniversários, data e local bastam para o signo. Júpiter costuma ficar num signo por cerca de um ano. Acrescente a hora quando o grau estiver perto de 0 ou 29, porque esse limite pode durar vários dias, e sempre que quiser a casa. Sem hora, a calculadora usa o meio-dia local e não interpreta a casa."
+    },
+    {
+      "question": "O que é meu signo de Júpiter em poucas palavras?",
+      "answer": "Seu signo de Júpiter é o signo do zodíaco que Júpiter ocupava no nascimento. Descreve um estilo de crescimento, crença e aprendizado. Não é uma garantia de sorte. Júpiter pode cair em qualquer signo, inclusive um longe do seu Sol."
+    },
+    {
+      "question": "Em que anos Júpiter está em cada signo?",
+      "answer": "A tabela Signo de Júpiter por ano de nascimento nesta página lista intervalos tropicais de 1990 a 2030, incluindo anos em que o retrógrado fez o signo mudar mais de uma vez. Se seu aniversário for a primeira ou a última data de uma linha, calcule com sua hora de nascimento."
+    },
+    {
+      "question": "Como um signo de Júpiter difere de uma linha de Júpiter?",
+      "answer": "O signo faz parte do mapa natal e não muda quando você viaja. A linha de Júpiter é um lugar no mapa onde Júpiter estava num ângulo no nascimento. Calcule o signo aqui e depois leia o guia da linha de Júpiter se a pergunta for sobre uma cidade."
+    },
+    {
+      "question": "Isto mostra se Júpiter estava retrógrado?",
+      "answer": "Não. O resultado dá o signo tropical e o grau. Não marca o retrógrado. Perto de um limite de signo, o retrógrado já está incluído na data em que o planeta mudou de signo. Use a tabela de anos ou a calculadora para o signo em si."
+    },
+    {
+      "question": "Um signo de Júpiter prevê riqueza ou um ano de sorte?",
+      "answer": "Não. O signo descreve como você tende a buscar crescimento. Não concede dinheiro, sucesso nem um ano afortunado. Esses resultados também dependem do resto do mapa e das circunstâncias reais."
+    }
+  ],
+  "schemaName": "Calculadora do Signo de Júpiter",
+  "relatedLinks": [
+    {
+      "text": "Gere seu mapa de astrocartografia grátis.",
+      "linkText": "Mapa de astrocartografia grátis",
+      "url": "/pt"
+    },
+    {
+      "text": "Leia o crescimento por lugar depois de saber o signo.",
+      "linkText": "Linha de Júpiter",
+      "url": "/jupiter-line-astrocartography"
+    },
+    {
+      "text": "Compare limites e responsabilidade.",
+      "linkText": "Calculadora do Signo de Saturno",
+      "url": "/saturn-sign-calculator"
+    },
+    {
+      "text": "Compare valores e atração.",
+      "linkText": "Calculadora do Signo de Vênus",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Precisa do mapa completo com cada planeta?",
+      "linkText": "Gerador de mapa natal",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

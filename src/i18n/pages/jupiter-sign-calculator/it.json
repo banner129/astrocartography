@@ -1,0 +1,412 @@
+{
+  "key": "jupiter",
+  "slug": "jupiter-sign-calculator",
+  "toolType": "jupiter",
+  "metadata": {
+    "title": "Calcolatore del Segno di Giove - Trova il tuo segno",
+    "description": "Calcolatore del segno di Giove gratis. Inserisci data e luogo di nascita per trovare il segno tropicale di Giove, il suo significato e gli anni in cui Giove era in quel segno.",
+    "keywords": "calcolatore del segno di giove, segno di giove, qual è il mio segno di giove, giove per anno, giove in astrologia"
+  },
+  "hero": {
+    "eyebrow": "Strumento di astrologia gratuito",
+    "title": "Calcolatore del Segno di Giove",
+    "subtitle": "Trova il tuo segno di Giove, leggi cosa descrive quella collocazione e controlla gli anni in cui Giove lo ha occupato."
+  },
+  "form": {
+    "submit": "Calcola il mio segno di Giove"
+  },
+  "result": {
+    "title": "La tua posizione di Giove",
+    "cta": "Apri questi dati nel tema natale",
+    "lineCta": "Leggi la guida alla linea di Giove",
+    "lineUrl": "/jupiter-line-astrocartography",
+    "boundaryNote": "Questo grado è entro un grado da un confine di segno. Giove può restare così vicino per diversi giorni, quindi il segno vicino è possibile. Aggiungi un'ora di nascita prima di affidarti al segno.",
+    "provisionalHouse": "La casa resta provvisoria finché non aggiungi un'ora esatta.",
+    "houseReadings": {
+      "1": "Giove in 1ª casa mette la crescita sulla tua presenza e sul modo in cui entri in una stanza. Le opportunità partono spesso perché ti presenti e dici ciò che vuoi. Il rischio è promettere una vita più grande di quella che la settimana può reggere.",
+      "2": "Giove in 2ª casa cerca crescita attraverso denaro, competenze e ciò che puoi tenere. Il reddito può espandersi quando insegni, vendi o costruisci qualcosa di utile. Il rischio è lasciare che le spese crescano solo perché è cresciuto il reddito.",
+      "3": "Giove in 3ª casa cresce con domande, scrittura e le persone vicine. Spesso impari spiegando, e un breve viaggio o un fratello può aprire il tema successivo. Il rischio è raccogliere più conversazioni di quante ne finisci.",
+      "4": "Giove in 4ª casa mette la crescita in casa, famiglia e radici private. Una casa, un genitore o un senso di appartenenza possono diventare il luogo in cui la vita si allarga. Il rischio è chiedere alla casa di portare ogni speranza.",
+      "5": "Giove in 5ª casa cresce attraverso gioco, lavoro creativo, romanticismo e figli. Spesso impari facendo qualcosa che altri possono godere. Il rischio è scommettere più di quanto valga il piacere.",
+      "6": "Giove in 6ª casa cresce attraverso lavoro utile e un metodo che puoi migliorare. La competenza si espande quando risolvi un problema pratico. Il rischio è trasformare una buona abitudine in uno standard che nessuno può raggiungere.",
+      "7": "Giove in 7ª casa cerca crescita nella partnership. Un coniuge, un cliente o un collaboratore stretto può allargare ciò che tenti. Il rischio è consegnare l'intero orizzonte all'altra persona.",
+      "8": "Giove in 8ª casa cresce attraverso fiducia, denaro condiviso e temi di solito privati. La ricerca o un impegno profondo possono allargare la vita. Il rischio è confondere intensità con sicurezza.",
+      "9": "Giove in 9ª casa cresce attraverso studio, viaggio, insegnamento e una convinzione che puoi spiegare. La mappa più ampia è il punto. Il rischio è inseguire la filosofia successiva prima di aver vissuto quella attuale.",
+      "10": "Giove in 10ª casa mette la crescita sul lavoro che il pubblico può vedere. Un ruolo, una reputazione o un progetto lungo possono diventare il luogo in cui compare l'opportunità. Il rischio è equiparare un titolo a una vita significativa.",
+      "11": "Giove in 11ª casa cresce attraverso amici, gruppi e un futuro che pianifichi con altri. Una comunità può moltiplicare ciò che sai. Il rischio è appartenere a ogni cerchio e impegnarti in nessuno.",
+      "12": "Giove in 12ª casa cresce in solitudine, immaginazione e aiuto dato senza pubblico. Fede o arte possono espandersi quando la stanza è quieta. Il rischio è sparire nella storia più ampia e saltare il prossimo passo pratico."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Giove in ogni segno",
+    "meaningsIntro": "Dopo il calcolo, leggi il paragrafo del tuo segno. Ciascuno descrive uno stile di crescita, studio e convinzione. Non è una promessa di fortuna, denaro o di un anno facile. Due persone con lo stesso segno di Giove vivono comunque vite diverse.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Giove in Ariete",
+        "body": "Giove in Ariete cresce partendo prima che il piano sembri finito. La fiducia arriva andando per primi: aprire un corso, prenotare il viaggio o iniziare un progetto mentre altri discutono ancora. La convinzione suona diretta, e un sì chiaro è più affidabile di un lungo ragionamento. La parte generosa è il coraggio che puoi prestare a chi è bloccato. La parte costosa è la velocità. Un orizzonte più ampio aiuta solo se resti abbastanza a lungo da finire ciò che hai iniziato. Guarda i rischi che continui a scegliere e nota quali porti davvero a termine."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Giove in Toro",
+        "body": "Giove in Toro cresce attraverso ciò che si può costruire, tenere e ripetere. Denaro, competenza, terra, cibo e una routine stabile sono luoghi comuni in cui l'opportunità diventa concreta. Puoi espanderti lentamente e di solito vuoi un risultato da tenere in mano piuttosto che una promessa di cui parlare soltanto. La generosità spesso appare come fornire: un pasto, un compenso, uno strumento, una stanza che funziona. La tensione arriva quando il comfort diventa l'unica misura di una buona vita, o quando aggiungi beni senza chiedere se ti servono ancora. La domanda utile è che cosa sei disposto a mantenere per anni."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Giove in Gemelli",
+        "body": "Giove in Gemelli cresce chiedendo, insegnando e raccogliendo più di un punto di vista. Scrittura, conversazione, lingue e argomenti vicini sono porte tipiche. Spesso capisci un'idea solo dopo averla spiegata a qualcun altro. La fortuna, quando la parola ha senso, tende ad arrivare tramite un messaggio, un contatto o una domanda che non avevi pianificato. La tensione è la dispersione. Una lista di letture ampia non è la stessa cosa di un apprendimento finito. Conserva i temi che ancora cambiano il modo in cui parli e lascia il resto come curiosità, non come un altro obbligo incompiuto."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Giove in Cancro",
+        "body": "Giove in Cancro cresce attraverso cura, memoria e un cerchio di cui ti fidi. Casa, famiglia e le storie che hai ereditato possono diventare il luogo in cui la vita si allarga, a volte prima di qualsiasi piano pubblico. Puoi nutrire le persone, ospitarle o proteggere una storia che altrimenti andrebbe persa. La convinzione spesso è personale: ha una cucina, un genitore o una riva attaccata. La tensione è tenere tutti dentro quel cerchio, anche i problemi che non ti spettano. Qui la crescita chiede una casa che possa ripararti senza diventare l'unico mondo che permetti."
+      },
+      {
+        "sign": "Leo",
+        "title": "Giove in Leone",
+        "body": "Giove in Leone cresce dove il lavoro può essere visto. Progetti creativi, performance, figli e leadership chiedono un palco, anche piccolo. Spesso impari facendo qualcosa che altri possono nominare, e la generosità può apparire come applauso che dai con la stessa libertà con cui speri di riceverlo. Il riconoscimento non è vanità di default. È informazione su quanto il lavoro abbia funzionato. La tensione è aver bisogno che la stanza risponda prima di fidarti del lavoro stesso. Una vita più ampia conta ancora quando il pubblico è una persona onesta, non solo una folla."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Giove in Vergine",
+        "body": "Giove in Vergine cresce migliorando un metodo. Mestiere, routine di salute, revisione e servizio utile sono le aule abituali. Tendenzialmente ti fidi della competenza più che dello spettacolo e ti espandi un dettaglio funzionante alla volta. Insegni quando mostri come si fa davvero una cosa. La tensione è uno standard che continua a muoversi, così nessun risultato sembra abbastanza finito da condividere. L'opportunità in questo segno è spesso modesta all'inizio: un processo migliore, una spiegazione più chiara, un problema risolto per qualcuno che aveva bisogno che fosse fatto bene. Lascia che l'utilità conti, anche quando non è drammatica."
+      },
+      {
+        "sign": "Libra",
+        "title": "Giove in Bilancia",
+        "body": "Giove in Bilancia cresce attraverso accordi equi e piani condivisi. Partnership, consiglio, arte e negoziazione sono luoghi comuni in cui una piccola idea diventa più grande. Spesso impari pesando entrambi i lati, e un'altra persona può essere il motivo per cui si apre una porta. La generosità appare come fare spazio a una seconda visione senza abbandonare la tua. La tensione è aspettare l'equilibrio perfetto prima di scegliere. Una relazione può allargare la tua vita e può anche rimandarla. L'accordo utile è quello che puoi mantenere in un martedì ordinario, non solo quello che suona equo in teoria."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Giove in Scorpione",
+        "body": "Giove in Scorpione cresce attraverso la profondità piuttosto che la mostra. Ricerca, denaro condiviso, fiducia e temi che altri evitano sono territorio tipico. Puoi impegnarti con poche persone e poche domande, poi restare finché non hai capito ciò che era nascosto. L'opportunità spesso arriva dopo una perdita, un segreto o un fatto che cambia i termini. La tensione è trattare ogni legame come una prova, o trattenere informazioni molto dopo che hanno fatto il loro lavoro. Una vita più ampia qui non è più rumorosa. È più vera: meno promesse, mantenute con più onestà su potere, denaro e lealtà."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Giove in Sagittario",
+        "body": "Giove in Sagittario cresce attraverso significato, viaggio, studio e un orizzonte oltre la risposta locale. Insegnamento, editoria, diritto, religione e lunghi viaggi sono espressioni familiari, anche se il segno non ti assegna una professione. Spesso impari seguendo una domanda più lontano di quanto suggerisca la comodità. La convinzione vuole spazio. La tensione è una certezza che supera l'esperienza, o un biglietto comprato per evitare un problema che sarà ancora lì quando atterri. La collocazione descrive il bisogno di una mappa più ampia. Non rende saggio ogni viaggio e non supera il resto del tema."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Giove in Capricorno",
+        "body": "Giove in Capricorno cresce attraverso una responsabilità che dura. Un ruolo, un mestiere, un'attività o un'istituzione possono essere il luogo in cui l'opportunità diventa visibile, di solito dopo tempi lunghi. Puoi espanderti prendendo sul serio il lavoro prima che qualcuno offra applausi. La generosità può apparire come struttura: uno standard, uno stipendio, una porta che tieni aperta perché l'hai già attraversata. La tensione è rimandare ogni piacere finché il risultato non è sicuro. Il grado non è la stessa cosa di una vita. Chiediti quali doveri costruiscono ancora qualcosa che rispetti e quali tieni solo perché sembrano solidi."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Giove in Acquario",
+        "body": "Giove in Acquario cresce attraverso un gruppo, un principio o un sistema che non dipende da una sola personalità. Amici, comunità di ricerca, tecnologia e piani rivolti al futuro sono contesti comuni. Puoi fidarti del modello davanti più che della consuetudine familiare e spesso impari confrontando la tua idea con chi non è già d'accordo. La tensione è restare sopra la stanza: riformare un gruppo senza appartenervi, o raccogliere cause senza fare il lavoro poco glamour. Qui la crescita ha bisogno sia del principio più ampio sia di una comunità specifica che possa contraddirti."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Giove in Pesci",
+        "body": "Giove in Pesci cresce attraverso immaginazione, fede e compassione. Musica, sogni, pratica spirituale e cura per chi sta ai margini di un sistema sono espressioni frequenti. Puoi sentire una storia più ampia prima di saperla difendere e spesso impari in luoghi non del tutto mappati. La generosità può essere genuina e anche estenuante. La tensione è una simpatia senza limite, o una convinzione così porosa che qualsiasi umore passa per verità. Una vita più ampia in questo segno ha ancora bisogno di un confine: chi puoi aiutare, che cosa puoi immaginare e quando torni ai fatti davanti a te."
+      }
+    ],
+    "yearsTitle": "Segno di Giove per anno di nascita",
+    "yearsIntro": "Giove resta di solito in un segno per circa un anno. Il moto retrogrado può rimandarlo nel segno precedente, quindi alcuni anni compaiono più di una volta. Trova la tua data di nascita nell'intervallo, poi usa il calcolatore se sei nato il primo o l'ultimo giorno.",
+    "yearsNote": "Queste date vengono dallo stesso calcolo tropicale e geocentrico del modulo. La data finale è l'ultimo giorno prima dell'inizio del segno successivo. Un compleanno su uno dei due bordi può cadere nel segno vicino a seconda di ora e luogo. Il calcolatore è l'autorità per quel giorno. Questa tabella non mostra il retrogrado come stato separato.",
+    "years": [
+      {
+        "range": "31 lug 1989 – 17 ago 1990",
+        "sign": "Cancer"
+      },
+      {
+        "range": "18 ago 1990 – 11 set 1991",
+        "sign": "Leo"
+      },
+      {
+        "range": "12 set 1991 – 9 ott 1992",
+        "sign": "Virgo"
+      },
+      {
+        "range": "10 ott 1992 – 9 nov 1993",
+        "sign": "Libra"
+      },
+      {
+        "range": "10 nov 1993 – 8 dic 1994",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "9 dic 1994 – 2 gen 1996",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "3 gen 1996 – 20 gen 1997",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "21 gen 1997 – 3 feb 1998",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "4 feb 1998 – 12 feb 1999",
+        "sign": "Pisces"
+      },
+      {
+        "range": "13 feb 1999 – 27 giu 1999",
+        "sign": "Aries"
+      },
+      {
+        "range": "28 giu 1999 – 22 ott 1999",
+        "sign": "Taurus"
+      },
+      {
+        "range": "23 ott 1999 – 13 feb 2000",
+        "sign": "Aries"
+      },
+      {
+        "range": "14 feb 2000 – 29 giu 2000",
+        "sign": "Taurus"
+      },
+      {
+        "range": "30 giu 2000 – 12 lug 2001",
+        "sign": "Gemini"
+      },
+      {
+        "range": "13 lug 2001 – 31 lug 2002",
+        "sign": "Cancer"
+      },
+      {
+        "range": "1 ago 2002 – 26 ago 2003",
+        "sign": "Leo"
+      },
+      {
+        "range": "27 ago 2003 – 24 set 2004",
+        "sign": "Virgo"
+      },
+      {
+        "range": "25 set 2004 – 25 ott 2005",
+        "sign": "Libra"
+      },
+      {
+        "range": "26 ott 2005 – 23 nov 2006",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "24 nov 2006 – 17 dic 2007",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "18 dic 2007 – 4 gen 2009",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "5 gen 2009 – 17 gen 2010",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "18 gen 2010 – 5 giu 2010",
+        "sign": "Pisces"
+      },
+      {
+        "range": "6 giu 2010 – 8 set 2010",
+        "sign": "Aries"
+      },
+      {
+        "range": "9 set 2010 – 21 gen 2011",
+        "sign": "Pisces"
+      },
+      {
+        "range": "22 gen 2011 – 3 giu 2011",
+        "sign": "Aries"
+      },
+      {
+        "range": "4 giu 2011 – 10 giu 2012",
+        "sign": "Taurus"
+      },
+      {
+        "range": "11 giu 2012 – 25 giu 2013",
+        "sign": "Gemini"
+      },
+      {
+        "range": "26 giu 2013 – 15 lug 2014",
+        "sign": "Cancer"
+      },
+      {
+        "range": "16 lug 2014 – 10 ago 2015",
+        "sign": "Leo"
+      },
+      {
+        "range": "11 ago 2015 – 8 set 2016",
+        "sign": "Virgo"
+      },
+      {
+        "range": "9 set 2016 – 9 ott 2017",
+        "sign": "Libra"
+      },
+      {
+        "range": "10 ott 2017 – 7 nov 2018",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "8 nov 2018 – 1 dic 2019",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "2 dic 2019 – 18 dic 2020",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "19 dic 2020 – 12 mag 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "13 mag 2021 – 27 lug 2021",
+        "sign": "Pisces"
+      },
+      {
+        "range": "28 lug 2021 – 28 dic 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "29 dic 2021 – 10 mag 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "11 mag 2022 – 27 ott 2022",
+        "sign": "Aries"
+      },
+      {
+        "range": "28 ott 2022 – 19 dic 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "20 dic 2022 – 15 mag 2023",
+        "sign": "Aries"
+      },
+      {
+        "range": "16 mag 2023 – 25 mag 2024",
+        "sign": "Taurus"
+      },
+      {
+        "range": "26 mag 2024 – 8 giu 2025",
+        "sign": "Gemini"
+      },
+      {
+        "range": "9 giu 2025 – 29 giu 2026",
+        "sign": "Cancer"
+      },
+      {
+        "range": "30 giu 2026 – 25 lug 2027",
+        "sign": "Leo"
+      },
+      {
+        "range": "26 lug 2027 – 23 ago 2028",
+        "sign": "Virgo"
+      },
+      {
+        "range": "24 ago 2028 – 23 set 2029",
+        "sign": "Libra"
+      },
+      {
+        "range": "24 set 2029 – 21 ott 2030",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "22 ott 2030 – 15 nov 2031",
+        "sign": "Sagittarius"
+      }
+    ],
+    "limitsTitle": "Retrogrado e ciò che questa pagina lascia fuori",
+    "limitsBody": [
+      "Questo calcolatore del segno di Giove non dice se Giove era retrogrado alla tua nascita. Il retrogrado cambia la velocità apparente e, vicino al bordo di un segno, può riportare Giove nel segno precedente. Quei movimenti sono già riflessi nella tabella degli anni e nel grado che restituisce il modulo. Un simbolo retrogrado separato non fa parte di questo risultato.",
+      "Transiti, ritorni e date elettive restano fuori da questa pagina. Usa un tema completo o uno strumento di transiti una volta chiaro il segno natale. L'uso onesto del risultato è stretto: impara il segno, nota se l'ora era reale o mezzogiorno locale, e lascia la casa non letta finché l'orologio è noto."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Che cosa mostra il calcolatore del segno di Giove",
+      "body": [
+        "Inserisci data e luogo di nascita. Questo calcolatore del segno di Giove restituisce il segno tropicale di Giove e il grado. Senza ora usa il mezzogiorno locale e segna la casa come provvisoria. I significati descrivono uno stile di crescita. Non promettono fortuna o denaro."
+      ]
+    },
+    {
+      "title": "Qual è il mio segno di Giove",
+      "body": [
+        "Il tuo segno di Giove è il segno zodiacale occupato da Giove alla nascita. Giove può cadere in qualsiasi segno e di solito ci resta circa un anno. Il segno nomina come cerchi crescita, studio e un orizzonte più ampio. Non sostituisce il resto del tema."
+      ]
+    },
+    {
+      "title": "Quando conta l'ora di nascita",
+      "body": [
+        "Data e luogo decidono il segno in un giorno ordinario. Aggiungi un'ora di orologio quando il grado è entro un grado da 0 o 29, perché Giove può stare vicino a un confine per diversi giorni. Una casa affidabile richiede sempre l'ora esatta. Questa pagina usa lo zodiaco tropicale."
+      ]
+    },
+    {
+      "title": "Segno di Giove e linea di Giove",
+      "body": [
+        "Il segno resta con te in ogni città. Una linea di Giove segna dove Giove stava su un angolo alla nascita, così lo stesso tema può sembrare più forte in un luogo. Leggi prima il segno. Usa la guida alla linea di Giove quando la domanda riguarda una città, e aggiungi un'ora di nascita prima di viaggiare dalla mappa."
+      ]
+    },
+    {
+      "title": "Come leggere il risultato",
+      "body": [
+        "Leggi il paragrafo del segno per lo stile di crescita, poi il grado per quanto presto o tardi Giove sieda in quel segno. Il grado non è un punteggio di forza. Una lettura di casa appare solo se hai inserito un'ora di nascita. Se l'ora era vuota, ignora la casa."
+      ]
+    },
+    {
+      "title": "Che cosa questo calcolatore non può promettere",
+      "body": [
+        "Il risultato non mostra moto retrogrado, transiti o un anno fortunato. Un segno di Giove descrive una direzione di crescita. Lavoro, denaro, altre persone e il resto del tema decidono ancora che cosa accade."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Questo calcolatore del segno di Giove è gratis?",
+      "answer": "Sì. Inserisci data e luogo di nascita per calcolare il segno di Giove gratis. L'ora è facoltativa. Il risultato mostra il segno tropicale, il grado e una lettura di quel segno. Con un'ora esatta mostra anche la casa a segno intero."
+    },
+    {
+      "question": "Mi serve l'ora di nascita per trovare il segno di Giove?",
+      "answer": "Nella maggior parte dei compleanni bastano data e luogo per il segno. Giove resta di solito in un segno per circa un anno. Aggiungi l'ora quando il grado è vicino a 0 o 29, perché quel confine può durare diversi giorni, e ogni volta che vuoi la casa. Senza ora il calcolatore usa il mezzogiorno locale e non interpreta la casa."
+    },
+    {
+      "question": "Che cos'è il mio segno di Giove in poche parole?",
+      "answer": "Il tuo segno di Giove è il segno zodiacale occupato da Giove alla nascita. Descrive uno stile di crescita, convinzione e apprendimento. Non è una garanzia di fortuna. Giove può cadere in qualsiasi segno, anche lontano dal Sole."
+    },
+    {
+      "question": "In quali anni Giove è in ciascun segno?",
+      "answer": "La tabella Segno di Giove per anno di nascita in questa pagina elenca intervalli tropicali dal 1990 al 2030, compresi gli anni in cui il retrogrado ha fatto cambiare segno più di una volta. Se il compleanno è la prima o l'ultima data di una riga, calcolalo con l'ora di nascita."
+    },
+    {
+      "question": "In che cosa differisce un segno di Giove da una linea di Giove?",
+      "answer": "Il segno fa parte del tema natale e non cambia quando viaggi. La linea di Giove è un luogo sulla mappa dove Giove stava su un angolo alla nascita. Calcola il segno qui, poi leggi la guida alla linea di Giove se la domanda riguarda una città."
+    },
+    {
+      "question": "Mostra se Giove era retrogrado?",
+      "answer": "No. Il risultato dà il segno tropicale e il grado. Non marca il retrogrado. Vicino a un confine di segno, il retrogrado è già incluso nella data in cui il pianeta ha cambiato segno. Usa la tabella degli anni o il calcolatore per il segno stesso."
+    },
+    {
+      "question": "Un segno di Giove prevede ricchezza o un anno fortunato?",
+      "answer": "No. Il segno descrive come tendi a cercare crescita. Non assegna denaro, successo o un anno fortunato. Quegli esiti dipendono anche dal resto del tema e dalle circostanze reali."
+    }
+  ],
+  "schemaName": "Calcolatore del Segno di Giove",
+  "relatedLinks": [
+    {
+      "text": "Genera la tua mappa di astrocartografia gratuita.",
+      "linkText": "Mappa di astrocartografia gratuita",
+      "url": "/it"
+    },
+    {
+      "text": "Leggi la crescita per luogo dopo aver visto il segno.",
+      "linkText": "Linea di Giove",
+      "url": "/jupiter-line-astrocartography"
+    },
+    {
+      "text": "Confronta limiti e responsabilità.",
+      "linkText": "Calcolatore del Segno di Saturno",
+      "url": "/saturn-sign-calculator"
+    },
+    {
+      "text": "Confronta valori e attrazione.",
+      "linkText": "Calcolatore del Segno di Venere",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Ti serve il tema completo?",
+      "linkText": "Generatore del tema natale",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

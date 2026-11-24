@@ -1,9 +1,9 @@
-export type PlacementPageKey = "venus" | "moon" | "mars" | "mercury" | "lunarNodes" | "chiron" | "asteroids";
+export type PlacementPageKey = "venus" | "moon" | "mars" | "mercury" | "jupiter" | "saturn" | "lunarNodes" | "chiron" | "asteroids";
 
 export type PlacementPageContent = {
   key: PlacementPageKey;
   slug: string;
-  toolType: "venus" | "moon" | "mars" | "mercury" | "lunar-nodes" | "chiron" | "asteroids";
+  toolType: "venus" | "moon" | "mars" | "mercury" | "jupiter" | "saturn" | "lunar-nodes" | "chiron" | "asteroids";
   metadata: {
     title: string;
     description: string;
@@ -29,6 +29,18 @@ export type PlacementPageContent = {
     sunFar?: string;
     boundaryNote?: string;
     provisionalHouse?: string;
+    houseReadings?: Record<string, string>;
+  };
+  guide?: {
+    meaningsTitle: string;
+    meaningsIntro: string;
+    signs: Array<{ sign: string; title: string; body: string }>;
+    yearsTitle: string;
+    yearsIntro: string;
+    yearsNote: string;
+    years: Array<{ range: string; sign: string }>;
+    limitsTitle: string;
+    limitsBody: string[];
   };
   relatedLinks: Array<{
     text: string;

@@ -1,0 +1,412 @@
+{
+  "key": "jupiter",
+  "slug": "jupiter-sign-calculator",
+  "toolType": "jupiter",
+  "metadata": {
+    "title": "Jupiterzeichen berechnen - Finde dein Jupiterzeichen",
+    "description": "Jupiterzeichen kostenlos berechnen. Gib Geburtsdatum und Ort ein und finde dein tropisches Jupiterzeichen, seine Bedeutung und die Jahre, in denen Jupiter darin stand.",
+    "keywords": "jupiterzeichen berechnen, jupiterzeichen, was ist mein jupiterzeichen, jupiterzeichen nach jahr, jupiter in der astrologie"
+  },
+  "hero": {
+    "eyebrow": "Kostenloses Astrologie-Werkzeug",
+    "title": "Jupiterzeichen berechnen",
+    "subtitle": "Finde dein Jupiterzeichen, lies, was diese Stellung beschreibt, und prüfe die Jahre, in denen Jupiter dort stand."
+  },
+  "form": {
+    "submit": "Mein Jupiterzeichen berechnen"
+  },
+  "result": {
+    "title": "Deine Jupiterstellung",
+    "cta": "Diese Geburtsdaten im Horoskop öffnen",
+    "lineCta": "Jupiter-Linien-Leitfaden lesen",
+    "lineUrl": "/jupiter-line-astrocartography",
+    "boundaryNote": "Dieser Grad liegt innerhalb eines Grades an einer Zeichengrenze. Jupiter kann mehrere Tage so nah bleiben, daher ist das Nachbarzeichen möglich. Ergänze eine Geburtszeit, bevor du dich auf das Zeichen verlässt.",
+    "provisionalHouse": "Das Haus bleibt vorläufig, bis du eine genaue Uhrzeit ergänzt.",
+    "houseReadings": {
+      "1": "Jupiter im 1. Haus legt Wachstum auf deine Präsenz und darauf, wie du einen Raum betrittst. Chancen beginnen oft, weil du erscheinst und sagst, was du willst. Das Risiko ist, ein größeres Leben zu versprechen, als die Woche tragen kann.",
+      "2": "Jupiter im 2. Haus sucht Wachstum über Geld, Können und das, was du behalten kannst. Einkommen kann wachsen, wenn du lehrst, verkaufst oder etwas baust, das Menschen nutzen. Das Risiko ist, Ausgaben wachsen zu lassen, nur weil das Einkommen wuchs.",
+      "3": "Jupiter im 3. Haus wächst durch Fragen, Schreiben und die Menschen in der Nähe. Oft lernst du durch Erklären, und eine kurze Reise oder ein Geschwister kann das nächste Thema öffnen. Das Risiko ist, mehr Gespräche zu sammeln, als du abschließt.",
+      "4": "Jupiter im 4. Haus legt Wachstum in Zuhause, Familie und private Wurzeln. Ein Haus, ein Elternteil oder ein Gefühl von Zugehörigkeit kann der Ort werden, an dem das Leben größer wird. Das Risiko ist, dass das Zuhause jede Hoffnung tragen soll.",
+      "5": "Jupiter im 5. Haus wächst durch Spiel, kreative Arbeit, Romantik und Kinder. Oft lernst du, indem du etwas machst, das andere genießen können. Das Risiko ist, mehr zu setzen, als das Vergnügen wert ist.",
+      "6": "Jupiter im 6. Haus wächst durch nützliche Arbeit und eine Methode, die du verbessern kannst. Können wächst, wenn du ein praktisches Problem löst. Das Risiko ist, eine gute Gewohnheit zum Standard zu machen, den niemand erfüllen kann.",
+      "7": "Jupiter im 7. Haus sucht Wachstum in der Partnerschaft. Ein Partner, Kunde oder enger Mitwirkender kann erweitern, was du versuchst. Das Risiko ist, den ganzen Horizont der anderen Person zu überlassen.",
+      "8": "Jupiter im 8. Haus wächst durch Vertrauen, gemeinsames Geld und Themen, die meist privat bleiben. Forschung oder eine tiefe Verpflichtung können das Leben erweitern. Das Risiko ist, Intensität mit Sicherheit zu verwechseln.",
+      "9": "Jupiter im 9. Haus wächst durch Studium, Reise, Lehre und eine Überzeugung, die du erklären kannst. Die weitere Karte ist der Punkt. Das Risiko ist, die nächste Philosophie zu jagen, bevor du die aktuelle gelebt hast.",
+      "10": "Jupiter im 10. Haus legt Wachstum auf Arbeit, die die Öffentlichkeit sehen kann. Eine Rolle, ein Ruf oder ein langes Projekt können der Ort werden, an dem Chance erscheint. Das Risiko ist, einen Titel mit einem sinnvollen Leben gleichzusetzen.",
+      "11": "Jupiter im 11. Haus wächst durch Freunde, Gruppen und eine Zukunft, die du mit anderen planst. Eine Gemeinschaft kann multiplizieren, was du weißt. Das Risiko ist, jedem Kreis anzugehören und sich keinem zu verpflichten.",
+      "12": "Jupiter im 12. Haus wächst in der Stille, in der Vorstellung und in Hilfe ohne Publikum. Glaube oder Kunst können wachsen, wenn der Raum ruhig ist. Das Risiko ist, in der größeren Geschichte zu verschwinden und den nächsten praktischen Schritt zu überspringen."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Jupiter in jedem Zeichen",
+    "meaningsIntro": "Nach der Berechnung lies den Absatz zu deinem Zeichen. Jeder beschreibt einen Stil von Wachstum, Lernen und Überzeugung. Es ist kein Versprechen von Glück, Geld oder einem leichten Jahr. Zwei Menschen mit demselben Jupiterzeichen leben trotzdem unterschiedliche Leben.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Jupiter im Widder",
+        "body": "Jupiter im Widder wächst, indem du startest, bevor der Plan fertig wirkt. Vertrauen kommt durch Vorangehen: einen Kurs öffnen, die Reise buchen oder ein Projekt beginnen, während andere noch diskutieren. Überzeugung klingt direkt, und ein klares Ja ist vertrauenswürdiger als ein langes Argument. Der großzügige Teil ist Mut, den du jemandem leihen kannst, der steckt. Der kostspielige Teil ist Tempo. Ein weiterer Horizont hilft nur, wenn du lange genug bleibst, um zu Ende zu bringen, was du begonnen hast. Sieh dir die Risiken an, die du weiter wählst, und merke, welche du wirklich abschließt."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Jupiter im Stier",
+        "body": "Jupiter im Stier wächst durch das, was gebaut, behalten und wiederholt werden kann. Geld, Können, Land, Essen und eine stabile Routine sind häufige Orte, an denen Chance konkret wird. Du erweiterst dich vielleicht langsam und willst meist ein Ergebnis, das du halten kannst, statt eines Versprechens, über das man nur spricht. Großzügigkeit sieht oft aus wie Versorgen: eine Mahlzeit, ein Lohn, ein Werkzeug, ein Raum, der funktioniert. Die Anspannung zeigt sich, wenn Komfort zum einzigen Maß eines guten Lebens wird oder du Besitz anhäufst, ohne zu fragen, ob er dir noch dient. Die nützliche Frage ist, was du jahrelang erhalten willst."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Jupiter in den Zwillingen",
+        "body": "Jupiter in den Zwillingen wächst durch Fragen, Lehren und mehr als einen Standpunkt. Schreiben, Gespräch, Sprachen und benachbarte Themen sind typische Türen. Oft verstehst du eine Idee erst, nachdem du sie jemand anderem erklärt hast. Glück, wenn das Wort überhaupt passt, kommt eher über eine Nachricht, einen Kontakt oder eine Frage, die du nicht geplant hast. Die Anspannung ist Zerstreuung. Eine weite Leseliste ist nicht dasselbe wie abgeschlossenes Lernen. Behalte die Themen, die dein Sprechen noch verändern, und lass den Rest Neugier sein statt einer weiteren unfertigen Pflicht."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Jupiter im Krebs",
+        "body": "Jupiter im Krebs wächst durch Fürsorge, Erinnerung und einen Kreis, dem du vertraust. Zuhause, Familie und die Geschichten, die du geerbt hast, können der Ort werden, an dem das Leben größer wird, manchmal vor jedem öffentlichen Plan. Du kannst Menschen speisen, beherbergen oder eine Geschichte schützen, die sonst verloren ginge. Überzeugung fühlt sich oft persönlich an: Es hängt eine Küche, ein Elternteil oder ein Ufer daran. Die Anspannung ist, alle in diesem Kreis zu halten, auch Probleme, die nicht deine sind. Wachstum hier braucht ein Zuhause, das dich schützen kann, ohne die einzige Welt zu werden, die du zulässt."
+      },
+      {
+        "sign": "Leo",
+        "title": "Jupiter im Löwen",
+        "body": "Jupiter im Löwen wächst dort, wo die Arbeit gesehen werden kann. Kreative Projekte, Auftritt, Kinder und Führung brauchen eine Bühne, auch eine kleine. Oft lernst du, indem du etwas machst, das andere benennen können, und Großzügigkeit kann wie Applaus aussehen, den du ebenso frei gibst, wie du ihn hoffst. Anerkennung ist nicht von vornherein Eitelkeit. Sie ist Information darüber, ob die Arbeit ankam. Die Anspannung ist, dass der Raum antworten muss, bevor du der Arbeit selbst vertraust. Ein weiteres Leben zählt noch, wenn das Publikum eine ehrliche Person ist, nicht nur eine Menge."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Jupiter in der Jungfrau",
+        "body": "Jupiter in der Jungfrau wächst, indem du eine Methode verbesserst. Handwerk, Gesundheitsroutinen, Redaktion und nützlicher Dienst sind die üblichen Klassenzimmer. Du vertraust Können meist mehr als Spektakel und erweiterst dich Detail für Detail. Lehre geschieht, wenn du zeigst, wie etwas wirklich gemacht wird. Die Anspannung ist ein Standard, der sich weiterbewegt, sodass kein Ergebnis fertig genug zum Teilen wirkt. Chance in diesem Zeichen ist oft zuerst bescheiden: ein besserer Prozess, eine klarere Erklärung, ein Problem gelöst für jemanden, der es ordentlich brauchte. Lass Nützlichkeit zählen, auch wenn sie nicht dramatisch ist."
+      },
+      {
+        "sign": "Libra",
+        "title": "Jupiter in der Waage",
+        "body": "Jupiter in der Waage wächst durch faire Absprachen und gemeinsame Pläne. Partnerschaft, Rat, Kunst und Verhandlung sind häufige Orte, an denen eine kleine Idee größer wird. Oft lernst du, indem du beide Seiten abwägst, und eine andere Person kann der Grund sein, dass sich eine Tür öffnet. Großzügigkeit sieht aus wie Raum für eine zweite Sicht, ohne die eigene aufzugeben. Die Anspannung ist, auf perfektes Gleichgewicht zu warten, bevor du wählst. Eine Beziehung kann dein Leben erweitern und auch verschieben. Die nützliche Absprache hältst du an einem gewöhnlichen Dienstag, nicht nur die, die in der Theorie fair klingt."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Jupiter im Skorpion",
+        "body": "Jupiter im Skorpion wächst durch Tiefe statt Schau. Forschung, gemeinsames Geld, Vertrauen und Themen, die andere meiden, sind typisches Terrain. Du kannst dich wenigen Menschen und wenigen Fragen verpflichten und bleiben, bis du verstehst, was verborgen war. Chance kommt oft nach einem Verlust, einem Geheimnis oder einer Tatsache, die die Bedingungen ändert. Die Anspannung ist, jede Bindung als Test zu behandeln oder Information lange zu halten, nachdem sie ihre Arbeit getan hat. Ein weiteres Leben hier ist nicht lauter. Es ist wahrer: weniger Versprechen, gehalten mit mehr Ehrlichkeit über Macht, Geld und Loyalität."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Jupiter im Schützen",
+        "body": "Jupiter im Schützen wächst durch Bedeutung, Reise, Studium und einen Horizont hinter der lokalen Antwort. Lehren, Publizieren, Recht, Religion und lange Reisen sind vertraute Ausdrücke, auch wenn das Zeichen dir keinen Beruf zuweist. Oft lernst du, indem du einer Frage weiter folgst, als Bequemlichkeit vorschlägt. Überzeugung will Raum. Die Anspannung ist Gewissheit, die der Erfahrung vorausläuft, oder ein Ticket, gekauft, um ein Problem zu vermeiden, das bei der Landung noch da ist. Die Stellung beschreibt den Bedarf an einer größeren Karte. Sie macht nicht jede Reise klug und stellt den Rest des Horoskops nicht über."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Jupiter im Steinbock",
+        "body": "Jupiter im Steinbock wächst durch Verantwortung, die hält. Eine Rolle, ein Handwerk, ein Geschäft oder eine Institution kann der Ort sein, an dem Chance sichtbar wird, meist nach langer Zeit. Du kannst dich erweitern, indem du die Arbeit ernst nimmst, bevor jemand Applaus bietet. Großzügigkeit kann wie Struktur aussehen: ein Standard, ein Gehalt, eine Tür, die du offen hältst, weil du schon hindurchgegangen bist. Die Anspannung ist, jedes Vergnügen aufzuschieben, bis der Erfolg sicher ist. Rang ist nicht dasselbe wie ein Leben. Frage, welche Pflichten noch etwas bauen, das du achtest, und welche du nur hältst, weil sie solid wirken."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Jupiter im Wassermann",
+        "body": "Jupiter im Wassermann wächst durch eine Gruppe, ein Prinzip oder ein System, das nicht von einer Persönlichkeit abhängt. Freunde, Forschungsgemeinschaften, Technik und zukunftsgerichtete Pläne sind häufige Settings. Du kannst dem Muster voraus eher vertrauen als dem vertrauten Brauch und lernst oft, indem du deine Idee mit Menschen vergleichst, die nicht schon zustimmen. Die Anspannung ist, über dem Raum zu bleiben: eine Gruppe reformieren, ohne dazuzugehören, oder Anliegen sammeln, ohne die unglamouröse Arbeit zu tun. Wachstum hier braucht beides: das weitere Prinzip und eine konkrete Gemeinschaft, die mit dir streiten kann."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Jupiter in den Fischen",
+        "body": "Jupiter in den Fischen wächst durch Vorstellungskraft, Glaube und Mitgefühl. Musik, Träume, spirituelle Praxis und Fürsorge für Menschen am Rand eines Systems sind häufige Ausdrücke. Du kannst eine größere Geschichte spüren, bevor du sie verteidigen kannst, und lernst oft an Orten, die nicht voll kartiert sind. Großzügigkeit kann echt und auch erschöpfend sein. Die Anspannung ist grenzenlose Sympathie ohne Limit oder ein Glaube so durchlässig, dass jede Stimmung als Wahrheit durchgeht. Ein weiteres Leben in diesem Zeichen braucht trotzdem eine Grenze: wen du helfen kannst, was du dir vorstellen kannst und wann du zu den Fakten vor dir zurückkehrst."
+      }
+    ],
+    "yearsTitle": "Jupiterzeichen nach Geburtsjahr",
+    "yearsIntro": "Jupiter bleibt meist etwa ein Jahr in einem Zeichen. Rückläufigkeit kann ihn ins vorherige Zeichen zurückschicken, deshalb erscheinen manche Jahre mehrfach. Finde dein Geburtsdatum in der Spanne und nutze den Rechner, wenn du am ersten oder letzten Tag geboren bist.",
+    "yearsNote": "Diese Daten stammen aus derselben tropischen, geozentrischen Rechnung wie das Formular. Das Enddatum ist der letzte Tag vor dem Beginn des nächsten Zeichens. Ein Geburtstag an einem der Ränder kann je nach Uhrzeit und Ort ins Nachbarzeichen fallen. Der Rechner ist für diesen Tag maßgeblich. Diese Tabelle zeigt Rückläufigkeit nicht als eigenen Status.",
+    "years": [
+      {
+        "range": "31. Jul 1989 – 17. Aug 1990",
+        "sign": "Cancer"
+      },
+      {
+        "range": "18. Aug 1990 – 11. Sep 1991",
+        "sign": "Leo"
+      },
+      {
+        "range": "12. Sep 1991 – 9. Okt 1992",
+        "sign": "Virgo"
+      },
+      {
+        "range": "10. Okt 1992 – 9. Nov 1993",
+        "sign": "Libra"
+      },
+      {
+        "range": "10. Nov 1993 – 8. Dez 1994",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "9. Dez 1994 – 2. Jan 1996",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "3. Jan 1996 – 20. Jan 1997",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "21. Jan 1997 – 3. Feb 1998",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "4. Feb 1998 – 12. Feb 1999",
+        "sign": "Pisces"
+      },
+      {
+        "range": "13. Feb 1999 – 27. Jun 1999",
+        "sign": "Aries"
+      },
+      {
+        "range": "28. Jun 1999 – 22. Okt 1999",
+        "sign": "Taurus"
+      },
+      {
+        "range": "23. Okt 1999 – 13. Feb 2000",
+        "sign": "Aries"
+      },
+      {
+        "range": "14. Feb 2000 – 29. Jun 2000",
+        "sign": "Taurus"
+      },
+      {
+        "range": "30. Jun 2000 – 12. Jul 2001",
+        "sign": "Gemini"
+      },
+      {
+        "range": "13. Jul 2001 – 31. Jul 2002",
+        "sign": "Cancer"
+      },
+      {
+        "range": "1. Aug 2002 – 26. Aug 2003",
+        "sign": "Leo"
+      },
+      {
+        "range": "27. Aug 2003 – 24. Sep 2004",
+        "sign": "Virgo"
+      },
+      {
+        "range": "25. Sep 2004 – 25. Okt 2005",
+        "sign": "Libra"
+      },
+      {
+        "range": "26. Okt 2005 – 23. Nov 2006",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "24. Nov 2006 – 17. Dez 2007",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "18. Dez 2007 – 4. Jan 2009",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "5. Jan 2009 – 17. Jan 2010",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "18. Jan 2010 – 5. Jun 2010",
+        "sign": "Pisces"
+      },
+      {
+        "range": "6. Jun 2010 – 8. Sep 2010",
+        "sign": "Aries"
+      },
+      {
+        "range": "9. Sep 2010 – 21. Jan 2011",
+        "sign": "Pisces"
+      },
+      {
+        "range": "22. Jan 2011 – 3. Jun 2011",
+        "sign": "Aries"
+      },
+      {
+        "range": "4. Jun 2011 – 10. Jun 2012",
+        "sign": "Taurus"
+      },
+      {
+        "range": "11. Jun 2012 – 25. Jun 2013",
+        "sign": "Gemini"
+      },
+      {
+        "range": "26. Jun 2013 – 15. Jul 2014",
+        "sign": "Cancer"
+      },
+      {
+        "range": "16. Jul 2014 – 10. Aug 2015",
+        "sign": "Leo"
+      },
+      {
+        "range": "11. Aug 2015 – 8. Sep 2016",
+        "sign": "Virgo"
+      },
+      {
+        "range": "9. Sep 2016 – 9. Okt 2017",
+        "sign": "Libra"
+      },
+      {
+        "range": "10. Okt 2017 – 7. Nov 2018",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "8. Nov 2018 – 1. Dez 2019",
+        "sign": "Sagittarius"
+      },
+      {
+        "range": "2. Dez 2019 – 18. Dez 2020",
+        "sign": "Capricorn"
+      },
+      {
+        "range": "19. Dez 2020 – 12. Mai 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "13. Mai 2021 – 27. Jul 2021",
+        "sign": "Pisces"
+      },
+      {
+        "range": "28. Jul 2021 – 28. Dez 2021",
+        "sign": "Aquarius"
+      },
+      {
+        "range": "29. Dez 2021 – 10. Mai 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "11. Mai 2022 – 27. Okt 2022",
+        "sign": "Aries"
+      },
+      {
+        "range": "28. Okt 2022 – 19. Dez 2022",
+        "sign": "Pisces"
+      },
+      {
+        "range": "20. Dez 2022 – 15. Mai 2023",
+        "sign": "Aries"
+      },
+      {
+        "range": "16. Mai 2023 – 25. Mai 2024",
+        "sign": "Taurus"
+      },
+      {
+        "range": "26. Mai 2024 – 8. Jun 2025",
+        "sign": "Gemini"
+      },
+      {
+        "range": "9. Jun 2025 – 29. Jun 2026",
+        "sign": "Cancer"
+      },
+      {
+        "range": "30. Jun 2026 – 25. Jul 2027",
+        "sign": "Leo"
+      },
+      {
+        "range": "26. Jul 2027 – 23. Aug 2028",
+        "sign": "Virgo"
+      },
+      {
+        "range": "24. Aug 2028 – 23. Sep 2029",
+        "sign": "Libra"
+      },
+      {
+        "range": "24. Sep 2029 – 21. Okt 2030",
+        "sign": "Scorpio"
+      },
+      {
+        "range": "22. Okt 2030 – 15. Nov 2031",
+        "sign": "Sagittarius"
+      }
+    ],
+    "limitsTitle": "Rückläufigkeit und was diese Seite auslässt",
+    "limitsBody": [
+      "Dieser Rechner fürs Jupiterzeichen sagt nicht, ob Jupiter bei deiner Geburt rückläufig war. Rückläufigkeit ändert die scheinbare Geschwindigkeit und kann Jupiter nahe einer Zeichengrenze ins vorherige Zeichen zurückführen. Diese Bewegungen stecken bereits in der Jahrestabelle und im Grad, den das Formular liefert. Ein eigenes Rückläufigkeitssymbol gehört nicht zu diesem Ergebnis.",
+      "Transite, Returns und electionale Daten liegen ebenfalls außerhalb dieser Seite. Nutze ein volles Horoskop oder ein Transit-Werkzeug, sobald das Geburtszeichen klar ist. Der ehrliche Gebrauch des Ergebnisses ist eng: lerne das Zeichen, merke, ob die Zeit echt oder lokaler Mittag war, und lass das Haus ungelesen, bis die Uhr bekannt ist."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Was der Rechner zeigt, wenn du dein Jupiterzeichen berechnest",
+      "body": [
+        "Gib Geburtsdatum und Ort ein. Dieser Rechner fürs Jupiterzeichen gibt dein tropisches Jupiterzeichen und den Grad zurück. Ohne Uhrzeit nutzt er lokalen Mittag und markiert das Haus als vorläufig. Die Bedeutungen beschreiben einen Wachstumsstil. Sie versprechen kein Glück und kein Geld."
+      ]
+    },
+    {
+      "title": "Was ist mein Jupiterzeichen",
+      "body": [
+        "Dein Jupiterzeichen ist das Tierkreiszeichen, das Jupiter bei der Geburt besetzte. Jupiter kann in jedes Zeichen fallen und bleibt meist etwa ein Jahr dort. Das Zeichen benennt, wie du Wachstum, Studium und einen weiteren Horizont suchst. Es ersetzt nicht den Rest des Horoskops."
+      ]
+    },
+    {
+      "title": "Wann die Geburtszeit zählt",
+      "body": [
+        "Datum und Ort entscheiden das Zeichen an einem gewöhnlichen Tag. Ergänze eine Uhrzeit, wenn der Grad innerhalb eines Grades von 0 oder 29 liegt, weil Jupiter mehrere Tage nahe einer Grenze stehen kann. Ein verlässliches Haus braucht immer die genaue Zeit. Diese Seite nutzt den tropischen Tierkreis."
+      ]
+    },
+    {
+      "title": "Jupiterzeichen und Jupiter-Linie",
+      "body": [
+        "Das Zeichen bleibt in jeder Stadt bei dir. Eine Jupiter-Linie markiert, wo Jupiter bei der Geburt auf einem Winkel stand, sodass dasselbe Thema an einem Ort lauter wirken kann. Lies zuerst das Zeichen. Nutze den Jupiter-Linien-Leitfaden, wenn die Frage eine Stadt betrifft, und ergänze eine Geburtszeit, bevor du von der Karte aus reist."
+      ]
+    },
+    {
+      "title": "So liest du das Ergebnis",
+      "body": [
+        "Lies den Zeichenabsatz für den Wachstumsstil, dann den Grad dafür, wie früh oder spät Jupiter in diesem Zeichen steht. Der Grad ist keine Stärkebewertung. Eine Hausdeutung erscheint nur, wenn du eine Geburtszeit eingegeben hast. War die Zeit leer, ignoriere das Haus."
+      ]
+    },
+    {
+      "title": "Was dieser Rechner nicht versprechen kann",
+      "body": [
+        "Das Ergebnis zeigt keine Rückläufigkeit, keine Transite und kein Glücksjahr. Ein Jupiterzeichen beschreibt eine Wachstumsrichtung. Arbeit, Geld, andere Menschen und der Rest des Horoskops entscheiden weiterhin, was geschieht."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kann ich mein Jupiterzeichen kostenlos berechnen?",
+      "answer": "Ja. Gib Geburtsdatum und Geburtsort ein, um dein Jupiterzeichen kostenlos zu berechnen. Die Uhrzeit ist optional. Das Ergebnis zeigt das tropische Zeichen, den Grad und eine Deutung dieses Zeichens. Mit genauer Uhrzeit auch das Ganzzeichenhaus."
+    },
+    {
+      "question": "Brauche ich die Geburtszeit für mein Jupiterzeichen?",
+      "answer": "An den meisten Geburtstagen reichen Datum und Ort für das Zeichen. Jupiter bleibt meist etwa ein Jahr in einem Zeichen. Ergänze die Uhrzeit, wenn der Grad nahe 0 oder 29 liegt, weil diese Grenze mehrere Tage dauern kann, und immer wenn du das Haus willst. Ohne Uhrzeit rechnet das Werkzeug mit lokalem Mittag und deutet das Haus nicht."
+    },
+    {
+      "question": "Was ist mein Jupiterzeichen in kurzen Worten?",
+      "answer": "Dein Jupiterzeichen ist das Tierkreiszeichen, das Jupiter bei der Geburt besetzte. Es beschreibt einen Stil von Wachstum, Überzeugung und Lernen. Es ist keine Glücksgarantie. Jupiter kann in jedes Zeichen fallen, auch weit von der Sonne entfernt."
+    },
+    {
+      "question": "In welchen Jahren steht Jupiter in welchem Zeichen?",
+      "answer": "Die Tabelle Jupiterzeichen nach Geburtsjahr auf dieser Seite listet tropische Spannen von 1990 bis 2030, einschließlich Jahren, in denen Rückläufigkeit den Zeichenwechsel mehrfach auslöste. Liegt dein Geburtstag auf dem ersten oder letzten Datum einer Zeile, berechne ihn mit der Geburtszeit."
+    },
+    {
+      "question": "Worin unterscheidet sich ein Jupiterzeichen von einer Jupiter-Linie?",
+      "answer": "Das Zeichen gehört zum Geburtshoroskop und ändert sich nicht, wenn du reist. Die Jupiter-Linie ist ein Ort auf der Karte, an dem Jupiter bei der Geburt auf einem Winkel stand. Berechne das Zeichen hier und lies danach den Jupiter-Linien-Leitfaden, wenn die Frage eine Stadt betrifft."
+    },
+    {
+      "question": "Zeigt das, ob Jupiter rückläufig war?",
+      "answer": "Nein. Das Ergebnis gibt tropisches Zeichen und Grad. Es markiert keine Rückläufigkeit. Nahe einer Zeichengrenze steckt Rückläufigkeit bereits im Datum des Zeichenwechsels. Nutze die Jahrestabelle oder den Rechner für das Zeichen selbst."
+    },
+    {
+      "question": "Sagt ein Jupiterzeichen Reichtum oder ein Glücksjahr voraus?",
+      "answer": "Nein. Das Zeichen beschreibt, wie du tendenziell Wachstum suchst. Es vergibt kein Geld, keinen Erfolg und kein glückliches Jahr. Diese Ergebnisse hängen auch vom Rest des Horoskops und von realen Umständen ab."
+    }
+  ],
+  "schemaName": "Jupiterzeichen berechnen",
+  "relatedLinks": [
+    {
+      "text": "Erstelle deine kostenlose Astrocartography-Karte.",
+      "linkText": "Kostenlose Astrocartography-Karte",
+      "url": "/de"
+    },
+    {
+      "text": "Lies Wachstum nach Ort, wenn das Zeichen feststeht.",
+      "linkText": "Jupiter-Linie",
+      "url": "/jupiter-line-astrocartography"
+    },
+    {
+      "text": "Vergleiche Grenzen und Verantwortung.",
+      "linkText": "Saturnzeichen berechnen",
+      "url": "/saturn-sign-calculator"
+    },
+    {
+      "text": "Vergleiche Werte und Anziehung.",
+      "linkText": "Venuszeichen berechnen",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Brauchst du das ganze Horoskop?",
+      "linkText": "Geburtshoroskop erstellen",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

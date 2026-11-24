@@ -1,0 +1,244 @@
+{
+  "key": "saturn",
+  "slug": "saturn-sign-calculator",
+  "toolType": "saturn",
+  "metadata": {
+    "title": "Calculadora del Signo de Saturno - Encuentra tu signo",
+    "description": "Calculadora gratuita del signo de Saturno. Introduce tu fecha y lugar de nacimiento para hallar tu signo tropical de Saturno, qué significa y los años en que Saturno estuvo en ese signo.",
+    "keywords": "calculadora del signo de saturno, cuál es mi signo de saturno, signo de saturno, saturno por año, saturno en astrología"
+  },
+  "hero": {
+    "eyebrow": "Herramienta de astrología gratis",
+    "title": "Calculadora del Signo de Saturno",
+    "subtitle": "Encuentra tu signo de Saturno, lee lo que describe esa posición y consulta los años en que Saturno lo ocupó."
+  },
+  "form": {
+    "submit": "Calcular mi signo de Saturno"
+  },
+  "result": {
+    "title": "Tu posición de Saturno",
+    "cta": "Abrir estos datos de nacimiento en tu carta",
+    "lineCta": "Leer la guía de la línea de Saturno",
+    "lineUrl": "/saturn-line-astrocartography",
+    "boundaryNote": "Este grado está a menos de un grado de un límite de signo. Saturno puede permanecer tan cerca durante semanas, así que el signo vecino es posible. Añade la hora de nacimiento antes de confiar en el signo.",
+    "provisionalHouse": "La casa es provisional hasta que añadas la hora exacta de nacimiento.",
+    "houseReadings": {
+      "1": "Saturno en la casa 1 pone tiempo en tu presencia y en cómo encuentras el mundo. Puedes madurar pronto o dudar antes de dejarte ver. El dominio aquí es un yo en el que puedes apoyarte sin endurecerte en armadura.",
+      "2": "Saturno en la casa 2 pone tiempo en el dinero, el cuerpo y lo que puedes conservar. La seguridad a menudo llega tarde, después de una habilidad que tuviste que construir. La lección son recursos estables, no una vida pasada temiendo perderlos.",
+      "3": "Saturno en la casa 3 pone tiempo en el habla, el estudio y los hechos. Puedes editar un mensaje más tiempo que otras personas, o dudar de tu propia mente antes de confiar en ella. La habilidad es una explicación que se sostiene.",
+      "4": "Saturno en la casa 4 pone tiempo en el hogar, los padres y las bases privadas. El deber familiar puede llegar pronto. La lección es una vida privada que puedas mantener, incluidas las partes que no elegiste.",
+      "5": "Saturno en la casa 5 pone tiempo en la alegría, el trabajo creativo, el romance y los hijos. El juego puede sentirse serio antes de sentirse fácil. La habilidad es hacer algo con tu nombre sin esperar permiso.",
+      "6": "Saturno en la casa 6 pone tiempo en el trabajo diario, la salud y el detalle sin terminar. Los estándares son altos, y el descanso puede parecer un fracaso hasta que aprendes lo contrario. La habilidad es una rutina que repara lo que no funciona.",
+      "7": "Saturno en la casa 7 pone tiempo en los acuerdos y los compromisos de uno a uno. La pareja puede sentirse como un deber antes de sentirse como compañía. La lección es una promesa que puedes cumplir cuando es inconveniente.",
+      "8": "Saturno en la casa 8 pone tiempo en la confianza, los recursos compartidos y lo oculto. Puedes comprometerte pocas veces, y el dinero o el duelo de otras personas puede pesar. La habilidad es quedarte con una verdad dura sin ser poseído por ella.",
+      "9": "Saturno en la casa 9 pone tiempo en la creencia, el estudio y el viaje largo. Puedes probar una filosofía antes de enseñarla. La lección es un mapa que realmente has recorrido, no una doctrina que solo repites.",
+      "10": "Saturno en la casa 10 pone tiempo en el trabajo público y la reputación. Un rol puede sentirse pesado pronto, y el reconocimiento a menudo sigue al trabajo en lugar de liderarlo. La habilidad es una responsabilidad en la que otras personas pueden confiar.",
+      "11": "Saturno en la casa 11 pone tiempo en amigos, grupos y planes futuros. La pertenencia puede venir con reglas, y puedes cuestionar un círculo antes de unirte. La lección es una comunidad que ayudas a construir, no solo una que juzgas.",
+      "12": "Saturno en la casa 12 pone tiempo en la soledad, los finales y lo que preferirías no enfrentar. El miedo puede vivir en privado. La habilidad es un límite alrededor del descanso, la compasión y el trabajo que haces cuando nadie mira."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Saturno en cada signo",
+    "meaningsIntro": "Después de calcular, lee el párrafo de tu signo. Cada uno describe dónde suelen aparecer el tiempo, los estándares y la responsabilidad. No es una predicción de sufrimiento. Un grupo entero de nacimientos puede compartir el signo y aun así llevar trabajos, familias y salud distintas.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Saturno en Aries",
+        "body": "Saturno en Aries toma tiempo con el coraje y un comienzo limpio. Puedes aprender la responsabilidad actuando antes de sentirte listo y luego quedándote con la consecuencia en lugar de pasársela a otro. La ira, la competencia y el miedo a ser lento son maestros habituales. Otras personas pueden parecer más rápidas, lo que hace que un comienzo cuidadoso se sienta como un fracaso. La habilidad es una iniciativa que dura más allá del primer impulso: una decisión que puedes defender el mes siguiente, un cuerpo que no gastas de una vez, una pelea en la que solo entras cuando es tuya. El coraje aquí es repetición, no una sola tarde audaz."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Saturno en Tauro",
+        "body": "Saturno en Tauro toma tiempo con el dinero, el cuerpo y lo que puede conservarse. La seguridad rara vez es instantánea. Puedes sentir el peso de los recursos antes de sentir su facilidad, y a menudo construyes despacio porque un resultado tiene que sobrevivir al uso ordinario. La comida, el alquiler, el salario y la resistencia física se convierten en el aula. La tensión es un pensamiento de escasez que continúa después de que el problema práctico se alivió, o un agarre tan fuerte que nada puede cambiar. El dominio se ve como suficiente: una habilidad que paga, un cuerpo que mantienes y posesiones que realmente puedes sostener."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Saturno en Géminis",
+        "body": "Saturno en Géminis toma tiempo con las palabras, el estudio y los hechos. Puedes editar un mensaje más tiempo que otras personas, desconfiar de una opinión rápida o sentir que tu mente tiene que demostrarse antes de hablar. La escuela, los hermanos y las conversaciones locales pueden ser donde el estándar es estricto. La habilidad es una explicación que se sostiene cuando alguien la comprueba. La tensión es un silencio que dura demasiado, o un montón de investigación que nunca se convierte en una frase. Di lo preciso cuando lo tengas. La precisión es el punto, no la duda permanente."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Saturno en Cáncer",
+        "body": "Saturno en Cáncer toma tiempo con el cuidado, la familia y la seguridad emocional. Puedes tratar la protección como un deber, y a menudo aprendes lo que cuesta el hogar además de lo que da. Un padre, una casa o la necesidad de ser la persona fiable puede llegar pronto. Los sentimientos no están ausentes. Se gestionan, a veces con tanto cuidado que otras personas creen que no los tienes. La habilidad es una vida privada con un límite real: a quién cobijas, qué recuerdas y cuándo el cuidado deja de ser un trabajo no pagado del que no puedes salir."
+      },
+      {
+        "sign": "Leo",
+        "title": "Saturno en Leo",
+        "body": "Saturno en Leo toma tiempo con la visibilidad y la autoridad creativa. Puedes dudar antes de ser visto, o sentir que la alegría y el reconocimiento tienen que ganarse dos veces. El trabajo creativo, los hijos, el romance y el liderazgo pueden llevar un estándar más estricto que para otras personas. La habilidad es respaldar un trabajo con tu nombre sin esperar una confianza perfecta. La tensión es rechazar el escenario tan a fondo que el trabajo queda privado, o interpretar una seriedad que no deja espacio al placer. Ser visto es parte de la tarea, no una recompensa después de que la tarea termina."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Saturno en Virgo",
+        "body": "Saturno en Virgo toma tiempo con el oficio, la salud y el detalle sin terminar. Puedes exigirte un estándar que no deja de moverse, y a menudo aprendes reparando lo que no funciona. El trabajo, la rutina y el cuerpo son donde aparece el deber. La competencia es real aquí, y también el miedo de que un error pasado por alto arruine el conjunto. La habilidad es un método que puedes repetir sin humillarte a ti ni a las personas a las que ayudas. Hecho con cuidado basta. Una vida solo corrigiendo el último defecto nunca entrega la cosa útil."
+      },
+      {
+        "sign": "Libra",
+        "title": "Saturno en Libra",
+        "body": "Saturno en Libra toma tiempo con los acuerdos y la equidad. Puedes sentir el deber dentro de una relación antes de sentir su facilidad, y a menudo aprendes manteniendo una promesa cuando es inconveniente. El matrimonio, los contratos, el arte y la necesidad de ser justo pueden volverse pesados. La habilidad es un compromiso con términos claros, incluido el término que te permite salir de un trato que solo parece educado. La tensión es quedarte en el medio tanto tiempo que nunca eliges, o cargar ambos lados mientras la otra persona no carga ninguno. La equidad te incluye a ti."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Saturno en Escorpio",
+        "body": "Saturno en Escorpio toma tiempo con la confianza, los recursos compartidos y lo oculto. Puedes comprometerte pocas veces, y a menudo aprendes quedándote con una verdad dura en lugar de salir de la habitación. El dinero, el duelo, el poder y los secretos de otras personas pueden sentirse como pruebas. La habilidad es una lealtad con límite y un hecho que puedes nombrar en voz alta. La tensión es el control: saberlo todo para no ser sorprendido, o rechazar ayuda porque la dependencia una vez costó demasiado. La profundidad es útil cuando lleva a una decisión. No es cadena perpetua de sospecha."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Saturno en Sagitario",
+        "body": "Saturno en Sagitario toma tiempo con la creencia, el estudio y el viaje largo. Puedes probar una filosofía antes de enseñarla, y a menudo aprendes demostrando el mapa en lugar de solo citarlo. Los viajes, la religión, el derecho, la publicación y el estudio superior pueden sentirse serios o retrasados. La habilidad es una convicción que has contrastado con la experiencia. La tensión es un cinismo que cierra todo horizonte, o una doctrina que defiendes porque cambiarla significaría admitir que la versión anterior era incompleta. Una creencia puede madurar. No tiene que llegar ya segura."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Saturno en Capricornio",
+        "body": "Saturno en Capricornio toma tiempo con el rango, el trabajo y una estructura que dura. Puedes sentir el rol pronto, y a menudo aprendes cargando responsabilidad en público antes de sentirte lo bastante mayor. La carrera, las instituciones y los proyectos largos son el aula obvia, aunque el signo no garantiza estatus. La habilidad es un trabajo en torno al cual otras personas pueden planificar. La tensión es una vida que solo contiene el empleo, o un miedo al fracaso tan estricto que nunca intentas lo que realmente respetas. La autoridad es una herramienta. No es prueba de que tienes permiso para descansar."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Saturno en Acuario",
+        "body": "Saturno en Acuario toma tiempo con los grupos, las reglas y el sistema futuro. Puedes cuestionar una costumbre y luego tener que construir el reemplazo, lo cual es más lento que criticarla. Los amigos, las organizaciones, la ciencia y las ideas sociales pueden convertirse en deberes. La habilidad es un principio que sobrevive al contacto con personas reales. La tensión es quedarte fuera de todo grupo para no decepcionarte, o imponer una regla nueva con la misma rigidez que la antigua. Un sistema mejor aún necesita miembros, reuniones y el trabajo sin glamur de mantenerlo justo."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Saturno en Piscis",
+        "body": "Saturno en Piscis toma tiempo con la fe, la soledad y la compasión que tiene un límite. Puedes aprender dónde la imaginación necesita una frontera, y a menudo maduras nombrando lo real cuando un humor, un sueño o el dolor de otra persona está alto. El arte, la práctica espiritual, los hospitales, los finales y el trabajo oculto son escenarios frecuentes. La habilidad es una ayuda que no te borra. La tensión es la culpa por todo sufrimiento que no puedes arreglar, o una niebla que aplaza una decisión concreta. La misericordia necesita forma: una agenda, un presupuesto, una frase que diga qué cargarás y qué no."
+      }
+    ],
+    "yearsTitle": "Signo de Saturno por año de nacimiento",
+    "yearsIntro": "Saturno suele permanecer en un signo unos dos o dos años y medio. El movimiento retrógrado puede devolverlo al signo anterior, así que algunos años quedan divididos. Busca tu fecha de nacimiento en el intervalo y usa la calculadora si naciste el primer o el último día.",
+    "yearsNote": "Estas fechas provienen del mismo cálculo tropical y geocéntrico del formulario. La fecha final es el último día antes de que empiece el siguiente signo. Un cumpleaños en cualquiera de los extremos puede caer en el signo vecino según la hora y el lugar. La calculadora es la autoridad de ese día. Esta tabla no muestra el retrógrado como un estado separado y no calcula un retorno de Saturno.",
+    "years": [
+      { "range": "12 nov. 1988 – 5 feb. 1991", "sign": "Capricorn" },
+      { "range": "6 feb. 1991 – 20 may. 1993", "sign": "Aquarius" },
+      { "range": "21 may. 1993 – 29 jun. 1993", "sign": "Pisces" },
+      { "range": "30 jun. 1993 – 28 ene. 1994", "sign": "Aquarius" },
+      { "range": "29 ene. 1994 – 6 abr. 1996", "sign": "Pisces" },
+      { "range": "7 abr. 1996 – 8 jun. 1998", "sign": "Aries" },
+      { "range": "9 jun. 1998 – 24 oct. 1998", "sign": "Taurus" },
+      { "range": "25 oct. 1998 – 28 feb. 1999", "sign": "Aries" },
+      { "range": "1 mar. 1999 – 9 ago. 2000", "sign": "Taurus" },
+      { "range": "10 ago. 2000 – 15 oct. 2000", "sign": "Gemini" },
+      { "range": "16 oct. 2000 – 19 abr. 2001", "sign": "Taurus" },
+      { "range": "20 abr. 2001 – 3 jun. 2003", "sign": "Gemini" },
+      { "range": "4 jun. 2003 – 15 jul. 2005", "sign": "Cancer" },
+      { "range": "16 jul. 2005 – 1 sept. 2007", "sign": "Leo" },
+      { "range": "2 sept. 2007 – 28 oct. 2009", "sign": "Virgo" },
+      { "range": "29 oct. 2009 – 6 abr. 2010", "sign": "Libra" },
+      { "range": "7 abr. 2010 – 20 jul. 2010", "sign": "Virgo" },
+      { "range": "21 jul. 2010 – 4 oct. 2012", "sign": "Libra" },
+      { "range": "5 oct. 2012 – 22 dic. 2014", "sign": "Scorpio" },
+      { "range": "23 dic. 2014 – 14 jun. 2015", "sign": "Sagittarius" },
+      { "range": "15 jun. 2015 – 17 sept. 2015", "sign": "Scorpio" },
+      { "range": "18 sept. 2015 – 19 dic. 2017", "sign": "Sagittarius" },
+      { "range": "20 dic. 2017 – 21 mar. 2020", "sign": "Capricorn" },
+      { "range": "22 mar. 2020 – 1 jul. 2020", "sign": "Aquarius" },
+      { "range": "2 jul. 2020 – 16 dic. 2020", "sign": "Capricorn" },
+      { "range": "17 dic. 2020 – 6 mar. 2023", "sign": "Aquarius" },
+      { "range": "7 mar. 2023 – 24 may. 2025", "sign": "Pisces" },
+      { "range": "25 may. 2025 – 31 ago. 2025", "sign": "Aries" },
+      { "range": "1 sept. 2025 – 13 feb. 2026", "sign": "Pisces" },
+      { "range": "14 feb. 2026 – 12 abr. 2028", "sign": "Aries" },
+      { "range": "13 abr. 2028 – 31 may. 2030", "sign": "Taurus" },
+      { "range": "1 jun. 2030 – 14 jul. 2032", "sign": "Gemini" }
+    ],
+    "limitsTitle": "Retorno de Saturno, retrógrado y lo que esta página deja fuera",
+    "limitsBody": [
+      "Esta calculadora del signo de Saturno no calcula un retorno de Saturno. Un retorno de Saturno es un tránsito posterior, alrededor de los 29 y los 58 años, cuando Saturno vuelve a la misma parte del zodíaco. Conocer el signo natal es el primer paso. El retorno en sí necesita una carta de tránsitos, que esta página no dibuja.",
+      "El resultado tampoco marca el retrógrado. El retrógrado puede mover a Saturno de vuelta a través del límite de un signo, y esas fechas ya están en la tabla de años. Los tránsitos y las fechas electivas pertenecen a una herramienta de carta completa después de que el signo natal esté claro. Usa esta página para aprender el signo, ver si la hora fue real o mediodía local y dejar la casa sin lectura hasta que se conozca el reloj."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Qué muestra una calculadora del signo de Saturno",
+      "body": [
+        "Introduce una fecha y un lugar de nacimiento. Esta calculadora del signo de Saturno devuelve tu signo tropical de Saturno y el grado. Sin hora, usa el mediodía local y marca la casa como provisional. Los significados describen un estilo de responsabilidad. No predicen una vida difícil."
+      ]
+    },
+    {
+      "title": "Cuál es mi signo de Saturno",
+      "body": [
+        "Tu signo de Saturno es el signo del zodíaco que Saturno ocupaba al nacer. Saturno suele permanecer en un signo unos dos o dos años y medio, así que mucha gente lo comparte. El signo nombra dónde suelen aparecer el tiempo, los estándares y la paciencia. No te clasifica como severo o exitoso."
+      ]
+    },
+    {
+      "title": "Cuándo importa la hora de nacimiento",
+      "body": [
+        "La fecha y el lugar deciden el signo en un día ordinario. Añade la hora del reloj cuando el grado está a menos de un grado de 0 o 29, porque Saturno puede quedarse cerca de un límite durante semanas. Una casa fiable siempre necesita la hora exacta. Esta página usa el zodíaco tropical."
+      ]
+    },
+    {
+      "title": "Signo de Saturno y la línea de Saturno",
+      "body": [
+        "El signo te acompaña en cada ciudad. Una línea de Saturno marca dónde estaba Saturno en un ángulo al nacer, así que el deber o el retraso pueden sentirse más fuertes en un lugar. Lee primero el signo. Usa la guía de la línea de Saturno cuando la pregunta sea sobre una ciudad, y añade la hora de nacimiento antes de viajar a partir del mapa."
+      ]
+    },
+    {
+      "title": "Cómo leer el resultado",
+      "body": [
+        "Lee el párrafo del signo para el estilo de responsabilidad y luego el grado para ver si Saturno está temprano o tarde en ese signo. El grado no es una puntuación de suerte. La lectura de la casa solo aparece cuando introdujiste la hora de nacimiento. Si la hora quedó en blanco, ignora la casa."
+      ]
+    },
+    {
+      "title": "Lo que esta calculadora no puede prometer",
+      "body": [
+        "El resultado no muestra movimiento retrógrado, un retorno de Saturno ni un año difícil. Un signo de Saturno describe dónde suelen aparecer la paciencia y los estándares. La salud, el trabajo, otras personas y el resto de la carta siguen decidiendo qué ocurre."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Esta calculadora del signo de Saturno es gratuita?",
+      "answer": "Sí. Introduce fecha y lugar de nacimiento para calcular tu signo de Saturno gratis. La hora de nacimiento es opcional. El resultado muestra el signo tropical, el grado y una lectura de ese signo. Con la hora exacta también muestra la casa de signo entero."
+    },
+    {
+      "question": "¿Necesito mi hora de nacimiento para hallar mi signo de Saturno?",
+      "answer": "En la mayoría de los cumpleaños, la fecha y el lugar bastan para el signo. Saturno suele permanecer en un signo unos dos o dos años y medio. Añade la hora cuando el grado está cerca de 0 o 29, porque ese límite puede durar semanas, y siempre que quieras la casa. Sin hora, la calculadora usa el mediodía local y no interpreta la casa."
+    },
+    {
+      "question": "¿Qué es mi signo de Saturno en términos sencillos?",
+      "answer": "Tu signo de Saturno es el signo del zodíaco que Saturno ocupaba al nacer. Describe un estilo de responsabilidad, tiempo y límites. No es una predicción de sufrimiento. Saturno puede caer en cualquier signo, incluso lejos de tu Sol."
+    },
+    {
+      "question": "¿En qué años está Saturno en cada signo?",
+      "answer": "La tabla Signo de Saturno por año de nacimiento de esta página enumera intervalos tropicales desde 1990 hasta principios de la década de 2030, incluidos los años en que el retrógrado dividió el signo. Si tu cumpleaños es el primer o el último día de una fila, calcúlalo con tu hora de nacimiento."
+    },
+    {
+      "question": "¿En qué se diferencia un signo de Saturno de una línea de Saturno?",
+      "answer": "El signo forma parte de la carta natal y no cambia cuando viajas. La línea de Saturno es un lugar en el mapa donde Saturno estaba en un ángulo al nacer. Calcula el signo aquí y luego lee la guía de la línea de Saturno si la pregunta es sobre una ciudad."
+    },
+    {
+      "question": "¿Esto calcula mi retorno de Saturno o el retrógrado?",
+      "answer": "No. Un retorno de Saturno es un tránsito posterior, no el signo natal. Esta página tampoco marca el retrógrado. Informa el signo tropical y el grado. Usa una herramienta de tránsitos o de carta completa si necesitas el retorno."
+    },
+    {
+      "question": "¿Un signo de Saturno significa que mi vida será difícil?",
+      "answer": "No. El signo describe dónde suelen aparecer la paciencia, los estándares y la responsabilidad. No te condena al fracaso ni a un año difícil. Los resultados también dependen del resto de la carta y de las circunstancias reales."
+    }
+  ],
+  "schemaName": "Calculadora del Signo de Saturno",
+  "relatedLinks": [
+    {
+      "text": "Genera tu carta de astrocartografía gratis en el mapa mundial.",
+      "linkText": "Carta y mapa de astrocartografía gratis",
+      "url": "/"
+    },
+    {
+      "text": "Lee la responsabilidad por ubicación después de conocer el signo.",
+      "linkText": "Línea de Saturno",
+      "url": "/saturn-line-astrocartography"
+    },
+    {
+      "text": "Compara crecimiento y creencia.",
+      "linkText": "Calculadora del signo de Júpiter",
+      "url": "/jupiter-sign-calculator"
+    },
+    {
+      "text": "Compara impulso y afirmación.",
+      "linkText": "Calculadora del signo de Marte",
+      "url": "/mars-sign-calculator"
+    },
+    {
+      "text": "¿Necesitas la carta completa con todos los planetas?",
+      "linkText": "Generador de carta natal",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

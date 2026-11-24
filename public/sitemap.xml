@@ -490,6 +490,20 @@
   </url>
 
   <url>
+    <loc>https://astrocarto.org/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://astrocarto.org/moon-sign-calculator/</loc>
     <lastmod>2026-08-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1534,6 +1548,20 @@
   </url>
 
   <url>
+    <loc>https://astrocarto.org/zh/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/zh/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://astrocarto.org/zh/moon-sign-calculator/</loc>
     <lastmod>2026-08-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1571,6 +1599,20 @@
   <url>
     <loc>https://astrocarto.org/es/mercury-sign-calculator/</loc>
     <lastmod>2026-11-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/es/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/es/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1618,6 +1660,20 @@
   </url>
 
   <url>
+    <loc>https://astrocarto.org/pt/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/pt/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://astrocarto.org/pt/moon-sign-calculator/</loc>
     <lastmod>2026-08-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1660,6 +1716,20 @@
   </url>
 
   <url>
+    <loc>https://astrocarto.org/de/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/de/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://astrocarto.org/de/moon-sign-calculator/</loc>
     <lastmod>2026-08-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1697,6 +1767,20 @@
   <url>
     <loc>https://astrocarto.org/it/mercury-sign-calculator/</loc>
     <lastmod>2026-11-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/it/jupiter-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://astrocarto.org/it/saturn-sign-calculator/</loc>
+    <lastmod>2026-11-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

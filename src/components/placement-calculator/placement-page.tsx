@@ -8,6 +8,7 @@ import Feature3 from "@/components/blocks/feature3";
 import Feature from "@/components/blocks/feature";
 import FAQ from "@/components/blocks/faq";
 import CTA from "@/components/blocks/cta";
+import PlacementGuide from "./placement-guide";
 import { Link } from "@/i18n/navigation";
 
 const FEATURE_ICONS = [
@@ -105,6 +106,64 @@ const MARS_BENEFIT_IMAGES = [
   MARS_INTRO_IMAGES[2],
 ];
 
+const JUPITER_INTRO_IMAGES = [
+  {
+    src: "/imgs/jupiter-sign-calculator/jupiter-sign-calculator-birth-time.webp",
+    alt: "Cream-amber Jupiter beside a clock, showing when birth time matters for a Jupiter sign.",
+  },
+  {
+    src: "/imgs/jupiter-sign-calculator/jupiter-sign-calculator-saturn.webp",
+    alt: "Jupiter and Saturn on separate orbital paths, comparing growth with responsibility.",
+  },
+  {
+    src: "/imgs/jupiter-sign-calculator/jupiter-sign-calculator-result-to-map.webp",
+    alt: "Jupiter connected by light trails to a world map, linking a Jupiter sign to Jupiter lines.",
+  },
+  {
+    src: "/imgs/jupiter-sign-calculator/jupiter-sign-calculator-element-meaning.webp",
+    alt: "Jupiter surrounded by fire, earth, air, and water atmospheres for Jupiter sign elements.",
+  },
+  {
+    src: "/imgs/jupiter-sign-calculator/jupiter-sign-calculator-methodology-limits.webp",
+    alt: "Jupiter inside a partial ephemeris arc, showing a calculated but bounded Jupiter placement.",
+  },
+];
+
+const JUPITER_BENEFIT_IMAGES = [
+  JUPITER_INTRO_IMAGES[0],
+  JUPITER_INTRO_IMAGES[1],
+  JUPITER_INTRO_IMAGES[2],
+];
+
+const SATURN_INTRO_IMAGES = [
+  {
+    src: "/imgs/saturn-sign-calculator/saturn-sign-calculator-birth-time.webp",
+    alt: "Ringed Saturn beside a clock, showing when birth time matters for a Saturn sign.",
+  },
+  {
+    src: "/imgs/saturn-sign-calculator/saturn-sign-calculator-jupiter.webp",
+    alt: "Saturn and Jupiter on separate orbital paths, comparing responsibility with growth.",
+  },
+  {
+    src: "/imgs/saturn-sign-calculator/saturn-sign-calculator-result-to-map.webp",
+    alt: "Saturn connected by light trails to a world map, linking a Saturn sign to Saturn lines.",
+  },
+  {
+    src: "/imgs/saturn-sign-calculator/saturn-sign-calculator-element-meaning.webp",
+    alt: "Saturn surrounded by fire, earth, air, and water atmospheres for Saturn sign elements.",
+  },
+  {
+    src: "/imgs/saturn-sign-calculator/saturn-sign-calculator-methodology-limits.webp",
+    alt: "Saturn inside a partial ephemeris arc, showing a calculated but bounded Saturn placement.",
+  },
+];
+
+const SATURN_BENEFIT_IMAGES = [
+  SATURN_INTRO_IMAGES[0],
+  SATURN_INTRO_IMAGES[1],
+  SATURN_INTRO_IMAGES[2],
+];
+
 function getH1Title(title: string): string {
   const idx = title.search(/\s[—–]\s|\s-\s/);
   const base = idx >= 0 ? title.slice(0, idx).trim() : title.trim();
@@ -135,8 +194,22 @@ function buildIntro(page: PlacementPageContent, ui: PlacementPageUiContent) {
     label: ui.introLabel,
     description: first ? shortText(toText(first), 520) : page.hero.subtitle,
     image: {
-      src: "/imgs/features/hero-web.webp",
-      alt: `${page.hero.title} astrology tool`,
+      src:
+        page.key === "jupiter"
+          ? JUPITER_INTRO_IMAGES[0].src
+          : page.key === "saturn"
+            ? SATURN_INTRO_IMAGES[0].src
+            : page.key === "mars"
+              ? MARS_INTRO_IMAGES[0].src
+              : page.key === "moon"
+                ? MOON_INTRO_IMAGES[0].src
+                : "/imgs/features/hero-web.webp",
+      alt:
+        page.key === "jupiter"
+          ? JUPITER_INTRO_IMAGES[0].alt
+          : page.key === "saturn"
+            ? SATURN_INTRO_IMAGES[0].alt
+            : `${page.hero.title} astrology tool`,
     },
     items: rest.map((section, index) => {
       const image =
@@ -146,10 +219,14 @@ function buildIntro(page: PlacementPageContent, ui: PlacementPageUiContent) {
             ? MOON_INTRO_IMAGES[index]
             : page.key === "mars"
               ? MARS_INTRO_IMAGES[index]
-              : {
-                  src: `/imgs/features/${(index % 4) + 1}.webp`,
-                  alt: `${section.title} explanation`,
-                };
+              : page.key === "jupiter"
+                ? JUPITER_INTRO_IMAGES[index]
+                : page.key === "saturn"
+                  ? SATURN_INTRO_IMAGES[index]
+                  : {
+                      src: `/imgs/features/${(index % 4) + 1}.webp`,
+                      alt: `${section.title} explanation`,
+                    };
 
       return {
         title: section.title,
@@ -179,10 +256,14 @@ function buildBenefit(page: PlacementPageContent, h1Title: string, ui: Placement
             ? MOON_BENEFIT_IMAGES[index]
             : page.key === "mars"
               ? MARS_BENEFIT_IMAGES[index]
-              : {
-                  src: "/imgs/features/hero-web.webp",
-                  alt: `${section.title} visual explanation`,
-                },
+              : page.key === "jupiter"
+                ? JUPITER_BENEFIT_IMAGES[index]
+                : page.key === "saturn"
+                  ? SATURN_BENEFIT_IMAGES[index]
+                  : {
+                      src: "/imgs/features/hero-web.webp",
+                      alt: `${section.title} visual explanation`,
+                    },
     })),
   };
 }
@@ -277,6 +358,8 @@ export default function PlacementPage({ page, locale }: { page: PlacementPageCon
       </div>
 
       <PlacementCalculatorClient page={page} />
+
+      {page.guide ? <PlacementGuide guide={page.guide} locale={locale} /> : null}
 
       <FeatureWhatTwo section={intro} />
       <Feature2 section={benefit} />

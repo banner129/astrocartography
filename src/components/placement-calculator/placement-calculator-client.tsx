@@ -213,16 +213,209 @@ function optionalTimeHint(locale: string, toolType: string, fallback: string) {
     if (locale === "it") return "Facoltativa nella maggior parte dei giorni. Mercurio cambia segno più spesso di Marte; aggiungi l'ora se quel giorno ha cambiato segno. Senza ora usiamo mezzogiorno locale e la casa resta provvisoria.";
     return "Optional for most birthdays. Mercury changes signs more often than Mars, so add a time on sign-change days. Without a time we use local noon, and the house stays provisional.";
   }
+  if (toolType === "jupiter") {
+    if (locale === "zh") return "绝大多数日期可以不填。木星通常在一个星座停留约一年。不填则按当地正午计算，宫位只作参考。";
+    if (locale === "es") return "Opcional en casi todos los cumpleaños. Júpiter suele permanecer en un signo alrededor de un año. Sin hora usamos el mediodía local y la casa queda provisional.";
+    if (locale === "pt") return "Opcional em quase todos os aniversários. Júpiter costuma ficar em um signo por cerca de um ano. Sem hora usamos o meio-dia local e a casa fica provisória.";
+    if (locale === "de") return "An fast jedem Geburtstag optional. Jupiter bleibt meist etwa ein Jahr in einem Zeichen. Ohne Uhrzeit rechnen wir mit lokalem Mittag, das Haus bleibt vorläufig.";
+    if (locale === "it") return "Facoltativa in quasi tutti i compleanni. Giove resta di solito in un segno per circa un anno. Senza ora usiamo mezzogiorno locale e la casa resta provvisoria.";
+    return "Optional for almost every birthday. Jupiter usually stays in a sign for about a year. Without a time we use local noon, and the house stays provisional.";
+  }
+  if (toolType === "saturn") {
+    if (locale === "zh") return "绝大多数日期可以不填。土星通常在一个星座停留约两到两年半。不填则按当地正午计算，宫位只作参考。";
+    if (locale === "es") return "Opcional en casi todos los cumpleaños. Saturno suele permanecer en un signo unos dos o dos años y medio. Sin hora usamos el mediodía local y la casa queda provisional.";
+    if (locale === "pt") return "Opcional em quase todos os aniversários. Saturno costuma ficar em um signo por cerca de dois a dois anos e meio. Sem hora usamos o meio-dia local e a casa fica provisória.";
+    if (locale === "de") return "An fast jedem Geburtstag optional. Saturn bleibt meist etwa zwei bis zweieinhalb Jahre in einem Zeichen. Ohne Uhrzeit rechnen wir mit lokalem Mittag, das Haus bleibt vorläufig.";
+    if (locale === "it") return "Facoltativa in quasi tutti i compleanni. Saturno resta di solito in un segno per circa due o due anni e mezzo. Senza ora usiamo mezzogiorno locale e la casa resta provvisoria.";
+    return "Optional for almost every birthday. Saturn usually stays in a sign for about two to two and a half years. Without a time we use local noon, and the house stays provisional.";
+  }
   if (locale === "en") {
     return "Optional for most birthdays. Add time for ingress days and a reliable Mars house; otherwise we use local noon.";
   }
   return fallback;
 }
 
+/** Localized methodology note shown under the placement result (API still returns English). */
+function placementResultNote(locale: string, toolType: string, usedDefaultNoon?: boolean): string | null {
+  if (toolType !== "jupiter" && toolType !== "saturn") return null;
+
+  const notes: Record<"jupiter" | "saturn", Record<string, { base: string; noon: string }>> = {
+    jupiter: {
+      en: {
+        base: "Jupiter is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. Jupiter usually stays in one sign for about a year. Exact birth time matters on the rare ingress day and for the house. This calculator does not use the Swiss Ephemeris.",
+        noon: " No birth time was provided, so Jupiter was calculated for local noon at the birth place. That is enough for the sign on nearly every birthday, but not for house placement.",
+      },
+      zh: {
+        base: "木星按地心黄道经度（astronomy-engine）在回归黄道中计算，并以整宫制显示宫位。木星通常在一个星座停留约一年。准确出生时间主要影响少见的换座日和宫位。本计算器不使用瑞士星历。",
+        noon: " 未提供出生时间，故按出生地当地正午计算木星。这对几乎所有生日的星座足够，但不足以定宫。",
+      },
+      es: {
+        base: "Júpiter se calcula a partir de la longitud eclíptica geocéntrica (astronomy-engine) en el zodiaco tropical y se muestra con casas de signo completo. Júpiter suele permanecer en un signo alrededor de un año. La hora exacta importa en el raro día de ingreso y para la casa. Esta calculadora no usa la Efemérides Suiza.",
+        noon: " No se indicó hora de nacimiento, así que Júpiter se calculó al mediodía local del lugar de nacimiento. Eso basta para el signo en casi todos los cumpleaños, pero no para la casa.",
+      },
+      pt: {
+        base: "Júpiter é calculado a partir da longitude eclíptica geocêntrica (astronomy-engine) no zodíaco tropical e mostrado com casas de signo inteiro. Júpiter costuma ficar em um signo por cerca de um ano. A hora exata importa no raro dia de ingresso e para a casa. Esta calculadora não usa a Efeméride Suíça.",
+        noon: " Nenhuma hora de nascimento foi informada, então Júpiter foi calculado para o meio-dia local do local de nascimento. Isso basta para o signo em quase todos os aniversários, mas não para a casa.",
+      },
+      de: {
+        base: "Jupiter wird aus geozentrischer ekliptikaler Länge (astronomy-engine) im tropischen Tierkreis berechnet und mit Ganzzeichen-Häusern gezeigt. Jupiter bleibt meist etwa ein Jahr in einem Zeichen. Die genaue Geburtszeit zählt am seltenen Wechseltag und für das Haus. Dieser Rechner nutzt nicht die Schweizer Ephemeride.",
+        noon: " Ohne Geburtszeit wurde Jupiter für den lokalen Mittag am Geburtsort berechnet. Das reicht für das Zeichen an fast jedem Geburtstag, aber nicht für das Haus.",
+      },
+      it: {
+        base: "Giove è calcolato dalla longitudine eclittica geocentrica (astronomy-engine) nello zodiaco tropicale e mostrato con case a segno intero. Giove resta di solito in un segno per circa un anno. L'ora esatta conta nel raro giorno di ingresso e per la casa. Questo calcolatore non usa le Effemeridi Svizzere.",
+        noon: " Nessuna ora di nascita è stata fornita, quindi Giove è stato calcolato per il mezzogiorno locale del luogo di nascita. Basta per il segno in quasi tutti i compleanni, ma non per la casa.",
+      },
+    },
+    saturn: {
+      en: {
+        base: "Saturn is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. Saturn usually stays in one sign for about two to two and a half years. Exact birth time matters on the rare ingress day and for the house. This calculator does not use the Swiss Ephemeris.",
+        noon: " No birth time was provided, so Saturn was calculated for local noon at the birth place. That is enough for the sign on nearly every birthday, but not for house placement.",
+      },
+      zh: {
+        base: "土星按地心黄道经度（astronomy-engine）在回归黄道中计算，并以整宫制显示宫位。土星通常在一个星座停留约两到两年半。准确出生时间主要影响少见的换座日和宫位。本计算器不使用瑞士星历。",
+        noon: " 未提供出生时间，故按出生地当地正午计算土星。这对几乎所有生日的星座足够，但不足以定宫。",
+      },
+      es: {
+        base: "Saturno se calcula a partir de la longitud eclíptica geocéntrica (astronomy-engine) en el zodiaco tropical y se muestra con casas de signo completo. Saturno suele permanecer en un signo unos dos o dos años y medio. La hora exacta importa en el raro día de ingreso y para la casa. Esta calculadora no usa la Efemérides Suiza.",
+        noon: " No se indicó hora de nacimiento, así que Saturno se calculó al mediodía local del lugar de nacimiento. Eso basta para el signo en casi todos los cumpleaños, pero no para la casa.",
+      },
+      pt: {
+        base: "Saturno é calculado a partir da longitude eclíptica geocêntrica (astronomy-engine) no zodíaco tropical e mostrado com casas de signo inteiro. Saturno costuma ficar em um signo por cerca de dois a dois anos e meio. A hora exata importa no raro dia de ingresso e para a casa. Esta calculadora não usa a Efeméride Suíça.",
+        noon: " Nenhuma hora de nascimento foi informada, então Saturno foi calculado para o meio-dia local do local de nascimento. Isso basta para o signo em quase todos os aniversários, mas não para a casa.",
+      },
+      de: {
+        base: "Saturn wird aus geozentrischer ekliptikaler Länge (astronomy-engine) im tropischen Tierkreis berechnet und mit Ganzzeichen-Häusern gezeigt. Saturn bleibt meist etwa zwei bis zweieinhalb Jahre in einem Zeichen. Die genaue Geburtszeit zählt am seltenen Wechseltag und für das Haus. Dieser Rechner nutzt nicht die Schweizer Ephemeride.",
+        noon: " Ohne Geburtszeit wurde Saturn für den lokalen Mittag am Geburtsort berechnet. Das reicht für das Zeichen an fast jedem Geburtstag, aber nicht für das Haus.",
+      },
+      it: {
+        base: "Saturno è calcolato dalla longitudine eclittica geocentrica (astronomy-engine) nello zodiaco tropicale e mostrato con case a segno intero. Saturno resta di solito in un segno per circa due o due anni e mezzo. L'ora esatta conta nel raro giorno di ingresso e per la casa. Questo calcolatore non usa le Effemeridi Svizzere.",
+        noon: " Nessuna ora di nascita è stata fornita, quindi Saturno è stato calcolato per il mezzogiorno locale del luogo di nascita. Basta per il segno in quasi tutti i compleanni, ma non per la casa.",
+      },
+    },
+  };
+
+  const pack = notes[toolType][locale] || notes[toolType].en;
+  return pack.base + (usedDefaultNoon ? pack.noon : "");
+}
+
 function formatDeg(deg: number) {
   const whole = Math.floor(deg);
   const min = Math.round((deg - whole) * 60);
   return `${whole}°${String(min).padStart(2, "0")}'`;
+}
+
+function localizedPlanetLabel(locale: string, toolType: string, fallback: string) {
+  if (toolType === "jupiter") {
+    if (locale === "zh") return "木星";
+    if (locale === "es" || locale === "pt") return "Júpiter";
+    if (locale === "de") return "Jupiter";
+    if (locale === "it") return "Giove";
+  }
+  if (toolType === "saturn") {
+    if (locale === "zh") return "土星";
+    if (locale === "es" || locale === "pt" || locale === "it") return "Saturno";
+    if (locale === "de") return "Saturn";
+  }
+  return fallback;
+}
+
+const SIGN_NAME_BY_LOCALE: Record<string, Record<string, string>> = {
+  zh: {
+    Aries: "白羊座",
+    Taurus: "金牛座",
+    Gemini: "双子座",
+    Cancer: "巨蟹座",
+    Leo: "狮子座",
+    Virgo: "处女座",
+    Libra: "天秤座",
+    Scorpio: "天蝎座",
+    Sagittarius: "射手座",
+    Capricorn: "摩羯座",
+    Aquarius: "水瓶座",
+    Pisces: "双鱼座",
+  },
+  es: {
+    Aries: "Aries",
+    Taurus: "Tauro",
+    Gemini: "Géminis",
+    Cancer: "Cáncer",
+    Leo: "Leo",
+    Virgo: "Virgo",
+    Libra: "Libra",
+    Scorpio: "Escorpio",
+    Sagittarius: "Sagitario",
+    Capricorn: "Capricornio",
+    Aquarius: "Acuario",
+    Pisces: "Piscis",
+  },
+  pt: {
+    Aries: "Áries",
+    Taurus: "Touro",
+    Gemini: "Gêmeos",
+    Cancer: "Câncer",
+    Leo: "Leão",
+    Virgo: "Virgem",
+    Libra: "Libra",
+    Scorpio: "Escorpião",
+    Sagittarius: "Sagitário",
+    Capricorn: "Capricórnio",
+    Aquarius: "Aquário",
+    Pisces: "Peixes",
+  },
+  de: {
+    Aries: "Widder",
+    Taurus: "Stier",
+    Gemini: "Zwillinge",
+    Cancer: "Krebs",
+    Leo: "Löwe",
+    Virgo: "Jungfrau",
+    Libra: "Waage",
+    Scorpio: "Skorpion",
+    Sagittarius: "Schütze",
+    Capricorn: "Steinbock",
+    Aquarius: "Wassermann",
+    Pisces: "Fische",
+  },
+  it: {
+    Aries: "Ariete",
+    Taurus: "Toro",
+    Gemini: "Gemelli",
+    Cancer: "Cancro",
+    Leo: "Leone",
+    Virgo: "Vergine",
+    Libra: "Bilancia",
+    Scorpio: "Scorpione",
+    Sagittarius: "Sagittario",
+    Capricorn: "Capricorno",
+    Aquarius: "Acquario",
+    Pisces: "Pesci",
+  },
+};
+
+function localizedSignName(locale: string, sign: string) {
+  return SIGN_NAME_BY_LOCALE[locale]?.[sign] || sign;
+}
+
+function PlacementReading({
+  page,
+  sign,
+  house,
+  usedDefaultNoon,
+}: {
+  page: PlacementPageContent;
+  sign: string;
+  house: number;
+  usedDefaultNoon?: boolean;
+}) {
+  const signBody = page.guide?.signs.find((item) => item.sign === sign)?.body ?? page.result.signReadings?.[sign];
+  const houseBody = usedDefaultNoon ? undefined : page.result.houseReadings?.[String(house)];
+  if (!signBody && !houseBody) return null;
+  return (
+    <>
+      {signBody ? <p className="text-sm leading-relaxed text-white/85">{signBody}</p> : null}
+      {houseBody ? <p className="text-sm leading-relaxed text-white/75">{houseBody}</p> : null}
+    </>
+  );
 }
 
 function sunRelation(mercurySign: string, sunSign: string, templates: PlacementPageContent["result"]) {
@@ -255,7 +448,8 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
   const [result, setResult] = useState<PlacementResult["data"] | null>(null);
 
   // Mars and Mercury can resolve a sign from the date on most days. Moon still requires a time.
-  const birthTimeOptional = page.toolType === "mars" || page.toolType === "mercury";
+  const birthTimeOptional =
+    page.toolType === "mars" || page.toolType === "mercury" || page.toolType === "jupiter" || page.toolType === "saturn";
   const canSubmit = Boolean(
     birthDate && birthLocation && timezone && !isLoading && (birthTimeOptional || birthTime)
   );
@@ -283,6 +477,13 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
       longitude: String(result.birthData.longitude),
     }).toString()}`;
   }, [locale, result]);
+
+  const displayedNote = useMemo(() => {
+    if (!result) return "";
+    return (
+      placementResultNote(locale, page.toolType, result.usedDefaultNoon) || result.note
+    );
+  }, [locale, page.toolType, result]);
 
   async function handleSubmit() {
     if (!canSubmit) return;
@@ -473,9 +674,13 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
                   <div className="grid gap-3 sm:grid-cols-2">
                     {result.placements.map((placement) => (
                       <div key={placement.label} className="rounded-lg border border-white/10 bg-white/5 px-3 py-3 text-sm text-white/90">
-                        <p className="text-purple-300">{placement.label}</p>
+                        <p className="text-purple-300">{localizedPlanetLabel(locale, page.toolType, placement.label)}</p>
                         <p className="mt-1 font-medium text-white">
-                          {placement.glyph} {placement.sign} {formatDeg(placement.degree)}
+                          {placement.glyph}{" "}
+                          {page.toolType === "jupiter" || page.toolType === "saturn"
+                            ? localizedSignName(locale, placement.sign)
+                            : placement.sign}{" "}
+                          {formatDeg(placement.degree)}
                           {placement.isRetrograde ? " R" : ""}
                         </p>
                         <p className="mt-1 text-white/60">
@@ -486,10 +691,10 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
                     ))}
                   </div>
                 ) : (
-                  <p className="text-sm leading-relaxed text-white/80">{result.note}</p>
+                  <p className="text-sm leading-relaxed text-white/80">{displayedNote}</p>
                 )}
-                {result.placements[0] && page.result.signReadings?.[result.placements[0].sign] ? (
-                  <p className="text-sm leading-relaxed text-white/85">{page.result.signReadings[result.placements[0].sign]}</p>
+                {result.placements[0] ? (
+                  <PlacementReading page={page} sign={result.placements[0].sign} house={result.placements[0].house} usedDefaultNoon={result.usedDefaultNoon} />
                 ) : null}
                 {result.sun ? (
                   <p className="text-sm leading-relaxed text-white/75">
@@ -502,7 +707,7 @@ export default function PlacementCalculatorClient({ page }: { page: PlacementPag
                 {result.nearSignBoundary && page.result.boundaryNote ? (
                   <p className="text-sm leading-relaxed text-amber-200/90">{page.result.boundaryNote}</p>
                 ) : null}
-                {result.placements.length > 0 && <p className="text-sm leading-relaxed text-white/65">{result.note}</p>}
+                {result.placements.length > 0 && <p className="text-sm leading-relaxed text-white/65">{displayedNote}</p>}
                 <div className="mt-6 space-y-3">
                   <a
                     href={chartUrl || "#"}

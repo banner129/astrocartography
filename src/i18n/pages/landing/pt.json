@@ -86,6 +86,20 @@
               "icon": "RiQuillPenLine"
             },
             {
+              "title": "Calculadora do Signo de Júpiter",
+              "description": "Calcule Júpiter para crescimento, crença e aprendizado",
+              "url": "/jupiter-sign-calculator",
+              "target": "_self",
+              "icon": "RiPlanetLine"
+            },
+            {
+              "title": "Calculadora do Signo de Saturno",
+              "description": "Calcule Saturno para tempo, dever e trabalho longo",
+              "url": "/saturn-sign-calculator",
+              "target": "_self",
+              "icon": "RiTimerLine"
+            },
+            {
               "title": "Calculadora dos Nodos Lunares",
               "description": "Calcule Nodo Norte, Nodo Sul e crescimento",
               "url": "/lunar-nodes-calculator",

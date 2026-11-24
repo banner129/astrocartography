@@ -1,0 +1,262 @@
+{
+  "key": "jupiter",
+  "slug": "jupiter-sign-calculator",
+  "toolType": "jupiter",
+  "metadata": {
+    "title": "Jupiter Sign Calculator - Find Your Jupiter Sign",
+    "description": "Free Jupiter sign calculator. Enter your birth date and place to find your tropical Jupiter sign, its meaning, and the years Jupiter spent in that sign.",
+    "keywords": "jupiter sign calculator, what is my jupiter sign, jupiter sign, jupiter sign by year, jupiter in astrology"
+  },
+  "hero": {
+    "eyebrow": "Free astrology tool",
+    "title": "Jupiter Sign Calculator",
+    "subtitle": "Find your Jupiter sign, read what that placement describes, and check the years Jupiter occupied it."
+  },
+  "form": {
+    "submit": "Calculate My Jupiter Sign"
+  },
+  "result": {
+    "title": "Your Jupiter Placement",
+    "cta": "Open this birth data in your chart",
+    "lineCta": "Read the Jupiter line guide",
+    "lineUrl": "/jupiter-line-astrocartography",
+    "boundaryNote": "This degree sits within one degree of a sign boundary. Jupiter can stay that close for several days, so the neighboring sign is possible. Add a birth time before you rely on the sign.",
+    "provisionalHouse": "House is provisional until you add an exact birth time.",
+    "houseReadings": {
+      "1": "Jupiter in the 1st house puts growth on your presence and the way you enter a room. Opportunities often start because you show up and say what you want. The risk is promising a bigger life than the week can hold.",
+      "2": "Jupiter in the 2nd house looks for growth through money, skills, and what you can keep. Income may expand when you teach, sell, or build something people can use. The risk is letting spending grow just because income did.",
+      "3": "Jupiter in the 3rd house grows through questions, writing, and the people nearby. You often learn by explaining, and a short trip or a sibling can open the next subject. The risk is collecting more conversations than you finish.",
+      "4": "Jupiter in the 4th house puts growth in home, family, and private roots. A house, a parent, or a sense of belonging can become the place where life gets larger. The risk is asking home to carry every hope.",
+      "5": "Jupiter in the 5th house grows through play, creative work, romance, and children. You often learn by making something other people can enjoy. The risk is betting more than the pleasure is worth.",
+      "6": "Jupiter in the 6th house grows through useful work and a method you can improve. Skill expands when you solve a practical problem. The risk is turning one good habit into a standard nobody can meet.",
+      "7": "Jupiter in the 7th house looks for growth in partnership. A spouse, client, or close collaborator can widen what you attempt. The risk is handing the whole horizon to the other person.",
+      "8": "Jupiter in the 8th house grows through trust, shared money, and subjects usually kept private. Research or a deep commitment can enlarge the life. The risk is confusing intensity with safety.",
+      "9": "Jupiter in the 9th house grows through study, travel, teaching, and a belief you can explain. The wider map is the point. The risk is chasing the next philosophy before you have lived the current one.",
+      "10": "Jupiter in the 10th house puts growth on work the public can see. A role, a reputation, or a long project can become the place opportunity shows up. The risk is equating a title with a meaningful life.",
+      "11": "Jupiter in the 11th house grows through friends, groups, and a future you plan with other people. A community can multiply what you know. The risk is belonging to every circle and committing to none.",
+      "12": "Jupiter in the 12th house grows in solitude, imagination, and help given without an audience. Faith or art may expand when the room is quiet. The risk is disappearing into the larger story and skipping the next practical step."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Jupiter in Each Sign",
+    "meaningsIntro": "After you calculate, read the paragraph for your sign. Each one describes a style of growth, study, and belief. It is not a promise of luck, money, or an easy year. Two people with the same Jupiter sign still live different lives.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Jupiter in Aries",
+        "body": "Jupiter in Aries grows by starting before the plan feels finished. Confidence arrives through going first: opening a class, booking the trip, or beginning a project while other people are still discussing it. Belief sounds direct, and a clear yes is easier to trust than a long argument. The generous part is courage you can lend to someone who is stuck. The costly part is speed. A wider horizon helps only when you stay long enough to finish what you began. Look at the risks you keep choosing, and notice which ones you actually complete."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Jupiter in Taurus",
+        "body": "Jupiter in Taurus grows through what can be built, kept, and repeated. Money, skill, land, food, and a stable routine are common places where opportunity becomes real. You may expand slowly, and you usually want a result you can hold rather than a promise you can only talk about. Generosity often looks like providing: a meal, a wage, a tool, a room that works. The strain shows up when comfort becomes the only measure of a good life, or when you keep adding possessions without asking whether they still serve you. The useful question is what you are willing to maintain for years."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Jupiter in Gemini",
+        "body": "Jupiter in Gemini grows by asking, teaching, and collecting more than one viewpoint. Writing, conversation, languages, and neighboring subjects are typical doors. You often understand an idea only after you have explained it to someone else. Luck, when the word fits at all, tends to arrive through a message, a contact, or a question you did not plan. The strain is scatter. A wide reading list is not the same as a finished piece of learning. Keep the subjects that still change how you speak, and let the rest stay as curiosity rather than as another unfinished obligation."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Jupiter in Cancer",
+        "body": "Jupiter in Cancer grows through care, memory, and a circle you trust. Home, family, and the stories you inherited can become the place where life gets larger, sometimes before any public plan does. You may feed people, house them, or protect a history that would otherwise be lost. Belief often feels personal: it has a kitchen, a parent, or a shoreline attached to it. The strain is holding everyone inside that circle, including problems that are not yours to solve. Growth here asks for a home that can shelter you without becoming the only world you allow."
+      },
+      {
+        "sign": "Leo",
+        "title": "Jupiter in Leo",
+        "body": "Jupiter in Leo grows where the work can be seen. Creative projects, performance, children, and leadership all ask for a stage, even a small one. You often learn by making something other people can name, and generosity can look like applause you give as freely as you hope to receive it. Recognition is not vanity by default. It is information about whether the work landed. The strain is needing the room to respond before you trust the work itself. A wider life still counts when the audience is one honest person, not only a crowd."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Jupiter in Virgo",
+        "body": "Jupiter in Virgo grows by improving a method. Craft, health routines, editing, and useful service are the usual classrooms. You tend to trust skill more than spectacle, and you expand one working detail at a time. Teaching happens when you show how a thing is actually done. The strain is a standard that keeps moving, so no result feels finished enough to share. Opportunity in this sign is often modest at first: a better process, a cleaner explanation, a problem solved for someone who needed it done properly. Let usefulness count, even when it is not dramatic."
+      },
+      {
+        "sign": "Libra",
+        "title": "Jupiter in Libra",
+        "body": "Jupiter in Libra grows through fair agreements and shared plans. Partnership, counsel, art, and negotiation are common places where a small idea becomes a larger one. You often learn by weighing both sides, and another person may be the reason a door opens. Generosity looks like making room for a second view without abandoning your own. The strain is waiting for perfect balance before you choose. A relationship can widen your life, and it can also postpone it. The useful agreement is one you can keep on an ordinary Tuesday, not only one that sounds fair in theory."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Jupiter in Scorpio",
+        "body": "Jupiter in Scorpio grows through depth rather than display. Research, shared money, trust, and subjects other people avoid are typical territory. You may commit to few people and few questions, then stay until you understand what was hidden. Opportunity often arrives after a loss, a secret, or a fact that changes the terms. The strain is treating every bond as a test, or holding information long after it has done its work. A wider life here is not a louder one. It is a truer one: fewer promises, kept with more honesty about power, money, and loyalty."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Jupiter in Sagittarius",
+        "body": "Jupiter in Sagittarius grows through meaning, travel, study, and a horizon past the local answer. Teaching, publishing, law, religion, and long journeys are familiar expressions, though the sign does not assign you a profession. You often learn by following a question farther than convenience suggests. Belief wants room. The strain is certainty that outruns experience, or a ticket bought to avoid a problem that will still be there when you land. The placement describes a need for a larger map. It does not make every journey wise, and it does not outrank the rest of the chart."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Jupiter in Capricorn",
+        "body": "Jupiter in Capricorn grows through responsibility that lasts. A role, a craft, a business, or an institution can be the place where opportunity becomes visible, usually after a long timeline. You may expand by taking the job seriously before anyone offers applause. Generosity can look like structure: a standard, a paycheck, a door you hold open because you already walked through it. The strain is postponing every pleasure until the achievement is secure. Rank is not the same as a life. Ask which duties still build something you respect, and which ones you keep only because they look solid."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Jupiter in Aquarius",
+        "body": "Jupiter in Aquarius grows through a group, a principle, or a system that does not depend on one personality. Friends, research communities, technology, and future-facing plans are common settings. You may trust the pattern ahead more than the familiar custom, and you often learn by comparing your idea with people who do not already agree. The strain is staying above the room: reforming a group without belonging to it, or collecting causes without doing the unglamorous work. Growth here needs both the wider principle and a specific community that can argue with you."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Jupiter in Pisces",
+        "body": "Jupiter in Pisces grows through imagination, faith, and compassion. Music, dreams, spiritual practice, and care for people at the edge of a system are frequent expressions. You may sense a larger story before you can defend it, and you often learn in places that are not fully mapped. Generosity can be genuine and also exhausting. The strain is boundless sympathy with no limit, or a belief so porous that any mood can pass for truth. A wider life in this sign still needs a boundary: who you can help, what you can imagine, and when you return to the facts in front of you."
+      }
+    ],
+    "yearsTitle": "Jupiter Sign by Birth Year",
+    "yearsIntro": "Jupiter usually stays in one sign for about a year. Retrograde motion can send it back into the previous sign, so some years appear more than once. Find your birth date in the range, then use the calculator if you were born on the first or last day.",
+    "yearsNote": "These dates come from the same tropical, geocentric calculation as the form. The end date is the last day before the next sign begins. A birthday on either edge can fall in the neighboring sign depending on the time and place. The calculator is the authority for that day. This table does not show retrograde as a separate status.",
+    "years": [
+      { "range": "Jul 31, 1989 – Aug 17, 1990", "sign": "Cancer" },
+      { "range": "Aug 18, 1990 – Sep 11, 1991", "sign": "Leo" },
+      { "range": "Sep 12, 1991 – Oct 9, 1992", "sign": "Virgo" },
+      { "range": "Oct 10, 1992 – Nov 9, 1993", "sign": "Libra" },
+      { "range": "Nov 10, 1993 – Dec 8, 1994", "sign": "Scorpio" },
+      { "range": "Dec 9, 1994 – Jan 2, 1996", "sign": "Sagittarius" },
+      { "range": "Jan 3, 1996 – Jan 20, 1997", "sign": "Capricorn" },
+      { "range": "Jan 21, 1997 – Feb 3, 1998", "sign": "Aquarius" },
+      { "range": "Feb 4, 1998 – Feb 12, 1999", "sign": "Pisces" },
+      { "range": "Feb 13, 1999 – Jun 27, 1999", "sign": "Aries" },
+      { "range": "Jun 28, 1999 – Oct 22, 1999", "sign": "Taurus" },
+      { "range": "Oct 23, 1999 – Feb 13, 2000", "sign": "Aries" },
+      { "range": "Feb 14, 2000 – Jun 29, 2000", "sign": "Taurus" },
+      { "range": "Jun 30, 2000 – Jul 12, 2001", "sign": "Gemini" },
+      { "range": "Jul 13, 2001 – Jul 31, 2002", "sign": "Cancer" },
+      { "range": "Aug 1, 2002 – Aug 26, 2003", "sign": "Leo" },
+      { "range": "Aug 27, 2003 – Sep 24, 2004", "sign": "Virgo" },
+      { "range": "Sep 25, 2004 – Oct 25, 2005", "sign": "Libra" },
+      { "range": "Oct 26, 2005 – Nov 23, 2006", "sign": "Scorpio" },
+      { "range": "Nov 24, 2006 – Dec 17, 2007", "sign": "Sagittarius" },
+      { "range": "Dec 18, 2007 – Jan 4, 2009", "sign": "Capricorn" },
+      { "range": "Jan 5, 2009 – Jan 17, 2010", "sign": "Aquarius" },
+      { "range": "Jan 18, 2010 – Jun 5, 2010", "sign": "Pisces" },
+      { "range": "Jun 6, 2010 – Sep 8, 2010", "sign": "Aries" },
+      { "range": "Sep 9, 2010 – Jan 21, 2011", "sign": "Pisces" },
+      { "range": "Jan 22, 2011 – Jun 3, 2011", "sign": "Aries" },
+      { "range": "Jun 4, 2011 – Jun 10, 2012", "sign": "Taurus" },
+      { "range": "Jun 11, 2012 – Jun 25, 2013", "sign": "Gemini" },
+      { "range": "Jun 26, 2013 – Jul 15, 2014", "sign": "Cancer" },
+      { "range": "Jul 16, 2014 – Aug 10, 2015", "sign": "Leo" },
+      { "range": "Aug 11, 2015 – Sep 8, 2016", "sign": "Virgo" },
+      { "range": "Sep 9, 2016 – Oct 9, 2017", "sign": "Libra" },
+      { "range": "Oct 10, 2017 – Nov 7, 2018", "sign": "Scorpio" },
+      { "range": "Nov 8, 2018 – Dec 1, 2019", "sign": "Sagittarius" },
+      { "range": "Dec 2, 2019 – Dec 18, 2020", "sign": "Capricorn" },
+      { "range": "Dec 19, 2020 – May 12, 2021", "sign": "Aquarius" },
+      { "range": "May 13, 2021 – Jul 27, 2021", "sign": "Pisces" },
+      { "range": "Jul 28, 2021 – Dec 28, 2021", "sign": "Aquarius" },
+      { "range": "Dec 29, 2021 – May 10, 2022", "sign": "Pisces" },
+      { "range": "May 11, 2022 – Oct 27, 2022", "sign": "Aries" },
+      { "range": "Oct 28, 2022 – Dec 19, 2022", "sign": "Pisces" },
+      { "range": "Dec 20, 2022 – May 15, 2023", "sign": "Aries" },
+      { "range": "May 16, 2023 – May 25, 2024", "sign": "Taurus" },
+      { "range": "May 26, 2024 – Jun 8, 2025", "sign": "Gemini" },
+      { "range": "Jun 9, 2025 – Jun 29, 2026", "sign": "Cancer" },
+      { "range": "Jun 30, 2026 – Jul 25, 2027", "sign": "Leo" },
+      { "range": "Jul 26, 2027 – Aug 23, 2028", "sign": "Virgo" },
+      { "range": "Aug 24, 2028 – Sep 23, 2029", "sign": "Libra" },
+      { "range": "Sep 24, 2029 – Oct 21, 2030", "sign": "Scorpio" },
+      { "range": "Oct 22, 2030 – Nov 15, 2031", "sign": "Sagittarius" }
+    ],
+    "limitsTitle": "Retrograde and What This Page Leaves Out",
+    "limitsBody": [
+      "This Jupiter sign calculator does not say whether Jupiter was retrograde when you were born. Retrograde changes the apparent speed and, near the edge of a sign, can move Jupiter back into the previous sign. Those moves are already reflected in the year table and in the degree the form returns. A separate retrograde symbol is not part of this result.",
+      "Transits, returns, and electional dates are also outside this page. Use a full chart or a transit tool once the natal sign is clear. The honest use of the result is narrow: learn the sign, notice whether the time was real or local noon, and keep the house unread until the clock is known."
+    ]
+  },
+  "sections": [
+    {
+      "title": "What a Jupiter Sign Calculator Shows",
+      "body": [
+        "Enter a birth date and place. This Jupiter sign calculator returns your tropical Jupiter sign and degree. Without a time, it uses local noon and marks the house as provisional. The meanings describe a style of growth. They do not promise luck or money."
+      ]
+    },
+    {
+      "title": "What Is My Jupiter Sign",
+      "body": [
+        "Your Jupiter sign is the zodiac sign Jupiter occupied at birth. Jupiter can fall in any sign and usually stays there for about a year. The sign names how you look for growth, study, and a wider horizon. It does not replace the rest of the chart."
+      ]
+    },
+    {
+      "title": "When Birth Time Matters",
+      "body": [
+        "Date and place decide the sign on an ordinary day. Add a clock time when the degree is within one degree of 0 or 29, because Jupiter can sit near a boundary for several days. A reliable house always needs the exact time. This page uses the tropical zodiac."
+      ]
+    },
+    {
+      "title": "Jupiter Sign and the Jupiter Line",
+      "body": [
+        "The sign stays with you in every city. A Jupiter line marks where Jupiter was on an angle at birth, so the same theme can feel louder in one place. Read the sign first. Use the Jupiter line guide when the question is about a city, and add a birth time before you travel from the map."
+      ]
+    },
+    {
+      "title": "How to Read the Result",
+      "body": [
+        "Read the sign paragraph for the style of growth, then the degree for how early or late Jupiter sits in that sign. The degree is not a strength score. A house reading appears only when you entered a birth time. If the time was blank, ignore the house."
+      ]
+    },
+    {
+      "title": "What This Calculator Cannot Promise",
+      "body": [
+        "The result does not show retrograde motion, transits, or a lucky year. A Jupiter sign describes a direction of growth. Work, money, other people, and the rest of the chart still decide what happens."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this Jupiter sign calculator free?",
+      "answer": "Yes. Enter a birth date and birth place to calculate your Jupiter sign for free. Birth time is optional. The result shows the tropical sign, the degree, and a reading of that sign. With an exact time it also shows the whole-sign house."
+    },
+    {
+      "question": "Do I need my birth time to find my Jupiter sign?",
+      "answer": "On most birthdays the date and place are enough for the sign. Jupiter usually stays in a sign for about a year. Add the time when the degree is near 0 or 29, because that boundary can last several days, and whenever you want the house. Without a time, the calculator uses local noon and does not interpret the house."
+    },
+    {
+      "question": "What is my Jupiter sign in plain terms?",
+      "answer": "Your Jupiter sign is the zodiac sign Jupiter occupied at birth. It describes a style of growth, belief, and learning. It is not a guarantee of luck. Jupiter can fall in any sign, including a sign far from your Sun."
+    },
+    {
+      "question": "Which years is Jupiter in each sign?",
+      "answer": "The Jupiter Sign by Birth Year table on this page lists tropical ranges from 1990 through 2030, including years when retrograde made the sign change more than once. If your birthday is the first or last date in a row, calculate it with your birth time."
+    },
+    {
+      "question": "How is a Jupiter sign different from a Jupiter line?",
+      "answer": "The sign is part of the birth chart and does not change when you travel. The Jupiter line is a place on the map where Jupiter was on an angle at birth. Calculate the sign here, then read the Jupiter line guide if the question is about a city."
+    },
+    {
+      "question": "Does this show if Jupiter was retrograde?",
+      "answer": "No. The result gives the tropical sign and degree. It does not mark retrograde. Near a sign boundary, retrograde is already included in the date the planet changed signs. Use the year table or the calculator for the sign itself."
+    },
+    {
+      "question": "Does a Jupiter sign predict wealth or a lucky year?",
+      "answer": "No. The sign describes how you tend to seek growth. It does not award money, success, or a fortunate year. Those outcomes also depend on the rest of the chart and on real circumstances."
+    }
+  ],
+  "schemaName": "Jupiter Sign Calculator",
+  "relatedLinks": [
+    {
+      "text": "Generate your free astrocartography chart on the world map.",
+      "linkText": "Free Astrocartography Chart & Map",
+      "url": "/"
+    },
+    {
+      "text": "Read growth by location after you know the sign.",
+      "linkText": "Jupiter Line",
+      "url": "/jupiter-line-astrocartography"
+    },
+    {
+      "text": "Compare limits and responsibility.",
+      "linkText": "Saturn Sign Calculator",
+      "url": "/saturn-sign-calculator"
+    },
+    {
+      "text": "Compare values and attraction.",
+      "linkText": "Venus Sign Calculator",
+      "url": "/venus-sign-calculator"
+    },
+    {
+      "text": "Need the full chart with every planet?",
+      "linkText": "Birth Chart Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

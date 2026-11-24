@@ -1,0 +1,244 @@
+{
+  "key": "saturn",
+  "slug": "saturn-sign-calculator",
+  "toolType": "saturn",
+  "metadata": {
+    "title": "Saturnzeichen berechnen - Finde dein Saturnzeichen",
+    "description": "Kostenloser Saturnzeichen-Rechner. Gib Geburtsdatum und -ort ein, um dein tropisches Saturnzeichen, seine Bedeutung und die Jahre zu finden, in denen Saturn in diesem Zeichen stand.",
+    "keywords": "saturnzeichen berechnen, was ist mein saturnzeichen, saturnzeichen, saturnzeichen nach jahr, saturn in der astrologie"
+  },
+  "hero": {
+    "eyebrow": "Kostenloses Astrologie-Tool",
+    "title": "Saturnzeichen berechnen",
+    "subtitle": "Finde dein Saturnzeichen, lies, was diese Stellung beschreibt, und prüfe die Jahre, in denen Saturn dort stand."
+  },
+  "form": {
+    "submit": "Mein Saturnzeichen berechnen"
+  },
+  "result": {
+    "title": "Deine Saturn-Stellung",
+    "cta": "Diese Geburtsdaten in deinem Horoskop öffnen",
+    "lineCta": "Den Saturn-Linien-Guide lesen",
+    "lineUrl": "/saturn-line-astrocartography",
+    "boundaryNote": "Dieser Grad liegt innerhalb eines Grades an einer Zeichengrenze. Saturn kann so nah wochenlang stehen, deshalb ist das Nachbarzeichen möglich. Füge eine Geburtszeit hinzu, bevor du dich auf das Zeichen verlässt.",
+    "provisionalHouse": "Das Haus ist vorläufig, bis du eine genaue Geburtszeit angibst.",
+    "houseReadings": {
+      "1": "Saturn im 1. Haus legt Zeit auf deine Präsenz und darauf, wie du der Welt begegnest. Du kannst früh erwachsen werden oder zögern, bevor du dich zeigen lässt. Meisterschaft hier ist ein Selbst, hinter dem du stehen kannst, ohne zur Rüstung zu erstarren.",
+      "2": "Saturn im 2. Haus legt Zeit auf Geld, Körper und das, was du behalten kannst. Sicherheit kommt oft spät, nach einer Fähigkeit, die du aufbauen musstest. Die Lektion sind stabile Ressourcen, kein Leben in Angst, sie zu verlieren.",
+      "3": "Saturn im 3. Haus legt Zeit auf Sprache, Lernen und Fakten. Du kannst eine Nachricht länger überarbeiten als andere oder deinen eigenen Verstand anzweifeln, bevor du ihm vertraust. Die Fähigkeit ist eine Erklärung, die standhält.",
+      "4": "Saturn im 4. Haus legt Zeit auf Zuhause, Eltern und private Grundlagen. Familiäre Pflicht kann früh kommen. Die Lektion ist ein Privatleben, das du halten kannst, einschließlich der Teile, die du nicht gewählt hast.",
+      "5": "Saturn im 5. Haus legt Zeit auf Freude, kreative Arbeit, Romanze und Kinder. Spiel kann ernst wirken, bevor es leicht wirkt. Die Fähigkeit ist, etwas mit deinem Namen darauf zu machen, ohne auf Erlaubnis zu warten.",
+      "6": "Saturn im 6. Haus legt Zeit auf tägliche Arbeit, Gesundheit und das unfertige Detail. Die Standards sind hoch, und Ruhe kann wie ein Versagen wirken, bis du es anders lernst. Die Fähigkeit ist eine Routine, die repariert, was nicht funktioniert.",
+      "7": "Saturn im 7. Haus legt Zeit auf Vereinbarungen und Eins-zu-eins-Verpflichtungen. Partnerschaft kann sich wie Pflicht anfühlen, bevor sie sich wie Gesellschaft anfühlt. Die Lektion ist ein Versprechen, das du halten kannst, wenn es unbequem ist.",
+      "8": "Saturn im 8. Haus legt Zeit auf Vertrauen, geteilte Ressourcen und das Verborgene. Du kannst dich selten binden, und das Geld oder die Trauer anderer kann schwer wirken. Die Fähigkeit ist, bei einer harten Wahrheit zu bleiben, ohne von ihr besessen zu werden.",
+      "9": "Saturn im 9. Haus legt Zeit auf Glauben, Studium und die lange Reise. Du kannst eine Philosophie prüfen, bevor du sie lehrst. Die Lektion ist eine Karte, die du wirklich gegangen bist, keine Doktrin, die du nur wiederholst.",
+      "10": "Saturn im 10. Haus legt Zeit auf öffentliche Arbeit und Ruf. Eine Rolle kann früh schwer wirken, und Anerkennung folgt oft der Arbeit statt ihr vorauszugehen. Die Fähigkeit ist Verantwortung, auf die andere zählen können.",
+      "11": "Saturn im 11. Haus legt Zeit auf Freunde, Gruppen und Zukunftspläne. Zugehörigkeit kann mit Regeln kommen, und du kannst einen Kreis hinterfragen, bevor du beitrittst. Die Lektion ist eine Gemeinschaft, die du mitbauen hilfst, nicht nur eine, die du beurteilst.",
+      "12": "Saturn im 12. Haus legt Zeit auf Einsamkeit, Enden und das, dem du lieber nicht begegnest. Angst kann privat leben. Die Fähigkeit ist eine Grenze um Ruhe, Mitgefühl und die Arbeit, die du tust, wenn niemand zuschaut."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Saturn in jedem Zeichen",
+    "meaningsIntro": "Lies nach der Berechnung den Absatz zu deinem Zeichen. Jeder beschreibt, wo Zeit, Standards und Verantwortung meist sichtbar werden. Das ist keine Vorhersage von Leid. Eine ganze Geburtsgruppe kann das Zeichen teilen und trotzdem andere Berufe, Familien und Gesundheit tragen.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Saturn im Widder",
+        "body": "Saturn im Widder braucht Zeit für Mut und einen klaren Start. Du kannst Verantwortung lernen, indem du handelst, bevor du dich bereit fühlst, und dann bei der Folge bleibst statt sie abzugeben. Wut, Wettbewerb und die Angst, langsam zu sein, sind häufige Lehrer. Andere können schneller wirken, wodurch ein vorsichtiger Start wie ein Versagen wirkt. Die Fähigkeit ist Initiative, die über den ersten Schwung hinaushält: eine Entscheidung, die du nächsten Monat verteidigen kannst, ein Körper, den du nicht auf einmal verbrauchst, ein Kampf, den du nur führst, wenn er deiner ist. Mut hier ist Wiederholung, kein einzelner kühner Nachmittag."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Saturn im Stier",
+        "body": "Saturn im Stier braucht Zeit für Geld, Körper und das, was gehalten werden kann. Sicherheit ist selten sofort da. Du kannst das Gewicht der Ressourcen spüren, bevor du ihre Leichtigkeit spürst, und baust oft langsam, weil ein Ergebnis den Alltag überstehen muss. Essen, Miete, Lohn und körperliche Ausdauer werden zum Klassenzimmer. Die Belastung ist Knappheitsdenken, das weiterläuft, nachdem das praktische Problem nachließ, oder ein Griff so eng, dass nichts sich ändern kann. Meisterschaft sieht aus wie genug: eine Fähigkeit, die zahlt, ein Körper, den du pflegst, und Besitz, den du wirklich tragen kannst."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Saturn in den Zwillingen",
+        "body": "Saturn in den Zwillingen braucht Zeit für Worte, Lernen und Fakten. Du kannst eine Nachricht länger überarbeiten als andere, einer schnellen Meinung misstrauen oder fühlen, dass dein Verstand sich beweisen muss, bevor er spricht. Schule, Geschwister und lokale Gespräche können Orte sein, an denen der Standard streng ist. Die Fähigkeit ist eine Erklärung, die hält, wenn jemand sie prüft. Die Belastung ist Schweigen, das zu lange dauert, oder ein Haufen Recherche, der nie zu einem Satz wird. Sag das Genaue, sobald du es hast. Präzision ist der Punkt, nicht dauerndes Zögern."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Saturn im Krebs",
+        "body": "Saturn im Krebs braucht Zeit für Fürsorge, Familie und emotionale Sicherheit. Du kannst Schutz als Pflicht behandeln und lernst oft, was ein Zuhause kostet ebenso wie was es gibt. Ein Elternteil, ein Haus oder der Bedarf, die verlässliche Person zu sein, kann früh kommen. Gefühle fehlen nicht. Sie werden verwaltet, manchmal so sorgfältig, dass andere denken, du hättest keine. Die Fähigkeit ist ein Privatleben mit einer echten Grenze: wen du schützt, was du erinnerst und wann Fürsorge aufhört, ein unbezahlter Job zu sein, den du nicht verlassen kannst."
+      },
+      {
+        "sign": "Leo",
+        "title": "Saturn im Löwen",
+        "body": "Saturn im Löwen braucht Zeit für Sichtbarkeit und kreative Autorität. Du kannst zögern, bevor du gesehen wirst, oder fühlen, dass Freude und Anerkennung zweimal verdient werden müssen. Kreative Arbeit, Kinder, Romanze und Führung können einen strengeren Standard tragen als bei anderen. Die Fähigkeit ist, hinter Arbeit mit deinem Namen zu stehen, ohne auf perfektes Selbstvertrauen zu warten. Die Belastung ist, die Bühne so gründlich abzulehnen, dass die Arbeit privat bleibt, oder eine Ernsthaftigkeit zu spielen, die keinen Raum für Freude lässt. Gesehen zu werden ist Teil der Aufgabe, keine Belohnung danach."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Saturn in der Jungfrau",
+        "body": "Saturn in der Jungfrau braucht Zeit für Handwerk, Gesundheit und das unfertige Detail. Du kannst dich an einen Standard halten, der weiterwandert, und lernst oft, indem du reparierst, was nicht funktioniert. Arbeit, Routine und Körper sind, wo die Pflicht sichtbar wird. Kompetenz ist hier real, und ebenso die Angst, dass ein übersehener Fehler das Ganze ruiniert. Die Fähigkeit ist eine Methode, die du wiederholen kannst, ohne dich oder die Menschen, denen du hilfst, zu demütigen. Sorgfältig erledigt reicht. Ein Leben, das nur den letzten Makel korrigiert, liefert nie das Nützliche."
+      },
+      {
+        "sign": "Libra",
+        "title": "Saturn in der Waage",
+        "body": "Saturn in der Waage braucht Zeit für Vereinbarungen und Fairness. Du kannst die Pflicht in einer Beziehung spüren, bevor du ihre Leichtigkeit spürst, und lernst oft, indem du ein Versprechen hältst, wenn es unbequem ist. Ehe, Verträge, Kunst und der Bedarf, fair zu sein, können schwer werden. Die Fähigkeit ist eine Verpflichtung mit klaren Bedingungen, einschließlich der Bedingung, die dir erlaubt, einen Deal zu verlassen, der nur höflich aussieht. Die Belastung ist, so lange in der Mitte zu bleiben, dass du nie wählst, oder beide Seiten zu tragen, während die andere Person keine trägt. Fairness schließt dich ein."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Saturn im Skorpion",
+        "body": "Saturn im Skorpion braucht Zeit für Vertrauen, geteilte Ressourcen und das Verborgene. Du kannst dich selten binden und lernst oft, indem du bei einer harten Wahrheit bleibst statt den Raum zu verlassen. Das Geld, die Trauer, die Macht und die Geheimnisse anderer können wie Prüfungen wirken. Die Fähigkeit ist Loyalität mit Grenze und eine Tatsache, die du laut benennen kannst. Die Belastung ist Kontrolle: alles wissen, damit man dich nicht überraschen kann, oder Hilfe ablehnen, weil Abhängigkeit einst zu teuer war. Tiefe ist nützlich, wenn sie zu einer Entscheidung führt. Sie ist keine lebenslange Verurteilung zur Misstrauen."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Saturn im Schützen",
+        "body": "Saturn im Schützen braucht Zeit für Glauben, Studium und die lange Reise. Du kannst eine Philosophie prüfen, bevor du sie lehrst, und lernst oft, indem du die Karte beweist statt sie nur zu zitieren. Reisen, Religion, Recht, Verlagswesen und höheres Studium können ernst oder verzögert wirken. Die Fähigkeit ist eine Überzeugung, die du an Erfahrung geprüft hast. Die Belastung ist Zynismus, der jeden Horizont schließt, oder eine Doktrin, die du verteidigst, weil sie zu ändern bedeuten würde, zuzugeben, dass die frühere Version unvollständig war. Ein Glaube kann reifen. Er muss nicht schon sicher ankommen."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Saturn im Steinbock",
+        "body": "Saturn im Steinbock braucht Zeit für Rang, Arbeit und eine Struktur, die hält. Du kannst die Rolle früh spüren und lernst oft, indem du Verantwortung öffentlich trägst, bevor du dich alt genug fühlst. Karriere, Institutionen und lange Projekte sind das offensichtliche Klassenzimmer, obwohl das Zeichen keinen Status garantiert. Die Fähigkeit ist Arbeit, um die andere planen können. Die Belastung ist ein Leben, das nur den Job enthält, oder eine Angst vor dem Scheitern so streng, dass du nie das versuchst, was du wirklich respektierst. Autorität ist ein Werkzeug. Sie ist kein Beweis, dass du ruhen darfst."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Saturn im Wassermann",
+        "body": "Saturn im Wassermann braucht Zeit für Gruppen, Regeln und das künftige System. Du kannst eine Gewohnheit hinterfragen und musst dann den Ersatz bauen, was langsamer ist als zu kritisieren. Freunde, Organisationen, Wissenschaft und soziale Ideen können alle zu Pflichten werden. Die Fähigkeit ist ein Prinzip, das den Kontakt mit realen Menschen übersteht. Die Belastung ist, außerhalb jeder Gruppe zu stehen, damit du dich nicht enttäuschen kannst, oder eine neue Regel so starr durchzusetzen wie die alte. Ein besseres System braucht trotzdem Mitglieder, Meetings und die unglamouröse Arbeit, es fair zu halten."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Saturn in den Fischen",
+        "body": "Saturn in den Fischen braucht Zeit für Glauben, Einsamkeit und Mitgefühl mit Grenze. Du kannst lernen, wo Imagination eine Grenze braucht, und reifst oft, indem du benennst, was real ist, wenn eine Stimmung, ein Traum oder der Schmerz eines anderen laut ist. Kunst, spirituelle Praxis, Krankenhäuser, Enden und verborgene Arbeit sind häufige Schauplätze. Die Fähigkeit ist Hilfe, die dich nicht auslöscht. Die Belastung ist Schuld für jedes Leid, das du nicht beheben kannst, oder ein Nebel, der eine konkrete Entscheidung aufschiebt. Barmherzigkeit braucht eine Form: einen Plan, ein Budget, einen Satz, der sagt, was du trägst und was nicht."
+      }
+    ],
+    "yearsTitle": "Saturnzeichen nach Geburtsjahr",
+    "yearsIntro": "Saturn bleibt meist etwa zwei bis zweieinhalb Jahre in einem Zeichen. Die rückläufige Bewegung kann ihn ins vorherige Zeichen zurückbringen, daher sind manche Jahre geteilt. Finde dein Geburtsdatum im Zeitraum und nutze den Rechner, wenn du am ersten oder letzten Tag geboren wurdest.",
+    "yearsNote": "Diese Daten stammen aus derselben tropischen, geozentrischen Berechnung wie das Formular. Das Enddatum ist der letzte Tag, bevor das nächste Zeichen beginnt. Ein Geburtstag an einem der Ränder kann je nach Zeit und Ort ins Nachbarzeichen fallen. Der Rechner ist die Autorität für diesen Tag. Diese Tabelle zeigt Rückläufigkeit nicht als eigenen Status und berechnet keine Saturn-Rückkehr.",
+    "years": [
+      { "range": "12. Nov. 1988 – 5. Feb. 1991", "sign": "Capricorn" },
+      { "range": "6. Feb. 1991 – 20. Mai 1993", "sign": "Aquarius" },
+      { "range": "21. Mai 1993 – 29. Juni 1993", "sign": "Pisces" },
+      { "range": "30. Juni 1993 – 28. Jan. 1994", "sign": "Aquarius" },
+      { "range": "29. Jan. 1994 – 6. Apr. 1996", "sign": "Pisces" },
+      { "range": "7. Apr. 1996 – 8. Juni 1998", "sign": "Aries" },
+      { "range": "9. Juni 1998 – 24. Okt. 1998", "sign": "Taurus" },
+      { "range": "25. Okt. 1998 – 28. Feb. 1999", "sign": "Aries" },
+      { "range": "1. März 1999 – 9. Aug. 2000", "sign": "Taurus" },
+      { "range": "10. Aug. 2000 – 15. Okt. 2000", "sign": "Gemini" },
+      { "range": "16. Okt. 2000 – 19. Apr. 2001", "sign": "Taurus" },
+      { "range": "20. Apr. 2001 – 3. Juni 2003", "sign": "Gemini" },
+      { "range": "4. Juni 2003 – 15. Juli 2005", "sign": "Cancer" },
+      { "range": "16. Juli 2005 – 1. Sept. 2007", "sign": "Leo" },
+      { "range": "2. Sept. 2007 – 28. Okt. 2009", "sign": "Virgo" },
+      { "range": "29. Okt. 2009 – 6. Apr. 2010", "sign": "Libra" },
+      { "range": "7. Apr. 2010 – 20. Juli 2010", "sign": "Virgo" },
+      { "range": "21. Juli 2010 – 4. Okt. 2012", "sign": "Libra" },
+      { "range": "5. Okt. 2012 – 22. Dez. 2014", "sign": "Scorpio" },
+      { "range": "23. Dez. 2014 – 14. Juni 2015", "sign": "Sagittarius" },
+      { "range": "15. Juni 2015 – 17. Sept. 2015", "sign": "Scorpio" },
+      { "range": "18. Sept. 2015 – 19. Dez. 2017", "sign": "Sagittarius" },
+      { "range": "20. Dez. 2017 – 21. März 2020", "sign": "Capricorn" },
+      { "range": "22. März 2020 – 1. Juli 2020", "sign": "Aquarius" },
+      { "range": "2. Juli 2020 – 16. Dez. 2020", "sign": "Capricorn" },
+      { "range": "17. Dez. 2020 – 6. März 2023", "sign": "Aquarius" },
+      { "range": "7. März 2023 – 24. Mai 2025", "sign": "Pisces" },
+      { "range": "25. Mai 2025 – 31. Aug. 2025", "sign": "Aries" },
+      { "range": "1. Sept. 2025 – 13. Feb. 2026", "sign": "Pisces" },
+      { "range": "14. Feb. 2026 – 12. Apr. 2028", "sign": "Aries" },
+      { "range": "13. Apr. 2028 – 31. Mai 2030", "sign": "Taurus" },
+      { "range": "1. Juni 2030 – 14. Juli 2032", "sign": "Gemini" }
+    ],
+    "limitsTitle": "Saturn-Rückkehr, Rückläufigkeit und was diese Seite auslässt",
+    "limitsBody": [
+      "Dieser Saturnzeichen-Rechner berechnet keine Saturn-Rückkehr. Eine Saturn-Rückkehr ist ein späterer Transit, etwa mit 29 und 58 Jahren, wenn Saturn zum selben Teil des Tierkreises zurückkehrt. Das natale Zeichen zu kennen ist der erste Schritt. Die Rückkehr selbst braucht ein Transit-Horoskop, das diese Seite nicht zeichnet.",
+      "Das Ergebnis markiert auch keine Rückläufigkeit. Rückläufigkeit kann Saturn über eine Zeichengrenze zurück bewegen, und diese Daten stehen bereits in der Jahrestabelle. Transite und Wahldaten gehören in ein Vollhoroskop-Tool, nachdem das natale Zeichen klar ist. Nutze diese Seite, um das Zeichen zu lernen, zu sehen, ob die Zeit real oder Ortsmittag war, und das Haus ungelesen zu lassen, bis die Uhr bekannt ist."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Was ein Saturnzeichen-Rechner zeigt",
+      "body": [
+        "Gib ein Geburtsdatum und einen Ort ein. Dieser Saturnzeichen-Rechner liefert dein tropisches Saturnzeichen und den Grad. Ohne Zeit nutzt er den Ortsmittag und markiert das Haus als vorläufig. Die Bedeutungen beschreiben einen Stil der Verantwortung. Sie sagen kein schweres Leben voraus."
+      ]
+    },
+    {
+      "title": "Was ist mein Saturnzeichen",
+      "body": [
+        "Dein Saturnzeichen ist das Tierkreiszeichen, das Saturn bei der Geburt einnahm. Saturn bleibt meist etwa zwei bis zweieinhalb Jahre in einem Zeichen, deshalb teilen es viele Menschen. Das Zeichen benennt, wo Zeit, Standards und Geduld meist sichtbar werden. Es stuft dich nicht als streng oder erfolgreich ein."
+      ]
+    },
+    {
+      "title": "Wann die Geburtszeit zählt",
+      "body": [
+        "Datum und Ort entscheiden das Zeichen an einem gewöhnlichen Tag. Füge eine Uhrzeit hinzu, wenn der Grad innerhalb eines Grades von 0 oder 29 liegt, weil Saturn wochenlang nahe einer Grenze stehen kann. Ein zuverlässiges Haus braucht immer die genaue Zeit. Diese Seite nutzt den tropischen Tierkreis."
+      ]
+    },
+    {
+      "title": "Saturnzeichen und die Saturn-Linie",
+      "body": [
+        "Das Zeichen bleibt bei dir in jeder Stadt. Eine Saturn-Linie markiert, wo Saturn bei der Geburt auf einem Winkel stand, sodass Pflicht oder Verzögerung an einem Ort lauter wirken können. Lies zuerst das Zeichen. Nutze den Saturn-Linien-Guide, wenn die Frage eine Stadt betrifft, und füge eine Geburtszeit hinzu, bevor du von der Karte aus reist."
+      ]
+    },
+    {
+      "title": "Wie das Ergebnis zu lesen ist",
+      "body": [
+        "Lies den Zeichenabsatz für den Stil der Verantwortung und dann den Grad dafür, wie früh oder spät Saturn in diesem Zeichen steht. Der Grad ist keine Glückspunktzahl. Eine Hausdeutung erscheint nur, wenn du eine Geburtszeit eingegeben hast. War die Zeit leer, ignoriere das Haus."
+      ]
+    },
+    {
+      "title": "Was dieser Rechner nicht versprechen kann",
+      "body": [
+        "Das Ergebnis zeigt keine rückläufige Bewegung, keine Saturn-Rückkehr und kein schweres Jahr. Ein Saturnzeichen beschreibt, wo Geduld und Standards meist sichtbar werden. Gesundheit, Arbeit, andere Menschen und der Rest des Horoskops entscheiden weiterhin, was geschieht."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ist dieser Saturnzeichen-Rechner kostenlos?",
+      "answer": "Ja. Gib Geburtsdatum und Geburtsort ein, um dein Saturnzeichen kostenlos zu berechnen. Die Geburtszeit ist optional. Das Ergebnis zeigt das tropische Zeichen, den Grad und eine Deutung dieses Zeichens. Mit genauer Zeit zeigt es auch das Whole-Sign-Haus."
+    },
+    {
+      "question": "Brauche ich meine Geburtszeit, um mein Saturnzeichen zu finden?",
+      "answer": "An den meisten Geburtstagen reichen Datum und Ort für das Zeichen. Saturn bleibt meist etwa zwei bis zweieinhalb Jahre in einem Zeichen. Füge die Zeit hinzu, wenn der Grad nahe 0 oder 29 liegt, weil diese Grenze Wochen dauern kann, und immer wenn du das Haus willst. Ohne Zeit nutzt der Rechner den Ortsmittag und deutet das Haus nicht."
+    },
+    {
+      "question": "Was ist mein Saturnzeichen in einfachen Worten?",
+      "answer": "Dein Saturnzeichen ist das Tierkreiszeichen, das Saturn bei der Geburt einnahm. Es beschreibt einen Stil von Verantwortung, Zeit und Grenzen. Es ist keine Vorhersage von Leid. Saturn kann in jedes Zeichen fallen, auch weit von deiner Sonne entfernt."
+    },
+    {
+      "question": "In welchen Jahren steht Saturn in welchem Zeichen?",
+      "answer": "Die Tabelle Saturnzeichen nach Geburtsjahr auf dieser Seite listet tropische Zeiträume von 1990 bis in die frühen 2030er, einschließlich Jahren, in denen Rückläufigkeit das Zeichen teilte. Liegt dein Geburtstag auf dem ersten oder letzten Datum einer Zeile, berechne ihn mit deiner Geburtszeit."
+    },
+    {
+      "question": "Wie unterscheidet sich ein Saturnzeichen von einer Saturn-Linie?",
+      "answer": "Das Zeichen gehört zum Geburtshoroskop und ändert sich nicht, wenn du reist. Die Saturn-Linie ist ein Ort auf der Karte, an dem Saturn bei der Geburt auf einem Winkel stand. Berechne das Zeichen hier und lies dann den Saturn-Linien-Guide, wenn die Frage eine Stadt betrifft."
+    },
+    {
+      "question": "Berechnet dies meine Saturn-Rückkehr oder Rückläufigkeit?",
+      "answer": "Nein. Eine Saturn-Rückkehr ist ein späterer Transit, nicht das natale Zeichen. Diese Seite markiert auch keine Rückläufigkeit. Sie meldet das tropische Zeichen und den Grad. Nutze ein Transit- oder Vollhoroskop-Tool, wenn du die Rückkehr brauchst."
+    },
+    {
+      "question": "Bedeutet ein Saturnzeichen, dass mein Leben schwer wird?",
+      "answer": "Nein. Das Zeichen beschreibt, wo Geduld, Standards und Verantwortung meist sichtbar werden. Es verurteilt dich nicht zu Scheitern oder einem schweren Jahr. Ergebnisse hängen auch vom Rest des Horoskops und von realen Umständen ab."
+    }
+  ],
+  "schemaName": "Saturnzeichen berechnen",
+  "relatedLinks": [
+    {
+      "text": "Erstelle deine kostenlose Astrokartografie-Karte auf der Weltkarte.",
+      "linkText": "Kostenlose Astrokartografie-Karte & Map",
+      "url": "/"
+    },
+    {
+      "text": "Lies Verantwortung nach Ort, nachdem du das Zeichen kennst.",
+      "linkText": "Saturn-Linie",
+      "url": "/saturn-line-astrocartography"
+    },
+    {
+      "text": "Vergleiche Wachstum und Glauben.",
+      "linkText": "Jupiterzeichen berechnen",
+      "url": "/jupiter-sign-calculator"
+    },
+    {
+      "text": "Vergleiche Antrieb und Durchsetzung.",
+      "linkText": "Marszeichen berechnen",
+      "url": "/mars-sign-calculator"
+    },
+    {
+      "text": "Brauchst du das volle Horoskop mit jedem Planeten?",
+      "linkText": "Geburtshoroskop-Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

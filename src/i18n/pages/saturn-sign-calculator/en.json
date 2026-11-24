@@ -1,0 +1,244 @@
+{
+  "key": "saturn",
+  "slug": "saturn-sign-calculator",
+  "toolType": "saturn",
+  "metadata": {
+    "title": "Saturn Sign Calculator - Find Your Saturn Sign",
+    "description": "Free Saturn sign calculator. Enter your birth date and place to find your tropical Saturn sign, what it means, and the years Saturn spent in that sign.",
+    "keywords": "saturn sign calculator, what is my saturn sign, saturn sign, saturn sign by year, saturn in astrology"
+  },
+  "hero": {
+    "eyebrow": "Free astrology tool",
+    "title": "Saturn Sign Calculator",
+    "subtitle": "Find your Saturn sign, read what that placement describes, and check the years Saturn occupied it."
+  },
+  "form": {
+    "submit": "Calculate My Saturn Sign"
+  },
+  "result": {
+    "title": "Your Saturn Placement",
+    "cta": "Open this birth data in your chart",
+    "lineCta": "Read the Saturn line guide",
+    "lineUrl": "/saturn-line-astrocartography",
+    "boundaryNote": "This degree sits within one degree of a sign boundary. Saturn can stay that close for weeks, so the neighboring sign is possible. Add a birth time before you rely on the sign.",
+    "provisionalHouse": "House is provisional until you add an exact birth time.",
+    "houseReadings": {
+      "1": "Saturn in the 1st house puts time on your presence and the way you meet the world. You may grow up early, or hesitate before you let people see you. Mastery here is a self you can stand behind without hardening into armor.",
+      "2": "Saturn in the 2nd house puts time on money, the body, and what you can keep. Security often arrives late, after a skill you had to build. The lesson is steady resources, not a life spent afraid of losing them.",
+      "3": "Saturn in the 3rd house puts time on speech, study, and the facts. You may edit a message longer than other people, or doubt your own mind before you trust it. The skill is an explanation that holds.",
+      "4": "Saturn in the 4th house puts time on home, parents, and private foundations. Family duty can arrive early. The lesson is a private life you can maintain, including the parts you did not choose.",
+      "5": "Saturn in the 5th house puts time on joy, creative work, romance, and children. Play may feel serious before it feels easy. The skill is making something with your name on it without waiting for permission.",
+      "6": "Saturn in the 6th house puts time on daily work, health, and the unfinished detail. Standards are high, and rest can look like a failure until you learn otherwise. The skill is a routine that repairs what does not work.",
+      "7": "Saturn in the 7th house puts time on agreements and one-to-one commitments. Partnership may feel like a duty before it feels like company. The lesson is a promise you can keep when it is inconvenient.",
+      "8": "Saturn in the 8th house puts time on trust, shared resources, and what is hidden. You may commit rarely, and other people's money or grief can feel heavy. The skill is staying with a hard truth without being owned by it.",
+      "9": "Saturn in the 9th house puts time on belief, study, and the long journey. You may test a philosophy before you teach it. The lesson is a map you have actually walked, not a doctrine you only repeat.",
+      "10": "Saturn in the 10th house puts time on public work and reputation. A role can feel heavy early, and recognition often follows the work rather than leading it. The skill is responsibility other people can rely on.",
+      "11": "Saturn in the 11th house puts time on friends, groups, and future plans. Belonging may come with rules, and you may question a circle before you join it. The lesson is a community you help build, not only one you judge.",
+      "12": "Saturn in the 12th house puts time on solitude, endings, and what you would rather not face. Fear can live in private. The skill is a boundary around rest, compassion, and the work you do when nobody is watching."
+    }
+  },
+  "guide": {
+    "meaningsTitle": "Saturn in Each Sign",
+    "meaningsIntro": "After you calculate, read the paragraph for your sign. Each one describes where time, standards, and responsibility tend to show up. It is not a prediction of hardship. A whole group of births can share the sign and still carry different jobs, families, and health.",
+    "signs": [
+      {
+        "sign": "Aries",
+        "title": "Saturn in Aries",
+        "body": "Saturn in Aries takes time with courage and a clean start. You may learn responsibility by acting before you feel ready, then staying with the consequence instead of handing it off. Anger, competition, and the fear of being slow are common teachers. Other people can look quicker, which makes a careful start feel like a failure. The skill is initiative that lasts past the first rush: a decision you can defend next month, a body you do not spend all at once, a fight you enter only when it is yours. Courage here is repetition, not a single bold afternoon."
+      },
+      {
+        "sign": "Taurus",
+        "title": "Saturn in Taurus",
+        "body": "Saturn in Taurus takes time with money, the body, and what can be kept. Security is rarely instant. You may feel the weight of resources before you feel their ease, and you often build slowly because a result has to survive ordinary use. Food, rent, wages, and physical stamina become the classroom. The strain is scarcity thinking that continues after the practical problem has eased, or a grip so tight that nothing can change. Mastery looks like enough: a skill that pays, a body you maintain, and possessions you can actually support."
+      },
+      {
+        "sign": "Gemini",
+        "title": "Saturn in Gemini",
+        "body": "Saturn in Gemini takes time with words, study, and the facts. You may edit a message longer than other people, distrust a quick opinion, or feel that your mind has to prove itself before it speaks. School, siblings, and local conversations can be where the standard is strict. The skill is an explanation that holds up when someone checks it. The strain is silence that lasts too long, or a pile of research that never becomes a sentence. Say the accurate thing once you have it. Precision is the point, not permanent hesitation."
+      },
+      {
+        "sign": "Cancer",
+        "title": "Saturn in Cancer",
+        "body": "Saturn in Cancer takes time with care, family, and emotional safety. You may treat protection as a duty, and you often learn what home costs as well as what it gives. A parent, a house, or the need to be the reliable one can arrive early. Feelings are not absent. They are managed, sometimes so carefully that other people think you do not have them. The skill is a private life with a real boundary: who you shelter, what you remember, and when care stops being an unpaid job you cannot leave."
+      },
+      {
+        "sign": "Leo",
+        "title": "Saturn in Leo",
+        "body": "Saturn in Leo takes time with visibility and creative authority. You may hesitate before you are seen, or feel that joy and recognition have to be earned twice. Creative work, children, romance, and leadership can all carry a stricter standard than they do for other people. The skill is standing behind work that has your name on it without waiting for perfect confidence. The strain is refusing the stage so thoroughly that the work stays private, or performing a seriousness that leaves no room for pleasure. Being seen is part of the task, not a reward you get after the task is over."
+      },
+      {
+        "sign": "Virgo",
+        "title": "Saturn in Virgo",
+        "body": "Saturn in Virgo takes time with craft, health, and the unfinished detail. You may hold yourself to a standard that keeps moving, and you often learn by repairing what does not work. Work, routine, and the body are where the duty shows. Competence is real here, and so is the fear that one overlooked error ruins the whole. The skill is a method you can repeat without humiliating yourself or the people you help. Done carefully is enough. A life spent only correcting the last flaw never ships the useful thing."
+      },
+      {
+        "sign": "Libra",
+        "title": "Saturn in Libra",
+        "body": "Saturn in Libra takes time with agreements and fairness. You may feel the duty inside a relationship before you feel its ease, and you often learn by keeping a promise when it is inconvenient. Marriage, contracts, art, and the need to be fair can all become heavy. The skill is a commitment with clear terms, including the term that lets you leave a bargain that only looks polite. The strain is staying in the middle so long that you never choose, or carrying both sides while the other person carries neither. Fairness includes you."
+      },
+      {
+        "sign": "Scorpio",
+        "title": "Saturn in Scorpio",
+        "body": "Saturn in Scorpio takes time with trust, shared resources, and what is hidden. You may commit rarely, and you often learn by staying with a hard truth instead of leaving the room. Other people's money, grief, power, and secrets can feel like tests. The skill is loyalty that has a limit and a fact you can name out loud. The strain is control: knowing everything so you cannot be surprised, or refusing help because dependence once cost too much. Depth is useful when it leads to a decision. It is not a life sentence to suspicion."
+      },
+      {
+        "sign": "Sagittarius",
+        "title": "Saturn in Sagittarius",
+        "body": "Saturn in Sagittarius takes time with belief, study, and the long journey. You may test a philosophy before you teach it, and you often learn by proving the map rather than quoting it. Travel, religion, law, publishing, and higher study can feel serious or delayed. The skill is a conviction you have checked against experience. The strain is cynicism that closes every horizon, or a doctrine you defend because changing it would mean admitting the earlier version was incomplete. A belief can mature. It does not have to arrive certain."
+      },
+      {
+        "sign": "Capricorn",
+        "title": "Saturn in Capricorn",
+        "body": "Saturn in Capricorn takes time with rank, work, and a structure that lasts. You may feel the role early, and you often learn by carrying responsibility in public before you feel old enough for it. Career, institutions, and long projects are the obvious classroom, though the sign does not guarantee status. The skill is work other people can plan around. The strain is a life that contains only the job, or a fear of failure so strict that you never attempt the thing you actually respect. Authority is a tool. It is not proof that you are allowed to rest."
+      },
+      {
+        "sign": "Aquarius",
+        "title": "Saturn in Aquarius",
+        "body": "Saturn in Aquarius takes time with groups, rules, and the future system. You may question a custom and then have to build the replacement, which is slower than criticizing it. Friends, organizations, science, and social ideas can all become duties. The skill is a principle that survives contact with actual people. The strain is standing outside every group so you cannot be disappointed, or enforcing a new rule as rigidly as the old one. A better system still needs members, meetings, and the unglamorous work of keeping it fair."
+      },
+      {
+        "sign": "Pisces",
+        "title": "Saturn in Pisces",
+        "body": "Saturn in Pisces takes time with faith, solitude, and compassion that has a limit. You may learn where imagination needs a boundary, and you often mature by naming what is real when a mood, a dream, or someone else's pain is loud. Art, spiritual practice, hospitals, endings, and hidden work are frequent settings. The skill is help that does not erase you. The strain is guilt for every suffering you cannot fix, or a fog that postpones a concrete decision. Mercy needs a form: a schedule, a budget, a sentence that says what you will and will not carry."
+      }
+    ],
+    "yearsTitle": "Saturn Sign by Birth Year",
+    "yearsIntro": "Saturn usually stays in one sign for about two to two and a half years. Retrograde motion can return it to the previous sign, so a few years are split. Find your birth date in the range, then use the calculator if you were born on the first or last day.",
+    "yearsNote": "These dates come from the same tropical, geocentric calculation as the form. The end date is the last day before the next sign begins. A birthday on either edge can fall in the neighboring sign depending on the time and place. The calculator is the authority for that day. This table does not show retrograde as a separate status, and it does not calculate a Saturn return.",
+    "years": [
+      { "range": "Nov 12, 1988 – Feb 5, 1991", "sign": "Capricorn" },
+      { "range": "Feb 6, 1991 – May 20, 1993", "sign": "Aquarius" },
+      { "range": "May 21, 1993 – Jun 29, 1993", "sign": "Pisces" },
+      { "range": "Jun 30, 1993 – Jan 28, 1994", "sign": "Aquarius" },
+      { "range": "Jan 29, 1994 – Apr 6, 1996", "sign": "Pisces" },
+      { "range": "Apr 7, 1996 – Jun 8, 1998", "sign": "Aries" },
+      { "range": "Jun 9, 1998 – Oct 24, 1998", "sign": "Taurus" },
+      { "range": "Oct 25, 1998 – Feb 28, 1999", "sign": "Aries" },
+      { "range": "Mar 1, 1999 – Aug 9, 2000", "sign": "Taurus" },
+      { "range": "Aug 10, 2000 – Oct 15, 2000", "sign": "Gemini" },
+      { "range": "Oct 16, 2000 – Apr 19, 2001", "sign": "Taurus" },
+      { "range": "Apr 20, 2001 – Jun 3, 2003", "sign": "Gemini" },
+      { "range": "Jun 4, 2003 – Jul 15, 2005", "sign": "Cancer" },
+      { "range": "Jul 16, 2005 – Sep 1, 2007", "sign": "Leo" },
+      { "range": "Sep 2, 2007 – Oct 28, 2009", "sign": "Virgo" },
+      { "range": "Oct 29, 2009 – Apr 6, 2010", "sign": "Libra" },
+      { "range": "Apr 7, 2010 – Jul 20, 2010", "sign": "Virgo" },
+      { "range": "Jul 21, 2010 – Oct 4, 2012", "sign": "Libra" },
+      { "range": "Oct 5, 2012 – Dec 22, 2014", "sign": "Scorpio" },
+      { "range": "Dec 23, 2014 – Jun 14, 2015", "sign": "Sagittarius" },
+      { "range": "Jun 15, 2015 – Sep 17, 2015", "sign": "Scorpio" },
+      { "range": "Sep 18, 2015 – Dec 19, 2017", "sign": "Sagittarius" },
+      { "range": "Dec 20, 2017 – Mar 21, 2020", "sign": "Capricorn" },
+      { "range": "Mar 22, 2020 – Jul 1, 2020", "sign": "Aquarius" },
+      { "range": "Jul 2, 2020 – Dec 16, 2020", "sign": "Capricorn" },
+      { "range": "Dec 17, 2020 – Mar 6, 2023", "sign": "Aquarius" },
+      { "range": "Mar 7, 2023 – May 24, 2025", "sign": "Pisces" },
+      { "range": "May 25, 2025 – Aug 31, 2025", "sign": "Aries" },
+      { "range": "Sep 1, 2025 – Feb 13, 2026", "sign": "Pisces" },
+      { "range": "Feb 14, 2026 – Apr 12, 2028", "sign": "Aries" },
+      { "range": "Apr 13, 2028 – May 31, 2030", "sign": "Taurus" },
+      { "range": "Jun 1, 2030 – Jul 14, 2032", "sign": "Gemini" }
+    ],
+    "limitsTitle": "Saturn Return, Retrograde, and What This Page Leaves Out",
+    "limitsBody": [
+      "This Saturn sign calculator does not calculate a Saturn return. A Saturn return is a later transit, around ages 29 and 58, when Saturn comes back to the same part of the zodiac. Knowing your natal sign is the first step. The return itself needs a transit chart, which this page does not draw.",
+      "The result also does not mark retrograde. Retrograde can move Saturn back across a sign boundary, and those dates are already in the year table. Transits and electional dates belong in a full-chart tool after the natal sign is clear. Use this page to learn the sign, to see whether the time was real or local noon, and to leave the house unread until the clock is known."
+    ]
+  },
+  "sections": [
+    {
+      "title": "What a Saturn Sign Calculator Shows",
+      "body": [
+        "Enter a birth date and place. This Saturn sign calculator returns your tropical Saturn sign and degree. Without a time, it uses local noon and marks the house as provisional. The meanings describe a style of responsibility. They do not predict a hard life."
+      ]
+    },
+    {
+      "title": "What Is My Saturn Sign",
+      "body": [
+        "Your Saturn sign is the zodiac sign Saturn occupied at birth. Saturn usually stays in one sign for about two to two and a half years, so many people share it. The sign names where time, standards, and patience tend to show up. It does not rank you as severe or successful."
+      ]
+    },
+    {
+      "title": "When Birth Time Matters",
+      "body": [
+        "Date and place decide the sign on an ordinary day. Add a clock time when the degree is within one degree of 0 or 29, because Saturn can sit near a boundary for weeks. A reliable house always needs the exact time. This page uses the tropical zodiac."
+      ]
+    },
+    {
+      "title": "Saturn Sign and the Saturn Line",
+      "body": [
+        "The sign stays with you in every city. A Saturn line marks where Saturn was on an angle at birth, so duty or delay can feel louder in one place. Read the sign first. Use the Saturn line guide when the question is about a city, and add a birth time before you travel from the map."
+      ]
+    },
+    {
+      "title": "How to Read the Result",
+      "body": [
+        "Read the sign paragraph for the style of responsibility, then the degree for how early or late Saturn sits in that sign. The degree is not a luck score. A house reading appears only when you entered a birth time. If the time was blank, ignore the house."
+      ]
+    },
+    {
+      "title": "What This Calculator Cannot Promise",
+      "body": [
+        "The result does not show retrograde motion, a Saturn return, or a hard year. A Saturn sign describes where patience and standards tend to show up. Health, work, other people, and the rest of the chart still decide what happens."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this Saturn sign calculator free?",
+      "answer": "Yes. Enter a birth date and birth place to calculate your Saturn sign for free. Birth time is optional. The result shows the tropical sign, the degree, and a reading of that sign. With an exact time it also shows the whole-sign house."
+    },
+    {
+      "question": "Do I need my birth time to find my Saturn sign?",
+      "answer": "On most birthdays the date and place are enough for the sign. Saturn usually stays in a sign for about two to two and a half years. Add the time when the degree is near 0 or 29, because that boundary can last weeks, and whenever you want the house. Without a time, the calculator uses local noon and does not interpret the house."
+    },
+    {
+      "question": "What is my Saturn sign in plain terms?",
+      "answer": "Your Saturn sign is the zodiac sign Saturn occupied at birth. It describes a style of responsibility, time, and limits. It is not a prediction of hardship. Saturn can fall in any sign, including a sign far from your Sun."
+    },
+    {
+      "question": "Which years is Saturn in each sign?",
+      "answer": "The Saturn Sign by Birth Year table on this page lists tropical ranges from 1990 through the early 2030s, including years when retrograde split the sign. If your birthday is the first or last date in a row, calculate it with your birth time."
+    },
+    {
+      "question": "How is a Saturn sign different from a Saturn line?",
+      "answer": "The sign is part of the birth chart and does not change when you travel. The Saturn line is a place on the map where Saturn was on an angle at birth. Calculate the sign here, then read the Saturn line guide if the question is about a city."
+    },
+    {
+      "question": "Does this calculate my Saturn return or retrograde?",
+      "answer": "No. A Saturn return is a later transit, not the natal sign. This page also does not mark retrograde. It reports the tropical sign and degree. Use a transit or full-chart tool if you need the return."
+    },
+    {
+      "question": "Does a Saturn sign mean my life will be difficult?",
+      "answer": "No. The sign describes where patience, standards, and responsibility tend to show up. It does not sentence you to failure or a hard year. Outcomes also depend on the rest of the chart and on real circumstances."
+    }
+  ],
+  "schemaName": "Saturn Sign Calculator",
+  "relatedLinks": [
+    {
+      "text": "Generate your free astrocartography chart on the world map.",
+      "linkText": "Free Astrocartography Chart & Map",
+      "url": "/"
+    },
+    {
+      "text": "Read responsibility by location after you know the sign.",
+      "linkText": "Saturn Line",
+      "url": "/saturn-line-astrocartography"
+    },
+    {
+      "text": "Compare growth and belief.",
+      "linkText": "Jupiter Sign Calculator",
+      "url": "/jupiter-sign-calculator"
+    },
+    {
+      "text": "Compare drive and assertion.",
+      "linkText": "Mars Sign Calculator",
+      "url": "/mars-sign-calculator"
+    },
+    {
+      "text": "Need the full chart with every planet?",
+      "linkText": "Birth Chart Generator",
+      "url": "/tools/birth-chart-generator"
+    }
+  ]
+}

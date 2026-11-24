@@ -13,7 +13,7 @@ import { getBigFourAsteroidPlacements } from "@/lib/asteroid-ephemeris";
 export const revalidate = 3600;
 export const maxDuration = 30;
 
-type PlacementType = "venus" | "moon" | "mars" | "mercury" | "lunar-nodes" | "chiron" | "asteroids";
+type PlacementType = "venus" | "moon" | "mars" | "mercury" | "jupiter" | "saturn" | "lunar-nodes" | "chiron" | "asteroids";
 
 interface PlacementRequest {
   type: PlacementType;
@@ -26,7 +26,7 @@ interface PlacementRequest {
 }
 
 /** Slow-enough planets can usually resolve the sign from date + place; noon is the disclosed default. */
-const TIME_OPTIONAL_TYPES = new Set<PlacementType>(["mars", "mercury"]);
+const TIME_OPTIONAL_TYPES = new Set<PlacementType>(["mars", "mercury", "jupiter", "saturn"]);
 const DEFAULT_LOCAL_NOON = "12:00";
 
 const CITY_COORDINATES: Record<string, { latitude: number; longitude: number }> = {
@@ -183,6 +183,32 @@ export async function POST(request: NextRequest) {
           nearSignBoundary,
           note:
             "Mercury is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. Mercury stays within about 28 degrees of the Sun and usually changes signs every two to three weeks, so exact birth time matters more often than for Mars—especially on ingress days and for the house." +
+            noonNote,
+        },
+      });
+    }
+
+    if (type === "jupiter" || type === "saturn") {
+      const planetName = type === "jupiter" ? "Jupiter" : "Saturn";
+      const planet = chart.planets.find((p) => p.name === planetName);
+      const nearSignBoundary = Boolean(planet && (planet.degree < 1 || planet.degree > 29));
+      const stayNote =
+        type === "jupiter"
+          ? "Jupiter usually stays in one sign for about a year."
+          : "Saturn usually stays in one sign for about two to two and a half years.";
+      const noonNote = usedDefaultNoon
+        ? ` No birth time was provided, so ${planetName} was calculated for local noon at the birth place. That is enough for the sign on nearly every birthday, but not for house placement.`
+        : "";
+      return NextResponse.json({
+        success: true,
+        data: {
+          type,
+          birthData: { date: birthDate, time: birthTime, location: birthLocation, latitude, longitude, timezone },
+          placements: planet ? [{ ...planet, label: planetName }] : [],
+          usedDefaultNoon,
+          nearSignBoundary,
+          note:
+            `${planetName} is calculated from geocentric ecliptic longitude (astronomy-engine) in the tropical zodiac and shown with whole-sign house placement. ${stayNote} Exact birth time matters on the rare ingress day and for the house. This calculator does not use the Swiss Ephemeris.` +
             noonNote,
         },
       });

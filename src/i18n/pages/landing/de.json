@@ -86,6 +86,20 @@
               "icon": "RiQuillPenLine"
             },
             {
+              "title": "Jupiterzeichen berechnen",
+              "description": "Jupiter für Wachstum, Glauben und Lernen berechnen",
+              "url": "/jupiter-sign-calculator",
+              "target": "_self",
+              "icon": "RiPlanetLine"
+            },
+            {
+              "title": "Saturnzeichen berechnen",
+              "description": "Saturn für Zeit, Pflicht und lange Arbeit berechnen",
+              "url": "/saturn-sign-calculator",
+              "target": "_self",
+              "icon": "RiTimerLine"
+            },
+            {
               "title": "Mondknoten berechnen",
               "description": "Nordknoten, Sudknoten und Entwicklung lesen",
               "url": "/lunar-nodes-calculator",
